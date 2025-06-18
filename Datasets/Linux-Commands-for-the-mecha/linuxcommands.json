@@ -558,6 +558,5557 @@
   {
     "input": "List all hidden files and folders in my home directory with details",
     "output": "ls -ld ~.*"
-  }
+  },
+  {
+    "Natural Language Description": "Show the full path to the directory you are currently in.",
+    "Bash Command": "pwd"
+  },
+  {
+    "Natural Language Description": "Print the current working directory, resolving any symbolic links.",
+    "Bash Command": "pwd -P"
+  },
+  {
+    "Natural Language Description": "Display the logical path of your current directory, including symlinks.",
+    "Bash Command": "pwd -L"
+  },
+  {
+    "Natural Language Description": "Store the present working directory in a variable called `dir` and print it.",
+    "Bash Command": "dir=$(pwd); echo $dir"
+  },
+  {
+    "Natural Language Description": "Output the current directory path with a custom message.",
+    "Bash Command": "echo \"You are in: $(pwd)\""
+  },
+  {
+    "Natural Language Description": "Print the current directory from within a shell script.",
+    "Bash Command": "#!/bin/bash\necho \"Current dir: $(pwd)\""
+  },
+  {
+    "Natural Language Description": "After changing to `/var/log`, display your location.",
+    "Bash Command": "cd /var/log && pwd"
+  },
+  {
+    "Natural Language Description": "List the contents of your current directory after showing its path.",
+    "Bash Command": "pwd && ls"
+  },
+  {
+    "Natural Language Description": "Print the previous working directory.",
+    "Bash Command": "echo $OLDPWD"
+  },
+  {
+    "Natural Language Description": "Check the version of the `pwd` binary on your system.",
+    "Bash Command": "/bin/pwd --version"
+  },
+  {
+    "Natural Language Description": "Show help information for the `pwd` command.",
+    "Bash Command": "pwd --help"
+  },
+  {
+    "Natural Language Description": "Use `pwd` in a script to ensure the user is in `/home/user` before proceeding.",
+    "Bash Command": "if [ $(pwd) != \"/home/user\" ]; then echo \"Please cd to /home/user\"; exit 1; fi"
+  },
+  {
+    "Natural Language Description": "Use `pwd` as part of a `find` command to search for `.log` files in your current directory.",
+    "Bash Command": "find $(pwd) -name \"*.log\""
+  },
+  {
+    "Natural Language Description": "Print the value of the `$PWD` environment variable.",
+    "Bash Command": "echo $PWD"
+  },
+  {
+    "Natural Language Description": "Use `/bin/pwd` to display your current directory.",
+    "Bash Command": "/bin/pwd"
+  },
+  {
+    "Natural Language Description": "Show your current directory path, even if you navigated there using a symlink.",
+    "Bash Command": "pwd -L"
+  },
+  {
+    "Natural Language Description": "Print the physical directory path, ignoring symlinks.",
+    "Bash Command": "pwd -P"
+  },
+  {
+    "Natural Language Description": "Display your current directory and store it in a variable for later use in a script.",
+    "Bash Command": "current_dir=$(pwd)"
+  },
+  {
+    "Natural Language Description": "Combine `pwd` with an error message if a directory does not exist.",
+    "Bash Command": "if [ ! -d \"/some/dir\" ]; then echo \"Not found, current: $(pwd)\"; fi"
+  },
+  {
+    "Natural Language Description": "Use `type -a pwd` to find all locations of the `pwd` executable.",
+    "Bash Command": "type -a pwd"
+  },
+  {
+    "input": "Show me a detailed, human-readable list of my Pictures folder",
+    "output": "ls -lh ~/Pictures"
+  },
+  {
+    "input": "Show the full path to the directory you are currently in.",
+    "output": "pwd"
+  },
+  {
+    "input": "Print the current working directory, resolving any symbolic links.",
+    "output": "pwd -P"
+  },
+  {
+    "input": "Display the logical path of your current directory, including symlinks.",
+    "output": "pwd -L"
+  },
+  {
+    "input": "Store the present working directory in a variable called dir and print it.",
+    "output": "dir=$(pwd); echo $dir"
+  },
+  {
+    "input": "Output the current directory path with a custom message.",
+    "output": "echo \"You are in: $(pwd)\""
+  },
+  {
+    "input": "Print the current directory from within a shell script.",
+    "output": "#!/bin/bash\necho \"Current dir: $(pwd)\""
+  },
+  {
+    "input": "After changing to /var/log, display your location.",
+    "output": "cd /var/log && pwd"
+  },
+  {
+    "input": "List the contents of your current directory after showing its path.",
+    "output": "pwd && ls"
+  },
+  {
+    "input": "Print the previous working directory.",
+    "output": "echo $OLDPWD"
+  },
+  {
+    "input": "Check the version of the pwd binary on your system.",
+    "output": "/bin/pwd --version"
+  },
+  {
+    "input": "Show help information for the pwd command.",
+    "output": "pwd --help"
+  },
+  {
+    "input": "Use pwd in a script to ensure the user is in /home/user before proceeding.",
+    "output": "if [ $(pwd) != \"/home/user\" ]; then echo \"Please cd to /home/user\"; exit 1; fi"
+  },
+  {
+    "input": "Use pwd as part of a find command to search for .log files in your current directory.",
+    "output": "find $(pwd) -name \"*.log\""
+  },
+  {
+    "input": "Print the value of the $PWD environment variable.",
+    "output": "echo $PWD"
+  },
+  {
+    "input": "Use /bin/pwd to display your current directory.",
+    "output": "/bin/pwd"
+  },
+  {
+    "input": "Show your current directory path, even if you navigated there using a symlink.",
+    "output": "pwd -L"
+  },
+  {
+    "input": "Print the physical directory path, ignoring symlinks.",
+    "output": "pwd -P"
+  },
+  {
+    "input": "Display your current directory and store it in a variable for later use in a script.",
+    "output": "current_dir=$(pwd)"
+  },
+  {
+    "input": "Combine pwd with an error message if a directory does not exist.",
+    "output": "if [ ! -d \"/some/dir\" ]; then echo \"Not found, current: $(pwd)\"; fi"
+  },
+  {
+    "input": "Use type -a pwd to find all locations of the pwd executable.",
+    "output": "type -a pwd"
+  },
+  {
+    "input": "Change to the home directory",
+    "output": "cd"
+  },
+  {
+    "input": "Go to the root directory",
+    "output": "cd /"
+  },
+  {
+    "input": "Move to the Documents folder inside the current directory",
+    "output": "cd Documents"
+  },
+  {
+    "input": "Switch to the /usr/local directory",
+    "output": "cd /usr/local"
+  },
+  {
+    "input": "Navigate to the previous directory you were in",
+    "output": "cd -"
+  },
+  {
+    "input": "Go up one directory level",
+    "output": "cd .."
+  },
+  {
+    "input": "Go up two directory levels",
+    "output": "cd ../.."
+  },
+  {
+    "input": "Change to the Downloads directory in your home folder",
+    "output": "cd ~/Downloads"
+  },
+  {
+    "input": "Switch to another user's home directory, for user 'alice'",
+    "output": "cd ~alice"
+  },
+  {
+    "input": "Change to a directory with spaces in its name called 'My Files'",
+    "output": "cd 'My Files'"
+  },
+  {
+    "input": "Change to the directory /var/log using an absolute path",
+    "output": "cd /var/log"
+  },
+  {
+    "input": "Move to a subdirectory called 'projects' inside the current directory",
+    "output": "cd projects"
+  },
+  {
+    "input": "Return to your home directory using the tilde symbol",
+    "output": "cd ~"
+  },
+  {
+    "input": "Change to the parent directory and list its contents",
+    "output": "cd .. && ls"
+  },
+  {
+    "input": "Change to the /tmp directory and print the current directory path",
+    "output": "cd /tmp && pwd"
+  },
+  {
+    "input": "Change to the directory /etc/X11 regardless of your current location",
+    "output": "cd /etc/X11"
+  },
+  {
+    "input": "Change to a directory using a relative path, going up one level and into 'bin'",
+    "output": "cd ../bin"
+  },
+  {
+    "input": "Change to the directory pointed to by the symbolic link 'mylink' without following the link",
+    "output": "cd -P mylink"
+  },
+  {
+    "input": "Change to the directory pointed to by the symbolic link 'mylink' and follow the link",
+    "output": "cd -L mylink"
+  },
+  {
+    "input": "Go to your home directory",
+    "output": "cd"
+  },
+  {
+    "input": "Switch to the root directory",
+    "output": "cd /"
+  },
+  {
+    "input": "Move to the Documents folder",
+    "output": "cd Documents"
+  },
+  {
+    "input": "Change to the Downloads directory in your home folder",
+    "output": "cd ~/Downloads"
+  },
+  {
+    "input": "Go up one directory level",
+    "output": "cd .."
+  },
+  {
+    "input": "Go up two directory levels",
+    "output": "cd ../.."
+  },
+  {
+    "input": "Change to the /etc directory",
+    "output": "cd /etc"
+  },
+  {
+    "input": "Switch to the /usr/local directory",
+    "output": "cd /usr/local"
+  },
+  {
+    "input": "Navigate to the previous directory",
+    "output": "cd -"
+  },
+  {
+    "input": "Change to the Pictures folder inside Documents",
+    "output": "cd Documents/Pictures"
+  },
+  {
+    "input": "Go to the /var/log directory",
+    "output": "cd /var/log"
+  },
+  {
+    "input": "Change to the /tmp directory",
+    "output": "cd /tmp"
+  },
+  {
+    "input": "Go to the Music directory in your home folder",
+    "output": "cd ~/Music"
+  },
+  {
+    "input": "Change to the parent directory and list its contents",
+    "output": "cd .. && ls"
+  },
+  {
+    "input": "Move to the Desktop directory",
+    "output": "cd Desktop"
+  },
+  {
+    "input": "Change to the /opt directory",
+    "output": "cd /opt"
+  },
+  {
+    "input": "Switch to another user's home directory (alice)",
+    "output": "cd ~alice"
+  },
+  {
+    "input": "Change to the /srv/www directory",
+    "output": "cd /srv/www"
+  },
+  {
+    "input": "Change to the /mnt directory",
+    "output": "cd /mnt"
+  },
+  {
+    "input": "Go to the /media directory",
+    "output": "cd /media"
+  },
+  {
+    "input": "Change to the /dev directory",
+    "output": "cd /dev"
+  },
+  {
+    "input": "Change to the /proc directory",
+    "output": "cd /proc"
+  },
+  {
+    "input": "Move to the /sys directory",
+    "output": "cd /sys"
+  },
+  {
+    "input": "Change to the /run directory",
+    "output": "cd /run"
+  },
+  {
+    "input": "Change to the /boot directory",
+    "output": "cd /boot"
+  },
+  {
+    "input": "Switch to the /home directory",
+    "output": "cd /home"
+  },
+  {
+    "input": "Go to the /usr/bin directory",
+    "output": "cd /usr/bin"
+  },
+  {
+    "input": "Change to the /usr/sbin directory",
+    "output": "cd /usr/sbin"
+  },
+  {
+    "input": "Go to the /usr/share directory",
+    "output": "cd /usr/share"
+  },
+  {
+    "input": "Change to the /lib directory",
+    "output": "cd /lib"
+  },
+  {
+    "input": "Change to the /lib64 directory",
+    "output": "cd /lib64"
+  },
+  {
+    "input": "Switch to the /sbin directory",
+    "output": "cd /sbin"
+  },
+  {
+    "input": "Change to the /bin directory",
+    "output": "cd /bin"
+  },
+  {
+    "input": "Change to a directory called 'projects' in your home",
+    "output": "cd ~/projects"
+  },
+  {
+    "input": "Change to a directory called 'work' in your home",
+    "output": "cd ~/work"
+  },
+  {
+    "input": "Go to a directory named 'backup' in /var",
+    "output": "cd /var/backup"
+  },
+  {
+    "input": "Change to the /usr/local/bin directory",
+    "output": "cd /usr/local/bin"
+  },
+  {
+    "input": "Change to the /usr/local/sbin directory",
+    "output": "cd /usr/local/sbin"
+  },
+  {
+    "input": "Change to the /usr/local/share directory",
+    "output": "cd /usr/local/share"
+  },
+  {
+    "input": "Change to the /usr/include directory",
+    "output": "cd /usr/include"
+  },
+  {
+    "input": "Change to the /usr/games directory",
+    "output": "cd /usr/games"
+  },
+  {
+    "input": "Change to the /usr/src directory",
+    "output": "cd /usr/src"
+  },
+  {
+    "input": "Change to the /usr/lib directory",
+    "output": "cd /usr/lib"
+  },
+  {
+    "input": "Change to the /usr/lib64 directory",
+    "output": "cd /usr/lib64"
+  },
+  {
+    "input": "Change to the /lost+found directory",
+    "output": "cd /lost+found"
+  },
+  {
+    "input": "Change to the /snap directory",
+    "output": "cd /snap"
+  },
+  {
+    "input": "Change to a directory with spaces in its name called 'My Files'",
+    "output": "cd 'My Files'"
+  },
+  {
+    "input": "Change to a hidden directory called '.config' in your home",
+    "output": "cd ~/.config"
+  },
+  {
+    "input": "Change to a hidden directory called '.ssh' in your home",
+    "output": "cd ~/.ssh"
+  },
+  {
+    "input": "Change to a directory called 'test' in the current directory",
+    "output": "cd test"
+  },
+  {
+    "input": "Change to a directory called 'scripts' in the current directory",
+    "output": "cd scripts"
+  },
+  {
+    "input": "Change to the directory /etc/X11",
+    "output": "cd /etc/X11"
+  },
+  {
+    "input": "Change to the directory /etc/network",
+    "output": "cd /etc/network"
+  },
+  {
+    "input": "Change to the directory /etc/apt",
+    "output": "cd /etc/apt"
+  },
+  {
+    "input": "Change to the directory /etc/systemd",
+    "output": "cd /etc/systemd"
+  },
+  {
+    "input": "Change to the directory /etc/cron.d",
+    "output": "cd /etc/cron.d"
+  },
+  {
+    "input": "Change to the directory /etc/init.d",
+    "output": "cd /etc/init.d"
+  },
+  {
+    "input": "Change to the directory /etc/skel",
+    "output": "cd /etc/skel"
+  },
+  {
+    "input": "Change to the directory /etc/ssl",
+    "output": "cd /etc/ssl"
+  },
+  {
+    "input": "Change to the directory /etc/security",
+    "output": "cd /etc/security"
+  },
+  {
+    "input": "Change to the directory /etc/pam.d",
+    "output": "cd /etc/pam.d"
+  },
+  {
+    "input": "Change to the directory /etc/profile.d",
+    "output": "cd /etc/profile.d"
+  },
+  {
+    "input": "Change to the /tmp/test directory",
+    "output": "cd /tmp/test"
+  },
+  {
+    "input": "Change to the /tmp/logs directory",
+    "output": "cd /tmp/logs"
+  },
+  {
+    "input": "Change to the /tmp/build directory",
+    "output": "cd /tmp/build"
+  },
+  {
+    "input": "Change to the /var/cache directory",
+    "output": "cd /var/cache"
+  },
+  {
+    "input": "Change to the /var/spool directory",
+    "output": "cd /var/spool"
+  },
+  {
+    "input": "Change to the /var/mail directory",
+    "output": "cd /var/mail"
+  },
+  {
+    "input": "Change to the /var/tmp directory",
+    "output": "cd /var/tmp"
+  },
+  {
+    "input": "Change to the /var/lib directory",
+    "output": "cd /var/lib"
+  },
+  {
+    "input": "Change to the /var/run directory",
+    "output": "cd /var/run"
+  },
+  {
+    "input": "Change to the /var/lock directory",
+    "output": "cd /var/lock"
+  },
+  {
+    "input": "Change to the /var/backups directory",
+    "output": "cd /var/backups"
+  },
+  {
+    "input": "Change to the /var/opt directory",
+    "output": "cd /var/opt"
+  },
+  {
+    "input": "Change to the /var/crash directory",
+    "output": "cd /var/crash"
+  },
+  {
+    "input": "Change to the /var/log/apache2 directory",
+    "output": "cd /var/log/apache2"
+  },
+  {
+    "input": "Change to the /var/log/nginx directory",
+    "output": "cd /var/log/nginx"
+  },
+  {
+    "input": "Change to the /var/log/mysql directory",
+    "output": "cd /var/log/mysql"
+  },
+  {
+    "input": "Change to the /var/log/postgresql directory",
+    "output": "cd /var/log/postgresql"
+  },
+  {
+    "input": "Change to the /var/log/syslog directory",
+    "output": "cd /var/log/syslog"
+  },
+  {
+    "input": "Change to the /var/log/journal directory",
+    "output": "cd /var/log/journal"
+  },
+  {
+    "input": "Change to the /var/log/kern directory",
+    "output": "cd /var/log/kern"
+  },
+  {
+    "input": "Change to the /var/log/auth directory",
+    "output": "cd /var/log/auth"
+  },
+  {
+    "input": "Change to the /var/log/apt directory",
+    "output": "cd /var/log/apt"
+  },
+  {
+    "input": "Change to the /var/log/dpkg directory",
+    "output": "cd /var/log/dpkg"
+  },
+  {
+    "input": "Change to the /var/log/user directory",
+    "output": "cd /var/log/user"
+  },
+  {
+    "input": "Change to the /var/log/installer directory",
+    "output": "cd /var/log/installer"
+  },
+  {
+    "input": "Change to the /var/log/boot directory",
+    "output": "cd /var/log/boot"
+  },
+  {
+    "input": "Change to the /var/log/fsck directory",
+    "output": "cd /var/log/fsck"
+  },
+  {
+    "input": "Change to the /var/log/sa directory",
+    "output": "cd /var/log/sa"
+  },
+  {
+    "input": "Change to the /var/log/pm-powersave directory",
+    "output": "cd /var/log/pm-powersave"
+  },
+  {
+    "input": "Change to the /var/log/aptitude directory",
+    "output": "cd /var/log/aptitude"
+  },
+  {
+    "input": "Change to the /var/log/unattended-upgrades directory",
+    "output": "cd /var/log/unattended-upgrades"
+  },
+  {
+    "input": "Change to the /var/log/clamav directory",
+    "output": "cd /var/log/clamav"
+  },
+  {
+    "input": "Change to the /var/log/exim4 directory",
+    "output": "cd /var/log/exim4"
+  },
+  {
+    "input": "Change to the /var/log/news directory",
+    "output": "cd /var/log/news"
+  },
+  {
+    "input": "Change to the /var/log/ppp directory",
+    "output": "cd /var/log/ppp"
+  },
+  {
+    "input": "Change to the /var/log/samba directory",
+    "output": "cd /var/log/samba"
+  },
+  {
+    "input": "Change to the /var/log/ufw directory",
+    "output": "cd /var/log/ufw"
+  },
+  {
+    "input": "Change to the /var/log/wtmp directory",
+    "output": "cd /var/log/wtmp"
+  },
+  {
+    "input": "Change to the /var/log/xrdp directory",
+    "output": "cd /var/log/xrdp"
+  },
+  {
+    "input": "Change to the /var/log/yum.log directory",
+    "output": "cd /var/log/yum.log"
+  },
+  {
+    "input": "Change to the /var/log/zypper.log directory",
+    "output": "cd /var/log/zypper.log"
+  },
+  {
+    "input": "Change to the /var/log/lastlog directory",
+    "output": "cd /var/log/lastlog"
+  },
+  {
+    "input": "Change to the /var/log/messages directory",
+    "output": "cd /var/log/messages"
+  },
+  {
+    "input": "Change to the /var/log/secure directory",
+    "output": "cd /var/log/secure"
+  },
+  {
+    "input": "Change to the /var/log/maillog directory",
+    "output": "cd /var/log/maillog"
+  },
+  {
+    "input": "Change to the /var/log/cron directory",
+    "output": "cd /var/log/cron"
+  },
+  {
+    "input": "Change to the /var/log/audit directory",
+    "output": "cd /var/log/audit"
+  },
+  {
+    "input": "Change to the /var/log/btmp directory",
+    "output": "cd /var/log/btmp"
+  },
+  {
+    "input": "Change to the /var/log/alternatives.log directory",
+    "output": "cd /var/log/alternatives.log"
+  },
+  {
+    "input": "Change to the /var/log/apt/history.log directory",
+    "output": "cd /var/log/apt/history.log"
+  },
+  {
+    "input": "Change to the /var/log/apt/term.log directory",
+    "output": "cd /var/log/apt/term.log"
+  },
+  {
+    "input": "Change to the /var/log/aptitude directory",
+    "output": "cd /var/log/aptitude"
+  },
+  {
+    "input": "Change to the /var/log/boot.log directory",
+    "output": "cd /var/log/boot.log"
+  },
+  {
+    "input": "Change to the /var/log/dmesg directory",
+    "output": "cd /var/log/dmesg"
+  },
+  {
+    "input": "Change to the /var/log/fail2ban.log directory",
+    "output": "cd /var/log/fail2ban.log"
+  },
+  {
+    "input": "Change to the /var/log/fontconfig.log directory",
+    "output": "cd /var/log/fontconfig.log"
+  },
+  {
+    "input": "Change to the /var/log/gpu-manager.log directory",
+    "output": "cd /var/log/gpu-manager.log"
+  },
+  {
+    "input": "Change to the /var/log/hp directory",
+    "output": "cd /var/log/hp"
+  },
+  {
+    "input": "Change to the /var/log/kern.log directory",
+    "output": "cd /var/log/kern.log"
+  },
+  {
+    "input": "Change to the /var/log/lastlog directory",
+    "output": "cd /var/log/lastlog"
+  },
+  {
+    "input": "Change to the /var/log/lightdm directory",
+    "output": "cd /var/log/lightdm"
+  },
+  {
+    "input": "Change to the /var/log/mail.err directory",
+    "output": "cd /var/log/mail.err"
+  },
+  {
+    "input": "Change to the /var/log/mail.info directory",
+    "output": "cd /var/log/mail.info"
+  },
+  {
+    "input": "Change to the /var/log/mail.log directory",
+    "output": "cd /var/log/mail.log"
+  },
+  {
+    "input": "Change to the /var/log/mail.warn directory",
+    "output": "cd /var/log/mail.warn"
+  },
+  {
+    "input": "Change to the /var/log/messages directory",
+    "output": "cd /var/log/messages"
+  },
+  {
+    "input": "Change to the /var/log/pm-powersave.log directory",
+    "output": "cd /var/log/pm-powersave.log"
+  },
+  {
+    "input": "Change to the /var/log/syslog directory",
+    "output": "cd /var/log/syslog"
+  },
+  {
+    "input": "Change to the /var/log/user.log directory",
+    "output": "cd /var/log/user.log"
+  },
+  {
+    "input": "Change to the /var/log/wtmp directory",
+    "output": "cd /var/log/wtmp"
+  },
+  {
+    "input": "Change to the /var/log/Xorg.0.log directory",
+    "output": "cd /var/log/Xorg.0.log"
+  },
+  {
+    "input": "Change to the /var/log/Xorg.1.log directory",
+    "output": "cd /var/log/Xorg.1.log"
+  },
+  {
+    "input": "Change to the /var/log/Xorg.failsafe.log directory",
+    "output": "cd /var/log/Xorg.failsafe.log"
+  },
+  {
+    "input": "Change to the /var/log/yum.log directory",
+    "output": "cd /var/log/yum.log"
+  },
+  {
+    "input": "Change to the /var/log/zypper.log directory",
+    "output": "cd /var/log/zypper.log"
+  },
+  {
+    "input": "Change to the /var/tmp directory",
+    "output": "cd /var/tmp"
+  },
+  {
+    "input": "Change to the /tmp directory and print the current directory",
+    "output": "cd /tmp && pwd"
+  },
+  {
+    "input": "Change to the directory pointed to by the symbolic link 'mylink' without following the link",
+    "output": "cd -P mylink"
+  },
+  {
+    "input": "Change to the directory pointed to by the symbolic link 'mylink' and follow the link",
+    "output": "cd -L mylink"
+  },
+  {
+    "input": "Change to the parent directory, then to 'bin'",
+    "output": "cd ../bin"
+  },
+  {
+    "input": "Change to the directory /home/user/Documents using an absolute path",
+    "output": "cd /home/user/Documents"
+  },
+  {
+    "input": "Change to the directory /etc/ssl/certs",
+    "output": "cd /etc/ssl/certs"
+  },
+  {
+    "input": "Change to the directory /usr/local/include",
+    "output": "cd /usr/local/include"
+  },
+  {
+    "input": "Change to the directory /usr/local/games",
+    "output": "cd /usr/local/games"
+  },
+  {
+    "input": "Change to the directory /usr/local/src",
+    "output": "cd /usr/local/src"
+  },
+  {
+    "input": "Change to the directory /usr/local/lib",
+    "output": "cd /usr/local/lib"
+  },
+  {
+    "input": "Change to the directory /usr/local/lib64",
+    "output": "cd /usr/local/lib64"
+  },
+  {
+    "input": "Change to the directory /usr/local/etc",
+    "output": "cd /usr/local/etc"
+  },
+  {
+    "input": "Change to the directory /usr/local/var",
+    "output": "cd /usr/local/var"
+  },
+  {
+    "input": "Change to the directory /usr/local/tmp",
+    "output": "cd /usr/local/tmp"
+  },
+  {
+    "input": "Change to the directory /usr/local/opt",
+    "output": "cd /usr/local/opt"
+  },
+  {
+    "input": "Change to the directory /usr/local/share/man",
+    "output": "cd /usr/local/share/man"
+  },
+  {
+    "input": "Change to the directory /usr/local/share/doc",
+    "output": "cd /usr/local/share/doc"
+  },
+  {
+    "input": "Change to the directory /usr/share/doc",
+    "output": "cd /usr/share/doc"
+  },
+  {
+    "input": "Change to the directory /usr/share/man",
+    "output": "cd /usr/share/man"
+  },
+  {
+    "input": "Change to the directory /usr/share/icons",
+    "output": "cd /usr/share/icons"
+  },
+  {
+    "input": "Change to the directory /usr/share/fonts",
+    "output": "cd /usr/share/fonts"
+  },
+  {
+    "input": "Change to the directory /usr/share/themes",
+    "output": "cd /usr/share/themes"
+  },
+  {
+    "input": "Change to the directory /usr/share/backgrounds",
+    "output": "cd /usr/share/backgrounds"
+  },
+  {
+    "input": "Change to the directory /usr/share/applications",
+    "output": "cd /usr/share/applications"
+  },
+  {
+    "input": "Change to the directory /usr/share/locale",
+    "output": "cd /usr/share/locale"
+  },
+  {
+    "input": "Change to the directory /usr/share/mime",
+    "output": "cd /usr/share/mime"
+  },
+  {
+    "input": "Change to the directory /usr/share/pixmaps",
+    "output": "cd /usr/share/pixmaps"
+  },
+  {
+    "input": "Change to the directory /usr/share/sounds",
+    "output": "cd /usr/share/sounds"
+  },
+  {
+    "input": "Change to the directory /usr/share/zoneinfo",
+    "output": "cd /usr/share/zoneinfo"
+  },
+  {
+    "input": "Change to the directory /usr/share/terminfo",
+    "output": "cd /usr/share/terminfo"
+  },
+  {
+    "input": "Change to the directory /usr/share/vim",
+    "output": "cd /usr/share/vim"
+  },
+  {
+    "input": "Change to the directory /usr/share/xfce4",
+    "output": "cd /usr/share/xfce4"
+  },
+  {
+    "input": "Change to the directory /usr/share/gnome",
+    "output": "cd /usr/share/gnome"
+  },
+  {
+    "input": "Change to the directory /usr/share/kde4",
+    "output": "cd /usr/share/kde4"
+  },
+  {
+    "input": "Change to the directory /usr/share/kde5",
+    "output": "cd /usr/share/kde5"
+  },
+  {
+    "input": "Change to the directory /usr/share/games",
+    "output": "cd /usr/share/games"
+  },
+  {
+    "input": "Change to the directory /usr/share/perl5",
+    "output": "cd /usr/share/perl5"
+  },
+  {
+    "input": "Change to the directory /usr/share/python",
+    "output": "cd /usr/share/python"
+  },
+  {
+    "input": "Change to the directory /usr/share/texmf",
+    "output": "cd /usr/share/texmf"
+  },
+  {
+    "input": "Change to the directory /usr/share/emacs",
+    "output": "cd /usr/share/emacs"
+  },
+  {
+    "input": "Change to the directory /usr/share/doc-base",
+    "output": "cd /usr/share/doc-base"
+  },
+  {
+    "input": "Change to the directory /usr/share/info",
+    "output": "cd /usr/share/info"
+  },
+  {
+    "input": "Change to the directory /usr/share/lintian",
+    "output": "cd /usr/share/lintian"
+  },
+  {
+    "input": "Change to the directory /usr/share/linda",
+    "output": "cd /usr/share/linda"
+  },
+  {
+    "input": "Change to the directory /usr/share/locale-langpack",
+    "output": "cd /usr/share/locale-langpack"
+  },
+  {
+    "input": "Change to the directory /usr/share/zoneinfo/Asia",
+    "output": "cd /usr/share/zoneinfo/Asia"
+  },
+  {
+    "input": "Change to the directory /usr/share/zoneinfo/Europe",
+    "output": "cd /usr/share/zoneinfo/Europe"
+  },
+  {
+    "input": "Change to the directory /usr/share/zoneinfo/America",
+    "output": "cd /usr/share/zoneinfo/America"
+  },
+  {
+    "input": "Change to the directory /usr/share/zoneinfo/Africa",
+    "output": "cd /usr/share/zoneinfo/Africa"
+  },
+  {
+    "input": "Create a directory called 'projects'",
+    "output": "mkdir projects"
+  },
+  {
+    "input": "Make a new directory named 'backup' in the current folder",
+    "output": "mkdir backup"
+  },
+  {
+    "input": "Create a directory named '2025_reports' inside Documents",
+    "output": "mkdir Documents/2025_reports"
+  },
+  {
+    "input": "Create a directory called 'test' in your home directory",
+    "output": "mkdir ~/test"
+  },
+  {
+    "input": "Make a directory called 'work' in /tmp",
+    "output": "mkdir /tmp/work"
+  },
+  {
+    "input": "Create a directory called 'data' inside /var/log",
+    "output": "mkdir /var/log/data"
+  },
+  {
+    "input": "Create a nested directory structure 'a/b/c'",
+    "output": "mkdir -p a/b/c"
+  },
+  {
+    "input": "Create a directory named 'My Files' with spaces in the name",
+    "output": "mkdir 'My Files'"
+  },
+  {
+    "input": "Make a hidden directory called '.config' in your home",
+    "output": "mkdir ~/.config"
+  },
+  {
+    "input": "Create a directory called 'scripts' in the current directory",
+    "output": "mkdir scripts"
+  },
+  {
+    "input": "Make a directory named 'photos' in the Pictures folder",
+    "output": "mkdir ~/Pictures/photos"
+  },
+  {
+    "input": "Create a directory named 'downloads' in /mnt/usb",
+    "output": "mkdir /mnt/usb/downloads"
+  },
+  {
+    "input": "Create a directory named 'archive' in /opt",
+    "output": "mkdir /opt/archive"
+  },
+  {
+    "input": "Create a directory called 'logs' and another called 'tmp' at the same time",
+    "output": "mkdir logs tmp"
+  },
+  {
+    "input": "Create a directory called '2025' inside /srv/www",
+    "output": "mkdir /srv/www/2025"
+  },
+  {
+    "input": "Create a directory called 'backup_2025' in /var/backups",
+    "output": "mkdir /var/backups/backup_2025"
+  },
+  {
+    "input": "Create a directory called 'private' in your home",
+    "output": "mkdir ~/private"
+  },
+  {
+    "input": "Create a directory named 'bin' in the parent directory",
+    "output": "mkdir ../bin"
+  },
+  {
+    "input": "Create a directory named 'reports' in /home/user/Documents",
+    "output": "mkdir /home/user/Documents/reports"
+  },
+  {
+    "input": "Create a directory called 'testdir' and enter it",
+    "output": "mkdir testdir && cd testdir"
+  },
+  {
+    "input": "Create a directory called 'build' in the current directory",
+    "output": "mkdir build"
+  },
+  {
+    "input": "Create a directory '2025/June/18' with all parents",
+    "output": "mkdir -p 2025/June/18"
+  },
+  {
+    "input": "Create a directory called 'new_folder' in /etc",
+    "output": "mkdir /etc/new_folder"
+  },
+  {
+    "input": "Create a directory called 'cache' in /var",
+    "output": "mkdir /var/cache"
+  },
+  {
+    "input": "Create a directory called 'logs' inside /var/log",
+    "output": "mkdir /var/log/logs"
+  },
+  {
+    "input": "Create a directory called 'docs' in /usr/share",
+    "output": "mkdir /usr/share/docs"
+  },
+  {
+    "input": "Make a directory called 'src' in /usr/local",
+    "output": "mkdir /usr/local/src"
+  },
+  {
+    "input": "Create a directory called 'media' in /mnt",
+    "output": "mkdir /mnt/media"
+  },
+  {
+    "input": "Create a directory called 'images' in the Desktop directory",
+    "output": "mkdir ~/Desktop/images"
+  },
+  {
+    "input": "Create a directory called 'videos' in /media/usb",
+    "output": "mkdir /media/usb/videos"
+  },
+  {
+    "input": "Create a directory called 'notes' in your home directory",
+    "output": "mkdir ~/notes"
+  },
+  {
+    "input": "Create a directory called 'temp' in /tmp",
+    "output": "mkdir /tmp/temp"
+  },
+  {
+    "input": "Create a directory called 'test_logs' in the current directory",
+    "output": "mkdir test_logs"
+  },
+  {
+    "input": "Create a directory called 'config' in /etc",
+    "output": "mkdir /etc/config"
+  },
+  {
+    "input": "Create a directory called 'public_html' in your home",
+    "output": "mkdir ~/public_html"
+  },
+  {
+    "input": "Create a directory called 'dev' in /srv",
+    "output": "mkdir /srv/dev"
+  },
+  {
+    "input": "Create a directory called 'lib' in /usr/local",
+    "output": "mkdir /usr/local/lib"
+  },
+  {
+    "input": "Create a directory called 'share' in /usr/local",
+    "output": "mkdir /usr/local/share"
+  },
+  {
+    "input": "Create a directory called 'docs' in /usr/local/share",
+    "output": "mkdir /usr/local/share/docs"
+  },
+  {
+    "input": "Create a directory called 'projects' and a subdirectory '2025' in one command",
+    "output": "mkdir -p projects/2025"
+  },
+  {
+    "input": "Create a directory called 'python3' in /usr/bin",
+    "output": "mkdir /usr/bin/python3"
+  },
+  {
+    "input": "Create a directory called 'backup' inside /etc/ssl",
+    "output": "mkdir /etc/ssl/backup"
+  },
+  {
+    "input": "Create a directory called 'archive' in /var/mail",
+    "output": "mkdir /var/mail/archive"
+  },
+  {
+    "input": "Create a directory called 'logs' in /var/tmp",
+    "output": "mkdir /var/tmp/logs"
+  },
+  {
+    "input": "Create a directory called 'monthly' in /var/log/backup",
+    "output": "mkdir /var/log/backup/monthly"
+  },
+  {
+    "input": "Create a directory called 'weekly' in /var/log/backup",
+    "output": "mkdir /var/log/backup/weekly"
+  },
+  {
+    "input": "Create a directory called 'daily' in /var/log/backup",
+    "output": "mkdir /var/log/backup/daily"
+  },
+  {
+    "input": "Create a directory called 'test' in /var/spool",
+    "output": "mkdir /var/spool/test"
+  },
+  {
+    "input": "Create a directory called 'queue' in /var/spool",
+    "output": "mkdir /var/spool/queue"
+  },
+  {
+    "input": "Create a directory called 'mail' in /var/spool",
+    "output": "mkdir /var/spool/mail"
+  },
+  {
+    "input": "Create a directory called 'cron' in /var/spool",
+    "output": "mkdir /var/spool/cron"
+  },
+  {
+    "input": "Create a directory called 'jobs' in /var/spool/cron",
+    "output": "mkdir /var/spool/cron/jobs"
+  },
+  {
+    "input": "Create a directory called 'old' in /var/log",
+    "output": "mkdir /var/log/old"
+  },
+  {
+    "input": "Create a directory called 'backup' in /home/alice",
+    "output": "mkdir /home/alice/backup"
+  },
+  {
+    "input": "Create a directory called 'backup' in /home/bob",
+    "output": "mkdir /home/bob/backup"
+  },
+  {
+    "input": "Create a directory called 'test' in /home/alice",
+    "output": "mkdir /home/alice/test"
+  },
+  {
+    "input": "Create a directory called 'test' in /home/bob",
+    "output": "mkdir /home/bob/test"
+  },
+  {
+    "input": "Create a directory called 'test' in /home/charlie",
+    "output": "mkdir /home/charlie/test"
+  },
+  {
+    "input": "Create a directory called 'test' in /home/dave",
+    "output": "mkdir /home/dave/test"
+  },
+  {
+    "input": "Create a directory called 'test' in /home/erin",
+    "output": "mkdir /home/erin/test"
+  },
+  {
+    "input": "Create a directory called 'test' in /home/frank",
+    "output": "mkdir /home/frank/test"
+  },
+  {
+    "input": "Create a directory called 'test' in /home/grace",
+    "output": "mkdir /home/grace/test"
+  },
+  {
+    "input": "Create a directory called 'test' in /home/harry",
+    "output": "mkdir /home/harry/test"
+  },
+  {
+    "input": "Create a directory called 'temp' in /home/alice",
+    "output": "mkdir /home/alice/temp"
+  },
+  {
+    "input": "Create a directory called 'temp' in /home/bob",
+    "output": "mkdir /home/bob/temp"
+  },
+  {
+    "input": "Create a directory called 'temp' in /home/charlie",
+    "output": "mkdir /home/charlie/temp"
+  },
+  {
+    "input": "Create a directory called 'temp' in /home/dave",
+    "output": "mkdir /home/dave/temp"
+  },
+  {
+    "input": "Create a directory called 'temp' in /home/erin",
+    "output": "mkdir /home/erin/temp"
+  },
+  {
+    "input": "Create a directory called 'temp' in /home/frank",
+    "output": "mkdir /home/frank/temp"
+  },
+  {
+    "input": "Create a directory called 'temp' in /home/grace",
+    "output": "mkdir /home/grace/temp"
+  },
+  {
+    "input": "Create a directory called 'temp' in /home/harry",
+    "output": "mkdir /home/harry/temp"
+  },
+  {
+    "input": "Create a directory called 'workspace' in your home",
+    "output": "mkdir ~/workspace"
+  },
+  {
+    "input": "Create a directory called 'builds' in your home",
+    "output": "mkdir ~/builds"
+  },
+  {
+    "input": "Create a directory called 'logs' in your home",
+    "output": "mkdir ~/logs"
+  },
+  {
+    "input": "Create a directory called 'test_data' in your home",
+    "output": "mkdir ~/test_data"
+  },
+  {
+    "input": "Create a directory called 'test_output' in your home",
+    "output": "mkdir ~/test_output"
+  },
+  {
+    "input": "Create a directory called 'projects' in your home",
+    "output": "mkdir ~/projects"
+  },
+  {
+    "input": "Create a directory called 'archives' in your home",
+    "output": "mkdir ~/archives"
+  },
+  {
+    "input": "Create a directory called 'music' in your home",
+    "output": "mkdir ~/music"
+  },
+  {
+    "input": "Create a directory called 'videos' in your home",
+    "output": "mkdir ~/videos"
+  },
+  {
+    "input": "Create a directory called 'pictures' in your home",
+    "output": "mkdir ~/pictures"
+  },
+  {
+    "input": "Create a directory called 'documents' in your home",
+    "output": "mkdir ~/documents"
+  },
+  {
+    "input": "Create a directory called 'downloads' in your home",
+    "output": "mkdir ~/downloads"
+  },
+  {
+    "input": "Create a directory called 'bin' in your home",
+    "output": "mkdir ~/bin"
+  },
+  {
+    "input": "Create a directory called 'src' in your home",
+    "output": "mkdir ~/src"
+  },
+  {
+    "input": "Create a directory called 'include' in your home",
+    "output": "mkdir ~/include"
+  },
+  {
+    "input": "Create a directory called 'lib' in your home",
+    "output": "mkdir ~/lib"
+  },
+  {
+    "input": "Create a directory called 'share' in your home",
+    "output": "mkdir ~/share"
+  },
+  {
+    "input": "Create a directory called 'opt' in your home",
+    "output": "mkdir ~/opt"
+  },
+  {
+    "input": "Create a directory called 'etc' in your home",
+    "output": "mkdir ~/etc"
+  },
+  {
+    "input": "Create a directory called 'var' in your home",
+    "output": "mkdir ~/var"
+  },
+  {
+    "input": "Create a directory called 'tmp' in your home",
+    "output": "mkdir ~/tmp"
+  },
+  {
+    "input": "Create a directory called 'man' in your home",
+    "output": "mkdir ~/man"
+  },
+  {
+    "input": "Create a directory called 'doc' in your home",
+    "output": "mkdir ~/doc"
+  },
+  {
+    "input": "Create a directory called 'info' in your home",
+    "output": "mkdir ~/info"
+  },
+  {
+    "input": "Create a directory called 'locale' in your home",
+    "output": "mkdir ~/locale"
+  },
+  {
+    "input": "Create a directory called 'zoneinfo' in your home",
+    "output": "mkdir ~/zoneinfo"
+  },
+  {
+    "input": "Create a directory called 'fonts' in your home",
+    "output": "mkdir ~/fonts"
+  },
+  {
+    "input": "Create a directory called 'themes' in your home",
+    "output": "mkdir ~/themes"
+  },
+  {
+    "input": "Create a directory called 'icons' in your home",
+    "output": "mkdir ~/icons"
+  },
+  {
+    "input": "Create a directory called 'backgrounds' in your home",
+    "output": "mkdir ~/backgrounds"
+  },
+  {
+    "input": "Create a directory called 'applications' in your home",
+    "output": "mkdir ~/applications"
+  },
+  {
+    "input": "Create a directory called 'sounds' in your home",
+    "output": "mkdir ~/sounds"
+  },
+  {
+    "input": "Create a directory called 'pixmaps' in your home",
+    "output": "mkdir ~/pixmaps"
+  },
+  {
+    "input": "Create a directory called 'mime' in your home",
+    "output": "mkdir ~/mime"
+  },
+  {
+    "input": "Create a directory called 'games' in your home",
+    "output": "mkdir ~/games"
+  },
+  {
+    "input": "Create a directory called 'perl5' in your home",
+    "output": "mkdir ~/perl5"
+  },
+  {
+    "input": "Create a directory called 'python' in your home",
+    "output": "mkdir ~/python"
+  },
+  {
+    "input": "Create a directory called 'texmf' in your home",
+    "output": "mkdir ~/texmf"
+  },
+  {
+    "input": "Create a directory called 'emacs' in your home",
+    "output": "mkdir ~/emacs"
+  },
+  {
+    "input": "Create a directory called 'doc-base' in your home",
+    "output": "mkdir ~/doc-base"
+  },
+  {
+    "input": "Create a directory called 'lintian' in your home",
+    "output": "mkdir ~/lintian"
+  },
+  {
+    "input": "Create a directory called 'linda' in your home",
+    "output": "mkdir ~/linda"
+  },
+  {
+    "input": "Create a directory called 'locale-langpack' in your home",
+    "output": "mkdir ~/locale-langpack"
+  },
+  {
+    "input": "Create a directory called 'Asia' in your home",
+    "output": "mkdir ~/Asia"
+  },
+  {
+    "input": "Create a directory called 'Europe' in your home",
+    "output": "mkdir ~/Europe"
+  },
+  {
+    "input": "Create a directory called 'America' in your home",
+    "output": "mkdir ~/America"
+  },
+  {
+    "input": "Create a directory called 'Africa' in your home",
+    "output": "mkdir ~/Africa"
+  },
+  {
+    "input": "Create a deeply nested directory structure 'a/b/c/d/e/f'",
+    "output": "mkdir -p a/b/c/d/e/f"
+  },
+  {
+    "input": "Create a directory called 'test' and suppress error if it exists",
+    "output": "mkdir -p test"
+  },
+  {
+    "input": "Create multiple directories at once: 'a', 'b', and 'c'",
+    "output": "mkdir a b c"
+  },
+  {
+    "input": "Create a directory called 'test' in the current directory and set permissions to 700",
+    "output": "mkdir test && chmod 700 test"
+  },
+  {
+    "input": "Remove an empty directory called 'oldfolder'",
+    "output": "rmdir oldfolder"
+  },
+  {
+    "input": "Delete an empty directory named 'backup' in the current folder",
+    "output": "rmdir backup"
+  },
+  {
+    "input": "Remove the directory '2025_reports' inside Documents if it is empty",
+    "output": "rmdir Documents/2025_reports"
+  },
+  {
+    "input": "Delete an empty directory called 'old_logs' in your home directory",
+    "output": "rmdir ~/old_logs"
+  },
+  {
+    "input": "Remove an empty directory called 'work' in /tmp",
+    "output": "rmdir /tmp/work"
+  },
+  {
+    "input": "Delete an empty directory called 'data' inside /var/log",
+    "output": "rmdir /var/log/data"
+  },
+  {
+    "input": "Remove a nested empty directory structure 'a/b/c' in one command",
+    "output": "rmdir -p a/b/c"
+  },
+  {
+    "input": "Delete a directory named 'My Files' with spaces in the name if it is empty",
+    "output": "rmdir 'My Files'"
+  },
+  {
+    "input": "Remove a hidden empty directory called '.config' in your home",
+    "output": "rmdir ~/.config"
+  },
+  {
+    "input": "Delete an empty directory called 'scripts' in the current directory",
+    "output": "rmdir scripts"
+  },
+  {
+    "input": "Remove an empty directory named 'photos' in the Pictures folder",
+    "output": "rmdir ~/Pictures/photos"
+  },
+  {
+    "input": "Delete an empty directory named 'downloads' in /mnt/usb",
+    "output": "rmdir /mnt/usb/downloads"
+  },
+  {
+    "input": "Remove an empty directory named 'archive' in /opt",
+    "output": "rmdir /opt/archive"
+  },
+  {
+    "input": "Delete two empty directories called 'logs' and 'tmp' at the same time",
+    "output": "rmdir logs tmp"
+  },
+  {
+    "input": "Remove an empty directory called '2025' inside /srv/www",
+    "output": "rmdir /srv/www/2025"
+  },
+  {
+    "input": "Delete an empty directory called 'backup_2025' in /var/backups",
+    "output": "rmdir /var/backups/backup_2025"
+  },
+  {
+    "input": "Remove an empty directory called 'private' in your home",
+    "output": "rmdir ~/private"
+  },
+  {
+    "input": "Delete an empty directory named 'bin' in the parent directory",
+    "output": "rmdir ../bin"
+  },
+  {
+    "input": "Remove an empty directory named 'reports' in /home/user/Documents",
+    "output": "rmdir /home/user/Documents/reports"
+  },
+  {
+    "input": "Remove a directory called 'testdir' and its parent directories if they become empty",
+    "output": "rmdir -p testdir"
+  },
+  {
+    "input": "Delete an empty directory called 'build' in the current directory",
+    "output": "rmdir build"
+  },
+  {
+    "input": "Remove a deeply nested empty directory structure '2025/June/18' and all parents if empty",
+    "output": "rmdir -p 2025/June/18"
+  },
+  {
+    "input": "Delete an empty directory called 'new_folder' in /etc",
+    "output": "rmdir /etc/new_folder"
+  },
+  {
+    "input": "Remove an empty directory called 'cache' in /var",
+    "output": "rmdir /var/cache"
+  },
+  {
+    "input": "Delete an empty directory called 'logs' inside /var/log",
+    "output": "rmdir /var/log/logs"
+  },
+  {
+    "input": "Remove an empty directory called 'docs' in /usr/share",
+    "output": "rmdir /usr/share/docs"
+  },
+  {
+    "input": "Delete an empty directory called 'src' in /usr/local",
+    "output": "rmdir /usr/local/src"
+  },
+  {
+    "input": "Remove an empty directory called 'media' in /mnt",
+    "output": "rmdir /mnt/media"
+  },
+  {
+    "input": "Delete an empty directory called 'images' in the Desktop directory",
+    "output": "rmdir ~/Desktop/images"
+  },
+  {
+    "input": "Remove an empty directory called 'videos' in /media/usb",
+    "output": "rmdir /media/usb/videos"
+  },
+  {
+    "input": "Delete an empty directory called 'notes' in your home directory",
+    "output": "rmdir ~/notes"
+  },
+  {
+    "input": "Remove an empty directory called 'temp' in /tmp",
+    "output": "rmdir /tmp/temp"
+  },
+  {
+    "input": "Delete an empty directory called 'test_logs' in the current directory",
+    "output": "rmdir test_logs"
+  },
+  {
+    "input": "Remove an empty directory called 'config' in /etc",
+    "output": "rmdir /etc/config"
+  },
+  {
+    "input": "Delete an empty directory called 'public_html' in your home",
+    "output": "rmdir ~/public_html"
+  },
+  {
+    "input": "Remove an empty directory called 'dev' in /srv",
+    "output": "rmdir /srv/dev"
+  },
+  {
+    "input": "Delete an empty directory called 'lib' in /usr/local",
+    "output": "rmdir /usr/local/lib"
+  },
+  {
+    "input": "Remove an empty directory called 'share' in /usr/local",
+    "output": "rmdir /usr/local/share"
+  },
+  {
+    "input": "Delete an empty directory called 'docs' in /usr/local/share",
+    "output": "rmdir /usr/local/share/docs"
+  },
+  {
+    "input": "Remove an empty directory called 'python3' in /usr/bin",
+    "output": "rmdir /usr/bin/python3"
+  },
+  {
+    "input": "Delete an empty directory called 'backup' inside /etc/ssl",
+    "output": "rmdir /etc/ssl/backup"
+  },
+  {
+    "input": "Remove an empty directory called 'archive' in /var/mail",
+    "output": "rmdir /var/mail/archive"
+  },
+  {
+    "input": "Delete an empty directory called 'logs' in /var/tmp",
+    "output": "rmdir /var/tmp/logs"
+  },
+  {
+    "input": "Remove an empty directory called 'monthly' in /var/log/backup",
+    "output": "rmdir /var/log/backup/monthly"
+  },
+  {
+    "input": "Delete an empty directory called 'weekly' in /var/log/backup",
+    "output": "rmdir /var/log/backup/weekly"
+  },
+  {
+    "input": "Remove an empty directory called 'daily' in /var/log/backup",
+    "output": "rmdir /var/log/backup/daily"
+  },
+  {
+    "input": "Delete an empty directory called 'test' in /var/spool",
+    "output": "rmdir /var/spool/test"
+  },
+  {
+    "input": "Remove an empty directory called 'queue' in /var/spool",
+    "output": "rmdir /var/spool/queue"
+  },
+  {
+    "input": "Delete an empty directory called 'mail' in /var/spool",
+    "output": "rmdir /var/spool/mail"
+  },
+  {
+    "input": "Remove an empty directory called 'cron' in /var/spool",
+    "output": "rmdir /var/spool/cron"
+  },
+  {
+    "input": "Delete an empty directory called 'jobs' in /var/spool/cron",
+    "output": "rmdir /var/spool/cron/jobs"
+  },
+  {
+    "input": "Delete a file called 'oldfile.txt'",
+    "output": "rm oldfile.txt"
+  },
+  {
+    "input": "Remove a file named 'backup.tar.gz' in the current folder",
+    "output": "rm backup.tar.gz"
+  },
+  {
+    "input": "Delete all files ending with .log in the current directory",
+    "output": "rm *.log"
+  },
+  {
+    "input": "Remove a file called 'notes.txt' in your home directory",
+    "output": "rm ~/notes.txt"
+  },
+  {
+    "input": "Delete a file named 'data.csv' in /tmp",
+    "output": "rm /tmp/data.csv"
+  },
+  {
+    "input": "Remove a file called 'error.log' inside /var/log",
+    "output": "rm /var/log/error.log"
+  },
+  {
+    "input": "Delete multiple files 'file1.txt' and 'file2.txt' at the same time",
+    "output": "rm file1.txt file2.txt"
+  },
+  {
+    "input": "Remove all files in the current directory without confirmation",
+    "output": "rm -f *"
+  },
+  {
+    "input": "Delete a directory called 'oldfolder' and all its contents recursively",
+    "output": "rm -r oldfolder"
+  },
+  {
+    "input": "Force delete a directory named 'backup' and everything inside it",
+    "output": "rm -rf backup"
+  },
+  {
+    "input": "Remove a file named 'My File.txt' with spaces in the name",
+    "output": "rm 'My File.txt'"
+  },
+  {
+    "input": "Delete all .tmp files in /var/tmp",
+    "output": "rm /var/tmp/*.tmp"
+  },
+  {
+    "input": "Remove a hidden file called '.env' in your home",
+    "output": "rm ~/.env"
+  },
+  {
+    "input": "Delete a file called 'script.sh' in the current directory",
+    "output": "rm script.sh"
+  },
+  {
+    "input": "Remove all files in the Documents folder",
+    "output": "rm ~/Documents/*"
+  },
+  {
+    "input": "Delete all files and subdirectories in the 'build' directory",
+    "output": "rm -rf build/*"
+  },
+  {
+    "input": "Force delete all files in the Downloads directory",
+    "output": "rm -f ~/Downloads/*"
+  },
+  {
+    "input": "Delete a directory called 'testdir' and its contents without prompts",
+    "output": "rm -rf testdir"
+  },
+  {
+    "input": "Remove all .jpg files in the Pictures folder",
+    "output": "rm ~/Pictures/*.jpg"
+  },
+  {
+    "input": "Delete all files in the current directory that start with 'temp'",
+    "output": "rm temp*"
+  },
+  {
+    "input": "Remove a file called 'config.yaml' in /etc",
+    "output": "rm /etc/config.yaml"
+  },
+  {
+    "input": "Delete all files in /var/log older than 7 days",
+    "output": "find /var/log -type f -mtime +7 -exec rm {} \\;"
+  },
+  {
+    "input": "Force delete a file called 'lockedfile' in /tmp",
+    "output": "rm -f /tmp/lockedfile"
+  },
+  {
+    "input": "Remove all files in the /tmp directory recursively",
+    "output": "rm -rf /tmp/*"
+  },
+  {
+    "input": "Delete a directory called 'archive' in /opt",
+    "output": "rm -r /opt/archive"
+  },
+  {
+    "input": "Remove all files in the Desktop directory",
+    "output": "rm ~/Desktop/*"
+  },
+  {
+    "input": "Delete all files in the current directory and subdirectories",
+    "output": "rm -rf *"
+  },
+  {
+    "input": "Force delete all files and folders in /var/tmp",
+    "output": "rm -rf /var/tmp/*"
+  },
+  {
+    "input": "Remove a file called 'test.log' in the parent directory",
+    "output": "rm ../test.log"
+  },
+  {
+    "input": "Delete all .bak files in the current directory",
+    "output": "rm *.bak"
+  },
+  {
+    "input": "Remove a file called 'draft.docx' in the Documents folder",
+    "output": "rm ~/Documents/draft.docx"
+  },
+  {
+    "input": "Delete all files in /home/user/Downloads",
+    "output": "rm /home/user/Downloads/*"
+  },
+  {
+    "input": "Force delete a directory called 'temp' in /tmp",
+    "output": "rm -rf /tmp/temp"
+  },
+  {
+    "input": "Remove all files in /var/cache",
+    "output": "rm /var/cache/*"
+  },
+  {
+    "input": "Delete a file called 'output.txt' in the current directory",
+    "output": "rm output.txt"
+  },
+  {
+    "input": "Remove all files in /usr/local/bin",
+    "output": "rm /usr/local/bin/*"
+  },
+  {
+    "input": "Delete a file called 'testfile' in /srv/www",
+    "output": "rm /srv/www/testfile"
+  },
+  {
+    "input": "Remove all files in /mnt/usb",
+    "output": "rm /mnt/usb/*"
+  },
+  {
+    "input": "Delete a file called 'logfile' in /var/log",
+    "output": "rm /var/log/logfile"
+  },
+  {
+    "input": "Remove all files in /var/spool/cron",
+    "output": "rm /var/spool/cron/*"
+  },
+  {
+    "input": "Delete a file called 'mail.txt' in /var/mail",
+    "output": "rm /var/mail/mail.txt"
+  },
+  {
+    "input": "Remove all files in /var/log/apache2",
+    "output": "rm /var/log/apache2/*"
+  },
+  {
+    "input": "Delete a file called 'index.html' in /var/www/html",
+    "output": "rm /var/www/html/index.html"
+  },
+  {
+    "input": "Remove all files in /var/log/nginx",
+    "output": "rm /var/log/nginx/*"
+  },
+  {
+    "input": "Delete a file called 'db.sqlite3' in the current directory",
+    "output": "rm db.sqlite3"
+  },
+  {
+    "input": "Remove all files in /var/log/mysql",
+    "output": "rm /var/log/mysql/*"
+  },
+  {
+    "input": "Delete a file called 'access.log' in /var/log",
+    "output": "rm /var/log/access.log"
+  },
+  {
+    "input": "Remove all files in /var/log/postgresql",
+    "output": "rm /var/log/postgresql/*"
+  },
+  {
+    "input": "Delete a file called 'syslog' in /var/log",
+    "output": "rm /var/log/syslog"
+  },
+  {
+    "input": "Remove all files in /var/log/journal",
+    "output": "rm /var/log/journal/*"
+  },
+  {
+    "input": "Delete a file called 'kern.log' in /var/log",
+    "output": "rm /var/log/kern.log"
+  },
+  {
+    "input": "Remove all files in /var/log/auth",
+    "output": "rm /var/log/auth/*"
+  },
+  {
+    "input": "Delete a file called 'apt.log' in /var/log/apt",
+    "output": "rm /var/log/apt/apt.log"
+  },
+  {
+    "input": "Remove all files in /var/log/dpkg",
+    "output": "rm /var/log/dpkg/*"
+  },
+  {
+    "input": "Delete a file called 'user.log' in /var/log",
+    "output": "rm /var/log/user.log"
+  },
+  {
+    "input": "Remove all files in /var/log/installer",
+    "output": "rm /var/log/installer/*"
+  },
+  {
+    "input": "Delete a file called 'boot.log' in /var/log",
+    "output": "rm /var/log/boot.log"
+  },
+  {
+    "input": "Remove all files in /var/log/fsck",
+    "output": "rm /var/log/fsck/*"
+  },
+  {
+    "input": "Delete a file called 'sa.log' in /var/log/sa",
+    "output": "rm /var/log/sa/sa.log"
+  },
+  {
+    "input": "Remove all files in /var/log/pm-powersave",
+    "output": "rm /var/log/pm-powersave/*"
+  },
+  {
+    "input": "Delete a file called 'aptitude.log' in /var/log/aptitude",
+    "output": "rm /var/log/aptitude/aptitude.log"
+  },
+  {
+    "input": "Remove all files in /var/log/unattended-upgrades",
+    "output": "rm /var/log/unattended-upgrades/*"
+  },
+  {
+    "input": "Delete a file called 'clamav.log' in /var/log/clamav",
+    "output": "rm /var/log/clamav/clamav.log"
+  },
+  {
+    "input": "Remove all files in /var/log/exim4",
+    "output": "rm /var/log/exim4/*"
+  },
+  {
+    "input": "Delete a file called 'news.log' in /var/log/news",
+    "output": "rm /var/log/news/news.log"
+  },
+  {
+    "input": "Remove all files in /var/log/ppp",
+    "output": "rm /var/log/ppp/*"
+  },
+  {
+    "input": "Delete a file called 'samba.log' in /var/log/samba",
+    "output": "rm /var/log/samba/samba.log"
+  },
+  {
+    "input": "Remove all files in /var/log/ufw",
+    "output": "rm /var/log/ufw/*"
+  },
+  {
+    "input": "Delete a file called 'wtmp' in /var/log",
+    "output": "rm /var/log/wtmp"
+  },
+  {
+    "input": "Remove all files in /var/log/xrdp",
+    "output": "rm /var/log/xrdp/*"
+  },
+  {
+    "input": "Delete a file called 'yum.log' in /var/log",
+    "output": "rm /var/log/yum.log"
+  },
+  {
+    "input": "Remove all files in /var/log/zypper.log",
+    "output": "rm /var/log/zypper.log/*"
+  },
+  {
+    "input": "Delete a file called 'lastlog' in /var/log",
+    "output": "rm /var/log/lastlog"
+  },
+  {
+    "input": "Remove all files in /var/log/messages",
+    "output": "rm /var/log/messages/*"
+  },
+  {
+    "input": "Delete a file called 'secure' in /var/log",
+    "output": "rm /var/log/secure"
+  },
+  {
+    "input": "Remove all files in /var/log/maillog",
+    "output": "rm /var/log/maillog/*"
+  },
+  {
+    "input": "Delete a file called 'cron' in /var/log",
+    "output": "rm /var/log/cron"
+  },
+  {
+    "input": "Remove all files in /var/log/audit",
+    "output": "rm /var/log/audit/*"
+  },
+  {
+    "input": "Delete a file called 'btmp' in /var/log",
+    "output": "rm /var/log/btmp"
+  },
+  {
+    "input": "Remove all files in /var/log/alternatives.log",
+    "output": "rm /var/log/alternatives.log/*"
+  },
+  {
+    "input": "Delete a file called 'history.log' in /var/log/apt",
+    "output": "rm /var/log/apt/history.log"
+  },
+  {
+    "input": "Remove all files in /var/log/apt/term.log",
+    "output": "rm /var/log/apt/term.log/*"
+  },
+  {
+    "input": "Delete a file called 'boot.log' in /var/log",
+    "output": "rm /var/log/boot.log"
+  },
+  {
+    "input": "Remove all files in /var/log/dmesg",
+    "output": "rm /var/log/dmesg/*"
+  },
+  {
+    "input": "Delete a file called 'fail2ban.log' in /var/log",
+    "output": "rm /var/log/fail2ban.log"
+  },
+  {
+    "input": "Remove all files in /var/log/fontconfig.log",
+    "output": "rm /var/log/fontconfig.log/*"
+  },
+  {
+    "input": "Delete a file called 'gpu-manager.log' in /var/log",
+    "output": "rm /var/log/gpu-manager.log"
+  },
+  {
+    "input": "Remove all files in /var/log/hp",
+    "output": "rm /var/log/hp/*"
+  },
+  {
+    "input": "Delete a file called 'kern.log' in /var/log",
+    "output": "rm /var/log/kern.log"
+  },
+  {
+    "input": "Remove all files in /var/log/lightdm",
+    "output": "rm /var/log/lightdm/*"
+  },
+  {
+    "input": "Delete a file called 'mail.err' in /var/log",
+    "output": "rm /var/log/mail.err"
+  },
+  {
+    "input": "Remove all files in /var/log/mail.info",
+    "output": "rm /var/log/mail.info/*"
+  },
+  {
+    "input": "Delete a file called 'mail.log' in /var/log",
+    "output": "rm /var/log/mail.log"
+  },
+  {
+    "input": "Remove all files in /var/log/mail.warn",
+    "output": "rm /var/log/mail.warn/*"
+  },
+  {
+    "input": "Delete a file called 'messages' in /var/log",
+    "output": "rm /var/log/messages"
+  },
+  {
+    "input": "Remove all files in /var/log/pm-powersave.log",
+    "output": "rm /var/log/pm-powersave.log/*"
+  },
+  {
+    "input": "Delete a file called 'user.log' in /var/log",
+    "output": "rm /var/log/user.log"
+  },
+  {
+    "input": "Remove all files in /var/log/wtmp",
+    "output": "rm /var/log/wtmp/*"
+  },
+  {
+    "input": "Delete a file called 'Xorg.0.log' in /var/log",
+    "output": "rm /var/log/Xorg.0.log"
+  },
+  {
+    "input": "Remove all files in /var/log/Xorg.1.log",
+    "output": "rm /var/log/Xorg.1.log/*"
+  },
+  {
+    "input": "Delete a file called 'Xorg.failsafe.log' in /var/log",
+    "output": "rm /var/log/Xorg.failsafe.log"
+  },
+  {
+    "input": "Remove all files in /var/tmp",
+    "output": "rm /var/tmp/*"
+  },
+  {
+    "input": "Delete a file called 'test' in the current directory",
+    "output": "rm test"
+  },
+  {
+    "input": "Remove all files in the parent directory",
+    "output": "rm ../*"
+  },
+  {
+    "input": "Delete all files in the /etc directory",
+    "output": "rm /etc/*"
+  },
+  {
+    "input": "Force delete all files in the /opt directory",
+    "output": "rm -f /opt/*"
+  },
+  {
+    "input": "Remove all files in the /srv directory",
+    "output": "rm /srv/*"
+  },
+  {
+    "input": "Delete all files in the /mnt directory",
+    "output": "rm /mnt/*"
+  },
+  {
+    "input": "Remove all files in the /media directory",
+    "output": "rm /media/*"
+  },
+  {
+    "input": "Copy a file called 'file.txt' to the current directory",
+    "output": "cp file.txt ."
+  },
+  {
+    "input": "Copy 'report.pdf' to the Documents folder",
+    "output": "cp report.pdf ~/Documents/"
+  },
+  {
+    "input": "Copy 'image.jpg' from the current directory to /tmp",
+    "output": "cp image.jpg /tmp/"
+  },
+  {
+    "input": "Copy 'data.csv' to /var/log and rename it to 'backup.csv'",
+    "output": "cp data.csv /var/log/backup.csv"
+  },
+  {
+    "input": "Copy all .txt files to the backup directory",
+    "output": "cp *.txt backup/"
+  },
+  {
+    "input": "Copy a file named 'My File.txt' with spaces to /home/user",
+    "output": "cp 'My File.txt' /home/user/"
+  },
+  {
+    "input": "Copy a hidden file '.env' to the parent directory",
+    "output": "cp .env ../"
+  },
+  {
+    "input": "Copy 'script.sh' to /usr/local/bin and keep the same name",
+    "output": "cp script.sh /usr/local/bin/"
+  },
+  {
+    "input": "Copy 'notes.txt' from your home to the Desktop",
+    "output": "cp ~/notes.txt ~/Desktop/"
+  },
+  {
+    "input": "Copy 'config.yaml' to /etc and rename it to 'config_backup.yaml'",
+    "output": "cp config.yaml /etc/config_backup.yaml"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp",
+    "output": "cp * /tmp/"
+  },
+  {
+    "input": "Copy all .log files from /var/log to /backup/logs",
+    "output": "cp /var/log/*.log /backup/logs/"
+  },
+  {
+    "input": "Copy a directory called 'projects' to /backup recursively",
+    "output": "cp -r projects /backup/"
+  },
+  {
+    "input": "Copy the entire 'Documents' folder to /mnt/usb",
+    "output": "cp -r ~/Documents /mnt/usb/"
+  },
+  {
+    "input": "Copy a directory 'src' and all its contents to /opt",
+    "output": "cp -r src /opt/"
+  },
+  {
+    "input": "Copy 'file1.txt' and 'file2.txt' to /tmp",
+    "output": "cp file1.txt file2.txt /tmp/"
+  },
+  {
+    "input": "Copy all files starting with 'test' to /var/tmp",
+    "output": "cp test* /var/tmp/"
+  },
+  {
+    "input": "Copy all files and subdirectories from 'build' to 'release'",
+    "output": "cp -r build/* release/"
+  },
+  {
+    "input": "Copy a file 'draft.docx' to the parent directory",
+    "output": "cp draft.docx ../"
+  },
+  {
+    "input": "Copy all files in /etc to /backup/etc",
+    "output": "cp /etc/* /backup/etc/"
+  },
+  {
+    "input": "Copy a file 'output.txt' and overwrite without prompt",
+    "output": "cp -f output.txt /tmp/"
+  },
+  {
+    "input": "Copy a directory 'images' to /var/www/html",
+    "output": "cp -r images /var/www/html/"
+  },
+  {
+    "input": "Copy all .jpg files from Pictures to Desktop",
+    "output": "cp ~/Pictures/*.jpg ~/Desktop/"
+  },
+  {
+    "input": "Copy a file 'data.json' to /srv/www and keep permissions",
+    "output": "cp -p data.json /srv/www/"
+  },
+  {
+    "input": "Copy all files in /home/user/Downloads to /mnt/usb",
+    "output": "cp /home/user/Downloads/* /mnt/usb/"
+  },
+  {
+    "input": "Copy a file 'archive.tar.gz' to /opt and preserve attributes",
+    "output": "cp -a archive.tar.gz /opt/"
+  },
+  {
+    "input": "Copy a directory 'backup' to /tmp and preserve all attributes",
+    "output": "cp -a backup /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and do not overwrite existing files",
+    "output": "cp -n * /tmp/"
+  },
+  {
+    "input": "Copy a file 'test.log' to /var/log and prompt before overwrite",
+    "output": "cp -i test.log /var/log/"
+  },
+  {
+    "input": "Copy all files in /var/log recursively to /backup/logs",
+    "output": "cp -r /var/log /backup/logs/"
+  },
+  {
+    "input": "Copy a file 'config' to /etc and show progress",
+    "output": "cp -v config /etc/"
+  },
+  {
+    "input": "Copy all .conf files from /etc to /backup/etc",
+    "output": "cp /etc/*.conf /backup/etc/"
+  },
+  {
+    "input": "Copy a file 'index.html' to /var/www/html and keep timestamps",
+    "output": "cp -p index.html /var/www/html/"
+  },
+  {
+    "input": "Copy a directory 'music' to /mnt/usb and preserve everything",
+    "output": "cp -a music /mnt/usb/"
+  },
+  {
+    "input": "Copy all files in /tmp to the current directory",
+    "output": "cp /tmp/* ."
+  },
+  {
+    "input": "Copy a file 'resume.pdf' to your home directory",
+    "output": "cp resume.pdf ~/"
+  },
+  {
+    "input": "Copy all files in /var/tmp to /backup/tmp and force overwrite",
+    "output": "cp -f /var/tmp/* /backup/tmp/"
+  },
+  {
+    "input": "Copy a file 'draft.txt' to /home/alice/Documents",
+    "output": "cp draft.txt /home/alice/Documents/"
+  },
+  {
+    "input": "Copy all files in /usr/local/bin to /opt/bin",
+    "output": "cp /usr/local/bin/* /opt/bin/"
+  },
+  {
+    "input": "Copy a file 'testfile' to /srv/www and prompt before overwrite",
+    "output": "cp -i testfile /srv/www/"
+  },
+  {
+    "input": "Copy all files in /mnt/usb to /media/backup",
+    "output": "cp /mnt/usb/* /media/backup/"
+  },
+  {
+    "input": "Copy a file 'logfile' to /var/log and keep permissions",
+    "output": "cp -p logfile /var/log/"
+  },
+  {
+    "input": "Copy all files in /var/spool/cron to /backup/cron",
+    "output": "cp /var/spool/cron/* /backup/cron/"
+  },
+  {
+    "input": "Copy a file 'mail.txt' to /var/mail",
+    "output": "cp mail.txt /var/mail/"
+  },
+  {
+    "input": "Copy all files in /var/log/apache2 to /backup/apache2",
+    "output": "cp /var/log/apache2/* /backup/apache2/"
+  },
+  {
+    "input": "Copy a file 'index.html' to /var/www/html and show progress",
+    "output": "cp -v index.html /var/www/html/"
+  },
+  {
+    "input": "Copy all files in /var/log/nginx to /backup/nginx",
+    "output": "cp /var/log/nginx/* /backup/nginx/"
+  },
+  {
+    "input": "Copy a file 'db.sqlite3' to /srv/db",
+    "output": "cp db.sqlite3 /srv/db/"
+  },
+  {
+    "input": "Copy all files in /var/log/mysql to /backup/mysql",
+    "output": "cp /var/log/mysql/* /backup/mysql/"
+  },
+  {
+    "input": "Copy a file 'access.log' to /var/log",
+    "output": "cp access.log /var/log/"
+  },
+  {
+    "input": "Copy all files in /var/log/postgresql to /backup/postgresql",
+    "output": "cp /var/log/postgresql/* /backup/postgresql/"
+  },
+  {
+    "input": "Copy a file 'syslog' to /var/log",
+    "output": "cp syslog /var/log/"
+  },
+  {
+    "input": "Copy all files in /var/log/journal to /backup/journal",
+    "output": "cp /var/log/journal/* /backup/journal/"
+  },
+  {
+    "input": "Copy a file 'kern.log' to /var/log",
+    "output": "cp kern.log /var/log/"
+  },
+  {
+    "input": "Copy all files in /var/log/auth to /backup/auth",
+    "output": "cp /var/log/auth/* /backup/auth/"
+  },
+  {
+    "input": "Copy a file 'apt.log' to /var/log/apt",
+    "output": "cp apt.log /var/log/apt/"
+  },
+  {
+    "input": "Copy all files in /var/log/dpkg to /backup/dpkg",
+    "output": "cp /var/log/dpkg/* /backup/dpkg/"
+  },
+  {
+    "input": "Copy a file 'user.log' to /var/log",
+    "output": "cp user.log /var/log/"
+  },
+  {
+    "input": "Copy all files in /var/log/installer to /backup/installer",
+    "output": "cp /var/log/installer/* /backup/installer/"
+  },
+  {
+    "input": "Copy a file 'boot.log' to /var/log",
+    "output": "cp boot.log /var/log/"
+  },
+  {
+    "input": "Copy all files in /var/log/fsck to /backup/fsck",
+    "output": "cp /var/log/fsck/* /backup/fsck/"
+  },
+  {
+    "input": "Copy a file 'sa.log' to /var/log/sa",
+    "output": "cp sa.log /var/log/sa/"
+  },
+  {
+    "input": "Copy all files in /var/log/pm-powersave to /backup/pm-powersave",
+    "output": "cp /var/log/pm-powersave/* /backup/pm-powersave/"
+  },
+  {
+    "input": "Copy a file 'aptitude.log' to /var/log/aptitude",
+    "output": "cp aptitude.log /var/log/aptitude/"
+  },
+  {
+    "input": "Copy all files in /var/log/unattended-upgrades to /backup/unattended-upgrades",
+    "output": "cp /var/log/unattended-upgrades/* /backup/unattended-upgrades/"
+  },
+  {
+    "input": "Copy a file 'clamav.log' to /var/log/clamav",
+    "output": "cp clamav.log /var/log/clamav/"
+  },
+  {
+    "input": "Copy all files in /var/log/exim4 to /backup/exim4",
+    "output": "cp /var/log/exim4/* /backup/exim4/"
+  },
+  {
+    "input": "Copy a file 'news.log' to /var/log/news",
+    "output": "cp news.log /var/log/news/"
+  },
+  {
+    "input": "Copy all files in /var/log/ppp to /backup/ppp",
+    "output": "cp /var/log/ppp/* /backup/ppp/"
+  },
+  {
+    "input": "Copy a file 'samba.log' to /var/log/samba",
+    "output": "cp samba.log /var/log/samba/"
+  },
+  {
+    "input": "Copy all files in /var/log/ufw to /backup/ufw",
+    "output": "cp /var/log/ufw/* /backup/ufw/"
+  },
+  {
+    "input": "Copy a file 'wtmp' to /var/log",
+    "output": "cp wtmp /var/log/"
+  },
+  {
+    "input": "Copy all files in /var/log/xrdp to /backup/xrdp",
+    "output": "cp /var/log/xrdp/* /backup/xrdp/"
+  },
+  {
+    "input": "Copy a file 'yum.log' to /var/log",
+    "output": "cp yum.log /var/log/"
+  },
+  {
+    "input": "Copy all files in /var/log/zypper.log to /backup/zypper",
+    "output": "cp /var/log/zypper.log/* /backup/zypper/"
+  },
+  {
+    "input": "Copy a file 'lastlog' to /var/log",
+    "output": "cp lastlog /var/log/"
+  },
+  {
+    "input": "Copy all files in /var/log/messages to /backup/messages",
+    "output": "cp /var/log/messages/* /backup/messages/"
+  },
+  {
+    "input": "Copy a file 'secure' to /var/log",
+    "output": "cp secure /var/log/"
+  },
+  {
+    "input": "Copy all files in /var/log/maillog to /backup/maillog",
+    "output": "cp /var/log/maillog/* /backup/maillog/"
+  },
+  {
+    "input": "Copy a file 'cron' to /var/log",
+    "output": "cp cron /var/log/"
+  },
+  {
+    "input": "Copy all files in /var/log/audit to /backup/audit",
+    "output": "cp /var/log/audit/* /backup/audit/"
+  },
+  {
+    "input": "Copy a file 'btmp' to /var/log",
+    "output": "cp btmp /var/log/"
+  },
+  {
+    "input": "Copy all files in /var/log/alternatives.log to /backup/alternatives",
+    "output": "cp /var/log/alternatives.log/* /backup/alternatives/"
+  },
+  {
+    "input": "Copy a file 'history.log' to /var/log/apt",
+    "output": "cp history.log /var/log/apt/"
+  },
+  {
+    "input": "Copy all files in /var/log/apt/term.log to /backup/apt-term",
+    "output": "cp /var/log/apt/term.log/* /backup/apt-term/"
+  },
+  {
+    "input": "Copy a file 'boot.log' to /var/log",
+    "output": "cp boot.log /var/log/"
+  },
+  {
+    "input": "Copy all files in /var/log/dmesg to /backup/dmesg",
+    "output": "cp /var/log/dmesg/* /backup/dmesg/"
+  },
+  {
+    "input": "Copy a file 'fail2ban.log' to /var/log",
+    "output": "cp fail2ban.log /var/log/"
+  },
+  {
+    "input": "Copy all files in /var/log/fontconfig.log to /backup/fontconfig",
+    "output": "cp /var/log/fontconfig.log/* /backup/fontconfig/"
+  },
+  {
+    "input": "Copy a file 'gpu-manager.log' to /var/log",
+    "output": "cp gpu-manager.log /var/log/"
+  },
+  {
+    "input": "Copy all files in /var/log/hp to /backup/hp",
+    "output": "cp /var/log/hp/* /backup/hp/"
+  },
+  {
+    "input": "Copy a file 'kern.log' to /var/log",
+    "output": "cp kern.log /var/log/"
+  },
+  {
+    "input": "Copy all files in /var/log/lightdm to /backup/lightdm",
+    "output": "cp /var/log/lightdm/* /backup/lightdm/"
+  },
+  {
+    "input": "Copy a file 'mail.err' to /var/log",
+    "output": "cp mail.err /var/log/"
+  },
+  {
+    "input": "Copy all files in /var/log/mail.info to /backup/mailinfo",
+    "output": "cp /var/log/mail.info/* /backup/mailinfo/"
+  },
+  {
+    "input": "Copy a file 'mail.log' to /var/log",
+    "output": "cp mail.log /var/log/"
+  },
+  {
+    "input": "Copy all files in /var/log/mail.warn to /backup/mailwarn",
+    "output": "cp /var/log/mail.warn/* /backup/mailwarn/"
+  },
+  {
+    "input": "Copy a file 'messages' to /var/log",
+    "output": "cp messages /var/log/"
+  },
+  {
+    "input": "Copy all files in /var/log/pm-powersave.log to /backup/pmpowersave",
+    "output": "cp /var/log/pm-powersave.log/* /backup/pmpowersave/"
+  },
+  {
+    "input": "Copy a file 'user.log' to /var/log",
+    "output": "cp user.log /var/log/"
+  },
+  {
+    "input": "Copy all files in /var/log/wtmp to /backup/wtmp",
+    "output": "cp /var/log/wtmp/* /backup/wtmp/"
+  },
+  {
+    "input": "Copy a file 'Xorg.0.log' to /var/log",
+    "output": "cp Xorg.0.log /var/log/"
+  },
+  {
+    "input": "Copy all files in /var/log/Xorg.1.log to /backup/xorg1",
+    "output": "cp /var/log/Xorg.1.log/* /backup/xorg1/"
+  },
+  {
+    "input": "Copy a file 'Xorg.failsafe.log' to /var/log",
+    "output": "cp Xorg.failsafe.log /var/log/"
+  },
+  {
+    "input": "Copy all files in /var/tmp to /backup/tmp",
+    "output": "cp /var/tmp/* /backup/tmp/"
+  },
+  {
+    "input": "Copy a file called 'test' in the current directory to /tmp",
+    "output": "cp test /tmp/"
+  },
+  {
+    "input": "Copy all files in the parent directory to the current directory",
+    "output": "cp ../* ."
+  },
+  {
+    "input": "Copy all files in the /etc directory to /backup/etc",
+    "output": "cp /etc/* /backup/etc/"
+  },
+  {
+    "input": "Force copy all files in the /opt directory to /backup/opt",
+    "output": "cp -f /opt/* /backup/opt/"
+  },
+  {
+    "input": "Copy all files in the /srv directory to /backup/srv",
+    "output": "cp /srv/* /backup/srv/"
+  },
+  {
+    "input": "Copy all files in the /mnt directory to /backup/mnt",
+    "output": "cp /mnt/* /backup/mnt/"
+  },
+  {
+    "input": "Copy all files in the /media directory to /backup/media",
+    "output": "cp /media/* /backup/media/"
+  },
+  {
+    "input": "Recursively copy the entire /etc directory to /backup/etc",
+    "output": "cp -r /etc /backup/etc/"
+  },
+  {
+    "input": "Recursively copy the /usr/local directory to /backup/usr-local",
+    "output": "cp -r /usr/local /backup/usr-local/"
+  },
+  {
+    "input": "Recursively copy the /home/user directory to /backup/home-user",
+    "output": "cp -r /home/user /backup/home-user/"
+  },
+  {
+    "input": "Recursively copy the /var directory to /backup/var",
+    "output": "cp -r /var /backup/var/"
+  },
+  {
+    "input": "Recursively copy the /opt directory to /backup/opt",
+    "output": "cp -r /opt /backup/opt/"
+  },
+  {
+    "input": "Recursively copy the /srv directory to /backup/srv",
+    "output": "cp -r /srv /backup/srv/"
+  },
+  {
+    "input": "Recursively copy the /mnt directory to /backup/mnt",
+    "output": "cp -r /mnt /backup/mnt/"
+  },
+  {
+    "input": "Recursively copy the /media directory to /backup/media",
+    "output": "cp -r /media /backup/media/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and preserve timestamps",
+    "output": "cp -p * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and show progress",
+    "output": "cp -v * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and do not overwrite existing files",
+    "output": "cp -n * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and prompt before overwrite",
+    "output": "cp -i * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and force overwrite",
+    "output": "cp -f * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and preserve all attributes",
+    "output": "cp -a * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep permissions",
+    "output": "cp -p * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep ownership",
+    "output": "cp --preserve=ownership * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep mode",
+    "output": "cp --preserve=mode * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep timestamps",
+    "output": "cp --preserve=timestamps * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep links",
+    "output": "cp --preserve=links * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep context",
+    "output": "cp --preserve=context * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep xattr",
+    "output": "cp --preserve=xattr * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep all attributes",
+    "output": "cp --preserve=all * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep everything",
+    "output": "cp -a * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep everything and show progress",
+    "output": "cp -av * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep everything and do not overwrite existing files",
+    "output": "cp -an * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep everything and prompt before overwrite",
+    "output": "cp -ai * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep everything and force overwrite",
+    "output": "cp -af * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep everything and keep permissions",
+    "output": "cp -ap * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep everything and keep ownership",
+    "output": "cp -a --preserve=ownership * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep everything and keep mode",
+    "output": "cp -a --preserve=mode * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep everything and keep timestamps",
+    "output": "cp -a --preserve=timestamps * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep everything and keep links",
+    "output": "cp -a --preserve=links * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep everything and keep context",
+    "output": "cp -a --preserve=context * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep everything and keep xattr",
+    "output": "cp -a --preserve=xattr * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep everything and keep all attributes",
+    "output": "cp -a --preserve=all * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep everything and keep everything",
+    "output": "cp -a -a * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep everything and show progress",
+    "output": "cp -a -v * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep everything and do not overwrite existing files",
+    "output": "cp -a -n * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep everything and prompt before overwrite",
+    "output": "cp -a -i * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep everything and force overwrite",
+    "output": "cp -a -f * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep everything and keep permissions",
+    "output": "cp -a -p * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep everything and keep ownership",
+    "output": "cp -a --preserve=ownership * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep everything and keep mode",
+    "output": "cp -a --preserve=mode * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep everything and keep timestamps",
+    "output": "cp -a --preserve=timestamps * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep everything and keep links",
+    "output": "cp -a --preserve=links * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep everything and keep context",
+    "output": "cp -a --preserve=context * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep everything and keep xattr",
+    "output": "cp -a --preserve=xattr * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep everything and keep all attributes",
+    "output": "cp -a --preserve=all * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep everything and keep everything",
+    "output": "cp -a -a * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep everything and show progress",
+    "output": "cp -a -v * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep everything and do not overwrite existing files",
+    "output": "cp -a -n * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep everything and prompt before overwrite",
+    "output": "cp -a -i * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep everything and force overwrite",
+    "output": "cp -a -f * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep everything and keep permissions",
+    "output": "cp -a -p * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep everything and keep ownership",
+    "output": "cp -a --preserve=ownership * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep everything and keep mode",
+    "output": "cp -a --preserve=mode * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep everything and keep timestamps",
+    "output": "cp -a --preserve=timestamps * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep everything and keep links",
+    "output": "cp -a --preserve=links * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep everything and keep context",
+    "output": "cp -a --preserve=context * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep everything and keep xattr",
+    "output": "cp -a --preserve=xattr * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep everything and keep all attributes",
+    "output": "cp -a --preserve=all * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep everything and keep everything",
+    "output": "cp -a -a * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep everything and show progress",
+    "output": "cp -a -v * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep everything and do not overwrite existing files",
+    "output": "cp -a -n * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep everything and prompt before overwrite",
+    "output": "cp -a -i * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep everything and force overwrite",
+    "output": "cp -a -f * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep everything and keep permissions",
+    "output": "cp -a -p * /tmp/"
+  },
+  {
+    "input": "Rename a file called 'oldname.txt' to 'newname.txt'",
+    "output": "mv oldname.txt newname.txt"
+  },
+  {
+    "input": "Move 'report.pdf' to the Documents folder",
+    "output": "mv report.pdf ~/Documents/"
+  },
+  {
+    "input": "Move 'image.jpg' from the current directory to /tmp",
+    "output": "mv image.jpg /tmp/"
+  },
+  {
+    "input": "Rename 'data.csv' to 'backup.csv' in the same directory",
+    "output": "mv data.csv backup.csv"
+  },
+  {
+    "input": "Move all .txt files to the backup directory",
+    "output": "mv *.txt backup/"
+  },
+  {
+    "input": "Rename a file named 'My File.txt' with spaces to 'MyFile.txt'",
+    "output": "mv 'My File.txt' MyFile.txt"
+  },
+  {
+    "input": "Move a hidden file '.env' to the parent directory",
+    "output": "mv .env ../"
+  },
+  {
+    "input": "Move 'script.sh' to /usr/local/bin and keep the same name",
+    "output": "mv script.sh /usr/local/bin/"
+  },
+  {
+    "input": "Move 'notes.txt' from your home to the Desktop",
+    "output": "mv ~/notes.txt ~/Desktop/"
+  },
+  {
+    "input": "Rename 'config.yaml' to 'config_backup.yaml' in /etc",
+    "output": "mv /etc/config.yaml /etc/config_backup.yaml"
+  },
+  {
+    "input": "Move all files in the current directory to /tmp",
+    "output": "mv * /tmp/"
+  },
+  {
+    "input": "Move all .log files from /var/log to /backup/logs",
+    "output": "mv /var/log/*.log /backup/logs/"
+  },
+  {
+    "input": "Move a directory called 'projects' to /backup",
+    "output": "mv projects /backup/"
+  },
+  {
+    "input": "Move the entire 'Documents' folder to /mnt/usb",
+    "output": "mv ~/Documents /mnt/usb/"
+  },
+  {
+    "input": "Move a directory 'src' and all its contents to /opt",
+    "output": "mv src /opt/"
+  },
+  {
+    "input": "Move 'file1.txt' and 'file2.txt' to /tmp",
+    "output": "mv file1.txt file2.txt /tmp/"
+  },
+  {
+    "input": "Move all files starting with 'test' to /var/tmp",
+    "output": "mv test* /var/tmp/"
+  },
+  {
+    "input": "Move all files and subdirectories from 'build' to 'release'",
+    "output": "mv build/* release/"
+  },
+  {
+    "input": "Rename 'draft.docx' to 'final.docx' in the parent directory",
+    "output": "mv ../draft.docx ../final.docx"
+  },
+  {
+    "input": "Move all files in /etc to /backup/etc",
+    "output": "mv /etc/* /backup/etc/"
+  },
+  {
+    "input": "Move a file 'output.txt' to /tmp and overwrite if exists",
+    "output": "mv -f output.txt /tmp/"
+  },
+  {
+    "input": "Move a directory 'images' to /var/www/html",
+    "output": "mv images /var/www/html/"
+  },
+  {
+    "input": "Move all .jpg files from Pictures to Desktop",
+    "output": "mv ~/Pictures/*.jpg ~/Desktop/"
+  },
+  {
+    "input": "Rename 'data.json' to 'data_backup.json' in /srv/www",
+    "output": "mv /srv/www/data.json /srv/www/data_backup.json"
+  },
+  {
+    "input": "Move all files in /home/user/Downloads to /mnt/usb",
+    "output": "mv /home/user/Downloads/* /mnt/usb/"
+  },
+  {
+    "input": "Move a file 'archive.tar.gz' to /opt and overwrite without prompt",
+    "output": "mv -f archive.tar.gz /opt/"
+  },
+  {
+    "input": "Move a directory 'backup' to /tmp",
+    "output": "mv backup /tmp/"
+  },
+  {
+    "input": "Move all files in the current directory to /tmp and do not overwrite existing files",
+    "output": "mv -n * /tmp/"
+  },
+  {
+    "input": "Move a file 'test.log' to /var/log and prompt before overwrite",
+    "output": "mv -i test.log /var/log/"
+  },
+  {
+    "input": "Move all files in /var/log recursively to /backup/logs",
+    "output": "mv /var/log/* /backup/logs/"
+  },
+  {
+    "input": "Move a file 'config' to /etc and show progress",
+    "output": "mv -v config /etc/"
+  },
+  {
+    "input": "Move all .conf files from /etc to /backup/etc",
+    "output": "mv /etc/*.conf /backup/etc/"
+  },
+  {
+    "input": "Rename 'index.html' to 'index_backup.html' in /var/www/html",
+    "output": "mv /var/www/html/index.html /var/www/html/index_backup.html"
+  },
+  {
+    "input": "Move a directory 'music' to /mnt/usb",
+    "output": "mv music /mnt/usb/"
+  },
+  {
+    "input": "Move all files in /tmp to the current directory",
+    "output": "mv /tmp/* ."
+  },
+  {
+    "input": "Move 'resume.pdf' to your home directory",
+    "output": "mv resume.pdf ~/"
+  },
+  {
+    "input": "Move all files in /var/tmp to /backup/tmp and force overwrite",
+    "output": "mv -f /var/tmp/* /backup/tmp/"
+  },
+  {
+    "input": "Move 'draft.txt' to /home/alice/Documents",
+    "output": "mv draft.txt /home/alice/Documents/"
+  },
+  {
+    "input": "Move all files in /usr/local/bin to /opt/bin",
+    "output": "mv /usr/local/bin/* /opt/bin/"
+  },
+  {
+    "input": "Move 'testfile' to /srv/www and prompt before overwrite",
+    "output": "mv -i testfile /srv/www/"
+  },
+  {
+    "input": "Move all files in /mnt/usb to /media/backup",
+    "output": "mv /mnt/usb/* /media/backup/"
+  },
+  {
+    "input": "Rename 'logfile' to 'logfile.old' in /var/log",
+    "output": "mv /var/log/logfile /var/log/logfile.old"
+  },
+  {
+    "input": "Move all files in /var/spool/cron to /backup/cron",
+    "output": "mv /var/spool/cron/* /backup/cron/"
+  },
+  {
+    "input": "Move 'mail.txt' to /var/mail",
+    "output": "mv mail.txt /var/mail/"
+  },
+  {
+    "input": "Move all files in /var/log/apache2 to /backup/apache2",
+    "output": "mv /var/log/apache2/* /backup/apache2/"
+  },
+  {
+    "input": "Rename 'index.html' to 'index.bak' in /var/www/html",
+    "output": "mv /var/www/html/index.html /var/www/html/index.bak"
+  },
+  {
+    "input": "Move all files in /var/log/nginx to /backup/nginx",
+    "output": "mv /var/log/nginx/* /backup/nginx/"
+  },
+  {
+    "input": "Move 'db.sqlite3' to /srv/db",
+    "output": "mv db.sqlite3 /srv/db/"
+  },
+  {
+    "input": "Move all files in /var/log/mysql to /backup/mysql",
+    "output": "mv /var/log/mysql/* /backup/mysql/"
+  },
+  {
+    "input": "Rename 'access.log' to 'access.old' in /var/log",
+    "output": "mv /var/log/access.log /var/log/access.old"
+  },
+  {
+    "input": "Move all files in /var/log/postgresql to /backup/postgresql",
+    "output": "mv /var/log/postgresql/* /backup/postgresql/"
+  },
+  {
+    "input": "Rename 'syslog' to 'syslog.1' in /var/log",
+    "output": "mv /var/log/syslog /var/log/syslog.1"
+  },
+  {
+    "input": "Move all files in /var/log/journal to /backup/journal",
+    "output": "mv /var/log/journal/* /backup/journal/"
+  },
+  {
+    "input": "Rename 'kern.log' to 'kern.log.old' in /var/log",
+    "output": "mv /var/log/kern.log /var/log/kern.log.old"
+  },
+  {
+    "input": "Move all files in /var/log/auth to /backup/auth",
+    "output": "mv /var/log/auth/* /backup/auth/"
+  },
+  {
+    "input": "Rename 'apt.log' to 'apt.log.bak' in /var/log/apt",
+    "output": "mv /var/log/apt/apt.log /var/log/apt/apt.log.bak"
+  },
+  {
+    "input": "Move all files in /var/log/dpkg to /backup/dpkg",
+    "output": "mv /var/log/dpkg/* /backup/dpkg/"
+  },
+  {
+    "input": "Rename 'user.log' to 'user.log.old' in /var/log",
+    "output": "mv /var/log/user.log /var/log/user.log.old"
+  },
+  {
+    "input": "Move all files in /var/log/installer to /backup/installer",
+    "output": "mv /var/log/installer/* /backup/installer/"
+  },
+  {
+    "input": "Rename 'boot.log' to 'boot.log.old' in /var/log",
+    "output": "mv /var/log/boot.log /var/log/boot.log.old"
+  },
+  {
+    "input": "Move all files in /var/log/fsck to /backup/fsck",
+    "output": "mv /var/log/fsck/* /backup/fsck/"
+  },
+  {
+    "input": "Rename 'sa.log' to 'sa.log.old' in /var/log/sa",
+    "output": "mv /var/log/sa/sa.log /var/log/sa/sa.log.old"
+  },
+  {
+    "input": "Move all files in /var/log/pm-powersave to /backup/pm-powersave",
+    "output": "mv /var/log/pm-powersave/* /backup/pm-powersave/"
+  },
+  {
+    "input": "Rename 'aptitude.log' to 'aptitude.log.old' in /var/log/aptitude",
+    "output": "mv /var/log/aptitude/aptitude.log /var/log/aptitude/aptitude.log.old"
+  },
+  {
+    "input": "Move all files in /var/log/unattended-upgrades to /backup/unattended-upgrades",
+    "output": "mv /var/log/unattended-upgrades/* /backup/unattended-upgrades/"
+  },
+  {
+    "input": "Rename 'clamav.log' to 'clamav.log.old' in /var/log/clamav",
+    "output": "mv /var/log/clamav/clamav.log /var/log/clamav/clamav.log.old"
+  },
+  {
+    "input": "Move all files in /var/log/exim4 to /backup/exim4",
+    "output": "mv /var/log/exim4/* /backup/exim4/"
+  },
+  {
+    "input": "Rename 'news.log' to 'news.log.old' in /var/log/news",
+    "output": "mv /var/log/news/news.log /var/log/news/news.log.old"
+  },
+  {
+    "input": "Move all files in /var/log/ppp to /backup/ppp",
+    "output": "mv /var/log/ppp/* /backup/ppp/"
+  },
+  {
+    "input": "Rename 'samba.log' to 'samba.log.old' in /var/log/samba",
+    "output": "mv /var/log/samba/samba.log /var/log/samba/samba.log.old"
+  },
+  {
+    "input": "Move all files in /var/log/ufw to /backup/ufw",
+    "output": "mv /var/log/ufw/* /backup/ufw/"
+  },
+  {
+    "input": "Rename 'wtmp' to 'wtmp.old' in /var/log",
+    "output": "mv /var/log/wtmp /var/log/wtmp.old"
+  },
+  {
+    "input": "Move all files in /var/log/xrdp to /backup/xrdp",
+    "output": "mv /var/log/xrdp/* /backup/xrdp/"
+  },
+  {
+    "input": "Rename 'yum.log' to 'yum.log.old' in /var/log",
+    "output": "mv /var/log/yum.log /var/log/yum.log.old"
+  },
+  {
+    "input": "Move all files in /var/log/zypper.log to /backup/zypper",
+    "output": "mv /var/log/zypper.log/* /backup/zypper/"
+  },
+  {
+    "input": "Rename 'lastlog' to 'lastlog.old' in /var/log",
+    "output": "mv /var/log/lastlog /var/log/lastlog.old"
+  },
+  {
+    "input": "Move all files in /var/log/messages to /backup/messages",
+    "output": "mv /var/log/messages/* /backup/messages/"
+  },
+  {
+    "input": "Rename 'secure' to 'secure.old' in /var/log",
+    "output": "mv /var/log/secure /var/log/secure.old"
+  },
+  {
+    "input": "Move all files in /var/log/maillog to /backup/maillog",
+    "output": "mv /var/log/maillog/* /backup/maillog/"
+  },
+  {
+    "input": "Rename 'cron' to 'cron.old' in /var/log",
+    "output": "mv /var/log/cron /var/log/cron.old"
+  },
+  {
+    "input": "Move all files in /var/log/audit to /backup/audit",
+    "output": "mv /var/log/audit/* /backup/audit/"
+  },
+  {
+    "input": "Rename 'btmp' to 'btmp.old' in /var/log",
+    "output": "mv /var/log/btmp /var/log/btmp.old"
+  },
+  {
+    "input": "Move all files in /var/log/alternatives.log to /backup/alternatives",
+    "output": "mv /var/log/alternatives.log/* /backup/alternatives/"
+  },
+  {
+    "input": "Rename 'history.log' to 'history.log.old' in /var/log/apt",
+    "output": "mv /var/log/apt/history.log /var/log/apt/history.log.old"
+  },
+  {
+    "input": "Move all files in /var/log/apt/term.log to /backup/apt-term",
+    "output": "mv /var/log/apt/term.log/* /backup/apt-term/"
+  },
+  {
+    "input": "Rename 'boot.log' to 'boot.log.old' in /var/log",
+    "output": "mv /var/log/boot.log /var/log/boot.log.old"
+  },
+  {
+    "input": "Move all files in /var/log/dmesg to /backup/dmesg",
+    "output": "mv /var/log/dmesg/* /backup/dmesg/"
+  },
+  {
+    "input": "Rename 'fail2ban.log' to 'fail2ban.log.old' in /var/log",
+    "output": "mv /var/log/fail2ban.log /var/log/fail2ban.log.old"
+  },
+  {
+    "input": "Move all files in /var/log/fontconfig.log to /backup/fontconfig",
+    "output": "mv /var/log/fontconfig.log/* /backup/fontconfig/"
+  },
+  {
+    "input": "Rename 'gpu-manager.log' to 'gpu-manager.log.old' in /var/log",
+    "output": "mv /var/log/gpu-manager.log /var/log/gpu-manager.log.old"
+  },
+  {
+    "input": "Move all files in /var/log/hp to /backup/hp",
+    "output": "mv /var/log/hp/* /backup/hp/"
+  },
+  {
+    "input": "Rename 'kern.log' to 'kern.log.old' in /var/log",
+    "output": "mv /var/log/kern.log /var/log/kern.log.old"
+  },
+  {
+    "input": "Move all files in /var/log/lightdm to /backup/lightdm",
+    "output": "mv /var/log/lightdm/* /backup/lightdm/"
+  },
+  {
+    "input": "Rename 'mail.err' to 'mail.err.old' in /var/log",
+    "output": "mv /var/log/mail.err /var/log/mail.err.old"
+  },
+  {
+    "input": "Move all files in /var/log/mail.info to /backup/mailinfo",
+    "output": "mv /var/log/mail.info/* /backup/mailinfo/"
+  },
+  {
+    "input": "Rename 'mail.log' to 'mail.log.old' in /var/log",
+    "output": "mv /var/log/mail.log /var/log/mail.log.old"
+  },
+  {
+    "input": "Move all files in /var/log/mail.warn to /backup/mailwarn",
+    "output": "mv /var/log/mail.warn/* /backup/mailwarn/"
+  },
+  {
+    "input": "Rename 'messages' to 'messages.old' in /var/log",
+    "output": "mv /var/log/messages /var/log/messages.old"
+  },
+  {
+    "input": "Move all files in /var/log/pm-powersave.log to /backup/pmpowersave",
+    "output": "mv /var/log/pm-powersave.log/* /backup/pmpowersave/"
+  },
+  {
+    "input": "Rename 'user.log' to 'user.log.old' in /var/log",
+    "output": "mv /var/log/user.log /var/log/user.log.old"
+  },
+  {
+    "input": "Move all files in /var/log/wtmp to /backup/wtmp",
+    "output": "mv /var/log/wtmp/* /backup/wtmp/"
+  },
+  {
+    "input": "Rename 'Xorg.0.log' to 'Xorg.0.log.old' in /var/log",
+    "output": "mv /var/log/Xorg.0.log /var/log/Xorg.0.log.old"
+  },
+  {
+    "input": "Move all files in /var/log/Xorg.1.log to /backup/xorg1",
+    "output": "mv /var/log/Xorg.1.log/* /backup/xorg1/"
+  },
+  {
+    "input": "Rename 'Xorg.failsafe.log' to 'Xorg.failsafe.log.old' in /var/log",
+    "output": "mv /var/log/Xorg.failsafe.log /var/log/Xorg.failsafe.log.old"
+  },
+  {
+    "input": "Move all files in /var/tmp to /backup/tmp",
+    "output": "mv /var/tmp/* /backup/tmp/"
+  },
+  {
+    "input": "Rename 'test' in the current directory to 'test.old'",
+    "output": "mv test test.old"
+  },
+  {
+    "input": "Move all files in the parent directory to the current directory",
+    "output": "mv ../* ."
+  },
+  {
+    "input": "Move all files in the /etc directory to /backup/etc",
+    "output": "mv /etc/* /backup/etc/"
+  },
+  {
+    "input": "Force move all files in the /opt directory to /backup/opt",
+    "output": "mv -f /opt/* /backup/opt/"
+  },
+  {
+    "input": "Move all files in the /srv directory to /backup/srv",
+    "output": "mv /srv/* /backup/srv/"
+  },
+  {
+    "input": "Move all files in the /mnt directory to /backup/mnt",
+    "output": "mv /mnt/* /backup/mnt/"
+  },
+  {
+    "input": "Move all files in the /media directory to /backup/media",
+    "output": "mv /media/* /backup/media/"
+  },
+  {
+    "input": "Recursively move the entire /etc directory to /backup/etc",
+    "output": "mv /etc /backup/etc/"
+  },
+  {
+    "input": "Recursively move the /usr/local directory to /backup/usr-local",
+    "output": "mv /usr/local /backup/usr-local/"
+  },
+  {
+    "input": "Recursively move the /home/user directory to /backup/home-user",
+    "output": "mv /home/user /backup/home-user/"
+  },
+  {
+    "input": "Recursively move the /var directory to /backup/var",
+    "output": "mv /var /backup/var/"
+  },
+  {
+    "input": "Recursively move the /opt directory to /backup/opt",
+    "output": "mv /opt /backup/opt/"
+  },
+  {
+    "input": "Recursively move the /srv directory to /backup/srv",
+    "output": "mv /srv /backup/srv/"
+  },
+  {
+    "input": "Recursively move the /mnt directory to /backup/mnt",
+    "output": "mv /mnt /backup/mnt/"
+  },
+  {
+    "input": "Recursively move the /media directory to /backup/media",
+    "output": "mv /media /backup/media/"
+  },
+  {
+    "input": "Move all files in the current directory to /tmp and show progress",
+    "output": "mv -v * /tmp/"
+  },
+  {
+    "input": "Move all files in the current directory to /tmp and do not overwrite existing files",
+    "output": "mv -n * /tmp/"
+  },
+  {
+    "input": "Move all files in the current directory to /tmp and prompt before overwrite",
+    "output": "mv -i * /tmp/"
+  },
+  {
+    "input": "Move all files in the current directory to /tmp and force overwrite",
+    "output": "mv -f * /tmp/"
+  },
+  {
+    "input": "Move all files in the current directory to /tmp and keep permissions",
+    "output": "mv --preserve=mode * /tmp/"
+  },
+  {
+    "input": "Move all files in the current directory to /tmp and keep ownership",
+    "output": "mv --preserve=ownership * /tmp/"
+  },
+  {
+    "input": "Move all files in the current directory to /tmp and keep timestamps",
+    "output": "mv --preserve=timestamps * /tmp/"
+  },
+  {
+    "input": "Move all files in the current directory to /tmp and keep context",
+    "output": "mv --preserve=context * /tmp/"
+  },
+  {
+    "input": "Move all files in the current directory to /tmp and keep xattr",
+    "output": "mv --preserve=xattr * /tmp/"
+  },
+  {
+    "input": "Move all files in the current directory to /tmp and keep all attributes",
+    "output": "mv --preserve=all * /tmp/"
+  },
+  {
+    "input": "Move all files in the current directory to /tmp and keep everything",
+    "output": "mv --preserve=all * /tmp/"
+  },
+  {
+    "input": "Move all files in the current directory to /tmp and show progress",
+    "output": "mv -v * /tmp/"
+  },
+  {
+    "input": "Move all files in the current directory to /tmp and do not overwrite existing files",
+    "output": "mv -n * /tmp/"
+  },
+  {
+    "input": "Move all files in the current directory to /tmp and prompt before overwrite",
+    "output": "mv -i * /tmp/"
+  },
+  {
+    "input": "Move all files in the current directory to /tmp and force overwrite",
+    "output": "mv -f * /tmp/"
+  },
+  {
+    "input": "Move all files in the current directory to /tmp and keep permissions",
+    "output": "mv --preserve=mode * /tmp/"
+  },
+  {
+    "input": "Move all files in the current directory to /tmp and keep ownership",
+    "output": "mv --preserve=ownership * /tmp/"
+  },
+  {
+    "input": "Move all files in the current directory to /tmp and keep timestamps",
+    "output": "mv --preserve=timestamps * /tmp/"
+  },
+  {
+    "input": "Move all files in the current directory to /tmp and keep context",
+    "output": "mv --preserve=context * /tmp/"
+  },
+  {
+    "input": "Move all files in the current directory to /tmp and keep xattr",
+    "output": "mv --preserve=xattr * /tmp/"
+  },
+  {
+    "input": "Move all files in the current directory to /tmp and keep all attributes",
+    "output": "mv --preserve=all * /tmp/"
+  },
+  {
+    "input": "Move all files in the current directory to /tmp and keep everything",
+    "output": "mv --preserve=all * /tmp/"
+  },
+  {
+    "input": "Move all files in the current directory to /tmp and show progress",
+    "output": "mv -v * /tmp/"
+  },
+  {
+    "input": "Move all files in the current directory to /tmp and do not overwrite existing files",
+    "output": "mv -n * /tmp/"
+  },
+  {
+    "input": "Move all files in the current directory to /tmp and prompt before overwrite",
+    "output": "mv -i * /tmp/"
+  },
+  {
+    "input": "Move all files in the current directory to /tmp and force overwrite",
+    "output": "mv -f * /tmp/"
+  },
+  {
+    "input": "Move all files in the current directory to /tmp and keep permissions",
+    "output": "mv --preserve=mode * /tmp/"
+  },
+  {
+    "input": "Move all files in the current directory to /tmp and keep ownership",
+    "output": "mv --preserve=ownership * /tmp/"
+  },
+  {
+    "input": "Move all files in the current directory to /tmp and keep timestamps",
+    "output": "mv --preserve=timestamps * /tmp/"
+  },
+  {
+    "input": "Move all files in the current directory to /tmp and keep context",
+    "output": "mv --preserve=context * /tmp/"
+  },
+  {
+    "input": "Move all files in the current directory to /tmp and keep xattr",
+    "output": "mv --preserve=xattr * /tmp/"
+  },
+  {
+    "input": "Move all files in the current directory to /tmp and keep all attributes",
+    "output": "mv --preserve=all * /tmp/"
+  },
+  {
+    "input": "Move all files in the current directory to /tmp and keep everything",
+    "output": "mv --preserve=all * /tmp/"
+  },
+  {
+    "input": "Create an empty file called 'newfile.txt'",
+    "output": "touch newfile.txt"
+  },
+  {
+    "input": "Create a file named 'report.pdf' in the current directory",
+    "output": "touch report.pdf"
+  },
+  {
+    "input": "Create a file called 'image.jpg' in /tmp",
+    "output": "touch /tmp/image.jpg"
+  },
+  {
+    "input": "Create a file named 'data.csv' in /var/log",
+    "output": "touch /var/log/data.csv"
+  },
+  {
+    "input": "Create multiple files: 'file1.txt', 'file2.txt', and 'file3.txt'",
+    "output": "touch file1.txt file2.txt file3.txt"
+  },
+  {
+    "input": "Create a file named 'My File.txt' with spaces in the name",
+    "output": "touch 'My File.txt'"
+  },
+  {
+    "input": "Create a hidden file called '.env' in your home directory",
+    "output": "touch ~/.env"
+  },
+  {
+    "input": "Create a file called 'script.sh' in /usr/local/bin",
+    "output": "touch /usr/local/bin/script.sh"
+  },
+  {
+    "input": "Create a file named 'notes.txt' on the Desktop",
+    "output": "touch ~/Desktop/notes.txt"
+  },
+  {
+    "input": "Create a file called 'config.yaml' in /etc",
+    "output": "touch /etc/config.yaml"
+  },
+  {
+    "input": "Create all .log files in the current directory if they don't exist",
+    "output": "touch *.log"
+  },
+  {
+    "input": "Create a file called 'archive.tar.gz' in /opt",
+    "output": "touch /opt/archive.tar.gz"
+  },
+  {
+    "input": "Create a file called 'draft.docx' in the Documents folder",
+    "output": "touch ~/Documents/draft.docx"
+  },
+  {
+    "input": "Create a file called 'output.txt' in the parent directory",
+    "output": "touch ../output.txt"
+  },
+  {
+    "input": "Create a file called 'testfile' in /srv/www",
+    "output": "touch /srv/www/testfile"
+  },
+  {
+    "input": "Create a file called 'logfile' in /var/log",
+    "output": "touch /var/log/logfile"
+  },
+  {
+    "input": "Create a file called 'mail.txt' in /var/mail",
+    "output": "touch /var/mail/mail.txt"
+  },
+  {
+    "input": "Create a file called 'index.html' in /var/www/html",
+    "output": "touch /var/www/html/index.html"
+  },
+  {
+    "input": "Create a file called 'db.sqlite3' in the current directory",
+    "output": "touch db.sqlite3"
+  },
+  {
+    "input": "Create a file called 'access.log' in /var/log",
+    "output": "touch /var/log/access.log"
+  },
+  {
+    "input": "Create a file called 'syslog' in /var/log",
+    "output": "touch /var/log/syslog"
+  },
+  {
+    "input": "Create a file called 'kern.log' in /var/log",
+    "output": "touch /var/log/kern.log"
+  },
+  {
+    "input": "Create a file called 'apt.log' in /var/log/apt",
+    "output": "touch /var/log/apt/apt.log"
+  },
+  {
+    "input": "Create a file called 'user.log' in /var/log",
+    "output": "touch /var/log/user.log"
+  },
+  {
+    "input": "Create a file called 'boot.log' in /var/log",
+    "output": "touch /var/log/boot.log"
+  },
+  {
+    "input": "Create a file called 'sa.log' in /var/log/sa",
+    "output": "touch /var/log/sa/sa.log"
+  },
+  {
+    "input": "Create a file called 'aptitude.log' in /var/log/aptitude",
+    "output": "touch /var/log/aptitude/aptitude.log"
+  },
+  {
+    "input": "Create a file called 'clamav.log' in /var/log/clamav",
+    "output": "touch /var/log/clamav/clamav.log"
+  },
+  {
+    "input": "Create a file called 'news.log' in /var/log/news",
+    "output": "touch /var/log/news/news.log"
+  },
+  {
+    "input": "Create a file called 'samba.log' in /var/log/samba",
+    "output": "touch /var/log/samba/samba.log"
+  },
+  {
+    "input": "Create a file called 'yum.log' in /var/log",
+    "output": "touch /var/log/yum.log"
+  },
+  {
+    "input": "Create a file called 'lastlog' in /var/log",
+    "output": "touch /var/log/lastlog"
+  },
+  {
+    "input": "Create a file called 'secure' in /var/log",
+    "output": "touch /var/log/secure"
+  },
+  {
+    "input": "Create a file called 'cron' in /var/log",
+    "output": "touch /var/log/cron"
+  },
+  {
+    "input": "Create a file called 'btmp' in /var/log",
+    "output": "touch /var/log/btmp"
+  },
+  {
+    "input": "Create a file called 'history.log' in /var/log/apt",
+    "output": "touch /var/log/apt/history.log"
+  },
+  {
+    "input": "Create a file called 'fail2ban.log' in /var/log",
+    "output": "touch /var/log/fail2ban.log"
+  },
+  {
+    "input": "Create a file called 'gpu-manager.log' in /var/log",
+    "output": "touch /var/log/gpu-manager.log"
+  },
+  {
+    "input": "Create a file called 'kern.log' in /var/log",
+    "output": "touch /var/log/kern.log"
+  },
+  {
+    "input": "Create a file called 'mail.err' in /var/log",
+    "output": "touch /var/log/mail.err"
+  },
+  {
+    "input": "Create a file called 'mail.log' in /var/log",
+    "output": "touch /var/log/mail.log"
+  },
+  {
+    "input": "Create a file called 'messages' in /var/log",
+    "output": "touch /var/log/messages"
+  },
+  {
+    "input": "Create a file called 'user.log' in /var/log",
+    "output": "touch /var/log/user.log"
+  },
+  {
+    "input": "Create a file called 'Xorg.0.log' in /var/log",
+    "output": "touch /var/log/Xorg.0.log"
+  },
+  {
+    "input": "Create a file called 'Xorg.1.log' in /var/log",
+    "output": "touch /var/log/Xorg.1.log"
+  },
+  {
+    "input": "Create a file called 'Xorg.failsafe.log' in /var/log",
+    "output": "touch /var/log/Xorg.failsafe.log"
+  },
+  {
+    "input": "Create a file called 'test' in the current directory",
+    "output": "touch test"
+  },
+  {
+    "input": "Create a file called 'test' in the parent directory",
+    "output": "touch ../test"
+  },
+  {
+    "input": "Create a file called 'test' in /tmp",
+    "output": "touch /tmp/test"
+  },
+  {
+    "input": "Create a file called 'test' in /home/alice",
+    "output": "touch /home/alice/test"
+  },
+  {
+    "input": "Create a file called 'test' in /home/bob",
+    "output": "touch /home/bob/test"
+  },
+  {
+    "input": "Create a file called 'temp' in /home/charlie",
+    "output": "touch /home/charlie/temp"
+  },
+  {
+    "input": "Create a file called 'temp' in /home/dave",
+    "output": "touch /home/dave/temp"
+  },
+  {
+    "input": "Create a file called 'temp' in /home/erin",
+    "output": "touch /home/erin/temp"
+  },
+  {
+    "input": "Create a file called 'temp' in /home/frank",
+    "output": "touch /home/frank/temp"
+  },
+  {
+    "input": "Create a file called 'temp' in /home/grace",
+    "output": "touch /home/grace/temp"
+  },
+  {
+    "input": "Create a file called 'temp' in /home/harry",
+    "output": "touch /home/harry/temp"
+  },
+  {
+    "input": "Create a file called 'workspace' in your home",
+    "output": "touch ~/workspace"
+  },
+  {
+    "input": "Create a file called 'builds' in your home",
+    "output": "touch ~/builds"
+  },
+  {
+    "input": "Create a file called 'logs' in your home",
+    "output": "touch ~/logs"
+  },
+  {
+    "input": "Create a file called 'test_data' in your home",
+    "output": "touch ~/test_data"
+  },
+  {
+    "input": "Create a file called 'test_output' in your home",
+    "output": "touch ~/test_output"
+  },
+  {
+    "input": "Create a file called 'projects' in your home",
+    "output": "touch ~/projects"
+  },
+  {
+    "input": "Create a file called 'archives' in your home",
+    "output": "touch ~/archives"
+  },
+  {
+    "input": "Create a file called 'music' in your home",
+    "output": "touch ~/music"
+  },
+  {
+    "input": "Create a file called 'videos' in your home",
+    "output": "touch ~/videos"
+  },
+  {
+    "input": "Create a file called 'pictures' in your home",
+    "output": "touch ~/pictures"
+  },
+  {
+    "input": "Create a file called 'documents' in your home",
+    "output": "touch ~/documents"
+  },
+  {
+    "input": "Create a file called 'downloads' in your home",
+    "output": "touch ~/downloads"
+  },
+  {
+    "input": "Create a file called 'bin' in your home",
+    "output": "touch ~/bin"
+  },
+  {
+    "input": "Create a file called 'src' in your home",
+    "output": "touch ~/src"
+  },
+  {
+    "input": "Create a file called 'include' in your home",
+    "output": "touch ~/include"
+  },
+  {
+    "input": "Create a file called 'lib' in your home",
+    "output": "touch ~/lib"
+  },
+  {
+    "input": "Create a file called 'share' in your home",
+    "output": "touch ~/share"
+  },
+  {
+    "input": "Create a file called 'opt' in your home",
+    "output": "touch ~/opt"
+  },
+  {
+    "input": "Create a file called 'etc' in your home",
+    "output": "touch ~/etc"
+  },
+  {
+    "input": "Create a file called 'var' in your home",
+    "output": "touch ~/var"
+  },
+  {
+    "input": "Create a file called 'tmp' in your home",
+    "output": "touch ~/tmp"
+  },
+  {
+    "input": "Create a file called 'man' in your home",
+    "output": "touch ~/man"
+  },
+  {
+    "input": "Create a file called 'doc' in your home",
+    "output": "touch ~/doc"
+  },
+  {
+    "input": "Create a file called 'info' in your home",
+    "output": "touch ~/info"
+  },
+  {
+    "input": "Create a file called 'locale' in your home",
+    "output": "touch ~/locale"
+  },
+  {
+    "input": "Create a file called 'zoneinfo' in your home",
+    "output": "touch ~/zoneinfo"
+  },
+  {
+    "input": "Create a file called 'fonts' in your home",
+    "output": "touch ~/fonts"
+  },
+  {
+    "input": "Create a file called 'themes' in your home",
+    "output": "touch ~/themes"
+  },
+  {
+    "input": "Create a file called 'icons' in your home",
+    "output": "touch ~/icons"
+  },
+  {
+    "input": "Create a file called 'backgrounds' in your home",
+    "output": "touch ~/backgrounds"
+  },
+  {
+    "input": "Create a file called 'applications' in your home",
+    "output": "touch ~/applications"
+  },
+  {
+    "input": "Create a file called 'sounds' in your home",
+    "output": "touch ~/sounds"
+  },
+  {
+    "input": "Create a file called 'pixmaps' in your home",
+    "output": "touch ~/pixmaps"
+  },
+  {
+    "input": "Create a file called 'mime' in your home",
+    "output": "touch ~/mime"
+  },
+  {
+    "input": "Create a file called 'games' in your home",
+    "output": "touch ~/games"
+  },
+  {
+    "input": "Create a file called 'perl5' in your home",
+    "output": "touch ~/perl5"
+  },
+  {
+    "input": "Create a file called 'python' in your home",
+    "output": "touch ~/python"
+  },
+  {
+    "input": "Create a file called 'texmf' in your home",
+    "output": "touch ~/texmf"
+  },
+  {
+    "input": "Create a file called 'emacs' in your home",
+    "output": "touch ~/emacs"
+  },
+  {
+    "input": "Create a file called 'doc-base' in your home",
+    "output": "touch ~/doc-base"
+  },
+  {
+    "input": "Create a file called 'lintian' in your home",
+    "output": "touch ~/lintian"
+  },
+  {
+    "input": "Create a file called 'linda' in your home",
+    "output": "touch ~/linda"
+  },
+  {
+    "input": "Create a file called 'locale-langpack' in your home",
+    "output": "touch ~/locale-langpack"
+  },
+  {
+    "input": "Create a file called 'Asia' in your home",
+    "output": "touch ~/Asia"
+  },
+  {
+    "input": "Create a file called 'Europe' in your home",
+    "output": "touch ~/Europe"
+  },
+  {
+    "input": "Create a file called 'America' in your home",
+    "output": "touch ~/America"
+  },
+  {
+    "input": "Create a file called 'Africa' in your home",
+    "output": "touch ~/Africa"
+  },
+  {
+    "input": "Create a file called 'test' and set its timestamp to Jan 1, 2020",
+    "output": "touch -t 202001010000 test"
+  },
+  {
+    "input": "Create a file called 'log.txt' and set its timestamp to yesterday",
+    "output": "touch -d 'yesterday' log.txt"
+  },
+  {
+    "input": "Update the timestamp of 'existing.txt' to now",
+    "output": "touch existing.txt"
+  },
+  {
+    "input": "Create a file called 'future.txt' and set its timestamp to next week",
+    "output": "touch -d 'next week' future.txt"
+  },
+  {
+    "input": "Create a file called 'past.txt' and set its timestamp to last year",
+    "output": "touch -d 'last year' past.txt"
+  },
+  {
+    "input": "Create a file called 'ref.txt' and set its timestamp to match 'source.txt'",
+    "output": "touch -r source.txt ref.txt"
+  },
+  {
+    "input": "Create a file called 'no_create.txt' only if it exists",
+    "output": "touch -c no_create.txt"
+  },
+  {
+    "input": "Create a file called 'file.txt' and set its timestamp to 12:34 on June 18, 2025",
+    "output": "touch -t 202506181234 file.txt"
+  },
+  {
+    "input": "Create multiple files and set their timestamps to now",
+    "output": "touch file1 file2 file3"
+  },
+  {
+    "input": "Update the access time only for 'access.txt'",
+    "output": "touch -a access.txt"
+  },
+  {
+    "input": "Update the modification time only for 'mod.txt'",
+    "output": "touch -m mod.txt"
+  },
+  {
+    "input": "Create a file called 'special.txt' and set its timestamp to 8:00 AM today",
+    "output": "touch -t $(date +%Y%m%d)0800 special.txt"
+  },
+  {
+    "input": "Create a file called 'backup.txt' and set its timestamp to match 'original.txt'",
+    "output": "touch -r original.txt backup.txt"
+  },
+  {
+    "input": "Create a file called 'no_create.txt' only if it exists, do not create new",
+    "output": "touch -c no_create.txt"
+  },
+  {
+    "input": "Create a file called 'file.txt' and set its timestamp to 23:59 on Dec 31, 2024",
+    "output": "touch -t 202412312359 file.txt"
+  },
+  {
+    "input": "Create a file called 'log.txt' and set its timestamp to 6:30 PM today",
+    "output": "touch -t $(date +%Y%m%d)1830 log.txt"
+  },
+  {
+    "input": "Create a file called 'yesterday.txt' and set its timestamp to yesterday",
+    "output": "touch -d 'yesterday' yesterday.txt"
+  },
+  {
+    "input": "Create a file called 'tomorrow.txt' and set its timestamp to tomorrow",
+    "output": "touch -d 'tomorrow' tomorrow.txt"
+  },
+  {
+    "input": "Create a file called 'no_create.txt' only if it exists, do not create new",
+    "output": "touch -c no_create.txt"
+  },
+  {
+    "input": "Create a file called 'file.txt' and set its timestamp to 12:00 on June 18, 2025",
+    "output": "touch -t 202506181200 file.txt"
+  },
+  {
+    "input": "Create a file called 'log.txt' and set its timestamp to 7:00 AM today",
+    "output": "touch -t $(date +%Y%m%d)0700 log.txt"
+  },
+  {
+    "input": "Create a file called 'future.txt' and set its timestamp to next month",
+    "output": "touch -d 'next month' future.txt"
+  },
+  {
+    "input": "Create a file called 'past.txt' and set its timestamp to last month",
+    "output": "touch -d 'last month' past.txt"
+  },
+  {
+    "input": "Create a file called 'ref.txt' and set its timestamp to match 'source.txt'",
+    "output": "touch -r source.txt ref.txt"
+  },
+  {
+    "input": "Create a file called 'no_create.txt' only if it exists",
+    "output": "touch -c no_create.txt"
+  },
+  {
+    "input": "Create a file called 'file.txt' and set its timestamp to 00:00 on Jan 1, 2025",
+    "output": "touch -t 202501010000 file.txt"
+  },
+  {
+    "input": "Create a file called 'log.txt' and set its timestamp to 11:59 PM today",
+    "output": "touch -t $(date +%Y%m%d)2359 log.txt"
+  },
+  {
+    "input": "Create a file called 'yesterday.txt' and set its timestamp to yesterday",
+    "output": "touch -d 'yesterday' yesterday.txt"
+  },
+  {
+    "input": "Create a file called 'tomorrow.txt' and set its timestamp to tomorrow",
+    "output": "touch -d 'tomorrow' tomorrow.txt"
+  },
+  {
+    "input": "Create a file called 'no_create.txt' only if it exists, do not create new",
+    "output": "touch -c no_create.txt"
+  },
+  {
+    "input": "Create a file called 'file.txt' and set its timestamp to 12:00 on June 18, 2025",
+    "output": "touch -t 202506181200 file.txt"
+  },
+  {
+    "input": "Create a file called 'log.txt' and set its timestamp to 7:00 AM today",
+    "output": "touch -t $(date +%Y%m%d)0700 log.txt"
+  },
+  {
+    "input": "Create a file called 'future.txt' and set its timestamp to next month",
+    "output": "touch -d 'next month' future.txt"
+  },
+  {
+    "input": "Create a file called 'past.txt' and set its timestamp to last month",
+    "output": "touch -d 'last month' past.txt"
+  },
+  {
+    "input": "Create a file called 'ref.txt' and set its timestamp to match 'source.txt'",
+    "output": "touch -r source.txt ref.txt"
+  },
+  {
+    "input": "Create a file called 'no_create.txt' only if it exists",
+    "output": "touch -c no_create.txt"
+  },
+  {
+    "input": "Create a file called 'file.txt' and set its timestamp to 00:00 on Jan 1, 2025",
+    "output": "touch -t 202501010000 file.txt"
+  },
+  {
+    "input": "Create a file called 'log.txt' and set its timestamp to 11:59 PM today",
+    "output": "touch -t $(date +%Y%m%d)2359 log.txt"
+  },
+  {
+    "input": "Create a file called 'yesterday.txt' and set its timestamp to yesterday",
+    "output": "touch -d 'yesterday' yesterday.txt"
+  },
+  {
+    "input": "Create a file called 'tomorrow.txt' and set its timestamp to tomorrow",
+    "output": "touch -d 'tomorrow' tomorrow.txt"
+  },
+  {
+    "input": "Create a file called 'no_create.txt' only if it exists, do not create new",
+    "output": "touch -c no_create.txt"
+  },
+  {
+    "input": "Create a file called 'file.txt' and set its timestamp to 12:00 on June 18, 2025",
+    "output": "touch -t 202506181200 file.txt"
+  },
+  {
+    "input": "Create a file called 'log.txt' and set its timestamp to 7:00 AM today",
+    "output": "touch -t $(date +%Y%m%d)0700 log.txt"
+  },
+  {
+    "input": "Create a file called 'future.txt' and set its timestamp to next month",
+    "output": "touch -d 'next month' future.txt"
+  },
+  {
+    "input": "Create a file called 'past.txt' and set its timestamp to last month",
+    "output": "touch -d 'last month' past.txt"
+  },
+  {
+    "input": "Create a file called 'ref.txt' and set its timestamp to match 'source.txt'",
+    "output": "touch -r source.txt ref.txt"
+  },
+  {
+    "input": "Create a file called 'no_create.txt' only if it exists",
+    "output": "touch -c no_create.txt"
+  },
+  {
+    "input": "Create a file called 'file.txt' and set its timestamp to 00:00 on Jan 1, 2025",
+    "output": "touch -t 202501010000 file.txt"
+  },
+  {
+    "input": "Create a file called 'log.txt' and set its timestamp to 11:59 PM today",
+    "output": "touch -t $(date +%Y%m%d)2359 log.txt"
+  },
+  {
+    "input": "Create a file called 'yesterday.txt' and set its timestamp to yesterday",
+    "output": "touch -d 'yesterday' yesterday.txt"
+  },
+  {
+    "input": "Create a file called 'tomorrow.txt' and set its timestamp to tomorrow",
+    "output": "touch -d 'tomorrow' tomorrow.txt"
+  },
+  {
+    "input": "Create a file called 'no_create.txt' only if it exists, do not create new",
+    "output": "touch -c no_create.txt"
+  },
+  {
+    "input": "Create a file called 'file.txt' and set its timestamp to 12:00 on June 18, 2025",
+    "output": "touch -t 202506181200 file.txt"
+  },
+  {
+    "input": "Create a file called 'log.txt' and set its timestamp to 7:00 AM today",
+    "output": "touch -t $(date +%Y%m%d)0700 log.txt"
+  },
+  {
+    "input": "Create a file called 'future.txt' and set its timestamp to next month",
+    "output": "touch -d 'next month' future.txt"
+  },
+  {
+    "input": "Create a file called 'past.txt' and set its timestamp to last month",
+    "output": "touch -d 'last month' past.txt"
+  },
+  {
+    "input": "Create a file called 'ref.txt' and set its timestamp to match 'source.txt'",
+    "output": "touch -r source.txt ref.txt"
+  },
+  {
+    "input": "Create a file called 'no_create.txt' only if it exists",
+    "output": "touch -c no_create.txt"
+  },
+  {
+    "input": "Create a file called 'file.txt' and set its timestamp to 00:00 on Jan 1, 2025",
+    "output": "touch -t 202501010000 file.txt"
+  },
+  {
+    "input": "Create a file called 'log.txt' and set its timestamp to 11:59 PM today",
+    "output": "touch -t $(date +%Y%m%d)2359 log.txt"
+  },
+  {
+    "input": "Create a file called 'yesterday.txt' and set its timestamp to yesterday",
+    "output": "touch -d 'yesterday' yesterday.txt"
+  },
+  {
+    "input": "Create a file called 'tomorrow.txt' and set its timestamp to tomorrow",
+    "output": "touch -d 'tomorrow' tomorrow.txt"
+  },
+  {
+    "input": "Create a file called 'no_create.txt' only if it exists, do not create new",
+    "output": "touch -c no_create.txt"
+  },
+  {
+    "input": "Create a file called 'file.txt' and set its timestamp to 12:00 on June 18, 2025",
+    "output": "touch -t 202506181200 file.txt"
+  },
+  {
+    "input": "Create a file called 'log.txt' and set its timestamp to 7:00 AM today",
+    "output": "touch -t $(date +%Y%m%d)0700 log.txt"
+  },
+  {
+    "input": "Create a file called 'future.txt' and set its timestamp to next month",
+    "output": "touch -d 'next month' future.txt"
+  },
+  {
+    "input": "Create a file called 'past.txt' and set its timestamp to last month",
+    "output": "touch -d 'last month' past.txt"
+  },
+  {
+    "input": "Create a file called 'ref.txt' and set its timestamp to match 'source.txt'",
+    "output": "touch -r source.txt ref.txt"
+  },
+  {
+    "input": "Create a file called 'no_create.txt' only if it exists",
+    "output": "touch -c no_create.txt"
+  },
+  {
+    "input": "Create a file called 'file.txt' and set its timestamp to 00:00 on Jan 1, 2025",
+    "output": "touch -t 202501010000 file.txt"
+  },
+  {
+    "input": "Create a file called 'log.txt' and set its timestamp to 11:59 PM today",
+    "output": "touch -t $(date +%Y%m%d)2359 log.txt"
+  },
+  {
+    "input": "Create a file called 'yesterday.txt' and set its timestamp to yesterday",
+    "output": "touch -d 'yesterday' yesterday.txt"
+  },
+  {
+    "input": "Create a file called 'tomorrow.txt' and set its timestamp to tomorrow",
+    "output": "touch -d 'tomorrow' tomorrow.txt"
+  },
+    {
+    "input": "Find all .txt files in /home",
+    "output": "find /home -name \"*.txt\""
+  },
+  {
+    "input": "Find all files in /var/log",
+    "output": "find /var/log -type f"
+  },
+  {
+    "input": "Find all directories in /tmp",
+    "output": "find /tmp -type d"
+  },
+  {
+    "input": "Find all .jpg files (case-insensitive) in current directory and subdirectories",
+    "output": "find . -iname \"*.jpg\""
+  },
+  {
+    "input": "Find the hosts file in /etc",
+    "output": "find /etc -name \"hosts\""
+  },
+  {
+    "input": "Find all symbolic links in /usr",
+    "output": "find /usr -type l"
+  },
+  {
+    "input": "Find all directories at the top level of /",
+    "output": "find / -maxdepth 1 -type d"
+  },
+  {
+    "input": "Find all files in /home/user that start with 'report'",
+    "output": "find /home/user -type f -name \"report*\""
+  },
+  {
+    "input": "Find files larger than 10MB in /opt",
+    "output": "find /opt -type f -size +10M"
+  },
+  {
+    "input": "Find all empty files in /srv",
+    "output": "find /srv -type f -empty"
+  },
+  {
+    "input": "Find files in /var/log modified in the last 24 hours",
+    "output": "find /var/log -mtime -1"
+  },
+  {
+    "input": "Find files in /home accessed more than 30 days ago",
+    "output": "find /home -atime +30"
+  },
+  {
+    "input": "Find directories in /tmp created today",
+    "output": "find /tmp -ctime 0 -type d"
+  },
+  {
+    "input": "Find files in /data modified in the last hour",
+    "output": "find /data -mmin -60"
+  },
+  {
+    "input": "Find files in /backup accessed more than 2 hours ago",
+    "output": "find /backup -amin +120"
+  },
+  {
+    "input": "Find files in /home newer than file.txt",
+    "output": "find /home -newer file.txt"
+  },
+  {
+    "input": "Find files in /var accessed more recently than /tmp/test.log",
+    "output": "find /var -anewer /tmp/test.log"
+  },
+  {
+    "input": "Find files in /etc changed more recently than /etc/passwd",
+    "output": "find /etc -cnewer /etc/passwd"
+  },
+  {
+    "input": "Find files in /home modified more than 7 days ago",
+    "output": "find /home -mtime +7 -type f"
+  },
+  {
+    "input": "Find directories in /tmp changed in the last 2 days",
+    "output": "find /tmp -ctime -2 -type d"
+  },
+  {
+    "input": "Find files in /var larger than 100MB",
+    "output": "find /var -size +100M"
+  },
+  {
+    "input": "Find files in /home smaller than 1KB",
+    "output": "find /home -size -1k"
+  },
+  {
+    "input": "Find zero-byte files in /tmp",
+    "output": "find /tmp -size 0"
+  },
+  {
+    "input": "Find files in /data larger than 1GB",
+    "output": "find /data -size +1G -type f"
+  },
+  {
+    "input": "Find files in /srv smaller than 10MB",
+    "output": "find /srv -size -10M -type f"
+  },
+  {
+    "input": "Find .log files in /opt larger than 500KB",
+    "output": "find /opt -size +500k -name \"*.log\""
+  },
+  {
+    "input": "Find files in /home exactly 50MB in size",
+    "output": "find /home -size 50M"
+  },
+  {
+    "input": "List large files (>1GB) in /var with details",
+    "output": "find /var -size +1G -exec ls -lh {} \\;"
+  },
+  {
+    "input": "Find files in /tmp smaller than 100 bytes",
+    "output": "find /tmp -size -100c"
+  },
+  {
+    "input": "Find directories in /data larger than 2GB",
+    "output": "find /data -size +2G -type d"
+  },
+  {
+    "input": "Find files in /home owned by user alice",
+    "output": "find /home -user alice"
+  },
+  {
+    "input": "Find files in /var owned by group admin",
+    "output": "find /var -group admin"
+  },
+  {
+    "input": "Find files in /tmp with permission 644",
+    "output": "find /tmp -perm 644"
+  },
+  {
+    "input": "Find files in /etc where user has execute permission",
+    "output": "find /etc -perm /u+x"
+  },
+  {
+    "input": "Find files in /srv not owned by root",
+    "output": "find /srv -not -user root"
+  },
+  {
+    "input": "Find files in /opt not owned by group staff",
+    "output": "find /opt -not -group staff"
+  },
+  {
+    "input": "Find files in /home with SUID bit set",
+    "output": "find /home -perm -4000"
+  },
+  {
+    "input": "Find files in /var where group has write permission",
+    "output": "find /var -perm /g=w"
+  },
+  {
+    "input": "Find files in /tmp with user sticky bit set",
+    "output": "find /tmp -perm -u=s"
+  },
+  {
+    "input": "Find files in /data with no valid user",
+    "output": "find /data -nouser"
+  },
+  {
+    "input": "Find files in /home not ending with .bak",
+    "output": "find /home -not -name \"*.bak\""
+  },
+  {
+    "input": "Find non-directory files in /var",
+    "output": "find /var -not -type d"
+  },
+  {
+    "input": "Find non-empty files in /tmp",
+    "output": "find /tmp -not -size 0"
+  },
+  {
+    "input": "Find files in /data not owned by root",
+    "output": "find /data -not -user root"
+  },
+  {
+    "input": "Find files in /srv not having permission 777",
+    "output": "find /srv -not -perm 777"
+  },
+  {
+    "input": "Find files in /opt not ending with .tmp (case-insensitive)",
+    "output": "find /opt -not -iname \"*.tmp\""
+  },
+  {
+    "input": "Find files in /home not in .cache directories",
+    "output": "find /home -not -path \"*/.cache/*\""
+  },
+  {
+    "input": "Find files in /var not owned by group wheel",
+    "output": "find /var -not -group wheel"
+  },
+  {
+    "input": "Find files in /tmp not newer than /tmp/marker",
+    "output": "find /tmp -not -newer /tmp/marker"
+  },
+  {
+    "input": "Find non-empty files in /data",
+    "output": "find /data -not -empty"
+  },
+  {
+    "input": "Find all .txt or .md files in /home",
+    "output": "find /home \\( -name \"*.txt\" -o -name \"*.md\" \\)"
+  },
+  {
+    "input": "Find files in /var larger than 1MB",
+    "output": "find /var -type f -a -size +1M"
+  },
+  {
+    "input": "Find files in /tmp owned by alice or bob",
+    "output": "find /tmp \\( -user alice -o -user bob \\)"
+  },
+  {
+    "input": "Find empty directories in /data",
+    "output": "find /data -type d -a -empty"
+  },
+  {
+    "input": "Find .log files in /srv larger than 10MB",
+    "output": "find /srv -name \"*.log\" -a -size +10M"
+  },
+  {
+    "input": "Find files in /opt with permission 644 or 600",
+    "output": "find /opt \\( -perm 644 -o -perm 600 \\)"
+  },
+  {
+    "input": "Find files in /home modified in the last week",
+    "output": "find /home -mtime -7 -a -type f"
+  },
+  {
+    "input": "Find non-gzipped files in /var",
+    "output": "find /var -not -name \"*.gz\" -a -type f"
+  },
+  {
+    "input": "Find files in /tmp larger than 1MB or smaller than 1KB",
+    "output": "find /tmp \\( -size +1M -o -size -1k \\)"
+  },
+  {
+    "input": "Find files in /data owned by root and group root",
+    "output": "find /data -user root -a -group root"
+  },
+  {
+    "input": "Make all .sh files in /home executable",
+    "output": "find /home -name \"*.sh\" -exec chmod +x {} \\;"
+  },
+  {
+    "input": "Calculate md5sum for all files in /var",
+    "output": "find /var -type f -exec md5sum {} \\;"
+  },
+  {
+    "input": "List all directories in /tmp with details",
+    "output": "find /tmp -type d -exec ls -ld {} \\;"
+  },
+  {
+    "input": "Delete all .bak files in /data",
+    "output": "find /data -name \"*.bak\" -exec rm -f {} \\;"
+  },
+  {
+    "input": "Compress all files in /srv using gzip",
+    "output": "find /srv -type f -exec gzip {} \\;"
+  },
+  {
+    "input": "Copy all files in /opt to /backup",
+    "output": "find /opt -type f -exec cp {} /backup/ \\;"
+  },
+  {
+    "input": "Search for 'TODO' in all files in /home",
+    "output": "find /home -type f -exec grep \"TODO\" {} \\;"
+  },
+  {
+    "input": "Show disk usage for all files in /var",
+    "output": "find /var -type f -exec du -h {} \\;"
+  },
+  {
+    "input": "Move all files in /tmp to /tmp/old",
+    "output": "find /tmp -type f -exec mv {} /tmp/old/ \\;"
+  },
+  {
+    "input": "Show first line of every file in /data",
+    "output": "find /data -type f -exec head -n 1 {} \\;"
+  },
+  {
+    "input": "Print all files in /home",
+    "output": "find /home -type f -print"
+  },
+  {
+    "input": "Print all directories in /var separated by null character",
+    "output": "find /var -type d -print0"
+  },
+  {
+    "input": "Print path and size of all files in /tmp",
+    "output": "find /tmp -type f -printf \"%p %s\\n\""
+  },
+  {
+    "input": "List all files in /data with details",
+    "output": "find /data -type f -ls"
+  },
+  {
+    "input": "Print all files in /srv and sort the list",
+    "output": "find /srv -type f -print | sort"
+  },
+  {
+    "input": "Count lines in all files in /opt",
+    "output": "find /opt -type f -print | xargs wc -l"
+  },
+  {
+    "input": "Search for 'main' in all files in /home",
+    "output": "find /home -type f -print | xargs grep \"main\""
+  },
+  {
+    "input": "Show disk usage for all files in /var",
+    "output": "find /var -type f -print | xargs du -sh"
+  },
+  {
+    "input": "Echo the filename for each file in /tmp",
+    "output": "find /tmp -type f -print | xargs -I {} echo \"File: {}\""
+  },
+  {
+    "input": "Save list of all files in /data to files.txt",
+    "output": "find /data -type f -print | tee files.txt"
+  },
+  {
+    "input": "Find all files in /home up to 2 levels deep",
+    "output": "find /home -maxdepth 2 -type f"
+  },
+  {
+    "input": "Find all directories in /var at least 1 level deep",
+    "output": "find /var -mindepth 1 -type d"
+  },
+  {
+    "input": "Find files in /tmp at the top level only",
+    "output": "find /tmp -maxdepth 1 -type f"
+  },
+  {
+    "input": "Find files in /data at least 3 levels deep",
+    "output": "find /data -mindepth 3 -type f"
+  },
+  {
+    "input": "Find .conf files in /srv up to 4 levels deep",
+    "output": "find /srv -maxdepth 4 -name \"*.conf\""
+  },
+  {
+    "input": "Find directories in /opt at least 2 levels deep",
+    "output": "find /opt -mindepth 2 -type d"
+  },
+  {
+    "input": "Find directories in /home at the top level only",
+    "output": "find /home -maxdepth 1 -type d"
+  },
+  {
+    "input": "Find files in /var at least 2 levels deep",
+    "output": "find /var -mindepth 2 -type f"
+  },
+  {
+    "input": "Find files in /tmp up to 3 levels deep",
+    "output": "find /tmp -maxdepth 3 -type f"
+  },
+  {
+    "input": "Find directories in /data at least 4 levels deep",
+    "output": "find /data -mindepth 4 -type d"
+  },
+  {
+    "input": "Find all symbolic links in /home",
+    "output": "find /home -type l"
+  },
+  {
+    "input": "Find all broken symbolic links in /var",
+    "output": "find /var -xtype l"
+  },
+  {
+    "input": "Find all named pipes in /tmp",
+    "output": "find /tmp -type p"
+  },
+  {
+    "input": "Find all block devices in /data",
+    "output": "find /data -type b"
+  },
+  {
+    "input": "Find all character devices in /srv",
+    "output": "find /srv -type c"
+  },
+  {
+    "input": "Find all sockets in /opt",
+    "output": "find /opt -type s"
+  },
+  {
+    "input": "Find files in /home with more than one hard link",
+    "output": "find /home -type f -links +1"
+  },
+  {
+    "input": "Find files in /var with exactly one hard link",
+    "output": "find /var -type f -links 1"
+  },
+  {
+    "input": "Find files in /tmp with less than two hard links",
+    "output": "find /tmp -type f -links -2"
+  },
+  {
+    "input": "Show the target of all symbolic links in /data",
+    "output": "find /data -type l -exec readlink {} \\;"
+  },
+  {
+    "input": "Delete .log files in /home older than 30 days",
+    "output": "find /home -type f -name \"*.log\" -mtime +30 -exec rm {} \\;"
+  },
+  {
+    "input": "Compress files larger than 100MB in /var",
+    "output": "find /var -type f -size +100M -exec gzip {} \\;"
+  },
+  {
+    "input": "Change owner of files in /tmp owned by alice to bob",
+    "output": "find /tmp -type f -user alice -exec chown bob {} \\;"
+  },
+  {
+    "input": "Change permissions from 600 to 644 for files in /data",
+    "output": "find /data -type f -perm 600 -exec chmod 644 {} \\;"
+  },
+  {
+    "input": "Copy all .conf files in /srv to /backup",
+    "output": "find /srv -type f -name \"*.conf\" -exec cp {} /backup/ \\;"
+  },
+  {
+    "input": "Move files larger than 1GB in /opt to /mnt/bigfiles",
+    "output": "find /opt -type f -size +1G -exec mv {} /mnt/bigfiles/ \\;"
+  },
+  {
+    "input": "Echo recently modified files in /home",
+    "output": "find /home -type f -mtime -1 -exec echo \"Recent: {}\" \\;"
+  },
+  {
+    "input": "Compress all non-gzipped files in /var",
+    "output": "find /var -type f -not -name \"*.gz\" -exec gzip {} \\;"
+  },
+  {
+    "input": "Delete all zero-byte files in /tmp",
+    "output": "find /tmp -type f -size 0 -exec rm {} \\;"
+  },
+  {
+    "input": "Delete .bak files in /data older than 7 days",
+    "output": "find /data -type f -name \"*.bak\" -mtime +7 -exec rm {} \\;"
+  },
+  {
+    "input": "Find file with inode 123456 in /home",
+    "output": "find /home -inum 123456"
+  },
+  {
+    "input": "Find files in /var that are hard links to /etc/passwd",
+    "output": "find /var -samefile /etc/passwd"
+  },
+  {
+    "input": "Find files in /tmp with more than two hard links",
+    "output": "find /tmp -links +2"
+  },
+  {
+    "input": "Find files in /data on the same filesystem",
+    "output": "find /data -mount -type f"
+  },
+  {
+    "input": "Find files in /srv, do not descend into other filesystems",
+    "output": "find /srv -xdev -type f"
+  },
+  {
+    "input": "Find files in /opt on ext4 filesystem",
+    "output": "find /opt -fstype ext4"
+  },
+  {
+    "input": "Find files in /home with UID 1000",
+    "output": "find /home -uid 1000"
+  },
+  {
+    "input": "Find files in /var with GID 100",
+    "output": "find /var -gid 100"
+  },
+  {
+    "input": "Find files in /tmp newer than June 1, 2025",
+    "output": "find /tmp -type f -newerct \"2025-06-01\""
+  },
+  {
+    "input": "Find files in /data modified after June 10, 2025",
+    "output": "find /data -type f -newermt \"2025-06-10\""
+  },
+  {
+    "input": "Find all .log files in /home using regex",
+    "output": "find /home -regex \".*\\.log\""
+  },
+  {
+    "input": "Find all .txt files with 4 digits in the name in /var using regex",
+    "output": "find /var -iregex \".*[0-9]{4}\\.txt\""
+  },
+  {
+    "input": "Find all shell scripts with lowercase names in /tmp using regex",
+    "output": "find /tmp -regex \".*/[a-z]+\\.sh\""
+  },
+  {
+    "input": "Find all backup tarballs in /data using regex",
+    "output": "find /data -regex \".*/backup_[0-9]+\\.tar\\.gz\""
+  },
+  {
+    "input": "Find all files containing 'config' in the path in /srv using regex",
+    "output": "find /srv -regex \".*/config.*\""
+  },
+  {
+    "input": "Find all readme files in /opt using case-insensitive regex",
+    "output": "find /opt -iregex \".*/readme.*\""
+  },
+  {
+    "input": "Find all CSV files with 3 uppercase letters and 2 digits in /home using regex",
+    "output": "find /home -regex \".*/[A-Z]{3}[0-9]{2}\\.csv\""
+  },
+  {
+    "input": "Find all error log files with digits in /var using regex",
+    "output": "find /var -regex \".*/error_[0-9]+\\.log\""
+  },
+  {
+    "input": "Find all temp files in /tmp using case-insensitive regex",
+    "output": "find /tmp -iregex \".*/temp.*\""
+  },
+  {
+    "input": "Find all .txt files in 2025 subdirectories of /data using regex",
+    "output": "find /data -regex \".*/2025/.*\\.txt\""
+  },
+  {
+    "input": "Find all files in /home but skip .git directories",
+    "output": "find /home -path \"*/.git\" -prune -o -type f -print"
+  },
+  {
+    "input": "Find all files in /var but skip cache directories",
+    "output": "find /var -path \"*/cache\" -prune -o -type f -print"
+  },
+  {
+    "input": "Find all files in /tmp but skip old directories",
+    "output": "find /tmp -path \"*/old\" -prune -o -type f -print"
+  },
+  {
+    "input": "Find all files in /data but skip backup directories",
+    "output": "find /data -path \"*/backup\" -prune -o -type f -print"
+  },
+  {
+    "input": "Find all files in /srv but skip logs directories",
+    "output": "find /srv -path \"*/logs\" -prune -o -type f -print"
+  },
+  {
+    "input": "Find all files in /opt but skip tmp directories",
+    "output": "find /opt -path \"*/tmp\" -prune -o -type f -print"
+  },
+  {
+    "input": "Find all files in /home but skip .svn directories",
+    "output": "find /home -path \"*/.svn\" -prune -o -type f -print"
+  },
+  {
+    "input": "Find all files in /var but skip .cache directories",
+    "output": "find /var -path \"*/.cache\" -prune -o -type f -print"
+  },
+  {
+    "input": "Find all files in /tmp but skip .Trash directories",
+    "output": "find /tmp -path \"*/.Trash\" -prune -o -type f -print"
+  },
+  {
+    "input": "Find all files in /data but skip .bak directories",
+    "output": "find /data -path \"*/.bak\" -prune -o -type f -print"
+  },
+  {
+    "input": "Print only the base name of each file in /home",
+    "output": "find /home -type f -exec basename {} \\;"
+  },
+  {
+    "input": "Print only the directory name of each file in /var",
+    "output": "find /var -type f -exec dirname {} \\;"
+  },
+  {
+    "input": "Show stat information for all files in /tmp",
+    "output": "find /tmp -type f -exec stat {} \\;"
+  },
+  {
+    "input": "Show file type for all files in /data",
+    "output": "find /data -type f -exec file {} \\;"
+  },
+  {
+    "input": "Concatenate and display all files in /srv",
+    "output": "find /srv -type f -exec cat {} \\;"
+  },
+  {
+    "input": "Show last 5 lines of all files in /opt",
+    "output": "find /opt -type f -exec tail -n 5 {} \\;"
+  },
+  {
+    "input": "Count lines in all files in /home",
+    "output": "find /home -type f -exec wc -l {} \\;"
+  },
+  {
+    "input": "Sort the contents of all files in /var",
+    "output": "find /var -type f -exec sort {} \\;"
+  },
+  {
+    "input": "Compare each file in /tmp to /tmp/compare.txt",
+    "output": "find /tmp -type f -exec diff {} /tmp/compare.txt \\;"
+  },
+  {
+    "input": "Copy each file in /data to a .bak file",
+    "output": "find /data -type f -exec cp {} {}.bak \\;"
+  },
+   {
+    "input": "Display all available system information",
+    "output": "uname -a"
+  },
+  {
+    "input": "Show the kernel name",
+    "output": "uname -s"
+  },
+  {
+    "input": "Show the network node hostname",
+    "output": "uname -n"
+  },
+  {
+    "input": "Show the kernel release",
+    "output": "uname -r"
+  },
+  {
+    "input": "Show the kernel version",
+    "output": "uname -v"
+  },
+  {
+    "input": "Show the machine hardware name",
+    "output": "uname -m"
+  },
+  {
+    "input": "Show the processor type",
+    "output": "uname -p"
+  },
+  {
+    "input": "Show the hardware platform",
+    "output": "uname -i"
+  },
+  {
+    "input": "Show the operating system",
+    "output": "uname -o"
+  },
+  {
+    "input": "Display kernel name and release",
+    "output": "uname -sr"
+  },
+  {
+    "input": "Display kernel name and version",
+    "output": "uname -sv"
+  },
+  {
+    "input": "Display kernel name and machine hardware name",
+    "output": "uname -sm"
+  },
+  {
+    "input": "Display kernel name and processor type",
+    "output": "uname -sp"
+  },
+  {
+    "input": "Display kernel name and hardware platform",
+    "output": "uname -si"
+  },
+  {
+    "input": "Display kernel name and operating system",
+    "output": "uname -so"
+  },
+  {
+    "input": "Display kernel release and version",
+    "output": "uname -rv"
+  },
+  {
+    "input": "Display kernel release and machine hardware name",
+    "output": "uname -rm"
+  },
+  {
+    "input": "Display kernel release and processor type",
+    "output": "uname -rp"
+  },
+  {
+    "input": "Display kernel release and hardware platform",
+    "output": "uname -ri"
+  },
+  {
+    "input": "Display kernel release and operating system",
+    "output": "uname -ro"
+  },
+  {
+    "input": "Display kernel version and machine hardware name",
+    "output": "uname -vm"
+  },
+  {
+    "input": "Display kernel version and processor type",
+    "output": "uname -vp"
+  },
+  {
+    "input": "Display kernel version and hardware platform",
+    "output": "uname -vi"
+  },
+  {
+    "input": "Display kernel version and operating system",
+    "output": "uname -vo"
+  },
+  {
+    "input": "Display machine hardware name and processor type",
+    "output": "uname -mp"
+  },
+  {
+    "input": "Display machine hardware name and hardware platform",
+    "output": "uname -mi"
+  },
+  {
+    "input": "Display machine hardware name and operating system",
+    "output": "uname -mo"
+  },
+  {
+    "input": "Display processor type and hardware platform",
+    "output": "uname -pi"
+  },
+  {
+    "input": "Display processor type and operating system",
+    "output": "uname -po"
+  },
+  {
+    "input": "Display hardware platform and operating system",
+    "output": "uname -io"
+  },
+  {
+    "input": "Display kernel name, release, and version",
+    "output": "uname -srv"
+  },
+  {
+    "input": "Display kernel name, release, and machine hardware name",
+    "output": "uname -srm"
+  },
+  {
+    "input": "Display kernel name, release, and processor type",
+    "output": "uname -srp"
+  },
+  {
+    "input": "Display kernel name, release, and hardware platform",
+    "output": "uname -sri"
+  },
+  {
+    "input": "Display kernel name, release, and operating system",
+    "output": "uname -sro"
+  },
+  {
+    "input": "Display kernel name, version, and machine hardware name",
+    "output": "uname -svm"
+  },
+  {
+    "input": "Display kernel name, version, and processor type",
+    "output": "uname -svp"
+  },
+  {
+    "input": "Display kernel name, version, and hardware platform",
+    "output": "uname -svi"
+  },
+  {
+    "input": "Display kernel name, version, and operating system",
+    "output": "uname -svo"
+  },
+  {
+    "input": "Display kernel name, machine hardware name, and processor type",
+    "output": "uname -smp"
+  },
+  {
+    "input": "Display kernel name, machine hardware name, and hardware platform",
+    "output": "uname -smi"
+  },
+  {
+    "input": "Display kernel name, machine hardware name, and operating system",
+    "output": "uname -smo"
+  },
+  {
+    "input": "Display kernel name, processor type, and hardware platform",
+    "output": "uname -spi"
+  },
+  {
+    "input": "Display kernel name, processor type, and operating system",
+    "output": "uname -spo"
+  },
+  {
+    "input": "Display kernel name, hardware platform, and operating system",
+    "output": "uname -sio"
+  },
+  {
+    "input": "Display kernel release, version, and machine hardware name",
+    "output": "uname -rvm"
+  },
+  {
+    "input": "Display kernel release, version, and processor type",
+    "output": "uname -rvp"
+  },
+  {
+    "input": "Display kernel release, version, and hardware platform",
+    "output": "uname -rvi"
+  },
+  {
+    "input": "Display kernel release, version, and operating system",
+    "output": "uname -rvo"
+  },
+  {
+    "input": "Display kernel release, machine hardware name, and processor type",
+    "output": "uname -rmp"
+  },
+  {
+    "input": "Display kernel release, machine hardware name, and hardware platform",
+    "output": "uname -rmi"
+  },
+  {
+    "input": "Display kernel release, machine hardware name, and operating system",
+    "output": "uname -rmo"
+  },
+  {
+    "input": "Display kernel release, processor type, and hardware platform",
+    "output": "uname -rpi"
+  },
+  {
+    "input": "Display kernel release, processor type, and operating system",
+    "output": "uname -rpo"
+  },
+  {
+    "input": "Display kernel release, hardware platform, and operating system",
+    "output": "uname -rio"
+  },
+  {
+    "input": "Display kernel version, machine hardware name, and processor type",
+    "output": "uname -vmp"
+  },
+  {
+    "input": "Display kernel version, machine hardware name, and hardware platform",
+    "output": "uname -vmi"
+  },
+  {
+    "input": "Display kernel version, machine hardware name, and operating system",
+    "output": "uname -vmo"
+  },
+  {
+    "input": "Display kernel version, processor type, and hardware platform",
+    "output": "uname -vpi"
+  },
+  {
+    "input": "Display kernel version, processor type, and operating system",
+    "output": "uname -vpo"
+  },
+  {
+    "input": "Display kernel version, hardware platform, and operating system",
+    "output": "uname -vio"
+  },
+  {
+    "input": "Display machine hardware name, processor type, and hardware platform",
+    "output": "uname -mpi"
+  },
+  {
+    "input": "Display machine hardware name, processor type, and operating system",
+    "output": "uname -mpo"
+  },
+  {
+    "input": "Display machine hardware name, hardware platform, and operating system",
+    "output": "uname -mio"
+  },
+  {
+    "input": "Display processor type, hardware platform, and operating system",
+    "output": "uname -pio"
+  },
+  {
+    "input": "Display all system information except kernel version",
+    "output": "uname -asrmoipn"
+  },
+  {
+    "input": "Display all system information except kernel name",
+    "output": "uname -arnvmoip"
+  },
+  {
+    "input": "Display all system information except machine hardware name",
+    "output": "uname -asrvpoipn"
+  },
+  {
+    "input": "Display all system information except processor type",
+    "output": "uname -asrvmoin"
+  },
+  {
+    "input": "Display all system information except hardware platform",
+    "output": "uname -asrvmpo"
+  },
+  {
+    "input": "Display all system information except operating system",
+    "output": "uname -asrvmpi"
+  },
+  {
+    "input": "Display all system information except network node hostname",
+    "output": "uname -asrvmoip"
+  },
+  {
+    "input": "Display all system information except kernel release",
+    "output": "uname -asvmoipn"
+  },
+  {
+    "input": "Display all system information except kernel version and processor type",
+    "output": "uname -asrmoipn"
+  },
+  {
+    "input": "Display all system information except kernel name and hardware platform",
+    "output": "uname -arnvmoip"
+  },
+  {
+    "input": "Display all system information except kernel name and operating system",
+    "output": "uname -arnvmoip"
+  },
+  {
+    "input": "Display all system information except kernel name and network node hostname",
+    "output": "uname -arvmoip"
+  },
+  {
+    "input": "Display all system information except kernel name and kernel release",
+    "output": "uname -avmoipn"
+  },
+  {
+    "input": "Display all system information except kernel name and kernel version",
+    "output": "uname -armoipn"
+  },
+  {
+    "input": "Display all system information except kernel name and machine hardware name",
+    "output": "uname -arvpoipn"
+  },
+  {
+    "input": "Display all system information except kernel name and processor type",
+    "output": "uname -arvmoipn"
+  },
+  {
+    "input": "Display all system information except kernel name and hardware platform",
+    "output": "uname -arvmpoip"
+  },
+  {
+    "input": "Display all system information except kernel name and operating system",
+    "output": "uname -arvmpio"
+  },
+  {
+    "input": "Display all system information except kernel name and network node hostname",
+    "output": "uname -arvmpio"
+  },
+  {
+    "input": "Display all system information except kernel name and kernel release",
+    "output": "uname -avmpio"
+  },
+  {
+    "input": "Display all system information except kernel name and kernel version",
+    "output": "uname -armpio"
+  },
+  {
+    "input": "Display all system information except kernel name and machine hardware name",
+    "output": "uname -arvpio"
+  },
+  {
+    "input": "Display all system information except kernel name and processor type",
+    "output": "uname -arvmio"
+  },
+  {
+    "input": "Display all system information except kernel name and hardware platform",
+    "output": "uname -arvmpo"
+  },
+  {
+    "input": "Display all system information except kernel name and operating system",
+    "output": "uname -arvmpi"
+  },
+  {
+    "input": "Display all system information except kernel name and network node hostname",
+    "output": "uname -arvmpi"
+  },
+  {
+    "input": "Display all system information except kernel name and kernel release",
+    "output": "uname -avmpi"
+  },
+  {
+    "input": "Display all system information except kernel name and kernel version",
+    "output": "uname -armpi"
+  },
+  {
+    "input": "Display all system information except kernel name and machine hardware name",
+    "output": "uname -arvpi"
+  },
+  {
+    "input": "Display all system information except kernel name and processor type",
+    "output": "uname -arvmi"
+  },
+  {
+    "input": "Display all system information except kernel name and hardware platform",
+    "output": "uname -arvmp"
+  },
+  {
+    "input": "Display all system information except kernel name and operating system",
+    "output": "uname -arvmp"
+  },
+  {
+    "input": "Display all system information except kernel name and network node hostname",
+    "output": "uname -arvmp"
+  },
+  {
+    "input": "Display all system information except kernel name and kernel release",
+    "output": "uname -avmp"
+  },
+  {
+    "input": "Display all system information except kernel name and kernel version",
+    "output": "uname -armp"
+  },
+  {
+    "input": "Display all system information except kernel name and machine hardware name",
+    "output": "uname -arvp"
+  },
+  {
+    "input": "Display all system information except kernel name and processor type",
+    "output": "uname -arvm"
+  },
+  {
+    "input": "Display all system information except kernel name and hardware platform",
+    "output": "uname -arvm"
+  },
+  {
+    "input": "Display all system information except kernel name and operating system",
+    "output": "uname -arvm"
+  },
+  {
+    "input": "Display all system information except kernel name and network node hostname",
+    "output": "uname -arvm"
+  },
+  {
+    "input": "Display all system information except kernel name and kernel release",
+    "output": "uname -avm"
+  },
+  {
+    "input": "Display all system information except kernel name and kernel version",
+    "output": "uname -arm"
+  },
+  {
+    "input": "Display all system information except kernel name and machine hardware name",
+    "output": "uname -arv"
+  },
+  {
+    "input": "Display all system information except kernel name and processor type",
+    "output": "uname -arv"
+  },
+  {
+    "input": "Display all system information except kernel name and hardware platform",
+    "output": "uname -arv"
+  },
+  {
+    "input": "Display all system information except kernel name and operating system",
+    "output": "uname -arv"
+  },
+  {
+    "input": "Display all system information except kernel name and network node hostname",
+    "output": "uname -arv"
+  },
+  {
+    "input": "Display all system information except kernel name and kernel release",
+    "output": "uname -av"
+  },
+  {
+    "input": "Display all system information except kernel name and kernel version",
+    "output": "uname -ar"
+  },
+  {
+    "input": "Display all system information except kernel name and machine hardware name",
+    "output": "uname -ar"
+  },
+  {
+    "input": "Display all system information except kernel name and processor type",
+    "output": "uname -ar"
+  },
+  {
+    "input": "Display all system information except kernel name and hardware platform",
+    "output": "uname -ar"
+  },
+  {
+    "input": "Display all system information except kernel name and operating system",
+    "output": "uname -ar"
+  },
+  {
+    "input": "Display all system information except kernel name and network node hostname",
+    "output": "uname -ar"
+  },
+  {
+    "input": "Display all system information except kernel name and kernel release",
+    "output": "uname -a"
+  },
+  {
+    "input": "Display all system information except kernel name and kernel version",
+    "output": "uname -a"
+  },
+  {
+    "input": "Display all system information except kernel name and machine hardware name",
+    "output": "uname -a"
+  },
+  {
+    "input": "Display all system information except kernel name and processor type",
+    "output": "uname -a"
+  },
+  {
+    "input": "Display all system information except kernel name and hardware platform",
+    "output": "uname -a"
+  },
+  {
+    "input": "Display all system information except kernel name and operating system",
+    "output": "uname -a"
+  },
+  {
+    "input": "Display all system information except kernel name and network node hostname",
+    "output": "uname -a"
+  },
+  {
+    "input": "Display all system information except kernel name and kernel release",
+    "output": "uname -a"
+  },
+  {
+    "input": "Display all system information except kernel name and kernel version",
+    "output": "uname -a"
+  },
+  {
+    "input": "Display all system information except kernel name and machine hardware name",
+    "output": "uname -a"
+  },
+  {
+    "input": "Display all system information except kernel name and processor type",
+    "output": "uname -a"
+  },
+  {
+    "input": "Display all system information except kernel name and hardware platform",
+    "output": "uname -a"
+  },
+  {
+    "input": "Display all system information except kernel name and operating system",
+    "output": "uname -a"
+  },
+  {
+    "input": "Display all system information except kernel name and network node hostname",
+    "output": "uname -a"
+  },
+  {
+    "input": "Display all system information except kernel name and kernel release",
+    "output": "uname -a"
+  },
+  {
+    "input": "Display all system information except kernel name and kernel version",
+    "output": "uname -a"
+  },
+  {
+    "input": "Display all system information except kernel name and machine hardware name",
+    "output": "uname -a"
+  },
+  {
+    "input": "Display all system information except kernel name and processor type",
+    "output": "uname -a"
+  },
+  {
+    "input": "Display all system information except kernel name and hardware platform",
+    "output": "uname -a"
+  },
+  {
+    "input": "Display all system information except kernel name and operating system",
+    "output": "uname -a"
+  },
+  {
+    "input": "Display all system information except kernel name and network node hostname",
+    "output": "uname -a"
+  },
+    {
+    "input": "Show disk space usage for all mounted filesystems",
+    "output": "df"
+  },
+  {
+    "input": "Display disk usage in human-readable format",
+    "output": "df -h"
+  },
+  {
+    "input": "Show disk usage in megabytes",
+    "output": "df -m"
+  },
+  {
+    "input": "Show disk usage in gigabytes",
+    "output": "df -BG"
+  },
+  {
+    "input": "Show disk usage in 1K blocks",
+    "output": "df -k"
+  },
+  {
+    "input": "Show disk usage in bytes",
+    "output": "df -B1"
+  },
+  {
+    "input": "Show disk usage for a specific directory",
+    "output": "df /home"
+  },
+  {
+    "input": "Show disk usage for a specific device",
+    "output": "df /dev/sda1"
+  },
+  {
+    "input": "Show disk usage for all filesystems including dummy filesystems",
+    "output": "df -a"
+  },
+  {
+    "input": "Show disk usage for all filesystems in human-readable format",
+    "output": "df -ah"
+  },
+  {
+    "input": "Show disk usage for all filesystems in POSIX format",
+    "output": "df -P"
+  },
+  {
+    "input": "Show disk usage for all filesystems in human-readable POSIX format",
+    "output": "df -Ph"
+  },
+  {
+    "input": "Show disk usage for all filesystems with filesystem type",
+    "output": "df -T"
+  },
+  {
+    "input": "Show disk usage for all filesystems with type in human-readable format",
+    "output": "df -hT"
+  },
+  {
+    "input": "Show inode usage for all filesystems",
+    "output": "df -i"
+  },
+  {
+    "input": "Show inode usage in human-readable format",
+    "output": "df -ih"
+  },
+  {
+    "input": "Show disk usage for filesystems of type ext4",
+    "output": "df -t ext4"
+  },
+  {
+    "input": "Show disk usage for filesystems of type xfs",
+    "output": "df -t xfs"
+  },
+  {
+    "input": "Show disk usage for filesystems of type nfs",
+    "output": "df -t nfs"
+  },
+  {
+    "input": "Show disk usage excluding tmpfs filesystems",
+    "output": "df -x tmpfs"
+  },
+  {
+    "input": "Show disk usage excluding devtmpfs filesystems",
+    "output": "df -x devtmpfs"
+  },
+  {
+    "input": "Show disk usage for all filesystems, sorted by usage percentage",
+    "output": "df -h | sort -k 5 -h"
+  },
+  {
+    "input": "Show disk usage for all filesystems, sorted by available space",
+    "output": "df -h | sort -k 4 -h"
+  },
+  {
+    "input": "Show disk usage for all filesystems, sorted by mount point",
+    "output": "df -h | sort -k 6"
+  },
+  {
+    "input": "Show disk usage for all filesystems, sorted by filesystem name",
+    "output": "df -h | sort -k 1"
+  },
+  {
+    "input": "Show disk usage for all filesystems, filter for usage above 80%",
+    "output": "df -h | awk '$5+0 > 80'"
+  },
+  {
+    "input": "Show disk usage for all filesystems, filter for usage below 20%",
+    "output": "df -h | awk '$5+0 < 20'"
+  },
+  {
+    "input": "Show disk usage for all filesystems, filter for /dev/sda* devices",
+    "output": "df -h | grep '/dev/sda'"
+  },
+  {
+    "input": "Show disk usage for all filesystems, filter for /home mount point",
+    "output": "df -h | grep '/home'"
+  },
+  {
+    "input": "Show disk usage for all filesystems, filter for ext4 filesystems",
+    "output": "df -hT | grep 'ext4'"
+  },
+  {
+    "input": "Show disk usage for all filesystems, filter for nfs filesystems",
+    "output": "df -hT | grep 'nfs'"
+  },
+  {
+    "input": "Show disk usage for all filesystems, filter for filesystems with less than 1G available",
+    "output": "df -h | awk '$4 ~ /G/ && $4+0 < 1'"
+  },
+  {
+    "input": "Show disk usage for all filesystems, filter for filesystems with more than 10G available",
+    "output": "df -h | awk '$4 ~ /G/ && $4+0 > 10'"
+  },
+  {
+    "input": "Show disk usage for all filesystems, display only the available space",
+    "output": "df -h --output=avail"
+  },
+  {
+    "input": "Show disk usage for all filesystems, display only the used space",
+    "output": "df -h --output=used"
+  },
+  {
+    "input": "Show disk usage for all filesystems, display only the filesystem and mount point",
+    "output": "df -h --output=source,target"
+  },
+  {
+    "input": "Show disk usage for all filesystems, display only the filesystem type and usage percentage",
+    "output": "df -h --output=fstype,pcent"
+  },
+  {
+    "input": "Show disk usage for all filesystems, display all available columns",
+    "output": "df -h --output=source,fstype,itotal,iused,iavail,ipcent,size,used,avail,pcent,target"
+  },
+  {
+    "input": "Show disk usage for all filesystems, display only the mount point and available space",
+    "output": "df -h --output=target,avail"
+  },
+  {
+    "input": "Show disk usage for all filesystems, display only the filesystem and type",
+    "output": "df -h --output=source,fstype"
+  },
+  {
+    "input": "Show disk usage for all filesystems, display only the filesystem and usage percentage",
+    "output": "df -h --output=source,pcent"
+  },
+  {
+    "input": "Show disk usage for all filesystems, display only the mount point and usage percentage",
+    "output": "df -h --output=target,pcent"
+  },
+  {
+    "input": "Show disk usage for all filesystems, display only the filesystem and available space",
+    "output": "df -h --output=source,avail"
+  },
+  {
+    "input": "Show disk usage for all filesystems, display only the filesystem and used space",
+    "output": "df -h --output=source,used"
+  },
+  {
+    "input": "Show disk usage for all filesystems, display only the filesystem and total size",
+    "output": "df -h --output=source,size"
+  },
+  {
+    "input": "Show disk usage for all filesystems, display only the filesystem and inode usage",
+    "output": "df -h --output=source,ipcent"
+  },
+  {
+    "input": "Show disk usage for all filesystems, display only the filesystem and total inodes",
+    "output": "df -h --output=source,itotal"
+  },
+  {
+    "input": "Show disk usage for all filesystems, display only the filesystem and used inodes",
+    "output": "df -h --output=source,iused"
+  },
+  {
+    "input": "Show disk usage for all filesystems, display only the filesystem and available inodes",
+    "output": "df -h --output=source,iavail"
+  },
+  {
+    "input": "Show disk usage for all filesystems, display only the filesystem and mount point",
+    "output": "df -h --output=source,target"
+  },
+  {
+    "input": "Show disk usage for all filesystems, display only the filesystem, type, and mount point",
+    "output": "df -h --output=source,fstype,target"
+  },
+  {
+    "input": "Show disk usage for all filesystems, display only the filesystem, size, and usage percentage",
+    "output": "df -h --output=source,size,pcent"
+  },
+  {
+    "input": "Show disk usage for all filesystems, display only the filesystem, used, and available space",
+    "output": "df -h --output=source,used,avail"
+  },
+  {
+    "input": "Show disk usage for all filesystems, display only the filesystem, used, available, and usage percentage",
+    "output": "df -h --output=source,used,avail,pcent"
+  },
+  {
+    "input": "Show disk usage for all filesystems, display only the filesystem, type, and usage percentage",
+    "output": "df -h --output=source,fstype,pcent"
+  },
+  {
+    "input": "Show disk usage for all filesystems, display only the filesystem, type, and available space",
+    "output": "df -h --output=source,fstype,avail"
+  },
+  {
+    "input": "Show disk usage for all filesystems, display only the filesystem, type, and used space",
+    "output": "df -h --output=source,fstype,used"
+  },
+  {
+    "input": "Show disk usage for all filesystems, display only the filesystem, type, and total size",
+    "output": "df -h --output=source,fstype,size"
+  },
+  {
+    "input": "Show disk usage for all filesystems, display only the filesystem, type, and mount point",
+    "output": "df -h --output=source,fstype,target"
+  },
+  {
+    "input": "Show disk usage for all filesystems, display only the filesystem, type, and inode usage",
+    "output": "df -h --output=source,fstype,ipcent"
+  },
 ]
-
