@@ -1,0 +1,402 @@
+[
+  {
+    "input": "Rename the group devs to developers",
+    "output": "groupmod -n developers devs"
+  },
+  {
+    "input": "Change group name from testers to qa_team",
+    "output": "groupmod -n qa_team testers"
+  },
+  {
+    "input": "Modify group hr to human_resources",
+    "output": "groupmod -n human_resources hr"
+  },
+  {
+    "input": "Rename designers group to ui_ux",
+    "output": "groupmod -n ui_ux designers"
+  },
+  {
+    "input": "Change the group content_creators to media_team",
+    "output": "groupmod -n media_team content_creators"
+  },
+  {
+    "input": "Update the group name from marketing to digital_marketing",
+    "output": "groupmod -n digital_marketing marketing"
+  },
+  {
+    "input": "Switch group name from engineers to eng_team",
+    "output": "groupmod -n eng_team engineers"
+  },
+  {
+    "input": "Rename analytics group as data_team",
+    "output": "groupmod -n data_team analytics"
+  },
+  {
+    "input": "Change ops to operations",
+    "output": "groupmod -n operations ops"
+  },
+  {
+    "input": "Rename group qa to qa_engineers",
+    "output": "groupmod -n qa_engineers qa"
+  },
+  {
+    "input": "Rename interns2024 to interns",
+    "output": "groupmod -n interns interns2024"
+  },
+  {
+    "input": "Change backend to backend_team",
+    "output": "groupmod -n backend_team backend"
+  },
+  {
+    "input": "Update frontend group to ui_team",
+    "output": "groupmod -n ui_team frontend"
+  },
+  {
+    "input": "Rename the group devops to infra_devops",
+    "output": "groupmod -n infra_devops devops"
+  },
+  {
+    "input": "Change name of admins group to super_admins",
+    "output": "groupmod -n super_admins admins"
+  },
+  {
+    "input": "Switch group legal to legal_team",
+    "output": "groupmod -n legal_team legal"
+  },
+  {
+    "input": "Rename project_alpha to alpha_project",
+    "output": "groupmod -n alpha_project project_alpha"
+  },
+  {
+    "input": "Update the name of content_team to creative_team",
+    "output": "groupmod -n creative_team content_team"
+  },
+  {
+    "input": "Change sysadmins to system_admins",
+    "output": "groupmod -n system_admins sysadmins"
+  },
+  {
+    "input": "Rename the team root_team to root_access",
+    "output": "groupmod -n root_access root_team"
+  },
+  {
+    "input": "Change dev_infra to infra_team",
+    "output": "groupmod -n infra_team dev_infra"
+  },
+  {
+    "input": "Rename support to tech_support",
+    "output": "groupmod -n tech_support support"
+  },
+  {
+    "input": "Update mentors group to mentorship_team",
+    "output": "groupmod -n mentorship_team mentors"
+  },
+  {
+    "input": "Change beta_users to beta_testers",
+    "output": "groupmod -n beta_testers beta_users"
+  },
+  {
+    "input": "Switch user_ops group name to account_ops",
+    "output": "groupmod -n account_ops user_ops"
+  },
+  {
+    "input": "Rename mobile_team to mobile_dev",
+    "output": "groupmod -n mobile_dev mobile_team"
+  },
+  {
+    "input": "Change group research to research_team",
+    "output": "groupmod -n research_team research"
+  },
+  {
+    "input": "Rename training to training_dept",
+    "output": "groupmod -n training_dept training"
+  },
+  {
+    "input": "Update dev_team group name to software_dev",
+    "output": "groupmod -n software_dev dev_team"
+  },
+  {
+    "input": "Change alpha_users to early_users",
+    "output": "groupmod -n early_users alpha_users"
+  },
+  {
+    "input": "Rename security_team to infosec_team",
+    "output": "groupmod -n infosec_team security_team"
+  },
+  {
+    "input": "Change team_rocket to rocket_team",
+    "output": "groupmod -n rocket_team team_rocket"
+  },
+  {
+    "input": "Rename training_batch_1 to batch1_training",
+    "output": "groupmod -n batch1_training training_batch_1"
+  },
+  {
+    "input": "Update read_only_users to readonly_group",
+    "output": "groupmod -n readonly_group read_only_users"
+  },
+  {
+    "input": "Change students2025 to final_years",
+    "output": "groupmod -n final_years students2025"
+  },
+  {
+    "input": "Rename internal_tools to tools_internal",
+    "output": "groupmod -n tools_internal internal_tools"
+  },
+  {
+    "input": "Update group support_batch1 to support_1",
+    "output": "groupmod -n support_1 support_batch1"
+  },
+  {
+    "input": "Change onboarding_team to onboarding_unit",
+    "output": "groupmod -n onboarding_unit onboarding_team"
+  },
+  {
+    "input": "Rename voice_test group to voice_team",
+    "output": "groupmod -n voice_team voice_test"
+  },
+  {
+    "input": "Change graphics_team to visual_team",
+    "output": "groupmod -n visual_team graphics_team"
+  },
+  {
+    "input": "Rename UX_designers to ux_team",
+    "output": "groupmod -n ux_team UX_designers"
+  },
+  {
+    "input": "Update documentation_review to doc_review",
+    "output": "groupmod -n doc_review documentation_review"
+  },
+  {
+    "input": "Change simulation_users to sim_team",
+    "output": "groupmod -n sim_team simulation_users"
+  },
+  {
+    "input": "Rename app_reviewers to reviewers_app",
+    "output": "groupmod -n reviewers_app app_reviewers"
+  },
+  {
+    "input": "Change golang_team to go_dev",
+    "output": "groupmod -n go_dev golang_team"
+  },
+  {
+    "input": "Rename node_admins to node_ops",
+    "output": "groupmod -n node_ops node_admins"
+  },
+  {
+    "input": "Update java_developers to java_team",
+    "output": "groupmod -n java_team java_developers"
+  },
+  {
+    "input": "Change graphics_team to graphics_ops",
+    "output": "groupmod -n graphics_ops graphics_team"
+  },
+  {
+    "input": "Rename the group devs to developers",
+    "output": "groupmod -n developers devs"
+  },
+  {
+    "input": "Change group name from testers to qa_team",
+    "output": "groupmod -n qa_team testers"
+  },
+  {
+    "input": "Modify group hr to human_resources",
+    "output": "groupmod -n human_resources hr"
+  },
+  {
+    "input": "Rename designers group to ui_ux",
+    "output": "groupmod -n ui_ux designers"
+  },
+  {
+    "input": "Change the group content_creators to media_team",
+    "output": "groupmod -n media_team content_creators"
+  },
+  {
+    "input": "Update the group name from marketing to digital_marketing",
+    "output": "groupmod -n digital_marketing marketing"
+  },
+  {
+    "input": "Switch group name from engineers to eng_team",
+    "output": "groupmod -n eng_team engineers"
+  },
+  {
+    "input": "Rename analytics group as data_team",
+    "output": "groupmod -n data_team analytics"
+  },
+  {
+    "input": "Change ops to operations",
+    "output": "groupmod -n operations ops"
+  },
+  {
+    "input": "Rename group qa to qa_engineers",
+    "output": "groupmod -n qa_engineers qa"
+  },
+  {
+    "input": "Rename interns2024 to interns",
+    "output": "groupmod -n interns interns2024"
+  },
+  {
+    "input": "Change backend to backend_team",
+    "output": "groupmod -n backend_team backend"
+  },
+  {
+    "input": "Update frontend group to ui_team",
+    "output": "groupmod -n ui_team frontend"
+  },
+  {
+    "input": "Rename the group devops to infra_devops",
+    "output": "groupmod -n infra_devops devops"
+  },
+  {
+    "input": "Change name of admins group to super_admins",
+    "output": "groupmod -n super_admins admins"
+  },
+  {
+    "input": "Switch group legal to legal_team",
+    "output": "groupmod -n legal_team legal"
+  },
+  {
+    "input": "Rename project_alpha to alpha_project",
+    "output": "groupmod -n alpha_project project_alpha"
+  },
+  {
+    "input": "Update the name of content_team to creative_team",
+    "output": "groupmod -n creative_team content_team"
+  },
+  {
+    "input": "Change sysadmins to system_admins",
+    "output": "groupmod -n system_admins sysadmins"
+  },
+  {
+    "input": "Rename the team root_team to root_access",
+    "output": "groupmod -n root_access root_team"
+  },
+  {
+    "input": "Change dev_infra to infra_team",
+    "output": "groupmod -n infra_team dev_infra"
+  },
+  {
+    "input": "Rename support to tech_support",
+    "output": "groupmod -n tech_support support"
+  },
+  {
+    "input": "Update mentors group to mentorship_team",
+    "output": "groupmod -n mentorship_team mentors"
+  },
+  {
+    "input": "Change beta_users to beta_testers",
+    "output": "groupmod -n beta_testers beta_users"
+  },
+  {
+    "input": "Switch user_ops group name to account_ops",
+    "output": "groupmod -n account_ops user_ops"
+  },
+  {
+    "input": "Rename mobile_team to mobile_dev",
+    "output": "groupmod -n mobile_dev mobile_team"
+  },
+  {
+    "input": "Change group research to research_team",
+    "output": "groupmod -n research_team research"
+  },
+  {
+    "input": "Rename training to training_dept",
+    "output": "groupmod -n training_dept training"
+  },
+  {
+    "input": "Update dev_team group name to software_dev",
+    "output": "groupmod -n software_dev dev_team"
+  },
+  {
+    "input": "Change alpha_users to early_users",
+    "output": "groupmod -n early_users alpha_users"
+  },
+  {
+    "input": "Rename security_team to infosec_team",
+    "output": "groupmod -n infosec_team security_team"
+  },
+  {
+    "input": "Change team_rocket to rocket_team",
+    "output": "groupmod -n rocket_team team_rocket"
+  },
+  {
+    "input": "Rename training_batch_1 to batch1_training",
+    "output": "groupmod -n batch1_training training_batch_1"
+  },
+  {
+    "input": "Update read_only_users to readonly_group",
+    "output": "groupmod -n readonly_group read_only_users"
+  },
+  {
+    "input": "Change students2025 to final_years",
+    "output": "groupmod -n final_years students2025"
+  },
+  {
+    "input": "Rename internal_tools to tools_internal",
+    "output": "groupmod -n tools_internal internal_tools"
+  },
+  {
+    "input": "Update group support_batch1 to support_1",
+    "output": "groupmod -n support_1 support_batch1"
+  },
+  {
+    "input": "Change onboarding_team to onboarding_unit",
+    "output": "groupmod -n onboarding_unit onboarding_team"
+  },
+  {
+    "input": "Rename voice_test group to voice_team",
+    "output": "groupmod -n voice_team voice_test"
+  },
+  {
+    "input": "Change graphics_team to visual_team",
+    "output": "groupmod -n visual_team graphics_team"
+  },
+  {
+    "input": "Rename UX_designers to ux_team",
+    "output": "groupmod -n ux_team UX_designers"
+  },
+  {
+    "input": "Update documentation_review to doc_review",
+    "output": "groupmod -n doc_review documentation_review"
+  },
+  {
+    "input": "Change simulation_users to sim_team",
+    "output": "groupmod -n sim_team simulation_users"
+  },
+  {
+    "input": "Rename app_reviewers to reviewers_app",
+    "output": "groupmod -n reviewers_app app_reviewers"
+  },
+  {
+    "input": "Change golang_team to go_dev",
+    "output": "groupmod -n go_dev golang_team"
+  },
+  {
+    "input": "Rename node_admins to node_ops",
+    "output": "groupmod -n node_ops node_admins"
+  },
+  {
+    "input": "Update java_developers to java_team",
+    "output": "groupmod -n java_team java_developers"
+  },
+  {
+    "input": "Change graphics_team to graphics_ops",
+    "output": "groupmod -n graphics_ops graphics_team"
+  },
+  {
+    "input": "Rename legacy_users to legacy_team",
+    "output": "groupmod -n legacy_team legacy_users"
+  },
+  {
+    "input": "Update api_dev to api_team",
+    "output": "groupmod -n api_team api_dev"
+  },
+  {
+    "input": "Switch debug_access to debug_team",
+    "output": "groupmod -n debug_team debug_access"
+  },
+  {
+    "input": "Rename training_team to team_training",
+    "output": "groupmod -n team_training training_team"
+  }
+]

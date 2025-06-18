@@ -1,0 +1,410 @@
+[
+        {
+            "input": "Lock the password for user john",
+            "output": "passwd -l john"
+        },
+        {
+            "input": "Disable password login for alice",
+            "output": "passwd -l alice"
+        },
+        {
+            "input": "Lock user bob's account",
+            "output": "passwd -l bob"
+        },
+        {
+            "input": "Prevent dave from logging in with password",
+            "output": "passwd -l dave"
+        },
+        {
+            "input": "Temporarily lock sam's password",
+            "output": "passwd -l sam"
+        },
+        {
+            "input": "Lock charlie's login credentials",
+            "output": "passwd -l charlie"
+        },
+        {
+            "input": "Disable emma's login with password",
+            "output": "passwd -l emma"
+        },
+        {
+            "input": "Prevent lisa from using her password",
+            "output": "passwd -l lisa"
+        },
+        {
+            "input": "Lock login access for user ryan",
+            "output": "passwd -l ryan"
+        },
+        {
+            "input": "Restrict password access for nick",
+            "output": "passwd -l nick"
+        },
+        {
+            "input": "Temporarily disable password login for root",
+            "output": "passwd -l root"
+        },
+        {
+            "input": "Deactivate steve's password",
+            "output": "passwd -l steve"
+        },
+        {
+            "input": "Lock password authentication for rachel",
+            "output": "passwd -l rachel"
+        },
+        {
+            "input": "Disable password for test_user",
+            "output": "passwd -l test_user"
+        },
+        {
+            "input": "Lock developer1 account",
+            "output": "passwd -l developer1"
+        },
+        {
+            "input": "Block mark from logging in using password",
+            "output": "passwd -l mark"
+        },
+        {
+            "input": "Temporarily lock devops_admin's password",
+            "output": "passwd -l devops_admin"
+        },
+        {
+            "input": "Lock johnny's password access",
+            "output": "passwd -l johnny"
+        },
+        {
+            "input": "Disable sysadmin password access",
+            "output": "passwd -l sysadmin"
+        },
+        {
+            "input": "Block admin1 from password login",
+            "output": "passwd -l admin1"
+        },
+        {
+            "input": "Temporarily disable password for user1",
+            "output": "passwd -l user1"
+        },
+        {
+            "input": "Lock bob_admin's login method",
+            "output": "passwd -l bob_admin"
+        },
+        {
+            "input": "Restrict employee45's password login",
+            "output": "passwd -l employee45"
+        },
+        {
+            "input": "Lock student7 from accessing account via password",
+            "output": "passwd -l student7"
+        },
+        {
+            "input": "Temporarily prevent linuxuser from logging in",
+            "output": "passwd -l linuxuser"
+        },
+        {
+            "input": "Disable qa_user's password",
+            "output": "passwd -l qa_user"
+        },
+        {
+            "input": "Lock dev_admin login using password",
+            "output": "passwd -l dev_admin"
+        },
+        {
+            "input": "Block webuser from password access",
+            "output": "passwd -l webuser"
+        },
+        {
+            "input": "Lock engineer3 credentials",
+            "output": "passwd -l engineer3"
+        },
+        {
+            "input": "Restrict test_account password entry",
+            "output": "passwd -l test_account"
+        },
+        {
+            "input": "Disable login for client_service",
+            "output": "passwd -l client_service"
+        },
+        {
+            "input": "Block rootadmin's login access",
+            "output": "passwd -l rootadmin"
+        },
+        {
+            "input": "Lock internal_user's credentials",
+            "output": "passwd -l internal_user"
+        },
+        {
+            "input": "Temporarily disable script_user password",
+            "output": "passwd -l script_user"
+        },
+        {
+            "input": "Prevent staging_user from password login",
+            "output": "passwd -l staging_user"
+        },
+        {
+            "input": "Block deployuser from accessing system with password",
+            "output": "passwd -l deployuser"
+        },
+        {
+            "input": "Lock frontend_dev's password",
+            "output": "passwd -l frontend_dev"
+        },
+        {
+            "input": "Disable docker_runner's login password",
+            "output": "passwd -l docker_runner"
+        },
+        {
+            "input": "Temporarily block temp_user",
+            "output": "passwd -l temp_user"
+        },
+        {
+            "input": "Restrict ci_runner password login",
+            "output": "passwd -l ci_runner"
+        },
+        {
+            "input": "Lock guest1's account temporarily",
+            "output": "passwd -l guest1"
+        },
+        {
+            "input": "Disable database_admin's password authentication",
+            "output": "passwd -l database_admin"
+        },
+        {
+            "input": "Prevent hr_staff from password access",
+            "output": "passwd -l hr_staff"
+        },
+        {
+            "input": "Lock testenv's login method",
+            "output": "passwd -l testenv"
+        },
+        {
+            "input": "Block designer3's login via password",
+            "output": "passwd -l designer3"
+        },
+        {
+            "input": "Disable recruiter password usage",
+            "output": "passwd -l recruiter"
+        },
+        {
+            "input": "Prevent dev from logging in with password",
+            "output": "passwd -l dev"
+        },
+        {
+            "input": "Lock zara's password login",
+            "output": "passwd -l zara"
+        },
+        {
+            "input": "Disable developer99's authentication temporarily",
+            "output": "passwd -l developer99"
+        },
+        {
+            "input": "Restrict backup_admin from logging in",
+            "output": "passwd -l backup_admin"
+        },
+        {
+            "input": "Block tempaccount from using password",
+            "output": "passwd -l tempaccount"
+        },
+        {
+            "input": "Temporarily disable analytics_user login",
+            "output": "passwd -l analytics_user"
+        },
+        {
+            "input": "Disable password login for timothy",
+            "output": "passwd -l timothy"
+        },
+        {
+            "input": "Lock login for helpdesk user",
+            "output": "passwd -l helpdesk"
+        },
+        {
+            "input": "Temporarily disable password for system_analyst",
+            "output": "passwd -l system_analyst"
+        },
+        {
+            "input": "Block login using password for user ben",
+            "output": "passwd -l ben"
+        },
+        {
+            "input": "Restrict login for dev_user",
+            "output": "passwd -l dev_user"
+        },
+        {
+            "input": "Lock credentials for test_user2",
+            "output": "passwd -l test_user2"
+        },
+        {
+            "input": "Disable password-based access for harry",
+            "output": "passwd -l harry"
+        },
+        {
+            "input": "Temporarily lock login access for user jess",
+            "output": "passwd -l jess"
+        },
+        {
+            "input": "Lock dev_backup account",
+            "output": "passwd -l dev_backup"
+        },
+        {
+            "input": "Restrict password login for account manager",
+            "output": "passwd -l manager"
+        },
+        {
+            "input": "Prevent qa2 from logging in",
+            "output": "passwd -l qa2"
+        },
+        {
+            "input": "Disable password for sys_helper",
+            "output": "passwd -l sys_helper"
+        },
+        {
+            "input": "Block login access for intern_dev",
+            "output": "passwd -l intern_dev"
+        },
+        {
+            "input": "Lock password access for cto",
+            "output": "passwd -l cto"
+        },
+        {
+            "input": "Restrict login via password for ops_user",
+            "output": "passwd -l ops_user"
+        },
+        {
+            "input": "Temporarily lock password for backend_admin",
+            "output": "passwd -l backend_admin"
+        },
+        {
+            "input": "Prevent login for mobile_dev",
+            "output": "passwd -l mobile_dev"
+        },
+        {
+            "input": "Disable password login for freelancer_01",
+            "output": "passwd -l freelancer_01"
+        },
+        {
+            "input": "Lock password login for account trials",
+            "output": "passwd -l trials"
+        },
+        {
+            "input": "Block service_account from login",
+            "output": "passwd -l service_account"
+        },
+        {
+            "input": "Temporarily disable login for project_user",
+            "output": "passwd -l project_user"
+        },
+        {
+            "input": "Prevent admin99 from logging in with password",
+            "output": "passwd -l admin99"
+        },
+        {
+            "input": "Lock credentials for data_scientist",
+            "output": "passwd -l data_scientist"
+        },
+        {
+            "input": "Restrict test_dev access via password",
+            "output": "passwd -l test_dev"
+        },
+        {
+            "input": "Disable login for analytics2",
+            "output": "passwd -l analytics2"
+        },
+        {
+            "input": "Block login for ui_designer",
+            "output": "passwd -l ui_designer"
+        },
+        {
+            "input": "Lock password for remote_user",
+            "output": "passwd -l remote_user"
+        },
+        {
+            "input": "Restrict login via password for edge_admin",
+            "output": "passwd -l edge_admin"
+        },
+        {
+            "input": "Temporarily disable backend_dev",
+            "output": "passwd -l backend_dev"
+        },
+        {
+            "input": "Block login using password for log_user",
+            "output": "passwd -l log_user"
+        },
+        {
+            "input": "Prevent testagent from password login",
+            "output": "passwd -l testagent"
+        },
+        {
+            "input": "Lock system_admin password",
+            "output": "passwd -l system_admin"
+        },
+        {
+            "input": "Disable credentials for batch_runner",
+            "output": "passwd -l batch_runner"
+        },
+        {
+            "input": "Lock guest_temp from logging in",
+            "output": "passwd -l guest_temp"
+        },
+        {
+            "input": "Block password login for xavier",
+            "output": "passwd -l xavier"
+        },
+        {
+            "input": "Temporarily lock web_admin",
+            "output": "passwd -l web_admin"
+        },
+        {
+            "input": "Restrict password access for audit_user",
+            "output": "passwd -l audit_user"
+        },
+        {
+            "input": "Disable user william's login",
+            "output": "passwd -l william"
+        },
+        {
+            "input": "Prevent login for docker_admin",
+            "output": "passwd -l docker_admin"
+        },
+        {
+            "input": "Lock tester1 password",
+            "output": "passwd -l tester1"
+        },
+        {
+            "input": "Disable access for linux_dev",
+            "output": "passwd -l linux_dev"
+        },
+        {
+            "input": "Restrict frontend2 from using password",
+            "output": "passwd -l frontend2"
+        },
+        {
+            "input": "Lock login for eric",
+            "output": "passwd -l eric"
+        },
+        {
+            "input": "Block login credentials for consultant",
+            "output": "passwd -l consultant"
+        },
+        {
+            "input": "Disable login via password for guest_temp2",
+            "output": "passwd -l guest_temp2"
+        },
+        {
+            "input": "Prevent sdev from password access",
+            "output": "passwd -l sdev"
+        },
+        {
+            "input": "Lock login method for automation",
+            "output": "passwd -l automation"
+        },
+        {
+            "input": "Block user dev_ux from logging in",
+            "output": "passwd -l dev_ux"
+        },
+        {
+            "input": "Restrict support_user's password access",
+            "output": "passwd -l support_user"
+        },
+        {
+            "input": "Disable login access for intern_test",
+            "output": "passwd -l intern_test"
+        }
+]

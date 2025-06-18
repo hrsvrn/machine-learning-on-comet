@@ -1,0 +1,438 @@
+[
+  {
+    "input": "Change password for user john",
+    "output": "passwd john"
+  },
+  {
+    "input": "Set a new password for alice",
+    "output": "passwd alice"
+  },
+  {
+    "input": "Update the password of user bob",
+    "output": "passwd bob"
+  },
+  {
+    "input": "Reset dave's password",
+    "output": "passwd dave"
+  },
+  {
+    "input": "Modify the password of user sam",
+    "output": "passwd sam"
+  },
+  {
+    "input": "Change credentials for user charlie",
+    "output": "passwd charlie"
+  },
+  {
+    "input": "Set password for new user emma",
+    "output": "passwd emma"
+  },
+  {
+    "input": "Force password update for user lisa",
+    "output": "passwd lisa"
+  },
+  {
+    "input": "Change login password for ryan",
+    "output": "passwd ryan"
+  },
+  {
+    "input": "Reset authentication for user nick",
+    "output": "passwd nick"
+  },
+  {
+    "input": "Change root's password",
+    "output": "passwd root"
+  },
+  {
+    "input": "Update login credentials for steve",
+    "output": "passwd steve"
+  },
+  {
+    "input": "Modify access password of user rachel",
+    "output": "passwd rachel"
+  },
+  {
+    "input": "Set password for test_user",
+    "output": "passwd test_user"
+  },
+  {
+    "input": "Change password of developer1",
+    "output": "passwd developer1"
+  },
+  {
+    "input": "Reset the credentials of mark",
+    "output": "passwd mark"
+  },
+  {
+    "input": "Modify the credentials for devops_admin",
+    "output": "passwd devops_admin"
+  },
+  {
+    "input": "Set up a new password for johnny",
+    "output": "passwd johnny"
+  },
+  {
+    "input": "Reset the access key for sysadmin",
+    "output": "passwd sysadmin"
+  },
+  {
+    "input": "Change user credential for admin1",
+    "output": "passwd admin1"
+  },
+  {
+    "input": "Modify user1's password",
+    "output": "passwd user1"
+  },
+  {
+    "input": "Reset login password for bob_admin",
+    "output": "passwd bob_admin"
+  },
+  {
+    "input": "Change employee45's password",
+    "output": "passwd employee45"
+  },
+  {
+    "input": "Reset the password for student7",
+    "output": "passwd student7"
+  },
+  {
+    "input": "Update password for linuxuser",
+    "output": "passwd linuxuser"
+  },
+  {
+    "input": "Change password for qa_user",
+    "output": "passwd qa_user"
+  },
+  {
+    "input": "Reset dev_admin password",
+    "output": "passwd dev_admin"
+  },
+  {
+    "input": "Change credentials of webuser",
+    "output": "passwd webuser"
+  },
+  {
+    "input": "Set password for user engineer3",
+    "output": "passwd engineer3"
+  },
+  {
+    "input": "Update password of test_account",
+    "output": "passwd test_account"
+  },
+  {
+    "input": "Reset access for client_service",
+    "output": "passwd client_service"
+  },
+  {
+    "input": "Change authentication for rootadmin",
+    "output": "passwd rootadmin"
+  },
+  {
+    "input": "Set login password for internal_user",
+    "output": "passwd internal_user"
+  },
+  {
+    "input": "Modify password of script_user",
+    "output": "passwd script_user"
+  },
+  {
+    "input": "Reset credentials for staging_user",
+    "output": "passwd staging_user"
+  },
+  {
+    "input": "Change login key for deployuser",
+    "output": "passwd deployuser"
+  },
+  {
+    "input": "Set user password for frontend_dev",
+    "output": "passwd frontend_dev"
+  },
+  {
+    "input": "Reset shell password for docker_runner",
+    "output": "passwd docker_runner"
+  },
+  {
+    "input": "Update login access for temp_user",
+    "output": "passwd temp_user"
+  },
+  {
+    "input": "Change authentication of ci_runner",
+    "output": "passwd ci_runner"
+  },
+  {
+    "input": "Reset access password for guest1",
+    "output": "passwd guest1"
+  },
+  {
+    "input": "Modify login for database_admin",
+    "output": "passwd database_admin"
+  },
+  {
+    "input": "Update user access for hr_staff",
+    "output": "passwd hr_staff"
+  },
+  {
+    "input": "Change shell login password for testenv",
+    "output": "passwd testenv"
+  },
+  {
+    "input": "Set up credentials for designer3",
+    "output": "passwd designer3"
+  },
+  {
+    "input": "Modify account password for recruiter",
+    "output": "passwd recruiter"
+  },
+  {
+    "input": "Change password for the new dev",
+    "output": "passwd dev"
+  },
+  {
+    "input": "Reset password of user zara",
+    "output": "passwd zara"
+  },
+  {
+    "input": "Change creds for developer99",
+    "output": "passwd developer99"
+  },
+    {
+        "input": "Change password for user john",
+        "output": "passwd john"
+    },
+    {
+        "input": "Set a new password for alice",
+        "output": "passwd alice"
+    },
+    {
+        "input": "Update the password of user bob",
+        "output": "passwd bob"
+    },
+    {
+        "input": "Reset dave's password",
+        "output": "passwd dave"
+    },
+    {
+        "input": "Modify the password of user sam",
+        "output": "passwd sam"
+    },
+    {
+        "input": "Change credentials for user charlie",
+        "output": "passwd charlie"
+    },
+    {
+        "input": "Set password for new user emma",
+        "output": "passwd emma"
+    },
+    {
+        "input": "Force password update for user lisa",
+        "output": "passwd lisa"
+    },
+    {
+        "input": "Change login password for ryan",
+        "output": "passwd ryan"
+    },
+    {
+        "input": "Reset authentication for user nick",
+        "output": "passwd nick"
+    },
+    {
+        "input": "Change root's password",
+        "output": "passwd root"
+    },
+    {
+        "input": "Update login credentials for steve",
+        "output": "passwd steve"
+    },
+    {
+        "input": "Modify access password of user rachel",
+        "output": "passwd rachel"
+    },
+    {
+        "input": "Set password for test_user",
+        "output": "passwd test_user"
+    },
+    {
+        "input": "Change password of developer1",
+        "output": "passwd developer1"
+    },
+    {
+        "input": "Reset the credentials of mark",
+        "output": "passwd mark"
+    },
+    {
+        "input": "Modify the credentials for devops_admin",
+        "output": "passwd devops_admin"
+    },
+    {
+        "input": "Set up a new password for johnny",
+        "output": "passwd johnny"
+    },
+    {
+        "input": "Reset the access key for sysadmin",
+        "output": "passwd sysadmin"
+    },
+    {
+        "input": "Change user credential for admin1",
+        "output": "passwd admin1"
+    },
+    {
+        "input": "Modify user1's password",
+        "output": "passwd user1"
+    },
+    {
+        "input": "Reset login password for bob_admin",
+        "output": "passwd bob_admin"
+    },
+    {
+        "input": "Change employee45's password",
+        "output": "passwd employee45"
+    },
+    {
+        "input": "Reset the password for student7",
+        "output": "passwd student7"
+    },
+    {
+        "input": "Update password for linuxuser",
+        "output": "passwd linuxuser"
+    },
+    {
+        "input": "Change password for qa_user",
+        "output": "passwd qa_user"
+    },
+    {
+        "input": "Reset dev_admin password",
+        "output": "passwd dev_admin"
+    },
+    {
+        "input": "Change credentials of webuser",
+        "output": "passwd webuser"
+    },
+    {
+        "input": "Set password for user engineer3",
+        "output": "passwd engineer3"
+    },
+    {
+        "input": "Update password of test_account",
+        "output": "passwd test_account"
+    },
+    {
+        "input": "Reset access for client_service",
+        "output": "passwd client_service"
+    },
+    {
+        "input": "Change authentication for rootadmin",
+        "output": "passwd rootadmin"
+    },
+    {
+        "input": "Set login password for internal_user",
+        "output": "passwd internal_user"
+    },
+    {
+        "input": "Modify password of script_user",
+        "output": "passwd script_user"
+    },
+    {
+        "input": "Reset credentials for staging_user",
+        "output": "passwd staging_user"
+    },
+    {
+        "input": "Change login key for deployuser",
+        "output": "passwd deployuser"
+    },
+    {
+        "input": "Set user password for frontend_dev",
+        "output": "passwd frontend_dev"
+    },
+    {
+        "input": "Reset shell password for docker_runner",
+        "output": "passwd docker_runner"
+    },
+    {
+        "input": "Update login access for temp_user",
+        "output": "passwd temp_user"
+    },
+    {
+        "input": "Change authentication of ci_runner",
+        "output": "passwd ci_runner"
+    },
+    {
+        "input": "Reset access password for guest1",
+        "output": "passwd guest1"
+    },
+    {
+        "input": "Modify login for database_admin",
+        "output": "passwd database_admin"
+    },
+    {
+        "input": "Update user access for hr_staff",
+        "output": "passwd hr_staff"
+    },
+    {
+        "input": "Change shell login password for testenv",
+        "output": "passwd testenv"
+    },
+    {
+        "input": "Set up credentials for designer3",
+        "output": "passwd designer3"
+    },
+    {
+        "input": "Modify account password for recruiter",
+        "output": "passwd recruiter"
+    },
+    {
+        "input": "Change password for the new dev",
+        "output": "passwd dev"
+    },
+    {
+        "input": "Reset password of user zara",
+        "output": "passwd zara"
+    },
+    {
+        "input": "Change creds for developer99",
+        "output": "passwd developer99"
+    },
+    {
+        "input": "Set a password for backup_admin",
+        "output": "passwd backup_admin"
+    },
+    {
+        "input": "Reset password for tempaccount",
+        "output": "passwd tempaccount"
+    },
+    {
+        "input": "Modify credentials for analytics_user",
+        "output": "passwd analytics_user"
+    },
+    {
+        "input": "Change shell access password for testadmin",
+        "output": "passwd testadmin"
+    },
+    {
+        "input": "Update user credentials for docker_dev",
+        "output": "passwd docker_dev"
+    },
+    {
+        "input": "Set login key for beta_user",
+        "output": "passwd beta_user"
+    },
+    {
+        "input": "Change login password for mobile_user",
+        "output": "passwd mobile_user"
+    },
+    {
+        "input": "Reset authentication token for samuel",
+        "output": "passwd samuel"
+    },
+    {
+        "input": "Update access password for gui_dev",
+        "output": "passwd gui_dev"
+    },
+    {
+        "input": "Modify login for officeadmin",
+        "output": "passwd officeadmin"
+    },
+    {
+        "input": "Change credentials of remote_user",
+        "output": "passwd remote_user"
+    }
+]

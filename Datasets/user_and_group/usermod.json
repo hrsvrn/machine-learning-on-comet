@@ -1,0 +1,434 @@
+[
+  {
+    "input": "Change the login shell of user alice to bash",
+    "output": "usermod -s /bin/bash alice"
+  },
+  {
+    "input": "Set the home directory of bob to /srv/bobhome",
+    "output": "usermod -d /srv/bobhome bob"
+  },
+  {
+    "input": "Move the home directory of charlie to /users/charlie",
+    "output": "usermod -d /users/charlie -m charlie"
+  },
+  {
+    "input": "Add user dave to the sudo group",
+    "output": "usermod -aG sudo dave"
+  },
+  {
+    "input": "Remove user emily from group developers",
+    "output": "gpasswd -d emily developers"
+  },
+  {
+    "input": "Change UID of user frank to 1500",
+    "output": "usermod -u 1500 frank"
+  },
+  {
+    "input": "Change GID of user george to 2000",
+    "output": "usermod -g 2000 george"
+  },
+  {
+    "input": "Add user helen to groups docker and wheel",
+    "output": "usermod -aG docker,wheel helen"
+  },
+  {
+    "input": "Lock user account ivan",
+    "output": "usermod -L ivan"
+  },
+  {
+    "input": "Unlock the account of user julie",
+    "output": "usermod -U julie"
+  },
+  {
+    "input": "Rename user karen to karen_smith",
+    "output": "usermod -l karen_smith karen"
+  },
+  {
+    "input": "Expire the account of user lucas today",
+    "output": "usermod -e $(date +%Y-%m-%d) lucas"
+  },
+  {
+    "input": "Set expiry of user mike to 2025-12-31",
+    "output": "usermod -e 2025-12-31 mike"
+  },
+  {
+    "input": "Change comment of user nina to 'Senior Analyst'",
+    "output": "usermod -c 'Senior Analyst' nina"
+  },
+  {
+    "input": "Disable password for user oliver",
+    "output": "usermod -p '!' oliver"
+  },
+  {
+    "input": "Change shell of user paul to /bin/zsh",
+    "output": "usermod -s /bin/zsh paul"
+  },
+  {
+    "input": "Change login name from quinn to quinn_123",
+    "output": "usermod -l quinn_123 quinn"
+  },
+  {
+    "input": "Move rob's home directory and update records",
+    "output": "usermod -d /home/rob_new -m rob"
+  },
+  {
+    "input": "Add user steve to audio and video groups",
+    "output": "usermod -aG audio,video steve"
+  },
+  {
+    "input": "Lock access for tempuser",
+    "output": "usermod -L tempuser"
+  },
+  {
+    "input": "Change GID of user ubuntu to 1050",
+    "output": "usermod -g 1050 ubuntu"
+  },
+  {
+    "input": "Set comment of user vera to 'Temporary Staff'",
+    "output": "usermod -c 'Temporary Staff' vera"
+  },
+  {
+    "input": "Add user walter to group backup",
+    "output": "usermod -aG backup walter"
+  },
+  {
+    "input": "Change user xavier's shell to /sbin/nologin",
+    "output": "usermod -s /sbin/nologin xavier"
+  },
+  {
+    "input": "Rename user yuki to yuki23",
+    "output": "usermod -l yuki23 yuki"
+  },
+  {
+    "input": "Set expiration date of zoe to 2026-01-01",
+    "output": "usermod -e 2026-01-01 zoe"
+  },
+  {
+    "input": "Change UID of systembot to 900",
+    "output": "usermod -u 900 systembot"
+  },
+  {
+    "input": "Assign group staff to user john",
+    "output": "usermod -g staff john"
+  },
+  {
+    "input": "Add testuser to multiple groups",
+    "output": "usermod -aG testers,qa,dev testuser"
+  },
+  {
+    "input": "Unlock user account admin",
+    "output": "usermod -U admin"
+  },
+  {
+    "input": "Add user deploy to wheel group",
+    "output": "usermod -aG wheel deploy"
+  },
+  {
+    "input": "Change full name of user raj to 'Raj Kumar'",
+    "output": "usermod -c 'Raj Kumar' raj"
+  },
+  {
+    "input": "Change primary group of smith to developers",
+    "output": "usermod -g developers smith"
+  },
+  {
+    "input": "Add user amit to audio and video",
+    "output": "usermod -aG audio,video amit"
+  },
+  {
+    "input": "Lock the guest account",
+    "output": "usermod -L guest"
+  },
+  {
+    "input": "Move harry's home directory to /data/harry",
+    "output": "usermod -d /data/harry -m harry"
+  },
+  {
+    "input": "Rename user beta to betatest",
+    "output": "usermod -l betatest beta"
+  },
+  {
+    "input": "Update shell for tester to /bin/sh",
+    "output": "usermod -s /bin/sh tester"
+  },
+  {
+    "input": "Change user neil's shell to nologin",
+    "output": "usermod -s /usr/sbin/nologin neil"
+  },
+  {
+    "input": "Add support user to helpdesk group",
+    "output": "usermod -aG helpdesk support"
+  },
+  {
+    "input": "Set expiry for intern account to 2025-06-30",
+    "output": "usermod -e 2025-06-30 intern"
+  },
+  {
+    "input": "Unlock user download_bot",
+    "output": "usermod -U download_bot"
+  },
+  {
+    "input": "Lock user archiveuser",
+    "output": "usermod -L archiveuser"
+  },
+  {
+    "input": "Change login name of tom to tom_dev",
+    "output": "usermod -l tom_dev tom"
+  },
+  {
+    "input": "Set home directory for alice2 to /opt/users/alice2",
+    "output": "usermod -d /opt/users/alice2 -m alice2"
+  },
+  {
+    "input": "Add user rootbot to monitoring and logs groups",
+    "output": "usermod -aG monitoring,logs rootbot"
+  },
+  {
+    "input": "Expire account guest123 in 3 days",
+    "output": "usermod -e $(date -d '+3 days' +%Y-%m-%d) guest123"
+  },
+  {
+    "input": "Assign new shell /bin/fish to user fisher",
+    "output": "usermod -s /bin/fish fisher"
+  },
+  {
+    "input": "Rename devops1 to devops_main",
+    "output": "usermod -l devops_main devops1"
+  },
+  {
+    "input": "Add user archie to sysadmins group",
+    "output": "usermod -aG sysadmins archie"
+  },
+  {
+    "input": "Change GID of builduser to 9000",
+    "output": "usermod -g 9000 builduser"
+  },
+  {
+    "input": "Update comment for dbadmin to 'Postgres DBA'",
+    "output": "usermod -c 'Postgres DBA' dbadmin"
+  },
+  {
+    "input": "Move the user sshguest's home to /nonstandard/sshguest",
+    "output": "usermod -d /nonstandard/sshguest -m sshguest"
+  },
+  {
+    "input": "Add user sandbox to all test groups",
+    "output": "usermod -aG test1,test2,test3 sandbox"
+  },
+  {
+    "input": "Set userroot's home directory to /home/rootuser",
+    "output": "usermod -d /home/rootuser -m userroot"
+  },
+  {
+    "input": "Change comment of user vinay to 'Senior Dev'",
+    "output": "usermod -c 'Senior Dev' vinay"
+  },
+  {
+    "input": "Unlock user sessionlogger",
+    "output": "usermod -U sessionlogger"
+  },
+  {
+    "input": "Lock account unused_bot",
+    "output": "usermod -L unused_bot"
+  },
+  {
+    "input": "Add user readaccess to viewers group",
+    "output": "usermod -aG viewers readaccess"
+  },
+  {
+    "input": "Rename user api_runner to api_exec",
+    "output": "usermod -l api_exec api_runner"
+  },
+  {
+    "input": "Change default shell of ankit to /bin/bash",
+    "output": "usermod -s /bin/bash ankit"
+  },
+  {
+    "input": "Add user ramesh to group network",
+    "output": "usermod -aG network ramesh"
+  },
+  {
+    "input": "Change primary group of user priya to admins",
+    "output": "usermod -g admins priya"
+  },
+  {
+    "input": "Lock the account of user devbot",
+    "output": "usermod -L devbot"
+  },
+  {
+    "input": "Move user rahul's home directory to /home/users/rahul",
+    "output": "usermod -d /home/users/rahul -m rahul"
+  },
+  {
+    "input": "Rename user alpha1 to alpha_main",
+    "output": "usermod -l alpha_main alpha1"
+  },
+  {
+    "input": "Change comment for user sneha to 'Documentation Lead'",
+    "output": "usermod -c 'Documentation Lead' sneha"
+  },
+  {
+    "input": "Add user ashwin to the devops group",
+    "output": "usermod -aG devops ashwin"
+  },
+  {
+    "input": "Unlock the account of user demo",
+    "output": "usermod -U demo"
+  },
+  {
+    "input": "Expire account of user trainee on 2025-07-31",
+    "output": "usermod -e 2025-07-31 trainee"
+  },
+  {
+    "input": "Add sid to groups docker and wheel",
+    "output": "usermod -aG docker,wheel sid"
+  },
+  {
+    "input": "Change UID of user logbot to 2100",
+    "output": "usermod -u 2100 logbot"
+  },
+  {
+    "input": "Add user reporter1 to the news group",
+    "output": "usermod -aG news reporter1"
+  },
+  {
+    "input": "Change the primary group of devtest to qa",
+    "output": "usermod -g qa devtest"
+  },
+  {
+    "input": "Rename backupuser to backup_archiver",
+    "output": "usermod -l backup_archiver backupuser"
+  },
+  {
+    "input": "Move home directory of shiva to /opt/shiva and update path",
+    "output": "usermod -d /opt/shiva -m shiva"
+  },
+  {
+    "input": "Change shell of user gautham to /bin/fish",
+    "output": "usermod -s /bin/fish gautham"
+  },
+  {
+    "input": "Set expiration for guest99 to 2025-09-01",
+    "output": "usermod -e 2025-09-01 guest99"
+  },
+  {
+    "input": "Lock the account for testapi",
+    "output": "usermod -L testapi"
+  },
+  {
+    "input": "Unlock the user alpha2",
+    "output": "usermod -U alpha2"
+  },
+  {
+    "input": "Set comment for developer1 as 'Python Developer'",
+    "output": "usermod -c 'Python Developer' developer1"
+  },
+  {
+    "input": "Add user manager to teams group",
+    "output": "usermod -aG teams manager"
+  },
+  {
+    "input": "Rename user userx to user_x1",
+    "output": "usermod -l user_x1 userx"
+  },
+  {
+    "input": "Change shell of nologinuser to /usr/sbin/nologin",
+    "output": "usermod -s /usr/sbin/nologin nologinuser"
+  },
+  {
+    "input": "Change home directory of kiran to /users/kiran",
+    "output": "usermod -d /users/kiran -m kiran"
+  },
+  {
+    "input": "Add newuser to ftp and ssh groups",
+    "output": "usermod -aG ftp,ssh newuser"
+  },
+  {
+    "input": "Lock inactiveuser",
+    "output": "usermod -L inactiveuser"
+  },
+  {
+    "input": "Unlock temporaryuser",
+    "output": "usermod -U temporaryuser"
+  },
+  {
+    "input": "Set primary group of vinod to wheel",
+    "output": "usermod -g wheel vinod"
+  },
+  {
+    "input": "Move home for ghost to /tmp/ghost",
+    "output": "usermod -d /tmp/ghost -m ghost"
+  },
+  {
+    "input": "Change comment of devopsteam to 'DevOps Team Member'",
+    "output": "usermod -c 'DevOps Team Member' devopsteam"
+  },
+  {
+    "input": "Change login name from apiuser to api_u",
+    "output": "usermod -l api_u apiuser"
+  },
+  {
+    "input": "Change user shell to zsh for ritu",
+    "output": "usermod -s /bin/zsh ritu"
+  },
+  {
+    "input": "Set home directory of guestacc to /srv/guest",
+    "output": "usermod -d /srv/guest -m guestacc"
+  },
+  {
+    "input": "Set expiration for stag_user to 2025-10-01",
+    "output": "usermod -e 2025-10-01 stag_user"
+  },
+  {
+    "input": "Add preet to the testing group",
+    "output": "usermod -aG testing preet"
+  },
+  {
+    "input": "Change user test_id's UID to 1777",
+    "output": "usermod -u 1777 test_id"
+  },
+  {
+    "input": "Add demo_user to ssh group",
+    "output": "usermod -aG ssh demo_user"
+  },
+  {
+    "input": "Change shell of archive to /bin/sh",
+    "output": "usermod -s /bin/sh archive"
+  },
+  {
+    "input": "Lock user emailbot",
+    "output": "usermod -L emailbot"
+  },
+  {
+    "input": "Unlock account of verify_user",
+    "output": "usermod -U verify_user"
+  },
+  {
+    "input": "Change login name of rajeev to rajeev_k",
+    "output": "usermod -l rajeev_k rajeev"
+  },
+  {
+    "input": "Update comment of user anusha to 'Data Science Intern'",
+    "output": "usermod -c 'Data Science Intern' anusha"
+  },
+  {
+    "input": "Change group of vikas to techlead",
+    "output": "usermod -g techlead vikas"
+  },
+  {
+    "input": "Add user content_mgr to group writers",
+    "output": "usermod -aG writers content_mgr"
+  },
+  {
+    "input": "Set shell of sde1 to /bin/zsh",
+    "output": "usermod -s /bin/zsh sde1"
+  },
+  {
+    "input": "Expire user account dockeruser on 2025-08-01",
+    "output": "usermod -e 2025-08-01 dockeruser"
+  },
+  {
+    "input": "Move user rootclone's home to /admin/rootclone",
+    "output": "usermod -d /admin/rootclone -m rootclone"
+  }
+]

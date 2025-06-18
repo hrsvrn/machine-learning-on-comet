@@ -1,0 +1,410 @@
+[
+        {
+            "input": "Give execute permission to the file script.sh",
+            "output": "chmod +x script.sh"
+        },
+        {
+            "input": "Remove write permission from file.txt",
+            "output": "chmod -w file.txt"
+        },
+        {
+            "input": "Set read and write permission for user on myfile",
+            "output": "chmod u+rw myfile"
+        },
+        {
+            "input": "Make file1 read-only for everyone",
+            "output": "chmod a-wx file1"
+        },
+        {
+            "input": "Allow group to execute test.sh",
+            "output": "chmod g+x test.sh"
+        },
+        {
+            "input": "Deny all permissions to others on notes.txt",
+            "output": "chmod o-rwx notes.txt"
+        },
+        {
+            "input": "Set permissions to 755 for script.py",
+            "output": "chmod 755 script.py"
+        },
+        {
+            "input": "Allow everyone to read and write data.txt",
+            "output": "chmod a+rw data.txt"
+        },
+        {
+            "input": "Remove execute permission from owner of file.sh",
+            "output": "chmod u-x file.sh"
+        },
+        {
+            "input": "Grant write access to group for log.txt",
+            "output": "chmod g+w log.txt"
+        },
+        {
+            "input": "Revoke all permissions from others on private.doc",
+            "output": "chmod o= private.doc"
+        },
+        {
+            "input": "Make image.jpg readable and writable only by owner",
+            "output": "chmod 600 image.jpg"
+        },
+        {
+            "input": "Set full permissions for user and none for others",
+            "output": "chmod 700 secure.sh"
+        },
+        {
+            "input": "Allow everyone to execute install.sh",
+            "output": "chmod a+x install.sh"
+        },
+        {
+            "input": "Remove group read access from file.csv",
+            "output": "chmod g-r file.csv"
+        },
+        {
+            "input": "Assign 644 permissions to file.txt",
+            "output": "chmod 644 file.txt"
+        },
+        {
+            "input": "Give only read access to everyone on readme.md",
+            "output": "chmod a=r readme.md"
+        },
+        {
+            "input": "Make all shell scripts executable",
+            "output": "chmod +x *.sh"
+        },
+        {
+            "input": "Remove execute from all users on binfile",
+            "output": "chmod a-x binfile"
+        },
+        {
+            "input": "Give read and execute access to group",
+            "output": "chmod g+rx target"
+        },
+        {
+            "input": "Give owner full access to report.doc",
+            "output": "chmod u+rwx report.doc"
+        },
+        {
+            "input": "Set file.txt to 444",
+            "output": "chmod 444 file.txt"
+        },
+        {
+            "input": "Make main.py readable only",
+            "output": "chmod 400 main.py"
+        },
+        {
+            "input": "Add write permission for others",
+            "output": "chmod o+w public.txt"
+        },
+        {
+            "input": "Grant read/write to user and group",
+            "output": "chmod ug+rw sample"
+        },
+        {
+            "input": "Remove write access from group and others",
+            "output": "chmod go-w config.cfg"
+        },
+        {
+            "input": "Set permission to 777 for access.txt",
+            "output": "chmod 777 access.txt"
+        },
+        {
+            "input": "Set permission to 640 for secret.txt",
+            "output": "chmod 640 secret.txt"
+        },
+        {
+            "input": "Revoke all permissions from everyone on lock.file",
+            "output": "chmod 000 lock.file"
+        },
+        {
+            "input": "Make all files in current directory executable",
+            "output": "chmod +x *"
+        },
+        {
+            "input": "Add execute permission to group",
+            "output": "chmod g+x tool"
+        },
+        {
+            "input": "Remove read access from user",
+            "output": "chmod u-r hidden.txt"
+        },
+        {
+            "input": "Grant read/write to group only",
+            "output": "chmod 020 groupfile"
+        },
+        {
+            "input": "Change directory permission to 755",
+            "output": "chmod 755 mydir"
+        },
+        {
+            "input": "Make backup.tar.gz not accessible by others",
+            "output": "chmod o= backup.tar.gz"
+        },
+        {
+            "input": "Allow others to read and write output.log",
+            "output": "chmod o+rw output.log"
+        },
+        {
+            "input": "Set permission to 666 on open_file.txt",
+            "output": "chmod 666 open_file.txt"
+        },
+        {
+            "input": "Give all permissions to all users",
+            "output": "chmod a+rwx universal.sh"
+        },
+        {
+            "input": "Restrict file.log to read-only by owner",
+            "output": "chmod 400 file.log"
+        },
+        {
+            "input": "Allow only owner to read and write",
+            "output": "chmod 600 doc"
+        },
+        {
+            "input": "Add execute to user and group",
+            "output": "chmod ug+x runme"
+        },
+        {
+            "input": "Revoke write access from all",
+            "output": "chmod a-w anyfile"
+        },
+        {
+            "input": "Remove read permission from everyone",
+            "output": "chmod a-r data"
+        },
+        {
+            "input": "Set mode 755 to all .sh files",
+            "output": "chmod 755 *.sh"
+        },
+        {
+            "input": "Set permissions recursively to 644",
+            "output": "chmod -R 644 folder"
+        },
+        {
+            "input": "Allow read for others",
+            "output": "chmod o+r view.txt"
+        },
+        {
+            "input": "Set permission to 711 for user access",
+            "output": "chmod 711 run"
+        },
+        {
+            "input": "Remove group permissions",
+            "output": "chmod g= file"
+        },
+        {
+            "input": "Give execute to all and remove write",
+            "output": "chmod a+x-w script.sh"
+        },
+        {
+            "input": "Apply 755 on a directory recursively",
+            "output": "chmod -R 755 /srv/www"
+        },
+        {
+            "input": "Make notes readable by group and user",
+            "output": "chmod ug+r notes"
+        },
+        {
+            "input": "Add all permissions to user only",
+            "output": "chmod u+rwx file1"
+        },
+        {
+            "input": "Grant execute permission to file hello.sh",
+            "output": "chmod +x hello.sh"
+        },
+        {
+            "input": "Remove all permissions from config.yml",
+            "output": "chmod 000 config.yml"
+        },
+        {
+            "input": "Set read-only permission for all users on notice.txt",
+            "output": "chmod 444 notice.txt"
+        },
+        {
+            "input": "Add execute permission for the owner to run.py",
+            "output": "chmod u+x run.py"
+        },
+        {
+            "input": "Make file confidential.txt accessible to user and group",
+            "output": "chmod 660 confidential.txt"
+        },
+        {
+            "input": "Allow group to read and write to access.log",
+            "output": "chmod g+rw access.log"
+        },
+        {
+            "input": "Revoke execute permission from all on update.sh",
+            "output": "chmod a-x update.sh"
+        },
+        {
+            "input": "Assign read permission to everyone on changelog.md",
+            "output": "chmod a+r changelog.md"
+        },
+        {
+            "input": "Give full permission to the owner on config.ini",
+            "output": "chmod u+rwx config.ini"
+        },
+        {
+            "input": "Make setup.sh executable only by group",
+            "output": "chmod 010 setup.sh"
+        },
+        {
+            "input": "Make sure only user has read/write access to login.cfg",
+            "output": "chmod 600 login.cfg"
+        },
+        {
+            "input": "Allow group and others to execute service.sh",
+            "output": "chmod go+x service.sh"
+        },
+        {
+            "input": "Remove write access from everyone on system.log",
+            "output": "chmod a-w system.log"
+        },
+        {
+            "input": "Assign read and execute permissions to everyone on index.html",
+            "output": "chmod a+rx index.html"
+        },
+        {
+            "input": "Revoke read access from group for app.py",
+            "output": "chmod g-r app.py"
+        },
+        {
+            "input": "Allow only group to execute audit.sh",
+            "output": "chmod 010 audit.sh"
+        },
+        {
+            "input": "Give user and group execute permissions on backup.sh",
+            "output": "chmod ug+x backup.sh"
+        },
+        {
+            "input": "Remove all access from others to archive.tar.gz",
+            "output": "chmod o= archive.tar.gz"
+        },
+        {
+            "input": "Set permission 755 for run.sh",
+            "output": "chmod 755 run.sh"
+        },
+        {
+            "input": "Allow only group to write to message.txt",
+            "output": "chmod 020 message.txt"
+        },
+        {
+            "input": "Give full permissions to all users on launch.sh",
+            "output": "chmod 777 launch.sh"
+        },
+        {
+            "input": "Allow read and execute for others on script.js",
+            "output": "chmod o+rx script.js"
+        },
+        {
+            "input": "Assign permission 750 to deploy.sh",
+            "output": "chmod 750 deploy.sh"
+        },
+        {
+            "input": "Remove read and write access from user on test.txt",
+            "output": "chmod u-rw test.txt"
+        },
+        {
+            "input": "Give execute access to group on bin/app",
+            "output": "chmod g+x bin/app"
+        },
+        {
+            "input": "Set full access for user and group, none for others",
+            "output": "chmod 770 code.py"
+        },
+        {
+            "input": "Grant all permissions to user and none to others on data.bin",
+            "output": "chmod 700 data.bin"
+        },
+        {
+            "input": "Make all text files read-only",
+            "output": "chmod a-w *.txt"
+        },
+        {
+            "input": "Set execute permission for all shell scripts",
+            "output": "chmod +x *.sh"
+        },
+        {
+            "input": "Grant write to group on dev.env",
+            "output": "chmod g+w dev.env"
+        },
+        {
+            "input": "Remove write permission from others on view.png",
+            "output": "chmod o-w view.png"
+        },
+        {
+            "input": "Grant read to others for changelog.txt",
+            "output": "chmod o+r changelog.txt"
+        },
+        {
+            "input": "Remove read/write access from others",
+            "output": "chmod o-rw shared.doc"
+        },
+        {
+            "input": "Grant all to group and user",
+            "output": "chmod ug+rwx template.txt"
+        },
+        {
+            "input": "Only allow execute to user",
+            "output": "chmod 100 test.sh"
+        },
+        {
+            "input": "Remove all permissions from others on logs",
+            "output": "chmod o= logs"
+        },
+        {
+            "input": "Set 755 recursively on /opt/scripts",
+            "output": "chmod -R 755 /opt/scripts"
+        },
+        {
+            "input": "Give everyone read and execute permission on start.sh",
+            "output": "chmod a+rx start.sh"
+        },
+        {
+            "input": "Remove execute from user and group",
+            "output": "chmod ug-x exec.sh"
+        },
+        {
+            "input": "Assign permission 640 to input.csv",
+            "output": "chmod 640 input.csv"
+        },
+        {
+            "input": "Allow read for group and others",
+            "output": "chmod go+r note.txt"
+        },
+        {
+            "input": "Remove all permissions from group",
+            "output": "chmod g= filename"
+        },
+        {
+            "input": "Revoke read from all",
+            "output": "chmod a-r secret.txt"
+        },
+        {
+            "input": "Assign 600 to a config file",
+            "output": "chmod 600 config.json"
+        },
+        {
+            "input": "Give all permissions to user, execute only to group",
+            "output": "chmod 710 service"
+        },
+        {
+            "input": "Set mode 644 for webpage.html",
+            "output": "chmod 644 webpage.html"
+        },
+        {
+            "input": "Deny all permissions on backup.img",
+            "output": "chmod 000 backup.img"
+        },
+        {
+            "input": "Allow group write and execute on script.py",
+            "output": "chmod g+wx script.py"
+        },
+        {
+            "input": "Allow only owner to execute",
+            "output": "chmod 100 task.sh"
+        },
+        {
+            "input": "Grant read to user and others",
+            "output": "chmod uo+r info.txt"
+        }
+]

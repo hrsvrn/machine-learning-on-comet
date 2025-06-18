@@ -1,0 +1,442 @@
+[
+        {
+            "input": "Switch to the root user",
+            "output": "su"
+        },
+        {
+            "input": "Log in as user alice",
+            "output": "su alice"
+        },
+        {
+            "input": "Switch to john's account",
+            "output": "su john"
+        },
+        {
+            "input": "Become the user tom",
+            "output": "su tom"
+        },
+        {
+            "input": "Change to maria's user account",
+            "output": "su maria"
+        },
+        {
+            "input": "Use su to switch to developer",
+            "output": "su developer"
+        },
+        {
+            "input": "Switch to user admin",
+            "output": "su admin"
+        },
+        {
+            "input": "Login as guest user",
+            "output": "su guest"
+        },
+        {
+            "input": "Switch to operator account",
+            "output": "su operator"
+        },
+        {
+            "input": "Use su to become backup user",
+            "output": "su backup"
+        },
+        {
+            "input": "Switch to user sam with login shell",
+            "output": "su - sam"
+        },
+        {
+            "input": "Login to testuser account with su",
+            "output": "su testuser"
+        },
+        {
+            "input": "Switch to service account 'service01'",
+            "output": "su service01"
+        },
+        {
+            "input": "Use su for debuguser",
+            "output": "su debuguser"
+        },
+        {
+            "input": "Switch to devops user",
+            "output": "su devops"
+        },
+        {
+            "input": "Login as system user logs",
+            "output": "su logs"
+        },
+        {
+            "input": "Become builduser",
+            "output": "su builduser"
+        },
+        {
+            "input": "Access the webadmin account",
+            "output": "su webadmin"
+        },
+        {
+            "input": "Login to frontend user",
+            "output": "su frontend"
+        },
+        {
+            "input": "Switch to dockeradmin",
+            "output": "su dockeradmin"
+        },
+        {
+            "input": "Use su to switch to analytics",
+            "output": "su analytics"
+        },
+        {
+            "input": "Become reports user",
+            "output": "su reports"
+        },
+        {
+            "input": "Switch to operator with login shell",
+            "output": "su - operator"
+        },
+        {
+            "input": "Switch to qa account",
+            "output": "su qa"
+        },
+        {
+            "input": "Login as auditor",
+            "output": "su auditor"
+        },
+        {
+            "input": "Switch to monitoring user",
+            "output": "su monitoring"
+        },
+        {
+            "input": "Become tomcat user",
+            "output": "su tomcat"
+        },
+        {
+            "input": "Use su to log in as postgres",
+            "output": "su postgres"
+        },
+        {
+            "input": "Login to testing user account",
+            "output": "su testing"
+        },
+        {
+            "input": "Switch to deployer",
+            "output": "su deployer"
+        },
+        {
+            "input": "Become user vivek",
+            "output": "su vivek"
+        },
+        {
+            "input": "Login as user arya",
+            "output": "su arya"
+        },
+        {
+            "input": "Become staging account",
+            "output": "su staging"
+        },
+        {
+            "input": "Switch to jenkins",
+            "output": "su jenkins"
+        },
+        {
+            "input": "Use su for test-runner",
+            "output": "su test-runner"
+        },
+        {
+            "input": "Access data_user",
+            "output": "su data_user"
+        },
+        {
+            "input": "Become netadmin",
+            "output": "su netadmin"
+        },
+        {
+            "input": "Login to root shell",
+            "output": "su -"
+        },
+        {
+            "input": "Switch to apache user",
+            "output": "su apache"
+        },
+        {
+            "input": "Access ssh_user",
+            "output": "su ssh_user"
+        },
+        {
+            "input": "Become sys_user",
+            "output": "su sys_user"
+        },
+        {
+            "input": "Login as custom user 'builder'",
+            "output": "su builder"
+        },
+        {
+            "input": "Switch to test_dev account",
+            "output": "su test_dev"
+        },
+        {
+            "input": "Become prod_user",
+            "output": "su prod_user"
+        },
+        {
+            "input": "Use su for appadmin",
+            "output": "su appadmin"
+        },
+        {
+            "input": "Switch to finance account",
+            "output": "su finance"
+        },
+        {
+            "input": "Access sandbox account",
+            "output": "su sandbox"
+        },
+        {
+            "input": "Login to integration user",
+            "output": "su integration"
+        },
+        {
+            "input": "Switch to archive_user",
+            "output": "su archive_user"
+        },
+        {
+            "input": "Switch to the root user",
+            "output": "su"
+        },
+        {
+            "input": "Log in as user alice",
+            "output": "su alice"
+        },
+        {
+            "input": "Switch to john's account",
+            "output": "su john"
+        },
+        {
+            "input": "Become the user tom",
+            "output": "su tom"
+        },
+        {
+            "input": "Change to maria's user account",
+            "output": "su maria"
+        },
+        {
+            "input": "Use su to switch to developer",
+            "output": "su developer"
+        },
+        {
+            "input": "Switch to user admin",
+            "output": "su admin"
+        },
+        {
+            "input": "Login as guest user",
+            "output": "su guest"
+        },
+        {
+            "input": "Switch to operator account",
+            "output": "su operator"
+        },
+        {
+            "input": "Use su to become backup user",
+            "output": "su backup"
+        },
+        {
+            "input": "Switch to user sam with login shell",
+            "output": "su - sam"
+        },
+        {
+            "input": "Login to testuser account with su",
+            "output": "su testuser"
+        },
+        {
+            "input": "Switch to service account 'service01'",
+            "output": "su service01"
+        },
+        {
+            "input": "Use su for debuguser",
+            "output": "su debuguser"
+        },
+        {
+            "input": "Switch to devops user",
+            "output": "su devops"
+        },
+        {
+            "input": "Login as system user logs",
+            "output": "su logs"
+        },
+        {
+            "input": "Become builduser",
+            "output": "su builduser"
+        },
+        {
+            "input": "Access the webadmin account",
+            "output": "su webadmin"
+        },
+        {
+            "input": "Login to frontend user",
+            "output": "su frontend"
+        },
+        {
+            "input": "Switch to dockeradmin",
+            "output": "su dockeradmin"
+        },
+        {
+            "input": "Use su to switch to analytics",
+            "output": "su analytics"
+        },
+        {
+            "input": "Become reports user",
+            "output": "su reports"
+        },
+        {
+            "input": "Switch to operator with login shell",
+            "output": "su - operator"
+        },
+        {
+            "input": "Switch to qa account",
+            "output": "su qa"
+        },
+        {
+            "input": "Login as auditor",
+            "output": "su auditor"
+        },
+        {
+            "input": "Switch to monitoring user",
+            "output": "su monitoring"
+        },
+        {
+            "input": "Become tomcat user",
+            "output": "su tomcat"
+        },
+        {
+            "input": "Use su to log in as postgres",
+            "output": "su postgres"
+        },
+        {
+            "input": "Login to testing user account",
+            "output": "su testing"
+        },
+        {
+            "input": "Switch to deployer",
+            "output": "su deployer"
+        },
+        {
+            "input": "Become user vivek",
+            "output": "su vivek"
+        },
+        {
+            "input": "Login as user arya",
+            "output": "su arya"
+        },
+        {
+            "input": "Become staging account",
+            "output": "su staging"
+        },
+        {
+            "input": "Switch to jenkins",
+            "output": "su jenkins"
+        },
+        {
+            "input": "Use su for test-runner",
+            "output": "su test-runner"
+        },
+        {
+            "input": "Access data_user",
+            "output": "su data_user"
+        },
+        {
+            "input": "Become netadmin",
+            "output": "su netadmin"
+        },
+        {
+            "input": "Login to root shell",
+            "output": "su -"
+        },
+        {
+            "input": "Switch to apache user",
+            "output": "su apache"
+        },
+        {
+            "input": "Access ssh_user",
+            "output": "su ssh_user"
+        },
+        {
+            "input": "Become sys_user",
+            "output": "su sys_user"
+        },
+        {
+            "input": "Login as custom user 'builder'",
+            "output": "su builder"
+        },
+        {
+            "input": "Switch to test_dev account",
+            "output": "su test_dev"
+        },
+        {
+            "input": "Become prod_user",
+            "output": "su prod_user"
+        },
+        {
+            "input": "Use su for appadmin",
+            "output": "su appadmin"
+        },
+        {
+            "input": "Switch to finance account",
+            "output": "su finance"
+        },
+        {
+            "input": "Access sandbox account",
+            "output": "su sandbox"
+        },
+        {
+            "input": "Login to integration user",
+            "output": "su integration"
+        },
+        {
+            "input": "Switch to archive_user",
+            "output": "su archive_user"
+        },
+        {
+            "input": "Become training user",
+            "output": "su training"
+        },
+        {
+            "input": "Switch to qa_manager",
+            "output": "su qa_manager"
+        },
+        {
+            "input": "Login as automation user",
+            "output": "su automation"
+        },
+        {
+            "input": "Access logs_viewer account",
+            "output": "su logs_viewer"
+        },
+        {
+            "input": "Become user root with login shell",
+            "output": "su - root"
+        },
+        {
+            "input": "Switch to systemadmin",
+            "output": "su systemadmin"
+        },
+        {
+            "input": "Login to demo_user account",
+            "output": "su demo_user"
+        },
+        {
+            "input": "Become the vpnadmin",
+            "output": "su vpnadmin"
+        },
+        {
+            "input": "Switch to docker_user",
+            "output": "su docker_user"
+        },
+        {
+            "input": "Become support_user",
+            "output": "su support_user"
+        },
+        {
+            "input": "Switch to infra team account",
+            "output": "su infra"
+        },
+        {
+            "input": "Access the maint_user",
+            "output": "su maint_user"
+        }
+]

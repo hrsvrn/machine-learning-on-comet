@@ -1,0 +1,403 @@
+[
+  {
+    "input": "Add a new user named john",
+    "output": "useradd john"
+  },
+  {
+    "input": "Create a user called alice with a home directory",
+    "output": "useradd -m alice"
+  },
+  {
+    "input": "Make a user named david with default settings",
+    "output": "useradd david"
+  },
+  {
+    "input": "Add a user tina with no home directory",
+    "output": "useradd -M tina"
+  },
+  {
+    "input": "Create a user mark with /bin/bash shell",
+    "output": "useradd -s /bin/bash mark"
+  },
+  {
+    "input": "Add user emily and set her home to /home/emcustom",
+    "output": "useradd -m -d /home/emcustom emily"
+  },
+  {
+    "input": "Create user tom in the group developers",
+    "output": "useradd -g developers tom"
+  },
+  {
+    "input": "Add a system user daemonuser",
+    "output": "useradd -r daemonuser"
+  },
+  {
+    "input": "Make user admin with UID 1050",
+    "output": "useradd -u 1050 admin"
+  },
+  {
+    "input": "Add user testuser with GID 2000",
+    "output": "useradd -g 2000 testuser"
+  },
+  {
+    "input": "Create user named beta and add him to sudo group",
+    "output": "useradd -G sudo beta"
+  },
+  {
+    "input": "Add user frank with comment 'Database Admin'",
+    "output": "useradd -c 'Database Admin' frank"
+  },
+  {
+    "input": "Add a new user named user123 and assign /bin/zsh as shell",
+    "output": "useradd -s /bin/zsh user123"
+  },
+  {
+    "input": "Create a user with username harry and no user group",
+    "output": "useradd -N harry"
+  },
+  {
+    "input": "Add user alex and expire the account on 2025-12-31",
+    "output": "useradd -e 2025-12-31 alex"
+  },
+  {
+    "input": "Make a user nora with UID 3000 and GID 4000",
+    "output": "useradd -u 3000 -g 4000 nora"
+  },
+  {
+    "input": "Create user for testing called dummy with shell disabled",
+    "output": "useradd -s /usr/sbin/nologin dummy"
+  },
+  {
+    "input": "Add a user mike with home directory /srv/mike",
+    "output": "useradd -m -d /srv/mike mike"
+  },
+  {
+    "input": "Create user ethan with groups dev,qa",
+    "output": "useradd -G dev,qa ethan"
+  },
+  {
+    "input": "Add a user sam and disable account expiration",
+    "output": "useradd -e '' sam"
+  },
+  {
+    "input": "Add a user claire with password disabled",
+    "output": "useradd -M -s /usr/sbin/nologin claire"
+  },
+  {
+    "input": "Create system user servicebot with custom home",
+    "output": "useradd -r -m -d /opt/servicebot servicebot"
+  },
+  {
+    "input": "Add user guest1 and do not create home directory",
+    "output": "useradd -M guest1"
+  },
+  {
+    "input": "Add user alpha in group users and devs",
+    "output": "useradd -G users,devs alpha"
+  },
+  {
+    "input": "Create user named test2 with comment 'Temporary'",
+    "output": "useradd -c 'Temporary' test2"
+  },
+  {
+    "input": "Make user with name newguy and bash shell",
+    "output": "useradd -s /bin/bash newguy"
+  },
+  {
+    "input": "Add user testadmin with no group",
+    "output": "useradd -N testadmin"
+  },
+  {
+    "input": "Create user jake with home /users/jake and zsh shell",
+    "output": "useradd -m -d /users/jake -s /bin/zsh jake"
+  },
+  {
+    "input": "Add system account botrunner with UID 500",
+    "output": "useradd -r -u 500 botrunner"
+  },
+  {
+    "input": "Create a new user devuser for development tasks",
+    "output": "useradd devuser"
+  },
+  {
+    "input": "Add user blogwriter with comment 'Writes blog content'",
+    "output": "useradd -c 'Writes blog content' blogwriter"
+  },
+  {
+    "input": "Create user ankit with groups wheel and docker",
+    "output": "useradd -G wheel,docker ankit"
+  },
+  {
+    "input": "Add user jenny with /bin/sh shell",
+    "output": "useradd -s /bin/sh jenny"
+  },
+  {
+    "input": "Create user bob and specify shell to be /sbin/nologin",
+    "output": "useradd -s /sbin/nologin bob"
+  },
+  {
+    "input": "Add a user called techguy and create his home directory",
+    "output": "useradd -m techguy"
+  },
+  {
+    "input": "Create system user with name system_monitor",
+    "output": "useradd -r system_monitor"
+  },
+  {
+    "input": "Add user beta2 with comment and shell",
+    "output": "useradd -c 'Beta tester' -s /bin/bash beta2"
+  },
+  {
+    "input": "Make user samuel with default shell",
+    "output": "useradd samuel"
+  },
+  {
+    "input": "Create a user rick and assign a UID of 2500",
+    "output": "useradd -u 2500 rick"
+  },
+  {
+    "input": "Add user chris and make it expire in 30 days",
+    "output": "useradd -e $(date -d '+30 days' +%Y-%m-%d) chris"
+  },
+  {
+    "input": "Create user api_user for REST services",
+    "output": "useradd api_user"
+  },
+  {
+    "input": "Add new user deploy with bash shell and home",
+    "output": "useradd -m -s /bin/bash deploy"
+  },
+  {
+    "input": "Add user nodeadmin with UID and comment",
+    "output": "useradd -u 2001 -c 'Node.js Admin' nodeadmin"
+  },
+  {
+    "input": "Create a user with login shell /bin/false",
+    "output": "useradd -s /bin/false dummyuser"
+  },
+  {
+    "input": "Add user guest2025 with no shell access",
+    "output": "useradd -s /usr/sbin/nologin guest2025"
+  },
+  {
+    "input": "Make user logger with group loggroup",
+    "output": "useradd -g loggroup logger"
+  },
+  {
+    "input": "Create user for cronjobs with no password",
+    "output": "useradd -M -s /usr/sbin/nologin cronuser"
+  },
+  {
+    "input": "Add backup user for admin tasks",
+    "output": "useradd backup"
+  },
+  {
+    "input": "Create user sandbox with custom directory",
+    "output": "useradd -m -d /opt/sandbox sandbox"
+  },
+  {
+    "input": "Add system bot for automation",
+    "output": "useradd -r automationbot"
+  },
+  {
+    "input": "Add new intern user",
+    "output": "useradd intern"
+  },
+  {
+    "input": "Create user sshguest with disabled shell",
+    "output": "useradd -s /usr/sbin/nologin sshguest"
+  },
+  {
+    "input": "Add a new user named arjun",
+    "output": "useradd arjun"
+  },
+  {
+    "input": "Create user priya with a home directory and bash shell",
+    "output": "useradd -m -s /bin/bash priya"
+  },
+  {
+    "input": "Add user guestlogin with shell access disabled",
+    "output": "useradd -s /usr/sbin/nologin guestlogin"
+  },
+  {
+    "input": "Create a user raj with UID 4500",
+    "output": "useradd -u 4500 raj"
+  },
+  {
+    "input": "Add user simran to the admins group",
+    "output": "useradd -G admins simran"
+  },
+  {
+    "input": "Create user sam without creating a home directory",
+    "output": "useradd -M sam"
+  },
+  {
+    "input": "Add a system user loggerbot",
+    "output": "useradd -r loggerbot"
+  },
+  {
+    "input": "Create user devops with comment 'DevOps Team'",
+    "output": "useradd -c 'DevOps Team' devops"
+  },
+  {
+    "input": "Make a user named hruser with home at /srv/hruser",
+    "output": "useradd -m -d /srv/hruser hruser"
+  },
+  {
+    "input": "Add user guestX with login shell /bin/false",
+    "output": "useradd -s /bin/false guestX"
+  },
+  {
+    "input": "Create user admin2 and add to wheel group",
+    "output": "useradd -G wheel admin2"
+  },
+  {
+    "input": "Add user reporter with a custom UID and shell",
+    "output": "useradd -u 3400 -s /bin/zsh reporter"
+  },
+  {
+    "input": "Create a system user datad with no login",
+    "output": "useradd -r -s /usr/sbin/nologin datad"
+  },
+  {
+    "input": "Add user teacher with /bin/sh shell",
+    "output": "useradd -s /bin/sh teacher"
+  },
+  {
+    "input": "Add new user student with home directory created",
+    "output": "useradd -m student"
+  },
+  {
+    "input": "Create a system user cachebot for caching operations",
+    "output": "useradd -r cachebot"
+  },
+  {
+    "input": "Add intern user with home at /interns/john",
+    "output": "useradd -m -d /interns/john john"
+  },
+  {
+    "input": "Make a new user tester1 with GID 1002",
+    "output": "useradd -g 1002 tester1"
+  },
+  {
+    "input": "Create user qauser with secondary groups testers,loggers",
+    "output": "useradd -G testers,loggers qauser"
+  },
+  {
+    "input": "Add user alice2 and expire the account on 2026-01-01",
+    "output": "useradd -e 2026-01-01 alice2"
+  },
+  {
+    "input": "Create user vpnclient with no shell access",
+    "output": "useradd -s /sbin/nologin vpnclient"
+  },
+  {
+    "input": "Add guest user guest123 with UID 2222",
+    "output": "useradd -u 2222 guest123"
+  },
+  {
+    "input": "Add user gituser with home set to /srv/git",
+    "output": "useradd -m -d /srv/git gituser"
+  },
+  {
+    "input": "Create a user navi with default configuration",
+    "output": "useradd navi"
+  },
+  {
+    "input": "Add new user worker and comment as 'Manual Worker'",
+    "output": "useradd -c 'Manual Worker' worker"
+  },
+  {
+    "input": "Create user backend with /bin/zsh shell",
+    "output": "useradd -s /bin/zsh backend"
+  },
+  {
+    "input": "Add user datamanager to data group",
+    "output": "useradd -g data datamanager"
+  },
+  {
+    "input": "Create system bot user pushbot with no shell",
+    "output": "useradd -r -s /sbin/nologin pushbot"
+  },
+  {
+    "input": "Make user buildengine with UID 6000",
+    "output": "useradd -u 6000 buildengine"
+  },
+  {
+    "input": "Add user download with home at /downloads",
+    "output": "useradd -m -d /downloads download"
+  },
+  {
+    "input": "Create user testlab with comment 'Lab Account'",
+    "output": "useradd -c 'Lab Account' testlab"
+  },
+  {
+    "input": "Add user newemployee and join them to hr group",
+    "output": "useradd -G hr newemployee"
+  },
+  {
+    "input": "Create user alpha_team in group alpha",
+    "output": "useradd -g alpha alpha_team"
+  },
+  {
+    "input": "Add system user metricsd for metrics collection",
+    "output": "useradd -r metricsd"
+  },
+  {
+    "input": "Create user projectbot for automated deployment",
+    "output": "useradd projectbot"
+  },
+  {
+    "input": "Add user testagent and assign bash shell",
+    "output": "useradd -s /bin/bash testagent"
+  },
+  {
+    "input": "Create intern account internship2025",
+    "output": "useradd internship2025"
+  },
+  {
+    "input": "Add new user martha with comment",
+    "output": "useradd -c 'Support Staff' martha"
+  },
+  {
+    "input": "Make user netadmin and set shell to /bin/sh",
+    "output": "useradd -s /bin/sh netadmin"
+  },
+  {
+    "input": "Create a user dev1 with no password and no home",
+    "output": "useradd -M -s /usr/sbin/nologin dev1"
+  },
+  {
+    "input": "Add user tim with UID 8000 and bash shell",
+    "output": "useradd -u 8000 -s /bin/bash tim"
+  },
+  {
+    "input": "Create user frontenddev with group frontend",
+    "output": "useradd -g frontend frontenddev"
+  },
+  {
+    "input": "Add new user ashwin with login shell disabled",
+    "output": "useradd -s /sbin/nologin ashwin"
+  },
+  {
+    "input": "Create a bot user statusbot with UID 3030",
+    "output": "useradd -u 3030 statusbot"
+  },
+  {
+    "input": "Add a user reader with home at /opt/reader",
+    "output": "useradd -m -d /opt/reader reader"
+  },
+  {
+    "input": "Create backup operator user backop",
+    "output": "useradd backop"
+  },
+  {
+    "input": "Add user jules with groups editor and sudo",
+    "output": "useradd -G editor,sudo jules"
+  },
+  {
+    "input": "Create a no-login system user named uploader",
+    "output": "useradd -r -s /usr/sbin/nologin uploader"
+  }
+]
+
