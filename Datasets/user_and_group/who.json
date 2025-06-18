@@ -1,0 +1,386 @@
+[
+        {
+            "input": "Find out who is logged in",
+            "output": "who"
+        },
+        {
+            "input": "Check current user sessions",
+            "output": "who"
+        },
+        {
+            "input": "Get list of active users",
+            "output": "who"
+        },
+        {
+            "input": "Display who is currently using the system",
+            "output": "who"
+        },
+        {
+            "input": "List all logged in users",
+            "output": "who"
+        },
+        {
+            "input": "See user login names and terminals",
+            "output": "who"
+        },
+        {
+            "input": "Get login times of users",
+            "output": "who"
+        },
+        {
+            "input": "Show users logged in via SSH",
+            "output": "who"
+        },
+        {
+            "input": "Print usernames and their sessions",
+            "output": "who"
+        },
+        {
+            "input": "Display terminal lines of users",
+            "output": "who"
+        },
+        {
+            "input": "Find users with open sessions",
+            "output": "who"
+        },
+        {
+            "input": "See who is connected right now",
+            "output": "who"
+        },
+        {
+            "input": "Check login sessions",
+            "output": "who"
+        },
+        {
+            "input": "Print information of current users",
+            "output": "who"
+        },
+        {
+            "input": "Check all active terminals",
+            "output": "who"
+        },
+        {
+            "input": "List users currently logged in",
+            "output": "who"
+        },
+        {
+            "input": "Show usernames and remote connections",
+            "output": "who"
+        },
+        {
+            "input": "Identify users on this server",
+            "output": "who"
+        },
+        {
+            "input": "Get list of current sessions",
+            "output": "who"
+        },
+        {
+            "input": "Find out which users are online",
+            "output": "who"
+        },
+        {
+            "input": "Display IPs of logged-in users",
+            "output": "who"
+        },
+        {
+            "input": "Show the login terminal of all users",
+            "output": "who"
+        },
+        {
+            "input": "Print login shell of users",
+            "output": "who"
+        },
+        {
+            "input": "List usernames with session info",
+            "output": "who"
+        },
+        {
+            "input": "See who logged in through TTY",
+            "output": "who"
+        },
+        {
+            "input": "Identify system usage by users",
+            "output": "who"
+        },
+        {
+            "input": "Check which users have GUI sessions",
+            "output": "who"
+        },
+        {
+            "input": "Print all logged-in user details",
+            "output": "who"
+        },
+        {
+            "input": "Find number of logged in users",
+            "output": "who | wc -l"
+        },
+        {
+            "input": "Check if root is logged in",
+            "output": "who | grep root"
+        },
+        {
+            "input": "Filter users by terminal",
+            "output": "who | grep tty"
+        },
+        {
+            "input": "View remote user logins",
+            "output": "who | grep pts"
+        },
+        {
+            "input": "Show only usernames",
+            "output": "who | awk '{print $1}'"
+        },
+        {
+            "input": "Display current user count",
+            "output": "who | wc -l"
+        },
+        {
+            "input": "Get logged-in users list",
+            "output": "who"
+        },
+        {
+            "input": "List users using GUI",
+            "output": "who | grep :0"
+        },
+        {
+            "input": "Display users with login time",
+            "output": "who"
+        },
+        {
+            "input": "Show user login dates",
+            "output": "who"
+        },
+        {
+            "input": "Extract usernames from who",
+            "output": "who | cut -d ' ' -f1"
+        },
+        {
+            "input": "Print usernames and IPs",
+            "output": "who | awk '{print $1, $5}'"
+        },
+        {
+            "input": "Who is connected via SSH",
+            "output": "who | grep ssh"
+        },
+        {
+            "input": "Find sessions from specific host",
+            "output": "who | grep 192.168.1.1"
+        },
+        {
+            "input": "Find all pts sessions",
+            "output": "who | grep pts"
+        },
+        {
+            "input": "List all TTY sessions",
+            "output": "who | grep tty"
+        },
+        {
+            "input": "See users from specific terminal",
+            "output": "who | grep tty1"
+        },
+        {
+            "input": "Only display usernames",
+            "output": "who | awk '{print $1}'"
+        },
+        {
+            "input": "Check who is on GUI session",
+            "output": "who | grep ':0'"
+        },
+        {
+            "input": "Print sessions on pts/0",
+            "output": "who | grep pts/0"
+        },
+        {
+            "input": "Print remote IP addresses",
+            "output": "who | awk '{print $5}'"
+        },
+        {
+            "input": "Check for any remote logins",
+            "output": "who | grep '('"
+        },
+        {
+            "input": "Check active user sessions",
+            "output": "who"
+        },
+        {
+            "input": "Identify all current user logins",
+            "output": "who"
+        },
+        {
+            "input": "Display who is currently connected",
+            "output": "who"
+        },
+        {
+            "input": "Check terminal activity",
+            "output": "who"
+        },
+        {
+            "input": "List usernames currently logged in",
+            "output": "who | awk '{print $1}'"
+        },
+        {
+            "input": "Print who is using the system",
+            "output": "who"
+        },
+        {
+            "input": "Get user login timestamps",
+            "output": "who"
+        },
+        {
+            "input": "Find all logged in SSH users",
+            "output": "who | grep ssh"
+        },
+        {
+            "input": "List all users on tty2",
+            "output": "who | grep tty2"
+        },
+        {
+            "input": "Check for local login users",
+            "output": "who | grep tty"
+        },
+        {
+            "input": "Only view usernames from who",
+            "output": "who | awk '{print $1}'"
+        },
+        {
+            "input": "Get login details by IP",
+            "output": "who | awk '{print $1, $5}'"
+        },
+        {
+            "input": "Extract IPs from login list",
+            "output": "who | awk '{print $5}'"
+        },
+        {
+            "input": "Print users on pts/1",
+            "output": "who | grep pts/1"
+        },
+        {
+            "input": "See active console users",
+            "output": "who | grep tty"
+        },
+        {
+            "input": "Show GUI session users",
+            "output": "who | grep :0"
+        },
+        {
+            "input": "Get count of GUI logins",
+            "output": "who | grep :0 | wc -l"
+        },
+        {
+            "input": "Find users on terminal tty7",
+            "output": "who | grep tty7"
+        },
+        {
+            "input": "List all logins from host 10.0.0.2",
+            "output": "who | grep 10.0.0.2"
+        },
+        {
+            "input": "Only view login times",
+            "output": "who | awk '{print $3, $4}'"
+        },
+        {
+            "input": "Extract terminal names",
+            "output": "who | awk '{print $2}'"
+        },
+        {
+            "input": "Get user sessions for current machine",
+            "output": "who"
+        },
+        {
+            "input": "Check for GUI users",
+            "output": "who | grep ':0'"
+        },
+        {
+            "input": "Monitor SSH logins",
+            "output": "who | grep ssh"
+        },
+        {
+            "input": "See who is using tty3",
+            "output": "who | grep tty3"
+        },
+        {
+            "input": "Check if admin is logged in",
+            "output": "who | grep admin"
+        },
+        {
+            "input": "Display detailed user session info",
+            "output": "who"
+        },
+        {
+            "input": "Find number of ssh sessions",
+            "output": "who | grep ssh | wc -l"
+        },
+        {
+            "input": "Find all console users",
+            "output": "who | grep tty"
+        },
+        {
+            "input": "List users by terminal name",
+            "output": "who | awk '{print $2}'"
+        },
+        {
+            "input": "Print who is connected remotely",
+            "output": "who | grep '('"
+        },
+        {
+            "input": "Count all remote logins",
+            "output": "who | grep '(' | wc -l"
+        },
+        {
+            "input": "Show hostnames of logged in users",
+            "output": "who | awk '{print $5}'"
+        },
+        {
+            "input": "Find login info on pts/2",
+            "output": "who | grep pts/2"
+        },
+        {
+            "input": "Check GUI terminal logins",
+            "output": "who | grep :0"
+        },
+        {
+            "input": "Show current login sessions",
+            "output": "who"
+        },
+        {
+            "input": "Print unique users logged in",
+            "output": "who | awk '{print $1}' | sort | uniq"
+        },
+        {
+            "input": "Extract all host IPs",
+            "output": "who | awk '{print $5}'"
+        },
+        {
+            "input": "Display user sessions by login time",
+            "output": "who | sort -k3"
+        },
+        {
+            "input": "Get login terminals sorted",
+            "output": "who | awk '{print $2}' | sort"
+        },
+        {
+            "input": "Count how many terminals in use",
+            "output": "who | awk '{print $2}' | sort | uniq | wc -l"
+        },
+        {
+            "input": "Print raw who output",
+            "output": "who"
+        },
+        {
+            "input": "Check login status of user named guest",
+            "output": "who | grep guest"
+        },
+        {
+            "input": "List who is using tty8",
+            "output": "who | grep tty8"
+        },
+        {
+            "input": "Find total login terminals",
+            "output": "who | awk '{print $2}' | sort | uniq | wc -l"
+        },
+        {
+            "input": "Extract login times only",
+            "output": "who | awk '{print $3, $4}'"
+        }
+]

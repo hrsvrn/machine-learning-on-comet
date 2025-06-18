@@ -1,0 +1,546 @@
+[
+  {
+    "input": "Create a new group called developers",
+    "output": "groupadd developers"
+  },
+  {
+    "input": "Add a group named testers",
+    "output": "groupadd testers"
+  },
+  {
+    "input": "Make a group for designers",
+    "output": "groupadd designers"
+  },
+  {
+    "input": "Create a group named interns",
+    "output": "groupadd interns"
+  },
+  {
+    "input": "Add the group qa_team",
+    "output": "groupadd qa_team"
+  },
+  {
+    "input": "Form a group called hr",
+    "output": "groupadd hr"
+  },
+  {
+    "input": "Set up group admins",
+    "output": "groupadd admins"
+  },
+  {
+    "input": "Add support group",
+    "output": "groupadd support"
+  },
+  {
+    "input": "Create an engineers group",
+    "output": "groupadd engineers"
+  },
+  {
+    "input": "Form a group for marketing",
+    "output": "groupadd marketing"
+  },
+  {
+    "input": "Add analytics as a new group",
+    "output": "groupadd analytics"
+  },
+  {
+    "input": "Create backend_team group",
+    "output": "groupadd backend_team"
+  },
+  {
+    "input": "Create group frontend_team",
+    "output": "groupadd frontend_team"
+  },
+  {
+    "input": "Make group content_creators",
+    "output": "groupadd content_creators"
+  },
+  {
+    "input": "Add the research group",
+    "output": "groupadd research"
+  },
+  {
+    "input": "Add sales as a new group",
+    "output": "groupadd sales"
+  },
+  {
+    "input": "Form a legal group",
+    "output": "groupadd legal"
+  },
+  {
+    "input": "Add security_team group",
+    "output": "groupadd security_team"
+  },
+  {
+    "input": "Create the devops group",
+    "output": "groupadd devops"
+  },
+  {
+    "input": "Make a group called dev_team",
+    "output": "groupadd dev_team"
+  },
+  {
+    "input": "Create a group called alpha_users",
+    "output": "groupadd alpha_users"
+  },
+  {
+    "input": "Add finance group",
+    "output": "groupadd finance"
+  },
+  {
+    "input": "Create training group",
+    "output": "groupadd training"
+  },
+  {
+    "input": "Add HR_department group",
+    "output": "groupadd HR_department"
+  },
+  {
+    "input": "Create group management",
+    "output": "groupadd management"
+  },
+  {
+    "input": "Create documentation team group",
+    "output": "groupadd documentation"
+  },
+  {
+    "input": "Add networking group",
+    "output": "groupadd networking"
+  },
+  {
+    "input": "Form UIUX group",
+    "output": "groupadd UIUX"
+  },
+  {
+    "input": "Add content_team group",
+    "output": "groupadd content_team"
+  },
+  {
+    "input": "Create ops_team group",
+    "output": "groupadd ops_team"
+  },
+  {
+    "input": "Add sysadmins group",
+    "output": "groupadd sysadmins"
+  },
+  {
+    "input": "Create group named testers_beta",
+    "output": "groupadd testers_beta"
+  },
+  {
+    "input": "Form QA_leads group",
+    "output": "groupadd QA_leads"
+  },
+  {
+    "input": "Add beta_users group",
+    "output": "groupadd beta_users"
+  },
+  {
+    "input": "Create documentation_team group",
+    "output": "groupadd documentation_team"
+  },
+  {
+    "input": "Add customer_support group",
+    "output": "groupadd customer_support"
+  },
+  {
+    "input": "Create interns2025 group",
+    "output": "groupadd interns2025"
+  },
+  {
+    "input": "Form contractors group",
+    "output": "groupadd contractors"
+  },
+  {
+    "input": "Create project_alpha group",
+    "output": "groupadd project_alpha"
+  },
+  {
+    "input": "Add team_rocket group",
+    "output": "groupadd team_rocket"
+  },
+  {
+    "input": "Create mentors group",
+    "output": "groupadd mentors"
+  },
+  {
+    "input": "Add root_team group",
+    "output": "groupadd root_team"
+  },
+  {
+    "input": "Create user_ops group",
+    "output": "groupadd user_ops"
+  },
+  {
+    "input": "Make a team group called release_team",
+    "output": "groupadd release_team"
+  },
+  {
+    "input": "Add interns_2024 group",
+    "output": "groupadd interns_2024"
+  },
+  {
+    "input": "Form system_admins group",
+    "output": "groupadd system_admins"
+  },
+  {
+    "input": "Create read_only_users group",
+    "output": "groupadd read_only_users"
+  },
+  {
+    "input": "Add software_engineers group",
+    "output": "groupadd software_engineers"
+  },
+  {
+    "input": "Create group CI_CD_team",
+    "output": "groupadd CI_CD_team"
+  },
+  {
+    "input": "Make mobile_team group",
+    "output": "groupadd mobile_team"
+  },
+  {
+    "input": "Add senior_devs group",
+    "output": "groupadd senior_devs"
+  },
+  {
+    "input": "Create staging_users group",
+    "output": "groupadd staging_users"
+  },
+  {
+    "input": "Add students2025 group",
+    "output": "groupadd students2025"
+  },
+  {
+    "input": "Create testers_interns group",
+    "output": "groupadd testers_interns"
+  },
+  {
+    "input": "Add superadmins group",
+    "output": "groupadd superadmins"
+  },
+  {
+    "input": "Create junior_devs group",
+    "output": "groupadd junior_devs"
+  },
+  {
+    "input": "Add product_team group",
+    "output": "groupadd product_team"
+  },
+  {
+    "input": "Make training_batch_1 group",
+    "output": "groupadd training_batch_1"
+  },
+  {
+    "input": "Add Linux_users group",
+    "output": "groupadd Linux_users"
+  },
+  {
+    "input": "Create mac_users group",
+    "output": "groupadd mac_users"
+  },
+  {
+    "input": "Add shell_access group",
+    "output": "groupadd shell_access"
+  },
+  {
+    "input": "Make support_nightshift group",
+    "output": "groupadd support_nightshift"
+  },
+  {
+    "input": "Add app_reviewers group",
+    "output": "groupadd app_reviewers"
+  },
+  {
+    "input": "Create UX_designers group",
+    "output": "groupadd UX_designers"
+  },
+  {
+    "input": "Add api_testers group",
+    "output": "groupadd api_testers"
+  },
+  {
+    "input": "Form python_dev group",
+    "output": "groupadd python_dev"
+  },
+  {
+    "input": "Create java_developers group",
+    "output": "groupadd java_developers"
+  },
+  {
+    "input": "Add golang_team group",
+    "output": "groupadd golang_team"
+  },
+  {
+    "input": "Create sql_users group",
+    "output": "groupadd sql_users"
+  },
+  {
+    "input": "Add db_admins group",
+    "output": "groupadd db_admins"
+  },
+  {
+    "input": "Make team_bangalore group",
+    "output": "groupadd team_bangalore"
+  },
+  {
+    "input": "Create security_audit group",
+    "output": "groupadd security_audit"
+  },
+  {
+    "input": "Add alpha_testers group",
+    "output": "groupadd alpha_testers"
+  },
+  {
+    "input": "Create ci_jobs group",
+    "output": "groupadd ci_jobs"
+  },
+  {
+    "input": "Make test_lab group",
+    "output": "groupadd test_lab"
+  },
+  {
+    "input": "Add dev_infra group",
+    "output": "groupadd dev_infra"
+  },
+  {
+    "input": "Create support_batch1 group",
+    "output": "groupadd support_batch1"
+  },
+  {
+    "input": "Add voice_test group",
+    "output": "groupadd voice_test"
+  },
+  {
+    "input": "Create documentation_review group",
+    "output": "groupadd documentation_review"
+  },
+  {
+    "input": "Add graphics_team group",
+    "output": "groupadd graphics_team"
+  },
+  {
+    "input": "Create internal_tools group",
+    "output": "groupadd internal_tools"
+  },
+  {
+    "input": "Add group sde_interns",
+    "output": "groupadd sde_interns"
+  },
+  {
+    "input": "Create team_delta group",
+    "output": "groupadd team_delta"
+  },
+  {
+    "input": "Make group research_2025",
+    "output": "groupadd research_2025"
+  },
+  {
+    "input": "Add training_group_june",
+    "output": "groupadd training_group_june"
+  },
+  {
+    "input": "Form new group summer_batch",
+    "output": "groupadd summer_batch"
+  },
+  {
+    "input": "Create a group called staging_team",
+    "output": "groupadd staging_team"
+  },
+  {
+    "input": "Add api_developers as a group",
+    "output": "groupadd api_developers"
+  },
+  {
+    "input": "Make a team called bughunters",
+    "output": "groupadd bughunters"
+  },
+  {
+    "input": "Create test_engineers group",
+    "output": "groupadd test_engineers"
+  },
+  {
+    "input": "Add vfx_artists group",
+    "output": "groupadd vfx_artists"
+  },
+  {
+    "input": "Create freelancers group",
+    "output": "groupadd freelancers"
+  },
+  {
+    "input": "Add cloud_admins group",
+    "output": "groupadd cloud_admins"
+  },
+  {
+    "input": "Create group product_research",
+    "output": "groupadd product_research"
+  },
+  {
+    "input": "Add onboarding_team group",
+    "output": "groupadd onboarding_team"
+  },
+  {
+    "input": "Create UX_team group",
+    "output": "groupadd UX_team"
+  },
+  {
+    "input": "Form a group for policy_review",
+    "output": "groupadd policy_review"
+  },
+  {
+    "input": "Add access_control group",
+    "output": "groupadd access_control"
+  },
+  {
+    "input": "Create high_security group",
+    "output": "groupadd high_security"
+  },
+  {
+    "input": "Make internal_review group",
+    "output": "groupadd internal_review"
+  },
+  {
+    "input": "Add sys_maintenance group",
+    "output": "groupadd sys_maintenance"
+  },
+  {
+    "input": "Form firmware_team group",
+    "output": "groupadd firmware_team"
+  },
+  {
+    "input": "Create kiosk_users group",
+    "output": "groupadd kiosk_users"
+  },
+  {
+    "input": "Add device_ops group",
+    "output": "groupadd device_ops"
+  },
+  {
+    "input": "Create usergroup_example group",
+    "output": "groupadd usergroup_example"
+  },
+  {
+    "input": "Add testers_2025 group",
+    "output": "groupadd testers_2025"
+  },
+  {
+    "input": "Create a team named rest_api_group",
+    "output": "groupadd rest_api_group"
+  },
+  {
+    "input": "Form a group junior_engineers",
+    "output": "groupadd junior_engineers"
+  },
+  {
+    "input": "Add contract_devs group",
+    "output": "groupadd contract_devs"
+  },
+  {
+    "input": "Create sprint_5_team group",
+    "output": "groupadd sprint_5_team"
+  },
+  {
+    "input": "Add new group called security_ops",
+    "output": "groupadd security_ops"
+  },
+  {
+    "input": "Form a group gpu_cluster",
+    "output": "groupadd gpu_cluster"
+  },
+  {
+    "input": "Create ldap_users group",
+    "output": "groupadd ldap_users"
+  },
+  {
+    "input": "Add preprod_team group",
+    "output": "groupadd preprod_team"
+  },
+  {
+    "input": "Form devtest_users group",
+    "output": "groupadd devtest_users"
+  },
+  {
+    "input": "Add observers group",
+    "output": "groupadd observers"
+  },
+  {
+    "input": "Create support_leads group",
+    "output": "groupadd support_leads"
+  },
+  {
+    "input": "Add guest_access group",
+    "output": "groupadd guest_access"
+  },
+  {
+    "input": "Create content_review group",
+    "output": "groupadd content_review"
+  },
+  {
+    "input": "Make internal_collab group",
+    "output": "groupadd internal_collab"
+  },
+  {
+    "input": "Add virtual_machines group",
+    "output": "groupadd virtual_machines"
+  },
+  {
+    "input": "Create interview_panel group",
+    "output": "groupadd interview_panel"
+  },
+  {
+    "input": "Add early_access group",
+    "output": "groupadd early_access"
+  },
+  {
+    "input": "Create custom_theme_users group",
+    "output": "groupadd custom_theme_users"
+  },
+  {
+    "input": "Add marketing_interns group",
+    "output": "groupadd marketing_interns"
+  },
+  {
+    "input": "Create frontend_leads group",
+    "output": "groupadd frontend_leads"
+  },
+  {
+    "input": "Make data_processing group",
+    "output": "groupadd data_processing"
+  },
+  {
+    "input": "Add pentest_team group",
+    "output": "groupadd pentest_team"
+  },
+  {
+    "input": "Create ai_research group",
+    "output": "groupadd ai_research"
+  },
+  {
+    "input": "Form simulation_users group",
+    "output": "groupadd simulation_users"
+  },
+  {
+    "input": "Create trial_users group",
+    "output": "groupadd trial_users"
+  },
+  {
+    "input": "Add ci_testers group",
+    "output": "groupadd ci_testers"
+  },
+  {
+    "input": "Create sandbox_team group",
+    "output": "groupadd sandbox_team"
+  },
+  {
+    "input": "Add design_review group",
+    "output": "groupadd design_review"
+  },
+  {
+    "input": "Make onboarding_batch group",
+    "output": "groupadd onboarding_batch"
+  },
+  {
+    "input": "Create node_admins group",
+    "output": "groupadd node_admins"
+  }
+]

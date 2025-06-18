@@ -1,0 +1,394 @@
+[
+        {
+            "input": "Change ownership of file.txt to user1",
+            "output": "chown user1 file.txt"
+        },
+        {
+            "input": "Set user1 as the owner of script.sh",
+            "output": "chown user1 script.sh"
+        },
+        {
+            "input": "Assign ownership of folder to john",
+            "output": "chown john folder"
+        },
+        {
+            "input": "Change owner to alice for app.py",
+            "output": "chown alice app.py"
+        },
+        {
+            "input": "Set bob as the owner for /var/log/syslog",
+            "output": "chown bob /var/log/syslog"
+        },
+        {
+            "input": "Assign ownership of images to user mark",
+            "output": "chown mark images"
+        },
+        {
+            "input": "Make user1 the owner of project folder",
+            "output": "chown user1 project"
+        },
+        {
+            "input": "Set david as new owner for config.ini",
+            "output": "chown david config.ini"
+        },
+        {
+            "input": "Assign user2 ownership of notes.txt",
+            "output": "chown user2 notes.txt"
+        },
+        {
+            "input": "Change owner of result.csv to sam",
+            "output": "chown sam result.csv"
+        },
+        {
+            "input": "Make jane the owner of all .log files",
+            "output": "chown jane *.log"
+        },
+        {
+            "input": "Set ownership of /etc/hosts to user alex",
+            "output": "chown alex /etc/hosts"
+        },
+        {
+            "input": "Assign tom as the owner of image.png",
+            "output": "chown tom image.png"
+        },
+        {
+            "input": "Give john ownership of audio.mp3",
+            "output": "chown john audio.mp3"
+        },
+        {
+            "input": "Change folder1's owner to user5",
+            "output": "chown user5 folder1"
+        },
+        {
+            "input": "Assign user6 ownership of backup.tar.gz",
+            "output": "chown user6 backup.tar.gz"
+        },
+        {
+            "input": "Change ownership of www directory to apache",
+            "output": "chown apache www"
+        },
+        {
+            "input": "Assign user7 ownership to /usr/bin/custom",
+            "output": "chown user7 /usr/bin/custom"
+        },
+        {
+            "input": "Make daniel the owner of setup.py",
+            "output": "chown daniel setup.py"
+        },
+        {
+            "input": "Give sara ownership of /home/sara",
+            "output": "chown sara /home/sara"
+        },
+        {
+            "input": "Set user8 as the new owner for test.sql",
+            "output": "chown user8 test.sql"
+        },
+        {
+            "input": "Assign owner of file1.txt to user9",
+            "output": "chown user9 file1.txt"
+        },
+        {
+            "input": "Make admin the owner of admin.log",
+            "output": "chown admin admin.log"
+        },
+        {
+            "input": "Set root as owner for boot files",
+            "output": "chown root /boot/*"
+        },
+        {
+            "input": "Assign user10 ownership of tasks.csv",
+            "output": "chown user10 tasks.csv"
+        },
+        {
+            "input": "Change owner to webmaster for /var/www/html",
+            "output": "chown webmaster /var/www/html"
+        },
+        {
+            "input": "Make user11 owner of journal.pdf",
+            "output": "chown user11 journal.pdf"
+        },
+        {
+            "input": "Give user12 ownership of settings.conf",
+            "output": "chown user12 settings.conf"
+        },
+        {
+            "input": "Set control as owner of router.cfg",
+            "output": "chown control router.cfg"
+        },
+        {
+            "input": "Assign ownership of video.mp4 to michael",
+            "output": "chown michael video.mp4"
+        },
+        {
+            "input": "Set user13 as new owner for payroll.xlsx",
+            "output": "chown user13 payroll.xlsx"
+        },
+        {
+            "input": "Give bob full ownership of work folder",
+            "output": "chown bob work"
+        },
+        {
+            "input": "Set ownership of /opt/tools to devuser",
+            "output": "chown devuser /opt/tools"
+        },
+        {
+            "input": "Assign developer as owner of main.cpp",
+            "output": "chown developer main.cpp"
+        },
+        {
+            "input": "Change /etc/passwd ownership to sysadmin",
+            "output": "chown sysadmin /etc/passwd"
+        },
+        {
+            "input": "Set ownership of install.log to root",
+            "output": "chown root install.log"
+        },
+        {
+            "input": "Change owner of home directory to newuser",
+            "output": "chown newuser /home/newuser"
+        },
+        {
+            "input": "Assign ownership to user14 on system.log",
+            "output": "chown user14 system.log"
+        },
+        {
+            "input": "Set manager as owner of report.pdf",
+            "output": "chown manager report.pdf"
+        },
+        {
+            "input": "Change document.docx owner to linda",
+            "output": "chown linda document.docx"
+        },
+        {
+            "input": "Set eric as owner of email.eml",
+            "output": "chown eric email.eml"
+        },
+        {
+            "input": "Assign support ownership of ticket.log",
+            "output": "chown support ticket.log"
+        },
+        {
+            "input": "Assign chris to own all files in /data",
+            "output": "chown chris /data/*"
+        },
+        {
+            "input": "Give root ownership of grub.cfg",
+            "output": "chown root grub.cfg"
+        },
+        {
+            "input": "Make user15 the owner of test folder",
+            "output": "chown user15 test"
+        },
+        {
+            "input": "Change owner to devops on logs.txt",
+            "output": "chown devops logs.txt"
+        },
+        {
+            "input": "Assign datauser ownership of finance.db",
+            "output": "chown datauser finance.db"
+        },
+        {
+            "input": "Change owner of mount directory to mounter",
+            "output": "chown mounter /mnt"
+        },
+        {
+            "input": "Make audit the owner of access.log",
+            "output": "chown audit access.log"
+        },
+        {
+            "input": "Change ownership of folder docs to user16",
+            "output": "chown user16 docs"
+        },
+        {
+            "input": "Make carol the owner of myfile.txt",
+            "output": "chown carol myfile.txt"
+        },
+        {
+            "input": "Assign ownership of script.sh to sysuser",
+            "output": "chown sysuser script.sh"
+        },
+        {
+            "input": "Change owner of archive.zip to archivist",
+            "output": "chown archivist archive.zip"
+        },
+        {
+            "input": "Set frank as owner of results.json",
+            "output": "chown frank results.json"
+        },
+        {
+            "input": "Assign user17 to own the build folder",
+            "output": "chown user17 build"
+        },
+        {
+            "input": "Give permissions of data.csv to user18",
+            "output": "chown user18 data.csv"
+        },
+        {
+            "input": "Make owner of image.jpg as user19",
+            "output": "chown user19 image.jpg"
+        },
+        {
+            "input": "Assign user20 to config.js file",
+            "output": "chown user20 config.js"
+        },
+        {
+            "input": "Set tim as new owner of resume.pdf",
+            "output": "chown tim resume.pdf"
+        },
+        {
+            "input": "Change report.csv's owner to manager",
+            "output": "chown manager report.csv"
+        },
+        {
+            "input": "Set claire as owner for workspace folder",
+            "output": "chown claire workspace"
+        },
+        {
+            "input": "Assign user21 to documents.zip",
+            "output": "chown user21 documents.zip"
+        },
+        {
+            "input": "Change file.txt ownership to coder",
+            "output": "chown coder file.txt"
+        },
+        {
+            "input": "Make user22 the owner of run.sh",
+            "output": "chown user22 run.sh"
+        },
+        {
+            "input": "Assign user23 ownership of image folder",
+            "output": "chown user23 image"
+        },
+        {
+            "input": "Change user24 as owner of notes.md",
+            "output": "chown user24 notes.md"
+        },
+        {
+            "input": "Set timothy as new owner of book.pdf",
+            "output": "chown timothy book.pdf"
+        },
+        {
+            "input": "Give user25 ownership of scripts folder",
+            "output": "chown user25 scripts"
+        },
+        {
+            "input": "Make helen the owner of audio.wav",
+            "output": "chown helen audio.wav"
+        },
+        {
+            "input": "Set nancy as owner for project directory",
+            "output": "chown nancy project"
+        },
+        {
+            "input": "Assign patrick ownership of db.sqlite",
+            "output": "chown patrick db.sqlite"
+        },
+        {
+            "input": "Change pictures folder owner to user26",
+            "output": "chown user26 pictures"
+        },
+        {
+            "input": "Make vikas the new owner of temp files",
+            "output": "chown vikas temp/*"
+        },
+        {
+            "input": "Assign ownership of settings.ini to adminuser",
+            "output": "chown adminuser settings.ini"
+        },
+        {
+            "input": "Change owner of game.log to gamer",
+            "output": "chown gamer game.log"
+        },
+        {
+            "input": "Make user27 the owner of index.html",
+            "output": "chown user27 index.html"
+        },
+        {
+            "input": "Assign devops ownership of docker-compose.yml",
+            "output": "chown devops docker-compose.yml"
+        },
+        {
+            "input": "Give editor full control of article.docx",
+            "output": "chown editor article.docx"
+        },
+        {
+            "input": "Change logs folder to be owned by loguser",
+            "output": "chown loguser logs"
+        },
+        {
+            "input": "Assign user28 as the owner of project1",
+            "output": "chown user28 project1"
+        },
+        {
+            "input": "Make kate the owner of thesis.tex",
+            "output": "chown kate thesis.tex"
+        },
+        {
+            "input": "Set sara as owner for personal.doc",
+            "output": "chown sara personal.doc"
+        },
+        {
+            "input": "Assign finance team user to report_final.pdf",
+            "output": "chown finance report_final.pdf"
+        },
+        {
+            "input": "Make user29 the owner of folderA",
+            "output": "chown user29 folderA"
+        },
+        {
+            "input": "Change ownership of cloud.txt to clouduser",
+            "output": "chown clouduser cloud.txt"
+        },
+        {
+            "input": "Assign dev as the owner of codebase.zip",
+            "output": "chown dev codebase.zip"
+        },
+        {
+            "input": "Give project manager ownership of roadmap.pdf",
+            "output": "chown manager roadmap.pdf"
+        },
+        {
+            "input": "Make root the owner of cron jobs",
+            "output": "chown root /etc/cron*"
+        },
+        {
+            "input": "Set database user to own mysql.cnf",
+            "output": "chown dbuser mysql.cnf"
+        },
+        {
+            "input": "Change ownership of blog.html to webuser",
+            "output": "chown webuser blog.html"
+        },
+        {
+            "input": "Make mary the owner of slides.pptx",
+            "output": "chown mary slides.pptx"
+        },
+        {
+            "input": "Assign design lead ownership of logo.svg",
+            "output": "chown designer logo.svg"
+        },
+        {
+            "input": "Set itadmin as owner for secure.log",
+            "output": "chown itadmin secure.log"
+        },
+        {
+            "input": "Give user30 access to manage firewall.conf",
+            "output": "chown user30 firewall.conf"
+        },
+        {
+            "input": "Assign tommy to own nginx.conf",
+            "output": "chown tommy nginx.conf"
+        },
+        {
+            "input": "Change backup.sql owner to backupuser",
+            "output": "chown backupuser backup.sql"
+        },
+        {
+            "input": "Make logs folder belong to syslog user",
+            "output": "chown syslog logs"
+        },
+        {
+            "input": "Set rita as the new owner of debug.log",
+            "output": "chown rita debug.log"
+        }
+]

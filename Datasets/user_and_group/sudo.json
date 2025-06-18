@@ -1,0 +1,390 @@
+[
+        {
+            "input": "Update package lists",
+            "output": "sudo apt update"
+        },
+        {
+            "input": "Upgrade all packages",
+            "output": "sudo apt upgrade"
+        },
+        {
+            "input": "Install curl using sudo",
+            "output": "sudo apt install curl"
+        },
+        {
+            "input": "Remove nginx using sudo",
+            "output": "sudo apt remove nginx"
+        },
+        {
+            "input": "Shutdown the system",
+            "output": "sudo shutdown now"
+        },
+        {
+            "input": "Restart the computer",
+            "output": "sudo reboot"
+        },
+        {
+            "input": "Edit sources list with nano",
+            "output": "sudo nano /etc/apt/sources.list"
+        },
+        {
+            "input": "Change ownership of a directory",
+            "output": "sudo chown user:user /var/www"
+        },
+        {
+            "input": "Move a file to a protected directory",
+            "output": "sudo mv index.html /var/www/html/"
+        },
+        {
+            "input": "Edit the crontab file",
+            "output": "sudo crontab -e"
+        },
+        {
+            "input": "View protected system logs",
+            "output": "sudo less /var/log/syslog"
+        },
+        {
+            "input": "Start apache2 service",
+            "output": "sudo systemctl start apache2"
+        },
+        {
+            "input": "Stop docker service",
+            "output": "sudo systemctl stop docker"
+        },
+        {
+            "input": "Enable ssh service",
+            "output": "sudo systemctl enable ssh"
+        },
+        {
+            "input": "Disable bluetooth service",
+            "output": "sudo systemctl disable bluetooth"
+        },
+        {
+            "input": "Add a new user named dev",
+            "output": "sudo useradd dev"
+        },
+        {
+            "input": "Delete user guest",
+            "output": "sudo userdel guest"
+        },
+        {
+            "input": "Change password for tom",
+            "output": "sudo passwd tom"
+        },
+        {
+            "input": "List root directory",
+            "output": "sudo ls /root"
+        },
+        {
+            "input": "Edit hosts file",
+            "output": "sudo nano /etc/hosts"
+        },
+        {
+            "input": "Ping a site using sudo",
+            "output": "sudo ping google.com"
+        },
+        {
+            "input": "Install python3-pip",
+            "output": "sudo apt install python3-pip"
+        },
+        {
+            "input": "Uninstall gimp",
+            "output": "sudo apt remove gimp"
+        },
+        {
+            "input": "Restart the network manager",
+            "output": "sudo systemctl restart NetworkManager"
+        },
+        {
+            "input": "Edit sudoers file safely",
+            "output": "sudo visudo"
+        },
+        {
+            "input": "Run docker command as root",
+            "output": "sudo docker ps"
+        },
+        {
+            "input": "Add current user to docker group",
+            "output": "sudo usermod -aG docker $USER"
+        },
+        {
+            "input": "Create a directory in /opt",
+            "output": "sudo mkdir /opt/myapp"
+        },
+        {
+            "input": "Delete a file in /etc",
+            "output": "sudo rm /etc/sample.conf"
+        },
+        {
+            "input": "Install nginx",
+            "output": "sudo apt install nginx"
+        },
+        {
+            "input": "Reboot the server immediately",
+            "output": "sudo reboot now"
+        },
+        {
+            "input": "Run bash with root privileges",
+            "output": "sudo bash"
+        },
+        {
+            "input": "Add entry to /etc/fstab",
+            "output": "sudo nano /etc/fstab"
+        },
+        {
+            "input": "Kill process with PID 1234",
+            "output": "sudo kill 1234"
+        },
+        {
+            "input": "List running processes",
+            "output": "sudo ps aux"
+        },
+        {
+            "input": "Update snap packages",
+            "output": "sudo snap refresh"
+        },
+        {
+            "input": "Create new group developers",
+            "output": "sudo groupadd developers"
+        },
+        {
+            "input": "Remove group testers",
+            "output": "sudo groupdel testers"
+        },
+        {
+            "input": "Change group of a file",
+            "output": "sudo chgrp admin /etc/passwd"
+        },
+        {
+            "input": "Create symbolic link as root",
+            "output": "sudo ln -s /var/www /home/user/web"
+        },
+        {
+            "input": "Run a script that modifies system settings",
+            "output": "sudo ./setup.sh"
+        },
+        {
+            "input": "Install Java runtime",
+            "output": "sudo apt install default-jre"
+        },
+        {
+            "input": "Print disk usage of root directory",
+            "output": "sudo du -sh /"
+        },
+        {
+            "input": "Mount an external drive",
+            "output": "sudo mount /dev/sdb1 /mnt"
+        },
+        {
+            "input": "Unmount a device",
+            "output": "sudo umount /mnt"
+        },
+        {
+            "input": "Install vs code from .deb file",
+            "output": "sudo dpkg -i code.deb"
+        },
+        {
+            "input": "Fix broken dependencies",
+            "output": "sudo apt --fix-broken install"
+        },
+        {
+            "input": "Check disk space with df",
+            "output": "sudo df -h"
+        },
+        {
+            "input": "Reconfigure timezone",
+            "output": "sudo dpkg-reconfigure tzdata"
+        },
+        {
+            "input": "Change permissions of a file",
+            "output": "sudo chmod 644 /etc/hosts"
+        },
+        {
+            "input": "List all services",
+            "output": "sudo systemctl list-units --type=service"
+        },
+        {
+            "input": "Flush DNS cache",
+            "output": "sudo systemd-resolve --flush-caches"
+        },
+        {
+            "input": "Change default shell to zsh",
+            "output": "sudo chsh -s /usr/bin/zsh"
+        },
+        {
+            "input": "Install htop",
+            "output": "sudo apt install htop"
+        },
+        {
+            "input": "Display firewall status",
+            "output": "sudo ufw status"
+        },
+        {
+            "input": "Allow SSH through firewall",
+            "output": "sudo ufw allow ssh"
+        },
+        {
+            "input": "Deny all incoming traffic",
+            "output": "sudo ufw default deny incoming"
+        },
+        {
+            "input": "Enable firewall",
+            "output": "sudo ufw enable"
+        },
+        {
+            "input": "Disable firewall",
+            "output": "sudo ufw disable"
+        },
+        {
+            "input": "Reload firewall rules",
+            "output": "sudo ufw reload"
+        },
+        {
+            "input": "Install zip tool",
+            "output": "sudo apt install zip"
+        },
+        {
+            "input": "Install unzip tool",
+            "output": "sudo apt install unzip"
+        },
+        {
+            "input": "Install Git",
+            "output": "sudo apt install git"
+        },
+        {
+            "input": "Clone a git repo with sudo",
+            "output": "sudo git clone https://github.com/example/repo.git"
+        },
+        {
+            "input": "Install Node.js",
+            "output": "sudo apt install nodejs"
+        },
+        {
+            "input": "Install npm",
+            "output": "sudo apt install npm"
+        },
+        {
+            "input": "Restart SSH service",
+            "output": "sudo systemctl restart ssh"
+        },
+        {
+            "input": "Check SSH service status",
+            "output": "sudo systemctl status ssh"
+        },
+        {
+            "input": "Add executable permission to script",
+            "output": "sudo chmod +x script.sh"
+        },
+        {
+            "input": "Run a python script with sudo",
+            "output": "sudo python3 script.py"
+        },
+        {
+            "input": "Run top as root",
+            "output": "sudo top"
+        },
+        {
+            "input": "Check disk usage with ncdu",
+            "output": "sudo ncdu /"
+        },
+        {
+            "input": "Clear system logs",
+            "output": "sudo journalctl --vacuum-time=1d"
+        },
+        {
+            "input": "Update GRUB config",
+            "output": "sudo update-grub"
+        },
+        {
+            "input": "Backup crontab",
+            "output": "sudo crontab -l > backup.txt"
+        },
+        {
+            "input": "Restore crontab from file",
+            "output": "sudo crontab backup.txt"
+        },
+        {
+            "input": "Install MySQL server",
+            "output": "sudo apt install mysql-server"
+        },
+        {
+            "input": "Start MySQL service",
+            "output": "sudo systemctl start mysql"
+        },
+        {
+            "input": "Stop MySQL service",
+            "output": "sudo systemctl stop mysql"
+        },
+        {
+            "input": "Restart MySQL",
+            "output": "sudo systemctl restart mysql"
+        },
+        {
+            "input": "Enable MySQL at boot",
+            "output": "sudo systemctl enable mysql"
+        },
+        {
+            "input": "Disable MySQL at boot",
+            "output": "sudo systemctl disable mysql"
+        },
+        {
+            "input": "Change hostname",
+            "output": "sudo hostnamectl set-hostname newname"
+        },
+        {
+            "input": "Install openssh-server",
+            "output": "sudo apt install openssh-server"
+        },
+        {
+            "input": "Edit SSH config file",
+            "output": "sudo nano /etc/ssh/sshd_config"
+        },
+        {
+            "input": "Restart graphical session",
+            "output": "sudo systemctl restart gdm"
+        },
+        {
+            "input": "Shutdown after 5 minutes",
+            "output": "sudo shutdown +5"
+        },
+        {
+            "input": "Cancel scheduled shutdown",
+            "output": "sudo shutdown -c"
+        },
+        {
+            "input": "Create archive of /etc",
+            "output": "sudo tar czf etc.tar.gz /etc"
+        },
+        {
+            "input": "Extract tar.gz file to /opt",
+            "output": "sudo tar xzf file.tar.gz -C /opt"
+        },
+        {
+            "input": "Install build-essential",
+            "output": "sudo apt install build-essential"
+        },
+        {
+            "input": "Install Python dev headers",
+            "output": "sudo apt install python3-dev"
+        },
+        {
+            "input": "Enable auto updates",
+            "output": "sudo dpkg-reconfigure unattended-upgrades"
+        },
+        {
+            "input": "Create swap file",
+            "output": "sudo fallocate -l 1G /swapfile"
+        },
+        {
+            "input": "Enable swap file",
+            "output": "sudo swapon /swapfile"
+        },
+        {
+            "input": "Make swap permanent",
+            "output": "sudo nano /etc/fstab"
+        },
+        {
+            "input": "Turn off swap",
+            "output": "sudo swapoff /swapfile"
+        }
+]

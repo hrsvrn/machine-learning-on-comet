@@ -1,0 +1,390 @@
+[
+        {
+            "input": "Add user alice to the developers group",
+            "output": "gpasswd -a alice developers"
+        },
+        {
+            "input": "Include bob in the sudo group",
+            "output": "gpasswd -a bob sudo"
+        },
+        {
+            "input": "Add jenkins to docker group",
+            "output": "gpasswd -a jenkins docker"
+        },
+        {
+            "input": "Remove user tom from the admin group",
+            "output": "gpasswd -d tom admin"
+        },
+        {
+            "input": "Assign emily to marketing group",
+            "output": "gpasswd -a emily marketing"
+        },
+        {
+            "input": "Add user harry to ftp group",
+            "output": "gpasswd -a harry ftp"
+        },
+        {
+            "input": "Remove user sam from the wheel group",
+            "output": "gpasswd -d sam wheel"
+        },
+        {
+            "input": "Make john a member of media group",
+            "output": "gpasswd -a john media"
+        },
+        {
+            "input": "Add devops user to deploy group",
+            "output": "gpasswd -a devops deploy"
+        },
+        {
+            "input": "Delete mike from the test group",
+            "output": "gpasswd -d mike test"
+        },
+        {
+            "input": "Include sarah in analytics group",
+            "output": "gpasswd -a sarah analytics"
+        },
+        {
+            "input": "Add user dan to qa group",
+            "output": "gpasswd -a dan qa"
+        },
+        {
+            "input": "Remove julia from the docker group",
+            "output": "gpasswd -d julia docker"
+        },
+        {
+            "input": "Add tim to monitoring group",
+            "output": "gpasswd -a tim monitoring"
+        },
+        {
+            "input": "Assign nancy to sysadmin group",
+            "output": "gpasswd -a nancy sysadmin"
+        },
+        {
+            "input": "Remove ryan from dev group",
+            "output": "gpasswd -d ryan dev"
+        },
+        {
+            "input": "Add testuser to app group",
+            "output": "gpasswd -a testuser app"
+        },
+        {
+            "input": "Include user1 in accounts group",
+            "output": "gpasswd -a user1 accounts"
+        },
+        {
+            "input": "Delete james from finance group",
+            "output": "gpasswd -d james finance"
+        },
+        {
+            "input": "Add dev_user to cloud group",
+            "output": "gpasswd -a dev_user cloud"
+        },
+        {
+            "input": "Remove testdev from staging group",
+            "output": "gpasswd -d testdev staging"
+        },
+        {
+            "input": "Add frank to remote group",
+            "output": "gpasswd -a frank remote"
+        },
+        {
+            "input": "Assign maria to hr group",
+            "output": "gpasswd -a maria hr"
+        },
+        {
+            "input": "Remove guest1 from public group",
+            "output": "gpasswd -d guest1 public"
+        },
+        {
+            "input": "Add user devtest to ci group",
+            "output": "gpasswd -a devtest ci"
+        },
+        {
+            "input": "Include diana in graphics group",
+            "output": "gpasswd -a diana graphics"
+        },
+        {
+            "input": "Delete sid from devops group",
+            "output": "gpasswd -d sid devops"
+        },
+        {
+            "input": "Add lucas to frontend group",
+            "output": "gpasswd -a lucas frontend"
+        },
+        {
+            "input": "Remove albert from r&d group",
+            "output": "gpasswd -d albert r&d"
+        },
+        {
+            "input": "Include priya in cloud_admin group",
+            "output": "gpasswd -a priya cloud_admin"
+        },
+        {
+            "input": "Add admin1 to superusers group",
+            "output": "gpasswd -a admin1 superusers"
+        },
+        {
+            "input": "Remove temp_user from testers group",
+            "output": "gpasswd -d temp_user testers"
+        },
+        {
+            "input": "Include ram in batch group",
+            "output": "gpasswd -a ram batch"
+        },
+        {
+            "input": "Add jeff to exporters group",
+            "output": "gpasswd -a jeff exporters"
+        },
+        {
+            "input": "Remove jake from build group",
+            "output": "gpasswd -d jake build"
+        },
+        {
+            "input": "Add elena to logreaders group",
+            "output": "gpasswd -a elena logreaders"
+        },
+        {
+            "input": "Include thomas in archivers group",
+            "output": "gpasswd -a thomas archivers"
+        },
+        {
+            "input": "Remove kevin from maintainers group",
+            "output": "gpasswd -d kevin maintainers"
+        },
+        {
+            "input": "Add user test_run to automation group",
+            "output": "gpasswd -a test_run automation"
+        },
+        {
+            "input": "Add mike2 to release group",
+            "output": "gpasswd -a mike2 release"
+        },
+        {
+            "input": "Delete leena from ux group",
+            "output": "gpasswd -d leena ux"
+        },
+        {
+            "input": "Add simon to proxy group",
+            "output": "gpasswd -a simon proxy"
+        },
+        {
+            "input": "Assign karen to audit group",
+            "output": "gpasswd -a karen audit"
+        },
+        {
+            "input": "Remove devintern from scratch group",
+            "output": "gpasswd -d devintern scratch"
+        },
+        {
+            "input": "Add api_user to integration group",
+            "output": "gpasswd -a api_user integration"
+        },
+        {
+            "input": "Include natalie in testbed group",
+            "output": "gpasswd -a natalie testbed"
+        },
+        {
+            "input": "Remove akash from uat group",
+            "output": "gpasswd -d akash uat"
+        },
+        {
+            "input": "Add user junaid to sandbox group",
+            "output": "gpasswd -a junaid sandbox"
+        },
+        {
+            "input": "Remove devqa from regression group",
+            "output": "gpasswd -d devqa regression"
+        },
+        {
+            "input": "Assign admin2 to it_admin group",
+            "output": "gpasswd -a admin2 it_admin"
+        },
+        {
+            "input": "Include josh in debug group",
+            "output": "gpasswd -a josh debug"
+        },
+        {
+            "input": "Remove emma from devtools group",
+            "output": "gpasswd -d emma devtools"
+        },
+        {
+            "input": "Add user leon to analytics group",
+            "output": "gpasswd -a leon analytics"
+        },
+        {
+            "input": "Assign vinay to builders group",
+            "output": "gpasswd -a vinay builders"
+        },
+        {
+            "input": "Exclude tara from dev group",
+            "output": "gpasswd -d tara dev"
+        },
+        {
+            "input": "Include zara in interns group",
+            "output": "gpasswd -a zara interns"
+        },
+        {
+            "input": "Add kyle to firmware group",
+            "output": "gpasswd -a kyle firmware"
+        },
+        {
+            "input": "Remove lina from testers group",
+            "output": "gpasswd -d lina testers"
+        },
+        {
+            "input": "Add aaron to moderators group",
+            "output": "gpasswd -a aaron moderators"
+        },
+        {
+            "input": "Include sean in experiments group",
+            "output": "gpasswd -a sean experiments"
+        },
+        {
+            "input": "Delete user arya from beta group",
+            "output": "gpasswd -d arya beta"
+        },
+        {
+            "input": "Add samir to codegroup",
+            "output": "gpasswd -a samir codegroup"
+        },
+        {
+            "input": "Add new_user to metrics group",
+            "output": "gpasswd -a new_user metrics"
+        },
+        {
+            "input": "Remove kiran from tools group",
+            "output": "gpasswd -d kiran tools"
+        },
+        {
+            "input": "Assign arjun to docker-admins group",
+            "output": "gpasswd -a arjun docker-admins"
+        },
+        {
+            "input": "Add bhavana to audit-log group",
+            "output": "gpasswd -a bhavana audit-log"
+        },
+        {
+            "input": "Exclude jordan from qa group",
+            "output": "gpasswd -d jordan qa"
+        },
+        {
+            "input": "Include user rohit in ai_team group",
+            "output": "gpasswd -a rohit ai_team"
+        },
+        {
+            "input": "Add dave to support group",
+            "output": "gpasswd -a dave support"
+        },
+        {
+            "input": "Remove jia from onboarding group",
+            "output": "gpasswd -d jia onboarding"
+        },
+        {
+            "input": "Add ravi to backend group",
+            "output": "gpasswd -a ravi backend"
+        },
+        {
+            "input": "Assign ankita to marketing group",
+            "output": "gpasswd -a ankita marketing"
+        },
+        {
+            "input": "Remove steve from demo group",
+            "output": "gpasswd -d steve demo"
+        },
+        {
+            "input": "Add maria to mlops group",
+            "output": "gpasswd -a maria mlops"
+        },
+        {
+            "input": "Add zahir to fastapi group",
+            "output": "gpasswd -a zahir fastapi"
+        },
+        {
+            "input": "Exclude devin from sandbox group",
+            "output": "gpasswd -d devin sandbox"
+        },
+        {
+            "input": "Add hannah to research group",
+            "output": "gpasswd -a hannah research"
+        },
+        {
+            "input": "Remove amit from docker-users group",
+            "output": "gpasswd -d amit docker-users"
+        },
+        {
+            "input": "Include user avni in qa group",
+            "output": "gpasswd -a avni qa"
+        },
+        {
+            "input": "Add jeeva to internal group",
+            "output": "gpasswd -a jeeva internal"
+        },
+        {
+            "input": "Assign user tony to releases group",
+            "output": "gpasswd -a tony releases"
+        },
+        {
+            "input": "Remove akshay from testers group",
+            "output": "gpasswd -d akshay testers"
+        },
+        {
+            "input": "Add vivek to devcloud group",
+            "output": "gpasswd -a vivek devcloud"
+        },
+        {
+            "input": "Include katie in dev_team group",
+            "output": "gpasswd -a katie dev_team"
+        },
+        {
+            "input": "Delete rebecca from beta_testers group",
+            "output": "gpasswd -d rebecca beta_testers"
+        },
+        {
+            "input": "Add mehul to ops group",
+            "output": "gpasswd -a mehul ops"
+        },
+        {
+            "input": "Assign sonia to uiux group",
+            "output": "gpasswd -a sonia uiux"
+        },
+        {
+            "input": "Remove george from operations group",
+            "output": "gpasswd -d george operations"
+        },
+        {
+            "input": "Include omar in reporting group",
+            "output": "gpasswd -a omar reporting"
+        },
+        {
+            "input": "Add maya to research_team group",
+            "output": "gpasswd -a maya research_team"
+        },
+        {
+            "input": "Remove rachel from logs group",
+            "output": "gpasswd -d rachel logs"
+        },
+        {
+            "input": "Add user arman to testers group",
+            "output": "gpasswd -a arman testers"
+        },
+        {
+            "input": "Include harsha in prod group",
+            "output": "gpasswd -a harsha prod"
+        },
+        {
+            "input": "Remove deepak from backend group",
+            "output": "gpasswd -d deepak backend"
+        },
+        {
+            "input": "Add jackie to documentation group",
+            "output": "gpasswd -a jackie documentation"
+        },
+        {
+            "input": "Add rishi to support_engineers group",
+            "output": "gpasswd -a rishi support_engineers"
+        },
+        {
+            "input": "Remove user amitabh from infra group",
+            "output": "gpasswd -d amitabh infra"
+        }
+]

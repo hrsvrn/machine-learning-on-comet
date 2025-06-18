@@ -1,0 +1,406 @@
+[
+        {
+            "input": "Change group ownership of report.txt to devs",
+            "output": "chgrp devs report.txt"
+        },
+        {
+            "input": "Assign the group marketing to campaign.docx",
+            "output": "chgrp marketing campaign.docx"
+        },
+        {
+            "input": "Make support the group owner of logs folder",
+            "output": "chgrp support logs"
+        },
+        {
+            "input": "Change the group of server.conf to admin",
+            "output": "chgrp admin server.conf"
+        },
+        {
+            "input": "Assign finance group to file budget.xlsx",
+            "output": "chgrp finance budget.xlsx"
+        },
+        {
+            "input": "Change image.png's group to designers",
+            "output": "chgrp designers image.png"
+        },
+        {
+            "input": "Make devops the group for container.yml",
+            "output": "chgrp devops container.yml"
+        },
+        {
+            "input": "Set group analysts for data.csv",
+            "output": "chgrp analysts data.csv"
+        },
+        {
+            "input": "Assign researchers group to paper.pdf",
+            "output": "chgrp researchers paper.pdf"
+        },
+        {
+            "input": "Change group of archive.tar.gz to archive",
+            "output": "chgrp archive archive.tar.gz"
+        },
+        {
+            "input": "Assign dev group to app.py",
+            "output": "chgrp dev app.py"
+        },
+        {
+            "input": "Make web group owner of index.html",
+            "output": "chgrp web index.html"
+        },
+        {
+            "input": "Change backend team group for api.js",
+            "output": "chgrp backend api.js"
+        },
+        {
+            "input": "Set group of thesis.tex to students",
+            "output": "chgrp students thesis.tex"
+        },
+        {
+            "input": "Assign group HR to employee.db",
+            "output": "chgrp HR employee.db"
+        },
+        {
+            "input": "Make test team the group for test_results.txt",
+            "output": "chgrp test test_results.txt"
+        },
+        {
+            "input": "Assign system group to boot.log",
+            "output": "chgrp system boot.log"
+        },
+        {
+            "input": "Change docs.pdf group to editors",
+            "output": "chgrp editors docs.pdf"
+        },
+        {
+            "input": "Set engineering group on build.zip",
+            "output": "chgrp engineering build.zip"
+        },
+        {
+            "input": "Make security group for firewall.log",
+            "output": "chgrp security firewall.log"
+        },
+        {
+            "input": "Assign logs group to access.log",
+            "output": "chgrp logs access.log"
+        },
+        {
+            "input": "Change app logs group to monitoring",
+            "output": "chgrp monitoring app.log"
+        },
+        {
+            "input": "Assign cloud group to compute.tf",
+            "output": "chgrp cloud compute.tf"
+        },
+        {
+            "input": "Make billing group owner of invoice.csv",
+            "output": "chgrp billing invoice.csv"
+        },
+        {
+            "input": "Set ux group for wireframe.fig",
+            "output": "chgrp ux wireframe.fig"
+        },
+        {
+            "input": "Assign qa group to testcases.json",
+            "output": "chgrp qa testcases.json"
+        },
+        {
+            "input": "Change database team group for config.cnf",
+            "output": "chgrp database config.cnf"
+        },
+        {
+            "input": "Make admin group own authorized_keys",
+            "output": "chgrp admin authorized_keys"
+        },
+        {
+            "input": "Assign ftp group to upload.txt",
+            "output": "chgrp ftp upload.txt"
+        },
+        {
+            "input": "Set storage group to backup.tgz",
+            "output": "chgrp storage backup.tgz"
+        },
+        {
+            "input": "Change group for notes.md to writers",
+            "output": "chgrp writers notes.md"
+        },
+        {
+            "input": "Make testers the group of regression.sh",
+            "output": "chgrp testers regression.sh"
+        },
+        {
+            "input": "Set sales group to forecast.csv",
+            "output": "chgrp sales forecast.csv"
+        },
+        {
+            "input": "Assign production group to deploy.sh",
+            "output": "chgrp production deploy.sh"
+        },
+        {
+            "input": "Set photographers group to photos.zip",
+            "output": "chgrp photographers photos.zip"
+        },
+        {
+            "input": "Change events group to calendar.ics",
+            "output": "chgrp events calendar.ics"
+        },
+        {
+            "input": "Assign compliance group to policies.pdf",
+            "output": "chgrp compliance policies.pdf"
+        },
+        {
+            "input": "Make CEO group own strategy.txt",
+            "output": "chgrp CEO strategy.txt"
+        },
+        {
+            "input": "Set HR group to org_chart.png",
+            "output": "chgrp HR org_chart.png"
+        },
+        {
+            "input": "Change owner group to transport for route.csv",
+            "output": "chgrp transport route.csv"
+        },
+        {
+            "input": "Assign mailing group to newsletter.eml",
+            "output": "chgrp mailing newsletter.eml"
+        },
+        {
+            "input": "Make hr team the group of leave.xls",
+            "output": "chgrp hr leave.xls"
+        },
+        {
+            "input": "Assign alumni group to memories.jpg",
+            "output": "chgrp alumni memories.jpg"
+        },
+        {
+            "input": "Change finance group to tax_return.pdf",
+            "output": "chgrp finance tax_return.pdf"
+        },
+        {
+            "input": "Make editors group for newsletter.pdf",
+            "output": "chgrp editors newsletter.pdf"
+        },
+        {
+            "input": "Set safety group to regulations.txt",
+            "output": "chgrp safety regulations.txt"
+        },
+        {
+            "input": "Assign students group to enrollment.db",
+            "output": "chgrp students enrollment.db"
+        },
+        {
+            "input": "Make developers group for main.cpp",
+            "output": "chgrp developers main.cpp"
+        },
+        {
+            "input": "Set group leadteam for dashboard.py",
+            "output": "chgrp leadteam dashboard.py"
+        },
+        {
+            "input": "Assign teamA to code.c",
+            "output": "chgrp teamA code.c"
+        },
+        {
+            "input": "Change repo group to maintainers",
+            "output": "chgrp maintainers repo"
+        },
+        {
+            "input": "Set analysts group for financial_report.pdf",
+            "output": "chgrp analysts financial_report.pdf"
+        },
+        {
+            "input": "Change developers group to script.sh",
+            "output": "chgrp developers script.sh"
+        },
+        {
+            "input": "Assign interns group to summer_tasks.md",
+            "output": "chgrp interns summer_tasks.md"
+        },
+        {
+            "input": "Set designers group for logo.svg",
+            "output": "chgrp designers logo.svg"
+        },
+        {
+            "input": "Assign auditors group to compliance_log.txt",
+            "output": "chgrp auditors compliance_log.txt"
+        },
+        {
+            "input": "Change marketing group to sales_chart.jpg",
+            "output": "chgrp marketing sales_chart.jpg"
+        },
+        {
+            "input": "Make payroll group for salary_data.csv",
+            "output": "chgrp payroll salary_data.csv"
+        },
+        {
+            "input": "Set IT group on antivirus.log",
+            "output": "chgrp IT antivirus.log"
+        },
+        {
+            "input": "Assign operations group to metrics.json",
+            "output": "chgrp operations metrics.json"
+        },
+        {
+            "input": "Change media group for banner.psd",
+            "output": "chgrp media banner.psd"
+        },
+        {
+            "input": "Make env group owner of pollution_data.csv",
+            "output": "chgrp env pollution_data.csv"
+        },
+        {
+            "input": "Set hr group for attendance.csv",
+            "output": "chgrp hr attendance.csv"
+        },
+        {
+            "input": "Assign QA group to checklist.xlsx",
+            "output": "chgrp QA checklist.xlsx"
+        },
+        {
+            "input": "Make auditors the group of annual_audit.pdf",
+            "output": "chgrp auditors annual_audit.pdf"
+        },
+        {
+            "input": "Change datateam group to stats.py",
+            "output": "chgrp datateam stats.py"
+        },
+        {
+            "input": "Set ML group to model.pkl",
+            "output": "chgrp ML model.pkl"
+        },
+        {
+            "input": "Assign AI team to inference.py",
+            "output": "chgrp AI inference.py"
+        },
+        {
+            "input": "Change moderation group to comments.txt",
+            "output": "chgrp moderation comments.txt"
+        },
+        {
+            "input": "Set privacy group on privacy_policy.md",
+            "output": "chgrp privacy privacy_policy.md"
+        },
+        {
+            "input": "Assign review group to manuscript.docx",
+            "output": "chgrp review manuscript.docx"
+        },
+        {
+            "input": "Set crew group to scene.mov",
+            "output": "chgrp crew scene.mov"
+        },
+        {
+            "input": "Make data group for analytics.csv",
+            "output": "chgrp data analytics.csv"
+        },
+        {
+            "input": "Assign outreach team to invites.doc",
+            "output": "chgrp outreach invites.doc"
+        },
+        {
+            "input": "Set moderators group to forum_rules.txt",
+            "output": "chgrp moderators forum_rules.txt"
+        },
+        {
+            "input": "Make security group for encryption.key",
+            "output": "chgrp security encryption.key"
+        },
+        {
+            "input": "Assign ui group to layout.sketch",
+            "output": "chgrp ui layout.sketch"
+        },
+        {
+            "input": "Change labs group to experiment.txt",
+            "output": "chgrp labs experiment.txt"
+        },
+        {
+            "input": "Set students group for syllabus.pdf",
+            "output": "chgrp students syllabus.pdf"
+        },
+        {
+            "input": "Make support group for helpdesk.log",
+            "output": "chgrp support helpdesk.log"
+        },
+        {
+            "input": "Assign workshop group to tools.json",
+            "output": "chgrp workshop tools.json"
+        },
+        {
+            "input": "Change dev group to app_dev.py",
+            "output": "chgrp dev app_dev.py"
+        },
+        {
+            "input": "Assign scheduling group to calendar.xlsx",
+            "output": "chgrp scheduling calendar.xlsx"
+        },
+        {
+            "input": "Set translators group to translation.txt",
+            "output": "chgrp translators translation.txt"
+        },
+        {
+            "input": "Change community group to members.csv",
+            "output": "chgrp community members.csv"
+        },
+        {
+            "input": "Assign automation group to script_automation.sh",
+            "output": "chgrp automation script_automation.sh"
+        },
+        {
+            "input": "Make firmware group for update.bin",
+            "output": "chgrp firmware update.bin"
+        },
+        {
+            "input": "Assign legal team to contract.docx",
+            "output": "chgrp legal contract.docx"
+        },
+        {
+            "input": "Change volunteers group to schedule.pdf",
+            "output": "chgrp volunteers schedule.pdf"
+        },
+        {
+            "input": "Set guest group to welcome_note.txt",
+            "output": "chgrp guest welcome_note.txt"
+        },
+        {
+            "input": "Make teachers group for exam_results.csv",
+            "output": "chgrp teachers exam_results.csv"
+        },
+        {
+            "input": "Assign events team to plan.md",
+            "output": "chgrp events plan.md"
+        },
+        {
+            "input": "Change translators group to language.txt",
+            "output": "chgrp translators language.txt"
+        },
+        {
+            "input": "Set gallery group to artwork.png",
+            "output": "chgrp gallery artwork.png"
+        },
+        {
+            "input": "Assign social group to announcement.doc",
+            "output": "chgrp social announcement.doc"
+        },
+        {
+            "input": "Change configuration group to setup.yaml",
+            "output": "chgrp configuration setup.yaml"
+        },
+        {
+            "input": "Make research group for findings.csv",
+            "output": "chgrp research findings.csv"
+        },
+        {
+            "input": "Assign alumni group to photoshoot.jpg",
+            "output": "chgrp alumni photoshoot.jpg"
+        },
+        {
+            "input": "Set evaluation team for grading.txt",
+            "output": "chgrp evaluation grading.txt"
+        },
+        {
+            "input": "Make database group for export.sql",
+            "output": "chgrp database export.sql"
+        },
+        {
+            "input": "Assign deployment group to k8s.yaml",
+            "output": "chgrp deployment k8s.yaml"
+        }
+]

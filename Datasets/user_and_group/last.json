@@ -1,0 +1,406 @@
+[
+        {
+            "input": "Show recent user login history",
+            "output": "last"
+        },
+        {
+            "input": "Get the last login records of all users",
+            "output": "last"
+        },
+        {
+            "input": "Display login history for user 'john'",
+            "output": "last john"
+        },
+        {
+            "input": "List the login sessions on tty1",
+            "output": "last tty1"
+        },
+        {
+            "input": "Check last reboot times",
+            "output": "last reboot"
+        },
+        {
+            "input": "Show system shutdown history",
+            "output": "last shutdown"
+        },
+        {
+            "input": "Display last login for root",
+            "output": "last root"
+        },
+        {
+            "input": "List all login events for user1",
+            "output": "last user1"
+        },
+        {
+            "input": "Display last 10 login records",
+            "output": "last -n 10"
+        },
+        {
+            "input": "Print login sessions for pts/0",
+            "output": "last pts/0"
+        },
+        {
+            "input": "Check previous logins on tty2",
+            "output": "last tty2"
+        },
+        {
+            "input": "Get login sessions for a specific date",
+            "output": "last -t 20240601"
+        },
+        {
+            "input": "View last logins of all users since yesterday",
+            "output": "last | grep $(date -d 'yesterday' +%b\ %d)"
+        },
+        {
+            "input": "Print full name of users and login times",
+            "output": "last -F"
+        },
+        {
+            "input": "Show hostname of each login session",
+            "output": "last -a"
+        },
+        {
+            "input": "Trim down to last 5 logins only",
+            "output": "last -n 5"
+        },
+        {
+            "input": "Display only the most recent login",
+            "output": "last -1"
+        },
+        {
+            "input": "Check when 'alice' logged in last week",
+            "output": "last alice | grep 'Jun 10'"
+        },
+        {
+            "input": "Show login events that ended with crash",
+            "output": "last -x | grep crash"
+        },
+        {
+            "input": "Check user login events including reboots",
+            "output": "last -x"
+        },
+        {
+            "input": "Get number of reboots in last 7 days",
+            "output": "last reboot | grep -c 'reboot'"
+        },
+        {
+            "input": "Export last login report to file",
+            "output": "last > logins.txt"
+        },
+        {
+            "input": "Check last session on terminal pts/1",
+            "output": "last pts/1"
+        },
+        {
+            "input": "List all shutdowns in log",
+            "output": "last -x | grep shutdown"
+        },
+        {
+            "input": "Get full reboot history with timestamps",
+            "output": "last -F reboot"
+        },
+        {
+            "input": "See if bob logged in today",
+            "output": "last bob | grep $(date +%b\ %d)"
+        },
+        {
+            "input": "Find logins from remote IPs",
+            "output": "last -a | grep '[0-9]\+\.[0-9]\+\.[0-9]\+\.[0-9]\+'"
+        },
+        {
+            "input": "List users logged in over ssh",
+            "output": "last -i | grep ssh"
+        },
+        {
+            "input": "Extract IPs from last logins",
+            "output": "last -i | awk '{print $3}' | sort | uniq"
+        },
+        {
+            "input": "Find failed logins if recorded",
+            "output": "last -f /var/log/btmp"
+        },
+        {
+            "input": "Summarize number of logins per user",
+            "output": "last | awk '{print $1}' | sort | uniq -c"
+        },
+        {
+            "input": "Count sessions for each tty",
+            "output": "last | awk '{print $2}' | sort | uniq -c"
+        },
+        {
+            "input": "List all usernames from last",
+            "output": "last | awk '{print $1}' | sort | uniq"
+        },
+        {
+            "input": "Display login entries with duration",
+            "output": "last -F"
+        },
+        {
+            "input": "Filter login events of today",
+            "output": "last | grep $(date +%b\ %d)"
+        },
+        {
+            "input": "Check last activity on terminal :0",
+            "output": "last :0"
+        },
+        {
+            "input": "Search for last usage of gdm",
+            "output": "last gdm"
+        },
+        {
+            "input": "View the earliest recorded login",
+            "output": "last | tail -1"
+        },
+        {
+            "input": "Find logins of service accounts",
+            "output": "last | grep 'service'"
+        },
+        {
+            "input": "Find all sessions by a particular terminal",
+            "output": "last tty3"
+        },
+        {
+            "input": "Find if a user used su",
+            "output": "last -x | grep su"
+        },
+        {
+            "input": "Display graphical login sessions",
+            "output": "last -x | grep ':0'"
+        },
+        {
+            "input": "Print login attempts by 'admin'",
+            "output": "last admin"
+        },
+        {
+            "input": "Get last usage of root shell",
+            "output": "last root"
+        },
+        {
+            "input": "Check if anyone logged in after reboot",
+            "output": "last | grep -A1 reboot"
+        },
+        {
+            "input": "Extract hostnames of remote users",
+            "output": "last -a | awk '{print $NF}' | sort | uniq"
+        },
+        {
+            "input": "See history of logins from pts terminals",
+            "output": "last | grep pts"
+        },
+        {
+            "input": "Determine if system was rebooted at night",
+            "output": "last reboot | grep ' 2[0-3]:[0-5][0-9]'"
+        },
+        {
+            "input": "Get top 5 users by number of logins",
+            "output": "last | awk '{print $1}' | sort | uniq -c | sort -nr | head -5"
+        },
+        {
+            "input": "Display logout times from tty1",
+            "output": "last tty1"
+        },
+        {
+            "input": "Find all logins made through gdm",
+            "output": "last gdm"
+        },
+        {
+            "input": "Show when shutdowns happened late at night",
+            "output": "last -x | grep shutdown | grep ' 2[2-3]:[0-5][0-9]'"
+        },
+        {
+            "input": "View only successful user sessions",
+            "output": "last"
+        },
+        {
+            "input": "List reboots on specific date",
+            "output": "last reboot | grep '2024-06-15'"
+        },
+        {
+            "input": "Show all tty login sessions",
+            "output": "last | grep tty"
+        },
+        {
+            "input": "Log all login history to a file",
+            "output": "last > /tmp/logins.log"
+        },
+        {
+            "input": "Filter login records by month",
+            "output": "last | grep 'Jun'"
+        },
+        {
+            "input": "Show last login with full details",
+            "output": "last -F | head -1"
+        },
+        {
+            "input": "View logout entries",
+            "output": "last -x | grep logout"
+        },
+        {
+            "input": "Check login duration for user",
+            "output": "last -F user1"
+        },
+        {
+            "input": "Print login events in reverse order",
+            "output": "last | tac"
+        },
+        {
+            "input": "Extract only login timestamps",
+            "output": "last | awk '{print $4,$5,$6,$7}'"
+        },
+        {
+            "input": "Export last output for debugging",
+            "output": "last > debug_last.txt"
+        },
+        {
+            "input": "Analyze login frequencies",
+            "output": "last | awk '{print $1}' | sort | uniq -c"
+        },
+        {
+            "input": "Print IPs from SSH logins",
+            "output": "last -i | grep ssh | awk '{print $3}'"
+        },
+        {
+            "input": "Show earliest reboot entry",
+            "output": "last reboot | tail -1"
+        },
+        {
+            "input": "Extract only usernames",
+            "output": "last | awk '{print $1}' | sort | uniq"
+        },
+        {
+            "input": "Log login attempts by uid 1000",
+            "output": "last | grep 1000"
+        },
+        {
+            "input": "Identify logins from specific IP",
+            "output": "last -i | grep 192.168.1.10"
+        },
+        {
+            "input": "Show all root login history",
+            "output": "last root"
+        },
+        {
+            "input": "Print all graphical sessions",
+            "output": "last | grep ':0'"
+        },
+        {
+            "input": "Summarize login stats",
+            "output": "last | awk '{print $1}' | sort | uniq -c"
+        },
+        {
+            "input": "Find tty0 session history",
+            "output": "last tty0"
+        },
+        {
+            "input": "View most recent reboot with timestamp",
+            "output": "last -F reboot | head -1"
+        },
+        {
+            "input": "See which users logged in twice",
+            "output": "last | awk '{print $1}' | sort | uniq -d"
+        },
+        {
+            "input": "Log login sessions of gdm",
+            "output": "last gdm > gdm_log.txt"
+        },
+        {
+            "input": "View login/logout timeline",
+            "output": "last -F"
+        },
+        {
+            "input": "Get reboots and shutdowns together",
+            "output": "last -x | grep -E 'shutdown|reboot'"
+        },
+        {
+            "input": "Track usage of user ubuntu",
+            "output": "last ubuntu"
+        },
+        {
+            "input": "Display SSH logins only",
+            "output": "last | grep 'pts/'"
+        },
+        {
+            "input": "Check all weekend logins",
+            "output": "last | grep -E 'Sat|Sun'"
+        },
+        {
+            "input": "Show only shutdown logs",
+            "output": "last -x | grep shutdown"
+        },
+        {
+            "input": "Compare user login durations",
+            "output": "last -F | awk '{print $1,$10}'"
+        },
+        {
+            "input": "Detect overnight sessions",
+            "output": "last | grep 'still logged in'"
+        },
+        {
+            "input": "Check for back-to-back reboots",
+            "output": "last reboot | head -2"
+        },
+        {
+            "input": "Monitor system uptime using login data",
+            "output": "last reboot | head -1"
+        },
+        {
+            "input": "Track login IPs for root",
+            "output": "last -i root"
+        },
+        {
+            "input": "Print last login count for user",
+            "output": "last user | wc -l"
+        },
+        {
+            "input": "Identify tty logins only",
+            "output": "last | grep tty"
+        },
+        {
+            "input": "Separate login and logout info",
+            "output": "last -F | awk '{print $1,$4,$5,$6,$9,$10}'"
+        },
+        {
+            "input": "Confirm gdm is used for GUI",
+            "output": "last | grep gdm"
+        },
+        {
+            "input": "Summarize graphical login usage",
+            "output": "last | grep ':0' | wc -l"
+        },
+        {
+            "input": "Find last login session by any user",
+            "output": "last | head -1"
+        },
+        {
+            "input": "Export user logins sorted",
+            "output": "last | awk '{print $1}' | sort | uniq"
+        },
+        {
+            "input": "Generate full session audit log",
+            "output": "last -F > /tmp/full_audit.txt"
+        },
+        {
+            "input": "Get shutdown timestamps",
+            "output": "last -x | grep shutdown | awk '{print $5,$6,$7}'"
+        },
+        {
+            "input": "Find gdm logins for June",
+            "output": "last gdm | grep Jun"
+        },
+        {
+            "input": "Log root activity to CSV",
+            "output": "last root | awk '{print $1","$4","$5","$6","$7}' > root_logins.csv"
+        },
+        {
+            "input": "Summarize total login count",
+            "output": "last | wc -l"
+        },
+        {
+            "input": "Export login timeline for user alice",
+            "output": "last -F alice > alice_timeline.txt"
+        },
+        {
+            "input": "Detect simultaneous logins",
+            "output": "last | sort | uniq -d"
+        }
+]

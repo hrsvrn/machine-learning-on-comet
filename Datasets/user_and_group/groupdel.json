@@ -1,0 +1,406 @@
+[
+  {
+    "input": "Delete the group named developers",
+    "output": "groupdel developers"
+  },
+  {
+    "input": "Remove the group called qa_team",
+    "output": "groupdel qa_team"
+  },
+  {
+    "input": "Delete group human_resources",
+    "output": "groupdel human_resources"
+  },
+  {
+    "input": "Remove ui_ux group from the system",
+    "output": "groupdel ui_ux"
+  },
+  {
+    "input": "Delete the media_team group",
+    "output": "groupdel media_team"
+  },
+  {
+    "input": "Remove digital_marketing from groups",
+    "output": "groupdel digital_marketing"
+  },
+  {
+    "input": "Delete eng_team group",
+    "output": "groupdel eng_team"
+  },
+  {
+    "input": "Remove the group data_team",
+    "output": "groupdel data_team"
+  },
+  {
+    "input": "Delete operations group",
+    "output": "groupdel operations"
+  },
+  {
+    "input": "Remove qa_engineers from the system",
+    "output": "groupdel qa_engineers"
+  },
+  {
+    "input": "Delete the interns group",
+    "output": "groupdel interns"
+  },
+  {
+    "input": "Remove backend_team",
+    "output": "groupdel backend_team"
+  },
+  {
+    "input": "Delete group ui_team",
+    "output": "groupdel ui_team"
+  },
+  {
+    "input": "Remove the infra_devops group",
+    "output": "groupdel infra_devops"
+  },
+  {
+    "input": "Delete super_admins group",
+    "output": "groupdel super_admins"
+  },
+  {
+    "input": "Remove legal_team group from system",
+    "output": "groupdel legal_team"
+  },
+  {
+    "input": "Delete alpha_project group",
+    "output": "groupdel alpha_project"
+  },
+  {
+    "input": "Remove creative_team group",
+    "output": "groupdel creative_team"
+  },
+  {
+    "input": "Delete system_admins",
+    "output": "groupdel system_admins"
+  },
+  {
+    "input": "Remove root_access group",
+    "output": "groupdel root_access"
+  },
+  {
+    "input": "Delete the infra_team group",
+    "output": "groupdel infra_team"
+  },
+  {
+    "input": "Remove tech_support from groups",
+    "output": "groupdel tech_support"
+  },
+  {
+    "input": "Delete mentorship_team group",
+    "output": "groupdel mentorship_team"
+  },
+  {
+    "input": "Remove beta_testers group",
+    "output": "groupdel beta_testers"
+  },
+  {
+    "input": "Delete account_ops",
+    "output": "groupdel account_ops"
+  },
+  {
+    "input": "Remove mobile_dev group",
+    "output": "groupdel mobile_dev"
+  },
+  {
+    "input": "Delete research_team group",
+    "output": "groupdel research_team"
+  },
+  {
+    "input": "Remove training_dept",
+    "output": "groupdel training_dept"
+  },
+  {
+    "input": "Delete software_dev group",
+    "output": "groupdel software_dev"
+  },
+  {
+    "input": "Remove early_users group",
+    "output": "groupdel early_users"
+  },
+  {
+    "input": "Delete infosec_team group",
+    "output": "groupdel infosec_team"
+  },
+  {
+    "input": "Remove rocket_team",
+    "output": "groupdel rocket_team"
+  },
+  {
+    "input": "Delete batch1_training group",
+    "output": "groupdel batch1_training"
+  },
+  {
+    "input": "Remove readonly_group",
+    "output": "groupdel readonly_group"
+  },
+  {
+    "input": "Delete final_years group",
+    "output": "groupdel final_years"
+  },
+  {
+    "input": "Remove tools_internal",
+    "output": "groupdel tools_internal"
+  },
+  {
+    "input": "Delete support_1 group",
+    "output": "groupdel support_1"
+  },
+  {
+    "input": "Remove onboarding_unit",
+    "output": "groupdel onboarding_unit"
+  },
+  {
+    "input": "Delete voice_team group",
+    "output": "groupdel voice_team"
+  },
+  {
+    "input": "Remove visual_team group",
+    "output": "groupdel visual_team"
+  },
+  {
+    "input": "Delete ux_team",
+    "output": "groupdel ux_team"
+  },
+  {
+    "input": "Remove doc_review group",
+    "output": "groupdel doc_review"
+  },
+  {
+    "input": "Delete sim_team",
+    "output": "groupdel sim_team"
+  },
+  {
+    "input": "Remove reviewers_app group",
+    "output": "groupdel reviewers_app"
+  },
+  {
+    "input": "Delete go_dev group",
+    "output": "groupdel go_dev"
+  },
+  {
+    "input": "Remove node_ops group",
+    "output": "groupdel node_ops"
+  },
+  {
+    "input": "Delete java_team group",
+    "output": "groupdel java_team"
+  },
+  {
+    "input": "Remove graphics_ops",
+    "output": "groupdel graphics_ops"
+  },
+  {
+    "input": "Delete legacy_team",
+    "output": "groupdel legacy_team"
+  },
+  {
+    "input": "Remove api_team group",
+    "output": "groupdel api_team"
+  },
+  {
+    "input": "Delete debug_team",
+    "output": "groupdel debug_team"
+  },
+  {
+    "input": "Remove team_training group",
+    "output": "groupdel team_training"
+  },
+    {
+      "input": "Delete alpha_team",
+      "output": "groupdel alpha_team"
+    },
+    {
+      "input": "Remove analytics_group",
+      "output": "groupdel analytics_group"
+    },
+    {
+      "input": "Delete the docker_admins group",
+      "output": "groupdel docker_admins"
+    },
+    {
+      "input": "Remove dev_group",
+      "output": "groupdel dev_group"
+    },
+    {
+      "input": "Delete python_devs",
+      "output": "groupdel python_devs"
+    },
+    {
+      "input": "Remove junior_dev group",
+      "output": "groupdel junior_dev"
+    },
+    {
+      "input": "Delete sysops_team group",
+      "output": "groupdel sysops_team"
+    },
+    {
+      "input": "Remove team_delta group",
+      "output": "groupdel team_delta"
+    },
+    {
+      "input": "Delete prod_admins group",
+      "output": "groupdel prod_admins"
+    },
+    {
+      "input": "Remove dev_team_a",
+      "output": "groupdel dev_team_a"
+    },
+    {
+      "input": "Delete kernel_dev group",
+      "output": "groupdel kernel_dev"
+    },
+    {
+      "input": "Remove final_project group",
+      "output": "groupdel final_project"
+    },
+    {
+      "input": "Delete ux_engineers group",
+      "output": "groupdel ux_engineers"
+    },
+    {
+      "input": "Remove marketing_ops",
+      "output": "groupdel marketing_ops"
+    },
+    {
+      "input": "Delete version1_test group",
+      "output": "groupdel version1_test"
+    },
+    {
+      "input": "Remove editor_users",
+      "output": "groupdel editor_users"
+    },
+    {
+      "input": "Delete staging_team group",
+      "output": "groupdel staging_team"
+    },
+    {
+      "input": "Remove testing_users",
+      "output": "groupdel testing_users"
+    },
+    {
+      "input": "Delete qa_specialists",
+      "output": "groupdel qa_specialists"
+    },
+    {
+      "input": "Remove ci_cd_pipeline group",
+      "output": "groupdel ci_cd_pipeline"
+    },
+    {
+      "input": "Delete legacy_admins",
+      "output": "groupdel legacy_admins"
+    },
+    {
+      "input": "Remove app_deploy group",
+      "output": "groupdel app_deploy"
+    },
+    {
+      "input": "Delete training_class group",
+      "output": "groupdel training_class"
+    },
+    {
+      "input": "Remove test_branch team",
+      "output": "groupdel test_branch"
+    },
+    {
+      "input": "Delete onboarding_batch1",
+      "output": "groupdel onboarding_batch1"
+    },
+    {
+      "input": "Remove docs_group",
+      "output": "groupdel docs_group"
+    },
+    {
+      "input": "Delete bash_team group",
+      "output": "groupdel bash_team"
+    },
+    {
+      "input": "Remove user_audit",
+      "output": "groupdel user_audit"
+    },
+    {
+      "input": "Delete mysql_admins",
+      "output": "groupdel mysql_admins"
+    },
+    {
+      "input": "Remove prod_cluster",
+      "output": "groupdel prod_cluster"
+    },
+    {
+      "input": "Delete network_admins",
+      "output": "groupdel network_admins"
+    },
+    {
+      "input": "Remove devops_support",
+      "output": "groupdel devops_support"
+    },
+    {
+      "input": "Delete java_backends",
+      "output": "groupdel java_backends"
+    },
+    {
+      "input": "Remove cloud_services group",
+      "output": "groupdel cloud_services"
+    },
+    {
+      "input": "Delete spark_team",
+      "output": "groupdel spark_team"
+    },
+    {
+      "input": "Remove ai_lab group",
+      "output": "groupdel ai_lab"
+    },
+    {
+      "input": "Delete test_group7",
+      "output": "groupdel test_group7"
+    },
+    {
+      "input": "Remove engineering_ops",
+      "output": "groupdel engineering_ops"
+    },
+    {
+      "input": "Delete dev_batch_2022",
+      "output": "groupdel dev_batch_2022"
+    },
+    {
+      "input": "Remove gpu_access group",
+      "output": "groupdel gpu_access"
+    },
+    {
+      "input": "Delete container_admins",
+      "output": "groupdel container_admins"
+    },
+    {
+      "input": "Remove vfx_team",
+      "output": "groupdel vfx_team"
+    },
+    {
+      "input": "Delete cli_devs",
+      "output": "groupdel cli_devs"
+    },
+    {
+      "input": "Remove js_team",
+      "output": "groupdel js_team"
+    },
+    {
+      "input": "Delete metrics_ops",
+      "output": "groupdel metrics_ops"
+    },
+    {
+      "input": "Remove flask_backend group",
+      "output": "groupdel flask_backend"
+    },
+    {
+      "input": "Delete api_doc_team",
+      "output": "groupdel api_doc_team"
+    },
+    {
+      "input": "Remove vue_devs",
+      "output": "groupdel vue_devs"
+    },
+    {
+      "input": "Delete bootstrap_team",
+      "output": "groupdel bootstrap_team"
+    }
+]

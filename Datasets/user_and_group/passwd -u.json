@@ -1,0 +1,394 @@
+[
+  {
+    "input": "Unlock user account named devuser",
+    "output": "passwd -u devuser"
+  },
+  {
+    "input": "Enable login for sysadmin",
+    "output": "passwd -u sysadmin"
+  },
+  {
+    "input": "Re-enable access for account manager1",
+    "output": "passwd -u manager1"
+  },
+  {
+    "input": "Unblock the test_user account",
+    "output": "passwd -u test_user"
+  },
+  {
+    "input": "Allow user qa_lead to log in again",
+    "output": "passwd -u qa_lead"
+  },
+  {
+    "input": "Reactivate password login for alice",
+    "output": "passwd -u alice"
+  },
+  {
+    "input": "Restore login permissions for dev_ops",
+    "output": "passwd -u dev_ops"
+  },
+  {
+    "input": "Enable backend_user again",
+    "output": "passwd -u backend_user"
+  },
+  {
+    "input": "Remove lock on account data_admin",
+    "output": "passwd -u data_admin"
+  },
+  {
+    "input": "Unlock guest_temp user",
+    "output": "passwd -u guest_temp"
+  },
+  {
+    "input": "Re-enable login for user helpline",
+    "output": "passwd -u helpline"
+  },
+  {
+    "input": "Allow login for analyst_1",
+    "output": "passwd -u analyst_1"
+  },
+  {
+    "input": "Reactivate credentials for it_support",
+    "output": "passwd -u it_support"
+  },
+  {
+    "input": "Unblock engineer_23",
+    "output": "passwd -u engineer_23"
+  },
+  {
+    "input": "Unlock access for frontend_dev",
+    "output": "passwd -u frontend_dev"
+  },
+  {
+    "input": "Lift lock from sys_monitor",
+    "output": "passwd -u sys_monitor"
+  },
+  {
+    "input": "Re-enable password login for roger",
+    "output": "passwd -u roger"
+  },
+  {
+    "input": "Allow devuser2 to log in again",
+    "output": "passwd -u devuser2"
+  },
+  {
+    "input": "Re-enable login for support_staff",
+    "output": "passwd -u support_staff"
+  },
+  {
+    "input": "Unlock temporary_account",
+    "output": "passwd -u temporary_account"
+  },
+  {
+    "input": "Remove lock on account web_admin",
+    "output": "passwd -u web_admin"
+  },
+  {
+    "input": "Unlock login for cloud_user",
+    "output": "passwd -u cloud_user"
+  },
+  {
+    "input": "Re-enable access for jenkins_user",
+    "output": "passwd -u jenkins_user"
+  },
+  {
+    "input": "Allow ssh_admin to use password again",
+    "output": "passwd -u ssh_admin"
+  },
+  {
+    "input": "Reactivate the locked account demo",
+    "output": "passwd -u demo"
+  },
+  {
+    "input": "Enable account login for guest2",
+    "output": "passwd -u guest2"
+  },
+  {
+    "input": "Unlock database_user",
+    "output": "passwd -u database_user"
+  },
+  {
+    "input": "Restore login ability for ethan",
+    "output": "passwd -u ethan"
+  },
+  {
+    "input": "Unblock ux_test user",
+    "output": "passwd -u ux_test"
+  },
+  {
+    "input": "Reactivate automation_bot account",
+    "output": "passwd -u automation_bot"
+  },
+  {
+    "input": "Re-enable password login for build_user",
+    "output": "passwd -u build_user"
+  },
+  {
+    "input": "Allow login for pm_lead",
+    "output": "passwd -u pm_lead"
+  },
+  {
+    "input": "Enable password access for alice_dev",
+    "output": "passwd -u alice_dev"
+  },
+  {
+    "input": "Restore login for temporary_user",
+    "output": "passwd -u temporary_user"
+  },
+  {
+    "input": "Unblock access to report_user",
+    "output": "passwd -u report_user"
+  },
+  {
+    "input": "Reactivate login for integration_test",
+    "output": "passwd -u integration_test"
+  },
+  {
+    "input": "Enable user login for vpn_client",
+    "output": "passwd -u vpn_client"
+  },
+  {
+    "input": "Unlock designer_user",
+    "output": "passwd -u designer_user"
+  },
+  {
+    "input": "Allow intern_test to log in again",
+    "output": "passwd -u intern_test"
+  },
+  {
+    "input": "Remove password lock for observer_1",
+    "output": "passwd -u observer_1"
+  },
+  {
+    "input": "Re-enable login for new_admin",
+    "output": "passwd -u new_admin"
+  },
+  {
+    "input": "Unlock dev_assistant",
+    "output": "passwd -u dev_assistant"
+  },
+  {
+    "input": "Enable login credentials for demo_user",
+    "output": "passwd -u demo_user"
+  },
+  {
+    "input": "Restore login for docker_ops",
+    "output": "passwd -u docker_ops"
+  },
+  {
+    "input": "Unblock api_user",
+    "output": "passwd -u api_user"
+  },
+  {
+    "input": "Re-enable login for firewall_mgr",
+    "output": "passwd -u firewall_mgr"
+  },
+  {
+    "input": "Unlock data_input user",
+    "output": "passwd -u data_input"
+  },
+  {
+    "input": "Enable dev1 again",
+    "output": "passwd -u dev1"
+  },
+  {
+    "input": "Restore access for backup_admin",
+    "output": "passwd -u backup_admin"
+  },
+        {
+            "input": "Unlock user account named devuser",
+            "output": "passwd -u devuser"
+        },
+        {
+            "input": "Enable login for sysadmin",
+            "output": "passwd -u sysadmin"
+        },
+        {
+            "input": "Re-enable access for account manager1",
+            "output": "passwd -u manager1"
+        },
+        {
+            "input": "Unblock the test_user account",
+            "output": "passwd -u test_user"
+        },
+        {
+            "input": "Allow user qa_lead to log in again",
+            "output": "passwd -u qa_lead"
+        },
+        {
+            "input": "Reactivate password login for alice",
+            "output": "passwd -u alice"
+        },
+        {
+            "input": "Restore login permissions for dev_ops",
+            "output": "passwd -u dev_ops"
+        },
+        {
+            "input": "Enable backend_user again",
+            "output": "passwd -u backend_user"
+        },
+        {
+            "input": "Remove lock on account data_admin",
+            "output": "passwd -u data_admin"
+        },
+        {
+            "input": "Unlock guest_temp user",
+            "output": "passwd -u guest_temp"
+        },
+        {
+            "input": "Re-enable login for user helpline",
+            "output": "passwd -u helpline"
+        },
+        {
+            "input": "Allow login for analyst_1",
+            "output": "passwd -u analyst_1"
+        },
+        {
+            "input": "Reactivate credentials for it_support",
+            "output": "passwd -u it_support"
+        },
+        {
+            "input": "Unblock engineer_23",
+            "output": "passwd -u engineer_23"
+        },
+        {
+            "input": "Unlock access for frontend_dev",
+            "output": "passwd -u frontend_dev"
+        },
+        {
+            "input": "Lift lock from sys_monitor",
+            "output": "passwd -u sys_monitor"
+        },
+        {
+            "input": "Re-enable password login for roger",
+            "output": "passwd -u roger"
+        },
+        {
+            "input": "Allow devuser2 to log in again",
+            "output": "passwd -u devuser2"
+        },
+        {
+            "input": "Re-enable login for support_staff",
+            "output": "passwd -u support_staff"
+        },
+        {
+            "input": "Unlock temporary_account",
+            "output": "passwd -u temporary_account"
+        },
+        {
+            "input": "Remove lock on account web_admin",
+            "output": "passwd -u web_admin"
+        },
+        {
+            "input": "Unlock login for cloud_user",
+            "output": "passwd -u cloud_user"
+        },
+        {
+            "input": "Re-enable access for jenkins_user",
+            "output": "passwd -u jenkins_user"
+        },
+        {
+            "input": "Allow ssh_admin to use password again",
+            "output": "passwd -u ssh_admin"
+        },
+        {
+            "input": "Reactivate the locked account demo",
+            "output": "passwd -u demo"
+        },
+        {
+            "input": "Enable account login for guest2",
+            "output": "passwd -u guest2"
+        },
+        {
+            "input": "Unlock database_user",
+            "output": "passwd -u database_user"
+        },
+        {
+            "input": "Restore login ability for ethan",
+            "output": "passwd -u ethan"
+        },
+        {
+            "input": "Unblock ux_test user",
+            "output": "passwd -u ux_test"
+        },
+        {
+            "input": "Reactivate automation_bot account",
+            "output": "passwd -u automation_bot"
+        },
+        {
+            "input": "Re-enable password login for build_user",
+            "output": "passwd -u build_user"
+        },
+        {
+            "input": "Allow login for pm_lead",
+            "output": "passwd -u pm_lead"
+        },
+        {
+            "input": "Enable password access for alice_dev",
+            "output": "passwd -u alice_dev"
+        },
+        {
+            "input": "Restore login for temporary_user",
+            "output": "passwd -u temporary_user"
+        },
+        {
+            "input": "Unblock access to report_user",
+            "output": "passwd -u report_user"
+        },
+        {
+            "input": "Reactivate login for integration_test",
+            "output": "passwd -u integration_test"
+        },
+        {
+            "input": "Enable user login for vpn_client",
+            "output": "passwd -u vpn_client"
+        },
+        {
+            "input": "Unlock designer_user",
+            "output": "passwd -u designer_user"
+        },
+        {
+            "input": "Allow intern_test to log in again",
+            "output": "passwd -u intern_test"
+        },
+        {
+            "input": "Remove password lock for observer_1",
+            "output": "passwd -u observer_1"
+        },
+        {
+            "input": "Re-enable login for new_admin",
+            "output": "passwd -u new_admin"
+        },
+        {
+            "input": "Unlock dev_assistant",
+            "output": "passwd -u dev_assistant"
+        },
+        {
+            "input": "Enable login credentials for demo_user",
+            "output": "passwd -u demo_user"
+        },
+        {
+            "input": "Restore login for docker_ops",
+            "output": "passwd -u docker_ops"
+        },
+        {
+            "input": "Unblock api_user",
+            "output": "passwd -u api_user"
+        },
+        {
+            "input": "Re-enable login for firewall_mgr",
+            "output": "passwd -u firewall_mgr"
+        },
+        {
+            "input": "Unlock data_input user",
+            "output": "passwd -u data_input"
+        },
+        {
+            "input": "Enable dev1 again",
+            "output": "passwd -u dev1"
+        },
+        {
+            "input": "Restore access for backup_admin",
+            "output": "passwd -u backup_admin"
+        }
+]

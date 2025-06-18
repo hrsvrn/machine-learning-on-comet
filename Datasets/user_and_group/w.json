@@ -1,0 +1,410 @@
+[
+        {
+            "input": "Display all users currently logged in with activity",
+            "output": "w"
+        },
+        {
+            "input": "Show who is logged in and what they are doing",
+            "output": "w"
+        },
+        {
+            "input": "View active user sessions with load average",
+            "output": "w"
+        },
+        {
+            "input": "Check what users are doing right now",
+            "output": "w"
+        },
+        {
+            "input": "List current users and their activities",
+            "output": "w"
+        },
+        {
+            "input": "Monitor system usage by users",
+            "output": "w"
+        },
+        {
+            "input": "See login name, tty, and idle time for users",
+            "output": "w"
+        },
+        {
+            "input": "Get full user activity report",
+            "output": "w"
+        },
+        {
+            "input": "Print all users currently using the system",
+            "output": "w"
+        },
+        {
+            "input": "Check terminal usage and commands being run",
+            "output": "w"
+        },
+        {
+            "input": "Display who is doing what on the system",
+            "output": "w"
+        },
+        {
+            "input": "Show current user load",
+            "output": "w"
+        },
+        {
+            "input": "List users and their CPU usage",
+            "output": "w"
+        },
+        {
+            "input": "Find idle users",
+            "output": "w | awk '$5 ~ /[0-9]+/ {print $1, $5}'"
+        },
+        {
+            "input": "Print user and process info together",
+            "output": "w"
+        },
+        {
+            "input": "Show w command output without header",
+            "output": "w -h"
+        },
+        {
+            "input": "Only see command column from w",
+            "output": "w | awk '{print $8}'"
+        },
+        {
+            "input": "Display load averages and active users",
+            "output": "w"
+        },
+        {
+            "input": "List users who are using bash",
+            "output": "w | grep bash"
+        },
+        {
+            "input": "See users who are using vim",
+            "output": "w | grep vim"
+        },
+        {
+            "input": "Count how many users are logged in",
+            "output": "w -h | wc -l"
+        },
+        {
+            "input": "Monitor system activity in real time",
+            "output": "w"
+        },
+        {
+            "input": "Identify idle SSH sessions",
+            "output": "w | grep ssh"
+        },
+        {
+            "input": "Show logged in users sorted by idle time",
+            "output": "w | sort -k5"
+        },
+        {
+            "input": "Check what root is currently doing",
+            "output": "w root"
+        },
+        {
+            "input": "Get a summary of all terminal sessions",
+            "output": "w"
+        },
+        {
+            "input": "View w command usage",
+            "output": "w"
+        },
+        {
+            "input": "Extract list of ttys in use",
+            "output": "w | awk '{print $2}' | sort | uniq"
+        },
+        {
+            "input": "Filter users with idle time greater than 1hr",
+            "output": "w | awk '$5 ~ /[0-9]+:[0-9]+/ {print $0}'"
+        },
+        {
+            "input": "Show only remote users",
+            "output": "w | grep '('"
+        },
+        {
+            "input": "List all users using screen",
+            "output": "w | grep screen"
+        },
+        {
+            "input": "Find commands being run by each user",
+            "output": "w | awk '{print $1, $8}'"
+        },
+        {
+            "input": "Print the user activity list",
+            "output": "w"
+        },
+        {
+            "input": "Track what everyone is doing",
+            "output": "w"
+        },
+        {
+            "input": "Log current system user activity",
+            "output": "w"
+        },
+        {
+            "input": "Check activity for user 'guest'",
+            "output": "w guest"
+        },
+        {
+            "input": "See if anyone is using top",
+            "output": "w | grep top"
+        },
+        {
+            "input": "Get quick snapshot of user tasks",
+            "output": "w"
+        },
+        {
+            "input": "View process activity by terminal",
+            "output": "w | awk '{print $2, $8}'"
+        },
+        {
+            "input": "Count how many are idle",
+            "output": "w | awk '$5 ~ /[0-9]+/ {print $1}' | wc -l"
+        },
+        {
+            "input": "List command being executed by user1",
+            "output": "w user1"
+        },
+        {
+            "input": "Filter all users with bash as shell",
+            "output": "w | grep bash"
+        },
+        {
+            "input": "Who is using nano editor",
+            "output": "w | grep nano"
+        },
+        {
+            "input": "Print idle users only",
+            "output": "w | awk '$5 ~ /[0-9]+/ {print $1}'"
+        },
+        {
+            "input": "Sort users by terminal",
+            "output": "w | sort -k2"
+        },
+        {
+            "input": "Identify longest idle session",
+            "output": "w | sort -k5 | tail -1"
+        },
+        {
+            "input": "Display user login terminals and commands",
+            "output": "w | awk '{print $2, $8}'"
+        },
+        {
+            "input": "Show load average from w output",
+            "output": "w | head -1"
+        },
+        {
+            "input": "Extract users using /dev/pts/0",
+            "output": "w | grep pts/0"
+        },
+        {
+            "input": "Display all users currently logged in with activity",
+            "output": "w"
+        },
+        {
+            "input": "Show who is logged in and what they are doing",
+            "output": "w"
+        },
+        {
+            "input": "View active user sessions with load average",
+            "output": "w"
+        },
+        {
+            "input": "Check what users are doing right now",
+            "output": "w"
+        },
+        {
+            "input": "List current users and their activities",
+            "output": "w"
+        },
+        {
+            "input": "Monitor system usage by users",
+            "output": "w"
+        },
+        {
+            "input": "See login name, tty, and idle time for users",
+            "output": "w"
+        },
+        {
+            "input": "Get full user activity report",
+            "output": "w"
+        },
+        {
+            "input": "Print all users currently using the system",
+            "output": "w"
+        },
+        {
+            "input": "Check terminal usage and commands being run",
+            "output": "w"
+        },
+        {
+            "input": "Display who is doing what on the system",
+            "output": "w"
+        },
+        {
+            "input": "Show current user load",
+            "output": "w"
+        },
+        {
+            "input": "List users and their CPU usage",
+            "output": "w"
+        },
+        {
+            "input": "Find idle users",
+            "output": "w | awk '$5 ~ /[0-9]+/ {print $1, $5}'"
+        },
+        {
+            "input": "Print user and process info together",
+            "output": "w"
+        },
+        {
+            "input": "Show w command output without header",
+            "output": "w -h"
+        },
+        {
+            "input": "Only see command column from w",
+            "output": "w | awk '{print $8}'"
+        },
+        {
+            "input": "Display load averages and active users",
+            "output": "w"
+        },
+        {
+            "input": "List users who are using bash",
+            "output": "w | grep bash"
+        },
+        {
+            "input": "See users who are using vim",
+            "output": "w | grep vim"
+        },
+        {
+            "input": "Count how many users are logged in",
+            "output": "w -h | wc -l"
+        },
+        {
+            "input": "Monitor system activity in real time",
+            "output": "w"
+        },
+        {
+            "input": "Identify idle SSH sessions",
+            "output": "w | grep ssh"
+        },
+        {
+            "input": "Show logged in users sorted by idle time",
+            "output": "w | sort -k5"
+        },
+        {
+            "input": "Check what root is currently doing",
+            "output": "w root"
+        },
+        {
+            "input": "Get a summary of all terminal sessions",
+            "output": "w"
+        },
+        {
+            "input": "View w command usage",
+            "output": "w"
+        },
+        {
+            "input": "Extract list of ttys in use",
+            "output": "w | awk '{print $2}' | sort | uniq"
+        },
+        {
+            "input": "Filter users with idle time greater than 1hr",
+            "output": "w | awk '$5 ~ /[0-9]+:[0-9]+/ {print $0}'"
+        },
+        {
+            "input": "Show only remote users",
+            "output": "w | grep '('"
+        },
+        {
+            "input": "List all users using screen",
+            "output": "w | grep screen"
+        },
+        {
+            "input": "Find commands being run by each user",
+            "output": "w | awk '{print $1, $8}'"
+        },
+        {
+            "input": "Print the user activity list",
+            "output": "w"
+        },
+        {
+            "input": "Track what everyone is doing",
+            "output": "w"
+        },
+        {
+            "input": "Log current system user activity",
+            "output": "w"
+        },
+        {
+            "input": "Check activity for user 'guest'",
+            "output": "w guest"
+        },
+        {
+            "input": "See if anyone is using top",
+            "output": "w | grep top"
+        },
+        {
+            "input": "Get quick snapshot of user tasks",
+            "output": "w"
+        },
+        {
+            "input": "View process activity by terminal",
+            "output": "w | awk '{print $2, $8}'"
+        },
+        {
+            "input": "Count how many are idle",
+            "output": "w | awk '$5 ~ /[0-9]+/ {print $1}' | wc -l"
+        },
+        {
+            "input": "List command being executed by user1",
+            "output": "w user1"
+        },
+        {
+            "input": "Filter all users with bash as shell",
+            "output": "w | grep bash"
+        },
+        {
+            "input": "Who is using nano editor",
+            "output": "w | grep nano"
+        },
+        {
+            "input": "Print idle users only",
+            "output": "w | awk '$5 ~ /[0-9]+/ {print $1}'"
+        },
+        {
+            "input": "Sort users by terminal",
+            "output": "w | sort -k2"
+        },
+        {
+            "input": "Identify longest idle session",
+            "output": "w | sort -k5 | tail -1"
+        },
+        {
+            "input": "Display user login terminals and commands",
+            "output": "w | awk '{print $2, $8}'"
+        },
+        {
+            "input": "Show load average from w output",
+            "output": "w | head -1"
+        },
+        {
+            "input": "Extract users using /dev/pts/0",
+            "output": "w | grep pts/0"
+        },
+        {
+            "input": "Display current shell for each user",
+            "output": "w | awk '{print $1}' | xargs -I {} getent passwd {} | cut -d: -f7"
+        },
+        {
+            "input": "List users with zero idle time",
+            "output": "w | awk '$5 == "." {print $1}'"
+        },
+        {
+            "input": "Find who is logged in with the most CPU usage",
+            "output": "w | sort -k9 -n | tail -1"
+        },
+        {
+            "input": "Check users accessing via pts/1",
+            "output": "w | grep pts/1"
+        }
+]

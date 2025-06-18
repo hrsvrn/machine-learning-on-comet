@@ -1,0 +1,538 @@
+[
+  {
+    "input": "Delete the user john",
+    "output": "userdel john"
+  },
+  {
+    "input": "Delete user alice and remove her home directory",
+    "output": "userdel -r alice"
+  },
+  {
+    "input": "Remove user bob from the system",
+    "output": "userdel bob"
+  },
+  {
+    "input": "Delete user charlie and all associated files",
+    "output": "userdel -r charlie"
+  },
+  {
+    "input": "Remove user dave",
+    "output": "userdel dave"
+  },
+  {
+    "input": "Delete account emily and clean up home directory",
+    "output": "userdel -r emily"
+  },
+  {
+    "input": "Completely delete user frank",
+    "output": "userdel -r frank"
+  },
+  {
+    "input": "Remove user george from the server",
+    "output": "userdel george"
+  },
+  {
+    "input": "Delete user helen and purge her data",
+    "output": "userdel -r helen"
+  },
+  {
+    "input": "Delete ivan without deleting home directory",
+    "output": "userdel ivan"
+  },
+  {
+    "input": "Remove julie including her home folder",
+    "output": "userdel -r julie"
+  },
+  {
+    "input": "Delete karen account",
+    "output": "userdel karen"
+  },
+  {
+    "input": "Remove lucas and delete home dir",
+    "output": "userdel -r lucas"
+  },
+  {
+    "input": "Delete mike user",
+    "output": "userdel mike"
+  },
+  {
+    "input": "Permanently delete user nina and files",
+    "output": "userdel -r nina"
+  },
+  {
+    "input": "Remove oliver from system",
+    "output": "userdel oliver"
+  },
+  {
+    "input": "Delete user paul including home",
+    "output": "userdel -r paul"
+  },
+  {
+    "input": "Delete quinn user account",
+    "output": "userdel quinn"
+  },
+  {
+    "input": "Completely remove rob",
+    "output": "userdel -r rob"
+  },
+  {
+    "input": "Delete steve without affecting files",
+    "output": "userdel steve"
+  },
+  {
+    "input": "Remove testuser and clean up everything",
+    "output": "userdel -r testuser"
+  },
+  {
+    "input": "Delete ubuntu account",
+    "output": "userdel ubuntu"
+  },
+  {
+    "input": "Remove vera and her files",
+    "output": "userdel -r vera"
+  },
+  {
+    "input": "Delete walter user from system",
+    "output": "userdel walter"
+  },
+  {
+    "input": "Delete xavier and his home directory",
+    "output": "userdel -r xavier"
+  },
+  {
+    "input": "Remove yuki account",
+    "output": "userdel yuki"
+  },
+  {
+    "input": "Permanently delete zoe",
+    "output": "userdel -r zoe"
+  },
+  {
+    "input": "Delete systembot",
+    "output": "userdel systembot"
+  },
+  {
+    "input": "Remove guest1 with all data",
+    "output": "userdel -r guest1"
+  },
+  {
+    "input": "Delete johnny user",
+    "output": "userdel johnny"
+  },
+  {
+    "input": "Remove demo account and home",
+    "output": "userdel -r demo"
+  },
+  {
+    "input": "Delete rootclone",
+    "output": "userdel rootclone"
+  },
+  {
+    "input": "Remove developer1 completely",
+    "output": "userdel -r developer1"
+  },
+  {
+    "input": "Delete old_user account",
+    "output": "userdel old_user"
+  },
+  {
+    "input": "Remove guest123 and their files",
+    "output": "userdel -r guest123"
+  },
+  {
+    "input": "Delete service account bot",
+    "output": "userdel bot"
+  },
+  {
+    "input": "Completely remove testapi",
+    "output": "userdel -r testapi"
+  },
+  {
+    "input": "Delete archiveuser",
+    "output": "userdel archiveuser"
+  },
+  {
+    "input": "Remove alpha_user",
+    "output": "userdel alpha_user"
+  },
+  {
+    "input": "Delete beta_user with home dir",
+    "output": "userdel -r beta_user"
+  },
+  {
+    "input": "Remove staging1 user",
+    "output": "userdel staging1"
+  },
+  {
+    "input": "Delete oldadmin",
+    "output": "userdel oldadmin"
+  },
+  {
+    "input": "Remove tempuser and delete files",
+    "output": "userdel -r tempuser"
+  },
+  {
+    "input": "Delete ghost user",
+    "output": "userdel ghost"
+  },
+  {
+    "input": "Remove internalbot account",
+    "output": "userdel internalbot"
+  },
+  {
+    "input": "Delete dockeruser with all data",
+    "output": "userdel -r dockeruser"
+  },
+  {
+    "input": "Remove unused_bot from system",
+    "output": "userdel unused_bot"
+  },
+  {
+    "input": "Delete readonly_user",
+    "output": "userdel readonly_user"
+  },
+  {
+    "input": "Remove staging2 account",
+    "output": "userdel staging2"
+  },
+  {
+    "input": "Delete test_id",
+    "output": "userdel test_id"
+  },
+  {
+    "input": "Delete ramesh user completely",
+    "output": "userdel -r ramesh"
+  },
+  {
+    "input": "Remove priya and clean up files",
+    "output": "userdel -r priya"
+  },
+  {
+    "input": "Delete devbot from the system",
+    "output": "userdel devbot"
+  },
+  {
+    "input": "Delete user rahul",
+    "output": "userdel rahul"
+  },
+  {
+    "input": "Remove alpha_main with home directory",
+    "output": "userdel -r alpha_main"
+  },
+  {
+    "input": "Delete sneha account",
+    "output": "userdel sneha"
+  },
+  {
+    "input": "Delete user ashwin",
+    "output": "userdel ashwin"
+  },
+  {
+    "input": "Remove trainee and delete files",
+    "output": "userdel -r trainee"
+  },
+  {
+    "input": "Delete sid from system",
+    "output": "userdel sid"
+  },
+  {
+    "input": "Remove logbot user and their data",
+    "output": "userdel -r logbot"
+  },
+  {
+    "input": "Delete reporter1",
+    "output": "userdel reporter1"
+  },
+  {
+    "input": "Remove devtest and home folder",
+    "output": "userdel -r devtest"
+  },
+  {
+    "input": "Delete backup_archiver",
+    "output": "userdel backup_archiver"
+  },
+  {
+    "input": "Delete shiva from users",
+    "output": "userdel shiva"
+  },
+  {
+    "input": "Remove gautham user",
+    "output": "userdel gautham"
+  },
+  {
+    "input": "Delete guest99 completely",
+    "output": "userdel -r guest99"
+  },
+  {
+    "input": "Remove alpha2",
+    "output": "userdel alpha2"
+  },
+  {
+    "input": "Delete developer1 again",
+    "output": "userdel developer1"
+  },
+  {
+    "input": "Remove manager user",
+    "output": "userdel manager"
+  },
+  {
+    "input": "Delete userx",
+    "output": "userdel userx"
+  },
+  {
+    "input": "Remove kiran with files",
+    "output": "userdel -r kiran"
+  },
+  {
+    "input": "Delete guestacc from the server",
+    "output": "userdel guestacc"
+  },
+  {
+    "input": "Remove stag_user completely",
+    "output": "userdel -r stag_user"
+  },
+  {
+    "input": "Delete preet from system",
+    "output": "userdel preet"
+  },
+  {
+    "input": "Remove demo_user and home directory",
+    "output": "userdel -r demo_user"
+  },
+  {
+    "input": "Delete archive",
+    "output": "userdel archive"
+  },
+  {
+    "input": "Remove emailbot",
+    "output": "userdel emailbot"
+  },
+  {
+    "input": "Delete verify_user",
+    "output": "userdel verify_user"
+  },
+  {
+    "input": "Remove rajeev_k user",
+    "output": "userdel rajeev_k"
+  },
+  {
+    "input": "Delete anusha",
+    "output": "userdel anusha"
+  },
+  {
+    "input": "Remove vikas",
+    "output": "userdel vikas"
+  },
+  {
+    "input": "Delete content_mgr and remove home",
+    "output": "userdel -r content_mgr"
+  },
+  {
+    "input": "Remove sde1 account",
+    "output": "userdel sde1"
+  },
+  {
+    "input": "Delete rootclone completely",
+    "output": "userdel -r rootclone"
+  },
+  {
+    "input": "Delete user integration_test from the system",
+    "output": "userdel integration_test"
+  },
+  {
+    "input": "Remove legacy_user and delete all data",
+    "output": "userdel -r legacy_user"
+  },
+  {
+    "input": "Delete deprecated_user account",
+    "output": "userdel deprecated_user"
+  },
+  {
+    "input": "Remove user sshbot and its home directory",
+    "output": "userdel -r sshbot"
+  },
+  {
+    "input": "Delete qa_user1 from the system",
+    "output": "userdel qa_user1"
+  },
+  {
+    "input": "Remove temporary_admin and clean up home",
+    "output": "userdel -r temporary_admin"
+  },
+  {
+    "input": "Delete unusedaccount",
+    "output": "userdel unusedaccount"
+  },
+  {
+    "input": "Completely delete oldservice account",
+    "output": "userdel -r oldservice"
+  },
+  {
+    "input": "Remove localbot",
+    "output": "userdel localbot"
+  },
+  {
+    "input": "Delete staging_user2 and home dir",
+    "output": "userdel -r staging_user2"
+  },
+  {
+    "input": "Delete old_developer account",
+    "output": "userdel old_developer"
+  },
+  {
+    "input": "Remove unwanted_user from system",
+    "output": "userdel unwanted_user"
+  },
+  {
+    "input": "Delete ftp_user and its files",
+    "output": "userdel -r ftp_user"
+  },
+  {
+    "input": "Remove archived_account",
+    "output": "userdel archived_account"
+  },
+  {
+    "input": "Delete expired_user completely",
+    "output": "userdel -r expired_user"
+  },
+  {
+    "input": "Remove beta_tester",
+    "output": "userdel beta_tester"
+  },
+  {
+    "input": "Delete trial_user",
+    "output": "userdel trial_user"
+  },
+  {
+    "input": "Remove api_testing1 with home directory",
+    "output": "userdel -r api_testing1"
+  },
+  {
+    "input": "Delete buildserver",
+    "output": "userdel buildserver"
+  },
+  {
+    "input": "Remove vm_user from the system",
+    "output": "userdel vm_user"
+  },
+  {
+    "input": "Delete user docker_guest and remove files",
+    "output": "userdel -r docker_guest"
+  },
+  {
+    "input": "Remove sandbox1 account",
+    "output": "userdel sandbox1"
+  },
+  {
+    "input": "Delete temp_guest user",
+    "output": "userdel temp_guest"
+  },
+  {
+    "input": "Remove old_intern and all related data",
+    "output": "userdel -r old_intern"
+  },
+  {
+    "input": "Delete loadtest_user",
+    "output": "userdel loadtest_user"
+  },
+  {
+    "input": "Remove forgotten_user from the machine",
+    "output": "userdel forgotten_user"
+  },
+  {
+    "input": "Delete miscuser account and files",
+    "output": "userdel -r miscuser"
+  },
+  {
+    "input": "Remove cloud_user",
+    "output": "userdel cloud_user"
+  },
+  {
+    "input": "Delete database_admin and home folder",
+    "output": "userdel -r database_admin"
+  },
+  {
+    "input": "Remove user nologin_guest",
+    "output": "userdel nologin_guest"
+  },
+  {
+    "input": "Delete student_temp",
+    "output": "userdel student_temp"
+  },
+  {
+    "input": "Remove mail_test_user and their data",
+    "output": "userdel -r mail_test_user"
+  },
+  {
+    "input": "Delete ci_runner from system",
+    "output": "userdel ci_runner"
+  },
+  {
+    "input": "Remove worker_node account",
+    "output": "userdel worker_node"
+  },
+  {
+    "input": "Delete buildbot_user",
+    "output": "userdel buildbot_user"
+  },
+  {
+    "input": "Remove legacyroot with home directory",
+    "output": "userdel -r legacyroot"
+  },
+  {
+    "input": "Delete backuphelper user",
+    "output": "userdel backuphelper"
+  },
+  {
+    "input": "Remove vpn_guest and clean up home",
+    "output": "userdel -r vpn_guest"
+  },
+  {
+    "input": "Delete read_only_user",
+    "output": "userdel read_only_user"
+  },
+  {
+    "input": "Remove helpdesk_demo account",
+    "output": "userdel helpdesk_demo"
+  },
+  {
+    "input": "Delete ux_test_user",
+    "output": "userdel ux_test_user"
+  },
+  {
+    "input": "Remove webdemo account and home",
+    "output": "userdel -r webdemo"
+  },
+  {
+    "input": "Delete nodebot_user",
+    "output": "userdel nodebot_user"
+  },
+  {
+    "input": "Remove expiredbot",
+    "output": "userdel expiredbot"
+  },
+  {
+    "input": "Delete oldscript_runner",
+    "output": "userdel oldscript_runner"
+  },
+  {
+    "input": "Remove sandbox2 and all files",
+    "output": "userdel -r sandbox2"
+  },
+  {
+    "input": "Delete appbuilder_user",
+    "output": "userdel appbuilder_user"
+  },
+  {
+    "input": "Remove devtest2 from the system",
+    "output": "userdel devtest2"
+  },
+  {
+    "input": "Delete k8s_demo_user",
+    "output": "userdel k8s_demo_user"
+  },
+  {
+    "input": "Remove project_guest and delete home",
+    "output": "userdel -r project_guest"
+  }
+]
