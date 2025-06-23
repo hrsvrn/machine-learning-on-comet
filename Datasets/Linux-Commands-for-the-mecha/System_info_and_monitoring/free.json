@@ -1,0 +1,930 @@
+[
+  {
+    "input": "Display all memory information in kibibytes (default)",
+    "output": "free"
+  },
+  {
+    "input": "Display memory usage in human-readable format",
+    "output": "free -h"
+  },
+  {
+    "input": "Display memory usage in bytes",
+    "output": "free -b"
+  },
+  {
+    "input": "Display memory usage in kilobytes",
+    "output": "free -k"
+  },
+  {
+    "input": "Display memory usage in megabytes",
+    "output": "free -m"
+  },
+  {
+    "input": "Display memory usage in gigabytes",
+    "output": "free -g"
+  },
+  {
+    "input": "Display memory usage in terabytes",
+    "output": "free --tera"
+  },
+  {
+    "input": "Display memory usage in pebibytes",
+    "output": "free --pebi"
+  },
+  {
+    "input": "Display memory usage in tebibytes",
+    "output": "free --tebi"
+  },
+  {
+    "input": "Display memory usage in mebibytes with SI units",
+    "output": "free --mebi --si"
+  },
+  {
+    "input": "Display total memory (RAM + swap) in human-readable format",
+    "output": "free -h -t"
+  },
+  {
+    "input": "Continuously display memory usage every 5 seconds",
+    "output": "free -s 5"
+  },
+  {
+    "input": "Continuously display memory usage every 2 seconds, 4 times",
+    "output": "free -s 2 -c 4"
+  },
+  {
+    "input": "Display memory usage with old format (no -/+ buffers/cache line)",
+    "output": "free -o"
+  },
+  {
+    "input": "Display detailed low and high memory statistics",
+    "output": "free -l"
+  },
+  {
+    "input": "Display memory usage with wide output (separate buffers and cache)",
+    "output": "free -w"
+  },
+  {
+    "input": "Display memory usage in bytes with total",
+    "output": "free -b -t"
+  },
+  {
+    "input": "Display memory usage in kilobytes with total",
+    "output": "free -k -t"
+  },
+  {
+    "input": "Display memory usage in megabytes with total",
+    "output": "free -m -t"
+  },
+  {
+    "input": "Display memory usage in gigabytes with total",
+    "output": "free -g -t"
+  },
+  {
+    "input": "Display memory usage in human-readable format, update every 3 seconds, 5 times",
+    "output": "free -h -s 3 -c 5"
+  },
+  {
+    "input": "Display memory usage in megabytes, update every 1 second, 10 times",
+    "output": "free -m -s 1 -c 10"
+  },
+  {
+    "input": "Display memory usage in gigabytes, update every 10 seconds, 3 times",
+    "output": "free -g -s 10 -c 3"
+  },
+  {
+    "input": "Display memory usage in human-readable format, update every 5 seconds indefinitely",
+    "output": "free -h -s 5"
+  },
+  {
+    "input": "Display memory usage in bytes, update every 2 seconds indefinitely",
+    "output": "free -b -s 2"
+  },
+  {
+    "input": "Display memory usage in kilobytes, update every 4 seconds indefinitely",
+    "output": "free -k -s 4"
+  },
+  {
+    "input": "Display memory usage in megabytes, update every 6 seconds indefinitely",
+    "output": "free -m -s 6"
+  },
+  {
+    "input": "Display memory usage in gigabytes, update every 8 seconds indefinitely",
+    "output": "free -g -s 8"
+  },
+  {
+    "input": "Display memory usage with total, update every 5 seconds indefinitely",
+    "output": "free -t -s 5"
+  },
+  {
+    "input": "Display memory usage with total, update every 3 seconds, 7 times",
+    "output": "free -t -s 3 -c 7"
+  },
+  {
+    "input": "Display memory usage with old format and total",
+    "output": "free -o -t"
+  },
+  {
+    "input": "Display memory usage with detailed low and high memory stats and total",
+    "output": "free -l -t"
+  },
+  {
+    "input": "Display memory usage with wide output and total",
+    "output": "free -w -t"
+  },
+  {
+    "input": "Display memory usage in human-readable format, no buffers/cache line",
+    "output": "free -h -o"
+  },
+  {
+    "input": "Display memory usage in megabytes, no buffers/cache line",
+    "output": "free -m -o"
+  },
+  {
+    "input": "Display memory usage in gigabytes, no buffers/cache line",
+    "output": "free -g -o"
+  },
+  {
+    "input": "Display memory usage in bytes, no buffers/cache line",
+    "output": "free -b -o"
+  },
+  {
+    "input": "Display memory usage in kilobytes, no buffers/cache line",
+    "output": "free -k -o"
+  },
+  {
+    "input": "Display memory usage in human-readable format, detailed low and high memory stats",
+    "output": "free -h -l"
+  },
+  {
+    "input": "Display memory usage in megabytes, detailed low and high memory stats",
+    "output": "free -m -l"
+  },
+  {
+    "input": "Display memory usage in gigabytes, detailed low and high memory stats",
+    "output": "free -g -l"
+  },
+  {
+    "input": "Display memory usage in bytes, detailed low and high memory stats",
+    "output": "free -b -l"
+  },
+  {
+    "input": "Display memory usage in kilobytes, detailed low and high memory stats",
+    "output": "free -k -l"
+  },
+  {
+    "input": "Display memory usage in human-readable format, wide output",
+    "output": "free -h -w"
+  },
+  {
+    "input": "Display memory usage in megabytes, wide output",
+    "output": "free -m -w"
+  },
+  {
+    "input": "Display memory usage in gigabytes, wide output",
+    "output": "free -g -w"
+  },
+  {
+    "input": "Display memory usage in bytes, wide output",
+    "output": "free -b -w"
+  },
+  {
+    "input": "Display memory usage in kilobytes, wide output",
+    "output": "free -k -w"
+  },
+  {
+    "input": "Display memory usage in bytes, update every 1 second, 2 times",
+    "output": "free -b -s 1 -c 2"
+  },
+  {
+    "input": "Display memory usage in bytes, update every 5 seconds, 5 times",
+    "output": "free -b -s 5 -c 5"
+  },
+  {
+    "input": "Display memory usage in kilobytes, update every 10 seconds, 2 times",
+    "output": "free -k -s 10 -c 2"
+  },
+  {
+    "input": "Display memory usage in megabytes, update every 1 second, 5 times",
+    "output": "free -m -s 1 -c 5"
+  },
+  {
+    "input": "Display memory usage in gigabytes, update every 5 seconds, 2 times",
+    "output": "free -g -s 5 -c 2"
+  },
+  {
+    "input": "Display memory usage in human-readable format, update every 10 seconds, 5 times",
+    "output": "free -h -s 10 -c 5"
+  },
+  {
+    "input": "Display memory usage in bytes with old format, update every 2 seconds, 4 times",
+    "output": "free -b -o -s 2 -c 4"
+  },
+  {
+    "input": "Display memory usage in kilobytes with detailed stats, update every 3 seconds, 3 times",
+    "output": "free -k -l -s 3 -c 3"
+  },
+  {
+    "input": "Display memory usage in megabytes with wide output, update every 4 seconds, 2 times",
+    "output": "free -m -w -s 4 -c 2"
+  },
+  {
+    "input": "Display memory usage in gigabytes with total, update every 5 seconds, 6 times",
+    "output": "free -g -t -s 5 -c 6"
+  },
+  {
+    "input": "Display memory usage in human-readable format with old format, update every 7 seconds, 7 times",
+    "output": "free -h -o -s 7 -c 7"
+  },
+  {
+    "input": "Display memory usage in bytes with detailed stats and total, update every 8 seconds, 8 times",
+    "output": "free -b -l -t -s 8 -c 8"
+  },
+  {
+    "input": "Display memory usage in kilobytes with wide output and total, update every 9 seconds, 9 times",
+    "output": "free -k -w -t -s 9 -c 9"
+  },
+  {
+    "input": "Display memory usage in megabytes with old format and total, update every 2 seconds, 2 times",
+    "output": "free -m -o -t -s 2 -c 2"
+  },
+  {
+    "input": "Display memory usage in gigabytes with detailed stats and total, update every 3 seconds, 3 times",
+    "output": "free -g -l -t -s 3 -c 3"
+  },
+  {
+    "input": "Display memory usage in human-readable format with wide output and total, update every 4 seconds, 4 times",
+    "output": "free -h -w -t -s 4 -c 4"
+  },
+  {
+    "input": "Display memory usage in bytes with old format and detailed stats, update every 5 seconds, 5 times",
+    "output": "free -b -o -l -s 5 -c 5"
+  },
+  {
+    "input": "Display memory usage in kilobytes with wide output and detailed stats, update every 6 seconds, 6 times",
+    "output": "free -k -w -l -s 6 -c 6"
+  },
+  {
+    "input": "Display memory usage in megabytes with old format and wide output, update every 7 seconds, 7 times",
+    "output": "free -m -o -w -s 7 -c 7"
+  },
+  {
+    "input": "Display memory usage in gigabytes with old format and detailed stats, update every 8 seconds, 8 times",
+    "output": "free -g -o -l -s 8 -c 8"
+  },
+  {
+    "input": "Display memory usage in human-readable format with detailed stats and wide output, update every 9 seconds, 9 times",
+    "output": "free -h -l -w -s 9 -c 9"
+  },
+  {
+    "input": "Display memory usage in bytes with all options, update every 10 seconds, 10 times",
+    "output": "free -b -o -l -w -t -s 10 -c 10"
+  },
+  {
+    "input": "Display memory usage in kilobytes with all options, update every 11 seconds, 11 times",
+    "output": "free -k -o -l -w -t -s 11 -c 11"
+  },
+  {
+    "input": "Display memory usage in megabytes with all options, update every 12 seconds, 12 times",
+    "output": "free -m -o -l -w -t -s 12 -c 12"
+  },
+  {
+    "input": "Display memory usage in gigabytes with all options, update every 13 seconds, 13 times",
+    "output": "free -g -o -l -w -t -s 13 -c 13"
+  },
+  {
+    "input": "Display memory usage in human-readable format with all options, update every 14 seconds, 14 times",
+    "output": "free -h -o -l -w -t -s 14 -c 14"
+  },
+  {
+    "input": "Display memory usage in bytes, update every second indefinitely",
+    "output": "free -b -s 1"
+  },
+  {
+    "input": "Display memory usage in kilobytes, update every second indefinitely",
+    "output": "free -k -s 1"
+  },
+  {
+    "input": "Display memory usage in megabytes, update every second indefinitely",
+    "output": "free -m -s 1"
+  },
+  {
+    "input": "Display memory usage in gigabytes, update every second indefinitely",
+    "output": "free -g -s 1"
+  },
+  {
+    "input": "Display memory usage in human-readable format, update every second indefinitely",
+    "output": "free -h -s 1"
+  },
+  {
+    "input": "Display memory usage in bytes, update every 10 seconds indefinitely",
+    "output": "free -b -s 10"
+  },
+  {
+    "input": "Display memory usage in kilobytes, update every 10 seconds indefinitely",
+    "output": "free -k -s 10"
+  },
+  {
+    "input": "Display memory usage in megabytes, update every 10 seconds indefinitely",
+    "output": "free -m -s 10"
+  },
+  {
+    "input": "Display memory usage in gigabytes, update every 10 seconds indefinitely",
+    "output": "free -g -s 10"
+  },
+  {
+    "input": "Display memory usage in human-readable format, update every 10 seconds indefinitely",
+    "output": "free -h -s 10"
+  },
+  {
+    "input": "Display memory usage in bytes, update every 15 seconds indefinitely",
+    "output": "free -b -s 15"
+  },
+  {
+    "input": "Display memory usage in kilobytes, update every 15 seconds indefinitely",
+    "output": "free -k -s 15"
+  },
+  {
+    "input": "Display memory usage in megabytes, update every 15 seconds indefinitely",
+    "output": "free -m -s 15"
+  },
+  {
+    "input": "Display memory usage in gigabytes, update every 15 seconds indefinitely",
+    "output": "free -g -s 15"
+  },
+  {
+    "input": "Display memory usage in human-readable format, update every 15 seconds indefinitely",
+    "output": "free -h -s 15"
+  },
+  {
+    "input": "Display memory usage in bytes, update every 30 seconds indefinitely",
+    "output": "free -b -s 30"
+  },
+  {
+    "input": "Display memory usage in kilobytes, update every 30 seconds indefinitely",
+    "output": "free -k -s 30"
+  },
+  {
+    "input": "Display memory usage in megabytes, update every 30 seconds indefinitely",
+    "output": "free -m -s 30"
+  },
+  {
+    "input": "Display memory usage in gigabytes, update every 30 seconds indefinitely",
+    "output": "free -g -s 30"
+  },
+  {
+    "input": "Display memory usage in human-readable format, update every 30 seconds indefinitely",
+    "output": "free -h -s 30"
+  },
+  {
+    "input": "Display memory usage in bytes with total, update every 5 seconds, 3 times",
+    "output": "free -b -t -s 5 -c 3"
+  },
+  {
+    "input": "Display memory usage in kilobytes with total, update every 10 seconds, 4 times",
+    "output": "free -k -t -s 10 -c 4"
+  },
+  {
+    "input": "Display memory usage in megabytes with total, update every 15 seconds, 5 times",
+    "output": "free -m -t -s 15 -c 5"
+  },
+  {
+    "input": "Display memory usage in gigabytes with total, update every 20 seconds, 6 times",
+    "output": "free -g -t -s 20 -c 6"
+  },
+  {
+    "input": "Display memory usage in human-readable format with total, update every 25 seconds, 7 times",
+    "output": "free -h -t -s 25 -c 7"
+  },
+  {
+    "input": "Display memory usage in bytes with old format, update every 5 seconds, 3 times",
+    "output": "free -b -o -s 5 -c 3"
+  },
+  {
+    "input": "Display memory usage in kilobytes with old format, update every 10 seconds, 4 times",
+    "output": "free -k -o -s 10 -c 4"
+  },
+  {
+    "input": "Display memory usage in megabytes with old format, update every 15 seconds, 5 times",
+    "output": "free -m -o -s 15 -c 5"
+  },
+  {
+    "input": "Display memory usage in gigabytes with old format, update every 20 seconds, 6 times",
+    "output": "free -g -o -s 20 -c 6"
+  },
+  {
+    "input": "Display memory usage in human-readable format with old format, update every 25 seconds, 7 times",
+    "output": "free -h -o -s 25 -c 7"
+  },
+  {
+    "input": "Display memory usage in bytes with detailed stats, update every 5 seconds, 3 times",
+    "output": "free -b -l -s 5 -c 3"
+  },
+  {
+    "input": "Display memory usage in kilobytes with detailed stats, update every 10 seconds, 4 times",
+    "output": "free -k -l -s 10 -c 4"
+  },
+  {
+    "input": "Display memory usage in megabytes with detailed stats, update every 15 seconds, 5 times",
+    "output": "free -m -l -s 15 -c 5"
+  },
+  {
+    "input": "Display memory usage in gigabytes with detailed stats, update every 20 seconds, 6 times",
+    "output": "free -g -l -s 20 -c 6"
+  },
+  {
+    "input": "Display memory usage in human-readable format with detailed stats, update every 25 seconds, 7 times",
+    "output": "free -h -l -s 25 -c 7"
+  },
+  {
+    "input": "Display memory usage in bytes with wide output, update every 5 seconds, 3 times",
+    "output": "free -b -w -s 5 -c 3"
+  },
+  {
+    "input": "Display memory usage in kilobytes with wide output, update every 10 seconds, 4 times",
+    "output": "free -k -w -s 10 -c 4"
+  },
+  {
+    "input": "Display memory usage in megabytes with wide output, update every 15 seconds, 5 times",
+    "output": "free -m -w -s 15 -c 5"
+  },
+  {
+    "input": "Display memory usage in gigabytes with wide output, update every 20 seconds, 6 times",
+    "output": "free -g -w -s 20 -c 6"
+  },
+  {
+    "input": "Display memory usage in human-readable format with wide output, update every 25 seconds, 7 times",
+    "output": "free -h -w -s 25 -c 7"
+  },
+  {
+    "input": "Display help for the free command",
+    "output": "free --help"
+  },
+  {
+    "input": "Display version information for the free command",
+    "output": "free --version"
+  },
+  {
+    "input": "Display all memory information in kibibytes (default)",
+    "output": "free"
+  },
+  {
+    "input": "Display memory usage in human-readable format",
+    "output": "free -h"
+  },
+  {
+    "input": "Display memory usage in bytes",
+    "output": "free -b"
+  },
+  {
+    "input": "Display memory usage in kilobytes",
+    "output": "free -k"
+  },
+  {
+    "input": "Display memory usage in megabytes",
+    "output": "free -m"
+  },
+  {
+    "input": "Display memory usage in gigabytes",
+    "output": "free -g"
+  },
+  {
+    "input": "Display memory usage in terabytes",
+    "output": "free --tera"
+  },
+  {
+    "input": "Display memory usage in pebibytes",
+    "output": "free --pebi"
+  },
+  {
+    "input": "Display memory usage in tebibytes",
+    "output": "free --tebi"
+  },
+  {
+    "input": "Display memory usage in mebibytes with SI units",
+    "output": "free --mebi --si"
+  },
+  {
+    "input": "Display total memory (RAM + swap) in human-readable format",
+    "output": "free -h -t"
+  },
+  {
+    "input": "Continuously display memory usage every 5 seconds",
+    "output": "free -s 5"
+  },
+  {
+    "input": "Continuously display memory usage every 2 seconds, 4 times",
+    "output": "free -s 2 -c 4"
+  },
+  {
+    "input": "Display memory usage with old format (no -/+ buffers/cache line)",
+    "output": "free -o"
+  },
+  {
+    "input": "Display detailed low and high memory statistics",
+    "output": "free -l"
+  },
+  {
+    "input": "Display memory usage with wide output (separate buffers and cache)",
+    "output": "free -w"
+  },
+  {
+    "input": "Display memory usage in bytes with total",
+    "output": "free -b -t"
+  },
+  {
+    "input": "Display memory usage in kilobytes with total",
+    "output": "free -k -t"
+  },
+  {
+    "input": "Display memory usage in megabytes with total",
+    "output": "free -m -t"
+  },
+  {
+    "input": "Display memory usage in gigabytes with total",
+    "output": "free -g -t"
+  },
+  {
+    "input": "Display memory usage in human-readable format, update every 3 seconds, 5 times",
+    "output": "free -h -s 3 -c 5"
+  },
+  {
+    "input": "Display memory usage in megabytes, update every 1 second, 10 times",
+    "output": "free -m -s 1 -c 10"
+  },
+  {
+    "input": "Display memory usage in gigabytes, update every 10 seconds, 3 times",
+    "output": "free -g -s 10 -c 3"
+  },
+  {
+    "input": "Display memory usage in human-readable format, update every 5 seconds indefinitely",
+    "output": "free -h -s 5"
+  },
+  {
+    "input": "Display memory usage in bytes, update every 2 seconds indefinitely",
+    "output": "free -b -s 2"
+  },
+  {
+    "input": "Display memory usage in kilobytes, update every 4 seconds indefinitely",
+    "output": "free -k -s 4"
+  },
+  {
+    "input": "Display memory usage in megabytes, update every 6 seconds indefinitely",
+    "output": "free -m -s 6"
+  },
+  {
+    "input": "Display memory usage in gigabytes, update every 8 seconds indefinitely",
+    "output": "free -g -s 8"
+  },
+  {
+    "input": "Display memory usage with total, update every 5 seconds indefinitely",
+    "output": "free -t -s 5"
+  },
+  {
+    "input": "Display memory usage with total, update every 3 seconds, 7 times",
+    "output": "free -t -s 3 -c 7"
+  },
+  {
+    "input": "Display memory usage with old format and total",
+    "output": "free -o -t"
+  },
+  {
+    "input": "Display memory usage with detailed low and high memory stats and total",
+    "output": "free -l -t"
+  },
+  {
+    "input": "Display memory usage with wide output and total",
+    "output": "free -w -t"
+  },
+  {
+    "input": "Display memory usage in human-readable format, no buffers/cache line",
+    "output": "free -h -o"
+  },
+  {
+    "input": "Display memory usage in megabytes, no buffers/cache line",
+    "output": "free -m -o"
+  },
+  {
+    "input": "Display memory usage in gigabytes, no buffers/cache line",
+    "output": "free -g -o"
+  },
+  {
+    "input": "Display memory usage in bytes, no buffers/cache line",
+    "output": "free -b -o"
+  },
+  {
+    "input": "Display memory usage in kilobytes, no buffers/cache line",
+    "output": "free -k -o"
+  },
+  {
+    "input": "Display memory usage in human-readable format, detailed low and high memory stats",
+    "output": "free -h -l"
+  },
+  {
+    "input": "Display memory usage in megabytes, detailed low and high memory stats",
+    "output": "free -m -l"
+  },
+  {
+    "input": "Display memory usage in gigabytes, detailed low and high memory stats",
+    "output": "free -g -l"
+  },
+  {
+    "input": "Display memory usage in bytes, detailed low and high memory stats",
+    "output": "free -b -l"
+  },
+  {
+    "input": "Display memory usage in kilobytes, detailed low and high memory stats",
+    "output": "free -k -l"
+  },
+  {
+    "input": "Display memory usage in human-readable format, wide output",
+    "output": "free -h -w"
+  },
+  {
+    "input": "Display memory usage in megabytes, wide output",
+    "output": "free -m -w"
+  },
+  {
+    "input": "Display memory usage in gigabytes, wide output",
+    "output": "free -g -w"
+  },
+  {
+    "input": "Display memory usage in bytes, wide output",
+    "output": "free -b -w"
+  },
+  {
+    "input": "Display memory usage in kilobytes, wide output",
+    "output": "free -k -w"
+  },
+  {
+    "input": "Display memory usage in bytes, update every 1 second, 2 times",
+    "output": "free -b -s 1 -c 2"
+  },
+  {
+    "input": "Display memory usage in bytes, update every 5 seconds, 5 times",
+    "output": "free -b -s 5 -c 5"
+  },
+  {
+    "input": "Display memory usage in kilobytes, update every 10 seconds, 2 times",
+    "output": "free -k -s 10 -c 2"
+  },
+  {
+    "input": "Display memory usage in megabytes, update every 1 second, 5 times",
+    "output": "free -m -s 1 -c 5"
+  },
+  {
+    "input": "Display memory usage in gigabytes, update every 5 seconds, 2 times",
+    "output": "free -g -s 5 -c 2"
+  },
+  {
+    "input": "Display memory usage in human-readable format, update every 10 seconds, 5 times",
+    "output": "free -h -s 10 -c 5"
+  },
+  {
+    "input": "Display memory usage in bytes with old format, update every 2 seconds, 4 times",
+    "output": "free -b -o -s 2 -c 4"
+  },
+  {
+    "input": "Display memory usage in kilobytes with detailed stats, update every 3 seconds, 3 times",
+    "output": "free -k -l -s 3 -c 3"
+  },
+  {
+    "input": "Display memory usage in megabytes with wide output, update every 4 seconds, 2 times",
+    "output": "free -m -w -s 4 -c 2"
+  },
+  {
+    "input": "Display memory usage in gigabytes with total, update every 5 seconds, 6 times",
+    "output": "free -g -t -s 5 -c 6"
+  },
+  {
+    "input": "Display memory usage in human-readable format with old format, update every 7 seconds, 7 times",
+    "output": "free -h -o -s 7 -c 7"
+  },
+  {
+    "input": "Display memory usage in bytes with detailed stats and total, update every 8 seconds, 8 times",
+    "output": "free -b -l -t -s 8 -c 8"
+  },
+  {
+    "input": "Display memory usage in kilobytes with wide output and total, update every 9 seconds, 9 times",
+    "output": "free -k -w -t -s 9 -c 9"
+  },
+  {
+    "input": "Display memory usage in megabytes with old format and total, update every 2 seconds, 2 times",
+    "output": "free -m -o -t -s 2 -c 2"
+  },
+  {
+    "input": "Display memory usage in gigabytes with detailed stats and total, update every 3 seconds, 3 times",
+    "output": "free -g -l -t -s 3 -c 3"
+  },
+  {
+    "input": "Display memory usage in human-readable format with wide output and total, update every 4 seconds, 4 times",
+    "output": "free -h -w -t -s 4 -c 4"
+  },
+  {
+    "input": "Display memory usage in bytes with old format and detailed stats, update every 5 seconds, 5 times",
+    "output": "free -b -o -l -s 5 -c 5"
+  },
+  {
+    "input": "Display memory usage in kilobytes with wide output and detailed stats, update every 6 seconds, 6 times",
+    "output": "free -k -w -l -s 6 -c 6"
+  },
+  {
+    "input": "Display memory usage in megabytes with old format and wide output, update every 7 seconds, 7 times",
+    "output": "free -m -o -w -s 7 -c 7"
+  },
+  {
+    "input": "Display memory usage in gigabytes with old format and detailed stats, update every 8 seconds, 8 times",
+    "output": "free -g -o -l -s 8 -c 8"
+  },
+  {
+    "input": "Display memory usage in human-readable format with detailed stats and wide output, update every 9 seconds, 9 times",
+    "output": "free -h -l -w -s 9 -c 9"
+  },
+  {
+    "input": "Display memory usage in bytes with all options, update every 10 seconds, 10 times",
+    "output": "free -b -o -l -w -t -s 10 -c 10"
+  },
+  {
+    "input": "Display memory usage in kilobytes with all options, update every 11 seconds, 11 times",
+    "output": "free -k -o -l -w -t -s 11 -c 11"
+  },
+  {
+    "input": "Display memory usage in megabytes with all options, update every 12 seconds, 12 times",
+    "output": "free -m -o -l -w -t -s 12 -c 12"
+  },
+  {
+    "input": "Display memory usage in gigabytes with all options, update every 13 seconds, 13 times",
+    "output": "free -g -o -l -w -t -s 13 -c 13"
+  },
+  {
+    "input": "Display memory usage in human-readable format with all options, update every 14 seconds, 14 times",
+    "output": "free -h -o -l -w -t -s 14 -c 14"
+  },
+  {
+    "input": "Display memory usage in bytes, update every second indefinitely",
+    "output": "free -b -s 1"
+  },
+  {
+    "input": "Display memory usage in kilobytes, update every second indefinitely",
+    "output": "free -k -s 1"
+  },
+  {
+    "input": "Display memory usage in megabytes, update every second indefinitely",
+    "output": "free -m -s 1"
+  },
+  {
+    "input": "Display memory usage in gigabytes, update every second indefinitely",
+    "output": "free -g -s 1"
+  },
+  {
+    "input": "Display memory usage in human-readable format, update every second indefinitely",
+    "output": "free -h -s 1"
+  },
+  {
+    "input": "Display memory usage in bytes, update every 10 seconds indefinitely",
+    "output": "free -b -s 10"
+  },
+  {
+    "input": "Display memory usage in kilobytes, update every 10 seconds indefinitely",
+    "output": "free -k -s 10"
+  },
+  {
+    "input": "Display memory usage in megabytes, update every 10 seconds indefinitely",
+    "output": "free -m -s 10"
+  },
+  {
+    "input": "Display memory usage in gigabytes, update every 10 seconds indefinitely",
+    "output": "free -g -s 10"
+  },
+  {
+    "input": "Display memory usage in human-readable format, update every 10 seconds indefinitely",
+    "output": "free -h -s 10"
+  },
+  {
+    "input": "Display memory usage in bytes, update every 15 seconds indefinitely",
+    "output": "free -b -s 15"
+  },
+  {
+    "input": "Display memory usage in kilobytes, update every 15 seconds indefinitely",
+    "output": "free -k -s 15"
+  },
+  {
+    "input": "Display memory usage in megabytes, update every 15 seconds indefinitely",
+    "output": "free -m -s 15"
+  },
+  {
+    "input": "Display memory usage in gigabytes, update every 15 seconds indefinitely",
+    "output": "free -g -s 15"
+  },
+  {
+    "input": "Display memory usage in human-readable format, update every 15 seconds indefinitely",
+    "output": "free -h -s 15"
+  },
+  {
+    "input": "Display memory usage in bytes, update every 30 seconds indefinitely",
+    "output": "free -b -s 30"
+  },
+  {
+    "input": "Display memory usage in kilobytes, update every 30 seconds indefinitely",
+    "output": "free -k -s 30"
+  },
+  {
+    "input": "Display memory usage in megabytes, update every 30 seconds indefinitely",
+    "output": "free -m -s 30"
+  },
+  {
+    "input": "Display memory usage in gigabytes, update every 30 seconds indefinitely",
+    "output": "free -g -s 30"
+  },
+  {
+    "input": "Display memory usage in human-readable format, update every 30 seconds indefinitely",
+    "output": "free -h -s 30"
+  },
+  {
+    "input": "Display memory usage in bytes with total, update every 5 seconds, 3 times",
+    "output": "free -b -t -s 5 -c 3"
+  },
+  {
+    "input": "Display memory usage in kilobytes with total, update every 10 seconds, 4 times",
+    "output": "free -k -t -s 10 -c 4"
+  },
+  {
+    "input": "Display memory usage in megabytes with total, update every 15 seconds, 5 times",
+    "output": "free -m -t -s 15 -c 5"
+  },
+  {
+    "input": "Display memory usage in gigabytes with total, update every 20 seconds, 6 times",
+    "output": "free -g -t -s 20 -c 6"
+  },
+  {
+    "input": "Display memory usage in human-readable format with total, update every 25 seconds, 7 times",
+    "output": "free -h -t -s 25 -c 7"
+  },
+  {
+    "input": "Display memory usage in bytes with old format, update every 5 seconds, 3 times",
+    "output": "free -b -o -s 5 -c 3"
+  },
+  {
+    "input": "Display memory usage in kilobytes with old format, update every 10 seconds, 4 times",
+    "output": "free -k -o -s 10 -c 4"
+  },
+  {
+    "input": "Display memory usage in megabytes with old format, update every 15 seconds, 5 times",
+    "output": "free -m -o -s 15 -c 5"
+  },
+  {
+    "input": "Display memory usage in gigabytes with old format, update every 20 seconds, 6 times",
+    "output": "free -g -o -s 20 -c 6"
+  },
+  {
+    "input": "Display memory usage in human-readable format with old format, update every 25 seconds, 7 times",
+    "output": "free -h -o -s 25 -c 7"
+  },
+  {
+    "input": "Display memory usage in bytes with detailed stats, update every 5 seconds, 3 times",
+    "output": "free -b -l -s 5 -c 3"
+  },
+  {
+    "input": "Display memory usage in kilobytes with detailed stats, update every 10 seconds, 4 times",
+    "output": "free -k -l -s 10 -c 4"
+  },
+  {
+    "input": "Display memory usage in megabytes with detailed stats, update every 15 seconds, 5 times",
+    "output": "free -m -l -s 15 -c 5"
+  },
+  {
+    "input": "Display memory usage in gigabytes with detailed stats, update every 20 seconds, 6 times",
+    "output": "free -g -l -s 20 -c 6"
+  },
+  {
+    "input": "Display memory usage in human-readable format with detailed stats, update every 25 seconds, 7 times",
+    "output": "free -h -l -s 25 -c 7"
+  },
+  {
+    "input": "Display memory usage in bytes with wide output, update every 5 seconds, 3 times",
+    "output": "free -b -w -s 5 -c 3"
+  },
+  {
+    "input": "Display memory usage in kilobytes with wide output, update every 10 seconds, 4 times",
+    "output": "free -k -w -s 10 -c 4"
+  },
+  {
+    "input": "Display memory usage in megabytes with wide output, update every 15 seconds, 5 times",
+    "output": "free -m -w -s 15 -c 5"
+  },
+  {
+    "input": "Display memory usage in gigabytes with wide output, update every 20 seconds, 6 times",
+    "output": "free -g -w -s 20 -c 6"
+  },
+  {
+    "input": "Display memory usage in human-readable format with wide output, update every 25 seconds, 7 times",
+    "output": "free -h -w -s 25 -c 7"
+  },
+  {
+    "input": "Display help for the free command",
+    "output": "free --help"
+  },
+  {
+    "input": "Display version information for the free command",
+    "output": "free --version"
+  }
+]

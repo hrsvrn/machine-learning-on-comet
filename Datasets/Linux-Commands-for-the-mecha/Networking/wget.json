@@ -1,0 +1,438 @@
+[
+    {
+        "input": "Download a file from a URL",
+        "output": "wget http://example.com/file.zip"
+    },
+    {
+        "input": "Download a file and save with a different name",
+        "output": "wget -O newname.zip http://example.com/file.zip"
+    },
+    {
+        "input": "Download a file to a specific directory",
+        "output": "wget -P /tmp http://example.com/file.zip"
+    },
+    {
+        "input": "Download multiple files listed in a text file",
+        "output": "wget -i files.txt"
+    },
+    {
+        "input": "Download a file in the background",
+        "output": "wget -b http://example.com/file.zip"
+    },
+    {
+        "input": "Download a file and continue if interrupted",
+        "output": "wget -c http://example.com/file.zip"
+    },
+    {
+        "input": "Download a file quietly (no output)",
+        "output": "wget -q http://example.com/file.zip"
+    },
+    {
+        "input": "Download a file and show progress bar",
+        "output": "wget --show-progress http://example.com/file.zip"
+    },
+    {
+        "input": "Download a file with a specific user agent",
+        "output": "wget --user-agent=\"Mozilla/5.0\" http://example.com/file.zip"
+    },
+    {
+        "input": "Download a file with HTTP authentication",
+        "output": "wget --user=USERNAME --password=PASSWORD http://example.com/file.zip"
+    },
+    {
+        "input": "Download a file with FTP authentication",
+        "output": "wget --ftp-user=USERNAME --ftp-password=PASSWORD ftp://example.com/file.zip"
+    },
+    {
+        "input": "Download a file over HTTPS",
+        "output": "wget https://example.com/file.zip"
+    },
+    {
+        "input": "Download all files from a website recursively",
+        "output": "wget -r http://example.com/"
+    },
+    {
+        "input": "Download all files from a website recursively and convert links for offline viewing",
+        "output": "wget -r -k http://example.com/"
+    },
+    {
+        "input": "Download all files from a website up to 2 levels deep",
+        "output": "wget -r -l2 http://example.com/"
+    },
+    {
+        "input": "Download all images from a website",
+        "output": "wget -r -A jpg,jpeg,png,gif http://example.com/"
+    },
+    {
+        "input": "Download all PDF files from a website",
+        "output": "wget -r -A pdf http://example.com/"
+    },
+    {
+        "input": "Download only files larger than 1MB",
+        "output": "wget --quota=1m -r http://example.com/"
+    },
+    {
+        "input": "Download only files matching a pattern",
+        "output": "wget -r -A '*.mp3' http://example.com/music/"
+    },
+    {
+        "input": "Download a file with a specific referer",
+        "output": "wget --referer=http://google.com http://example.com/file.zip"
+    },
+    {
+        "input": "Download a file with cookies from a file",
+        "output": "wget --load-cookies cookies.txt http://example.com/file.zip"
+    },
+    {
+        "input": "Save cookies to a file while downloading",
+        "output": "wget --save-cookies cookies.txt http://example.com/file.zip"
+    },
+    {
+        "input": "Download a file with a timeout of 10 seconds",
+        "output": "wget --timeout=10 http://example.com/file.zip"
+    },
+    {
+        "input": "Limit download speed to 100kB/s",
+        "output": "wget --limit-rate=100k http://example.com/file.zip"
+    },
+    {
+        "input": "Download a file and retry up to 5 times",
+        "output": "wget --tries=5 http://example.com/file.zip"
+    },
+    {
+        "input": "Download a file and wait 10 seconds between retries",
+        "output": "wget --wait=10 http://example.com/file.zip"
+    },
+    {
+        "input": "Download a file and ignore certificate errors",
+        "output": "wget --no-check-certificate https://example.com/file.zip"
+    },
+    {
+        "input": "Download a file using IPv4 only",
+        "output": "wget -4 http://example.com/file.zip"
+    },
+    {
+        "input": "Download a file using IPv6 only",
+        "output": "wget -6 http://example.com/file.zip"
+    },
+    {
+        "input": "Download a file using passive FTP",
+        "output": "wget --ftp-pasv ftp://example.com/file.zip"
+    },
+    {
+        "input": "Download a file using active FTP",
+        "output": "wget --no-ftp-pasv ftp://example.com/file.zip"
+    },
+    {
+        "input": "Download a file and append to a log file",
+        "output": "wget -o download.log http://example.com/file.zip"
+    },
+    {
+        "input": "Download a file and append to a log file (append mode)",
+        "output": "wget -a download.log http://example.com/file.zip"
+    },
+    {
+        "input": "Download a file and print server response",
+        "output": "wget -S http://example.com/file.zip"
+    },
+    {
+        "input": "Download a file and print headers only",
+        "output": "wget --server-response --spider http://example.com/file.zip"
+    },
+    {
+        "input": "Download a file and skip certificate check",
+        "output": "wget --no-check-certificate https://example.com/file.zip"
+    },
+    {
+        "input": "Download a file and specify the DNS server",
+        "output": "wget --dns-servers=8.8.8.8 http://example.com/file.zip"
+    },
+    {
+        "input": "Download a file with a custom header",
+        "output": "wget --header=\"X-Test: 123\" http://example.com/file.zip"
+    },
+    {
+        "input": "Download a file and skip SSL verification",
+        "output": "wget --no-check-certificate https://example.com/file.zip"
+    },
+    {
+        "input": "Download a file and skip existing files",
+        "output": "wget -nc http://example.com/file.zip"
+    },
+    {
+        "input": "Download a file and timestamping (only download if newer)",
+        "output": "wget -N http://example.com/file.zip"
+    },
+    {
+        "input": "Download a file and force download even if file exists",
+        "output": "wget -nd http://example.com/file.zip"
+    },
+    {
+        "input": "Download a file and delete after download",
+        "output": "wget --delete-after http://example.com/file.zip"
+    },
+    {
+        "input": "Download a file and set download directory structure",
+        "output": "wget -x http://example.com/file.zip"
+    },
+    {
+        "input": "Download a file and flatten directory structure",
+        "output": "wget -nH http://example.com/file.zip"
+    },
+    {
+        "input": "Download a file and use no directories",
+        "output": "wget -nd http://example.com/file.zip"
+    },
+    {
+        "input": "Download a file and set maximum recursion depth to 3",
+        "output": "wget -r -l3 http://example.com/"
+    },
+    {
+        "input": "Download a file and span hosts",
+        "output": "wget -H -r http://example.com/"
+    },
+    {
+        "input": "Download a file and reject certain file types",
+        "output": "wget -R gif,jpg http://example.com/"
+    },
+    {
+        "input": "Download a file and accept only certain file types",
+        "output": "wget -A pdf,docx http://example.com/"
+    },
+    {
+        "input": "Download a file and set number of connections per server",
+        "output": "wget --limit-rate=200k --wait=2 http://example.com/file.zip"
+    },
+    {
+        "input": "Download a file and specify a proxy",
+        "output": "wget -e use_proxy=yes -e http_proxy=proxy.example.com:8080 http://example.com/file.zip"
+    },
+    {
+        "input": "Download a file and bypass proxy",
+        "output": "wget -e use_proxy=no http://example.com/file.zip"
+    },
+    {
+        "input": "Download a file and specify a proxy username and password",
+        "output": "wget --proxy-user=USER --proxy-password=PASS http://example.com/file.zip"
+    },
+    {
+        "input": "Download a file and use a different output document",
+        "output": "wget -O myfile.txt http://example.com/file.txt"
+    },
+    {
+        "input": "Download a file and set user agent to Chrome",
+        "output": "wget --user-agent=\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/58.0.3029.110\" http://example.com/file.zip"
+    },
+    {
+        "input": "Download a file and set referer to another site",
+        "output": "wget --referer=http://referrer.com http://example.com/file.zip"
+    },
+    {
+        "input": "Download a file and set HTTP header",
+        "output": "wget --header=\"Accept: text/html\" http://example.com/file.zip"
+    },
+    {
+        "input": "Download a file and specify a certificate",
+        "output": "wget --certificate=client.pem --private-key=key.pem --ca-certificate=ca.pem https://example.com/file.zip"
+    },
+    {
+        "input": "Download a file and specify a certificate directory",
+        "output": "wget --ca-directory=/etc/ssl/certs https://example.com/file.zip"
+    },
+    {
+        "input": "Download a file and specify a certificate file",
+        "output": "wget --ca-certificate=ca.pem https://example.com/file.zip"
+    },
+    {
+        "input": "Download a file and specify a client certificate",
+        "output": "wget --certificate=client.pem https://example.com/file.zip"
+    },
+    {
+        "input": "Download a file and specify a client private key",
+        "output": "wget --private-key=key.pem https://example.com/file.zip"
+    },
+    {
+        "input": "Download a file and specify a certificate password",
+        "output": "wget --certificate-type=PEM --private-key=key.pem --ca-certificate=ca.pem --ask-password https://example.com/file.zip"
+    },
+    {
+        "input": "Download a file and specify an HSTS database",
+        "output": "wget --hsts-file=hsts.txt https://example.com/file.zip"
+    },
+    {
+        "input": "Download a file and ignore HSTS",
+        "output": "wget --no-hsts https://example.com/file.zip"
+    },
+    {
+        "input": "Download a file and use FTP passive mode",
+        "output": "wget --ftp-pasv ftp://example.com/file.zip"
+    },
+    {
+        "input": "Download a file and use FTP active mode",
+        "output": "wget --no-ftp-pasv ftp://example.com/file.zip"
+    },
+    {
+        "input": "Download all files from a directory on FTP server",
+        "output": "wget -r ftp://example.com/dir/"
+    },
+    {
+        "input": "Download a file with FTP username and password",
+        "output": "wget --ftp-user=USER --ftp-password=PASS ftp://example.com/file.zip"
+    },
+    {
+        "input": "Download using HTTP POST",
+        "output": "wget --post-data='name=value' http://example.com/form"
+    },
+    {
+        "input": "Download using HTTP POST from a file",
+        "output": "wget --post-file=data.txt http://example.com/form"
+    },
+    {
+        "input": "Download a file and specify a timeout for DNS lookup",
+        "output": "wget --dns-timeout=10 http://example.com/file.zip"
+    },
+    {
+        "input": "Download a file and specify a timeout for connect",
+        "output": "wget --connect-timeout=10 http://example.com/file.zip"
+    },
+    {
+        "input": "Download a file and specify a timeout for read",
+        "output": "wget --read-timeout=10 http://example.com/file.zip"
+    },
+    {
+        "input": "Download a file and specify a timeout for all operations",
+        "output": "wget --timeout=10 http://example.com/file.zip"
+    },
+    {
+        "input": "Download a file and specify a maximum number of redirects",
+        "output": "wget --max-redirect=5 http://example.com/file.zip"
+    },
+    {
+        "input": "Download a file and disable following redirects",
+        "output": "wget --max-redirect=0 http://example.com/file.zip"
+    },
+    {
+        "input": "Download a file and enable following FTP links from HTML",
+        "output": "wget --follow-ftp http://example.com/"
+    },
+    {
+        "input": "Download a file and disable following FTP links from HTML",
+        "output": "wget --no-follow-ftp http://example.com/"
+    },
+    {
+        "input": "Download a file and enable following robots.txt",
+        "output": "wget --robots=on http://example.com/"
+    },
+    {
+        "input": "Download a file and disable following robots.txt",
+        "output": "wget --robots=off http://example.com/"
+    },
+    {
+        "input": "Download a file and set wait between downloads to 1 second",
+        "output": "wget --wait=1 -r http://example.com/"
+    },
+    {
+        "input": "Download a file and set random wait between downloads",
+        "output": "wget --random-wait -r http://example.com/"
+    },
+    {
+        "input": "Download a file and mirror a website",
+        "output": "wget --mirror http://example.com/"
+    },
+    {
+        "input": "Download a file and mirror a website with timestamping",
+        "output": "wget --mirror --timestamping http://example.com/"
+    },
+    {
+        "input": "Download a file and mirror a website with compression",
+        "output": "wget --mirror --compression=auto http://example.com/"
+    },
+    {
+        "input": "Download a file and mirror a website with no parent directories",
+        "output": "wget --mirror --no-parent http://example.com/"
+    },
+    {
+        "input": "Download a file and mirror a website with backup",
+        "output": "wget --mirror --backup-converted http://example.com/"
+    },
+    {
+        "input": "Download a file and mirror a website with no cache",
+        "output": "wget --mirror --no-cache http://example.com/"
+    },
+    {
+        "input": "Download a file and mirror a website with no cookies",
+        "output": "wget --mirror --no-cookies http://example.com/"
+    },
+    {
+        "input": "Download a file and mirror a website with no check certificate",
+        "output": "wget --mirror --no-check-certificate http://example.com/"
+    },
+    {
+        "input": "Download a file and mirror a website with no robots",
+        "output": "wget --mirror --no-robots http://example.com/"
+    },
+    {
+        "input": "Download a file and mirror a website with no verbose",
+        "output": "wget --mirror --no-verbose http://example.com/"
+    },
+    {
+        "input": "Download a file and mirror a website with verbose",
+        "output": "wget --mirror --verbose http://example.com/"
+    },
+    {
+        "input": "Download a file and mirror a website with debug",
+        "output": "wget --mirror --debug http://example.com/"
+    },
+    {
+        "input": "Download a file and mirror a website with quiet",
+        "output": "wget --mirror --quiet http://example.com/"
+    },
+    {
+        "input": "Download a file and mirror a website with append output",
+        "output": "wget --mirror --append-output=log.txt http://example.com/"
+    },
+    {
+        "input": "Download a file and mirror a website with output file",
+        "output": "wget --mirror --output-file=log.txt http://example.com/"
+    },
+    {
+        "input": "Download a file and mirror a website with output document",
+        "output": "wget --mirror --output-document=output.html http://example.com/"
+    },
+    {
+        "input": "Download a file and mirror a website with output directory",
+        "output": "wget --mirror --directory-prefix=/tmp http://example.com/"
+    },
+    {
+        "input": "Download a file and mirror a website with output file and directory",
+        "output": "wget --mirror --output-file=log.txt --directory-prefix=/tmp http://example.com/"
+    },
+    {
+        "input": "Download a file and mirror a website with output file and document",
+        "output": "wget --mirror --output-file=log.txt --output-document=output.html http://example.com/"
+    },
+    {
+        "input": "Download a file and mirror a website with output file, document, and directory",
+        "output": "wget --mirror --output-file=log.txt --output-document=output.html --directory-prefix=/tmp http://example.com/"
+    },
+    {
+        "input": "Download a file and mirror a website with output file, document, directory, and quiet",
+        "output": "wget --mirror --output-file=log.txt --output-document=output.html --directory-prefix=/tmp --quiet http://example.com/"
+    },
+    {
+        "input": "Download a file and mirror a website with output file, document, directory, quiet, and debug",
+        "output": "wget --mirror --output-file=log.txt --output-document=output.html --directory-prefix=/tmp --quiet --debug http://example.com/"
+    },
+    {
+        "input": "Download a file and mirror a website with output file, document, directory, quiet, debug, and verbose",
+        "output": "wget --mirror --output-file=log.txt --output-document=output.html --directory-prefix=/tmp --quiet --debug --verbose http://example.com/"
+    },
+    {
+        "input": "Display wget help",
+        "output": "wget --help"
+    },
+    {
+        "input": "Display wget version",
+        "output": "wget --version"
+    }
+]

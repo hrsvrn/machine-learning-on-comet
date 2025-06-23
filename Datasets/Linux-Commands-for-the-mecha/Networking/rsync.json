@@ -1,0 +1,426 @@
+[
+    {
+        "input": "Sync files locally with verbose output",
+        "output": "rsync -v source_dir/ destination_dir/"
+    },
+    {
+        "input": "Sync files with archive mode (preserves permissions, ownership, timestamps)",
+        "output": "rsync -a source_dir/ destination_dir/"
+    },
+    {
+        "input": "Sync files with archive mode and verbose output",
+        "output": "rsync -av source_dir/ destination_dir/"
+    },
+    {
+        "input": "Sync files with progress indicator",
+        "output": "rsync -avP source_dir/ destination_dir/"
+    },
+    {
+        "input": "Sync files with human-readable sizes",
+        "output": "rsync -avh source_dir/ destination_dir/"
+    },
+    {
+        "input": "Sync files with compression during transfer",
+        "output": "rsync -avz source_dir/ destination_dir/"
+    },
+    {
+        "input": "Sync files with compression and progress",
+        "output": "rsync -avzP source_dir/ destination_dir/"
+    },
+    {
+        "input": "Sync files to a remote server",
+        "output": "rsync -avz source_dir/ user@remote_host:/destination_dir/"
+    },
+    {
+        "input": "Sync files from a remote server",
+        "output": "rsync -avz user@remote_host:/source_dir/ destination_dir/"
+    },
+    {
+        "input": "Sync files using a specific SSH port",
+        "output": "rsync -avz -e 'ssh -p 2222' source_dir/ user@remote_host:/destination_dir/"
+    },
+    {
+        "input": "Sync files and delete extraneous files at destination",
+        "output": "rsync -avz --delete source_dir/ destination_dir/"
+    },
+    {
+        "input": "Sync files and show what would be transferred without actually transferring",
+        "output": "rsync -avzn source_dir/ destination_dir/"
+    },
+    {
+        "input": "Sync files excluding specific patterns",
+        "output": "rsync -avz --exclude='*.log' source_dir/ destination_dir/"
+    },
+    {
+        "input": "Sync files excluding multiple patterns",
+        "output": "rsync -avz --exclude='*.log' --exclude='*.tmp' source_dir/ destination_dir/"
+    },
+    {
+        "input": "Sync files using an exclude file",
+        "output": "rsync -avz --exclude-from=exclude.txt source_dir/ destination_dir/"
+    },
+    {
+        "input": "Sync files including only specific patterns",
+        "output": "rsync -avz --include='*.txt' --exclude='*' source_dir/ destination_dir/"
+    },
+    {
+        "input": "Sync files with a size limit (max 1MB)",
+        "output": "rsync -avz --max-size=1m source_dir/ destination_dir/"
+    },
+    {
+        "input": "Sync files with a minimum size (min 1KB)",
+        "output": "rsync -avz --min-size=1k source_dir/ destination_dir/"
+    },
+    {
+        "input": "Sync files modified after a specific date",
+        "output": "rsync -avz --files-from=<(find source_dir/ -type f -newermt '2023-01-01') source_dir/ destination_dir/"
+    },
+    {
+        "input": "Sync files and create parent directories",
+        "output": "rsync -avz --mkpath source_dir/ destination_dir/new_subdir/"
+    },
+    {
+        "input": "Sync files and keep partially transferred files",
+        "output": "rsync -avz --partial source_dir/ destination_dir/"
+    },
+    {
+        "input": "Sync files and keep partially transferred files for resuming later",
+        "output": "rsync -avz --partial --progress source_dir/ destination_dir/"
+    },
+    {
+        "input": "Sync files with a bandwidth limit (1MB/s)",
+        "output": "rsync -avz --bwlimit=1000 source_dir/ destination_dir/"
+    },
+    {
+        "input": "Sync files and create backups of changed files",
+        "output": "rsync -avz --backup source_dir/ destination_dir/"
+    },
+    {
+        "input": "Sync files and create backups with custom suffix",
+        "output": "rsync -avz --backup --suffix=.bak source_dir/ destination_dir/"
+    },
+    {
+        "input": "Sync files and store backups in a separate directory",
+        "output": "rsync -avz --backup --backup-dir=/path/to/backups source_dir/ destination_dir/"
+    },
+    {
+        "input": "Sync files and only update if destination is older",
+        "output": "rsync -avzu source_dir/ destination_dir/"
+    },
+    {
+        "input": "Sync files and skip files that are newer on the receiver",
+        "output": "rsync -avz --update source_dir/ destination_dir/"
+    },
+    {
+        "input": "Sync files and ignore existing files",
+        "output": "rsync -avz --ignore-existing source_dir/ destination_dir/"
+    },
+    {
+        "input": "Sync files and remove source files after transfer",
+        "output": "rsync -avz --remove-source-files source_dir/ destination_dir/"
+    },
+    {
+        "input": "Sync files and preserve hard links",
+        "output": "rsync -avzH source_dir/ destination_dir/"
+    },
+    {
+        "input": "Sync files and preserve ACLs",
+        "output": "rsync -avzA source_dir/ destination_dir/"
+    },
+    {
+        "input": "Sync files and preserve extended attributes",
+        "output": "rsync -avzX source_dir/ destination_dir/"
+    },
+    {
+        "input": "Sync files and preserve all attributes (ACLs, xattrs, hard links)",
+        "output": "rsync -avzHAX source_dir/ destination_dir/"
+    },
+    {
+        "input": "Sync files and show detailed information about the transfer",
+        "output": "rsync -avzi source_dir/ destination_dir/"
+    },
+    {
+        "input": "Sync files and show checksum information",
+        "output": "rsync -avzc source_dir/ destination_dir/"
+    },
+    {
+        "input": "Sync files using checksum for file comparison instead of size+mtime",
+        "output": "rsync -avzc --checksum source_dir/ destination_dir/"
+    },
+    {
+        "input": "Sync files and show overall progress",
+        "output": "rsync -avz --info=progress2 source_dir/ destination_dir/"
+    },
+    {
+        "input": "Sync files and show individual file progress",
+        "output": "rsync -avz --info=progress2 --info=name0 source_dir/ destination_dir/"
+    },
+    {
+        "input": "Sync files with a specific timeout",
+        "output": "rsync -avz --timeout=60 source_dir/ destination_dir/"
+    },
+    {
+        "input": "Sync files and don't cross filesystem boundaries",
+        "output": "rsync -avzx source_dir/ destination_dir/"
+    },
+    {
+        "input": "Sync files and copy symlinks as symlinks",
+        "output": "rsync -avzl source_dir/ destination_dir/"
+    },
+    {
+        "input": "Sync files and transform symlinks to their referent files/dirs",
+        "output": "rsync -avzL source_dir/ destination_dir/"
+    },
+    {
+        "input": "Sync files and copy symlinks as regular files",
+        "output": "rsync -avzL --copy-links source_dir/ destination_dir/"
+    },
+    {
+        "input": "Sync files and copy unsafe symlinks as regular files",
+        "output": "rsync -avz --copy-unsafe-links source_dir/ destination_dir/"
+    },
+    {
+        "input": "Sync files and ignore symlinks",
+        "output": "rsync -avz --links --safe-links source_dir/ destination_dir/"
+    },
+    {
+        "input": "Sync files and don't preserve group",
+        "output": "rsync -avz --no-g source_dir/ destination_dir/"
+    },
+    {
+        "input": "Sync files and don't preserve owner",
+        "output": "rsync -avz --no-o source_dir/ destination_dir/"
+    },
+    {
+        "input": "Sync files and don't preserve permissions",
+        "output": "rsync -avz --no-p source_dir/ destination_dir/"
+    },
+    {
+        "input": "Sync files and don't preserve timestamps",
+        "output": "rsync -avz --no-t source_dir/ destination_dir/"
+    },
+    {
+        "input": "Sync files and don't preserve device files",
+        "output": "rsync -avz --no-D source_dir/ destination_dir/"
+    },
+    {
+        "input": "Sync files and don't preserve special files",
+        "output": "rsync -avz --no-specials source_dir/ destination_dir/"
+    },
+    {
+        "input": "Sync files and modify file permissions",
+        "output": "rsync -avz --chmod=u+rwx,g+rx,o+rx source_dir/ destination_dir/"
+    },
+    {
+        "input": "Sync files and set specific permissions",
+        "output": "rsync -avz --chmod=644 source_dir/ destination_dir/"
+    },
+    {
+        "input": "Sync files and filter using patterns from a file",
+        "output": "rsync -avz --filter='merge filter_rules.txt' source_dir/ destination_dir/"
+    },
+    {
+        "input": "Sync files and filter using multiple rules",
+        "output": "rsync -avz --filter='- *.log' --filter='+ *.txt' --filter='- *' source_dir/ destination_dir/"
+    },
+    {
+        "input": "Sync files and protect remote args from shell interpretation",
+        "output": "rsync -avz -s source_dir/ user@remote_host:/destination_dir/"
+    },
+    {
+        "input": "Sync files and specify a custom SSH key",
+        "output": "rsync -avz -e 'ssh -i /path/to/private_key' source_dir/ user@remote_host:/destination_dir/"
+    },
+    {
+        "input": "Sync files and specify a custom SSH config",
+        "output": "rsync -avz -e 'ssh -F /path/to/ssh_config' source_dir/ user@remote_host:/destination_dir/"
+    },
+    {
+        "input": "Sync files and specify a custom rsync path on the remote machine",
+        "output": "rsync -avz --rsync-path='sudo rsync' source_dir/ user@remote_host:/destination_dir/"
+    },
+    {
+        "input": "Sync files and specify a custom remote shell",
+        "output": "rsync -avz -e 'ssh -o StrictHostKeyChecking=no' source_dir/ user@remote_host:/destination_dir/"
+    },
+    {
+        "input": "Sync files and specify a custom compression level",
+        "output": "rsync -avz --compress-level=9 source_dir/ destination_dir/"
+    },
+    {
+        "input": "Sync files and specify a custom block size",
+        "output": "rsync -avz --block-size=1024 source_dir/ destination_dir/"
+    },
+    {
+        "input": "Sync files and specify a custom IO buffer size",
+        "output": "rsync -avz --io-timeout=60 source_dir/ destination_dir/"
+    },
+    {
+        "input": "Sync files and specify a custom socket options",
+        "output": "rsync -avz --sockopts=TCP_NODELAY source_dir/ destination_dir/"
+    },
+    {
+        "input": "Sync files and specify a custom temp directory",
+        "output": "rsync -avz --temp-dir=/tmp/rsync source_dir/ destination_dir/"
+    },
+    {
+        "input": "Sync files and specify a custom log file",
+        "output": "rsync -avz --log-file=/var/log/rsync.log source_dir/ destination_dir/"
+    },
+    {
+        "input": "Sync files and specify a custom log file format",
+        "output": "rsync -avz --log-file-format='%i %n%L' source_dir/ destination_dir/"
+    },
+    {
+        "input": "Sync files and specify a custom outgoing port",
+        "output": "rsync -avz --port=8730 source_dir/ destination_dir/"
+    },
+    {
+        "input": "Sync files and specify a custom address to bind to",
+        "output": "rsync -avz --address=192.168.1.100 source_dir/ destination_dir/"
+    },
+    {
+        "input": "Sync files and specify a custom numeric IDs",
+        "output": "rsync -avz --numeric-ids source_dir/ destination_dir/"
+    },
+    {
+        "input": "Sync files and specify a custom daemon access",
+        "output": "rsync -avz rsync://user@host:port/module/path destination_dir/"
+    },
+    {
+        "input": "Sync files and specify a custom daemon config",
+        "output": "rsync -avz --config=/etc/rsyncd.conf source_dir/ destination_dir/"
+    },
+    {
+        "input": "Sync files and specify a custom daemon port",
+        "output": "rsync -avz --port=8730 rsync://user@host/module/path destination_dir/"
+    },
+    {
+        "input": "Sync files and specify a custom daemon password file",
+        "output": "rsync -avz --password-file=/path/to/password.txt rsync://user@host/module/path destination_dir/"
+    },
+    {
+        "input": "Sync files and specify a custom daemon module",
+        "output": "rsync -avz rsync://user@host/module/ destination_dir/"
+    },
+    {
+        "input": "Sync files and specify a custom daemon user",
+        "output": "rsync -avz --daemon --uid=nobody source_dir/ destination_dir/"
+    },
+    {
+        "input": "Sync files and specify a custom daemon group",
+        "output": "rsync -avz --daemon --gid=nogroup source_dir/ destination_dir/"
+    },
+    {
+        "input": "Sync files and specify a custom daemon chroot",
+        "output": "rsync -avz --daemon --chroot source_dir/ destination_dir/"
+    },
+    {
+        "input": "Sync files and specify a custom daemon log file",
+        "output": "rsync -avz --daemon --log-file=/var/log/rsyncd.log source_dir/ destination_dir/"
+    },
+    {
+        "input": "Sync files and specify a custom daemon pid file",
+        "output": "rsync -avz --daemon --pid-file=/var/run/rsyncd.pid source_dir/ destination_dir/"
+    },
+    {
+        "input": "Sync files and specify a custom daemon socket",
+        "output": "rsync -avz --daemon --socket=/var/run/rsyncd.sock source_dir/ destination_dir/"
+    },
+    {
+        "input": "Sync files and specify a custom daemon no detach",
+        "output": "rsync -avz --daemon --no-detach source_dir/ destination_dir/"
+    },
+    {
+        "input": "Sync files and specify a custom daemon address",
+        "output": "rsync -avz --daemon --address=192.168.1.100 source_dir/ destination_dir/"
+    },
+    {
+        "input": "Sync files and specify a custom daemon port",
+        "output": "rsync -avz --daemon --port=8730 source_dir/ destination_dir/"
+    },
+    {
+        "input": "Sync files and specify a custom daemon config",
+        "output": "rsync -avz --daemon --config=/etc/rsyncd.conf source_dir/ destination_dir/"
+    },
+    {
+        "input": "Sync files and specify a custom daemon max connections",
+        "output": "rsync -avz --daemon --max-connections=10 source_dir/ destination_dir/"
+    },
+    {
+        "input": "Sync files and specify a custom daemon timeout",
+        "output": "rsync -avz --daemon --timeout=60 source_dir/ destination_dir/"
+    },
+    {
+        "input": "Sync files and specify a custom daemon motd file",
+        "output": "rsync -avz --daemon --motd-file=/etc/rsyncd.motd source_dir/ destination_dir/"
+    },
+    {
+        "input": "Sync files and specify a custom daemon secrets file",
+        "output": "rsync -avz --daemon --secrets-file=/etc/rsyncd.secrets source_dir/ destination_dir/"
+    },
+    {
+        "input": "Sync files and specify a custom daemon auth users",
+        "output": "rsync -avz --daemon --auth-users=user1,user2 source_dir/ destination_dir/"
+    },
+    {
+        "input": "Sync files and specify a custom daemon hosts allow",
+        "output": "rsync -avz --daemon --hosts-allow=192.168.1.0/24 source_dir/ destination_dir/"
+    },
+    {
+        "input": "Sync files and specify a custom daemon hosts deny",
+        "output": "rsync -avz --daemon --hosts-deny=10.0.0.0/8 source_dir/ destination_dir/"
+    },
+    {
+        "input": "Sync files and specify a custom daemon read only",
+        "output": "rsync -avz --daemon --read-only source_dir/ destination_dir/"
+    },
+    {
+        "input": "Sync files and specify a custom daemon write only",
+        "output": "rsync -avz --daemon --write-only source_dir/ destination_dir/"
+    },
+    {
+        "input": "Sync files and specify a custom daemon list",
+        "output": "rsync -avz --daemon --list source_dir/ destination_dir/"
+    },
+    {
+        "input": "Sync files and specify a custom daemon refuse options",
+        "output": "rsync -avz --daemon --refuse-options=delete source_dir/ destination_dir/"
+    },
+    {
+        "input": "Sync files and specify a custom daemon dont compress",
+        "output": "rsync -avz --daemon --dont-compress=*.gz,*.zip source_dir/ destination_dir/"
+    },
+    {
+        "input": "Sync files and specify a custom daemon pre-xfer exec",
+        "output": "rsync -avz --daemon --pre-xfer-exec=/path/to/script source_dir/ destination_dir/"
+    },
+    {
+        "input": "Sync files and specify a custom daemon post-xfer exec",
+        "output": "rsync -avz --daemon --post-xfer-exec=/path/to/script source_dir/ destination_dir/"
+    },
+    {
+        "input": "Sync files and specify a custom daemon incoming chmod",
+        "output": "rsync -avz --daemon --incoming-chmod=Du=rwx,go=rx,Fu=rw,go=r source_dir/ destination_dir/"
+    },
+    {
+        "input": "Sync files and specify a custom daemon outgoing chmod",
+        "output": "rsync -avz --daemon --outgoing-chmod=Du=rwx,go=rx,Fu=rw,go=r source_dir/ destination_dir/"
+    },
+    {
+        "input": "Sync files and specify a custom daemon fake super",
+        "output": "rsync -avz --daemon --fake-super source_dir/ destination_dir/"
+    },
+    {
+        "input": "Sync files and specify a custom daemon munge symlinks",
+        "output": "rsync -avz --daemon --munge-symlinks source_dir/ destination_dir/"
+    },
+    {
+        "input": "Sync files and specify a custom daemon use chroot",
+        "output": "rsync -avz --daemon --use-chroot source_dir/ destination_dir/"
+    },
+    {
+        "input": "Sync files and specify a custom daemon strict modes",
+        "output": "rsync -avz --daemon --strict-modes source_dir/ destination_dir/"
+    }
+]

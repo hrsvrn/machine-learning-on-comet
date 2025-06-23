@@ -1,0 +1,586 @@
+[
+    {
+        "input": "Show NetworkManager status",
+        "output": "nmcli general status"
+    },
+    {
+        "input": "Show NetworkManager connectivity state",
+        "output": "nmcli -t -f STATE general"
+    },
+    {
+        "input": "Show NetworkManager running status",
+        "output": "nmcli -t -f RUNNING general"
+    },
+    {
+        "input": "Show NetworkManager logging configuration",
+        "output": "nmcli general logging"
+    },
+    {
+        "input": "Set NetworkManager logging to DEBUG level",
+        "output": "nmcli general logging level DEBUG domains CORE,ETHER,IP"
+    },
+    {
+        "input": "Reset NetworkManager logging to default",
+        "output": "nmcli general logging level INFO domains DEFAULT"
+    },
+    {
+        "input": "Show NetworkManager permissions",
+        "output": "nmcli general permissions"
+    },
+    {
+        "input": "Show NetworkManager hostname",
+        "output": "nmcli general hostname"
+    },
+    {
+        "input": "Set NetworkManager hostname",
+        "output": "nmcli general hostname myserver.local"
+    },
+    {
+        "input": "Enable NetworkManager networking",
+        "output": "nmcli networking on"
+    },
+    {
+        "input": "Disable NetworkManager networking",
+        "output": "nmcli networking off"
+    },
+    {
+        "input": "Show NetworkManager networking state",
+        "output": "nmcli networking"
+    },
+    {
+        "input": "Show all radio switches status",
+        "output": "nmcli radio all"
+    },
+    {
+        "input": "Enable WiFi radio",
+        "output": "nmcli radio wifi on"
+    },
+    {
+        "input": "Disable WiFi radio",
+        "output": "nmcli radio wifi off"
+    },
+    {
+        "input": "Enable WWAN radio",
+        "output": "nmcli radio wwan on"
+    },
+    {
+        "input": "Disable WWAN radio",
+        "output": "nmcli radio wwan off"
+    },
+    {
+        "input": "List all connections",
+        "output": "nmcli connection show"
+    },
+    {
+        "input": "List active connections",
+        "output": "nmcli connection show --active"
+    },
+    {
+        "input": "Show details of a specific connection",
+        "output": "nmcli connection show \"My Connection\""
+    },
+    {
+        "input": "Show specific fields of a connection",
+        "output": "nmcli -f NAME,UUID,TYPE,DEVICE connection show"
+    },
+    {
+        "input": "Activate a connection",
+        "output": "nmcli connection up \"My Connection\""
+    },
+    {
+        "input": "Deactivate a connection",
+        "output": "nmcli connection down \"My Connection\""
+    },
+    {
+        "input": "Add a new Ethernet connection",
+        "output": "nmcli connection add type ethernet con-name \"My Ethernet\" ifname eth0"
+    },
+    {
+        "input": "Add a new Ethernet connection with static IP",
+        "output": "nmcli connection add type ethernet con-name \"Static Ethernet\" ifname eth0 ip4 192.168.1.100/24 gw4 192.168.1.1"
+    },
+    {
+        "input": "Add a new Ethernet connection with static IP and DNS",
+        "output": "nmcli connection add type ethernet con-name \"Static Ethernet DNS\" ifname eth0 ip4 192.168.1.100/24 gw4 192.168.1.1 ipv4.dns \"8.8.8.8 8.8.4.4\""
+    },
+    {
+        "input": "Add a new WiFi connection",
+        "output": "nmcli connection add type wifi con-name \"My WiFi\" ifname wlan0 ssid MyNetwork"
+    },
+    {
+        "input": "Add a new WiFi connection with password",
+        "output": "nmcli connection add type wifi con-name \"Secure WiFi\" ifname wlan0 ssid MyNetwork wifi-sec.key-mgmt wpa-psk wifi-sec.psk \"mypassword\""
+    },
+    {
+        "input": "Add a new WiFi connection with hidden SSID",
+        "output": "nmcli connection add type wifi con-name \"Hidden WiFi\" ifname wlan0 ssid MyHiddenNetwork wifi.hidden yes"
+    },
+    {
+        "input": "Modify a connection's IP address",
+        "output": "nmcli connection modify \"My Connection\" ipv4.addresses 192.168.1.200/24"
+    },
+    {
+        "input": "Modify a connection's gateway",
+        "output": "nmcli connection modify \"My Connection\" ipv4.gateway 192.168.1.1"
+    },
+    {
+        "input": "Modify a connection's DNS servers",
+        "output": "nmcli connection modify \"My Connection\" ipv4.dns \"8.8.8.8 1.1.1.1\""
+    },
+    {
+        "input": "Modify a connection to use DHCP",
+        "output": "nmcli connection modify \"My Connection\" ipv4.method auto"
+    },
+    {
+        "input": "Modify a connection to use static IP",
+        "output": "nmcli connection modify \"My Connection\" ipv4.method manual"
+    },
+    {
+        "input": "Modify a connection to disable IPv4",
+        "output": "nmcli connection modify \"My Connection\" ipv4.method disabled"
+    },
+    {
+        "input": "Modify a connection to disable IPv6",
+        "output": "nmcli connection modify \"My Connection\" ipv6.method ignore"
+    },
+    {
+        "input": "Modify a connection's MTU",
+        "output": "nmcli connection modify \"My Connection\" ethernet.mtu 9000"
+    },
+    {
+        "input": "Modify a connection's MAC address",
+        "output": "nmcli connection modify \"My Connection\" ethernet.cloned-mac-address 00:11:22:33:44:55"
+    },
+    {
+        "input": "Modify a connection to auto-connect",
+        "output": "nmcli connection modify \"My Connection\" connection.autoconnect yes"
+    },
+    {
+        "input": "Modify a connection to not auto-connect",
+        "output": "nmcli connection modify \"My Connection\" connection.autoconnect no"
+    },
+    {
+        "input": "Modify a connection's priority",
+        "output": "nmcli connection modify \"My Connection\" connection.autoconnect-priority 10"
+    },
+    {
+        "input": "Delete a connection",
+        "output": "nmcli connection delete \"My Connection\""
+    },
+    {
+        "input": "Reload all connection files",
+        "output": "nmcli connection reload"
+    },
+    {
+        "input": "Load a specific connection file",
+        "output": "nmcli connection load /etc/NetworkManager/system-connections/my-connection.nmconnection"
+    },
+    {
+        "input": "Show all network devices",
+        "output": "nmcli device"
+    },
+    {
+        "input": "Show network device status",
+        "output": "nmcli device status"
+    },
+    {
+        "input": "Show detailed information about all devices",
+        "output": "nmcli device show"
+    },
+    {
+        "input": "Show detailed information about a specific device",
+        "output": "nmcli device show eth0"
+    },
+    {
+        "input": "Connect a device using a specific connection",
+        "output": "nmcli device connect eth0"
+    },
+    {
+        "input": "Disconnect a device",
+        "output": "nmcli device disconnect eth0"
+    },
+    {
+        "input": "Set a device to managed mode",
+        "output": "nmcli device set eth0 managed yes"
+    },
+    {
+        "input": "Set a device to unmanaged mode",
+        "output": "nmcli device set eth0 managed no"
+    },
+    {
+        "input": "Enable device autoconnect",
+        "output": "nmcli device set eth0 autoconnect yes"
+    },
+    {
+        "input": "Disable device autoconnect",
+        "output": "nmcli device set eth0 autoconnect no"
+    },
+    {
+        "input": "Reapply device configuration",
+        "output": "nmcli device reapply eth0"
+    },
+    {
+        "input": "Modify device configuration",
+        "output": "nmcli device modify eth0 ipv4.addresses 192.168.1.100/24"
+    },
+    {
+        "input": "Scan for available WiFi networks",
+        "output": "nmcli device wifi list"
+    },
+    {
+        "input": "Scan for available WiFi networks with signal strength",
+        "output": "nmcli -f SSID,SIGNAL,SECURITY device wifi list"
+    },
+    {
+        "input": "Scan for available WiFi networks on a specific interface",
+        "output": "nmcli device wifi list ifname wlan0"
+    },
+    {
+        "input": "Rescan for available WiFi networks",
+        "output": "nmcli device wifi rescan"
+    },
+    {
+        "input": "Connect to a WiFi network",
+        "output": "nmcli device wifi connect MyNetwork"
+    },
+    {
+        "input": "Connect to a WiFi network with password",
+        "output": "nmcli device wifi connect MyNetwork password \"mypassword\""
+    },
+    {
+        "input": "Connect to a WiFi network with a specific interface",
+        "output": "nmcli device wifi connect MyNetwork password \"mypassword\" ifname wlan0"
+    },
+    {
+        "input": "Connect to a hidden WiFi network",
+        "output": "nmcli device wifi connect MyHiddenNetwork password \"mypassword\" hidden yes"
+    },
+    {
+        "input": "Create a WiFi hotspot",
+        "output": "nmcli device wifi hotspot"
+    },
+    {
+        "input": "Create a WiFi hotspot with custom SSID and password",
+        "output": "nmcli device wifi hotspot ssid MyHotspot password \"mypassword\""
+    },
+    {
+        "input": "Create a WiFi hotspot on a specific interface",
+        "output": "nmcli device wifi hotspot ifname wlan0 ssid MyHotspot password \"mypassword\""
+    },
+    {
+        "input": "Show WiFi hotspot password",
+        "output": "nmcli device wifi show-password"
+    },
+    {
+        "input": "Monitor NetworkManager activity",
+        "output": "nmcli monitor"
+    },
+    {
+        "input": "Add a bond connection",
+        "output": "nmcli connection add type bond con-name MyBond ifname bond0 mode active-backup"
+    },
+    {
+        "input": "Add a bond slave connection",
+        "output": "nmcli connection add type ethernet con-name bond-slave-eth0 ifname eth0 master bond0"
+    },
+    {
+        "input": "Add a bridge connection",
+        "output": "nmcli connection add type bridge con-name MyBridge ifname br0"
+    },
+    {
+        "input": "Add a bridge slave connection",
+        "output": "nmcli connection add type ethernet con-name bridge-slave-eth0 ifname eth0 master br0"
+    },
+    {
+        "input": "Add a team connection",
+        "output": "nmcli connection add type team con-name MyTeam ifname team0 config '{\"runner\": {\"name\": \"activebackup\"}}'"
+    },
+    {
+        "input": "Add a team slave connection",
+        "output": "nmcli connection add type ethernet con-name team-slave-eth0 ifname eth0 master team0"
+    },
+    {
+        "input": "Add a VLAN connection",
+        "output": "nmcli connection add type vlan con-name MyVLAN dev eth0 id 100"
+    },
+    {
+        "input": "Add a VPN connection (OpenVPN)",
+        "output": "nmcli connection add type vpn con-name MyVPN vpn-type openvpn ifname eth0 vpn.data \"connection-type=password,username=myuser\""
+    },
+    {
+        "input": "Add a VPN connection (L2TP)",
+        "output": "nmcli connection add type vpn con-name MyL2TP vpn-type l2tp ifname eth0 vpn.data \"gateway=vpn.example.com,user=myuser\""
+    },
+    {
+        "input": "Add a GSM connection",
+        "output": "nmcli connection add type gsm con-name MyGSM ifname ttyUSB0 apn internet"
+    },
+    {
+        "input": "Add a CDMA connection",
+        "output": "nmcli connection add type cdma con-name MyCDMA ifname ttyUSB0"
+    },
+    {
+        "input": "Add a Bluetooth connection",
+        "output": "nmcli connection add type bluetooth con-name MyBluetooth ifname hci0"
+    },
+    {
+        "input": "Add an InfiniBand connection",
+        "output": "nmcli connection add type infiniband con-name MyIB ifname ib0"
+    },
+    {
+        "input": "Add a WireGuard connection",
+        "output": "nmcli connection add type wireguard con-name MyWireGuard ifname wg0 ipv4.method manual ipv4.addresses 10.0.0.2/24"
+    },
+    {
+        "input": "Edit a connection in interactive mode",
+        "output": "nmcli connection edit \"My Connection\""
+    },
+    {
+        "input": "Clone a connection",
+        "output": "nmcli connection clone \"My Connection\" \"My Connection Clone\""
+    },
+    {
+        "input": "Import a VPN connection from file",
+        "output": "nmcli connection import type openvpn file /path/to/config.ovpn"
+    },
+    {
+        "input": "Export a connection to a file",
+        "output": "nmcli connection export \"My Connection\" /path/to/export.conf"
+    },
+    {
+        "input": "Show connection secrets",
+        "output": "nmcli --show-secrets connection show \"My Connection\""
+    },
+    {
+        "input": "Add a connection with a specific UUID",
+        "output": "nmcli connection add type ethernet con-name \"My Ethernet\" ifname eth0 uuid 00000000-0000-0000-0000-000000000000"
+    },
+    {
+        "input": "Add a connection with a specific interface name",
+        "output": "nmcli connection add type ethernet con-name \"My Ethernet\" ifname eth0"
+    },
+    {
+        "input": "Add a connection with a specific MAC address",
+        "output": "nmcli connection add type ethernet con-name \"My Ethernet\" ifname eth0 ethernet.mac-address 00:11:22:33:44:55"
+    },
+    {
+        "input": "Add a connection with a specific MTU",
+        "output": "nmcli connection add type ethernet con-name \"My Ethernet\" ifname eth0 ethernet.mtu 9000"
+    },
+    {
+        "input": "Add a connection with a specific DNS search domain",
+        "output": "nmcli connection add type ethernet con-name \"My Ethernet\" ifname eth0 ipv4.dns-search \"example.com\""
+    },
+    {
+        "input": "Add a connection with a specific DNS priority",
+        "output": "nmcli connection add type ethernet con-name \"My Ethernet\" ifname eth0 ipv4.dns-priority 100"
+    },
+    {
+        "input": "Add a connection with a specific route metric",
+        "output": "nmcli connection add type ethernet con-name \"My Ethernet\" ifname eth0 ipv4.route-metric 100"
+    },
+    {
+        "input": "Add a connection with a specific route",
+        "output": "nmcli connection add type ethernet con-name \"My Ethernet\" ifname eth0 ipv4.routes \"192.168.2.0/24 192.168.1.254\""
+    },
+    {
+        "input": "Add a connection with multiple routes",
+        "output": "nmcli connection add type ethernet con-name \"My Ethernet\" ifname eth0 ipv4.routes \"192.168.2.0/24 192.168.1.254, 10.0.0.0/8 192.168.1.1\""
+    },
+    {
+        "input": "Add a connection with a specific IPv6 address",
+        "output": "nmcli connection add type ethernet con-name \"My Ethernet\" ifname eth0 ip6 2001:db8::1/64"
+    },
+    {
+        "input": "Add a connection with a specific IPv6 gateway",
+        "output": "nmcli connection add type ethernet con-name \"My Ethernet\" ifname eth0 ip6 2001:db8::1/64 gw6 2001:db8::ffff"
+    },
+    {
+        "input": "Add a connection with specific IPv6 DNS servers",
+        "output": "nmcli connection add type ethernet con-name \"My Ethernet\" ifname eth0 ipv6.dns \"2001:4860:4860::8888 2001:4860:4860::8844\""
+    },
+    {
+        "input": "Add a connection with a specific IPv6 method",
+        "output": "nmcli connection add type ethernet con-name \"My Ethernet\" ifname eth0 ipv6.method auto"
+    },
+    {
+        "input": "Add a connection with a specific IPv6 privacy setting",
+        "output": "nmcli connection add type ethernet con-name \"My Ethernet\" ifname eth0 ipv6.ip6-privacy 2"
+    },
+    {
+        "input": "Add a connection with a specific IPv6 address generation mode",
+        "output": "nmcli connection add type ethernet con-name \"My Ethernet\" ifname eth0 ipv6.addr-gen-mode eui64"
+    },
+    {
+        "input": "Add a connection with a specific IPv6 DHCP client ID",
+        "output": "nmcli connection add type ethernet con-name \"My Ethernet\" ifname eth0 ipv6.dhcp-duid ll"
+    },
+    {
+        "input": "Add a connection with a specific IPv4 DHCP client ID",
+        "output": "nmcli connection add type ethernet con-name \"My Ethernet\" ifname eth0 ipv4.dhcp-client-id duid"
+    },
+    {
+        "input": "Add a connection with a specific IPv4 DHCP timeout",
+        "output": "nmcli connection add type ethernet con-name \"My Ethernet\" ifname eth0 ipv4.dhcp-timeout 30"
+    },
+    {
+        "input": "Add a connection with a specific IPv4 DHCP hostname",
+        "output": "nmcli connection add type ethernet con-name \"My Ethernet\" ifname eth0 ipv4.dhcp-hostname myhost"
+    },
+    {
+        "input": "Add a connection with a specific IPv4 DHCP vendor class identifier",
+        "output": "nmcli connection add type ethernet con-name \"My Ethernet\" ifname eth0 ipv4.dhcp-vendor-class-identifier \"MyVendor\""
+    },
+    {
+        "input": "Add a connection with a specific IPv4 DHCP reject servers",
+        "output": "nmcli connection add type ethernet con-name \"My Ethernet\" ifname eth0 ipv4.dhcp-reject-servers \"192.168.1.2 192.168.1.3\""
+    },
+    {
+        "input": "Add a connection with a specific IPv4 DHCP required options",
+        "output": "nmcli connection add type ethernet con-name \"My Ethernet\" ifname eth0 ipv4.dhcp-required-options \"1 3 6 15\""
+    },
+    {
+        "input": "Add a connection with a specific IPv4 DHCP hostname flags",
+        "output": "nmcli connection add type ethernet con-name \"My Ethernet\" ifname eth0 ipv4.dhcp-hostname-flags \"fqdn\""
+    },
+    {
+        "input": "Add a connection with a specific IPv4 DHCP send hostname",
+        "output": "nmcli connection add type ethernet con-name \"My Ethernet\" ifname eth0 ipv4.dhcp-send-hostname yes"
+    },
+    {
+        "input": "Add a connection with a specific IPv4 DHCP route metric",
+        "output": "nmcli connection add type ethernet con-name \"My Ethernet\" ifname eth0 ipv4.dhcp-route-metric 100"
+    },
+    {
+        "input": "Add a connection with a specific IPv4 DHCP use routes",
+        "output": "nmcli connection add type ethernet con-name \"My Ethernet\" ifname eth0 ipv4.dhcp-use-routes yes"
+    },
+    {
+        "input": "Add a connection with a specific IPv4 DHCP use domains",
+        "output": "nmcli connection add type ethernet con-name \"My Ethernet\" ifname eth0 ipv4.dhcp-use-domains yes"
+    },
+    {
+        "input": "Add a connection with a specific IPv4 DHCP use NTP",
+        "output": "nmcli connection add type ethernet con-name \"My Ethernet\" ifname eth0 ipv4.dhcp-use-ntp yes"
+    },
+    {
+        "input": "Add a connection with a specific IPv4 DHCP use MTU",
+        "output": "nmcli connection add type ethernet con-name \"My Ethernet\" ifname eth0 ipv4.dhcp-use-mtu yes"
+    },
+    {
+        "input": "Add a connection with a specific IPv4 DHCP use default route",
+        "output": "nmcli connection add type ethernet con-name \"My Ethernet\" ifname eth0 ipv4.dhcp-use-default-route yes"
+    },
+    {
+        "input": "Add a connection with a specific IPv4 DHCP use DNS",
+        "output": "nmcli connection add type ethernet con-name \"My Ethernet\" ifname eth0 ipv4.dhcp-use-dns yes"
+    },
+    {
+        "input": "Add a connection with a specific IPv4 DHCP use hostname",
+        "output": "nmcli connection add type ethernet con-name \"My Ethernet\" ifname eth0 ipv4.dhcp-use-hostname yes"
+    },
+    {
+        "input": "Add a connection with a specific IPv4 DHCP hostname priority",
+        "output": "nmcli connection add type ethernet con-name \"My Ethernet\" ifname eth0 ipv4.dhcp-hostname-priority 100"
+    },
+    {
+        "input": "Add a connection with a specific IPv4 DHCP hostname source",
+        "output": "nmcli connection add type ethernet con-name \"My Ethernet\" ifname eth0 ipv4.dhcp-hostname-source connection-id"
+    },
+    {
+        "input": "Add a connection with a specific IPv4 DHCP iaid",
+        "output": "nmcli connection add type ethernet con-name \"My Ethernet\" ifname eth0 ipv4.dhcp-iaid mac"
+    },
+    {
+        "input": "Add a connection with a specific IPv4 DHCP wait timeout",
+        "output": "nmcli connection add type ethernet con-name \"My Ethernet\" ifname eth0 ipv4.dhcp-wait-timeout 30"
+    },
+    {
+        "input": "Add a connection with a specific IPv4 DHCP hostname flags",
+        "output": "nmcli connection add type ethernet con-name \"My Ethernet\" ifname eth0 ipv4.dhcp-hostname-flags \"fqdn\""
+    },
+    {
+        "input": "Add a connection with a specific IPv4 DHCP hostname",
+        "output": "nmcli connection add type ethernet con-name \"My Ethernet\" ifname eth0 ipv4.dhcp-hostname \"myhost\""
+    },
+    {
+        "input": "Add a connection with a specific IPv4 DHCP fqdn",
+        "output": "nmcli connection add type ethernet con-name \"My Ethernet\" ifname eth0 ipv4.dhcp-fqdn \"myhost.example.com\""
+    },
+    {
+        "input": "Add a connection with a specific IPv4 DHCP vendor class identifier",
+        "output": "nmcli connection add type ethernet con-name \"My Ethernet\" ifname eth0 ipv4.dhcp-vendor-class-identifier \"MyVendor\""
+    },
+    {
+        "input": "Add a connection with a specific IPv4 DHCP client ID",
+        "output": "nmcli connection add type ethernet con-name \"My Ethernet\" ifname eth0 ipv4.dhcp-client-id \"MyClient\""
+    },
+    {
+        "input": "Add a connection with a specific IPv4 DHCP timeout",
+        "output": "nmcli connection add type ethernet con-name \"My Ethernet\" ifname eth0 ipv4.dhcp-timeout 30"
+    },
+    {
+        "input": "Add a connection with a specific IPv4 DHCP reject servers",
+        "output": "nmcli connection add type ethernet con-name \"My Ethernet\" ifname eth0 ipv4.dhcp-reject-servers \"192.168.1.2 192.168.1.3\""
+    },
+    {
+        "input": "Add a connection with a specific IPv4 DHCP required options",
+        "output": "nmcli connection add type ethernet con-name \"My Ethernet\" ifname eth0 ipv4.dhcp-required-options \"1 3 6 15\""
+    },
+    {
+        "input": "Add a connection with a specific IPv4 DHCP hostname flags",
+        "output": "nmcli connection add type ethernet con-name \"My Ethernet\" ifname eth0 ipv4.dhcp-hostname-flags \"fqdn\""
+    },
+    {
+        "input": "Add a connection with a specific IPv4 DHCP send hostname",
+        "output": "nmcli connection add type ethernet con-name \"My Ethernet\" ifname eth0 ipv4.dhcp-send-hostname yes"
+    },
+    {
+        "input": "Add a connection with a specific IPv4 DHCP route metric",
+        "output": "nmcli connection add type ethernet con-name \"My Ethernet\" ifname eth0 ipv4.dhcp-route-metric 100"
+    },
+    {
+        "input": "Add a connection with a specific IPv4 DHCP use routes",
+        "output": "nmcli connection add type ethernet con-name \"My Ethernet\" ifname eth0 ipv4.dhcp-use-routes yes"
+    },
+    {
+        "input": "Add a connection with a specific IPv4 DHCP use domains",
+        "output": "nmcli connection add type ethernet con-name \"My Ethernet\" ifname eth0 ipv4.dhcp-use-domains yes"
+    },
+    {
+        "input": "Add a connection with a specific IPv4 DHCP use NTP",
+        "output": "nmcli connection add type ethernet con-name \"My Ethernet\" ifname eth0 ipv4.dhcp-use-ntp yes"
+    },
+    {
+        "input": "Add a connection with a specific IPv4 DHCP use MTU",
+        "output": "nmcli connection add type ethernet con-name \"My Ethernet\" ifname eth0 ipv4.dhcp-use-mtu yes"
+    },
+    {
+        "input": "Add a connection with a specific IPv4 DHCP use default route",
+        "output": "nmcli connection add type ethernet con-name \"My Ethernet\" ifname eth0 ipv4.dhcp-use-default-route yes"
+    },
+    {
+        "input": "Add a connection with a specific IPv4 DHCP use DNS",
+        "output": "nmcli connection add type ethernet con-name \"My Ethernet\" ifname eth0 ipv4.dhcp-use-dns yes"
+    },
+    {
+        "input": "Add a connection with a specific IPv4 DHCP use hostname",
+        "output": "nmcli connection add type ethernet con-name \"My Ethernet\" ifname eth0 ipv4.dhcp-use-hostname yes"
+    },
+    {
+        "input": "Add a connection with a specific IPv4 DHCP hostname priority",
+        "output": "nmcli connection add type ethernet con-name \"My Ethernet\" ifname eth0 ipv4.dhcp-hostname-priority 100"
+    },
+    {
+        "input": "Add a connection with a specific IPv4 DHCP hostname source",
+        "output": "nmcli connection add type ethernet con-name \"My Ethernet\" ifname eth0 ipv4.dhcp-hostname-source connection-id"
+    },
+    {
+        "input": "Add a connection with a specific IPv4 DHCP iaid",
+        "output": "nmcli connection add type ethernet con-name \"My Ethernet\" ifname eth0 ipv4.dhcp-iaid mac"
+    },
+    {
+        "input": "Add a connection with a specific IPv4 DHCP wait timeout",
+        "output": "nmcli connection add type ethernet con-name \"My Ethernet\" ifname eth0 ipv4.dhcp-wait-timeout 30"
+    }
+]

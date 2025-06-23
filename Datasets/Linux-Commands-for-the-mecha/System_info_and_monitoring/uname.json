@@ -1,0 +1,562 @@
+[
+    {
+    "input": "Display all available system information",
+    "output": "uname -a"
+  },
+  {
+    "input": "Show the kernel name",
+    "output": "uname -s"
+  },
+  {
+    "input": "Show the network node hostname",
+    "output": "uname -n"
+  },
+  {
+    "input": "Show the kernel release",
+    "output": "uname -r"
+  },
+  {
+    "input": "Show the kernel version",
+    "output": "uname -v"
+  },
+  {
+    "input": "Show the machine hardware name",
+    "output": "uname -m"
+  },
+  {
+    "input": "Show the processor type",
+    "output": "uname -p"
+  },
+  {
+    "input": "Show the hardware platform",
+    "output": "uname -i"
+  },
+  {
+    "input": "Show the operating system",
+    "output": "uname -o"
+  },
+  {
+    "input": "Display kernel name and release",
+    "output": "uname -sr"
+  },
+  {
+    "input": "Display kernel name and version",
+    "output": "uname -sv"
+  },
+  {
+    "input": "Display kernel name and machine hardware name",
+    "output": "uname -sm"
+  },
+  {
+    "input": "Display kernel name and processor type",
+    "output": "uname -sp"
+  },
+  {
+    "input": "Display kernel name and hardware platform",
+    "output": "uname -si"
+  },
+  {
+    "input": "Display kernel name and operating system",
+    "output": "uname -so"
+  },
+  {
+    "input": "Display kernel release and version",
+    "output": "uname -rv"
+  },
+  {
+    "input": "Display kernel release and machine hardware name",
+    "output": "uname -rm"
+  },
+  {
+    "input": "Display kernel release and processor type",
+    "output": "uname -rp"
+  },
+  {
+    "input": "Display kernel release and hardware platform",
+    "output": "uname -ri"
+  },
+  {
+    "input": "Display kernel release and operating system",
+    "output": "uname -ro"
+  },
+  {
+    "input": "Display kernel version and machine hardware name",
+    "output": "uname -vm"
+  },
+  {
+    "input": "Display kernel version and processor type",
+    "output": "uname -vp"
+  },
+  {
+    "input": "Display kernel version and hardware platform",
+    "output": "uname -vi"
+  },
+  {
+    "input": "Display kernel version and operating system",
+    "output": "uname -vo"
+  },
+  {
+    "input": "Display machine hardware name and processor type",
+    "output": "uname -mp"
+  },
+  {
+    "input": "Display machine hardware name and hardware platform",
+    "output": "uname -mi"
+  },
+  {
+    "input": "Display machine hardware name and operating system",
+    "output": "uname -mo"
+  },
+  {
+    "input": "Display processor type and hardware platform",
+    "output": "uname -pi"
+  },
+  {
+    "input": "Display processor type and operating system",
+    "output": "uname -po"
+  },
+  {
+    "input": "Display hardware platform and operating system",
+    "output": "uname -io"
+  },
+  {
+    "input": "Display kernel name, release, and version",
+    "output": "uname -srv"
+  },
+  {
+    "input": "Display kernel name, release, and machine hardware name",
+    "output": "uname -srm"
+  },
+  {
+    "input": "Display kernel name, release, and processor type",
+    "output": "uname -srp"
+  },
+  {
+    "input": "Display kernel name, release, and hardware platform",
+    "output": "uname -sri"
+  },
+  {
+    "input": "Display kernel name, release, and operating system",
+    "output": "uname -sro"
+  },
+  {
+    "input": "Display kernel name, version, and machine hardware name",
+    "output": "uname -svm"
+  },
+  {
+    "input": "Display kernel name, version, and processor type",
+    "output": "uname -svp"
+  },
+  {
+    "input": "Display kernel name, version, and hardware platform",
+    "output": "uname -svi"
+  },
+  {
+    "input": "Display kernel name, version, and operating system",
+    "output": "uname -svo"
+  },
+  {
+    "input": "Display kernel name, machine hardware name, and processor type",
+    "output": "uname -smp"
+  },
+  {
+    "input": "Display kernel name, machine hardware name, and hardware platform",
+    "output": "uname -smi"
+  },
+  {
+    "input": "Display kernel name, machine hardware name, and operating system",
+    "output": "uname -smo"
+  },
+  {
+    "input": "Display kernel name, processor type, and hardware platform",
+    "output": "uname -spi"
+  },
+  {
+    "input": "Display kernel name, processor type, and operating system",
+    "output": "uname -spo"
+  },
+  {
+    "input": "Display kernel name, hardware platform, and operating system",
+    "output": "uname -sio"
+  },
+  {
+    "input": "Display kernel release, version, and machine hardware name",
+    "output": "uname -rvm"
+  },
+  {
+    "input": "Display kernel release, version, and processor type",
+    "output": "uname -rvp"
+  },
+  {
+    "input": "Display kernel release, version, and hardware platform",
+    "output": "uname -rvi"
+  },
+  {
+    "input": "Display kernel release, version, and operating system",
+    "output": "uname -rvo"
+  },
+  {
+    "input": "Display kernel release, machine hardware name, and processor type",
+    "output": "uname -rmp"
+  },
+  {
+    "input": "Display kernel release, machine hardware name, and hardware platform",
+    "output": "uname -rmi"
+  },
+  {
+    "input": "Display kernel release, machine hardware name, and operating system",
+    "output": "uname -rmo"
+  },
+  {
+    "input": "Display kernel release, processor type, and hardware platform",
+    "output": "uname -rpi"
+  },
+  {
+    "input": "Display kernel release, processor type, and operating system",
+    "output": "uname -rpo"
+  },
+  {
+    "input": "Display kernel release, hardware platform, and operating system",
+    "output": "uname -rio"
+  },
+  {
+    "input": "Display kernel version, machine hardware name, and processor type",
+    "output": "uname -vmp"
+  },
+  {
+    "input": "Display kernel version, machine hardware name, and hardware platform",
+    "output": "uname -vmi"
+  },
+  {
+    "input": "Display kernel version, machine hardware name, and operating system",
+    "output": "uname -vmo"
+  },
+  {
+    "input": "Display kernel version, processor type, and hardware platform",
+    "output": "uname -vpi"
+  },
+  {
+    "input": "Display kernel version, processor type, and operating system",
+    "output": "uname -vpo"
+  },
+  {
+    "input": "Display kernel version, hardware platform, and operating system",
+    "output": "uname -vio"
+  },
+  {
+    "input": "Display machine hardware name, processor type, and hardware platform",
+    "output": "uname -mpi"
+  },
+  {
+    "input": "Display machine hardware name, processor type, and operating system",
+    "output": "uname -mpo"
+  },
+  {
+    "input": "Display machine hardware name, hardware platform, and operating system",
+    "output": "uname -mio"
+  },
+  {
+    "input": "Display processor type, hardware platform, and operating system",
+    "output": "uname -pio"
+  },
+  {
+    "input": "Display all system information except kernel version",
+    "output": "uname -asrmoipn"
+  },
+  {
+    "input": "Display all system information except kernel name",
+    "output": "uname -arnvmoip"
+  },
+  {
+    "input": "Display all system information except machine hardware name",
+    "output": "uname -asrvpoipn"
+  },
+  {
+    "input": "Display all system information except processor type",
+    "output": "uname -asrvmoin"
+  },
+  {
+    "input": "Display all system information except hardware platform",
+    "output": "uname -asrvmpo"
+  },
+  {
+    "input": "Display all system information except operating system",
+    "output": "uname -asrvmpi"
+  },
+  {
+    "input": "Display all system information except network node hostname",
+    "output": "uname -asrvmoip"
+  },
+  {
+    "input": "Display all system information except kernel release",
+    "output": "uname -asvmoipn"
+  },
+  {
+    "input": "Display all system information except kernel version and processor type",
+    "output": "uname -asrmoipn"
+  },
+  {
+    "input": "Display all system information except kernel name and hardware platform",
+    "output": "uname -arnvmoip"
+  },
+  {
+    "input": "Display all system information except kernel name and operating system",
+    "output": "uname -arnvmoip"
+  },
+  {
+    "input": "Display all system information except kernel name and network node hostname",
+    "output": "uname -arvmoip"
+  },
+  {
+    "input": "Display all system information except kernel name and kernel release",
+    "output": "uname -avmoipn"
+  },
+  {
+    "input": "Display all system information except kernel name and kernel version",
+    "output": "uname -armoipn"
+  },
+  {
+    "input": "Display all system information except kernel name and machine hardware name",
+    "output": "uname -arvpoipn"
+  },
+  {
+    "input": "Display all system information except kernel name and processor type",
+    "output": "uname -arvmoipn"
+  },
+  {
+    "input": "Display all system information except kernel name and hardware platform",
+    "output": "uname -arvmpoip"
+  },
+  {
+    "input": "Display all system information except kernel name and operating system",
+    "output": "uname -arvmpio"
+  },
+  {
+    "input": "Display all system information except kernel name and network node hostname",
+    "output": "uname -arvmpio"
+  },
+  {
+    "input": "Display all system information except kernel name and kernel release",
+    "output": "uname -avmpio"
+  },
+  {
+    "input": "Display all system information except kernel name and kernel version",
+    "output": "uname -armpio"
+  },
+  {
+    "input": "Display all system information except kernel name and machine hardware name",
+    "output": "uname -arvpio"
+  },
+  {
+    "input": "Display all system information except kernel name and processor type",
+    "output": "uname -arvmio"
+  },
+  {
+    "input": "Display all system information except kernel name and hardware platform",
+    "output": "uname -arvmpo"
+  },
+  {
+    "input": "Display all system information except kernel name and operating system",
+    "output": "uname -arvmpi"
+  },
+  {
+    "input": "Display all system information except kernel name and network node hostname",
+    "output": "uname -arvmpi"
+  },
+  {
+    "input": "Display all system information except kernel name and kernel release",
+    "output": "uname -avmpi"
+  },
+  {
+    "input": "Display all system information except kernel name and kernel version",
+    "output": "uname -armpi"
+  },
+  {
+    "input": "Display all system information except kernel name and machine hardware name",
+    "output": "uname -arvpi"
+  },
+  {
+    "input": "Display all system information except kernel name and processor type",
+    "output": "uname -arvmi"
+  },
+  {
+    "input": "Display all system information except kernel name and hardware platform",
+    "output": "uname -arvmp"
+  },
+  {
+    "input": "Display all system information except kernel name and operating system",
+    "output": "uname -arvmp"
+  },
+  {
+    "input": "Display all system information except kernel name and network node hostname",
+    "output": "uname -arvmp"
+  },
+  {
+    "input": "Display all system information except kernel name and kernel release",
+    "output": "uname -avmp"
+  },
+  {
+    "input": "Display all system information except kernel name and kernel version",
+    "output": "uname -armp"
+  },
+  {
+    "input": "Display all system information except kernel name and machine hardware name",
+    "output": "uname -arvp"
+  },
+  {
+    "input": "Display all system information except kernel name and processor type",
+    "output": "uname -arvm"
+  },
+  {
+    "input": "Display all system information except kernel name and hardware platform",
+    "output": "uname -arvm"
+  },
+  {
+    "input": "Display all system information except kernel name and operating system",
+    "output": "uname -arvm"
+  },
+  {
+    "input": "Display all system information except kernel name and network node hostname",
+    "output": "uname -arvm"
+  },
+  {
+    "input": "Display all system information except kernel name and kernel release",
+    "output": "uname -avm"
+  },
+  {
+    "input": "Display all system information except kernel name and kernel version",
+    "output": "uname -arm"
+  },
+  {
+    "input": "Display all system information except kernel name and machine hardware name",
+    "output": "uname -arv"
+  },
+  {
+    "input": "Display all system information except kernel name and processor type",
+    "output": "uname -arv"
+  },
+  {
+    "input": "Display all system information except kernel name and hardware platform",
+    "output": "uname -arv"
+  },
+  {
+    "input": "Display all system information except kernel name and operating system",
+    "output": "uname -arv"
+  },
+  {
+    "input": "Display all system information except kernel name and network node hostname",
+    "output": "uname -arv"
+  },
+  {
+    "input": "Display all system information except kernel name and kernel release",
+    "output": "uname -av"
+  },
+  {
+    "input": "Display all system information except kernel name and kernel version",
+    "output": "uname -ar"
+  },
+  {
+    "input": "Display all system information except kernel name and machine hardware name",
+    "output": "uname -ar"
+  },
+  {
+    "input": "Display all system information except kernel name and processor type",
+    "output": "uname -ar"
+  },
+  {
+    "input": "Display all system information except kernel name and hardware platform",
+    "output": "uname -ar"
+  },
+  {
+    "input": "Display all system information except kernel name and operating system",
+    "output": "uname -ar"
+  },
+  {
+    "input": "Display all system information except kernel name and network node hostname",
+    "output": "uname -ar"
+  },
+  {
+    "input": "Display all system information except kernel name and kernel release",
+    "output": "uname -a"
+  },
+  {
+    "input": "Display all system information except kernel name and kernel version",
+    "output": "uname -a"
+  },
+  {
+    "input": "Display all system information except kernel name and machine hardware name",
+    "output": "uname -a"
+  },
+  {
+    "input": "Display all system information except kernel name and processor type",
+    "output": "uname -a"
+  },
+  {
+    "input": "Display all system information except kernel name and hardware platform",
+    "output": "uname -a"
+  },
+  {
+    "input": "Display all system information except kernel name and operating system",
+    "output": "uname -a"
+  },
+  {
+    "input": "Display all system information except kernel name and network node hostname",
+    "output": "uname -a"
+  },
+  {
+    "input": "Display all system information except kernel name and kernel release",
+    "output": "uname -a"
+  },
+  {
+    "input": "Display all system information except kernel name and kernel version",
+    "output": "uname -a"
+  },
+  {
+    "input": "Display all system information except kernel name and machine hardware name",
+    "output": "uname -a"
+  },
+  {
+    "input": "Display all system information except kernel name and processor type",
+    "output": "uname -a"
+  },
+  {
+    "input": "Display all system information except kernel name and hardware platform",
+    "output": "uname -a"
+  },
+  {
+    "input": "Display all system information except kernel name and operating system",
+    "output": "uname -a"
+  },
+  {
+    "input": "Display all system information except kernel name and network node hostname",
+    "output": "uname -a"
+  },
+  {
+    "input": "Display all system information except kernel name and kernel release",
+    "output": "uname -a"
+  },
+  {
+    "input": "Display all system information except kernel name and kernel version",
+    "output": "uname -a"
+  },
+  {
+    "input": "Display all system information except kernel name and machine hardware name",
+    "output": "uname -a"
+  },
+  {
+    "input": "Display all system information except kernel name and processor type",
+    "output": "uname -a"
+  },
+  {
+    "input": "Display all system information except kernel name and hardware platform",
+    "output": "uname -a"
+  },
+  {
+    "input": "Display all system information except kernel name and operating system",
+    "output": "uname -a"
+  },
+  {
+    "input": "Display all system information except kernel name and network node hostname",
+    "output": "uname -a"
+  }
+]

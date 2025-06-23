@@ -1,0 +1,242 @@
+[
+    {
+    "input": "Show disk space usage for all mounted filesystems",
+    "output": "df"
+  },
+  {
+    "input": "Display disk usage in human-readable format",
+    "output": "df -h"
+  },
+  {
+    "input": "Show disk usage in megabytes",
+    "output": "df -m"
+  },
+  {
+    "input": "Show disk usage in gigabytes",
+    "output": "df -BG"
+  },
+  {
+    "input": "Show disk usage in 1K blocks",
+    "output": "df -k"
+  },
+  {
+    "input": "Show disk usage in bytes",
+    "output": "df -B1"
+  },
+  {
+    "input": "Show disk usage for a specific directory",
+    "output": "df /home"
+  },
+  {
+    "input": "Show disk usage for a specific device",
+    "output": "df /dev/sda1"
+  },
+  {
+    "input": "Show disk usage for all filesystems including dummy filesystems",
+    "output": "df -a"
+  },
+  {
+    "input": "Show disk usage for all filesystems in human-readable format",
+    "output": "df -ah"
+  },
+  {
+    "input": "Show disk usage for all filesystems in POSIX format",
+    "output": "df -P"
+  },
+  {
+    "input": "Show disk usage for all filesystems in human-readable POSIX format",
+    "output": "df -Ph"
+  },
+  {
+    "input": "Show disk usage for all filesystems with filesystem type",
+    "output": "df -T"
+  },
+  {
+    "input": "Show disk usage for all filesystems with type in human-readable format",
+    "output": "df -hT"
+  },
+  {
+    "input": "Show inode usage for all filesystems",
+    "output": "df -i"
+  },
+  {
+    "input": "Show inode usage in human-readable format",
+    "output": "df -ih"
+  },
+  {
+    "input": "Show disk usage for filesystems of type ext4",
+    "output": "df -t ext4"
+  },
+  {
+    "input": "Show disk usage for filesystems of type xfs",
+    "output": "df -t xfs"
+  },
+  {
+    "input": "Show disk usage for filesystems of type nfs",
+    "output": "df -t nfs"
+  },
+  {
+    "input": "Show disk usage excluding tmpfs filesystems",
+    "output": "df -x tmpfs"
+  },
+  {
+    "input": "Show disk usage excluding devtmpfs filesystems",
+    "output": "df -x devtmpfs"
+  },
+  {
+    "input": "Show disk usage for all filesystems, sorted by usage percentage",
+    "output": "df -h | sort -k 5 -h"
+  },
+  {
+    "input": "Show disk usage for all filesystems, sorted by available space",
+    "output": "df -h | sort -k 4 -h"
+  },
+  {
+    "input": "Show disk usage for all filesystems, sorted by mount point",
+    "output": "df -h | sort -k 6"
+  },
+  {
+    "input": "Show disk usage for all filesystems, sorted by filesystem name",
+    "output": "df -h | sort -k 1"
+  },
+  {
+    "input": "Show disk usage for all filesystems, filter for usage above 80%",
+    "output": "df -h | awk '$5+0 > 80'"
+  },
+  {
+    "input": "Show disk usage for all filesystems, filter for usage below 20%",
+    "output": "df -h | awk '$5+0 < 20'"
+  },
+  {
+    "input": "Show disk usage for all filesystems, filter for /dev/sda* devices",
+    "output": "df -h | grep '/dev/sda'"
+  },
+  {
+    "input": "Show disk usage for all filesystems, filter for /home mount point",
+    "output": "df -h | grep '/home'"
+  },
+  {
+    "input": "Show disk usage for all filesystems, filter for ext4 filesystems",
+    "output": "df -hT | grep 'ext4'"
+  },
+  {
+    "input": "Show disk usage for all filesystems, filter for nfs filesystems",
+    "output": "df -hT | grep 'nfs'"
+  },
+  {
+    "input": "Show disk usage for all filesystems, filter for filesystems with less than 1G available",
+    "output": "df -h | awk '$4 ~ /G/ && $4+0 < 1'"
+  },
+  {
+    "input": "Show disk usage for all filesystems, filter for filesystems with more than 10G available",
+    "output": "df -h | awk '$4 ~ /G/ && $4+0 > 10'"
+  },
+  {
+    "input": "Show disk usage for all filesystems, display only the available space",
+    "output": "df -h --output=avail"
+  },
+  {
+    "input": "Show disk usage for all filesystems, display only the used space",
+    "output": "df -h --output=used"
+  },
+  {
+    "input": "Show disk usage for all filesystems, display only the filesystem and mount point",
+    "output": "df -h --output=source,target"
+  },
+  {
+    "input": "Show disk usage for all filesystems, display only the filesystem type and usage percentage",
+    "output": "df -h --output=fstype,pcent"
+  },
+  {
+    "input": "Show disk usage for all filesystems, display all available columns",
+    "output": "df -h --output=source,fstype,itotal,iused,iavail,ipcent,size,used,avail,pcent,target"
+  },
+  {
+    "input": "Show disk usage for all filesystems, display only the mount point and available space",
+    "output": "df -h --output=target,avail"
+  },
+  {
+    "input": "Show disk usage for all filesystems, display only the filesystem and type",
+    "output": "df -h --output=source,fstype"
+  },
+  {
+    "input": "Show disk usage for all filesystems, display only the filesystem and usage percentage",
+    "output": "df -h --output=source,pcent"
+  },
+  {
+    "input": "Show disk usage for all filesystems, display only the mount point and usage percentage",
+    "output": "df -h --output=target,pcent"
+  },
+  {
+    "input": "Show disk usage for all filesystems, display only the filesystem and available space",
+    "output": "df -h --output=source,avail"
+  },
+  {
+    "input": "Show disk usage for all filesystems, display only the filesystem and used space",
+    "output": "df -h --output=source,used"
+  },
+  {
+    "input": "Show disk usage for all filesystems, display only the filesystem and total size",
+    "output": "df -h --output=source,size"
+  },
+  {
+    "input": "Show disk usage for all filesystems, display only the filesystem and inode usage",
+    "output": "df -h --output=source,ipcent"
+  },
+  {
+    "input": "Show disk usage for all filesystems, display only the filesystem and total inodes",
+    "output": "df -h --output=source,itotal"
+  },
+  {
+    "input": "Show disk usage for all filesystems, display only the filesystem and used inodes",
+    "output": "df -h --output=source,iused"
+  },
+  {
+    "input": "Show disk usage for all filesystems, display only the filesystem and available inodes",
+    "output": "df -h --output=source,iavail"
+  },
+  {
+    "input": "Show disk usage for all filesystems, display only the filesystem and mount point",
+    "output": "df -h --output=source,target"
+  },
+  {
+    "input": "Show disk usage for all filesystems, display only the filesystem, type, and mount point",
+    "output": "df -h --output=source,fstype,target"
+  },
+  {
+    "input": "Show disk usage for all filesystems, display only the filesystem, size, and usage percentage",
+    "output": "df -h --output=source,size,pcent"
+  },
+  {
+    "input": "Show disk usage for all filesystems, display only the filesystem, used, and available space",
+    "output": "df -h --output=source,used,avail"
+  },
+  {
+    "input": "Show disk usage for all filesystems, display only the filesystem, used, available, and usage percentage",
+    "output": "df -h --output=source,used,avail,pcent"
+  },
+  {
+    "input": "Show disk usage for all filesystems, display only the filesystem, type, and usage percentage",
+    "output": "df -h --output=source,fstype,pcent"
+  },
+  {
+    "input": "Show disk usage for all filesystems, display only the filesystem, type, and available space",
+    "output": "df -h --output=source,fstype,avail"
+  },
+  {
+    "input": "Show disk usage for all filesystems, display only the filesystem, type, and used space",
+    "output": "df -h --output=source,fstype,used"
+  },
+  {
+    "input": "Show disk usage for all filesystems, display only the filesystem, type, and total size",
+    "output": "df -h --output=source,fstype,size"
+  },
+  {
+    "input": "Show disk usage for all filesystems, display only the filesystem, type, and mount point",
+    "output": "df -h --output=source,fstype,target"
+  },
+  {
+    "input": "Show disk usage for all filesystems, display only the filesystem, type, and inode usage",
+    "output": "df -h --output=source,fstype,ipcent"
+  }
+]

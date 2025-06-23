@@ -1,0 +1,542 @@
+[
+    {
+        "input": "Query A record for google.com",
+        "output": "dig google.com"
+    },
+    {
+        "input": "Query A record for example.com",
+        "output": "dig example.com"
+    },
+    {
+        "input": "Query A record for yahoo.com",
+        "output": "dig yahoo.com"
+    },
+    {
+        "input": "Query A record for github.com",
+        "output": "dig github.com"
+    },
+    {
+        "input": "Query A record for facebook.com",
+        "output": "dig facebook.com"
+    },
+    {
+        "input": "Query AAAA record for google.com",
+        "output": "dig google.com AAAA"
+    },
+    {
+        "input": "Query MX record for google.com",
+        "output": "dig google.com MX"
+    },
+    {
+        "input": "Query NS record for google.com",
+        "output": "dig google.com NS"
+    },
+    {
+        "input": "Query SOA record for google.com",
+        "output": "dig google.com SOA"
+    },
+    {
+        "input": "Query TXT record for google.com",
+        "output": "dig google.com TXT"
+    },
+    {
+        "input": "Query CNAME record for www.google.com",
+        "output": "dig www.google.com CNAME"
+    },
+    {
+        "input": "Query PTR record for 8.8.8.8",
+        "output": "dig -x 8.8.8.8"
+    },
+    {
+        "input": "Query ANY record for google.com",
+        "output": "dig google.com ANY"
+    },
+    {
+        "input": "Query SPF record for google.com",
+        "output": "dig google.com SPF"
+    },
+    {
+        "input": "Query SRV record for _sip._tcp.google.com",
+        "output": "dig _sip._tcp.google.com SRV"
+    },
+    {
+        "input": "Query DNSKEY record for google.com",
+        "output": "dig google.com DNSKEY"
+    },
+    {
+        "input": "Query DS record for google.com",
+        "output": "dig google.com DS"
+    },
+    {
+        "input": "Query NAPTR record for google.com",
+        "output": "dig google.com NAPTR"
+    },
+    {
+        "input": "Query CAA record for google.com",
+        "output": "dig google.com CAA"
+    },
+    {
+        "input": "Query TLSA record for google.com",
+        "output": "dig google.com TLSA"
+    },
+    {
+        "input": "Query A record for google.com using DNS server 1.1.1.1",
+        "output": "dig @1.1.1.1 google.com"
+    },
+    {
+        "input": "Query A record for example.com using DNS server 8.8.8.8",
+        "output": "dig @8.8.8.8 example.com"
+    },
+    {
+        "input": "Query A record for yahoo.com using DNS server 9.9.9.9",
+        "output": "dig @9.9.9.9 yahoo.com"
+    },
+    {
+        "input": "Query A record for github.com using DNS server 4.2.2.2",
+        "output": "dig @4.2.2.2 github.com"
+    },
+    {
+        "input": "Query A record for facebook.com using DNS server 208.67.222.222",
+        "output": "dig @208.67.222.222 facebook.com"
+    },
+    {
+        "input": "Query A record for google.com with +short output",
+        "output": "dig google.com +short"
+    },
+    {
+        "input": "Query MX record for google.com with +short output",
+        "output": "dig google.com MX +short"
+    },
+    {
+        "input": "Query NS record for google.com with +short output",
+        "output": "dig google.com NS +short"
+    },
+    {
+        "input": "Query SOA record for google.com with +short output",
+        "output": "dig google.com SOA +short"
+    },
+    {
+        "input": "Query TXT record for google.com with +short output",
+        "output": "dig google.com TXT +short"
+    },
+    {
+        "input": "Query CNAME record for www.google.com with +short output",
+        "output": "dig www.google.com CNAME +short"
+    },
+    {
+        "input": "Query PTR record for 8.8.8.8 with +short output",
+        "output": "dig -x 8.8.8.8 +short"
+    },
+    {
+        "input": "Query ANY record for google.com with +short output",
+        "output": "dig google.com ANY +short"
+    },
+    {
+        "input": "Query A record for google.com and display only answer section",
+        "output": "dig google.com +noall +answer"
+    },
+    {
+        "input": "Query MX record for google.com and display only answer section",
+        "output": "dig google.com MX +noall +answer"
+    },
+    {
+        "input": "Query NS record for google.com and display only answer section",
+        "output": "dig google.com NS +noall +answer"
+    },
+    {
+        "input": "Query SOA record for google.com and display only answer section",
+        "output": "dig google.com SOA +noall +answer"
+    },
+    {
+        "input": "Query TXT record for google.com and display only answer section",
+        "output": "dig google.com TXT +noall +answer"
+    },
+    {
+        "input": "Query CNAME record for www.google.com and display only answer section",
+        "output": "dig www.google.com CNAME +noall +answer"
+    },
+    {
+        "input": "Query PTR record for 8.8.8.8 and display only answer section",
+        "output": "dig -x 8.8.8.8 +noall +answer"
+    },
+    {
+        "input": "Query ANY record for google.com and display only answer section",
+        "output": "dig google.com ANY +noall +answer"
+    },
+    {
+        "input": "Query A record for google.com and display authority section",
+        "output": "dig google.com +noall +authority"
+    },
+    {
+        "input": "Query A record for google.com and display additional section",
+        "output": "dig google.com +noall +additional"
+    },
+    {
+        "input": "Query A record for google.com and show query time",
+        "output": "dig google.com +stats"
+    },
+    {
+        "input": "Query A record for google.com and show comments",
+        "output": "dig google.com +comments"
+    },
+    {
+        "input": "Query A record for google.com and show TTLs",
+        "output": "dig google.com +ttlid"
+    },
+    {
+        "input": "Query A record for google.com and show DNSSEC info",
+        "output": "dig google.com +dnssec"
+    },
+    {
+        "input": "Query A record for google.com and show all sections",
+        "output": "dig google.com +multiline"
+    },
+    {
+        "input": "Query A record for google.com with TCP",
+        "output": "dig google.com +tcp"
+    },
+    {
+        "input": "Query A record for google.com with UDP",
+        "output": "dig google.com +notcp"
+    },
+    {
+        "input": "Query A record for google.com with trace",
+        "output": "dig google.com +trace"
+    },
+    {
+        "input": "Query A record for google.com with recursion desired",
+        "output": "dig google.com +rd"
+    },
+    {
+        "input": "Query A record for google.com with recursion not desired",
+        "output": "dig google.com +nord"
+    },
+    {
+        "input": "Query A record for google.com with edns=0",
+        "output": "dig google.com +edns=0"
+    },
+    {
+        "input": "Query A record for google.com with edns=1",
+        "output": "dig google.com +edns=1"
+    },
+    {
+        "input": "Query A record for google.com with ednsopt=3",
+        "output": "dig google.com +ednsopt=3"
+    },
+    {
+        "input": "Query A record for google.com with padding",
+        "output": "dig google.com +padding"
+    },
+    {
+        "input": "Query A record for google.com with bufsize 4096",
+        "output": "dig google.com +bufsize=4096"
+    },
+    {
+        "input": "Query A record for google.com with timeout 2 seconds",
+        "output": "dig google.com +timeout=2"
+    },
+    {
+        "input": "Query A record for google.com with tries 3",
+        "output": "dig google.com +tries=3"
+    },
+    {
+        "input": "Query A record for google.com with retry 2",
+        "output": "dig google.com +retry=2"
+    },
+    {
+        "input": "Query A record for google.com with ndots 2",
+        "output": "dig google.com +ndots=2"
+    },
+    {
+        "input": "Query A record for google.com with search domain example.com",
+        "output": "dig google.com +search +domain=example.com"
+    },
+    {
+        "input": "Query A record for google.com and use only IPv4",
+        "output": "dig google.com -4"
+    },
+    {
+        "input": "Query A record for google.com and use only IPv6",
+        "output": "dig google.com -6"
+    },
+    {
+        "input": "Query A record for google.com and set port 5353",
+        "output": "dig google.com -p 5353"
+    },
+    {
+        "input": "Query A record for google.com and set port 53",
+        "output": "dig google.com -p 53"
+    },
+    {
+        "input": "Query A record for google.com and set port 1053",
+        "output": "dig google.com -p 1053"
+    },
+    {
+        "input": "Query A record for google.com and set source IP 192.168.1.1",
+        "output": "dig google.com -b 192.168.1.1"
+    },
+    {
+        "input": "Query A record for google.com and set source IP ::1",
+        "output": "dig google.com -b ::1"
+    },
+    {
+        "input": "Query A record for google.com and set query class IN",
+        "output": "dig google.com IN"
+    },
+    {
+        "input": "Query A record for google.com and set query class CH",
+        "output": "dig google.com CH"
+    },
+    {
+        "input": "Query A record for google.com and set query class HS",
+        "output": "dig google.com HS"
+    },
+    {
+        "input": "Query A record for google.com and set +ignore",
+        "output": "dig google.com +ignore"
+    },
+    {
+        "input": "Query A record for google.com and set +noignore",
+        "output": "dig google.com +noignore"
+    },
+    {
+        "input": "Query A record for google.com and set +recurse",
+        "output": "dig google.com +recurse"
+    },
+    {
+        "input": "Query A record for google.com and set +norecurse",
+        "output": "dig google.com +norecurse"
+    },
+    {
+        "input": "Query A record for google.com and set +fail",
+        "output": "dig google.com +fail"
+    },
+    {
+        "input": "Query A record for google.com and set +nofail",
+        "output": "dig google.com +nofail"
+    },
+    {
+        "input": "Query A record for google.com and set +besteffort",
+        "output": "dig google.com +besteffort"
+    },
+    {
+        "input": "Query A record for google.com and set +nobesteffort",
+        "output": "dig google.com +nobesteffort"
+    },
+    {
+        "input": "Query A record for google.com and set +adflag",
+        "output": "dig google.com +adflag"
+    },
+    {
+        "input": "Query A record for google.com and set +noadflag",
+        "output": "dig google.com +noadflag"
+    },
+    {
+        "input": "Query A record for google.com and set +cdflag",
+        "output": "dig google.com +cdflag"
+    },
+    {
+        "input": "Query A record for google.com and set +nocdflag",
+        "output": "dig google.com +nocdflag"
+    },
+    {
+        "input": "Query A record for google.com and set +nssearch",
+        "output": "dig google.com +nssearch"
+    },
+    {
+        "input": "Query A record for google.com and set +nonssearch",
+        "output": "dig google.com +nonssearch"
+    },
+    {
+        "input": "Query A record for google.com and set +trace",
+        "output": "dig google.com +trace"
+    },
+    {
+        "input": "Query A record for google.com and set +notrace",
+        "output": "dig google.com +notrace"
+    },
+    {
+        "input": "Query A record for google.com and set +sigchase",
+        "output": "dig google.com +sigchase"
+    },
+    {
+        "input": "Query A record for google.com and set +nosigchase",
+        "output": "dig google.com +nosigchase"
+    },
+    {
+        "input": "Query A record for google.com and set +topdown",
+        "output": "dig google.com +topdown"
+    },
+    {
+        "input": "Query A record for google.com and set +notopdown",
+        "output": "dig google.com +notopdown"
+    },
+    {
+        "input": "Query A record for google.com and set +cmd",
+        "output": "dig google.com +cmd"
+    },
+    {
+        "input": "Query A record for google.com and set +nocmd",
+        "output": "dig google.com +nocmd"
+    },
+    {
+        "input": "Query A record for google.com and set +question",
+        "output": "dig google.com +question"
+    },
+    {
+        "input": "Query A record for google.com and set +noquestion",
+        "output": "dig google.com +noquestion"
+    },
+    {
+        "input": "Query A record for google.com and set +answer",
+        "output": "dig google.com +answer"
+    },
+    {
+        "input": "Query A record for google.com and set +noanswer",
+        "output": "dig google.com +noanswer"
+    },
+    {
+        "input": "Query A record for google.com and set +authority",
+        "output": "dig google.com +authority"
+    },
+    {
+        "input": "Query A record for google.com and set +noauthority",
+        "output": "dig google.com +noauthority"
+    },
+    {
+        "input": "Query A record for google.com and set +additional",
+        "output": "dig google.com +additional"
+    },
+    {
+        "input": "Query A record for google.com and set +noadditional",
+        "output": "dig google.com +noadditional"
+    },
+    {
+        "input": "Query A record for google.com and set +all",
+        "output": "dig google.com +all"
+    },
+    {
+        "input": "Query A record for google.com and set +noall",
+        "output": "dig google.com +noall"
+    },
+    {
+        "input": "Query A record for google.com and set +stats",
+        "output": "dig google.com +stats"
+    },
+    {
+        "input": "Query A record for google.com and set +nostats",
+        "output": "dig google.com +nostats"
+    },
+    {
+        "input": "Query A record for google.com and set +comments",
+        "output": "dig google.com +comments"
+    },
+    {
+        "input": "Query A record for google.com and set +nocomments",
+        "output": "dig google.com +nocomments"
+    },
+    {
+        "input": "Query A record for google.com and set +multiline",
+        "output": "dig google.com +multiline"
+    },
+    {
+        "input": "Query A record for google.com and set +nomultiline",
+        "output": "dig google.com +nomultiline"
+    },
+    {
+        "input": "Query A record for google.com and set +question",
+        "output": "dig google.com +question"
+    },
+    {
+        "input": "Query A record for google.com and set +noquestion",
+        "output": "dig google.com +noquestion"
+    },
+    {
+        "input": "Query A record for google.com and set +short",
+        "output": "dig google.com +short"
+    },
+    {
+        "input": "Query A record for google.com and set +noshort",
+        "output": "dig google.com +noshort"
+    },
+    {
+        "input": "Query A record for google.com and set +ttl",
+        "output": "dig google.com +ttl"
+    },
+    {
+        "input": "Query A record for google.com and set +nottl",
+        "output": "dig google.com +nottl"
+    },
+    {
+        "input": "Query A record for google.com and set +identify",
+        "output": "dig google.com +identify"
+    },
+    {
+        "input": "Query A record for google.com and set +noidentify",
+        "output": "dig google.com +noidentify"
+    },
+    {
+        "input": "Query A record for google.com and set +sigchase",
+        "output": "dig google.com +sigchase"
+    },
+    {
+        "input": "Query A record for google.com and set +nosigchase",
+        "output": "dig google.com +nosigchase"
+    },
+    {
+        "input": "Query A record for google.com and set +topdown",
+        "output": "dig google.com +topdown"
+    },
+    {
+        "input": "Query A record for google.com and set +notopdown",
+        "output": "dig google.com +notopdown"
+    },
+    {
+        "input": "Query A record for google.com and set +cmd",
+        "output": "dig google.com +cmd"
+    },
+    {
+        "input": "Query A record for google.com and set +nocmd",
+        "output": "dig google.com +nocmd"
+    },
+    {
+        "input": "Query A record for google.com and set +question",
+        "output": "dig google.com +question"
+    },
+    {
+        "input": "Query A record for google.com and set +noquestion",
+        "output": "dig google.com +noquestion"
+    },
+    {
+        "input": "Query A record for google.com and set +answer",
+        "output": "dig google.com +answer"
+    },
+    {
+        "input": "Query A record for google.com and set +noanswer",
+        "output": "dig google.com +noanswer"
+    },
+    {
+        "input": "Query A record for google.com and set +authority",
+        "output": "dig google.com +authority"
+    },
+    {
+        "input": "Query A record for google.com and set +noauthority",
+        "output": "dig google.com +noauthority"
+    },
+    {
+        "input": "Query A record for google.com and set +additional",
+        "output": "dig google.com +additional"
+    },
+    {
+        "input": "Query A record for google.com and set +noadditional",
+        "output": "dig google.com +noadditional"
+    },
+    {
+        "input": "Query A record for google.com and set +all",
+        "output": "dig google.com +all"
+    },
+    {
+        "input": "Query A record for google.com and set +noall",
+        "output": "dig google.com +noall"
+    }
+]

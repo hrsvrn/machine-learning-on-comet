@@ -1,0 +1,564 @@
+[
+  {
+    "input": "Run top in default mode",
+    "output": "top"
+  },
+  {
+    "input": "Run top and display processes sorted by memory usage",
+    "output": "top -o %MEM"
+  },
+  {
+    "input": "Run top and display processes sorted by CPU usage",
+    "output": "top -o %CPU"
+  },
+  {
+    "input": "Run top and update every 2 seconds",
+    "output": "top -d 2"
+  },
+  {
+    "input": "Run top and update every 0.5 seconds",
+    "output": "top -d 0.5"
+  },
+  {
+    "input": "Run top and display only processes of user 'alice'",
+    "output": "top -u alice"
+  },
+  {
+    "input": "Run top and display only processes of user with UID 1000",
+    "output": "top -U 1000"
+  },
+  {
+    "input": "Run top and show absolute path for command column",
+    "output": "top -c"
+  },
+  {
+    "input": "Run top and show only running processes",
+    "output": "top -i"
+  },
+  {
+    "input": "Run top and show only idle processes",
+    "output": "top -I"
+  },
+  {
+    "input": "Run top and display threads instead of processes",
+    "output": "top -H"
+  },
+  {
+    "input": "Run top and display only processes from PID 1234",
+    "output": "top -p 1234"
+  },
+  {
+    "input": "Run top and display processes from PIDs 1234 and 5678",
+    "output": "top -p 1234,5678"
+  },
+  {
+    "input": "Run top and show summary only, no task list",
+    "output": "top -b -n 1 | head -n 12"
+  },
+  {
+    "input": "Run top in batch mode for scripting",
+    "output": "top -b"
+  },
+  {
+    "input": "Run top in batch mode, 5 iterations, update every 2 seconds",
+    "output": "top -b -n 5 -d 2"
+  },
+  {
+    "input": "Run top and highlight running tasks",
+    "output": "top -z"
+  },
+  {
+    "input": "Run top and disable color",
+    "output": "top -C"
+  },
+  {
+    "input": "Run top and show cumulative time for processes",
+    "output": "top -S"
+  },
+  {
+    "input": "Run top and show only processes with a specific command name",
+    "output": "top | grep COMMAND_NAME"
+  },
+  {
+    "input": "Run top and filter by process state 'Z' (zombie)",
+    "output": "top | grep Z"
+  },
+  {
+    "input": "Run top and save output to a file",
+    "output": "top -b -n 1 > top_output.txt"
+  },
+  {
+    "input": "Run top and show only the first 10 processes",
+    "output": "top -b -n 1 | head -n 22"
+  },
+  {
+    "input": "Run top and show all available columns",
+    "output": "top -w512"
+  },
+  {
+    "input": "Run top and show wide output",
+    "output": "top -w"
+  },
+  {
+    "input": "Run top and show the full command line for each process",
+    "output": "top -c"
+  },
+  {
+    "input": "Run top and sort by resident memory size",
+    "output": "top -o RES"
+  },
+  {
+    "input": "Run top and sort by virtual memory size",
+    "output": "top -o VIRT"
+  },
+  {
+    "input": "Run top and sort by time+",
+    "output": "top -o TIME+"
+  },
+  {
+    "input": "Run top and show only processes using more than 10% CPU",
+    "output": "top -b -n 1 | awk '$9 > 10'"
+  },
+  {
+    "input": "Run top and show only processes using more than 100MB RAM",
+    "output": "top -b -n 1 | awk '$10 ~ /[0-9]+/ && $10 > 102400'"
+  },
+  {
+    "input": "Run top and show only processes in S (sleeping) state",
+    "output": "top | grep ' S '"
+  },
+  {
+    "input": "Run top and show only root's processes",
+    "output": "top -u root"
+  },
+  {
+    "input": "Run top with a custom delay of 3 seconds",
+    "output": "top -d 3"
+  },
+  {
+    "input": "Run top and show process tree view",
+    "output": "top -V"
+  },
+  {
+    "input": "Run top and display only the CPU summary",
+    "output": "top -b -n 1 | grep 'Cpu(s)'"
+  },
+  {
+    "input": "Run top and display only the memory summary",
+    "output": "top -b -n 1 | grep 'KiB Mem'"
+  },
+  {
+    "input": "Run top and display only swap summary",
+    "output": "top -b -n 1 | grep 'KiB Swap'"
+  },
+  {
+    "input": "Run top and display only the header",
+    "output": "top -b -n 1 | head -n 5"
+  },
+  {
+    "input": "Run top and display only the last 10 lines",
+    "output": "top -b -n 1 | tail -n 10"
+  },
+  {
+    "input": "Run top and display only processes with a TTY",
+    "output": "top -b -n 1 | grep -v '?'"
+  },
+  {
+    "input": "Run top and show only processes with PPID 1",
+    "output": "top -b -n 1 | awk '$5 == 1'"
+  },
+  {
+    "input": "Run top and show only processes with PID greater than 1000",
+    "output": "top -b -n 1 | awk '$1 > 1000'"
+  },
+  {
+    "input": "Run top and show only processes with user 'www-data'",
+    "output": "top -u www-data"
+  },
+  {
+    "input": "Run top and show only the top 5 CPU-consuming processes",
+    "output": "top -b -n 1 | head -n 17 | tail -n 5"
+  },
+  {
+    "input": "Run top and show only the top 5 memory-consuming processes",
+    "output": "top -b -o %MEM -n 1 | head -n 17 | tail -n 5"
+  },
+  {
+    "input": "Run top and show only zombie processes",
+    "output": "top -b -n 1 | grep ' Z '"
+  },
+  {
+    "input": "Run top and show only processes in uninterruptible sleep",
+    "output": "top -b -n 1 | grep ' D '"
+  },
+  {
+    "input": "Run top and show only processes in stopped state",
+    "output": "top -b -n 1 | grep ' T '"
+  },
+
+  {
+    "input": "Run htop in default mode",
+    "output": "htop"
+  },
+  {
+    "input": "Run htop and display tree view",
+    "output": "htop -t"
+  },
+  {
+    "input": "Run htop and sort by memory usage",
+    "output": "htop --sort-key=MEM%"
+  },
+  {
+    "input": "Run htop and sort by CPU usage",
+    "output": "htop --sort-key=CPU%"
+  },
+  {
+    "input": "Run htop and show only user 'alice' processes",
+    "output": "htop -u alice"
+  },
+  {
+    "input": "Run htop and show only processes with UID 1000",
+    "output": "htop -u 1000"
+  },
+  {
+    "input": "Run htop with monochrome display",
+    "output": "htop -C"
+  },
+  {
+    "input": "Run htop and show only processes with a specific command name",
+    "output": "htop | grep COMMAND_NAME"
+  },
+  {
+    "input": "Run htop and show only running processes",
+    "output": "htop | grep ' R '"
+  },
+  {
+    "input": "Run htop and show only sleeping processes",
+    "output": "htop | grep ' S '"
+  },
+  {
+    "input": "Run htop and show only zombie processes",
+    "output": "htop | grep ' Z '"
+  },
+  {
+    "input": "Run htop and show only stopped processes",
+    "output": "htop | grep ' T '"
+  },
+  {
+    "input": "Run htop and show only processes with PPID 1",
+    "output": "htop | awk '$5 == 1'"
+  },
+  {
+    "input": "Run htop and show only processes with PID greater than 1000",
+    "output": "htop | awk '$1 > 1000'"
+  },
+  {
+    "input": "Run htop and show only processes with user 'www-data'",
+    "output": "htop -u www-data"
+  },
+  {
+    "input": "Run htop and show only the top 5 CPU-consuming processes",
+    "output": "htop | head -n 10 | tail -n 5"
+  },
+  {
+    "input": "Run htop and show only the top 5 memory-consuming processes",
+    "output": "htop --sort-key=MEM% | head -n 10 | tail -n 5"
+  },
+  {
+    "input": "Run htop and show only processes with TTY",
+    "output": "htop | grep -v '?'"
+  },
+  {
+    "input": "Run htop in batch mode and save output to file",
+    "output": "htop -b > htop_output.txt"
+  },
+  {
+    "input": "Run htop and show full command line for each process",
+    "output": "htop --show-commandline"
+  },
+  {
+    "input": "Run htop and highlight running tasks",
+    "output": "htop --highlight-changes"
+  },
+  {
+    "input": "Run htop and show only root's processes",
+    "output": "htop -u root"
+  },
+  {
+    "input": "Run htop and show only processes using more than 10% CPU",
+    "output": "htop | awk '$9 > 10'"
+  },
+  {
+    "input": "Run htop and show only processes using more than 100MB RAM",
+    "output": "htop | awk '$10 ~ /[0-9]+/ && $10 > 102400'"
+  },
+  {
+    "input": "Run htop and show only processes in uninterruptible sleep",
+    "output": "htop | grep ' D '"
+  },
+  {
+    "input": "Run htop and show only the header",
+    "output": "htop | head -n 5"
+  },
+  {
+    "input": "Run htop and display only the last 10 lines",
+    "output": "htop | tail -n 10"
+  },
+  {
+    "input": "Run htop and show only the first 10 processes",
+    "output": "htop | head -n 10"
+  },
+  {
+    "input": "Run htop and display wide output",
+    "output": "htop --wide"
+  },
+  {
+    "input": "Run htop and show process tree with user 'bob'",
+    "output": "htop -t -u bob"
+  },
+  {
+    "input": "Run htop with color scheme 2",
+    "output": "htop --color-scheme=2"
+  },
+  {
+    "input": "Run htop with color scheme 4",
+    "output": "htop --color-scheme=4"
+  },
+  {
+    "input": "Run htop and display CPU meters only",
+    "output": "htop --only-cpu"
+  },
+  {
+    "input": "Run htop and display memory meters only",
+    "output": "htop --only-mem"
+  },
+  {
+    "input": "Run htop and display swap meters only",
+    "output": "htop --only-swap"
+  },
+  {
+    "input": "Run htop and display load average",
+    "output": "htop --show-load-average"
+  },
+  {
+    "input": "Run htop and display uptime",
+    "output": "htop --show-uptime"
+  },
+  {
+    "input": "Run htop and display process tree and sort by CPU",
+    "output": "htop -t --sort-key=CPU%"
+  },
+  {
+    "input": "Run htop and display process tree and sort by memory",
+    "output": "htop -t --sort-key=MEM%"
+  },
+  {
+    "input": "Run htop and show only kernel threads",
+    "output": "htop --kernel-threads"
+  },
+  {
+    "input": "Run htop and hide kernel threads",
+    "output": "htop --no-kernel-threads"
+  },
+  {
+    "input": "Run htop and show only userland threads",
+    "output": "htop --userland-threads"
+  },
+  {
+    "input": "Run htop and hide userland threads",
+    "output": "htop --no-userland-threads"
+  },
+  {
+    "input": "Run htop and show only processes with nice value 0",
+    "output": "htop | awk '$18 == 0'"
+  },
+  {
+    "input": "Run htop and show only processes with priority 20",
+    "output": "htop | awk '$17 == 20'"
+  },
+  {
+    "input": "Run htop and show only processes with CPU usage > 50%",
+    "output": "htop | awk '$9 > 50'"
+  },
+
+  {
+    "input": "Run atop in default mode",
+    "output": "atop"
+  },
+  {
+    "input": "Run atop and update every 2 seconds",
+    "output": "atop -d 2"
+  },
+  {
+    "input": "Run atop and update every 10 seconds",
+    "output": "atop 10"
+  },
+  {
+    "input": "Run atop and record output to a file",
+    "output": "atop -w atop.log"
+  },
+  {
+    "input": "Run atop and read from a log file",
+    "output": "atop -r atop.log"
+  },
+  {
+    "input": "Run atop and display only CPU activity",
+    "output": "atop -C"
+  },
+  {
+    "input": "Run atop and display only memory activity",
+    "output": "atop -M"
+  },
+  {
+    "input": "Run atop and display only disk activity",
+    "output": "atop -D"
+  },
+  {
+    "input": "Run atop and display only network activity",
+    "output": "atop -N"
+  },
+  {
+    "input": "Run atop and display only process activity",
+    "output": "atop -P"
+  },
+  {
+    "input": "Run atop and display only system activity",
+    "output": "atop -S"
+  },
+  {
+    "input": "Run atop and show threads",
+    "output": "atop -y"
+  },
+  {
+    "input": "Run atop and show only processes with high CPU usage",
+    "output": "atop | grep CPU"
+  },
+  {
+    "input": "Run atop and show only processes with high memory usage",
+    "output": "atop | grep MEM"
+  },
+  {
+    "input": "Run atop and show only processes with high disk usage",
+    "output": "atop | grep DSK"
+  },
+  {
+    "input": "Run atop and show only processes with high network usage",
+    "output": "atop | grep NET"
+  },
+  {
+    "input": "Run atop and show only zombie processes",
+    "output": "atop | grep zombie"
+  },
+  {
+    "input": "Run atop and show only sleeping processes",
+    "output": "atop | grep sleeping"
+  },
+  {
+    "input": "Run atop and show only running processes",
+    "output": "atop | grep running"
+  },
+  {
+    "input": "Run atop and show only stopped processes",
+    "output": "atop | grep stopped"
+  },
+  {
+    "input": "Run atop and show only processes for user 'alice'",
+    "output": "atop -u alice"
+  },
+  {
+    "input": "Run atop and show only processes for user 'root'",
+    "output": "atop -u root"
+  },
+  {
+    "input": "Run atop in monochrome mode",
+    "output": "atop -m"
+  },
+  {
+    "input": "Run atop and show only processes with PID 1234",
+    "output": "atop -p 1234"
+  },
+  {
+    "input": "Run atop and show only processes with PPID 1",
+    "output": "atop | awk '$5 == 1'"
+  },
+  {
+    "input": "Run atop and show only processes with CPU usage > 50%",
+    "output": "atop | awk '$9 > 50'"
+  },
+  {
+    "input": "Run atop and show only processes with memory usage > 100MB",
+    "output": "atop | awk '$10 > 102400'"
+  },
+  {
+    "input": "Run atop and show only processes with disk usage > 1GB",
+    "output": "atop | awk '$11 > 1048576'"
+  },
+  {
+    "input": "Run atop and show only processes with network usage > 10MB",
+    "output": "atop | awk '$12 > 10240'"
+  },
+  {
+    "input": "Run atop and show process tree",
+    "output": "atop -T"
+  },
+  {
+    "input": "Run atop and show only kernel threads",
+    "output": "atop -k"
+  },
+  {
+    "input": "Run atop and show only userland threads",
+    "output": "atop -U"
+  },
+  {
+    "input": "Run atop and show only processes with nice value 0",
+    "output": "atop | awk '$18 == 0'"
+  },
+  {
+    "input": "Run atop and show only processes with priority 20",
+    "output": "atop | awk '$17 == 20'"
+  },
+  {
+    "input": "Run atop and show only processes with TTY",
+    "output": "atop | grep -v '?'"
+  },
+  {
+    "input": "Run atop and show only the first 10 processes",
+    "output": "atop | head -n 10"
+  },
+  {
+    "input": "Run atop and show only the last 10 lines",
+    "output": "atop | tail -n 10"
+  },
+  {
+    "input": "Run atop and show only the header",
+    "output": "atop | head -n 5"
+  },
+  {
+    "input": "Run atop and show only the top 5 CPU-consuming processes",
+    "output": "atop | head -n 10 | tail -n 5"
+  },
+  {
+    "input": "Run atop and show only the top 5 memory-consuming processes",
+    "output": "atop | grep MEM | head -n 5"
+  },
+  {
+    "input": "Run atop and show only the top 5 disk-consuming processes",
+    "output": "atop | grep DSK | head -n 5"
+  },
+  {
+    "input": "Run atop and show only the top 5 network-consuming processes",
+    "output": "atop | grep NET | head -n 5"
+  },
+  {
+    "input": "Run atop and highlight running tasks",
+    "output": "atop -h"
+  },
+  {
+    "input": "Run atop and show only processes with user 'www-data'",
+    "output": "atop -u www-data"
+  },
+  {
+    "input": "Run atop in batch mode and save output to file",
+    "output": "atop -b > atop_output.txt"
+  }
+]

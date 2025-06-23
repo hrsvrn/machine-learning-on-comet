@@ -1,0 +1,146 @@
+[
+    {
+        "input": "Display contents of a file",
+        "output": "cat file.txt"
+    },
+    {
+        "input": "Concatenate two files",
+        "output": "cat file1.txt file2.txt"
+    },
+    {
+        "input": "Create a new file from standard input",
+        "output": "cat > newfile.txt"
+    },
+    {
+        "input": "Append standard input to an existing file",
+        "output": "cat >> existing.txt"
+    },
+    {
+        "input": "Number all output lines",
+        "output": "cat -n file.txt"
+    },
+    {
+        "input": "Number non-blank output lines only",
+        "output": "cat -b file.txt"
+    },
+    {
+        "input": "Squeeze multiple adjacent blank lines",
+        "output": "cat -s file.txt"
+    },
+    {
+        "input": "Show \"$\" at end of each line",
+        "output": "cat -E file.txt"
+    },
+    {
+        "input": "Display tabs as ^I",
+        "output": "cat -T file.txt"
+    },
+    {
+        "input": "Show non-printing characters",
+        "output": "cat -v file.txt"
+    },
+    {
+        "input": "Redirect a file’s contents to another file",
+        "output": "cat file.txt > output.txt"
+    },
+    {
+        "input": "Read from stdin instead of filename",
+        "output": "cat < file.txt"
+    },
+    {
+        "input": "Pipe through grep",
+        "output": "cat file.txt | grep pattern"
+    },
+    {
+        "input": "Count lines via wc",
+        "output": "cat file.txt | wc -l"
+    },
+    {
+        "input": "Extract first field via cut",
+        "output": "cat file.csv | cut -d',' -f1"
+    },
+    {
+        "input": "Transform lowercase to uppercase",
+        "output": "cat file.txt | tr 'a-z' 'A-Z'"
+    },
+    {
+        "input": "Compress concatenated output",
+        "output": "cat file1 file2 | gzip > combined.gz"
+    },
+    {
+        "input": "View with less",
+        "output": "cat file.txt | less"
+    },
+    {
+        "input": "Duplicate output via tee",
+        "output": "cat file.txt | tee copy.txt"
+    },
+    {
+        "input": "Concatenate outputs of commands",
+        "output": "cat <(echo line1) <(echo line2)"
+    },
+    {
+        "input": "Merge directory listings",
+        "output": "cat <(ls /etc) <(ls /usr)"
+    },
+    {
+        "input": "View CPU info",
+        "output": "cat /proc/cpuinfo"
+    },
+    {
+        "input": "View memory info",
+        "output": "cat /proc/meminfo"
+    },
+    {
+        "input": "View kernel version",
+        "output": "cat /proc/version"
+    },
+    {
+        "input": "View MAC address",
+        "output": "cat /sys/class/net/eth0/address"
+    },
+    {
+        "input": "View interface speed",
+        "output": "cat /sys/class/net/eth0/speed"
+    },
+    {
+        "input": "Concatenate all .txt files",
+        "output": "cat *.txt"
+    },
+    {
+        "input": "Concatenate numbered file range",
+        "output": "cat file{1..5}.txt"
+    },
+    {
+        "input": "Generate 16 random bytes",
+        "output": "cat /dev/urandom | head -c 16"
+    },
+    {
+        "input": "Merge binary files",
+        "output": "cat file1.bin file2.bin > combined.bin"
+    },
+    {
+        "input": "Pipeline to tar extraction",
+        "output": "cat archive.tar.gz | tar xz"
+    },
+    {
+        "input": "Checksum concatenated output",
+        "output": "cat file.txt | md5sum"
+    },
+    {
+        "input": "Reverse file line order",
+        "output": "tac file.txt"
+    },
+    {
+        "input": "Convert tabs to spaces",
+        "output": "cat file.txt | expand"
+    },
+    {
+        "input": "Convert spaces to tabs",
+        "output": "cat file.txt | unexpand"
+    },
+    {
+        "input": "Align columns",
+        "output": "cat file.txt | column -t"
+    }
+]

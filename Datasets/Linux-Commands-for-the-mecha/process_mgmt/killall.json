@@ -1,0 +1,202 @@
+[
+    {
+        "input": "Kill all processes named firefox",
+        "output": "killall firefox"
+    },
+    {
+        "input": "Force kill all sshd processes",
+        "output": "killall -9 sshd"
+    },
+    {
+        "input": "Send SIGHUP to all apache2 processes",
+        "output": "killall -HUP apache2"
+    },
+    {
+        "input": "Kill all java processes by exact name",
+        "output": "killall -e java"
+    },
+    {
+        "input": "Kill all processes matching pattern 'python'",
+        "output": "killall -r 'python.*'"
+    },
+    {
+        "input": "Kill all processes owned by user alice",
+        "output": "killall -u alice firefox"
+    },
+    {
+        "input": "Kill all processes as superuser",
+        "output": "sudo killall nginx"
+    },
+    {
+        "input": "Kill all instances of mousepad",
+        "output": "killall mousepad"
+    },
+    {
+        "input": "Kill all instances of gnome-terminal",
+        "output": "killall gnome-terminal"
+    },
+    {
+        "input": "Kill process by PID file name",
+        "output": "killall --pidfile /var/run/myapp.pid"
+    },
+    {
+        "input": "Kill all processes except sshd",
+        "output": "killall -o sshd"
+    },
+    {
+        "input": "Kill processes named cat ignoring case",
+        "output": "killall -i cat"
+    },
+    {
+        "input": "Kill all processes older than 10 minutes named sleep",
+        "output": "killall -o sleep"
+    },
+    {
+        "input": "Kill all processes younger than 5 seconds named myapp",
+        "output": "killall -n 5 myapp"
+    },
+    {
+        "input": "Kill by signal name SIGUSR1",
+        "output": "killall -USR1 mydaemon"
+    },
+    {
+        "input": "Kill all instances of node.js",
+        "output": "killall node"
+    },
+    {
+        "input": "Kill GUI apps matching case-insensitive 'Chrome'",
+        "output": "killall -i chrome"
+    },
+    {
+        "input": "Force kill by exact match name",
+        "output": "killall -9 -e myapp"
+    },
+    {
+        "input": "Kill all processes matching regex 'httpd[0-9]+'",
+        "output": "killall -r 'httpd[0-9]+'"
+    },
+    {
+        "input": "Kill all screen sessions",
+        "output": "killall screen"
+    },
+    {
+        "input": "Kill all tmux sessions",
+        "output": "killall tmux"
+    },
+    {
+        "input": "Kill all vlc processes",
+        "output": "killall vlc"
+    },
+    {
+        "input": "Kill all mplayer instances",
+        "output": "killall mplayer"
+    },
+    {
+        "input": "Kill all ffmpeg processes",
+        "output": "killall ffmpeg"
+    },
+    {
+        "input": "Kill all Chromium processes",
+        "output": "killall chromium"
+    },
+    {
+        "input": "Kill all Xorg processes",
+        "output": "killall Xorg"
+    },
+    {
+        "input": "Kill user processes named bash",
+        "output": "killall -u bob bash"
+    },
+    {
+        "input": "Kill user processes named vim",
+        "output": "killall -u carol vim"
+    },
+    {
+        "input": "Kill root processes named apache2",
+        "output": "sudo killall -u root apache2"
+    },
+    {
+        "input": "Kill processes using older than given age",
+        "output": "killall -o nginx"
+    },
+    {
+        "input": "Kill processes using younger than given age",
+        "output": "killall -n 10 nginx"
+    },
+    {
+        "input": "Kill multiple names in one command",
+        "output": "killall httpd mysqld"
+    },
+    {
+        "input": "Kill processes by full path name",
+        "output": "killall /usr/bin/python3"
+    },
+    {
+        "input": "Kill named process with verbose output",
+        "output": "killall -v myserver"
+    },
+    {
+        "input": "Kill all child processes named worker",
+        "output": "killall --children worker"
+    },
+    {
+        "input": "Dry run to list processes that would be killed",
+        "output": "killall -v -s TERM --dry-run myapp"
+    },
+    {
+        "input": "Kill group of processes by group name",
+        "output": "killall -g mygroup"
+    },
+    {
+        "input": "Kill by signal number 15 to process name",
+        "output": "killall -15 mysqld"
+    },
+    {
+        "input": "Kill by signal number 2 (SIGINT)",
+        "output": "killall -2 mysqld"
+    },
+    {
+        "input": "Send SIGTERM by name ignoring errors",
+        "output": "killall -q -TERM myapp"
+    },
+    {
+        "input": "Force kill all by name quietly",
+        "output": "killall -9 -q myapp"
+    },
+    {
+        "input": "Kill by name matching wildcard",
+        "output": "killall 'python*'"
+    },
+    {
+        "input": "Kill by name matching wildcard ignoring case",
+        "output": "killall -i 'Python*'"
+    },
+    {
+        "input": "Kill by name using regex anchor",
+        "output": "killall -r '^daemon$'"
+    },
+    {
+        "input": "Kill legacy service by name",
+        "output": "killall inetd"
+    },
+    {
+        "input": "Kill all processes in the current login session",
+        "output": "killall -u $(whoami)"
+    },
+    {
+        "input": "Kill all processes except sshd in current session",
+        "output": "killall -u $(whoami) --ignore-case -o sshd"
+    },
+    {
+        "input": "Kill by name on remote host via SSH",
+        "output": "ssh user@host 'killall mydaemon'"
+    },
+    {
+        "input": "Kill by name with limited privilege escalation",
+        "output": "sudo killall mydaemon"
+    },
+    {
+        "input": "Kill by name using sudo in a script",
+        "output": "sudo bash -c 'killall nginx'"
+    }
+]

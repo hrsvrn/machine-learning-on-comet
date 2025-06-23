@@ -1,0 +1,598 @@
+[
+  {
+    "input": "Display disk usage of the current directory",
+    "output": "du"
+  },
+  {
+    "input": "Display disk usage of a specific file",
+    "output": "du file.txt"
+  },
+  {
+    "input": "Display disk usage of a specific directory",
+    "output": "du /var/lib"
+  },
+  {
+    "input": "Display disk usage in human-readable format",
+    "output": "du -h"
+  },
+  {
+    "input": "Display disk usage in human-readable format for /home",
+    "output": "du -h /home"
+  },
+  {
+    "input": "Display disk usage in kilobytes",
+    "output": "du -k"
+  },
+  {
+    "input": "Display disk usage in megabytes",
+    "output": "du -m"
+  },
+  {
+    "input": "Display disk usage in 512-byte blocks",
+    "output": "du -b"
+  },
+  {
+    "input": "Display disk usage in apparent size",
+    "output": "du --apparent-size"
+  },
+  {
+    "input": "Display disk usage for multiple directories",
+    "output": "du ~/Documents ~/Pictures ~/.zshrc"
+  },
+  {
+    "input": "Summarize total disk usage for each argument",
+    "output": "du -s /var /etc"
+  },
+  {
+    "input": "Display total disk usage for a directory and its contents",
+    "output": "du -c /var"
+  },
+  {
+    "input": "Display disk usage for all files and directories including hidden ones",
+    "output": "du -a"
+  },
+  {
+    "input": "Display disk usage for all files and directories in human-readable format",
+    "output": "du -ah"
+  },
+  {
+    "input": "Display total disk usage in human-readable format",
+    "output": "du -ch"
+  },
+  {
+    "input": "Display disk usage for all files and directories up to depth 1",
+    "output": "du -d 1"
+  },
+  {
+    "input": "Display disk usage for all files and directories up to depth 2",
+    "output": "du -d 2"
+  },
+  {
+    "input": "Display disk usage for /home up to 1 level deep in human-readable format",
+    "output": "du -h --max-depth=1 /home"
+  },
+  {
+    "input": "Display disk usage for /var/lib up to 2 levels deep",
+    "output": "du -d 2 /var/lib"
+  },
+  {
+    "input": "Display disk usage for /tmp up to 3 levels deep",
+    "output": "du --max-depth=3 /tmp"
+  },
+  {
+    "input": "Display only the total disk usage for /var",
+    "output": "du -sh /var"
+  },
+  {
+    "input": "Display disk usage for all files in /etc",
+    "output": "du -a /etc"
+  },
+  {
+    "input": "Display disk usage for all files in /etc in human-readable format",
+    "output": "du -ah /etc"
+  },
+  {
+    "input": "Display disk usage for all files in /etc up to depth 1",
+    "output": "du -a --max-depth=1 /etc"
+  },
+  {
+    "input": "Display disk usage for all files in /etc up to depth 2",
+    "output": "du -a --max-depth=2 /etc"
+  },
+  {
+    "input": "Display disk usage for all files in /etc, excluding .log files",
+    "output": "du -a --exclude=\"*.log\" /etc"
+  },
+  {
+    "input": "Display disk usage for all files in /var, excluding backup directory",
+    "output": "du -a --exclude=\"/var/backup\" /var"
+  },
+  {
+    "input": "Display disk usage in human-readable format, excluding .tmp files",
+    "output": "du -ah --exclude=\"*.tmp\""
+  },
+  {
+    "input": "Display disk usage in human-readable format, excluding /tmp directory",
+    "output": "du -ah --exclude=\"/tmp\""
+  },
+  {
+    "input": "Display disk usage with last modification time",
+    "output": "du --time"
+  },
+  {
+    "input": "Display disk usage with last modification time in human-readable format",
+    "output": "du --time -h"
+  },
+  {
+    "input": "Display disk usage with last access time",
+    "output": "du --time=atime"
+  },
+  {
+    "input": "Display disk usage with last change time",
+    "output": "du --time=ctime"
+  },
+  {
+    "input": "Display disk usage with last modification time in full-iso format",
+    "output": "du --time --time-style=full-iso"
+  },
+  {
+    "input": "Display disk usage with last access time in custom format",
+    "output": "du --time=atime --time-style=+%Y-%m-%d"
+  },
+  {
+    "input": "Display disk usage for files larger than 1MB",
+    "output": "du --threshold=1M"
+  },
+  {
+    "input": "Display disk usage for files smaller than 100K",
+    "output": "du --threshold=-100K"
+  },
+  {
+    "input": "Display disk usage for files larger than 1GB in /var",
+    "output": "du --threshold=1G /var"
+  },
+  {
+    "input": "Display disk usage for files smaller than 10K in /etc",
+    "output": "du --threshold=-10K /etc"
+  },
+  {
+    "input": "Display disk usage in human-readable format for files larger than 500M",
+    "output": "du -h --threshold=500M"
+  },
+  {
+    "input": "Display disk usage in bytes",
+    "output": "du -b"
+  },
+  {
+    "input": "Display disk usage in kilobytes for /usr",
+    "output": "du -k /usr"
+  },
+  {
+    "input": "Display disk usage in megabytes for /var",
+    "output": "du -m /var"
+  },
+  {
+    "input": "Display disk usage in gigabytes for /opt",
+    "output": "du -BG /opt"
+  },
+  {
+    "input": "Display disk usage in blocks of 512 bytes",
+    "output": "du -B 512"
+  },
+  {
+    "input": "Display disk usage in blocks of 4K",
+    "output": "du -B 4K"
+  },
+  {
+    "input": "Display disk usage in blocks of 1M",
+    "output": "du -B 1M"
+  },
+  {
+    "input": "Display disk usage in blocks of 1G",
+    "output": "du -B 1G"
+  },
+  {
+    "input": "Display disk usage for all files and directories, including hidden ones, in kilobytes",
+    "output": "du -ak"
+  },
+  {
+    "input": "Display disk usage for all files and directories, including hidden ones, in megabytes",
+    "output": "du -am"
+  },
+  {
+    "input": "Display disk usage for all files and directories, including hidden ones, in human-readable format",
+    "output": "du -ah"
+  },
+  {
+    "input": "Display disk usage for all files and directories, including hidden ones, in bytes",
+    "output": "du -ab"
+  },
+  {
+    "input": "Display only the grand total for /var",
+    "output": "du -shc /var"
+  },
+  {
+    "input": "Display disk usage for all files and directories, sorted by size",
+    "output": "du -ah | sort -h"
+  },
+  {
+    "input": "Display disk usage for all files and directories, sorted in reverse order by size",
+    "output": "du -ah | sort -hr"
+  },
+  {
+    "input": "Display the 10 largest directories in /home",
+    "output": "du -h /home | sort -hr | head -10"
+  },
+  {
+    "input": "Display the 10 smallest directories in /home",
+    "output": "du -h /home | sort -h | head -10"
+  },
+  {
+    "input": "Display disk usage for all directories in /var, excluding /var/log",
+    "output": "du -h --exclude=\"/var/log\" /var"
+  },
+  {
+    "input": "Display disk usage for all directories in /etc, excluding *.conf files",
+    "output": "du -h --exclude=\"*.conf\" /etc"
+  },
+  {
+    "input": "Display disk usage for all directories in /usr, excluding *.so files",
+    "output": "du -h --exclude=\"*.so\" /usr"
+  },
+  {
+    "input": "Display disk usage for all directories in /opt, excluding backup directories",
+    "output": "du -h --exclude=\"*/backup\" /opt"
+  },
+  {
+    "input": "Display disk usage for all directories in /tmp, excluding temp files",
+    "output": "du -h --exclude=\"*.tmp\" /tmp"
+  },
+  {
+    "input": "Display disk usage for all files in /home, excluding .cache directories",
+    "output": "du -h --exclude=\".cache\" /home"
+  },
+  {
+    "input": "Display disk usage for all files in /root, excluding .ssh directories",
+    "output": "du -h --exclude=\".ssh\" /root"
+  },
+  {
+    "input": "Display disk usage for all files in /srv, excluding .git directories",
+    "output": "du -h --exclude=\".git\" /srv"
+  },
+  {
+    "input": "Display disk usage for all files in /var, excluding .bak files",
+    "output": "du -h --exclude=\"*.bak\" /var"
+  },
+  {
+    "input": "Display disk usage for all files in /etc, excluding README files",
+    "output": "du -h --exclude=\"README*\" /etc"
+  },
+  {
+    "input": "Display disk usage summary for each subdirectory in /var/log",
+    "output": "du -h --max-depth=1 /var/log"
+  },
+  {
+    "input": "Display disk usage summary for each subdirectory in /usr/local",
+    "output": "du -h --max-depth=1 /usr/local"
+  },
+  {
+    "input": "Display disk usage summary for each subdirectory in /opt",
+    "output": "du -h --max-depth=1 /opt"
+  },
+  {
+    "input": "Display disk usage summary for each subdirectory in /tmp",
+    "output": "du -h --max-depth=1 /tmp"
+  },
+  {
+    "input": "Display disk usage summary for each subdirectory in /srv",
+    "output": "du -h --max-depth=1 /srv"
+  },
+  {
+    "input": "Display disk usage summary for each subdirectory in /home",
+    "output": "du -h --max-depth=1 /home"
+  },
+  {
+    "input": "Display disk usage summary for each subdirectory in /root",
+    "output": "du -h --max-depth=1 /root"
+  },
+  {
+    "input": "Display disk usage summary for each subdirectory in /etc",
+    "output": "du -h --max-depth=1 /etc"
+  },
+  {
+    "input": "Display disk usage summary for each subdirectory in /bin",
+    "output": "du -h --max-depth=1 /bin"
+  },
+  {
+    "input": "Display disk usage summary for each subdirectory in /sbin",
+    "output": "du -h --max-depth=1 /sbin"
+  },
+  {
+    "input": "Display disk usage for all files and directories, following symlinks",
+    "output": "du -L"
+  },
+  {
+    "input": "Display disk usage for all files and directories, not following symlinks",
+    "output": "du -P"
+  },
+  {
+    "input": "Display disk usage for all files and directories, counting hard links",
+    "output": "du -l"
+  },
+  {
+    "input": "Display disk usage for all files and directories, displaying inode usage",
+    "output": "du --inodes"
+  },
+  {
+    "input": "Display disk usage for all files and directories, showing null-terminated output",
+    "output": "du -0"
+  },
+  {
+    "input": "Display disk usage for all files and directories, skipping directories on a different filesystem",
+    "output": "du -x"
+  },
+  {
+    "input": "Display disk usage for all files and directories, using SI units",
+    "output": "du --si"
+  },
+  {
+    "input": "Display disk usage for all files and directories, skipping subdirectory sizes in parent",
+    "output": "du -S"
+  },
+  {
+    "input": "Display disk usage for all files and directories, excluding files listed in a file",
+    "output": "du -X exclude-list.txt"
+  },
+  {
+    "input": "Display disk usage for all files and directories, excluding files matching a pattern",
+    "output": "du --exclude=\"*.log\""
+  },
+  {
+    "input": "Display disk usage for all files and directories, excluding directories matching a pattern",
+    "output": "du --exclude=\"/tmp/*\""
+  },
+  {
+    "input": "Display disk usage for all files and directories, excluding files and directories matching multiple patterns",
+    "output": "du --exclude=\"*.log\" --exclude=\"*.tmp\""
+  },
+  {
+    "input": "Display disk usage for all files and directories, using block size of 2M",
+    "output": "du -B 2M"
+  },
+  {
+    "input": "Display disk usage for all files and directories, using block size of 100K",
+    "output": "du -B 100K"
+  },
+  {
+    "input": "Display disk usage for all files and directories, using block size of 10G",
+    "output": "du -B 10G"
+  },
+  {
+    "input": "Display disk usage for all files and directories, using block size of 1T",
+    "output": "du -B 1T"
+  },
+  {
+    "input": "Display disk usage for all files and directories, using block size of 500",
+    "output": "du -B 500"
+  },
+  {
+    "input": "Display disk usage for all files and directories, using block size of 64K",
+    "output": "du -B 64K"
+  },
+  {
+    "input": "Display disk usage for all files and directories, using block size of 256M",
+    "output": "du -B 256M"
+  },
+  {
+    "input": "Display disk usage for all files and directories, using block size of 5G",
+    "output": "du -B 5G"
+  },
+  {
+    "input": "Display disk usage for all files and directories, using block size of 128K",
+    "output": "du -B 128K"
+  },
+  {
+    "input": "Display disk usage for all files and directories, using block size of 32M",
+    "output": "du -B 32M"
+  },
+  {
+    "input": "Display disk usage for all files and directories, using block size of 8G",
+    "output": "du -B 8G"
+  },
+  {
+    "input": "Display disk usage for all files and directories, using block size of 4T",
+    "output": "du -B 4T"
+  },
+  {
+    "input": "Display disk usage for all files and directories, using block size of 16K",
+    "output": "du -B 16K"
+  },
+  {
+    "input": "Display disk usage for all files and directories, using block size of 512K",
+    "output": "du -B 512K"
+  },
+  {
+    "input": "Display disk usage for all files and directories, using block size of 2G",
+    "output": "du -B 2G"
+  },
+  {
+    "input": "Display disk usage for all files and directories, using block size of 64M",
+    "output": "du -B 64M"
+  },
+  {
+    "input": "Display disk usage for all files and directories, using block size of 256G",
+    "output": "du -B 256G"
+  },
+  {
+    "input": "Display disk usage for all files and directories, using block size of 1P",
+    "output": "du -B 1P"
+  },
+  {
+    "input": "Display disk usage for all files and directories, using block size of 128M",
+    "output": "du -B 128M"
+  },
+  {
+    "input": "Display disk usage for all files and directories, using block size of 32K",
+    "output": "du -B 32K"
+  },
+  {
+    "input": "Display disk usage for all files and directories, using block size of 8M",
+    "output": "du -B 8M"
+  },
+  {
+    "input": "Display disk usage for all files and directories, using block size of 4G",
+    "output": "du -B 4G"
+  },
+  {
+    "input": "Display disk usage for all files and directories, using block size of 16M",
+    "output": "du -B 16M"
+  },
+  {
+    "input": "Display disk usage for all files and directories, using block size of 512M",
+    "output": "du -B 512M"
+  },
+  {
+    "input": "Display disk usage for all files and directories, using block size of 2T",
+    "output": "du -B 2T"
+  },
+  {
+    "input": "Display disk usage for all files and directories, using block size of 64G",
+    "output": "du -B 64G"
+  },
+  {
+    "input": "Display disk usage for all files and directories, using block size of 256K",
+    "output": "du -B 256K"
+  },
+  {
+    "input": "Display disk usage for all files and directories, using block size of 1E",
+    "output": "du -B 1E"
+  },
+  {
+    "input": "Display disk usage for all files and directories, using block size of 128K",
+    "output": "du -B 128K"
+  },
+  {
+    "input": "Display disk usage for all files and directories, using block size of 32G",
+    "output": "du -B 32G"
+  },
+  {
+    "input": "Display disk usage for all files and directories, using block size of 8K",
+    "output": "du -B 8K"
+  },
+  {
+    "input": "Display disk usage for all files and directories, using block size of 4M",
+    "output": "du -B 4M"
+  },
+  {
+    "input": "Display disk usage for all files and directories, using block size of 16G",
+    "output": "du -B 16G"
+  },
+  {
+    "input": "Display disk usage for all files and directories, using block size of 512G",
+    "output": "du -B 512G"
+  },
+  {
+    "input": "Display disk usage for all files and directories, using block size of 2P",
+    "output": "du -B 2P"
+  },
+  {
+    "input": "Display disk usage for all files and directories, using block size of 64K",
+    "output": "du -B 64K"
+  },
+  {
+    "input": "Display disk usage for all files and directories, using block size of 256M",
+    "output": "du -B 256M"
+  },
+  {
+    "input": "Display disk usage for all files and directories, using block size of 1Y",
+    "output": "du -B 1Y"
+  },
+  {
+    "input": "Display disk usage for all files and directories, using block size of 128G",
+    "output": "du -B 128G"
+  },
+  {
+    "input": "Display disk usage for all files and directories, using block size of 32T",
+    "output": "du -B 32T"
+  },
+  {
+    "input": "Display disk usage for all files and directories, using block size of 8T",
+    "output": "du -B 8T"
+  },
+  {
+    "input": "Display disk usage for all files and directories, using block size of 4P",
+    "output": "du -B 4P"
+  },
+  {
+    "input": "Display disk usage for all files and directories, using block size of 16T",
+    "output": "du -B 16T"
+  },
+  {
+    "input": "Display disk usage for all files and directories, using block size of 512T",
+    "output": "du -B 512T"
+  },
+  {
+    "input": "Display disk usage for all files and directories, using block size of 2E",
+    "output": "du -B 2E"
+  },
+  {
+    "input": "Display disk usage for all files and directories, using block size of 64T",
+    "output": "du -B 64T"
+  },
+  {
+    "input": "Display disk usage for all files and directories, using block size of 256T",
+    "output": "du -B 256T"
+  },
+  {
+    "input": "Display disk usage for all files and directories, using block size of 1Z",
+    "output": "du -B 1Z"
+  },
+  {
+    "input": "Display disk usage for all files and directories, using block size of 128T",
+    "output": "du -B 128T"
+  },
+  {
+    "input": "Display disk usage for all files and directories, using block size of 32P",
+    "output": "du -B 32P"
+  },
+  {
+    "input": "Display disk usage for all files and directories, using block size of 8P",
+    "output": "du -B 8P"
+  },
+  {
+    "input": "Display disk usage for all files and directories, using block size of 4E",
+    "output": "du -B 4E"
+  },
+  {
+    "input": "Display disk usage for all files and directories, using block size of 16P",
+    "output": "du -B 16P"
+  },
+  {
+    "input": "Display disk usage for all files and directories, using block size of 512P",
+    "output": "du -B 512P"
+  },
+  {
+    "input": "Display disk usage for all files and directories, using block size of 2Z",
+    "output": "du -B 2Z"
+  },
+  {
+    "input": "Display disk usage for all files and directories, using block size of 64P",
+    "output": "du -B 64P"
+  },
+  {
+    "input": "Display disk usage for all files and directories, using block size of 256P",
+    "output": "du -B 256P"
+  },
+  {
+    "input": "Display disk usage for all files and directories, using block size of 1Q",
+    "output": "du -B 1Q"
+  },
+  {
+    "input": "Display help for du command",
+    "output": "du --help"
+  },
+  {
+    "input": "Display version information for du command",
+    "output": "du --version"
+  }
+]

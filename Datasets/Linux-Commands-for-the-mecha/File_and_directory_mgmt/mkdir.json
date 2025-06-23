@@ -1,0 +1,490 @@
+[
+    {
+    "input": "Create a directory called 'projects'",
+    "output": "mkdir projects"
+  },
+  {
+    "input": "Make a new directory named 'backup' in the current folder",
+    "output": "mkdir backup"
+  },
+  {
+    "input": "Create a directory named '2025_reports' inside Documents",
+    "output": "mkdir Documents/2025_reports"
+  },
+  {
+    "input": "Create a directory called 'test' in your home directory",
+    "output": "mkdir ~/test"
+  },
+  {
+    "input": "Make a directory called 'work' in /tmp",
+    "output": "mkdir /tmp/work"
+  },
+  {
+    "input": "Create a directory called 'data' inside /var/log",
+    "output": "mkdir /var/log/data"
+  },
+  {
+    "input": "Create a nested directory structure 'a/b/c'",
+    "output": "mkdir -p a/b/c"
+  },
+  {
+    "input": "Create a directory named 'My Files' with spaces in the name",
+    "output": "mkdir 'My Files'"
+  },
+  {
+    "input": "Make a hidden directory called '.config' in your home",
+    "output": "mkdir ~/.config"
+  },
+  {
+    "input": "Create a directory called 'scripts' in the current directory",
+    "output": "mkdir scripts"
+  },
+  {
+    "input": "Make a directory named 'photos' in the Pictures folder",
+    "output": "mkdir ~/Pictures/photos"
+  },
+  {
+    "input": "Create a directory named 'downloads' in /mnt/usb",
+    "output": "mkdir /mnt/usb/downloads"
+  },
+  {
+    "input": "Create a directory named 'archive' in /opt",
+    "output": "mkdir /opt/archive"
+  },
+  {
+    "input": "Create a directory called 'logs' and another called 'tmp' at the same time",
+    "output": "mkdir logs tmp"
+  },
+  {
+    "input": "Create a directory called '2025' inside /srv/www",
+    "output": "mkdir /srv/www/2025"
+  },
+  {
+    "input": "Create a directory called 'backup_2025' in /var/backups",
+    "output": "mkdir /var/backups/backup_2025"
+  },
+  {
+    "input": "Create a directory called 'private' in your home",
+    "output": "mkdir ~/private"
+  },
+  {
+    "input": "Create a directory named 'bin' in the parent directory",
+    "output": "mkdir ../bin"
+  },
+  {
+    "input": "Create a directory named 'reports' in /home/user/Documents",
+    "output": "mkdir /home/user/Documents/reports"
+  },
+  {
+    "input": "Create a directory called 'testdir' and enter it",
+    "output": "mkdir testdir && cd testdir"
+  },
+  {
+    "input": "Create a directory called 'build' in the current directory",
+    "output": "mkdir build"
+  },
+  {
+    "input": "Create a directory '2025/June/18' with all parents",
+    "output": "mkdir -p 2025/June/18"
+  },
+  {
+    "input": "Create a directory called 'new_folder' in /etc",
+    "output": "mkdir /etc/new_folder"
+  },
+  {
+    "input": "Create a directory called 'cache' in /var",
+    "output": "mkdir /var/cache"
+  },
+  {
+    "input": "Create a directory called 'logs' inside /var/log",
+    "output": "mkdir /var/log/logs"
+  },
+  {
+    "input": "Create a directory called 'docs' in /usr/share",
+    "output": "mkdir /usr/share/docs"
+  },
+  {
+    "input": "Make a directory called 'src' in /usr/local",
+    "output": "mkdir /usr/local/src"
+  },
+  {
+    "input": "Create a directory called 'media' in /mnt",
+    "output": "mkdir /mnt/media"
+  },
+  {
+    "input": "Create a directory called 'images' in the Desktop directory",
+    "output": "mkdir ~/Desktop/images"
+  },
+  {
+    "input": "Create a directory called 'videos' in /media/usb",
+    "output": "mkdir /media/usb/videos"
+  },
+  {
+    "input": "Create a directory called 'notes' in your home directory",
+    "output": "mkdir ~/notes"
+  },
+  {
+    "input": "Create a directory called 'temp' in /tmp",
+    "output": "mkdir /tmp/temp"
+  },
+  {
+    "input": "Create a directory called 'test_logs' in the current directory",
+    "output": "mkdir test_logs"
+  },
+  {
+    "input": "Create a directory called 'config' in /etc",
+    "output": "mkdir /etc/config"
+  },
+  {
+    "input": "Create a directory called 'public_html' in your home",
+    "output": "mkdir ~/public_html"
+  },
+  {
+    "input": "Create a directory called 'dev' in /srv",
+    "output": "mkdir /srv/dev"
+  },
+  {
+    "input": "Create a directory called 'lib' in /usr/local",
+    "output": "mkdir /usr/local/lib"
+  },
+  {
+    "input": "Create a directory called 'share' in /usr/local",
+    "output": "mkdir /usr/local/share"
+  },
+  {
+    "input": "Create a directory called 'docs' in /usr/local/share",
+    "output": "mkdir /usr/local/share/docs"
+  },
+  {
+    "input": "Create a directory called 'projects' and a subdirectory '2025' in one command",
+    "output": "mkdir -p projects/2025"
+  },
+  {
+    "input": "Create a directory called 'python3' in /usr/bin",
+    "output": "mkdir /usr/bin/python3"
+  },
+  {
+    "input": "Create a directory called 'backup' inside /etc/ssl",
+    "output": "mkdir /etc/ssl/backup"
+  },
+  {
+    "input": "Create a directory called 'archive' in /var/mail",
+    "output": "mkdir /var/mail/archive"
+  },
+  {
+    "input": "Create a directory called 'logs' in /var/tmp",
+    "output": "mkdir /var/tmp/logs"
+  },
+  {
+    "input": "Create a directory called 'monthly' in /var/log/backup",
+    "output": "mkdir /var/log/backup/monthly"
+  },
+  {
+    "input": "Create a directory called 'weekly' in /var/log/backup",
+    "output": "mkdir /var/log/backup/weekly"
+  },
+  {
+    "input": "Create a directory called 'daily' in /var/log/backup",
+    "output": "mkdir /var/log/backup/daily"
+  },
+  {
+    "input": "Create a directory called 'test' in /var/spool",
+    "output": "mkdir /var/spool/test"
+  },
+  {
+    "input": "Create a directory called 'queue' in /var/spool",
+    "output": "mkdir /var/spool/queue"
+  },
+  {
+    "input": "Create a directory called 'mail' in /var/spool",
+    "output": "mkdir /var/spool/mail"
+  },
+  {
+    "input": "Create a directory called 'cron' in /var/spool",
+    "output": "mkdir /var/spool/cron"
+  },
+  {
+    "input": "Create a directory called 'jobs' in /var/spool/cron",
+    "output": "mkdir /var/spool/cron/jobs"
+  },
+  {
+    "input": "Create a directory called 'old' in /var/log",
+    "output": "mkdir /var/log/old"
+  },
+  {
+    "input": "Create a directory called 'backup' in /home/alice",
+    "output": "mkdir /home/alice/backup"
+  },
+  {
+    "input": "Create a directory called 'backup' in /home/bob",
+    "output": "mkdir /home/bob/backup"
+  },
+  {
+    "input": "Create a directory called 'test' in /home/alice",
+    "output": "mkdir /home/alice/test"
+  },
+  {
+    "input": "Create a directory called 'test' in /home/bob",
+    "output": "mkdir /home/bob/test"
+  },
+  {
+    "input": "Create a directory called 'test' in /home/charlie",
+    "output": "mkdir /home/charlie/test"
+  },
+  {
+    "input": "Create a directory called 'test' in /home/dave",
+    "output": "mkdir /home/dave/test"
+  },
+  {
+    "input": "Create a directory called 'test' in /home/erin",
+    "output": "mkdir /home/erin/test"
+  },
+  {
+    "input": "Create a directory called 'test' in /home/frank",
+    "output": "mkdir /home/frank/test"
+  },
+  {
+    "input": "Create a directory called 'test' in /home/grace",
+    "output": "mkdir /home/grace/test"
+  },
+  {
+    "input": "Create a directory called 'test' in /home/harry",
+    "output": "mkdir /home/harry/test"
+  },
+  {
+    "input": "Create a directory called 'temp' in /home/alice",
+    "output": "mkdir /home/alice/temp"
+  },
+  {
+    "input": "Create a directory called 'temp' in /home/bob",
+    "output": "mkdir /home/bob/temp"
+  },
+  {
+    "input": "Create a directory called 'temp' in /home/charlie",
+    "output": "mkdir /home/charlie/temp"
+  },
+  {
+    "input": "Create a directory called 'temp' in /home/dave",
+    "output": "mkdir /home/dave/temp"
+  },
+  {
+    "input": "Create a directory called 'temp' in /home/erin",
+    "output": "mkdir /home/erin/temp"
+  },
+  {
+    "input": "Create a directory called 'temp' in /home/frank",
+    "output": "mkdir /home/frank/temp"
+  },
+  {
+    "input": "Create a directory called 'temp' in /home/grace",
+    "output": "mkdir /home/grace/temp"
+  },
+  {
+    "input": "Create a directory called 'temp' in /home/harry",
+    "output": "mkdir /home/harry/temp"
+  },
+  {
+    "input": "Create a directory called 'workspace' in your home",
+    "output": "mkdir ~/workspace"
+  },
+  {
+    "input": "Create a directory called 'builds' in your home",
+    "output": "mkdir ~/builds"
+  },
+  {
+    "input": "Create a directory called 'logs' in your home",
+    "output": "mkdir ~/logs"
+  },
+  {
+    "input": "Create a directory called 'test_data' in your home",
+    "output": "mkdir ~/test_data"
+  },
+  {
+    "input": "Create a directory called 'test_output' in your home",
+    "output": "mkdir ~/test_output"
+  },
+  {
+    "input": "Create a directory called 'projects' in your home",
+    "output": "mkdir ~/projects"
+  },
+  {
+    "input": "Create a directory called 'archives' in your home",
+    "output": "mkdir ~/archives"
+  },
+  {
+    "input": "Create a directory called 'music' in your home",
+    "output": "mkdir ~/music"
+  },
+  {
+    "input": "Create a directory called 'videos' in your home",
+    "output": "mkdir ~/videos"
+  },
+  {
+    "input": "Create a directory called 'pictures' in your home",
+    "output": "mkdir ~/pictures"
+  },
+  {
+    "input": "Create a directory called 'documents' in your home",
+    "output": "mkdir ~/documents"
+  },
+  {
+    "input": "Create a directory called 'downloads' in your home",
+    "output": "mkdir ~/downloads"
+  },
+  {
+    "input": "Create a directory called 'bin' in your home",
+    "output": "mkdir ~/bin"
+  },
+  {
+    "input": "Create a directory called 'src' in your home",
+    "output": "mkdir ~/src"
+  },
+  {
+    "input": "Create a directory called 'include' in your home",
+    "output": "mkdir ~/include"
+  },
+  {
+    "input": "Create a directory called 'lib' in your home",
+    "output": "mkdir ~/lib"
+  },
+  {
+    "input": "Create a directory called 'share' in your home",
+    "output": "mkdir ~/share"
+  },
+  {
+    "input": "Create a directory called 'opt' in your home",
+    "output": "mkdir ~/opt"
+  },
+  {
+    "input": "Create a directory called 'etc' in your home",
+    "output": "mkdir ~/etc"
+  },
+  {
+    "input": "Create a directory called 'var' in your home",
+    "output": "mkdir ~/var"
+  },
+  {
+    "input": "Create a directory called 'tmp' in your home",
+    "output": "mkdir ~/tmp"
+  },
+  {
+    "input": "Create a directory called 'man' in your home",
+    "output": "mkdir ~/man"
+  },
+  {
+    "input": "Create a directory called 'doc' in your home",
+    "output": "mkdir ~/doc"
+  },
+  {
+    "input": "Create a directory called 'info' in your home",
+    "output": "mkdir ~/info"
+  },
+  {
+    "input": "Create a directory called 'locale' in your home",
+    "output": "mkdir ~/locale"
+  },
+  {
+    "input": "Create a directory called 'zoneinfo' in your home",
+    "output": "mkdir ~/zoneinfo"
+  },
+  {
+    "input": "Create a directory called 'fonts' in your home",
+    "output": "mkdir ~/fonts"
+  },
+  {
+    "input": "Create a directory called 'themes' in your home",
+    "output": "mkdir ~/themes"
+  },
+  {
+    "input": "Create a directory called 'icons' in your home",
+    "output": "mkdir ~/icons"
+  },
+  {
+    "input": "Create a directory called 'backgrounds' in your home",
+    "output": "mkdir ~/backgrounds"
+  },
+  {
+    "input": "Create a directory called 'applications' in your home",
+    "output": "mkdir ~/applications"
+  },
+  {
+    "input": "Create a directory called 'sounds' in your home",
+    "output": "mkdir ~/sounds"
+  },
+  {
+    "input": "Create a directory called 'pixmaps' in your home",
+    "output": "mkdir ~/pixmaps"
+  },
+  {
+    "input": "Create a directory called 'mime' in your home",
+    "output": "mkdir ~/mime"
+  },
+  {
+    "input": "Create a directory called 'games' in your home",
+    "output": "mkdir ~/games"
+  },
+  {
+    "input": "Create a directory called 'perl5' in your home",
+    "output": "mkdir ~/perl5"
+  },
+  {
+    "input": "Create a directory called 'python' in your home",
+    "output": "mkdir ~/python"
+  },
+  {
+    "input": "Create a directory called 'texmf' in your home",
+    "output": "mkdir ~/texmf"
+  },
+  {
+    "input": "Create a directory called 'emacs' in your home",
+    "output": "mkdir ~/emacs"
+  },
+  {
+    "input": "Create a directory called 'doc-base' in your home",
+    "output": "mkdir ~/doc-base"
+  },
+  {
+    "input": "Create a directory called 'lintian' in your home",
+    "output": "mkdir ~/lintian"
+  },
+  {
+    "input": "Create a directory called 'linda' in your home",
+    "output": "mkdir ~/linda"
+  },
+  {
+    "input": "Create a directory called 'locale-langpack' in your home",
+    "output": "mkdir ~/locale-langpack"
+  },
+  {
+    "input": "Create a directory called 'Asia' in your home",
+    "output": "mkdir ~/Asia"
+  },
+  {
+    "input": "Create a directory called 'Europe' in your home",
+    "output": "mkdir ~/Europe"
+  },
+  {
+    "input": "Create a directory called 'America' in your home",
+    "output": "mkdir ~/America"
+  },
+  {
+    "input": "Create a directory called 'Africa' in your home",
+    "output": "mkdir ~/Africa"
+  },
+  {
+    "input": "Create a deeply nested directory structure 'a/b/c/d/e/f'",
+    "output": "mkdir -p a/b/c/d/e/f"
+  },
+  {
+    "input": "Create a directory called 'test' and suppress error if it exists",
+    "output": "mkdir -p test"
+  },
+  {
+    "input": "Create multiple directories at once: 'a', 'b', and 'c'",
+    "output": "mkdir a b c"
+  },
+  {
+    "input": "Create a directory called 'test' in the current directory and set permissions to 700",
+    "output": "mkdir test && chmod 700 test"
+  }
+]

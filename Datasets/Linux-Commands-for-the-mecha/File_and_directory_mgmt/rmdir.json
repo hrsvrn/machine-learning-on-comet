@@ -1,0 +1,202 @@
+[
+     {
+    "input": "Delete an empty directory named 'backup' in the current folder",
+    "output": "rmdir backup"
+  },
+  {
+    "input": "Remove the directory '2025_reports' inside Documents if it is empty",
+    "output": "rmdir Documents/2025_reports"
+  },
+  {
+    "input": "Delete an empty directory called 'old_logs' in your home directory",
+    "output": "rmdir ~/old_logs"
+  },
+  {
+    "input": "Remove an empty directory called 'work' in /tmp",
+    "output": "rmdir /tmp/work"
+  },
+  {
+    "input": "Delete an empty directory called 'data' inside /var/log",
+    "output": "rmdir /var/log/data"
+  },
+  {
+    "input": "Remove a nested empty directory structure 'a/b/c' in one command",
+    "output": "rmdir -p a/b/c"
+  },
+  {
+    "input": "Delete a directory named 'My Files' with spaces in the name if it is empty",
+    "output": "rmdir 'My Files'"
+  },
+  {
+    "input": "Remove a hidden empty directory called '.config' in your home",
+    "output": "rmdir ~/.config"
+  },
+  {
+    "input": "Delete an empty directory called 'scripts' in the current directory",
+    "output": "rmdir scripts"
+  },
+  {
+    "input": "Remove an empty directory named 'photos' in the Pictures folder",
+    "output": "rmdir ~/Pictures/photos"
+  },
+  {
+    "input": "Delete an empty directory named 'downloads' in /mnt/usb",
+    "output": "rmdir /mnt/usb/downloads"
+  },
+  {
+    "input": "Remove an empty directory named 'archive' in /opt",
+    "output": "rmdir /opt/archive"
+  },
+  {
+    "input": "Delete two empty directories called 'logs' and 'tmp' at the same time",
+    "output": "rmdir logs tmp"
+  },
+  {
+    "input": "Remove an empty directory called '2025' inside /srv/www",
+    "output": "rmdir /srv/www/2025"
+  },
+  {
+    "input": "Delete an empty directory called 'backup_2025' in /var/backups",
+    "output": "rmdir /var/backups/backup_2025"
+  },
+  {
+    "input": "Remove an empty directory called 'private' in your home",
+    "output": "rmdir ~/private"
+  },
+  {
+    "input": "Delete an empty directory named 'bin' in the parent directory",
+    "output": "rmdir ../bin"
+  },
+  {
+    "input": "Remove an empty directory named 'reports' in /home/user/Documents",
+    "output": "rmdir /home/user/Documents/reports"
+  },
+  {
+    "input": "Remove a directory called 'testdir' and its parent directories if they become empty",
+    "output": "rmdir -p testdir"
+  },
+  {
+    "input": "Delete an empty directory called 'build' in the current directory",
+    "output": "rmdir build"
+  },
+  {
+    "input": "Remove a deeply nested empty directory structure '2025/June/18' and all parents if empty",
+    "output": "rmdir -p 2025/June/18"
+  },
+  {
+    "input": "Delete an empty directory called 'new_folder' in /etc",
+    "output": "rmdir /etc/new_folder"
+  },
+  {
+    "input": "Remove an empty directory called 'cache' in /var",
+    "output": "rmdir /var/cache"
+  },
+  {
+    "input": "Delete an empty directory called 'logs' inside /var/log",
+    "output": "rmdir /var/log/logs"
+  },
+  {
+    "input": "Remove an empty directory called 'docs' in /usr/share",
+    "output": "rmdir /usr/share/docs"
+  },
+  {
+    "input": "Delete an empty directory called 'src' in /usr/local",
+    "output": "rmdir /usr/local/src"
+  },
+  {
+    "input": "Remove an empty directory called 'media' in /mnt",
+    "output": "rmdir /mnt/media"
+  },
+  {
+    "input": "Delete an empty directory called 'images' in the Desktop directory",
+    "output": "rmdir ~/Desktop/images"
+  },
+  {
+    "input": "Remove an empty directory called 'videos' in /media/usb",
+    "output": "rmdir /media/usb/videos"
+  },
+  {
+    "input": "Delete an empty directory called 'notes' in your home directory",
+    "output": "rmdir ~/notes"
+  },
+  {
+    "input": "Remove an empty directory called 'temp' in /tmp",
+    "output": "rmdir /tmp/temp"
+  },
+  {
+    "input": "Delete an empty directory called 'test_logs' in the current directory",
+    "output": "rmdir test_logs"
+  },
+  {
+    "input": "Remove an empty directory called 'config' in /etc",
+    "output": "rmdir /etc/config"
+  },
+  {
+    "input": "Delete an empty directory called 'public_html' in your home",
+    "output": "rmdir ~/public_html"
+  },
+  {
+    "input": "Remove an empty directory called 'dev' in /srv",
+    "output": "rmdir /srv/dev"
+  },
+  {
+    "input": "Delete an empty directory called 'lib' in /usr/local",
+    "output": "rmdir /usr/local/lib"
+  },
+  {
+    "input": "Remove an empty directory called 'share' in /usr/local",
+    "output": "rmdir /usr/local/share"
+  },
+  {
+    "input": "Delete an empty directory called 'docs' in /usr/local/share",
+    "output": "rmdir /usr/local/share/docs"
+  },
+  {
+    "input": "Remove an empty directory called 'python3' in /usr/bin",
+    "output": "rmdir /usr/bin/python3"
+  },
+  {
+    "input": "Delete an empty directory called 'backup' inside /etc/ssl",
+    "output": "rmdir /etc/ssl/backup"
+  },
+  {
+    "input": "Remove an empty directory called 'archive' in /var/mail",
+    "output": "rmdir /var/mail/archive"
+  },
+  {
+    "input": "Delete an empty directory called 'logs' in /var/tmp",
+    "output": "rmdir /var/tmp/logs"
+  },
+  {
+    "input": "Remove an empty directory called 'monthly' in /var/log/backup",
+    "output": "rmdir /var/log/backup/monthly"
+  },
+  {
+    "input": "Delete an empty directory called 'weekly' in /var/log/backup",
+    "output": "rmdir /var/log/backup/weekly"
+  },
+  {
+    "input": "Remove an empty directory called 'daily' in /var/log/backup",
+    "output": "rmdir /var/log/backup/daily"
+  },
+  {
+    "input": "Delete an empty directory called 'test' in /var/spool",
+    "output": "rmdir /var/spool/test"
+  },
+  {
+    "input": "Remove an empty directory called 'queue' in /var/spool",
+    "output": "rmdir /var/spool/queue"
+  },
+  {
+    "input": "Delete an empty directory called 'mail' in /var/spool",
+    "output": "rmdir /var/spool/mail"
+  },
+  {
+    "input": "Remove an empty directory called 'cron' in /var/spool",
+    "output": "rmdir /var/spool/cron"
+  },
+  {
+    "input": "Delete an empty directory called 'jobs' in /var/spool/cron",
+    "output": "rmdir /var/spool/cron/jobs"
+  }
+]

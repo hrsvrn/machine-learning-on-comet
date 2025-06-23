@@ -1,0 +1,478 @@
+[
+  {
+    "input": "Query the A record for google.com",
+    "output": "nslookup google.com"
+  },
+  {
+    "input": "Query the A record for example.com",
+    "output": "nslookup example.com"
+  },
+  {
+    "input": "Query the A record for 8.8.8.8 (reverse lookup)",
+    "output": "nslookup 8.8.8.8"
+  },
+  {
+    "input": "Query the A record for yahoo.com",
+    "output": "nslookup yahoo.com"
+  },
+  {
+    "input": "Query the A record for github.com",
+    "output": "nslookup github.com"
+  },
+  {
+    "input": "Query the A record for facebook.com using DNS server 1.1.1.1",
+    "output": "nslookup facebook.com 1.1.1.1"
+  },
+  {
+    "input": "Query the A record for google.com using DNS server 8.8.8.8",
+    "output": "nslookup google.com 8.8.8.8"
+  },
+  {
+    "input": "Query the A record for example.com using DNS server 9.9.9.9",
+    "output": "nslookup example.com 9.9.9.9"
+  },
+  {
+    "input": "Query the A record for yahoo.com using DNS server 208.67.222.222",
+    "output": "nslookup yahoo.com 208.67.222.222"
+  },
+  {
+    "input": "Query the A record for github.com using DNS server 4.2.2.2",
+    "output": "nslookup github.com 4.2.2.2"
+  },
+  {
+    "input": "Query the AAAA (IPv6) record for google.com",
+    "output": "nslookup -query=AAAA google.com"
+  },
+  {
+    "input": "Query the AAAA (IPv6) record for example.com",
+    "output": "nslookup -query=AAAA example.com"
+  },
+  {
+    "input": "Query the AAAA (IPv6) record for yahoo.com",
+    "output": "nslookup -query=AAAA yahoo.com"
+  },
+  {
+    "input": "Query the AAAA (IPv6) record for github.com",
+    "output": "nslookup -query=AAAA github.com"
+  },
+  {
+    "input": "Query the MX record for google.com",
+    "output": "nslookup -query=MX google.com"
+  },
+  {
+    "input": "Query the MX record for example.com",
+    "output": "nslookup -query=MX example.com"
+  },
+  {
+    "input": "Query the MX record for yahoo.com",
+    "output": "nslookup -query=MX yahoo.com"
+  },
+  {
+    "input": "Query the MX record for github.com",
+    "output": "nslookup -query=MX github.com"
+  },
+  {
+    "input": "Query the NS record for google.com",
+    "output": "nslookup -query=NS google.com"
+  },
+  {
+    "input": "Query the NS record for example.com",
+    "output": "nslookup -query=NS example.com"
+  },
+  {
+    "input": "Query the NS record for yahoo.com",
+    "output": "nslookup -query=NS yahoo.com"
+  },
+  {
+    "input": "Query the NS record for github.com",
+    "output": "nslookup -query=NS github.com"
+  },
+  {
+    "input": "Query the SOA record for google.com",
+    "output": "nslookup -query=SOA google.com"
+  },
+  {
+    "input": "Query the SOA record for example.com",
+    "output": "nslookup -query=SOA example.com"
+  },
+  {
+    "input": "Query the SOA record for yahoo.com",
+    "output": "nslookup -query=SOA yahoo.com"
+  },
+  {
+    "input": "Query the SOA record for github.com",
+    "output": "nslookup -query=SOA github.com"
+  },
+  {
+    "input": "Query the TXT record for google.com",
+    "output": "nslookup -query=TXT google.com"
+  },
+  {
+    "input": "Query the TXT record for example.com",
+    "output": "nslookup -query=TXT example.com"
+  },
+  {
+    "input": "Query the TXT record for yahoo.com",
+    "output": "nslookup -query=TXT yahoo.com"
+  },
+  {
+    "input": "Query the TXT record for github.com",
+    "output": "nslookup -query=TXT github.com"
+  },
+  {
+    "input": "Query the CNAME record for www.google.com",
+    "output": "nslookup -query=CNAME www.google.com"
+  },
+  {
+    "input": "Query the CNAME record for www.example.com",
+    "output": "nslookup -query=CNAME www.example.com"
+  },
+  {
+    "input": "Query the CNAME record for www.yahoo.com",
+    "output": "nslookup -query=CNAME www.yahoo.com"
+  },
+  {
+    "input": "Query the CNAME record for www.github.com",
+    "output": "nslookup -query=CNAME www.github.com"
+  },
+  {
+    "input": "Query the PTR record for 8.8.8.8",
+    "output": "nslookup -query=PTR 8.8.8.8"
+  },
+  {
+    "input": "Query the PTR record for 1.1.1.1",
+    "output": "nslookup -query=PTR 1.1.1.1"
+  },
+  {
+    "input": "Query the PTR record for 208.67.222.222",
+    "output": "nslookup -query=PTR 208.67.222.222"
+  },
+  {
+    "input": "Query the PTR record for 4.2.2.2",
+    "output": "nslookup -query=PTR 4.2.2.2"
+  },
+  {
+    "input": "Query the SRV record for _sip._tcp.google.com",
+    "output": "nslookup -query=SRV _sip._tcp.google.com"
+  },
+  {
+    "input": "Query the SRV record for _xmpp-server._tcp.gmail.com",
+    "output": "nslookup -query=SRV _xmpp-server._tcp.gmail.com"
+  },
+  {
+    "input": "Query the SRV record for _sip._tcp.example.com",
+    "output": "nslookup -query=SRV _sip._tcp.example.com"
+  },
+  {
+    "input": "Query the SRV record for _xmpp-server._tcp.yahoo.com",
+    "output": "nslookup -query=SRV _xmpp-server._tcp.yahoo.com"
+  },
+  {
+    "input": "Query the ANY record for google.com",
+    "output": "nslookup -query=ANY google.com"
+  },
+  {
+    "input": "Query the ANY record for example.com",
+    "output": "nslookup -query=ANY example.com"
+  },
+  {
+    "input": "Query the ANY record for yahoo.com",
+    "output": "nslookup -query=ANY yahoo.com"
+  },
+  {
+    "input": "Query the ANY record for github.com",
+    "output": "nslookup -query=ANY github.com"
+  },
+  {
+    "input": "Query the SPF record for google.com",
+    "output": "nslookup -type=SPF google.com"
+  },
+  {
+    "input": "Query the SPF record for example.com",
+    "output": "nslookup -type=SPF example.com"
+  },
+  {
+    "input": "Query the SPF record for yahoo.com",
+    "output": "nslookup -type=SPF yahoo.com"
+  },
+  {
+    "input": "Query the SPF record for github.com",
+    "output": "nslookup -type=SPF github.com"
+  },
+  {
+    "input": "Query the DNSKEY record for google.com",
+    "output": "nslookup -type=DNSKEY google.com"
+  },
+  {
+    "input": "Query the DNSKEY record for example.com",
+    "output": "nslookup -type=DNSKEY example.com"
+  },
+  {
+    "input": "Query the DNSKEY record for yahoo.com",
+    "output": "nslookup -type=DNSKEY yahoo.com"
+  },
+  {
+    "input": "Query the DNSKEY record for github.com",
+    "output": "nslookup -type=DNSKEY github.com"
+  },
+  {
+    "input": "Query the DS record for google.com",
+    "output": "nslookup -type=DS google.com"
+  },
+  {
+    "input": "Query the DS record for example.com",
+    "output": "nslookup -type=DS example.com"
+  },
+  {
+    "input": "Query the DS record for yahoo.com",
+    "output": "nslookup -type=DS yahoo.com"
+  },
+  {
+    "input": "Query the DS record for github.com",
+    "output": "nslookup -type=DS github.com"
+  },
+  {
+    "input": "Query the NAPTR record for google.com",
+    "output": "nslookup -type=NAPTR google.com"
+  },
+  {
+    "input": "Query the NAPTR record for example.com",
+    "output": "nslookup -type=NAPTR example.com"
+  },
+  {
+    "input": "Query the NAPTR record for yahoo.com",
+    "output": "nslookup -type=NAPTR yahoo.com"
+  },
+  {
+    "input": "Query the NAPTR record for github.com",
+    "output": "nslookup -type=NAPTR github.com"
+  },
+  {
+    "input": "Query the CAA record for google.com",
+    "output": "nslookup -type=CAA google.com"
+  },
+  {
+    "input": "Query the CAA record for example.com",
+    "output": "nslookup -type=CAA example.com"
+  },
+  {
+    "input": "Query the CAA record for yahoo.com",
+    "output": "nslookup -type=CAA yahoo.com"
+  },
+  {
+    "input": "Query the CAA record for github.com",
+    "output": "nslookup -type=CAA github.com"
+  },
+  {
+    "input": "Query the TLSA record for google.com",
+    "output": "nslookup -type=TLSA google.com"
+  },
+  {
+    "input": "Query the TLSA record for example.com",
+    "output": "nslookup -type=TLSA example.com"
+  },
+  {
+    "input": "Query the TLSA record for yahoo.com",
+    "output": "nslookup -type=TLSA yahoo.com"
+  },
+  {
+    "input": "Query the TLSA record for github.com",
+    "output": "nslookup -type=TLSA github.com"
+  },
+  {
+    "input": "Query the A record for google.com with a timeout of 2 seconds",
+    "output": "nslookup -timeout=2 google.com"
+  },
+  {
+    "input": "Query the A record for example.com with a timeout of 5 seconds",
+    "output": "nslookup -timeout=5 example.com"
+  },
+  {
+    "input": "Query the A record for yahoo.com with a timeout of 10 seconds",
+    "output": "nslookup -timeout=10 yahoo.com"
+  },
+  {
+    "input": "Query the A record for github.com with a timeout of 15 seconds",
+    "output": "nslookup -timeout=15 github.com"
+  },
+  {
+    "input": "Query the A record for google.com with 3 retries",
+    "output": "nslookup -retry=3 google.com"
+  },
+  {
+    "input": "Query the A record for example.com with 5 retries",
+    "output": "nslookup -retry=5 example.com"
+  },
+  {
+    "input": "Query the A record for yahoo.com with 10 retries",
+    "output": "nslookup -retry=10 yahoo.com"
+  },
+  {
+    "input": "Query the A record for github.com with 1 retry",
+    "output": "nslookup -retry=1 github.com"
+  },
+  {
+    "input": "Query the A record for google.com with port 5353",
+    "output": "nslookup -port=5353 google.com"
+  },
+  {
+    "input": "Query the A record for example.com with port 5300",
+    "output": "nslookup -port=5300 example.com"
+  },
+  {
+    "input": "Query the A record for yahoo.com with port 53",
+    "output": "nslookup -port=53 yahoo.com"
+  },
+  {
+    "input": "Query the A record for github.com with port 1053",
+    "output": "nslookup -port=1053 github.com"
+  },
+  {
+    "input": "Query the A record for google.com with search domain example.net",
+    "output": "nslookup google.com example.net"
+  },
+  {
+    "input": "Query the A record for example.com with search domain example.org",
+    "output": "nslookup example.com example.org"
+  },
+  {
+    "input": "Query the A record for yahoo.com with search domain yahoo.net",
+    "output": "nslookup yahoo.com yahoo.net"
+  },
+  {
+    "input": "Query the A record for github.com with search domain github.net",
+    "output": "nslookup github.com github.net"
+  },
+  {
+    "input": "Query the A record for google.com and display debug information",
+    "output": "nslookup -debug google.com"
+  },
+  {
+    "input": "Query the A record for example.com and display debug information",
+    "output": "nslookup -debug example.com"
+  },
+  {
+    "input": "Query the A record for yahoo.com and display debug information",
+    "output": "nslookup -debug yahoo.com"
+  },
+  {
+    "input": "Query the A record for github.com and display debug information",
+    "output": "nslookup -debug github.com"
+  },
+  {
+    "input": "Query the A record for google.com and display statistics",
+    "output": "nslookup -stats google.com"
+  },
+  {
+    "input": "Query the A record for example.com and display statistics",
+    "output": "nslookup -stats example.com"
+  },
+  {
+    "input": "Query the A record for yahoo.com and display statistics",
+    "output": "nslookup -stats yahoo.com"
+  },
+  {
+    "input": "Query the A record for github.com and display statistics",
+    "output": "nslookup -stats github.com"
+  },
+  {
+    "input": "Query the A record for google.com and use TCP instead of UDP",
+    "output": "nslookup -vc google.com"
+  },
+  {
+    "input": "Query the A record for example.com and use TCP instead of UDP",
+    "output": "nslookup -vc example.com"
+  },
+  {
+    "input": "Query the A record for yahoo.com and use TCP instead of UDP",
+    "output": "nslookup -vc yahoo.com"
+  },
+  {
+    "input": "Query the A record for github.com and use TCP instead of UDP",
+    "output": "nslookup -vc github.com"
+  },
+  {
+    "input": "Query the A record for google.com and use IPv6",
+    "output": "nslookup -query=AAAA google.com"
+  },
+  {
+    "input": "Query the A record for example.com and use IPv6",
+    "output": "nslookup -query=AAAA example.com"
+  },
+  {
+    "input": "Query the A record for yahoo.com and use IPv6",
+    "output": "nslookup -query=AAAA yahoo.com"
+  },
+  {
+    "input": "Query the A record for github.com and use IPv6",
+    "output": "nslookup -query=AAAA github.com"
+  },
+  {
+    "input": "Query the A record for google.com and set search domain to .",
+    "output": "nslookup google.com ."
+  },
+  {
+    "input": "Query the A record for example.com and set search domain to .",
+    "output": "nslookup example.com ."
+  },
+  {
+    "input": "Query the A record for yahoo.com and set search domain to .",
+    "output": "nslookup yahoo.com ."
+  },
+  {
+    "input": "Query the A record for github.com and set search domain to .",
+    "output": "nslookup github.com ."
+  },
+  {
+    "input": "Query the A record for google.com and set search domain to local",
+    "output": "nslookup google.com local"
+  },
+  {
+    "input": "Query the A record for example.com and set search domain to local",
+    "output": "nslookup example.com local"
+  },
+  {
+    "input": "Query the A record for yahoo.com and set search domain to local",
+    "output": "nslookup yahoo.com local"
+  },
+  {
+    "input": "Query the A record for github.com and set search domain to local",
+    "output": "nslookup github.com local"
+  },
+  {
+    "input": "Interactive mode: start nslookup and set default server to 8.8.8.8",
+    "output": "nslookup\nserver 8.8.8.8"
+  },
+  {
+    "input": "Interactive mode: set query type to MX and look up google.com",
+    "output": "nslookup\nset type=MX\ngoogle.com"
+  },
+  {
+    "input": "Interactive mode: set query type to NS and look up example.com",
+    "output": "nslookup\nset type=NS\nexample.com"
+  },
+  {
+    "input": "Interactive mode: set query type to TXT and look up yahoo.com",
+    "output": "nslookup\nset type=TXT\nyahoo.com"
+  },
+  {
+    "input": "Interactive mode: set query type to AAAA and look up github.com",
+    "output": "nslookup\nset type=AAAA\ngithub.com"
+  },
+  {
+    "input": "Interactive mode: set debug mode and look up google.com",
+    "output": "nslookup\nset debug\ngoogle.com"
+  },
+  {
+    "input": "Interactive mode: set query type to ANY and look up example.com",
+    "output": "nslookup\nset type=ANY\nexample.com"
+  },
+  {
+    "input": "Interactive mode: set query type to SOA and look up yahoo.com",
+    "output": "nslookup\nset type=SOA\nyahoo.com"
+  },
+  {
+    "input": "Interactive mode: set query type to CNAME and look up www.github.com",
+    "output": "nslookup\nset type=CNAME\nwww.github.com"
+  }
+]

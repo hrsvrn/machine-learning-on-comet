@@ -1,0 +1,614 @@
+[
+    {
+    "input": "Rename a file called 'oldname.txt' to 'newname.txt'",
+    "output": "mv oldname.txt newname.txt"
+  },
+  {
+    "input": "Move 'report.pdf' to the Documents folder",
+    "output": "mv report.pdf ~/Documents/"
+  },
+  {
+    "input": "Move 'image.jpg' from the current directory to /tmp",
+    "output": "mv image.jpg /tmp/"
+  },
+  {
+    "input": "Rename 'data.csv' to 'backup.csv' in the same directory",
+    "output": "mv data.csv backup.csv"
+  },
+  {
+    "input": "Move all .txt files to the backup directory",
+    "output": "mv *.txt backup/"
+  },
+  {
+    "input": "Rename a file named 'My File.txt' with spaces to 'MyFile.txt'",
+    "output": "mv 'My File.txt' MyFile.txt"
+  },
+  {
+    "input": "Move a hidden file '.env' to the parent directory",
+    "output": "mv .env ../"
+  },
+  {
+    "input": "Move 'script.sh' to /usr/local/bin and keep the same name",
+    "output": "mv script.sh /usr/local/bin/"
+  },
+  {
+    "input": "Move 'notes.txt' from your home to the Desktop",
+    "output": "mv ~/notes.txt ~/Desktop/"
+  },
+  {
+    "input": "Rename 'config.yaml' to 'config_backup.yaml' in /etc",
+    "output": "mv /etc/config.yaml /etc/config_backup.yaml"
+  },
+  {
+    "input": "Move all files in the current directory to /tmp",
+    "output": "mv * /tmp/"
+  },
+  {
+    "input": "Move all .log files from /var/log to /backup/logs",
+    "output": "mv /var/log/*.log /backup/logs/"
+  },
+  {
+    "input": "Move a directory called 'projects' to /backup",
+    "output": "mv projects /backup/"
+  },
+  {
+    "input": "Move the entire 'Documents' folder to /mnt/usb",
+    "output": "mv ~/Documents /mnt/usb/"
+  },
+  {
+    "input": "Move a directory 'src' and all its contents to /opt",
+    "output": "mv src /opt/"
+  },
+  {
+    "input": "Move 'file1.txt' and 'file2.txt' to /tmp",
+    "output": "mv file1.txt file2.txt /tmp/"
+  },
+  {
+    "input": "Move all files starting with 'test' to /var/tmp",
+    "output": "mv test* /var/tmp/"
+  },
+  {
+    "input": "Move all files and subdirectories from 'build' to 'release'",
+    "output": "mv build/* release/"
+  },
+  {
+    "input": "Rename 'draft.docx' to 'final.docx' in the parent directory",
+    "output": "mv ../draft.docx ../final.docx"
+  },
+  {
+    "input": "Move all files in /etc to /backup/etc",
+    "output": "mv /etc/* /backup/etc/"
+  },
+  {
+    "input": "Move a file 'output.txt' to /tmp and overwrite if exists",
+    "output": "mv -f output.txt /tmp/"
+  },
+  {
+    "input": "Move a directory 'images' to /var/www/html",
+    "output": "mv images /var/www/html/"
+  },
+  {
+    "input": "Move all .jpg files from Pictures to Desktop",
+    "output": "mv ~/Pictures/*.jpg ~/Desktop/"
+  },
+  {
+    "input": "Rename 'data.json' to 'data_backup.json' in /srv/www",
+    "output": "mv /srv/www/data.json /srv/www/data_backup.json"
+  },
+  {
+    "input": "Move all files in /home/user/Downloads to /mnt/usb",
+    "output": "mv /home/user/Downloads/* /mnt/usb/"
+  },
+  {
+    "input": "Move a file 'archive.tar.gz' to /opt and overwrite without prompt",
+    "output": "mv -f archive.tar.gz /opt/"
+  },
+  {
+    "input": "Move a directory 'backup' to /tmp",
+    "output": "mv backup /tmp/"
+  },
+  {
+    "input": "Move all files in the current directory to /tmp and do not overwrite existing files",
+    "output": "mv -n * /tmp/"
+  },
+  {
+    "input": "Move a file 'test.log' to /var/log and prompt before overwrite",
+    "output": "mv -i test.log /var/log/"
+  },
+  {
+    "input": "Move all files in /var/log recursively to /backup/logs",
+    "output": "mv /var/log/* /backup/logs/"
+  },
+  {
+    "input": "Move a file 'config' to /etc and show progress",
+    "output": "mv -v config /etc/"
+  },
+  {
+    "input": "Move all .conf files from /etc to /backup/etc",
+    "output": "mv /etc/*.conf /backup/etc/"
+  },
+  {
+    "input": "Rename 'index.html' to 'index_backup.html' in /var/www/html",
+    "output": "mv /var/www/html/index.html /var/www/html/index_backup.html"
+  },
+  {
+    "input": "Move a directory 'music' to /mnt/usb",
+    "output": "mv music /mnt/usb/"
+  },
+  {
+    "input": "Move all files in /tmp to the current directory",
+    "output": "mv /tmp/* ."
+  },
+  {
+    "input": "Move 'resume.pdf' to your home directory",
+    "output": "mv resume.pdf ~/"
+  },
+  {
+    "input": "Move all files in /var/tmp to /backup/tmp and force overwrite",
+    "output": "mv -f /var/tmp/* /backup/tmp/"
+  },
+  {
+    "input": "Move 'draft.txt' to /home/alice/Documents",
+    "output": "mv draft.txt /home/alice/Documents/"
+  },
+  {
+    "input": "Move all files in /usr/local/bin to /opt/bin",
+    "output": "mv /usr/local/bin/* /opt/bin/"
+  },
+  {
+    "input": "Move 'testfile' to /srv/www and prompt before overwrite",
+    "output": "mv -i testfile /srv/www/"
+  },
+  {
+    "input": "Move all files in /mnt/usb to /media/backup",
+    "output": "mv /mnt/usb/* /media/backup/"
+  },
+  {
+    "input": "Rename 'logfile' to 'logfile.old' in /var/log",
+    "output": "mv /var/log/logfile /var/log/logfile.old"
+  },
+  {
+    "input": "Move all files in /var/spool/cron to /backup/cron",
+    "output": "mv /var/spool/cron/* /backup/cron/"
+  },
+  {
+    "input": "Move 'mail.txt' to /var/mail",
+    "output": "mv mail.txt /var/mail/"
+  },
+  {
+    "input": "Move all files in /var/log/apache2 to /backup/apache2",
+    "output": "mv /var/log/apache2/* /backup/apache2/"
+  },
+  {
+    "input": "Rename 'index.html' to 'index.bak' in /var/www/html",
+    "output": "mv /var/www/html/index.html /var/www/html/index.bak"
+  },
+  {
+    "input": "Move all files in /var/log/nginx to /backup/nginx",
+    "output": "mv /var/log/nginx/* /backup/nginx/"
+  },
+  {
+    "input": "Move 'db.sqlite3' to /srv/db",
+    "output": "mv db.sqlite3 /srv/db/"
+  },
+  {
+    "input": "Move all files in /var/log/mysql to /backup/mysql",
+    "output": "mv /var/log/mysql/* /backup/mysql/"
+  },
+  {
+    "input": "Rename 'access.log' to 'access.old' in /var/log",
+    "output": "mv /var/log/access.log /var/log/access.old"
+  },
+  {
+    "input": "Move all files in /var/log/postgresql to /backup/postgresql",
+    "output": "mv /var/log/postgresql/* /backup/postgresql/"
+  },
+  {
+    "input": "Rename 'syslog' to 'syslog.1' in /var/log",
+    "output": "mv /var/log/syslog /var/log/syslog.1"
+  },
+  {
+    "input": "Move all files in /var/log/journal to /backup/journal",
+    "output": "mv /var/log/journal/* /backup/journal/"
+  },
+  {
+    "input": "Rename 'kern.log' to 'kern.log.old' in /var/log",
+    "output": "mv /var/log/kern.log /var/log/kern.log.old"
+  },
+  {
+    "input": "Move all files in /var/log/auth to /backup/auth",
+    "output": "mv /var/log/auth/* /backup/auth/"
+  },
+  {
+    "input": "Rename 'apt.log' to 'apt.log.bak' in /var/log/apt",
+    "output": "mv /var/log/apt/apt.log /var/log/apt/apt.log.bak"
+  },
+  {
+    "input": "Move all files in /var/log/dpkg to /backup/dpkg",
+    "output": "mv /var/log/dpkg/* /backup/dpkg/"
+  },
+  {
+    "input": "Rename 'user.log' to 'user.log.old' in /var/log",
+    "output": "mv /var/log/user.log /var/log/user.log.old"
+  },
+  {
+    "input": "Move all files in /var/log/installer to /backup/installer",
+    "output": "mv /var/log/installer/* /backup/installer/"
+  },
+  {
+    "input": "Rename 'boot.log' to 'boot.log.old' in /var/log",
+    "output": "mv /var/log/boot.log /var/log/boot.log.old"
+  },
+  {
+    "input": "Move all files in /var/log/fsck to /backup/fsck",
+    "output": "mv /var/log/fsck/* /backup/fsck/"
+  },
+  {
+    "input": "Rename 'sa.log' to 'sa.log.old' in /var/log/sa",
+    "output": "mv /var/log/sa/sa.log /var/log/sa/sa.log.old"
+  },
+  {
+    "input": "Move all files in /var/log/pm-powersave to /backup/pm-powersave",
+    "output": "mv /var/log/pm-powersave/* /backup/pm-powersave/"
+  },
+  {
+    "input": "Rename 'aptitude.log' to 'aptitude.log.old' in /var/log/aptitude",
+    "output": "mv /var/log/aptitude/aptitude.log /var/log/aptitude/aptitude.log.old"
+  },
+  {
+    "input": "Move all files in /var/log/unattended-upgrades to /backup/unattended-upgrades",
+    "output": "mv /var/log/unattended-upgrades/* /backup/unattended-upgrades/"
+  },
+  {
+    "input": "Rename 'clamav.log' to 'clamav.log.old' in /var/log/clamav",
+    "output": "mv /var/log/clamav/clamav.log /var/log/clamav/clamav.log.old"
+  },
+  {
+    "input": "Move all files in /var/log/exim4 to /backup/exim4",
+    "output": "mv /var/log/exim4/* /backup/exim4/"
+  },
+  {
+    "input": "Rename 'news.log' to 'news.log.old' in /var/log/news",
+    "output": "mv /var/log/news/news.log /var/log/news/news.log.old"
+  },
+  {
+    "input": "Move all files in /var/log/ppp to /backup/ppp",
+    "output": "mv /var/log/ppp/* /backup/ppp/"
+  },
+  {
+    "input": "Rename 'samba.log' to 'samba.log.old' in /var/log/samba",
+    "output": "mv /var/log/samba/samba.log /var/log/samba/samba.log.old"
+  },
+  {
+    "input": "Move all files in /var/log/ufw to /backup/ufw",
+    "output": "mv /var/log/ufw/* /backup/ufw/"
+  },
+  {
+    "input": "Rename 'wtmp' to 'wtmp.old' in /var/log",
+    "output": "mv /var/log/wtmp /var/log/wtmp.old"
+  },
+  {
+    "input": "Move all files in /var/log/xrdp to /backup/xrdp",
+    "output": "mv /var/log/xrdp/* /backup/xrdp/"
+  },
+  {
+    "input": "Rename 'yum.log' to 'yum.log.old' in /var/log",
+    "output": "mv /var/log/yum.log /var/log/yum.log.old"
+  },
+  {
+    "input": "Move all files in /var/log/zypper.log to /backup/zypper",
+    "output": "mv /var/log/zypper.log/* /backup/zypper/"
+  },
+  {
+    "input": "Rename 'lastlog' to 'lastlog.old' in /var/log",
+    "output": "mv /var/log/lastlog /var/log/lastlog.old"
+  },
+  {
+    "input": "Move all files in /var/log/messages to /backup/messages",
+    "output": "mv /var/log/messages/* /backup/messages/"
+  },
+  {
+    "input": "Rename 'secure' to 'secure.old' in /var/log",
+    "output": "mv /var/log/secure /var/log/secure.old"
+  },
+  {
+    "input": "Move all files in /var/log/maillog to /backup/maillog",
+    "output": "mv /var/log/maillog/* /backup/maillog/"
+  },
+  {
+    "input": "Rename 'cron' to 'cron.old' in /var/log",
+    "output": "mv /var/log/cron /var/log/cron.old"
+  },
+  {
+    "input": "Move all files in /var/log/audit to /backup/audit",
+    "output": "mv /var/log/audit/* /backup/audit/"
+  },
+  {
+    "input": "Rename 'btmp' to 'btmp.old' in /var/log",
+    "output": "mv /var/log/btmp /var/log/btmp.old"
+  },
+  {
+    "input": "Move all files in /var/log/alternatives.log to /backup/alternatives",
+    "output": "mv /var/log/alternatives.log/* /backup/alternatives/"
+  },
+  {
+    "input": "Rename 'history.log' to 'history.log.old' in /var/log/apt",
+    "output": "mv /var/log/apt/history.log /var/log/apt/history.log.old"
+  },
+  {
+    "input": "Move all files in /var/log/apt/term.log to /backup/apt-term",
+    "output": "mv /var/log/apt/term.log/* /backup/apt-term/"
+  },
+  {
+    "input": "Rename 'boot.log' to 'boot.log.old' in /var/log",
+    "output": "mv /var/log/boot.log /var/log/boot.log.old"
+  },
+  {
+    "input": "Move all files in /var/log/dmesg to /backup/dmesg",
+    "output": "mv /var/log/dmesg/* /backup/dmesg/"
+  },
+  {
+    "input": "Rename 'fail2ban.log' to 'fail2ban.log.old' in /var/log",
+    "output": "mv /var/log/fail2ban.log /var/log/fail2ban.log.old"
+  },
+  {
+    "input": "Move all files in /var/log/fontconfig.log to /backup/fontconfig",
+    "output": "mv /var/log/fontconfig.log/* /backup/fontconfig/"
+  },
+  {
+    "input": "Rename 'gpu-manager.log' to 'gpu-manager.log.old' in /var/log",
+    "output": "mv /var/log/gpu-manager.log /var/log/gpu-manager.log.old"
+  },
+  {
+    "input": "Move all files in /var/log/hp to /backup/hp",
+    "output": "mv /var/log/hp/* /backup/hp/"
+  },
+  {
+    "input": "Rename 'kern.log' to 'kern.log.old' in /var/log",
+    "output": "mv /var/log/kern.log /var/log/kern.log.old"
+  },
+  {
+    "input": "Move all files in /var/log/lightdm to /backup/lightdm",
+    "output": "mv /var/log/lightdm/* /backup/lightdm/"
+  },
+  {
+    "input": "Rename 'mail.err' to 'mail.err.old' in /var/log",
+    "output": "mv /var/log/mail.err /var/log/mail.err.old"
+  },
+  {
+    "input": "Move all files in /var/log/mail.info to /backup/mailinfo",
+    "output": "mv /var/log/mail.info/* /backup/mailinfo/"
+  },
+  {
+    "input": "Rename 'mail.log' to 'mail.log.old' in /var/log",
+    "output": "mv /var/log/mail.log /var/log/mail.log.old"
+  },
+  {
+    "input": "Move all files in /var/log/mail.warn to /backup/mailwarn",
+    "output": "mv /var/log/mail.warn/* /backup/mailwarn/"
+  },
+  {
+    "input": "Rename 'messages' to 'messages.old' in /var/log",
+    "output": "mv /var/log/messages /var/log/messages.old"
+  },
+  {
+    "input": "Move all files in /var/log/pm-powersave.log to /backup/pmpowersave",
+    "output": "mv /var/log/pm-powersave.log/* /backup/pmpowersave/"
+  },
+  {
+    "input": "Rename 'user.log' to 'user.log.old' in /var/log",
+    "output": "mv /var/log/user.log /var/log/user.log.old"
+  },
+  {
+    "input": "Move all files in /var/log/wtmp to /backup/wtmp",
+    "output": "mv /var/log/wtmp/* /backup/wtmp/"
+  },
+  {
+    "input": "Rename 'Xorg.0.log' to 'Xorg.0.log.old' in /var/log",
+    "output": "mv /var/log/Xorg.0.log /var/log/Xorg.0.log.old"
+  },
+  {
+    "input": "Move all files in /var/log/Xorg.1.log to /backup/xorg1",
+    "output": "mv /var/log/Xorg.1.log/* /backup/xorg1/"
+  },
+  {
+    "input": "Rename 'Xorg.failsafe.log' to 'Xorg.failsafe.log.old' in /var/log",
+    "output": "mv /var/log/Xorg.failsafe.log /var/log/Xorg.failsafe.log.old"
+  },
+  {
+    "input": "Move all files in /var/tmp to /backup/tmp",
+    "output": "mv /var/tmp/* /backup/tmp/"
+  },
+  {
+    "input": "Rename 'test' in the current directory to 'test.old'",
+    "output": "mv test test.old"
+  },
+  {
+    "input": "Move all files in the parent directory to the current directory",
+    "output": "mv ../* ."
+  },
+  {
+    "input": "Move all files in the /etc directory to /backup/etc",
+    "output": "mv /etc/* /backup/etc/"
+  },
+  {
+    "input": "Force move all files in the /opt directory to /backup/opt",
+    "output": "mv -f /opt/* /backup/opt/"
+  },
+  {
+    "input": "Move all files in the /srv directory to /backup/srv",
+    "output": "mv /srv/* /backup/srv/"
+  },
+  {
+    "input": "Move all files in the /mnt directory to /backup/mnt",
+    "output": "mv /mnt/* /backup/mnt/"
+  },
+  {
+    "input": "Move all files in the /media directory to /backup/media",
+    "output": "mv /media/* /backup/media/"
+  },
+  {
+    "input": "Recursively move the entire /etc directory to /backup/etc",
+    "output": "mv /etc /backup/etc/"
+  },
+  {
+    "input": "Recursively move the /usr/local directory to /backup/usr-local",
+    "output": "mv /usr/local /backup/usr-local/"
+  },
+  {
+    "input": "Recursively move the /home/user directory to /backup/home-user",
+    "output": "mv /home/user /backup/home-user/"
+  },
+  {
+    "input": "Recursively move the /var directory to /backup/var",
+    "output": "mv /var /backup/var/"
+  },
+  {
+    "input": "Recursively move the /opt directory to /backup/opt",
+    "output": "mv /opt /backup/opt/"
+  },
+  {
+    "input": "Recursively move the /srv directory to /backup/srv",
+    "output": "mv /srv /backup/srv/"
+  },
+  {
+    "input": "Recursively move the /mnt directory to /backup/mnt",
+    "output": "mv /mnt /backup/mnt/"
+  },
+  {
+    "input": "Recursively move the /media directory to /backup/media",
+    "output": "mv /media /backup/media/"
+  },
+  {
+    "input": "Move all files in the current directory to /tmp and show progress",
+    "output": "mv -v * /tmp/"
+  },
+  {
+    "input": "Move all files in the current directory to /tmp and do not overwrite existing files",
+    "output": "mv -n * /tmp/"
+  },
+  {
+    "input": "Move all files in the current directory to /tmp and prompt before overwrite",
+    "output": "mv -i * /tmp/"
+  },
+  {
+    "input": "Move all files in the current directory to /tmp and force overwrite",
+    "output": "mv -f * /tmp/"
+  },
+  {
+    "input": "Move all files in the current directory to /tmp and keep permissions",
+    "output": "mv --preserve=mode * /tmp/"
+  },
+  {
+    "input": "Move all files in the current directory to /tmp and keep ownership",
+    "output": "mv --preserve=ownership * /tmp/"
+  },
+  {
+    "input": "Move all files in the current directory to /tmp and keep timestamps",
+    "output": "mv --preserve=timestamps * /tmp/"
+  },
+  {
+    "input": "Move all files in the current directory to /tmp and keep context",
+    "output": "mv --preserve=context * /tmp/"
+  },
+  {
+    "input": "Move all files in the current directory to /tmp and keep xattr",
+    "output": "mv --preserve=xattr * /tmp/"
+  },
+  {
+    "input": "Move all files in the current directory to /tmp and keep all attributes",
+    "output": "mv --preserve=all * /tmp/"
+  },
+  {
+    "input": "Move all files in the current directory to /tmp and keep everything",
+    "output": "mv --preserve=all * /tmp/"
+  },
+  {
+    "input": "Move all files in the current directory to /tmp and show progress",
+    "output": "mv -v * /tmp/"
+  },
+  {
+    "input": "Move all files in the current directory to /tmp and do not overwrite existing files",
+    "output": "mv -n * /tmp/"
+  },
+  {
+    "input": "Move all files in the current directory to /tmp and prompt before overwrite",
+    "output": "mv -i * /tmp/"
+  },
+  {
+    "input": "Move all files in the current directory to /tmp and force overwrite",
+    "output": "mv -f * /tmp/"
+  },
+  {
+    "input": "Move all files in the current directory to /tmp and keep permissions",
+    "output": "mv --preserve=mode * /tmp/"
+  },
+  {
+    "input": "Move all files in the current directory to /tmp and keep ownership",
+    "output": "mv --preserve=ownership * /tmp/"
+  },
+  {
+    "input": "Move all files in the current directory to /tmp and keep timestamps",
+    "output": "mv --preserve=timestamps * /tmp/"
+  },
+  {
+    "input": "Move all files in the current directory to /tmp and keep context",
+    "output": "mv --preserve=context * /tmp/"
+  },
+  {
+    "input": "Move all files in the current directory to /tmp and keep xattr",
+    "output": "mv --preserve=xattr * /tmp/"
+  },
+  {
+    "input": "Move all files in the current directory to /tmp and keep all attributes",
+    "output": "mv --preserve=all * /tmp/"
+  },
+  {
+    "input": "Move all files in the current directory to /tmp and keep everything",
+    "output": "mv --preserve=all * /tmp/"
+  },
+  {
+    "input": "Move all files in the current directory to /tmp and show progress",
+    "output": "mv -v * /tmp/"
+  },
+  {
+    "input": "Move all files in the current directory to /tmp and do not overwrite existing files",
+    "output": "mv -n * /tmp/"
+  },
+  {
+    "input": "Move all files in the current directory to /tmp and prompt before overwrite",
+    "output": "mv -i * /tmp/"
+  },
+  {
+    "input": "Move all files in the current directory to /tmp and force overwrite",
+    "output": "mv -f * /tmp/"
+  },
+  {
+    "input": "Move all files in the current directory to /tmp and keep permissions",
+    "output": "mv --preserve=mode * /tmp/"
+  },
+  {
+    "input": "Move all files in the current directory to /tmp and keep ownership",
+    "output": "mv --preserve=ownership * /tmp/"
+  },
+  {
+    "input": "Move all files in the current directory to /tmp and keep timestamps",
+    "output": "mv --preserve=timestamps * /tmp/"
+  },
+  {
+    "input": "Move all files in the current directory to /tmp and keep context",
+    "output": "mv --preserve=context * /tmp/"
+  },
+  {
+    "input": "Move all files in the current directory to /tmp and keep xattr",
+    "output": "mv --preserve=xattr * /tmp/"
+  },
+  {
+    "input": "Move all files in the current directory to /tmp and keep all attributes",
+    "output": "mv --preserve=all * /tmp/"
+  },
+  {
+    "input": "Move all files in the current directory to /tmp and keep everything",
+    "output": "mv --preserve=all * /tmp/"
+  }
+]

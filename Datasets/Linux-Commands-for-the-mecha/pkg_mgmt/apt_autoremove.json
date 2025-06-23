@@ -1,0 +1,42 @@
+[
+    {
+        "input": "Auto-remove unused packages",
+        "output": "sudo apt autoremove"
+    },
+    {
+        "input": "Auto-remove without prompts",
+        "output": "sudo apt autoremove -y"
+    },
+    {
+        "input": "Purge configs",
+        "output": "sudo apt autoremove --purge"
+    },
+    {
+        "input": "Simulate auto-remove",
+        "output": "sudo apt autoremove --simulate"
+    },
+    {
+        "input": "Verbose auto-remove",
+        "output": "sudo apt autoremove --verbose-versions"
+    },
+    {
+        "input": "Dry run auto-remove",
+        "output": "sudo apt autoremove --dry-run"
+    },
+    {
+        "input": "Allow-held changes",
+        "output": "sudo apt autoremove --allow-change-held-packages"
+    },
+    {
+        "input": "Show progress",
+        "output": "sudo apt autoremove --show-progress"
+    },
+    {
+        "input": "Download only",
+        "output": "sudo apt autoremove --download-only"
+    },
+    {
+        "input": "Ignore missing",
+        "output": "sudo apt autoremove --fix-missing"
+    }
+]

@@ -1,0 +1,602 @@
+[
+    {
+    "input": "Find all .txt files in /home",
+    "output": "find /home -name \"*.txt\""
+  },
+  {
+    "input": "Find all files in /var/log",
+    "output": "find /var/log -type f"
+  },
+  {
+    "input": "Find all directories in /tmp",
+    "output": "find /tmp -type d"
+  },
+  {
+    "input": "Find all .jpg files (case-insensitive) in current directory and subdirectories",
+    "output": "find . -iname \"*.jpg\""
+  },
+  {
+    "input": "Find the hosts file in /etc",
+    "output": "find /etc -name \"hosts\""
+  },
+  {
+    "input": "Find all symbolic links in /usr",
+    "output": "find /usr -type l"
+  },
+  {
+    "input": "Find all directories at the top level of /",
+    "output": "find / -maxdepth 1 -type d"
+  },
+  {
+    "input": "Find all files in /home/user that start with 'report'",
+    "output": "find /home/user -type f -name \"report*\""
+  },
+  {
+    "input": "Find files larger than 10MB in /opt",
+    "output": "find /opt -type f -size +10M"
+  },
+  {
+    "input": "Find all empty files in /srv",
+    "output": "find /srv -type f -empty"
+  },
+  {
+    "input": "Find files in /var/log modified in the last 24 hours",
+    "output": "find /var/log -mtime -1"
+  },
+  {
+    "input": "Find files in /home accessed more than 30 days ago",
+    "output": "find /home -atime +30"
+  },
+  {
+    "input": "Find directories in /tmp created today",
+    "output": "find /tmp -ctime 0 -type d"
+  },
+  {
+    "input": "Find files in /data modified in the last hour",
+    "output": "find /data -mmin -60"
+  },
+  {
+    "input": "Find files in /backup accessed more than 2 hours ago",
+    "output": "find /backup -amin +120"
+  },
+  {
+    "input": "Find files in /home newer than file.txt",
+    "output": "find /home -newer file.txt"
+  },
+  {
+    "input": "Find files in /var accessed more recently than /tmp/test.log",
+    "output": "find /var -anewer /tmp/test.log"
+  },
+  {
+    "input": "Find files in /etc changed more recently than /etc/passwd",
+    "output": "find /etc -cnewer /etc/passwd"
+  },
+  {
+    "input": "Find files in /home modified more than 7 days ago",
+    "output": "find /home -mtime +7 -type f"
+  },
+  {
+    "input": "Find directories in /tmp changed in the last 2 days",
+    "output": "find /tmp -ctime -2 -type d"
+  },
+  {
+    "input": "Find files in /var larger than 100MB",
+    "output": "find /var -size +100M"
+  },
+  {
+    "input": "Find files in /home smaller than 1KB",
+    "output": "find /home -size -1k"
+  },
+  {
+    "input": "Find zero-byte files in /tmp",
+    "output": "find /tmp -size 0"
+  },
+  {
+    "input": "Find files in /data larger than 1GB",
+    "output": "find /data -size +1G -type f"
+  },
+  {
+    "input": "Find files in /srv smaller than 10MB",
+    "output": "find /srv -size -10M -type f"
+  },
+  {
+    "input": "Find .log files in /opt larger than 500KB",
+    "output": "find /opt -size +500k -name \"*.log\""
+  },
+  {
+    "input": "Find files in /home exactly 50MB in size",
+    "output": "find /home -size 50M"
+  },
+  {
+    "input": "List large files (>1GB) in /var with details",
+    "output": "find /var -size +1G -exec ls -lh {} \\;"
+  },
+  {
+    "input": "Find files in /tmp smaller than 100 bytes",
+    "output": "find /tmp -size -100c"
+  },
+  {
+    "input": "Find directories in /data larger than 2GB",
+    "output": "find /data -size +2G -type d"
+  },
+  {
+    "input": "Find files in /home owned by user alice",
+    "output": "find /home -user alice"
+  },
+  {
+    "input": "Find files in /var owned by group admin",
+    "output": "find /var -group admin"
+  },
+  {
+    "input": "Find files in /tmp with permission 644",
+    "output": "find /tmp -perm 644"
+  },
+  {
+    "input": "Find files in /etc where user has execute permission",
+    "output": "find /etc -perm /u+x"
+  },
+  {
+    "input": "Find files in /srv not owned by root",
+    "output": "find /srv -not -user root"
+  },
+  {
+    "input": "Find files in /opt not owned by group staff",
+    "output": "find /opt -not -group staff"
+  },
+  {
+    "input": "Find files in /home with SUID bit set",
+    "output": "find /home -perm -4000"
+  },
+  {
+    "input": "Find files in /var where group has write permission",
+    "output": "find /var -perm /g=w"
+  },
+  {
+    "input": "Find files in /tmp with user sticky bit set",
+    "output": "find /tmp -perm -u=s"
+  },
+  {
+    "input": "Find files in /data with no valid user",
+    "output": "find /data -nouser"
+  },
+  {
+    "input": "Find files in /home not ending with .bak",
+    "output": "find /home -not -name \"*.bak\""
+  },
+  {
+    "input": "Find non-directory files in /var",
+    "output": "find /var -not -type d"
+  },
+  {
+    "input": "Find non-empty files in /tmp",
+    "output": "find /tmp -not -size 0"
+  },
+  {
+    "input": "Find files in /data not owned by root",
+    "output": "find /data -not -user root"
+  },
+  {
+    "input": "Find files in /srv not having permission 777",
+    "output": "find /srv -not -perm 777"
+  },
+  {
+    "input": "Find files in /opt not ending with .tmp (case-insensitive)",
+    "output": "find /opt -not -iname \"*.tmp\""
+  },
+  {
+    "input": "Find files in /home not in .cache directories",
+    "output": "find /home -not -path \"*/.cache/*\""
+  },
+  {
+    "input": "Find files in /var not owned by group wheel",
+    "output": "find /var -not -group wheel"
+  },
+  {
+    "input": "Find files in /tmp not newer than /tmp/marker",
+    "output": "find /tmp -not -newer /tmp/marker"
+  },
+  {
+    "input": "Find non-empty files in /data",
+    "output": "find /data -not -empty"
+  },
+  {
+    "input": "Find all .txt or .md files in /home",
+    "output": "find /home \\( -name \"*.txt\" -o -name \"*.md\" \\)"
+  },
+  {
+    "input": "Find files in /var larger than 1MB",
+    "output": "find /var -type f -a -size +1M"
+  },
+  {
+    "input": "Find files in /tmp owned by alice or bob",
+    "output": "find /tmp \\( -user alice -o -user bob \\)"
+  },
+  {
+    "input": "Find empty directories in /data",
+    "output": "find /data -type d -a -empty"
+  },
+  {
+    "input": "Find .log files in /srv larger than 10MB",
+    "output": "find /srv -name \"*.log\" -a -size +10M"
+  },
+  {
+    "input": "Find files in /opt with permission 644 or 600",
+    "output": "find /opt \\( -perm 644 -o -perm 600 \\)"
+  },
+  {
+    "input": "Find files in /home modified in the last week",
+    "output": "find /home -mtime -7 -a -type f"
+  },
+  {
+    "input": "Find non-gzipped files in /var",
+    "output": "find /var -not -name \"*.gz\" -a -type f"
+  },
+  {
+    "input": "Find files in /tmp larger than 1MB or smaller than 1KB",
+    "output": "find /tmp \\( -size +1M -o -size -1k \\)"
+  },
+  {
+    "input": "Find files in /data owned by root and group root",
+    "output": "find /data -user root -a -group root"
+  },
+  {
+    "input": "Make all .sh files in /home executable",
+    "output": "find /home -name \"*.sh\" -exec chmod +x {} \\;"
+  },
+  {
+    "input": "Calculate md5sum for all files in /var",
+    "output": "find /var -type f -exec md5sum {} \\;"
+  },
+  {
+    "input": "List all directories in /tmp with details",
+    "output": "find /tmp -type d -exec ls -ld {} \\;"
+  },
+  {
+    "input": "Delete all .bak files in /data",
+    "output": "find /data -name \"*.bak\" -exec rm -f {} \\;"
+  },
+  {
+    "input": "Compress all files in /srv using gzip",
+    "output": "find /srv -type f -exec gzip {} \\;"
+  },
+  {
+    "input": "Copy all files in /opt to /backup",
+    "output": "find /opt -type f -exec cp {} /backup/ \\;"
+  },
+  {
+    "input": "Search for 'TODO' in all files in /home",
+    "output": "find /home -type f -exec grep \"TODO\" {} \\;"
+  },
+  {
+    "input": "Show disk usage for all files in /var",
+    "output": "find /var -type f -exec du -h {} \\;"
+  },
+  {
+    "input": "Move all files in /tmp to /tmp/old",
+    "output": "find /tmp -type f -exec mv {} /tmp/old/ \\;"
+  },
+  {
+    "input": "Show first line of every file in /data",
+    "output": "find /data -type f -exec head -n 1 {} \\;"
+  },
+  {
+    "input": "Print all files in /home",
+    "output": "find /home -type f -print"
+  },
+  {
+    "input": "Print all directories in /var separated by null character",
+    "output": "find /var -type d -print0"
+  },
+  {
+    "input": "Print path and size of all files in /tmp",
+    "output": "find /tmp -type f -printf \"%p %s\\n\""
+  },
+  {
+    "input": "List all files in /data with details",
+    "output": "find /data -type f -ls"
+  },
+  {
+    "input": "Print all files in /srv and sort the list",
+    "output": "find /srv -type f -print | sort"
+  },
+  {
+    "input": "Count lines in all files in /opt",
+    "output": "find /opt -type f -print | xargs wc -l"
+  },
+  {
+    "input": "Search for 'main' in all files in /home",
+    "output": "find /home -type f -print | xargs grep \"main\""
+  },
+  {
+    "input": "Show disk usage for all files in /var",
+    "output": "find /var -type f -print | xargs du -sh"
+  },
+  {
+    "input": "Echo the filename for each file in /tmp",
+    "output": "find /tmp -type f -print | xargs -I {} echo \"File: {}\""
+  },
+  {
+    "input": "Save list of all files in /data to files.txt",
+    "output": "find /data -type f -print | tee files.txt"
+  },
+  {
+    "input": "Find all files in /home up to 2 levels deep",
+    "output": "find /home -maxdepth 2 -type f"
+  },
+  {
+    "input": "Find all directories in /var at least 1 level deep",
+    "output": "find /var -mindepth 1 -type d"
+  },
+  {
+    "input": "Find files in /tmp at the top level only",
+    "output": "find /tmp -maxdepth 1 -type f"
+  },
+  {
+    "input": "Find files in /data at least 3 levels deep",
+    "output": "find /data -mindepth 3 -type f"
+  },
+  {
+    "input": "Find .conf files in /srv up to 4 levels deep",
+    "output": "find /srv -maxdepth 4 -name \"*.conf\""
+  },
+  {
+    "input": "Find directories in /opt at least 2 levels deep",
+    "output": "find /opt -mindepth 2 -type d"
+  },
+  {
+    "input": "Find directories in /home at the top level only",
+    "output": "find /home -maxdepth 1 -type d"
+  },
+  {
+    "input": "Find files in /var at least 2 levels deep",
+    "output": "find /var -mindepth 2 -type f"
+  },
+  {
+    "input": "Find files in /tmp up to 3 levels deep",
+    "output": "find /tmp -maxdepth 3 -type f"
+  },
+  {
+    "input": "Find directories in /data at least 4 levels deep",
+    "output": "find /data -mindepth 4 -type d"
+  },
+  {
+    "input": "Find all symbolic links in /home",
+    "output": "find /home -type l"
+  },
+  {
+    "input": "Find all broken symbolic links in /var",
+    "output": "find /var -xtype l"
+  },
+  {
+    "input": "Find all named pipes in /tmp",
+    "output": "find /tmp -type p"
+  },
+  {
+    "input": "Find all block devices in /data",
+    "output": "find /data -type b"
+  },
+  {
+    "input": "Find all character devices in /srv",
+    "output": "find /srv -type c"
+  },
+  {
+    "input": "Find all sockets in /opt",
+    "output": "find /opt -type s"
+  },
+  {
+    "input": "Find files in /home with more than one hard link",
+    "output": "find /home -type f -links +1"
+  },
+  {
+    "input": "Find files in /var with exactly one hard link",
+    "output": "find /var -type f -links 1"
+  },
+  {
+    "input": "Find files in /tmp with less than two hard links",
+    "output": "find /tmp -type f -links -2"
+  },
+  {
+    "input": "Show the target of all symbolic links in /data",
+    "output": "find /data -type l -exec readlink {} \\;"
+  },
+  {
+    "input": "Delete .log files in /home older than 30 days",
+    "output": "find /home -type f -name \"*.log\" -mtime +30 -exec rm {} \\;"
+  },
+  {
+    "input": "Compress files larger than 100MB in /var",
+    "output": "find /var -type f -size +100M -exec gzip {} \\;"
+  },
+  {
+    "input": "Change owner of files in /tmp owned by alice to bob",
+    "output": "find /tmp -type f -user alice -exec chown bob {} \\;"
+  },
+  {
+    "input": "Change permissions from 600 to 644 for files in /data",
+    "output": "find /data -type f -perm 600 -exec chmod 644 {} \\;"
+  },
+  {
+    "input": "Copy all .conf files in /srv to /backup",
+    "output": "find /srv -type f -name \"*.conf\" -exec cp {} /backup/ \\;"
+  },
+  {
+    "input": "Move files larger than 1GB in /opt to /mnt/bigfiles",
+    "output": "find /opt -type f -size +1G -exec mv {} /mnt/bigfiles/ \\;"
+  },
+  {
+    "input": "Echo recently modified files in /home",
+    "output": "find /home -type f -mtime -1 -exec echo \"Recent: {}\" \\;"
+  },
+  {
+    "input": "Compress all non-gzipped files in /var",
+    "output": "find /var -type f -not -name \"*.gz\" -exec gzip {} \\;"
+  },
+  {
+    "input": "Delete all zero-byte files in /tmp",
+    "output": "find /tmp -type f -size 0 -exec rm {} \\;"
+  },
+  {
+    "input": "Delete .bak files in /data older than 7 days",
+    "output": "find /data -type f -name \"*.bak\" -mtime +7 -exec rm {} \\;"
+  },
+  {
+    "input": "Find file with inode 123456 in /home",
+    "output": "find /home -inum 123456"
+  },
+  {
+    "input": "Find files in /var that are hard links to /etc/passwd",
+    "output": "find /var -samefile /etc/passwd"
+  },
+  {
+    "input": "Find files in /tmp with more than two hard links",
+    "output": "find /tmp -links +2"
+  },
+  {
+    "input": "Find files in /data on the same filesystem",
+    "output": "find /data -mount -type f"
+  },
+  {
+    "input": "Find files in /srv, do not descend into other filesystems",
+    "output": "find /srv -xdev -type f"
+  },
+  {
+    "input": "Find files in /opt on ext4 filesystem",
+    "output": "find /opt -fstype ext4"
+  },
+  {
+    "input": "Find files in /home with UID 1000",
+    "output": "find /home -uid 1000"
+  },
+  {
+    "input": "Find files in /var with GID 100",
+    "output": "find /var -gid 100"
+  },
+  {
+    "input": "Find files in /tmp newer than June 1, 2025",
+    "output": "find /tmp -type f -newerct \"2025-06-01\""
+  },
+  {
+    "input": "Find files in /data modified after June 10, 2025",
+    "output": "find /data -type f -newermt \"2025-06-10\""
+  },
+  {
+    "input": "Find all .log files in /home using regex",
+    "output": "find /home -regex \".*\\.log\""
+  },
+  {
+    "input": "Find all .txt files with 4 digits in the name in /var using regex",
+    "output": "find /var -iregex \".*[0-9]{4}\\.txt\""
+  },
+  {
+    "input": "Find all shell scripts with lowercase names in /tmp using regex",
+    "output": "find /tmp -regex \".*/[a-z]+\\.sh\""
+  },
+  {
+    "input": "Find all backup tarballs in /data using regex",
+    "output": "find /data -regex \".*/backup_[0-9]+\\.tar\\.gz\""
+  },
+  {
+    "input": "Find all files containing 'config' in the path in /srv using regex",
+    "output": "find /srv -regex \".*/config.*\""
+  },
+  {
+    "input": "Find all readme files in /opt using case-insensitive regex",
+    "output": "find /opt -iregex \".*/readme.*\""
+  },
+  {
+    "input": "Find all CSV files with 3 uppercase letters and 2 digits in /home using regex",
+    "output": "find /home -regex \".*/[A-Z]{3}[0-9]{2}\\.csv\""
+  },
+  {
+    "input": "Find all error log files with digits in /var using regex",
+    "output": "find /var -regex \".*/error_[0-9]+\\.log\""
+  },
+  {
+    "input": "Find all temp files in /tmp using case-insensitive regex",
+    "output": "find /tmp -iregex \".*/temp.*\""
+  },
+  {
+    "input": "Find all .txt files in 2025 subdirectories of /data using regex",
+    "output": "find /data -regex \".*/2025/.*\\.txt\""
+  },
+  {
+    "input": "Find all files in /home but skip .git directories",
+    "output": "find /home -path \"*/.git\" -prune -o -type f -print"
+  },
+  {
+    "input": "Find all files in /var but skip cache directories",
+    "output": "find /var -path \"*/cache\" -prune -o -type f -print"
+  },
+  {
+    "input": "Find all files in /tmp but skip old directories",
+    "output": "find /tmp -path \"*/old\" -prune -o -type f -print"
+  },
+  {
+    "input": "Find all files in /data but skip backup directories",
+    "output": "find /data -path \"*/backup\" -prune -o -type f -print"
+  },
+  {
+    "input": "Find all files in /srv but skip logs directories",
+    "output": "find /srv -path \"*/logs\" -prune -o -type f -print"
+  },
+  {
+    "input": "Find all files in /opt but skip tmp directories",
+    "output": "find /opt -path \"*/tmp\" -prune -o -type f -print"
+  },
+  {
+    "input": "Find all files in /home but skip .svn directories",
+    "output": "find /home -path \"*/.svn\" -prune -o -type f -print"
+  },
+  {
+    "input": "Find all files in /var but skip .cache directories",
+    "output": "find /var -path \"*/.cache\" -prune -o -type f -print"
+  },
+  {
+    "input": "Find all files in /tmp but skip .Trash directories",
+    "output": "find /tmp -path \"*/.Trash\" -prune -o -type f -print"
+  },
+  {
+    "input": "Find all files in /data but skip .bak directories",
+    "output": "find /data -path \"*/.bak\" -prune -o -type f -print"
+  },
+  {
+    "input": "Print only the base name of each file in /home",
+    "output": "find /home -type f -exec basename {} \\;"
+  },
+  {
+    "input": "Print only the directory name of each file in /var",
+    "output": "find /var -type f -exec dirname {} \\;"
+  },
+  {
+    "input": "Show stat information for all files in /tmp",
+    "output": "find /tmp -type f -exec stat {} \\;"
+  },
+  {
+    "input": "Show file type for all files in /data",
+    "output": "find /data -type f -exec file {} \\;"
+  },
+  {
+    "input": "Concatenate and display all files in /srv",
+    "output": "find /srv -type f -exec cat {} \\;"
+  },
+  {
+    "input": "Show last 5 lines of all files in /opt",
+    "output": "find /opt -type f -exec tail -n 5 {} \\;"
+  },
+  {
+    "input": "Count lines in all files in /home",
+    "output": "find /home -type f -exec wc -l {} \\;"
+  },
+  {
+    "input": "Sort the contents of all files in /var",
+    "output": "find /var -type f -exec sort {} \\;"
+  },
+  {
+    "input": "Compare each file in /tmp to /tmp/compare.txt",
+    "output": "find /tmp -type f -exec diff {} /tmp/compare.txt \\;"
+  },
+  {
+    "input": "Copy each file in /data to a .bak file",
+    "output": "find /data -type f -exec cp {} {}.bak \\;"
+  }
+]

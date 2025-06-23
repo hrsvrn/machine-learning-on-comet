@@ -1,0 +1,42 @@
+[
+    {
+        "input": "Remove package",
+        "output": "sudo dpkg -r package-name"
+    },
+    {
+        "input": "Force remove",
+        "output": "sudo dpkg -r --force-all package-name"
+    },
+    {
+        "input": "Force depends",
+        "output": "sudo dpkg -r --force-depends package-name"
+    },
+    {
+        "input": "Simulate remove",
+        "output": "sudo dpkg -r --dry-run package-name"
+    },
+    {
+        "input": "Show help",
+        "output": "dpkg -r --help"
+    },
+    {
+        "input": "Remove multiple packages",
+        "output": "sudo dpkg -r pkg1 pkg2"
+    },
+    {
+        "input": "Remove config only",
+        "output": "sudo dpkg --purge package-name"
+    },
+    {
+        "input": "Remove ignoring errors",
+        "output": "sudo dpkg -r --ignore-depends=libc6 package-name"
+    },
+    {
+        "input": "Remove and fix install",
+        "output": "sudo dpkg -r package-name; sudo apt-get -f install"
+    },
+    {
+        "input": "Remove using wildcard",
+        "output": "sudo dpkg -r 'mysql*'"
+    }
+]

@@ -1,0 +1,386 @@
+[
+    {
+        "input": "Show all active network connections",
+        "output": "netstat"
+    },
+    {
+        "input": "Show all active TCP and UDP connections and listening ports",
+        "output": "netstat -a"
+    },
+    {
+        "input": "Show only TCP connections",
+        "output": "netstat -t"
+    },
+    {
+        "input": "Show only UDP connections",
+        "output": "netstat -u"
+    },
+    {
+        "input": "Show only sockets that are listening for incoming connections",
+        "output": "netstat -l"
+    },
+    {
+        "input": "Show only listening TCP ports",
+        "output": "netstat -lt"
+    },
+    {
+        "input": "Show only listening UDP ports",
+        "output": "netstat -lu"
+    },
+    {
+        "input": "Show only listening UNIX domain sockets",
+        "output": "netstat -lx"
+    },
+    {
+        "input": "Show all UNIX domain sockets",
+        "output": "netstat -x"
+    },
+    {
+        "input": "Show all connections with numeric addresses and ports",
+        "output": "netstat -n"
+    },
+    {
+        "input": "Show all TCP connections with numeric addresses",
+        "output": "netstat -tn"
+    },
+    {
+        "input": "Show all UDP connections with numeric addresses",
+        "output": "netstat -un"
+    },
+    {
+        "input": "Show only listening sockets with numeric addresses",
+        "output": "netstat -ln"
+    },
+    {
+        "input": "Show all connections with process ID and program name",
+        "output": "sudo netstat -p"
+    },
+    {
+        "input": "Show TCP connections with PID and program name",
+        "output": "sudo netstat -tp"
+    },
+    {
+        "input": "Show UDP connections with PID and program name",
+        "output": "sudo netstat -up"
+    },
+    {
+        "input": "Show only listening sockets with PID and program name",
+        "output": "sudo netstat -lp"
+    },
+    {
+        "input": "Show all connections with extended information",
+        "output": "netstat -e"
+    },
+    {
+        "input": "Show all connections with user IDs",
+        "output": "netstat -e"
+    },
+    {
+        "input": "Show all connections with timers",
+        "output": "netstat -o"
+    },
+    {
+        "input": "Show all connections with user and process information",
+        "output": "sudo netstat -ep"
+    },
+    {
+        "input": "Show all connections with extended information and numeric addresses",
+        "output": "netstat -en"
+    },
+    {
+        "input": "Show all connections with wide output (do not truncate addresses)",
+        "output": "netstat -W"
+    },
+    {
+        "input": "Show all connections and continuously update every second",
+        "output": "netstat -c"
+    },
+    {
+        "input": "Show TCP connections and continuously update every second",
+        "output": "netstat -ct"
+    },
+    {
+        "input": "Show UDP connections and continuously update every second",
+        "output": "netstat -cu"
+    },
+    {
+        "input": "Show only listening sockets and continuously update",
+        "output": "netstat -lc"
+    },
+    {
+        "input": "Show all connections and update every 2 seconds",
+        "output": "watch -n 2 netstat"
+    },
+    {
+        "input": "Show the kernel routing table",
+        "output": "netstat -r"
+    },
+    {
+        "input": "Show the routing table with numeric addresses",
+        "output": "netstat -rn"
+    },
+    {
+        "input": "Show interface statistics",
+        "output": "netstat -i"
+    },
+    {
+        "input": "Show interface statistics with extended information",
+        "output": "netstat -ie"
+    },
+    {
+        "input": "Show interface statistics continuously",
+        "output": "netstat -ic"
+    },
+    {
+        "input": "Show statistics for all protocols",
+        "output": "netstat -s"
+    },
+    {
+        "input": "Show statistics for TCP only",
+        "output": "netstat -st"
+    },
+    {
+        "input": "Show statistics for UDP only",
+        "output": "netstat -su"
+    },
+    {
+        "input": "Show statistics for ICMP only",
+        "output": "netstat -s -p icmp"
+    },
+    {
+        "input": "Show statistics for ICMPv6 only",
+        "output": "netstat -s -p icmpv6"
+    },
+    {
+        "input": "Show masqueraded connections (NAT)",
+        "output": "netstat -M"
+    },
+    {
+        "input": "Show multicast group memberships",
+        "output": "netstat -g"
+    },
+    {
+        "input": "Show all connections for IPv4",
+        "output": "netstat -4"
+    },
+    {
+        "input": "Show all connections for IPv6",
+        "output": "netstat -6"
+    },
+    {
+        "input": "Show all connections for a specific protocol (e.g., IP)",
+        "output": "netstat -p IP"
+    },
+    {
+        "input": "Show all connections for a specific protocol (e.g., tcp)",
+        "output": "netstat -p tcp"
+    },
+    {
+        "input": "Show all connections for a specific protocol (e.g., udp)",
+        "output": "netstat -p udp"
+    },
+    {
+        "input": "Show all connections for a specific protocol (e.g., unix)",
+        "output": "netstat -p unix"
+    },
+    {
+        "input": "Show all connections for a specific interface (e.g., eth0)",
+        "output": "netstat -i eth0"
+    },
+    {
+        "input": "Show all connections for a specific interface (e.g., wlp2s0)",
+        "output": "netstat -I=wlp2s0"
+    },
+    {
+        "input": "Show all connections for a specific address family (e.g., inet)",
+        "output": "netstat -f inet"
+    },
+    {
+        "input": "Show all connections for a specific address family (e.g., inet6)",
+        "output": "netstat -f inet6"
+    },
+    {
+        "input": "Show all connections for a specific address family (e.g., unix)",
+        "output": "netstat -f unix"
+    },
+    {
+        "input": "Show all connections with symbolic hardware names",
+        "output": "netstat -N"
+    },
+    {
+        "input": "Show all connections with numeric host addresses",
+        "output": "netstat --numeric-hosts"
+    },
+    {
+        "input": "Show all connections with numeric port numbers",
+        "output": "netstat --numeric-ports"
+    },
+    {
+        "input": "Show all connections with numeric user IDs",
+        "output": "netstat --numeric-users"
+    },
+    {
+        "input": "Show all connections with verbose output",
+        "output": "netstat -v"
+    },
+    {
+        "input": "Show all connections and filter for a specific port (e.g., 80)",
+        "output": "netstat -an | grep ':80'"
+    },
+    {
+        "input": "Show all connections and filter for a specific process (e.g., ssh)",
+        "output": "netstat -ap | grep ssh"
+    },
+    {
+        "input": "Show all listening programs",
+        "output": "netstat -lp"
+    },
+    {
+        "input": "Show all established connections",
+        "output": "netstat | grep ESTABLISHED"
+    },
+    {
+        "input": "Show all listening connections",
+        "output": "netstat | grep LISTEN"
+    },
+    {
+        "input": "Show all TIME_WAIT connections",
+        "output": "netstat | grep TIME_WAIT"
+    },
+    {
+        "input": "Show all CLOSE_WAIT connections",
+        "output": "netstat | grep CLOSE_WAIT"
+    },
+    {
+        "input": "Show all SYN_SENT connections",
+        "output": "netstat | grep SYN_SENT"
+    },
+    {
+        "input": "Show all SYN_RECV connections",
+        "output": "netstat | grep SYN_RECV"
+    },
+    {
+        "input": "Show all FIN_WAIT1 connections",
+        "output": "netstat | grep FIN_WAIT1"
+    },
+    {
+        "input": "Show all FIN_WAIT2 connections",
+        "output": "netstat | grep FIN_WAIT2"
+    },
+    {
+        "input": "Show all connections for a specific user",
+        "output": "sudo netstat -ap | grep username"
+    },
+    {
+        "input": "Show all connections for a specific PID",
+        "output": "sudo netstat -ap | grep 1234"
+    },
+    {
+        "input": "Show all connections for a specific program",
+        "output": "sudo netstat -ap | grep firefox"
+    },
+    {
+        "input": "Show all connections using IPv6",
+        "output": "netstat -6"
+    },
+    {
+        "input": "Show all connections using IPv4",
+        "output": "netstat -4"
+    },
+    {
+        "input": "Show all open ports",
+        "output": "netstat -an | grep 'LISTEN'"
+    },
+    {
+        "input": "Show all open TCP ports",
+        "output": "netstat -tan | grep 'LISTEN'"
+    },
+    {
+        "input": "Show all open UDP ports",
+        "output": "netstat -uan | grep 'LISTEN'"
+    },
+    {
+        "input": "Show all open UNIX sockets",
+        "output": "netstat -xan | grep 'LISTEN'"
+    },
+    {
+        "input": "Show all connections and filter for established",
+        "output": "netstat -an | grep 'ESTABLISHED'"
+    },
+    {
+        "input": "Show all connections and filter for foreign address",
+        "output": "netstat -an | grep '192.168.1.100'"
+    },
+    {
+        "input": "Show all connections and filter for local address",
+        "output": "netstat -an | grep '127.0.0.1'"
+    },
+    {
+        "input": "Show all connections and filter for a specific state",
+        "output": "netstat -an | grep 'CLOSE_WAIT'"
+    },
+    {
+        "input": "Show all connections and filter for a specific protocol",
+        "output": "netstat -an | grep 'tcp'"
+    },
+    {
+        "input": "Show all connections and filter for a specific port range",
+        "output": "netstat -an | grep ':6000-7000'"
+    },
+    {
+        "input": "Show all connections and sort by port number",
+        "output": "netstat -an | sort -k4"
+    },
+    {
+        "input": "Show all connections and sort by state",
+        "output": "netstat -an | sort -k6"
+    },
+    {
+        "input": "Show all connections and sort by local address",
+        "output": "netstat -an | sort -k3"
+    },
+    {
+        "input": "Show all connections and sort by foreign address",
+        "output": "netstat -an | sort -k5"
+    },
+    {
+        "input": "Show all connections and save output to a file",
+        "output": "netstat -an > netstat_output.txt"
+    },
+    {
+        "input": "Show all connections and append output to a file",
+        "output": "netstat -an >> netstat_output.txt"
+    },
+    {
+        "input": "Show all connections and display output in color",
+        "output": "netstat -an | lolcat"
+    },
+    {
+        "input": "Show all connections and display output with line numbers",
+        "output": "netstat -an | nl"
+    },
+    {
+        "input": "Show all connections and display output in uppercase",
+        "output": "netstat -an | tr '[:lower:]' '[:upper:]'"
+    },
+    {
+        "input": "Show all connections and display output in lowercase",
+        "output": "netstat -an | tr '[:upper:]' '[:lower:]'"
+    },
+    {
+        "input": "Show all connections and display output with timestamps",
+        "output": "date; netstat -an"
+    },
+    {
+        "input": "Show all connections and display output with both timestamps and color",
+        "output": "date; netstat -an | lolcat"
+    },
+    {
+        "input": "Show version information for netstat",
+        "output": "netstat -V"
+    },
+    {
+        "input": "Show help for netstat",
+        "output": "netstat -h"
+    }
+]

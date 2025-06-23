@@ -1,0 +1,178 @@
+[
+    {
+        "input": "Terminate process with PID 1234",
+        "output": "kill 1234"
+    },
+    {
+        "input": "Forcefully terminate PID 1234",
+        "output": "kill -9 1234"
+    },
+    {
+        "input": "Send SIGTERM to PID 5678",
+        "output": "kill -15 5678"
+    },
+    {
+        "input": "Send SIGINT to PID 91011",
+        "output": "kill -2 91011"
+    },
+    {
+        "input": "Send SIGHUP to PID 1213",
+        "output": "kill -1 1213"
+    },
+    {
+        "input": "Send SIGQUIT to PID 1415",
+        "output": "kill -3 1415"
+    },
+    {
+        "input": "Send SIGUSR1 to PID 1617",
+        "output": "kill -USR1 1617"
+    },
+    {
+        "input": "Send SIGUSR2 to PID 1819",
+        "output": "kill -USR2 1819"
+    },
+    {
+        "input": "Send SIGALRM to PID 2021",
+        "output": "kill -ALRM 2021"
+    },
+    {
+        "input": "Send SIGCHLD to PID 2223",
+        "output": "kill -CHLD 2223"
+    },
+    {
+        "input": "Send SIGCONT to a stopped PID 2425",
+        "output": "kill -CONT 2425"
+    },
+    {
+        "input": "Send SIGSTOP to PID 2627",
+        "output": "kill -STOP 2627"
+    },
+    {
+        "input": "Send SIGTSTP to PID 2829",
+        "output": "kill -TSTP 2829"
+    },
+    {
+        "input": "Send SIGTTIN to PID 3031",
+        "output": "kill -TTIN 3031"
+    },
+    {
+        "input": "Send SIGTTOU to PID 3233",
+        "output": "kill -TTOU 3233"
+    },
+    {
+        "input": "Send SIGPIPE to PID 3435",
+        "output": "kill -PIPE 3435"
+    },
+    {
+        "input": "Send SIGXCPU to PID 3637",
+        "output": "kill -XCPU 3637"
+    },
+    {
+        "input": "Send SIGXFSZ to PID 3839",
+        "output": "kill -XFSZ 3839"
+    },
+    {
+        "input": "Send SIGVTALRM to PID 4041",
+        "output": "kill -VTALRM 4041"
+    },
+    {
+        "input": "Send SIGPROF to PID 4243",
+        "output": "kill -PROF 4243"
+    },
+    {
+        "input": "Send SIGWINCH to PID 4445",
+        "output": "kill -WINCH 4445"
+    },
+    {
+        "input": "Send SIGPOLL to PID 4647",
+        "output": "kill -POLL 4647"
+    },
+    {
+        "input": "Send SIGSYS to PID 4849",
+        "output": "kill -SYS 4849"
+    },
+    {
+        "input": "Send SIGURG to PID 5051",
+        "output": "kill -URG 5051"
+    },
+    {
+        "input": "Send SIGABRT to PID 5253",
+        "output": "kill -ABRT 5253"
+    },
+    {
+        "input": "Send SIGBUS to PID 5455",
+        "output": "kill -BUS 5455"
+    },
+    {
+        "input": "Send SIGFPE to PID 5657",
+        "output": "kill -FPE 5657"
+    },
+    {
+        "input": "Send SIGILL to PID 5859",
+        "output": "kill -ILL 5859"
+    },
+    {
+        "input": "Send SIGKILL to PID 6061",
+        "output": "kill -KILL 6061"
+    },
+    {
+        "input": "Send SIGSEGV to PID 6263",
+        "output": "kill -SEGV 6263"
+    },
+    {
+        "input": "Send SIGTRAP to PID 6465",
+        "output": "kill -TRAP 6465"
+    },
+    {
+        "input": "Send SIGUSR1 to multiple PIDs",
+        "output": "kill -USR1 1234 5678 91011"
+    },
+    {
+        "input": "Send SIGTERM to process group 100",
+        "output": "kill -TERM -100"
+    },
+    {
+        "input": "Terminate child processes of PID 1213",
+        "output": "pkill -P 1213"
+    },
+    {
+        "input": "Send SIGKILL to child processes of PID 1415",
+        "output": "pkill -9 -P 1415"
+    },
+    {
+        "input": "Send SIGSTOP to PID range 2000–2005",
+        "output": "for pid in {2000..2005}; do kill -STOP $pid; done"
+    },
+    {
+        "input": "Send SIGTERM to jobs in current shell",
+        "output": "kill -TERM %1 %2"
+    },
+    {
+        "input": "Send SIGCONT to jobs in current shell",
+        "output": "kill -CONT %1 %2"
+    },
+    {
+        "input": "Ignore SIGTERM in PID 7071",
+        "output": "trap '' TERM; kill 7071"
+    },
+    {
+        "input": "Send SIGTERM after delay",
+        "output": "sleep 5 && kill 8081"
+    },
+    {
+        "input": "Sequentially kill multiple PIDs",
+        "output": "kill 9091 && kill 10111"
+    },
+    {
+        "input": "Parallel kill multiple PIDs",
+        "output": "kill -9 11131 & kill -9 12141 & wait"
+    },
+    {
+        "input": "Send SIGTERM via kill PGID",
+        "output": "kill -TERM -$$"
+    },
+    {
+        "input": "Send SIGTERM to all child processes of current shell",
+        "output": "kill -TERM -- -$$"
+    }
+]

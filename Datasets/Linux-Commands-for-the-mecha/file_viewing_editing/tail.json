@@ -1,0 +1,182 @@
+[
+    {
+        "input": "Show last 10 lines",
+        "output": "tail file.txt"
+    },
+    {
+        "input": "Show last 5 lines",
+        "output": "tail -n 5 file.txt"
+    },
+    {
+        "input": "Show last 20 lines",
+        "output": "tail -n 20 file.txt"
+    },
+    {
+        "input": "Follow file in real time",
+        "output": "tail -f file.log"
+    },
+    {
+        "input": "Follow file with retry on rename",
+        "output": "tail -F file.log"
+    },
+    {
+        "input": "Follow file and show line numbers",
+        "output": "tail -n +1 file.txt"
+    },
+    {
+        "input": "Show last 100 bytes",
+        "output": "tail -c 100 file.txt"
+    },
+    {
+        "input": "Show last 1KB",
+        "output": "tail -c 1K file.txt"
+    },
+    {
+        "input": "Show last 1MB",
+        "output": "tail -c 1M file.txt"
+    },
+    {
+        "input": "Show last 5 files lines",
+        "output": "tail -n 5 file1.txt file2.txt"
+    },
+    {
+        "input": "Follow multiple files",
+        "output": "tail -f file1.log file2.log"
+    },
+    {
+        "input": "Follow file with process ID display",
+        "output": "tail -f --pid=1234 file.log"
+    },
+    {
+        "input": "Follow file with time stamp",
+        "output": "tail -f file.log | ts"
+    },
+    {
+        "input": "Follow file and filter by grep",
+        "output": "tail -f file.log | grep ERROR"
+    },
+    {
+        "input": "Show last lines from STDIN",
+        "output": "echo -e 'a\nb\nc' | tail -n 2"
+    },
+    {
+        "input": "Show last 20 lines of syslog",
+        "output": "tail -n 20 /var/log/syslog"
+    },
+    {
+        "input": "Follow auth.log",
+        "output": "tail -f /var/log/auth.log"
+    },
+    {
+        "input": "Monitor dmesg",
+        "output": "dmesg -wH"
+    },
+    {
+        "input": "Follow Apache access logs",
+        "output": "tail -f /var/log/apache2/access.log"
+    },
+    {
+        "input": "Follow Nginx error logs",
+        "output": "tail -f /var/log/nginx/error.log"
+    },
+    {
+        "input": "Follow Docker logs",
+        "output": "docker logs -f container_name"
+    },
+    {
+        "input": "Show last 50 entries of journal",
+        "output": "journalctl -n 50"
+    },
+    {
+        "input": "Follow journal logs",
+        "output": "journalctl -f"
+    },
+    {
+        "input": "Follow journal for specific unit",
+        "output": "journalctl -u sshd -f"
+    },
+    {
+        "input": "Follow kernel ring buffer",
+        "output": "dmesg --follow"
+    },
+    {
+        "input": "Show last lines of CSV file",
+        "output": "tail -n 1 data.csv"
+    },
+    {
+        "input": "Show last lines of JSON file",
+        "output": "jq . file.json | tail"
+    },
+    {
+        "input": "Show last lines of XML file",
+        "output": "xmllint --format file.xml | tail"
+    },
+    {
+        "input": "Show last lines of Markdown",
+        "output": "tail -n 20 README.md"
+    },
+    {
+        "input": "Show last lines of code file",
+        "output": "tail -n 30 script.sh"
+    },
+    {
+        "input": "Show last 5 processes",
+        "output": "ps aux | tail -n 5"
+    },
+    {
+        "input": "Show last 10 connections",
+        "output": "ss -tunap | tail"
+    },
+    {
+        "input": "Show last entries of dstat",
+        "output": "dstat 1 5 | tail"
+    },
+    {
+        "input": "Show last 5 lines of find output",
+        "output": "find . -type f | tail -n 5"
+    },
+    {
+        "input": "Show last lines of tar listing",
+        "output": "tar tzf archive.tar.gz | tail"
+    },
+    {
+        "input": "Show last lines of grep output",
+        "output": "grep pattern file.txt | tail"
+    },
+    {
+        "input": "Show last lines with timestamps",
+        "output": "tail -f file.log | cut -d' ' -f1-2"
+    },
+    {
+        "input": "Filter last lines by awk",
+        "output": "tail file.txt | awk 'NR>5{print}'"
+    },
+    {
+        "input": "Filter last lines by sed",
+        "output": "tail file.txt | sed -n '1,5p'"
+    },
+    {
+        "input": "Pipe last lines to less",
+        "output": "tail file.txt | less"
+    },
+    {
+        "input": "Pipe last lines to more",
+        "output": "tail file.txt | more"
+    },
+    {
+        "input": "Monitor tail of compressed file",
+        "output": "zcat file.gz | tail -f"
+    },
+    {
+        "input": "Monitor tail of bzipped file",
+        "output": "bzcat file.bz2 | tail -f"
+    },
+    {
+        "input": "Monitor tail of xz file",
+        "output": "xzcat file.xz | tail -f"
+    },
+    {
+        "input": "Show last lines by find and tail",
+        "output": "find . -name '*.log' -exec tail -n 5 {} \\;"
+    }
+]

@@ -1,0 +1,42 @@
+[
+    {
+        "input": "Purge nginx",
+        "output": "sudo apt purge nginx"
+    },
+    {
+        "input": "Purge configs only",
+        "output": "sudo apt purge --purge nginx"
+    },
+    {
+        "input": "Purge and auto-remove",
+        "output": "sudo apt purge --auto-remove nginx"
+    },
+    {
+        "input": "Simulate purge",
+        "output": "sudo apt purge --simulate nginx"
+    },
+    {
+        "input": "Purge multiple packages",
+        "output": "sudo apt purge git curl vim"
+    },
+    {
+        "input": "No prompts",
+        "output": "sudo apt purge -y nginx"
+    },
+    {
+        "input": "Verbose purge",
+        "output": "sudo apt purge --verbose-versions nginx"
+    },
+    {
+        "input": "Dry run",
+        "output": "sudo apt purge --dry-run nginx"
+    },
+    {
+        "input": "Allow-unauthenticated",
+        "output": "sudo apt purge --allow-unauthenticated nginx"
+    },
+    {
+        "input": "Download-only",
+        "output": "sudo apt purge --download-only nginx"
+    }
+]
