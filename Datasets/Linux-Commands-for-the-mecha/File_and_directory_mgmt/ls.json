@@ -1,0 +1,562 @@
+[
+    {
+    "input": "List the contents of the current directory",
+    "output": "ls"
+  },
+  {
+    "input": "Show me the files in my home folder",
+    "output": "ls ~"
+  },
+  {
+    "input": "Display the contents of the root directory",
+    "output": "ls /"
+  },
+  {
+    "input": "What's in the parent directory?",
+    "output": "ls .."
+  },
+  {
+    "input": "List all files in /etc",
+    "output": "ls /etc"
+  },
+  {
+    "input": "Generate a detailed list of files",
+    "output": "ls -l"
+  },
+  {
+    "input": "Show all files, including hidden ones",
+    "output": "ls -a"
+  },
+  {
+    "input": "List files with human-readable sizes",
+    "output": "ls -lh"
+  },
+  {
+    "input": "Sort files by modification time, newest first",
+    "output": "ls -t"
+  },
+  {
+    "input": "Recursively list all files in this directory and its subdirectories",
+    "output": "ls -R"
+  },
+  {
+    "input": "Show me a detailed list of all files, even hidden ones",
+    "output": "ls -la"
+  },
+  {
+    "input": "List files in /var/log, sorted by modification time",
+    "output": "ls -lt /var/log"
+  },
+  {
+    "input": "Display the contents of the current directory, sorted by modification time, oldest first",
+    "output": "ls -ltr"
+  },
+  {
+    "input": "List files and show their inode numbers",
+    "output": "ls -i"
+  },
+  {
+    "input": "Add type indicators (like / for directories) to the file list",
+    "output": "ls -F"
+  },
+  {
+    "input": "Show me only the directories in my current location",
+    "output": "ls -d */"
+  },
+  {
+    "input": "List all files sorted by size, largest first",
+    "output": "ls -S"
+  },
+  {
+    "input": "Give me a detailed list of files in my home directory",
+    "output": "ls -l ~"
+  },
+  {
+    "input": "List everything in /tmp, including hidden files, with details",
+    "output": "ls -la /tmp"
+  },
+  {
+    "input": "Show files in the current directory with human-readable sizes, sorted by size",
+    "output": "ls -lSh"
+  },
+  {
+    "input": "List all files except for '.' and '..'",
+    "output": "ls -A"
+  },
+  {
+    "input": "Display a detailed list of files without the '.' and '..' entries",
+    "output": "ls -lA"
+  },
+  {
+    "input": "List files in reverse alphabetical order",
+    "output": "ls -r"
+  },
+  {
+    "input": "Show me the contents of ~/Documents, sorted by modification date, newest at the bottom",
+    "output": "ls -ltr ~/Documents"
+  },
+  {
+    "input": "List all .conf files in the /etc directory",
+    "output": "ls /etc/*.conf"
+  },
+  {
+    "input": "Display a detailed, human-readable list of files in the root directory",
+    "output": "ls -lh /"
+  },
+  {
+    "input": "Recursively list all files and folders in my home directory",
+    "output": "ls -R ~"
+  },
+  {
+    "input": "List files and sort them by last access time",
+    "output": "ls -lu"
+  },
+  {
+    "input": "Show me a detailed list sorted by last access time",
+    "output": "ls -ltu"
+  },
+  {
+    "input": "List files with numeric user and group IDs",
+    "output": "ls -n"
+  },
+  {
+    "input": "What are the contents of /var/www, shown recursively?",
+    "output": "ls -R /var/www"
+  },
+  {
+    "input": "Show me the files in the parent directory with full details",
+    "output": "ls -l .."
+  },
+  {
+    "input": "List all files ending in .log in the current directory, sorted by size",
+    "output": "ls -S *.log"
+  },
+  {
+    "input": "List the contents of the current directory, using color to distinguish file types",
+    "output": "ls --color=auto"
+  },
+  {
+    "input": "Show the inode number and add type indicators for all files",
+    "output": "ls -iF"
+  },
+  {
+    "input": "List all files in my home folder, including hidden ones",
+    "output": "ls -a ~"
+  },
+  {
+    "input": "Generate a detailed, human-readable list of files, sorted by modification time",
+    "output": "ls -lht"
+  },
+  {
+    "input": "List just the directories inside /usr/local",
+    "output": "ls -d /usr/local/*/"
+  },
+  {
+    "input": "Show me all files, with details, sorted by size (largest first)",
+    "output": "ls -laS"
+  },
+  {
+    "input": "List the contents of /boot, sorted by version number",
+    "output": "ls -v /boot"
+  },
+  {
+    "input": "Display a long listing, but don't show the group information",
+    "output": "ls -o"
+  },
+  {
+    "input": "Give me a detailed list, but omit the owner information",
+    "output": "ls -g"
+  },
+  {
+    "input": "List files in the current directory, one file per line",
+    "output": "ls -1"
+  },
+  {
+    "input": "Show detailed file info, sorted by size in reverse (smallest first)",
+    "output": "ls -lSr"
+  },
+  {
+    "input": "Recursively list the contents of the parent directory",
+    "output": "ls -R .."
+  },
+  {
+    "input": "List files in /var/log with human-readable sizes and sorted by time",
+    "output": "ls -lht /var/log"
+  },
+  {
+    "input": "Display all files in a single row, separated by commas",
+    "output": "ls -m"
+  },
+  {
+    "input": "Show me the files in ~, sorted by last access time, with oldest first",
+    "output": "ls -ltur ~"
+  },
+  {
+    "input": "List all .sh scripts in the current directory",
+    "output": "ls *.sh"
+  },
+  {
+    "input": "Give me a detailed, recursive listing of the current directory",
+    "output": "ls -lR"
+  },
+  {
+    "input": "List the contents of my Documents folder",
+    "output": "ls ~/Documents"
+  },
+  {
+    "input": "Show me what's in /var, but only list the directories",
+    "output": "ls -d /var/*"
+  },
+  {
+    "input": "List all items, including hidden, with type indicators",
+    "output": "ls -aF"
+  },
+  {
+    "input": "Sort the current directory's contents by file extension",
+    "output": "ls -X"
+  },
+  {
+    "input": "Show me a detailed list sorted by extension",
+    "output": "ls -lX"
+  },
+  {
+    "input": "What are the contents of /dev, sorted by modification time?",
+    "output": "ls -t /dev"
+  },
+  {
+    "input": "List all files in the root directory, including the hidden ones",
+    "output": "ls -a /"
+  },
+  {
+    "input": "Show me a detailed, recursive list of my home directory",
+    "output": "ls -lR ~"
+  },
+  {
+    "input": "List all files with details, human-readable sizes, and sorted by size in reverse",
+    "output": "ls -lShr"
+  },
+  {
+    "input": "Display the contents of the parent directory, sorted by time, newest last",
+    "output": "ls -tr .."
+  },
+  {
+    "input": "Show me all directories starting with 'p' in the root folder",
+    "output": "ls -d /p*/"
+  },
+  {
+    "input": "List the contents of /usr/bin, sorted by size",
+    "output": "ls -S /usr/bin"
+  },
+  {
+    "input": "Give me a detailed list of /usr/lib, sorted by access time",
+    "output": "ls -ltu /usr/lib"
+  },
+  {
+    "input": "List all files in the current folder with a .txt extension",
+    "output": "ls *.txt"
+  },
+  {
+    "input": "Show me the contents of ~, but without any color",
+    "output": "ls --color=none ~"
+  },
+  {
+    "input": "List files with details and sort by change time (ctime)",
+    "output": "ls -lc"
+  },
+  {
+    "input": "Display files sorted by their ctime, newest first",
+    "output": "ls -ltc"
+  },
+  {
+    "input": "What's in my Downloads folder? Show me a detailed list.",
+    "output": "ls -l ~/Downloads"
+  },
+  {
+    "input": "List all files, show details, and append type indicators",
+    "output": "ls -lF"
+  },
+  {
+    "input": "Show a detailed list of files with their inodes",
+    "output": "ls -li"
+  },
+  {
+    "input": "List contents of the current directory, quoting names with spaces",
+    "output": "ls -b"
+  },
+  {
+    "input": "Recursively list everything, but only show directories",
+    "output": "find . -type d | ls -R"
+  },
+  {
+    "input": "List files in multiple columns, filling rows first",
+    "output": "ls -C"
+  },
+  {
+    "input": "Display a detailed list of all files in my home directory, including hidden ones",
+    "output": "ls -la ~"
+  },
+  {
+    "input": "List all PNG and JPG files",
+    "output": "ls *.png *.jpg"
+  },
+  {
+    "input": "Show me the contents of the current folder, sorted by time, oldest first, with details",
+    "output": "ls -ltr"
+  },
+  {
+    "input": "List files in /etc with human-readable sizes",
+    "output": "ls -lh /etc"
+  },
+  {
+    "input": "Give me a detailed, recursive list of /var/log",
+    "output": "ls -lR /var/log"
+  },
+  {
+    "input": "What are the files in / and /home?",
+    "output": "ls / /home"
+  },
+  {
+    "input": "Show me a detailed list of files starting with 'a', 'b', or 'c'",
+    "output": "ls -l [abc]*"
+  },
+  {
+    "input": "List all files and their inode numbers, including hidden ones",
+    "output": "ls -ai"
+  },
+  {
+    "input": "Display files in the parent directory, sorted by size",
+    "output": "ls -S .."
+  },
+  {
+    "input": "Show me the three newest files in the current directory",
+    "output": "ls -t | head -n 3"
+  },
+  {
+    "input": "List the contents of my home directory recursively with details and human sizes",
+    "output": "ls -lRh ~"
+  },
+  {
+    "input": "What are the hidden files in the root directory?",
+    "output": "ls -d /.*"
+  },
+  {
+    "input": "List files in the current folder, sorted by version number",
+    "output": "ls -v"
+  },
+  {
+    "input": "Show me a detailed list of files, sorted naturally by version number",
+    "output": "ls -lv"
+  },
+  {
+    "input": "List all contents of /tmp, sorted by size, largest first",
+    "output": "ls -S /tmp"
+  },
+  {
+    "input": "Display a detailed list of files, but do not list subdirectories",
+    "output": "ls -ld * "
+  },
+  {
+    "input": "Show me the contents of the current directory without sorting",
+    "output": "ls -U"
+  },
+  {
+    "input": "List all files with details, unsorted",
+    "output": "ls -lU"
+  },
+  {
+    "input": "What are the contents of my home directory and its parent?",
+    "output": "ls ~ .."
+  },
+  {
+    "input": "Show me a detailed list of all files in /etc, sorted by time",
+    "output": "ls -lat /etc"
+  },
+  {
+    "input": "List the oldest file in the current directory",
+    "output": "ls -tr | head -n 1"
+  },
+  {
+    "input": "Display a detailed, recursive list sorted by time",
+    "output": "ls -lRt"
+  },
+  {
+    "input": "Show me all directories in my home folder",
+    "output": "ls -d ~/*/"
+  },
+  {
+    "input": "List the contents of /usr/share, sorted by size, smallest first",
+    "output": "ls -Sr /usr/share"
+  },
+  {
+    "input": "Provide a detailed list of all files, sorted by size, with human-readable values",
+    "output": "ls -laSh"
+  },
+  {
+    "input": "What are the file types in the current directory?",
+    "output": "ls -F"
+  },
+  {
+    "input": "List all files with their full details and numeric IDs",
+    "output": "ls -ln"
+  },
+  {
+    "input": "Show a recursive list, but only for two levels deep",
+    "output": "ls -R -L 2"
+  },
+  {
+    "input": "List files and their inode numbers, sorted by time",
+    "output": "ls -it"
+  },
+  {
+    "input": "Display the contents of the current directory in a long list format, sorted by size and reversed",
+    "output": "ls -lSr"
+  },
+  {
+    "input": "List everything in my Documents folder, one file per line",
+    "output": "ls -1 ~/Documents"
+  },
+  {
+    "input": "Show me the files in /bin, sorted by access time",
+    "output": "ls -tu /bin"
+  },
+  {
+    "input": "List files in long format, omitting the author",
+    "output": "ls --no-group"
+  },
+  {
+    "input": "What files are in /var/spool? Show me all of them.",
+    "output": "ls -a /var/spool"
+  },
+  {
+    "input": "Give me a detailed list of symbolic links in the current directory",
+    "output": "ls -l | grep '^l'"
+  },
+  {
+    "input": "List all files and show their inodes, sorted by size",
+    "output": "ls -iS"
+  },
+  {
+    "input": "Show me the contents of the /opt directory, sorted oldest first",
+    "output": "ls -tr /opt"
+  },
+  {
+    "input": "List all files recursively, with details, sorted by modification time",
+    "output": "ls -lRt"
+  },
+  {
+    "input": "Show me a detailed, human-readable list of my Pictures folder",
+    "output": "ls -lh ~/Pictures"
+  },
+  {
+    "input": "List all files in /usr/include, sorted by extension",
+    "output": "ls -X /usr/include"
+  },
+  {
+    "input": "Display a detailed list of all files, sorted by access time, newest first",
+    "output": "ls -laut"
+  },
+  {
+    "input": "What are the contents of the current directory, with numeric IDs and type indicators?",
+    "output": "ls -nF"
+  },
+  {
+    "input": "List files in my home directory with details and sorted by version",
+    "output": "ls -lv ~"
+  },
+  {
+    "input": "Show me a recursive list of /etc, sorted by size",
+    "output": "ls -RS /etc"
+  },
+  {
+    "input": "Give me a detailed list of files in the parent directory, sorted by size",
+    "output": "ls -lS .."
+  },
+  {
+    "input": "List all log files in /var/log, with details and human sizes",
+    "output": "ls -lh /var/log/*.log"
+  },
+  {
+    "input": "Show me a list of all files, sorted by access time, oldest first",
+    "output": "ls -atur"
+  },
+  {
+    "input": "Display the contents of my home directory and the root directory in a single command",
+    "output": "ls ~ /"
+  },
+  {
+    "input": "List just the file named 'bashrc' in my home directory, with details",
+    "output": "ls -l ~/.bashrc"
+  },
+  {
+    "input": "What are the files in the current directory? Show me a detailed list with hidden files and type indicators",
+    "output": "ls -laF"
+  },
+  {
+    "input": "Show me the 5 largest files in the current directory",
+    "output": "ls -S | head -n 5"
+  },
+  {
+    "input": "List all files in the current directory and parent directory",
+    "output": "ls . .."
+  },
+  {
+    "input": "Display a detailed list of files, sorted by change time (ctime), oldest first",
+    "output": "ls -lctr"
+  },
+  {
+    "input": "Show me a detailed, recursive, human-readable list sorted by time, oldest first",
+    "output": "ls -lRhtr"
+  },
+  {
+    "input": "List the contents of the /sys directory",
+    "output": "ls /sys"
+  },
+  {
+    "input": "Give me a detailed list of all .zip files in my Downloads folder",
+    "output": "ls -l ~/Downloads/*.zip"
+  },
+  {
+    "input": "Show me the inode number for every file in the root directory",
+    "output": "ls -i /"
+  },
+  {
+    "input": "List files in my home folder, sorted by size, smallest first",
+    "output": "ls -Sr ~"
+  },
+  {
+    "input": "Display a detailed list of all files, sorted by time, showing access time",
+    "output": "ls -latu"
+  },
+  {
+    "input": "What are the directories in /usr? List them in long format.",
+    "output": "ls -ld /usr/*/"
+  },
+  {
+    "input": "Show a detailed, recursive list of the current directory, but only go 3 levels deep",
+    "output": "find . -maxdepth 3 -ls"
+  },
+  {
+    "input": "List all files with details, sorted by modification time, but show access time instead",
+    "output": "ls -lt --time=atime"
+  },
+  {
+    "input": "Show me a long listing format of the current directory, sorted by file extension.",
+    "output": "ls -lX"
+  },
+  {
+    "input": "List all files and their inodes, sorted by access time",
+    "output": "ls -itu"
+  },
+  {
+    "input": "Display a detailed list of the files in /tmp, sorted by size with human-readable units",
+    "output": "ls -lSh /tmp"
+  },
+  {
+    "input": "Show me the contents of the current directory and all subdirectories, with file type indicators",
+    "output": "ls -RF"
+  },
+  {
+    "input": "List all hidden files and folders in my home directory with details",
+    "output": "ls -ld ~.*"
+  }
+]

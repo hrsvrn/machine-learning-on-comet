@@ -1,0 +1,186 @@
+[
+    {
+        "input": "Open file in vim",
+        "output": "vim file.txt"
+    },
+    {
+        "input": "Open file at specific line",
+        "output": "vim +100 file.txt"
+    },
+    {
+        "input": "Open file at line and column",
+        "output": "vim +call cursor(100,5) file.txt"
+    },
+    {
+        "input": "Start vim in read-only mode",
+        "output": "vim -R file.txt"
+    },
+    {
+        "input": "Open vim in compatible mode",
+        "output": "vim -C file.txt"
+    },
+    {
+        "input": "Disable swap file creation",
+        "output": "vim -n file.txt"
+    },
+    {
+        "input": "Ignore viminfo file",
+        "output": "vim -i NONE file.txt"
+    },
+    {
+        "input": "Start vim with no plugins",
+        "output": "vim -u NONE file.txt"
+    },
+    {
+        "input": "Start vim with minimal vimrc",
+        "output": "vim -u NORC file.txt"
+    },
+    {
+        "input": "Start vim in silent mode",
+        "output": "vim -es file.txt"
+    },
+    {
+        "input": "Start vim in Ex mode",
+        "output": "vim -e file.txt"
+    },
+    {
+        "input": "Start vim with GUI disabled",
+        "output": "vim -X file.txt"
+    },
+    {
+        "input": "Start vim and execute command",
+        "output": "vim +':%s/foo/bar/g' +wq file.txt"
+    },
+    {
+        "input": "Open file and set syntax highlighting",
+        "output": "vim -c 'syntax on' file.txt"
+    },
+    {
+        "input": "Open file and set line numbers",
+        "output": "vim -c 'set number' file.txt"
+    },
+    {
+        "input": "Open file and enable mouse",
+        "output": "vim -c 'set mouse=a' file.txt"
+    },
+    {
+        "input": "Open file and start in insert mode",
+        "output": "vim +startinsert file.txt"
+    },
+    {
+        "input": "Open file and go to last edit position",
+        "output": "vim +lastfile file.txt"
+    },
+    {
+        "input": "Open file and record session",
+        "output": "vim -S session.vim file.txt"
+    },
+    {
+        "input": "Open file and source vimrc",
+        "output": "vim -u ~/.vimrc file.txt"
+    },
+    {
+        "input": "Open multiple files in tabs",
+        "output": "vim -p file1.txt file2.txt"
+    },
+    {
+        "input": "Open multiple files in windows",
+        "output": "vim -o file1.txt file2.txt"
+    },
+    {
+        "input": "Open multiple files in vertical splits",
+        "output": "vim -O file1.txt file2.txt"
+    },
+    {
+        "input": "Open vim with custom encoding",
+        "output": "vim +'set fileencoding=utf-8' file.txt"
+    },
+    {
+        "input": "Open file and highlight search matches",
+        "output": "vim -c 'set hlsearch' file.txt"
+    },
+    {
+        "input": "Open file and disable swapfile",
+        "output": "vim -n file.txt"
+    },
+    {
+        "input": "Open file with folding enabled",
+        "output": "vim -c 'set foldmethod=indent' file.txt"
+    },
+    {
+        "input": "Open file and set tabstop=4",
+        "output": "vim -c 'set tabstop=4' file.txt"
+    },
+    {
+        "input": "Open file and set shiftwidth=4",
+        "output": "vim -c 'set shiftwidth=4' file.txt"
+    },
+    {
+        "input": "Open file and expand tabs",
+        "output": "vim -c 'set expandtab' file.txt"
+    },
+    {
+        "input": "Open file and set smartindent",
+        "output": "vim -c 'set smartindent' file.txt"
+    },
+    {
+        "input": "Open file and set autoindent",
+        "output": "vim -c 'set autoindent' file.txt"
+    },
+    {
+        "input": "Open file and enable ruler",
+        "output": "vim -c 'set ruler' file.txt"
+    },
+    {
+        "input": "Open file and enable cursorline",
+        "output": "vim -c 'set cursorline' file.txt"
+    },
+    {
+        "input": "Open file and enable cursorcolumn",
+        "output": "vim -c 'set cursorcolumn' file.txt"
+    },
+    {
+        "input": "Open file and enable wildmenu",
+        "output": "vim -c 'set wildmenu' file.txt"
+    },
+    {
+        "input": "Open file and start diff mode between two files",
+        "output": "vim -d file1.txt file2.txt"
+    },
+    {
+        "input": "Open file and use ex commands only",
+        "output": "ex file.txt"
+    },
+    {
+        "input": "Open file and start in visual mode",
+        "output": "vim -c 'normal! V' file.txt"
+    },
+    {
+        "input": "Open file and start in replace mode",
+        "output": "vim -c 'normal! R' file.txt"
+    },
+    {
+        "input": "Open file and start in command mode",
+        "output": "vim -c '' file.txt"
+    },
+    {
+        "input": "Open file and highlight column 80",
+        "output": "vim -c 'set colorcolumn=80' file.txt"
+    },
+    {
+        "input": "Open file and show invisibles",
+        "output": "vim -c 'set list' file.txt"
+    },
+    {
+        "input": "Open file and set listchars",
+        "output": "vim -c 'set listchars=tab:>-,trail:-' file.txt"
+    },
+    {
+        "input": "Open file and use system clipboard",
+        "output": "vim -c 'set clipboard+=unnamedplus' file.txt"
+    },
+    {
+        "input": "Open file and record macro 'q'",
+        "output": "vim -c 'normal! qq'"
+    }
+]

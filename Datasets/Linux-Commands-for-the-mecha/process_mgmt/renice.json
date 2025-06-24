@@ -1,0 +1,266 @@
+[
+    {
+        "input": "Change niceness of PID 1234 to +10",
+        "output": "sudo renice +10 1234"
+    },
+    {
+        "input": "Change niceness of PID 1234 to -5",
+        "output": "sudo renice -5 1234"
+    },
+    {
+        "input": "Change niceness of multiple PIDs",
+        "output": "sudo renice +5 1234 5678 91011"
+    },
+    {
+        "input": "Change niceness of all processes by user alice to +10",
+        "output": "sudo renice +10 -u alice"
+    },
+    {
+        "input": "Change niceness of all processes by user bob to -5",
+        "output": "sudo renice -5 -u bob"
+    },
+    {
+        "input": "Change niceness of all root processes to +15",
+        "output": "sudo renice +15 -u root"
+    },
+    {
+        "input": "Change niceness of process group 200 to +3",
+        "output": "sudo renice +3 -g 200"
+    },
+    {
+        "input": "Change niceness of current shell to +2",
+        "output": "renice +2 $$"
+    },
+    {
+        "input": "Change niceness of a running script by job number",
+        "output": "renice +4 %1"
+    },
+    {
+        "input": "Change niceness of sshd process to -10",
+        "output": "sudo renice -10 -p $(pgrep sshd)"
+    },
+    {
+        "input": "Change niceness of java processes by name",
+        "output": "sudo renice +5 -n $(pgrep java)"
+    },
+    {
+        "input": "Change niceness of processes in a session",
+        "output": "sudo renice +7 -s 1234"
+    },
+    {
+        "input": "Change niceness of all processes in group wheel",
+        "output": "sudo renice +8 -G wheel"
+    },
+    {
+        "input": "Change niceness of processes older than 1 hour",
+        "output": "for pid in $(ps -eo pid,etimes | awk '$2>3600{print $1}'); do sudo renice +12 $pid; done"
+    },
+    {
+        "input": "Change niceness of processes younger than 1 minute",
+        "output": "for pid in $(ps -eo pid,etimes | awk '$2<60{print $1}'); do sudo renice +12 $pid; done"
+    },
+    {
+        "input": "Change niceness of highest CPU processes",
+        "output": "for pid in $(ps aux --sort=-%cpu | head -n 5 | awk '{print $2}'); do sudo renice +5 $pid; done"
+    },
+    {
+        "input": "Change niceness of highest memory processes",
+        "output": "for pid in $(ps aux --sort=-%mem | head -n 5 | awk '{print $2}'); do sudo renice +5 $pid; done"
+    },
+    {
+        "input": "Change niceness of processes using specific TTY",
+        "output": "sudo renice +6 -t pts/1"
+    },
+    {
+        "input": "Change niceness of processes matching regex",
+        "output": "sudo renice +9 -p $(pgrep -f 'python.*server')"
+    },
+    {
+        "input": "Change niceness of processes with specific cgroup",
+        "output": "sudo renice +4 -p $(cat /sys/fs/cgroup/mygroup/cgroup.procs)"
+    },
+    {
+        "input": "Change niceness of Docker container processes",
+        "output": "sudo renice +5 -p $(docker inspect -f '{{.State.Pid}}' mycontainer)"
+    },
+    {
+        "input": "Change niceness of Kubernetes pod processes",
+        "output": "sudo renice +5 -p $(kubectl exec mypod -- pgrep myprocess)"
+    },
+    {
+        "input": "Change niceness of system service processes",
+        "output": "sudo renice +3 -p $(systemctl show -p MainPID --value sshd.service)"
+    },
+    {
+        "input": "Change niceness of all cron jobs",
+        "output": "sudo renice +10 -u root --whooping cpulimit"
+    },
+    {
+        "input": "Change niceness of all systemd user services",
+        "output": "for pid in $(systemctl show --property=MainPID --value --user); do sudo renice +10 $pid; done"
+    },
+    {
+        "input": "Change niceness of all snap processes",
+        "output": "sudo renice +8 -p $(ps -eo pid,cmd | grep /snap/ | awk '{print $1}')"
+    },
+    {
+        "input": "Change niceness of all Flatpak processes",
+        "output": "sudo renice +8 -p $(ps -eo pid,cmd | grep /var/lib/flatpak/ | awk '{print $1}')"
+    },
+    {
+        "input": "Change niceness of specific socket listener",
+        "output": "sudo renice +5 -p $(lsof -i:80 -t)"
+    },
+    {
+        "input": "Change niceness of specific child processes",
+        "output": "sudo renice +5 -p $(pgrep -P $(pgrep mydaemon))"
+    },
+    {
+        "input": "Change niceness of processes using network on port 22",
+        "output": "sudo renice +5 -p $(lsof -i:22 -t)"
+    },
+    {
+        "input": "Change niceness of all Chrome processes",
+        "output": "sudo renice +5 -p $(pgrep chrome)"
+    },
+    {
+        "input": "Change niceness of all Firefox processes",
+        "output": "sudo renice +5 -p $(pgrep firefox)"
+    },
+    {
+        "input": "Change niceness of Xorg process",
+        "output": "sudo renice +5 -p $(pgrep Xorg)"
+    },
+    {
+        "input": "Change niceness of pulseaudio",
+        "output": "sudo renice +10 -p $(pgrep pulseaudio)"
+    },
+    {
+        "input": "Change niceness of docker daemon",
+        "output": "sudo renice +5 -p $(pgrep dockerd)"
+    },
+    {
+        "input": "Change niceness of systemd-journald",
+        "output": "sudo renice +5 -p $(pgrep systemd-journald)"
+    },
+    {
+        "input": "Change niceness of kernel threads",
+        "output": "for pid in $(ps -eo pid,cmd | grep '\\[.*\\]' | awk '{print $1}'); do sudo renice +15 $pid; done"
+    },
+    {
+        "input": "Change niceness of network manager processes",
+        "output": "sudo renice +5 -p $(pgrep NetworkManager)"
+    },
+    {
+        "input": "Change niceness of ssh-agent",
+        "output": "sudo renice +10 -p $(pgrep ssh-agent)"
+    },
+    {
+        "input": "Change niceness of cron daemon",
+        "output": "sudo renice +8 -p $(pgrep cron)"
+    },
+    {
+        "input": "Change niceness of syslog daemon",
+        "output": "sudo renice +8 -p $(pgrep rsyslogd)"
+    },
+    {
+        "input": "Change niceness of journald daemon",
+        "output": "sudo renice +8 -p $(pgrep systemd-journal)"
+    },
+    {
+        "input": "Change niceness of dbus daemon",
+        "output": "sudo renice +8 -p $(pgrep dbus-daemon)"
+    },
+    {
+        "input": "Change niceness of avahi daemon",
+        "output": "sudo renice +8 -p $(pgrep avahi-daemon)"
+    },
+    {
+        "input": "Change niceness of bluetooth daemon",
+        "output": "sudo renice +8 -p $(pgrep bluetoothd)"
+    },
+    {
+        "input": "Change niceness of cupsd daemon",
+        "output": "sudo renice +8 -p $(pgrep cupsd)"
+    },
+    {
+        "input": "Change niceness of upower daemon",
+        "output": "sudo renice +8 -p $(pgrep upowerd)"
+    },
+    {
+        "input": "Change niceness of gvfs daemon",
+        "output": "sudo renice +8 -p $(pgrep gvfsd)"
+    },
+    {
+        "input": "Change niceness of user session processes",
+        "output": "sudo renice +5 -u $USER"
+    },
+    {
+        "input": "Change niceness of root session processes",
+        "output": "sudo renice +5 -u root"
+    },
+    {
+        "input": "Change niceness of all processes in cgroup /user.slice",
+        "output": "for pid in $(cat /sys/fs/cgroup/user.slice/*.tasks); do sudo renice +5 $pid; done"
+    },
+    {
+        "input": "Change niceness of all processes in cgroup /system.slice",
+        "output": "for pid in $(cat /sys/fs/cgroup/system.slice/*.tasks); do sudo renice +5 $pid; done"
+    },
+    {
+        "input": "Change niceness of init process",
+        "output": "sudo renice +0 -p 1"
+    },
+    {
+        "input": "Change niceness of all ssh connections from this host",
+        "output": "sudo renice +5 -p $(ss -tnp | grep ESTAB | awk '{print $6}' | cut -d',' -f2)"
+    },
+    {
+        "input": "Change niceness of mail services",
+        "output": "sudo renice +5 -p $(pgrep postfix) $(pgrep smbd)"
+    },
+    {
+        "input": "Change niceness of virtualization processes",
+        "output": "sudo renice +5 -p $(pgrep qemu)"
+    },
+    {
+        "input": "Change niceness of database processes",
+        "output": "sudo renice +5 -p $(pgrep mysqld)"
+    },
+    {
+        "input": "Change niceness of web server processes",
+        "output": "sudo renice +5 -p $(pgrep nginx)"
+    },
+    {
+        "input": "Change niceness of caching server processes",
+        "output": "sudo renice +5 -p $(pgrep memcached)"
+    },
+    {
+        "input": "Change niceness of search engine processes",
+        "output": "sudo renice +5 -p $(pgrep elasticsearch)"
+    },
+    {
+        "input": "Change niceness of container runtime processes",
+        "output": "sudo renice +5 -p $(pgrep containerd)"
+    },
+    {
+        "input": "Change niceness of orchestration agent",
+        "output": "sudo renice +5 -p $(pgrep kubelet)"
+    },
+    {
+        "input": "Change niceness of telemetry agent",
+        "output": "sudo renice +5 -p $(pgrep telegraf)"
+    },
+    {
+        "input": "Change niceness of logging agent",
+        "output": "sudo renice +5 -p $(pgrep fluentd)"
+    },
+    {
+        "input": "Change niceness of monitoring agent",
+        "output": "sudo renice +5 -p $(pgrep prometheus)"
+    },
+    {
+        "input": "Change niceness of alerting agent",
+        "output": "sudo renice +5 -p $(pgrep alertmanager)"
+    }
+]

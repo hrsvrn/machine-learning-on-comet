@@ -1,0 +1,710 @@
+[
+    {
+    "input": "Create an empty file called 'newfile.txt'",
+    "output": "touch newfile.txt"
+  },
+  {
+    "input": "Create a file named 'report.pdf' in the current directory",
+    "output": "touch report.pdf"
+  },
+  {
+    "input": "Create a file called 'image.jpg' in /tmp",
+    "output": "touch /tmp/image.jpg"
+  },
+  {
+    "input": "Create a file named 'data.csv' in /var/log",
+    "output": "touch /var/log/data.csv"
+  },
+  {
+    "input": "Create multiple files: 'file1.txt', 'file2.txt', and 'file3.txt'",
+    "output": "touch file1.txt file2.txt file3.txt"
+  },
+  {
+    "input": "Create a file named 'My File.txt' with spaces in the name",
+    "output": "touch 'My File.txt'"
+  },
+  {
+    "input": "Create a hidden file called '.env' in your home directory",
+    "output": "touch ~/.env"
+  },
+  {
+    "input": "Create a file called 'script.sh' in /usr/local/bin",
+    "output": "touch /usr/local/bin/script.sh"
+  },
+  {
+    "input": "Create a file named 'notes.txt' on the Desktop",
+    "output": "touch ~/Desktop/notes.txt"
+  },
+  {
+    "input": "Create a file called 'config.yaml' in /etc",
+    "output": "touch /etc/config.yaml"
+  },
+  {
+    "input": "Create all .log files in the current directory if they don't exist",
+    "output": "touch *.log"
+  },
+  {
+    "input": "Create a file called 'archive.tar.gz' in /opt",
+    "output": "touch /opt/archive.tar.gz"
+  },
+  {
+    "input": "Create a file called 'draft.docx' in the Documents folder",
+    "output": "touch ~/Documents/draft.docx"
+  },
+  {
+    "input": "Create a file called 'output.txt' in the parent directory",
+    "output": "touch ../output.txt"
+  },
+  {
+    "input": "Create a file called 'testfile' in /srv/www",
+    "output": "touch /srv/www/testfile"
+  },
+  {
+    "input": "Create a file called 'logfile' in /var/log",
+    "output": "touch /var/log/logfile"
+  },
+  {
+    "input": "Create a file called 'mail.txt' in /var/mail",
+    "output": "touch /var/mail/mail.txt"
+  },
+  {
+    "input": "Create a file called 'index.html' in /var/www/html",
+    "output": "touch /var/www/html/index.html"
+  },
+  {
+    "input": "Create a file called 'db.sqlite3' in the current directory",
+    "output": "touch db.sqlite3"
+  },
+  {
+    "input": "Create a file called 'access.log' in /var/log",
+    "output": "touch /var/log/access.log"
+  },
+  {
+    "input": "Create a file called 'syslog' in /var/log",
+    "output": "touch /var/log/syslog"
+  },
+  {
+    "input": "Create a file called 'kern.log' in /var/log",
+    "output": "touch /var/log/kern.log"
+  },
+  {
+    "input": "Create a file called 'apt.log' in /var/log/apt",
+    "output": "touch /var/log/apt/apt.log"
+  },
+  {
+    "input": "Create a file called 'user.log' in /var/log",
+    "output": "touch /var/log/user.log"
+  },
+  {
+    "input": "Create a file called 'boot.log' in /var/log",
+    "output": "touch /var/log/boot.log"
+  },
+  {
+    "input": "Create a file called 'sa.log' in /var/log/sa",
+    "output": "touch /var/log/sa/sa.log"
+  },
+  {
+    "input": "Create a file called 'aptitude.log' in /var/log/aptitude",
+    "output": "touch /var/log/aptitude/aptitude.log"
+  },
+  {
+    "input": "Create a file called 'clamav.log' in /var/log/clamav",
+    "output": "touch /var/log/clamav/clamav.log"
+  },
+  {
+    "input": "Create a file called 'news.log' in /var/log/news",
+    "output": "touch /var/log/news/news.log"
+  },
+  {
+    "input": "Create a file called 'samba.log' in /var/log/samba",
+    "output": "touch /var/log/samba/samba.log"
+  },
+  {
+    "input": "Create a file called 'yum.log' in /var/log",
+    "output": "touch /var/log/yum.log"
+  },
+  {
+    "input": "Create a file called 'lastlog' in /var/log",
+    "output": "touch /var/log/lastlog"
+  },
+  {
+    "input": "Create a file called 'secure' in /var/log",
+    "output": "touch /var/log/secure"
+  },
+  {
+    "input": "Create a file called 'cron' in /var/log",
+    "output": "touch /var/log/cron"
+  },
+  {
+    "input": "Create a file called 'btmp' in /var/log",
+    "output": "touch /var/log/btmp"
+  },
+  {
+    "input": "Create a file called 'history.log' in /var/log/apt",
+    "output": "touch /var/log/apt/history.log"
+  },
+  {
+    "input": "Create a file called 'fail2ban.log' in /var/log",
+    "output": "touch /var/log/fail2ban.log"
+  },
+  {
+    "input": "Create a file called 'gpu-manager.log' in /var/log",
+    "output": "touch /var/log/gpu-manager.log"
+  },
+  {
+    "input": "Create a file called 'kern.log' in /var/log",
+    "output": "touch /var/log/kern.log"
+  },
+  {
+    "input": "Create a file called 'mail.err' in /var/log",
+    "output": "touch /var/log/mail.err"
+  },
+  {
+    "input": "Create a file called 'mail.log' in /var/log",
+    "output": "touch /var/log/mail.log"
+  },
+  {
+    "input": "Create a file called 'messages' in /var/log",
+    "output": "touch /var/log/messages"
+  },
+  {
+    "input": "Create a file called 'user.log' in /var/log",
+    "output": "touch /var/log/user.log"
+  },
+  {
+    "input": "Create a file called 'Xorg.0.log' in /var/log",
+    "output": "touch /var/log/Xorg.0.log"
+  },
+  {
+    "input": "Create a file called 'Xorg.1.log' in /var/log",
+    "output": "touch /var/log/Xorg.1.log"
+  },
+  {
+    "input": "Create a file called 'Xorg.failsafe.log' in /var/log",
+    "output": "touch /var/log/Xorg.failsafe.log"
+  },
+  {
+    "input": "Create a file called 'test' in the current directory",
+    "output": "touch test"
+  },
+  {
+    "input": "Create a file called 'test' in the parent directory",
+    "output": "touch ../test"
+  },
+  {
+    "input": "Create a file called 'test' in /tmp",
+    "output": "touch /tmp/test"
+  },
+  {
+    "input": "Create a file called 'test' in /home/alice",
+    "output": "touch /home/alice/test"
+  },
+  {
+    "input": "Create a file called 'test' in /home/bob",
+    "output": "touch /home/bob/test"
+  },
+  {
+    "input": "Create a file called 'temp' in /home/charlie",
+    "output": "touch /home/charlie/temp"
+  },
+  {
+    "input": "Create a file called 'temp' in /home/dave",
+    "output": "touch /home/dave/temp"
+  },
+  {
+    "input": "Create a file called 'temp' in /home/erin",
+    "output": "touch /home/erin/temp"
+  },
+  {
+    "input": "Create a file called 'temp' in /home/frank",
+    "output": "touch /home/frank/temp"
+  },
+  {
+    "input": "Create a file called 'temp' in /home/grace",
+    "output": "touch /home/grace/temp"
+  },
+  {
+    "input": "Create a file called 'temp' in /home/harry",
+    "output": "touch /home/harry/temp"
+  },
+  {
+    "input": "Create a file called 'workspace' in your home",
+    "output": "touch ~/workspace"
+  },
+  {
+    "input": "Create a file called 'builds' in your home",
+    "output": "touch ~/builds"
+  },
+  {
+    "input": "Create a file called 'logs' in your home",
+    "output": "touch ~/logs"
+  },
+  {
+    "input": "Create a file called 'test_data' in your home",
+    "output": "touch ~/test_data"
+  },
+  {
+    "input": "Create a file called 'test_output' in your home",
+    "output": "touch ~/test_output"
+  },
+  {
+    "input": "Create a file called 'projects' in your home",
+    "output": "touch ~/projects"
+  },
+  {
+    "input": "Create a file called 'archives' in your home",
+    "output": "touch ~/archives"
+  },
+  {
+    "input": "Create a file called 'music' in your home",
+    "output": "touch ~/music"
+  },
+  {
+    "input": "Create a file called 'videos' in your home",
+    "output": "touch ~/videos"
+  },
+  {
+    "input": "Create a file called 'pictures' in your home",
+    "output": "touch ~/pictures"
+  },
+  {
+    "input": "Create a file called 'documents' in your home",
+    "output": "touch ~/documents"
+  },
+  {
+    "input": "Create a file called 'downloads' in your home",
+    "output": "touch ~/downloads"
+  },
+  {
+    "input": "Create a file called 'bin' in your home",
+    "output": "touch ~/bin"
+  },
+  {
+    "input": "Create a file called 'src' in your home",
+    "output": "touch ~/src"
+  },
+  {
+    "input": "Create a file called 'include' in your home",
+    "output": "touch ~/include"
+  },
+  {
+    "input": "Create a file called 'lib' in your home",
+    "output": "touch ~/lib"
+  },
+  {
+    "input": "Create a file called 'share' in your home",
+    "output": "touch ~/share"
+  },
+  {
+    "input": "Create a file called 'opt' in your home",
+    "output": "touch ~/opt"
+  },
+  {
+    "input": "Create a file called 'etc' in your home",
+    "output": "touch ~/etc"
+  },
+  {
+    "input": "Create a file called 'var' in your home",
+    "output": "touch ~/var"
+  },
+  {
+    "input": "Create a file called 'tmp' in your home",
+    "output": "touch ~/tmp"
+  },
+  {
+    "input": "Create a file called 'man' in your home",
+    "output": "touch ~/man"
+  },
+  {
+    "input": "Create a file called 'doc' in your home",
+    "output": "touch ~/doc"
+  },
+  {
+    "input": "Create a file called 'info' in your home",
+    "output": "touch ~/info"
+  },
+  {
+    "input": "Create a file called 'locale' in your home",
+    "output": "touch ~/locale"
+  },
+  {
+    "input": "Create a file called 'zoneinfo' in your home",
+    "output": "touch ~/zoneinfo"
+  },
+  {
+    "input": "Create a file called 'fonts' in your home",
+    "output": "touch ~/fonts"
+  },
+  {
+    "input": "Create a file called 'themes' in your home",
+    "output": "touch ~/themes"
+  },
+  {
+    "input": "Create a file called 'icons' in your home",
+    "output": "touch ~/icons"
+  },
+  {
+    "input": "Create a file called 'backgrounds' in your home",
+    "output": "touch ~/backgrounds"
+  },
+  {
+    "input": "Create a file called 'applications' in your home",
+    "output": "touch ~/applications"
+  },
+  {
+    "input": "Create a file called 'sounds' in your home",
+    "output": "touch ~/sounds"
+  },
+  {
+    "input": "Create a file called 'pixmaps' in your home",
+    "output": "touch ~/pixmaps"
+  },
+  {
+    "input": "Create a file called 'mime' in your home",
+    "output": "touch ~/mime"
+  },
+  {
+    "input": "Create a file called 'games' in your home",
+    "output": "touch ~/games"
+  },
+  {
+    "input": "Create a file called 'perl5' in your home",
+    "output": "touch ~/perl5"
+  },
+  {
+    "input": "Create a file called 'python' in your home",
+    "output": "touch ~/python"
+  },
+  {
+    "input": "Create a file called 'texmf' in your home",
+    "output": "touch ~/texmf"
+  },
+  {
+    "input": "Create a file called 'emacs' in your home",
+    "output": "touch ~/emacs"
+  },
+  {
+    "input": "Create a file called 'doc-base' in your home",
+    "output": "touch ~/doc-base"
+  },
+  {
+    "input": "Create a file called 'lintian' in your home",
+    "output": "touch ~/lintian"
+  },
+  {
+    "input": "Create a file called 'linda' in your home",
+    "output": "touch ~/linda"
+  },
+  {
+    "input": "Create a file called 'locale-langpack' in your home",
+    "output": "touch ~/locale-langpack"
+  },
+  {
+    "input": "Create a file called 'Asia' in your home",
+    "output": "touch ~/Asia"
+  },
+  {
+    "input": "Create a file called 'Europe' in your home",
+    "output": "touch ~/Europe"
+  },
+  {
+    "input": "Create a file called 'America' in your home",
+    "output": "touch ~/America"
+  },
+  {
+    "input": "Create a file called 'Africa' in your home",
+    "output": "touch ~/Africa"
+  },
+  {
+    "input": "Create a file called 'test' and set its timestamp to Jan 1, 2020",
+    "output": "touch -t 202001010000 test"
+  },
+  {
+    "input": "Create a file called 'log.txt' and set its timestamp to yesterday",
+    "output": "touch -d 'yesterday' log.txt"
+  },
+  {
+    "input": "Update the timestamp of 'existing.txt' to now",
+    "output": "touch existing.txt"
+  },
+  {
+    "input": "Create a file called 'future.txt' and set its timestamp to next week",
+    "output": "touch -d 'next week' future.txt"
+  },
+  {
+    "input": "Create a file called 'past.txt' and set its timestamp to last year",
+    "output": "touch -d 'last year' past.txt"
+  },
+  {
+    "input": "Create a file called 'ref.txt' and set its timestamp to match 'source.txt'",
+    "output": "touch -r source.txt ref.txt"
+  },
+  {
+    "input": "Create a file called 'no_create.txt' only if it exists",
+    "output": "touch -c no_create.txt"
+  },
+  {
+    "input": "Create a file called 'file.txt' and set its timestamp to 12:34 on June 18, 2025",
+    "output": "touch -t 202506181234 file.txt"
+  },
+  {
+    "input": "Create multiple files and set their timestamps to now",
+    "output": "touch file1 file2 file3"
+  },
+  {
+    "input": "Update the access time only for 'access.txt'",
+    "output": "touch -a access.txt"
+  },
+  {
+    "input": "Update the modification time only for 'mod.txt'",
+    "output": "touch -m mod.txt"
+  },
+  {
+    "input": "Create a file called 'special.txt' and set its timestamp to 8:00 AM today",
+    "output": "touch -t $(date +%Y%m%d)0800 special.txt"
+  },
+  {
+    "input": "Create a file called 'backup.txt' and set its timestamp to match 'original.txt'",
+    "output": "touch -r original.txt backup.txt"
+  },
+  {
+    "input": "Create a file called 'no_create.txt' only if it exists, do not create new",
+    "output": "touch -c no_create.txt"
+  },
+  {
+    "input": "Create a file called 'file.txt' and set its timestamp to 23:59 on Dec 31, 2024",
+    "output": "touch -t 202412312359 file.txt"
+  },
+  {
+    "input": "Create a file called 'log.txt' and set its timestamp to 6:30 PM today",
+    "output": "touch -t $(date +%Y%m%d)1830 log.txt"
+  },
+  {
+    "input": "Create a file called 'yesterday.txt' and set its timestamp to yesterday",
+    "output": "touch -d 'yesterday' yesterday.txt"
+  },
+  {
+    "input": "Create a file called 'tomorrow.txt' and set its timestamp to tomorrow",
+    "output": "touch -d 'tomorrow' tomorrow.txt"
+  },
+  {
+    "input": "Create a file called 'no_create.txt' only if it exists, do not create new",
+    "output": "touch -c no_create.txt"
+  },
+  {
+    "input": "Create a file called 'file.txt' and set its timestamp to 12:00 on June 18, 2025",
+    "output": "touch -t 202506181200 file.txt"
+  },
+  {
+    "input": "Create a file called 'log.txt' and set its timestamp to 7:00 AM today",
+    "output": "touch -t $(date +%Y%m%d)0700 log.txt"
+  },
+  {
+    "input": "Create a file called 'future.txt' and set its timestamp to next month",
+    "output": "touch -d 'next month' future.txt"
+  },
+  {
+    "input": "Create a file called 'past.txt' and set its timestamp to last month",
+    "output": "touch -d 'last month' past.txt"
+  },
+  {
+    "input": "Create a file called 'ref.txt' and set its timestamp to match 'source.txt'",
+    "output": "touch -r source.txt ref.txt"
+  },
+  {
+    "input": "Create a file called 'no_create.txt' only if it exists",
+    "output": "touch -c no_create.txt"
+  },
+  {
+    "input": "Create a file called 'file.txt' and set its timestamp to 00:00 on Jan 1, 2025",
+    "output": "touch -t 202501010000 file.txt"
+  },
+  {
+    "input": "Create a file called 'log.txt' and set its timestamp to 11:59 PM today",
+    "output": "touch -t $(date +%Y%m%d)2359 log.txt"
+  },
+  {
+    "input": "Create a file called 'yesterday.txt' and set its timestamp to yesterday",
+    "output": "touch -d 'yesterday' yesterday.txt"
+  },
+  {
+    "input": "Create a file called 'tomorrow.txt' and set its timestamp to tomorrow",
+    "output": "touch -d 'tomorrow' tomorrow.txt"
+  },
+  {
+    "input": "Create a file called 'no_create.txt' only if it exists, do not create new",
+    "output": "touch -c no_create.txt"
+  },
+  {
+    "input": "Create a file called 'file.txt' and set its timestamp to 12:00 on June 18, 2025",
+    "output": "touch -t 202506181200 file.txt"
+  },
+  {
+    "input": "Create a file called 'log.txt' and set its timestamp to 7:00 AM today",
+    "output": "touch -t $(date +%Y%m%d)0700 log.txt"
+  },
+  {
+    "input": "Create a file called 'future.txt' and set its timestamp to next month",
+    "output": "touch -d 'next month' future.txt"
+  },
+  {
+    "input": "Create a file called 'past.txt' and set its timestamp to last month",
+    "output": "touch -d 'last month' past.txt"
+  },
+  {
+    "input": "Create a file called 'ref.txt' and set its timestamp to match 'source.txt'",
+    "output": "touch -r source.txt ref.txt"
+  },
+  {
+    "input": "Create a file called 'no_create.txt' only if it exists",
+    "output": "touch -c no_create.txt"
+  },
+  {
+    "input": "Create a file called 'file.txt' and set its timestamp to 00:00 on Jan 1, 2025",
+    "output": "touch -t 202501010000 file.txt"
+  },
+  {
+    "input": "Create a file called 'log.txt' and set its timestamp to 11:59 PM today",
+    "output": "touch -t $(date +%Y%m%d)2359 log.txt"
+  },
+  {
+    "input": "Create a file called 'yesterday.txt' and set its timestamp to yesterday",
+    "output": "touch -d 'yesterday' yesterday.txt"
+  },
+  {
+    "input": "Create a file called 'tomorrow.txt' and set its timestamp to tomorrow",
+    "output": "touch -d 'tomorrow' tomorrow.txt"
+  },
+  {
+    "input": "Create a file called 'no_create.txt' only if it exists, do not create new",
+    "output": "touch -c no_create.txt"
+  },
+  {
+    "input": "Create a file called 'file.txt' and set its timestamp to 12:00 on June 18, 2025",
+    "output": "touch -t 202506181200 file.txt"
+  },
+  {
+    "input": "Create a file called 'log.txt' and set its timestamp to 7:00 AM today",
+    "output": "touch -t $(date +%Y%m%d)0700 log.txt"
+  },
+  {
+    "input": "Create a file called 'future.txt' and set its timestamp to next month",
+    "output": "touch -d 'next month' future.txt"
+  },
+  {
+    "input": "Create a file called 'past.txt' and set its timestamp to last month",
+    "output": "touch -d 'last month' past.txt"
+  },
+  {
+    "input": "Create a file called 'ref.txt' and set its timestamp to match 'source.txt'",
+    "output": "touch -r source.txt ref.txt"
+  },
+  {
+    "input": "Create a file called 'no_create.txt' only if it exists",
+    "output": "touch -c no_create.txt"
+  },
+  {
+    "input": "Create a file called 'file.txt' and set its timestamp to 00:00 on Jan 1, 2025",
+    "output": "touch -t 202501010000 file.txt"
+  },
+  {
+    "input": "Create a file called 'log.txt' and set its timestamp to 11:59 PM today",
+    "output": "touch -t $(date +%Y%m%d)2359 log.txt"
+  },
+  {
+    "input": "Create a file called 'yesterday.txt' and set its timestamp to yesterday",
+    "output": "touch -d 'yesterday' yesterday.txt"
+  },
+  {
+    "input": "Create a file called 'tomorrow.txt' and set its timestamp to tomorrow",
+    "output": "touch -d 'tomorrow' tomorrow.txt"
+  },
+  {
+    "input": "Create a file called 'no_create.txt' only if it exists, do not create new",
+    "output": "touch -c no_create.txt"
+  },
+  {
+    "input": "Create a file called 'file.txt' and set its timestamp to 12:00 on June 18, 2025",
+    "output": "touch -t 202506181200 file.txt"
+  },
+  {
+    "input": "Create a file called 'log.txt' and set its timestamp to 7:00 AM today",
+    "output": "touch -t $(date +%Y%m%d)0700 log.txt"
+  },
+  {
+    "input": "Create a file called 'future.txt' and set its timestamp to next month",
+    "output": "touch -d 'next month' future.txt"
+  },
+  {
+    "input": "Create a file called 'past.txt' and set its timestamp to last month",
+    "output": "touch -d 'last month' past.txt"
+  },
+  {
+    "input": "Create a file called 'ref.txt' and set its timestamp to match 'source.txt'",
+    "output": "touch -r source.txt ref.txt"
+  },
+  {
+    "input": "Create a file called 'no_create.txt' only if it exists",
+    "output": "touch -c no_create.txt"
+  },
+  {
+    "input": "Create a file called 'file.txt' and set its timestamp to 00:00 on Jan 1, 2025",
+    "output": "touch -t 202501010000 file.txt"
+  },
+  {
+    "input": "Create a file called 'log.txt' and set its timestamp to 11:59 PM today",
+    "output": "touch -t $(date +%Y%m%d)2359 log.txt"
+  },
+  {
+    "input": "Create a file called 'yesterday.txt' and set its timestamp to yesterday",
+    "output": "touch -d 'yesterday' yesterday.txt"
+  },
+  {
+    "input": "Create a file called 'tomorrow.txt' and set its timestamp to tomorrow",
+    "output": "touch -d 'tomorrow' tomorrow.txt"
+  },
+  {
+    "input": "Create a file called 'no_create.txt' only if it exists, do not create new",
+    "output": "touch -c no_create.txt"
+  },
+  {
+    "input": "Create a file called 'file.txt' and set its timestamp to 12:00 on June 18, 2025",
+    "output": "touch -t 202506181200 file.txt"
+  },
+  {
+    "input": "Create a file called 'log.txt' and set its timestamp to 7:00 AM today",
+    "output": "touch -t $(date +%Y%m%d)0700 log.txt"
+  },
+  {
+    "input": "Create a file called 'future.txt' and set its timestamp to next month",
+    "output": "touch -d 'next month' future.txt"
+  },
+  {
+    "input": "Create a file called 'past.txt' and set its timestamp to last month",
+    "output": "touch -d 'last month' past.txt"
+  },
+  {
+    "input": "Create a file called 'ref.txt' and set its timestamp to match 'source.txt'",
+    "output": "touch -r source.txt ref.txt"
+  },
+  {
+    "input": "Create a file called 'no_create.txt' only if it exists",
+    "output": "touch -c no_create.txt"
+  },
+  {
+    "input": "Create a file called 'file.txt' and set its timestamp to 00:00 on Jan 1, 2025",
+    "output": "touch -t 202501010000 file.txt"
+  },
+  {
+    "input": "Create a file called 'log.txt' and set its timestamp to 11:59 PM today",
+    "output": "touch -t $(date +%Y%m%d)2359 log.txt"
+  },
+  {
+    "input": "Create a file called 'yesterday.txt' and set its timestamp to yesterday",
+    "output": "touch -d 'yesterday' yesterday.txt"
+  },
+  {
+    "input": "Create a file called 'tomorrow.txt' and set its timestamp to tomorrow",
+    "output": "touch -d 'tomorrow' tomorrow.txt"
+  }
+]

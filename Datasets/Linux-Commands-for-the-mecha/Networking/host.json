@@ -1,0 +1,546 @@
+[
+    {
+        "input": "Query the A record for google.com",
+        "output": "host google.com"
+    },
+    {
+        "input": "Query the A record for example.com",
+        "output": "host example.com"
+    },
+    {
+        "input": "Query the A record for yahoo.com",
+        "output": "host yahoo.com"
+    },
+    {
+        "input": "Query the A record for github.com",
+        "output": "host github.com"
+    },
+    {
+        "input": "Query the A record for facebook.com",
+        "output": "host facebook.com"
+    },
+    {
+        "input": "Query the A record for 8.8.8.8 (reverse lookup)",
+        "output": "host 8.8.8.8"
+    },
+    {
+        "input": "Query the A record for 1.1.1.1 (reverse lookup)",
+        "output": "host 1.1.1.1"
+    },
+    {
+        "input": "Query the AAAA (IPv6) record for google.com",
+        "output": "host -t AAAA google.com"
+    },
+    {
+        "input": "Query the AAAA (IPv6) record for example.com",
+        "output": "host -t AAAA example.com"
+    },
+    {
+        "input": "Query the AAAA (IPv6) record for yahoo.com",
+        "output": "host -t AAAA yahoo.com"
+    },
+    {
+        "input": "Query the AAAA (IPv6) record for github.com",
+        "output": "host -t AAAA github.com"
+    },
+    {
+        "input": "Query the MX record for google.com",
+        "output": "host -t MX google.com"
+    },
+    {
+        "input": "Query the MX record for example.com",
+        "output": "host -t MX example.com"
+    },
+    {
+        "input": "Query the MX record for yahoo.com",
+        "output": "host -t MX yahoo.com"
+    },
+    {
+        "input": "Query the MX record for github.com",
+        "output": "host -t MX github.com"
+    },
+    {
+        "input": "Query the NS record for google.com",
+        "output": "host -t NS google.com"
+    },
+    {
+        "input": "Query the NS record for example.com",
+        "output": "host -t NS example.com"
+    },
+    {
+        "input": "Query the NS record for yahoo.com",
+        "output": "host -t NS yahoo.com"
+    },
+    {
+        "input": "Query the NS record for github.com",
+        "output": "host -t NS github.com"
+    },
+    {
+        "input": "Query the SOA record for google.com",
+        "output": "host -t SOA google.com"
+    },
+    {
+        "input": "Query the SOA record for example.com",
+        "output": "host -t SOA example.com"
+    },
+    {
+        "input": "Query the SOA record for yahoo.com",
+        "output": "host -t SOA yahoo.com"
+    },
+    {
+        "input": "Query the SOA record for github.com",
+        "output": "host -t SOA github.com"
+    },
+    {
+        "input": "Query the TXT record for google.com",
+        "output": "host -t TXT google.com"
+    },
+    {
+        "input": "Query the TXT record for example.com",
+        "output": "host -t TXT example.com"
+    },
+    {
+        "input": "Query the TXT record for yahoo.com",
+        "output": "host -t TXT yahoo.com"
+    },
+    {
+        "input": "Query the TXT record for github.com",
+        "output": "host -t TXT github.com"
+    },
+    {
+        "input": "Query the CNAME record for www.google.com",
+        "output": "host -t CNAME www.google.com"
+    },
+    {
+        "input": "Query the CNAME record for www.example.com",
+        "output": "host -t CNAME www.example.com"
+    },
+    {
+        "input": "Query the CNAME record for www.yahoo.com",
+        "output": "host -t CNAME www.yahoo.com"
+    },
+    {
+        "input": "Query the CNAME record for www.github.com",
+        "output": "host -t CNAME www.github.com"
+    },
+    {
+        "input": "Query the PTR record for 8.8.8.8",
+        "output": "host -t PTR 8.8.8.8"
+    },
+    {
+        "input": "Query the PTR record for 1.1.1.1",
+        "output": "host -t PTR 1.1.1.1"
+    },
+    {
+        "input": "Query the PTR record for 208.67.222.222",
+        "output": "host -t PTR 208.67.222.222"
+    },
+    {
+        "input": "Query the PTR record for 4.2.2.2",
+        "output": "host -t PTR 4.2.2.2"
+    },
+    {
+        "input": "Query the SRV record for _sip._tcp.google.com",
+        "output": "host -t SRV _sip._tcp.google.com"
+    },
+    {
+        "input": "Query the SRV record for _xmpp-server._tcp.gmail.com",
+        "output": "host -t SRV _xmpp-server._tcp.gmail.com"
+    },
+    {
+        "input": "Query the SRV record for _sip._tcp.example.com",
+        "output": "host -t SRV _sip._tcp.example.com"
+    },
+    {
+        "input": "Query the SRV record for _xmpp-server._tcp.yahoo.com",
+        "output": "host -t SRV _xmpp-server._tcp.yahoo.com"
+    },
+    {
+        "input": "Query the ANY record for google.com",
+        "output": "host -t ANY google.com"
+    },
+    {
+        "input": "Query the ANY record for example.com",
+        "output": "host -t ANY example.com"
+    },
+    {
+        "input": "Query the ANY record for yahoo.com",
+        "output": "host -t ANY yahoo.com"
+    },
+    {
+        "input": "Query the ANY record for github.com",
+        "output": "host -t ANY github.com"
+    },
+    {
+        "input": "Query the SPF record for google.com",
+        "output": "host -t SPF google.com"
+    },
+    {
+        "input": "Query the SPF record for example.com",
+        "output": "host -t SPF example.com"
+    },
+    {
+        "input": "Query the SPF record for yahoo.com",
+        "output": "host -t SPF yahoo.com"
+    },
+    {
+        "input": "Query the SPF record for github.com",
+        "output": "host -t SPF github.com"
+    },
+    {
+        "input": "Query the DNSKEY record for google.com",
+        "output": "host -t DNSKEY google.com"
+    },
+    {
+        "input": "Query the DNSKEY record for example.com",
+        "output": "host -t DNSKEY example.com"
+    },
+    {
+        "input": "Query the DNSKEY record for yahoo.com",
+        "output": "host -t DNSKEY yahoo.com"
+    },
+    {
+        "input": "Query the DNSKEY record for github.com",
+        "output": "host -t DNSKEY github.com"
+    },
+    {
+        "input": "Query the DS record for google.com",
+        "output": "host -t DS google.com"
+    },
+    {
+        "input": "Query the DS record for example.com",
+        "output": "host -t DS example.com"
+    },
+    {
+        "input": "Query the DS record for yahoo.com",
+        "output": "host -t DS yahoo.com"
+    },
+    {
+        "input": "Query the DS record for github.com",
+        "output": "host -t DS github.com"
+    },
+    {
+        "input": "Query the NAPTR record for google.com",
+        "output": "host -t NAPTR google.com"
+    },
+    {
+        "input": "Query the NAPTR record for example.com",
+        "output": "host -t NAPTR example.com"
+    },
+    {
+        "input": "Query the NAPTR record for yahoo.com",
+        "output": "host -t NAPTR yahoo.com"
+    },
+    {
+        "input": "Query the NAPTR record for github.com",
+        "output": "host -t NAPTR github.com"
+    },
+    {
+        "input": "Query the CAA record for google.com",
+        "output": "host -t CAA google.com"
+    },
+    {
+        "input": "Query the CAA record for example.com",
+        "output": "host -t CAA example.com"
+    },
+    {
+        "input": "Query the CAA record for yahoo.com",
+        "output": "host -t CAA yahoo.com"
+    },
+    {
+        "input": "Query the CAA record for github.com",
+        "output": "host -t CAA github.com"
+    },
+    {
+        "input": "Query the TLSA record for google.com",
+        "output": "host -t TLSA google.com"
+    },
+    {
+        "input": "Query the TLSA record for example.com",
+        "output": "host -t TLSA example.com"
+    },
+    {
+        "input": "Query the TLSA record for yahoo.com",
+        "output": "host -t TLSA yahoo.com"
+    },
+    {
+        "input": "Query the TLSA record for github.com",
+        "output": "host -t TLSA github.com"
+    },
+    {
+        "input": "Query the A record for google.com using DNS server 1.1.1.1",
+        "output": "host google.com 1.1.1.1"
+    },
+    {
+        "input": "Query the A record for example.com using DNS server 8.8.8.8",
+        "output": "host example.com 8.8.8.8"
+    },
+    {
+        "input": "Query the A record for yahoo.com using DNS server 9.9.9.9",
+        "output": "host yahoo.com 9.9.9.9"
+    },
+    {
+        "input": "Query the A record for github.com using DNS server 4.2.2.2",
+        "output": "host github.com 4.2.2.2"
+    },
+    {
+        "input": "Query the A record for facebook.com using DNS server 208.67.222.222",
+        "output": "host facebook.com 208.67.222.222"
+    },
+    {
+        "input": "Query the A record for google.com with verbose output",
+        "output": "host -v google.com"
+    },
+    {
+        "input": "Query the MX record for example.com with verbose output",
+        "output": "host -v -t MX example.com"
+    },
+    {
+        "input": "Query the NS record for yahoo.com with verbose output",
+        "output": "host -v -t NS yahoo.com"
+    },
+    {
+        "input": "Query the TXT record for github.com with verbose output",
+        "output": "host -v -t TXT github.com"
+    },
+    {
+        "input": "Query the CNAME record for www.google.com with verbose output",
+        "output": "host -v -t CNAME www.google.com"
+    },
+    {
+        "input": "Query the PTR record for 8.8.8.8 with verbose output",
+        "output": "host -v -t PTR 8.8.8.8"
+    },
+    {
+        "input": "Query the ANY record for google.com with verbose output",
+        "output": "host -v -t ANY google.com"
+    },
+    {
+        "input": "Query the A record for google.com and display only the IP address",
+        "output": "host -t A google.com | awk '/has address/ {print $4}'"
+    },
+    {
+        "input": "Query the MX record for example.com and display only mail servers",
+        "output": "host -t MX example.com | awk '{print $7}'"
+    },
+    {
+        "input": "Query the NS record for yahoo.com and display only nameservers",
+        "output": "host -t NS yahoo.com | awk '{print $4}'"
+    },
+    {
+        "input": "Query the TXT record for github.com and display only TXT data",
+        "output": "host -t TXT github.com | awk -F'\"' '{print $2}'"
+    },
+    {
+        "input": "Query the A record for google.com and display output in uppercase",
+        "output": "host google.com | tr '[:lower:]' '[:upper:]'"
+    },
+    {
+        "input": "Query the A record for example.com and display output in lowercase",
+        "output": "host example.com | tr '[:upper:]' '[:lower:]'"
+    },
+    {
+        "input": "Query the A record for yahoo.com and save output to file",
+        "output": "host yahoo.com > yahoo_dns.txt"
+    },
+    {
+        "input": "Query the A record for github.com and append output to file",
+        "output": "host github.com >> github_dns.txt"
+    },
+    {
+        "input": "Query the MX record for google.com and grep for google",
+        "output": "host -t MX google.com | grep google"
+    },
+    {
+        "input": "Query the NS record for example.com and grep for ns",
+        "output": "host -t NS example.com | grep ns"
+    },
+    {
+        "input": "Query the TXT record for yahoo.com and grep for v=spf1",
+        "output": "host -t TXT yahoo.com | grep 'v=spf1'"
+    },
+    {
+        "input": "Query the CNAME record for www.github.com and grep for github",
+        "output": "host -t CNAME www.github.com | grep github"
+    },
+    {
+        "input": "Query the PTR record for 8.8.8.8 and grep for google",
+        "output": "host -t PTR 8.8.8.8 | grep google"
+    },
+    {
+        "input": "Query the A record for google.com and display the command used",
+        "output": "echo 'host google.com'; host google.com"
+    },
+    {
+        "input": "Query the A record for example.com and display the command used",
+        "output": "echo 'host example.com'; host example.com"
+    },
+    {
+        "input": "Query the A record for yahoo.com and display the command used",
+        "output": "echo 'host yahoo.com'; host yahoo.com"
+    },
+    {
+        "input": "Query the A record for github.com and display the command used",
+        "output": "echo 'host github.com'; host github.com"
+    },
+    {
+        "input": "Query the A record for facebook.com and display the command used",
+        "output": "echo 'host facebook.com'; host facebook.com"
+    },
+    {
+        "input": "Query the A record for google.com using DNS server 8.8.4.4",
+        "output": "host google.com 8.8.4.4"
+    },
+    {
+        "input": "Query the A record for example.com using DNS server 1.0.0.1",
+        "output": "host example.com 1.0.0.1"
+    },
+    {
+        "input": "Query the A record for yahoo.com using DNS server 8.26.56.26",
+        "output": "host yahoo.com 8.26.56.26"
+    },
+    {
+        "input": "Query the A record for github.com using DNS server 8.20.247.20",
+        "output": "host github.com 8.20.247.20"
+    },
+    {
+        "input": "Query the A record for facebook.com using DNS server 208.67.220.220",
+        "output": "host facebook.com 208.67.220.220"
+    },
+    {
+        "input": "Query the A record for google.com and use short output",
+        "output": "host google.com | awk '/has address/ {print $4}'"
+    },
+    {
+        "input": "Query the MX record for example.com and use short output",
+        "output": "host -t MX example.com | awk '{print $7}'"
+    },
+    {
+        "input": "Query the NS record for yahoo.com and use short output",
+        "output": "host -t NS yahoo.com | awk '{print $4}'"
+    },
+    {
+        "input": "Query the TXT record for github.com and use short output",
+        "output": "host -t TXT github.com | awk -F'\"' '{print $2}'"
+    },
+    {
+        "input": "Query the A record for google.com and display output with line numbers",
+        "output": "host google.com | nl"
+    },
+    {
+        "input": "Query the A record for example.com and display output with line numbers",
+        "output": "host example.com | nl"
+    },
+    {
+        "input": "Query the A record for yahoo.com and display output with line numbers",
+        "output": "host yahoo.com | nl"
+    },
+    {
+        "input": "Query the A record for github.com and display output with line numbers",
+        "output": "host github.com | nl"
+    },
+    {
+        "input": "Query the A record for facebook.com and display output with line numbers",
+        "output": "host facebook.com | nl"
+    },
+    {
+        "input": "Query the A record for google.com and display output in color",
+        "output": "host google.com | lolcat"
+    },
+    {
+        "input": "Query the A record for example.com and display output in color",
+        "output": "host example.com | lolcat"
+    },
+    {
+        "input": "Query the A record for yahoo.com and display output in color",
+        "output": "host yahoo.com | lolcat"
+    },
+    {
+        "input": "Query the A record for github.com and display output in color",
+        "output": "host github.com | lolcat"
+    },
+    {
+        "input": "Query the A record for facebook.com and display output in color",
+        "output": "host facebook.com | lolcat"
+    },
+    {
+        "input": "Query the A record for google.com and display output in uppercase and color",
+        "output": "host google.com | tr '[:lower:]' '[:upper:]' | lolcat"
+    },
+    {
+        "input": "Query the A record for example.com and display output in uppercase and color",
+        "output": "host example.com | tr '[:lower:]' '[:upper:]' | lolcat"
+    },
+    {
+        "input": "Query the A record for yahoo.com and display output in uppercase and color",
+        "output": "host yahoo.com | tr '[:lower:]' '[:upper:]' | lolcat"
+    },
+    {
+        "input": "Query the A record for github.com and display output in uppercase and color",
+        "output": "host github.com | tr '[:lower:]' '[:upper:]' | lolcat"
+    },
+    {
+        "input": "Query the A record for facebook.com and display output in uppercase and color",
+        "output": "host facebook.com | tr '[:lower:]' '[:upper:]' | lolcat"
+    },
+    {
+        "input": "Query the A record for google.com and display output in lowercase and color",
+        "output": "host google.com | tr '[:upper:]' '[:lower:]' | lolcat"
+    },
+    {
+        "input": "Query the A record for example.com and display output in lowercase and color",
+        "output": "host example.com | tr '[:upper:]' '[:lower:]' | lolcat"
+    },
+    {
+        "input": "Query the A record for yahoo.com and display output in lowercase and color",
+        "output": "host yahoo.com | tr '[:upper:]' '[:lower:]' | lolcat"
+    },
+    {
+        "input": "Query the A record for github.com and display output in lowercase and color",
+        "output": "host github.com | tr '[:upper:]' '[:lower:]' | lolcat"
+    },
+    {
+        "input": "Query the A record for facebook.com and display output in lowercase and color",
+        "output": "host facebook.com | tr '[:upper:]' '[:lower:]' | lolcat"
+    },
+    {
+        "input": "Query the A record for google.com and display output with timestamp",
+        "output": "date; host google.com"
+    },
+    {
+        "input": "Query the A record for example.com and display output with timestamp",
+        "output": "date; host example.com"
+    },
+    {
+        "input": "Query the A record for yahoo.com and display output with timestamp",
+        "output": "date; host yahoo.com"
+    },
+    {
+        "input": "Query the A record for github.com and display output with timestamp",
+        "output": "date; host github.com"
+    },
+    {
+        "input": "Query the A record for facebook.com and display output with timestamp",
+        "output": "date; host facebook.com"
+    },
+    {
+        "input": "Query the A record for google.com and display output with both timestamp and color",
+        "output": "date; host google.com | lolcat"
+    },
+    {
+        "input": "Query the A record for example.com and display output with both timestamp and color",
+        "output": "date; host example.com | lolcat"
+    },
+    {
+        "input": "Query the A record for yahoo.com and display output with both timestamp and color",
+        "output": "date; host yahoo.com | lolcat"
+    },
+    {
+        "input": "Query the A record for github.com and display output with both timestamp and color",
+        "output": "date; host github.com | lolcat"
+    },
+    {
+        "input": "Query the A record for facebook.com and display output with both timestamp and color",
+        "output": "date; host facebook.com | lolcat"
+    }
+]

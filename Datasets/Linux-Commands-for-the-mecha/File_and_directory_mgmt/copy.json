@@ -1,0 +1,718 @@
+[
+    {
+    "input": "Copy a file called 'file.txt' to the current directory",
+    "output": "cp file.txt ."
+  },
+  {
+    "input": "Copy 'report.pdf' to the Documents folder",
+    "output": "cp report.pdf ~/Documents/"
+  },
+  {
+    "input": "Copy 'image.jpg' from the current directory to /tmp",
+    "output": "cp image.jpg /tmp/"
+  },
+  {
+    "input": "Copy 'data.csv' to /var/log and rename it to 'backup.csv'",
+    "output": "cp data.csv /var/log/backup.csv"
+  },
+  {
+    "input": "Copy all .txt files to the backup directory",
+    "output": "cp *.txt backup/"
+  },
+  {
+    "input": "Copy a file named 'My File.txt' with spaces to /home/user",
+    "output": "cp 'My File.txt' /home/user/"
+  },
+  {
+    "input": "Copy a hidden file '.env' to the parent directory",
+    "output": "cp .env ../"
+  },
+  {
+    "input": "Copy 'script.sh' to /usr/local/bin and keep the same name",
+    "output": "cp script.sh /usr/local/bin/"
+  },
+  {
+    "input": "Copy 'notes.txt' from your home to the Desktop",
+    "output": "cp ~/notes.txt ~/Desktop/"
+  },
+  {
+    "input": "Copy 'config.yaml' to /etc and rename it to 'config_backup.yaml'",
+    "output": "cp config.yaml /etc/config_backup.yaml"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp",
+    "output": "cp * /tmp/"
+  },
+  {
+    "input": "Copy all .log files from /var/log to /backup/logs",
+    "output": "cp /var/log/*.log /backup/logs/"
+  },
+  {
+    "input": "Copy a directory called 'projects' to /backup recursively",
+    "output": "cp -r projects /backup/"
+  },
+  {
+    "input": "Copy the entire 'Documents' folder to /mnt/usb",
+    "output": "cp -r ~/Documents /mnt/usb/"
+  },
+  {
+    "input": "Copy a directory 'src' and all its contents to /opt",
+    "output": "cp -r src /opt/"
+  },
+  {
+    "input": "Copy 'file1.txt' and 'file2.txt' to /tmp",
+    "output": "cp file1.txt file2.txt /tmp/"
+  },
+  {
+    "input": "Copy all files starting with 'test' to /var/tmp",
+    "output": "cp test* /var/tmp/"
+  },
+  {
+    "input": "Copy all files and subdirectories from 'build' to 'release'",
+    "output": "cp -r build/* release/"
+  },
+  {
+    "input": "Copy a file 'draft.docx' to the parent directory",
+    "output": "cp draft.docx ../"
+  },
+  {
+    "input": "Copy all files in /etc to /backup/etc",
+    "output": "cp /etc/* /backup/etc/"
+  },
+  {
+    "input": "Copy a file 'output.txt' and overwrite without prompt",
+    "output": "cp -f output.txt /tmp/"
+  },
+  {
+    "input": "Copy a directory 'images' to /var/www/html",
+    "output": "cp -r images /var/www/html/"
+  },
+  {
+    "input": "Copy all .jpg files from Pictures to Desktop",
+    "output": "cp ~/Pictures/*.jpg ~/Desktop/"
+  },
+  {
+    "input": "Copy a file 'data.json' to /srv/www and keep permissions",
+    "output": "cp -p data.json /srv/www/"
+  },
+  {
+    "input": "Copy all files in /home/user/Downloads to /mnt/usb",
+    "output": "cp /home/user/Downloads/* /mnt/usb/"
+  },
+  {
+    "input": "Copy a file 'archive.tar.gz' to /opt and preserve attributes",
+    "output": "cp -a archive.tar.gz /opt/"
+  },
+  {
+    "input": "Copy a directory 'backup' to /tmp and preserve all attributes",
+    "output": "cp -a backup /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and do not overwrite existing files",
+    "output": "cp -n * /tmp/"
+  },
+  {
+    "input": "Copy a file 'test.log' to /var/log and prompt before overwrite",
+    "output": "cp -i test.log /var/log/"
+  },
+  {
+    "input": "Copy all files in /var/log recursively to /backup/logs",
+    "output": "cp -r /var/log /backup/logs/"
+  },
+  {
+    "input": "Copy a file 'config' to /etc and show progress",
+    "output": "cp -v config /etc/"
+  },
+  {
+    "input": "Copy all .conf files from /etc to /backup/etc",
+    "output": "cp /etc/*.conf /backup/etc/"
+  },
+  {
+    "input": "Copy a file 'index.html' to /var/www/html and keep timestamps",
+    "output": "cp -p index.html /var/www/html/"
+  },
+  {
+    "input": "Copy a directory 'music' to /mnt/usb and preserve everything",
+    "output": "cp -a music /mnt/usb/"
+  },
+  {
+    "input": "Copy all files in /tmp to the current directory",
+    "output": "cp /tmp/* ."
+  },
+  {
+    "input": "Copy a file 'resume.pdf' to your home directory",
+    "output": "cp resume.pdf ~/"
+  },
+  {
+    "input": "Copy all files in /var/tmp to /backup/tmp and force overwrite",
+    "output": "cp -f /var/tmp/* /backup/tmp/"
+  },
+  {
+    "input": "Copy a file 'draft.txt' to /home/alice/Documents",
+    "output": "cp draft.txt /home/alice/Documents/"
+  },
+  {
+    "input": "Copy all files in /usr/local/bin to /opt/bin",
+    "output": "cp /usr/local/bin/* /opt/bin/"
+  },
+  {
+    "input": "Copy a file 'testfile' to /srv/www and prompt before overwrite",
+    "output": "cp -i testfile /srv/www/"
+  },
+  {
+    "input": "Copy all files in /mnt/usb to /media/backup",
+    "output": "cp /mnt/usb/* /media/backup/"
+  },
+  {
+    "input": "Copy a file 'logfile' to /var/log and keep permissions",
+    "output": "cp -p logfile /var/log/"
+  },
+  {
+    "input": "Copy all files in /var/spool/cron to /backup/cron",
+    "output": "cp /var/spool/cron/* /backup/cron/"
+  },
+  {
+    "input": "Copy a file 'mail.txt' to /var/mail",
+    "output": "cp mail.txt /var/mail/"
+  },
+  {
+    "input": "Copy all files in /var/log/apache2 to /backup/apache2",
+    "output": "cp /var/log/apache2/* /backup/apache2/"
+  },
+  {
+    "input": "Copy a file 'index.html' to /var/www/html and show progress",
+    "output": "cp -v index.html /var/www/html/"
+  },
+  {
+    "input": "Copy all files in /var/log/nginx to /backup/nginx",
+    "output": "cp /var/log/nginx/* /backup/nginx/"
+  },
+  {
+    "input": "Copy a file 'db.sqlite3' to /srv/db",
+    "output": "cp db.sqlite3 /srv/db/"
+  },
+  {
+    "input": "Copy all files in /var/log/mysql to /backup/mysql",
+    "output": "cp /var/log/mysql/* /backup/mysql/"
+  },
+  {
+    "input": "Copy a file 'access.log' to /var/log",
+    "output": "cp access.log /var/log/"
+  },
+  {
+    "input": "Copy all files in /var/log/postgresql to /backup/postgresql",
+    "output": "cp /var/log/postgresql/* /backup/postgresql/"
+  },
+  {
+    "input": "Copy a file 'syslog' to /var/log",
+    "output": "cp syslog /var/log/"
+  },
+  {
+    "input": "Copy all files in /var/log/journal to /backup/journal",
+    "output": "cp /var/log/journal/* /backup/journal/"
+  },
+  {
+    "input": "Copy a file 'kern.log' to /var/log",
+    "output": "cp kern.log /var/log/"
+  },
+  {
+    "input": "Copy all files in /var/log/auth to /backup/auth",
+    "output": "cp /var/log/auth/* /backup/auth/"
+  },
+  {
+    "input": "Copy a file 'apt.log' to /var/log/apt",
+    "output": "cp apt.log /var/log/apt/"
+  },
+  {
+    "input": "Copy all files in /var/log/dpkg to /backup/dpkg",
+    "output": "cp /var/log/dpkg/* /backup/dpkg/"
+  },
+  {
+    "input": "Copy a file 'user.log' to /var/log",
+    "output": "cp user.log /var/log/"
+  },
+  {
+    "input": "Copy all files in /var/log/installer to /backup/installer",
+    "output": "cp /var/log/installer/* /backup/installer/"
+  },
+  {
+    "input": "Copy a file 'boot.log' to /var/log",
+    "output": "cp boot.log /var/log/"
+  },
+  {
+    "input": "Copy all files in /var/log/fsck to /backup/fsck",
+    "output": "cp /var/log/fsck/* /backup/fsck/"
+  },
+  {
+    "input": "Copy a file 'sa.log' to /var/log/sa",
+    "output": "cp sa.log /var/log/sa/"
+  },
+  {
+    "input": "Copy all files in /var/log/pm-powersave to /backup/pm-powersave",
+    "output": "cp /var/log/pm-powersave/* /backup/pm-powersave/"
+  },
+  {
+    "input": "Copy a file 'aptitude.log' to /var/log/aptitude",
+    "output": "cp aptitude.log /var/log/aptitude/"
+  },
+  {
+    "input": "Copy all files in /var/log/unattended-upgrades to /backup/unattended-upgrades",
+    "output": "cp /var/log/unattended-upgrades/* /backup/unattended-upgrades/"
+  },
+  {
+    "input": "Copy a file 'clamav.log' to /var/log/clamav",
+    "output": "cp clamav.log /var/log/clamav/"
+  },
+  {
+    "input": "Copy all files in /var/log/exim4 to /backup/exim4",
+    "output": "cp /var/log/exim4/* /backup/exim4/"
+  },
+  {
+    "input": "Copy a file 'news.log' to /var/log/news",
+    "output": "cp news.log /var/log/news/"
+  },
+  {
+    "input": "Copy all files in /var/log/ppp to /backup/ppp",
+    "output": "cp /var/log/ppp/* /backup/ppp/"
+  },
+  {
+    "input": "Copy a file 'samba.log' to /var/log/samba",
+    "output": "cp samba.log /var/log/samba/"
+  },
+  {
+    "input": "Copy all files in /var/log/ufw to /backup/ufw",
+    "output": "cp /var/log/ufw/* /backup/ufw/"
+  },
+  {
+    "input": "Copy a file 'wtmp' to /var/log",
+    "output": "cp wtmp /var/log/"
+  },
+  {
+    "input": "Copy all files in /var/log/xrdp to /backup/xrdp",
+    "output": "cp /var/log/xrdp/* /backup/xrdp/"
+  },
+  {
+    "input": "Copy a file 'yum.log' to /var/log",
+    "output": "cp yum.log /var/log/"
+  },
+  {
+    "input": "Copy all files in /var/log/zypper.log to /backup/zypper",
+    "output": "cp /var/log/zypper.log/* /backup/zypper/"
+  },
+  {
+    "input": "Copy a file 'lastlog' to /var/log",
+    "output": "cp lastlog /var/log/"
+  },
+  {
+    "input": "Copy all files in /var/log/messages to /backup/messages",
+    "output": "cp /var/log/messages/* /backup/messages/"
+  },
+  {
+    "input": "Copy a file 'secure' to /var/log",
+    "output": "cp secure /var/log/"
+  },
+  {
+    "input": "Copy all files in /var/log/maillog to /backup/maillog",
+    "output": "cp /var/log/maillog/* /backup/maillog/"
+  },
+  {
+    "input": "Copy a file 'cron' to /var/log",
+    "output": "cp cron /var/log/"
+  },
+  {
+    "input": "Copy all files in /var/log/audit to /backup/audit",
+    "output": "cp /var/log/audit/* /backup/audit/"
+  },
+  {
+    "input": "Copy a file 'btmp' to /var/log",
+    "output": "cp btmp /var/log/"
+  },
+  {
+    "input": "Copy all files in /var/log/alternatives.log to /backup/alternatives",
+    "output": "cp /var/log/alternatives.log/* /backup/alternatives/"
+  },
+  {
+    "input": "Copy a file 'history.log' to /var/log/apt",
+    "output": "cp history.log /var/log/apt/"
+  },
+  {
+    "input": "Copy all files in /var/log/apt/term.log to /backup/apt-term",
+    "output": "cp /var/log/apt/term.log/* /backup/apt-term/"
+  },
+  {
+    "input": "Copy a file 'boot.log' to /var/log",
+    "output": "cp boot.log /var/log/"
+  },
+  {
+    "input": "Copy all files in /var/log/dmesg to /backup/dmesg",
+    "output": "cp /var/log/dmesg/* /backup/dmesg/"
+  },
+  {
+    "input": "Copy a file 'fail2ban.log' to /var/log",
+    "output": "cp fail2ban.log /var/log/"
+  },
+  {
+    "input": "Copy all files in /var/log/fontconfig.log to /backup/fontconfig",
+    "output": "cp /var/log/fontconfig.log/* /backup/fontconfig/"
+  },
+  {
+    "input": "Copy a file 'gpu-manager.log' to /var/log",
+    "output": "cp gpu-manager.log /var/log/"
+  },
+  {
+    "input": "Copy all files in /var/log/hp to /backup/hp",
+    "output": "cp /var/log/hp/* /backup/hp/"
+  },
+  {
+    "input": "Copy a file 'kern.log' to /var/log",
+    "output": "cp kern.log /var/log/"
+  },
+  {
+    "input": "Copy all files in /var/log/lightdm to /backup/lightdm",
+    "output": "cp /var/log/lightdm/* /backup/lightdm/"
+  },
+  {
+    "input": "Copy a file 'mail.err' to /var/log",
+    "output": "cp mail.err /var/log/"
+  },
+  {
+    "input": "Copy all files in /var/log/mail.info to /backup/mailinfo",
+    "output": "cp /var/log/mail.info/* /backup/mailinfo/"
+  },
+  {
+    "input": "Copy a file 'mail.log' to /var/log",
+    "output": "cp mail.log /var/log/"
+  },
+  {
+    "input": "Copy all files in /var/log/mail.warn to /backup/mailwarn",
+    "output": "cp /var/log/mail.warn/* /backup/mailwarn/"
+  },
+  {
+    "input": "Copy a file 'messages' to /var/log",
+    "output": "cp messages /var/log/"
+  },
+  {
+    "input": "Copy all files in /var/log/pm-powersave.log to /backup/pmpowersave",
+    "output": "cp /var/log/pm-powersave.log/* /backup/pmpowersave/"
+  },
+  {
+    "input": "Copy a file 'user.log' to /var/log",
+    "output": "cp user.log /var/log/"
+  },
+  {
+    "input": "Copy all files in /var/log/wtmp to /backup/wtmp",
+    "output": "cp /var/log/wtmp/* /backup/wtmp/"
+  },
+  {
+    "input": "Copy a file 'Xorg.0.log' to /var/log",
+    "output": "cp Xorg.0.log /var/log/"
+  },
+  {
+    "input": "Copy all files in /var/log/Xorg.1.log to /backup/xorg1",
+    "output": "cp /var/log/Xorg.1.log/* /backup/xorg1/"
+  },
+  {
+    "input": "Copy a file 'Xorg.failsafe.log' to /var/log",
+    "output": "cp Xorg.failsafe.log /var/log/"
+  },
+  {
+    "input": "Copy all files in /var/tmp to /backup/tmp",
+    "output": "cp /var/tmp/* /backup/tmp/"
+  },
+  {
+    "input": "Copy a file called 'test' in the current directory to /tmp",
+    "output": "cp test /tmp/"
+  },
+  {
+    "input": "Copy all files in the parent directory to the current directory",
+    "output": "cp ../* ."
+  },
+  {
+    "input": "Copy all files in the /etc directory to /backup/etc",
+    "output": "cp /etc/* /backup/etc/"
+  },
+  {
+    "input": "Force copy all files in the /opt directory to /backup/opt",
+    "output": "cp -f /opt/* /backup/opt/"
+  },
+  {
+    "input": "Copy all files in the /srv directory to /backup/srv",
+    "output": "cp /srv/* /backup/srv/"
+  },
+  {
+    "input": "Copy all files in the /mnt directory to /backup/mnt",
+    "output": "cp /mnt/* /backup/mnt/"
+  },
+  {
+    "input": "Copy all files in the /media directory to /backup/media",
+    "output": "cp /media/* /backup/media/"
+  },
+  {
+    "input": "Recursively copy the entire /etc directory to /backup/etc",
+    "output": "cp -r /etc /backup/etc/"
+  },
+  {
+    "input": "Recursively copy the /usr/local directory to /backup/usr-local",
+    "output": "cp -r /usr/local /backup/usr-local/"
+  },
+  {
+    "input": "Recursively copy the /home/user directory to /backup/home-user",
+    "output": "cp -r /home/user /backup/home-user/"
+  },
+  {
+    "input": "Recursively copy the /var directory to /backup/var",
+    "output": "cp -r /var /backup/var/"
+  },
+  {
+    "input": "Recursively copy the /opt directory to /backup/opt",
+    "output": "cp -r /opt /backup/opt/"
+  },
+  {
+    "input": "Recursively copy the /srv directory to /backup/srv",
+    "output": "cp -r /srv /backup/srv/"
+  },
+  {
+    "input": "Recursively copy the /mnt directory to /backup/mnt",
+    "output": "cp -r /mnt /backup/mnt/"
+  },
+  {
+    "input": "Recursively copy the /media directory to /backup/media",
+    "output": "cp -r /media /backup/media/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and preserve timestamps",
+    "output": "cp -p * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and show progress",
+    "output": "cp -v * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and do not overwrite existing files",
+    "output": "cp -n * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and prompt before overwrite",
+    "output": "cp -i * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and force overwrite",
+    "output": "cp -f * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and preserve all attributes",
+    "output": "cp -a * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep permissions",
+    "output": "cp -p * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep ownership",
+    "output": "cp --preserve=ownership * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep mode",
+    "output": "cp --preserve=mode * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep timestamps",
+    "output": "cp --preserve=timestamps * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep links",
+    "output": "cp --preserve=links * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep context",
+    "output": "cp --preserve=context * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep xattr",
+    "output": "cp --preserve=xattr * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep all attributes",
+    "output": "cp --preserve=all * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep everything",
+    "output": "cp -a * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep everything and show progress",
+    "output": "cp -av * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep everything and do not overwrite existing files",
+    "output": "cp -an * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep everything and prompt before overwrite",
+    "output": "cp -ai * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep everything and force overwrite",
+    "output": "cp -af * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep everything and keep permissions",
+    "output": "cp -ap * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep everything and keep ownership",
+    "output": "cp -a --preserve=ownership * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep everything and keep mode",
+    "output": "cp -a --preserve=mode * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep everything and keep timestamps",
+    "output": "cp -a --preserve=timestamps * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep everything and keep links",
+    "output": "cp -a --preserve=links * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep everything and keep context",
+    "output": "cp -a --preserve=context * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep everything and keep xattr",
+    "output": "cp -a --preserve=xattr * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep everything and keep all attributes",
+    "output": "cp -a --preserve=all * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep everything and keep everything",
+    "output": "cp -a -a * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep everything and show progress",
+    "output": "cp -a -v * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep everything and do not overwrite existing files",
+    "output": "cp -a -n * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep everything and prompt before overwrite",
+    "output": "cp -a -i * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep everything and force overwrite",
+    "output": "cp -a -f * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep everything and keep permissions",
+    "output": "cp -a -p * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep everything and keep ownership",
+    "output": "cp -a --preserve=ownership * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep everything and keep mode",
+    "output": "cp -a --preserve=mode * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep everything and keep timestamps",
+    "output": "cp -a --preserve=timestamps * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep everything and keep links",
+    "output": "cp -a --preserve=links * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep everything and keep context",
+    "output": "cp -a --preserve=context * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep everything and keep xattr",
+    "output": "cp -a --preserve=xattr * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep everything and keep all attributes",
+    "output": "cp -a --preserve=all * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep everything and keep everything",
+    "output": "cp -a -a * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep everything and show progress",
+    "output": "cp -a -v * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep everything and do not overwrite existing files",
+    "output": "cp -a -n * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep everything and prompt before overwrite",
+    "output": "cp -a -i * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep everything and force overwrite",
+    "output": "cp -a -f * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep everything and keep permissions",
+    "output": "cp -a -p * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep everything and keep ownership",
+    "output": "cp -a --preserve=ownership * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep everything and keep mode",
+    "output": "cp -a --preserve=mode * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep everything and keep timestamps",
+    "output": "cp -a --preserve=timestamps * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep everything and keep links",
+    "output": "cp -a --preserve=links * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep everything and keep context",
+    "output": "cp -a --preserve=context * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep everything and keep xattr",
+    "output": "cp -a --preserve=xattr * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep everything and keep all attributes",
+    "output": "cp -a --preserve=all * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep everything and keep everything",
+    "output": "cp -a -a * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep everything and show progress",
+    "output": "cp -a -v * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep everything and do not overwrite existing files",
+    "output": "cp -a -n * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep everything and prompt before overwrite",
+    "output": "cp -a -i * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep everything and force overwrite",
+    "output": "cp -a -f * /tmp/"
+  },
+  {
+    "input": "Copy all files in the current directory to /tmp and keep everything and keep permissions",
+    "output": "cp -a -p * /tmp/"
+  }
+]

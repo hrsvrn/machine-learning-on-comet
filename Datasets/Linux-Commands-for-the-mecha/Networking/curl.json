@@ -1,0 +1,442 @@
+[
+    {
+        "input": "Make a simple GET request to a URL",
+        "output": "curl http://example.com"
+    },
+    {
+        "input": "Make a GET request and save output to a file",
+        "output": "curl -o output.html http://example.com"
+    },
+    {
+        "input": "Make a GET request and save with original filename",
+        "output": "curl -O http://example.com/file.zip"
+    },
+    {
+        "input": "Make a GET request and follow redirects",
+        "output": "curl -L http://example.com"
+    },
+    {
+        "input": "Make a GET request with verbose output",
+        "output": "curl -v http://example.com"
+    },
+    {
+        "input": "Make a GET request and show only headers",
+        "output": "curl -I http://example.com"
+    },
+    {
+        "input": "Make a GET request and include response headers",
+        "output": "curl -i http://example.com"
+    },
+    {
+        "input": "Make a GET request silently (no progress bar)",
+        "output": "curl -s http://example.com"
+    },
+    {
+        "input": "Make a GET request and show progress bar",
+        "output": "curl --progress-bar http://example.com"
+    },
+    {
+        "input": "Make a POST request with data",
+        "output": "curl -X POST -d 'name=value' http://example.com/api"
+    },
+    {
+        "input": "Make a POST request with JSON data",
+        "output": "curl -X POST -H 'Content-Type: application/json' -d '{\"key\":\"value\"}' http://example.com/api"
+    },
+    {
+        "input": "Make a POST request with form data",
+        "output": "curl -X POST -F 'field=value' http://example.com/upload"
+    },
+    {
+        "input": "Make a POST request with file upload",
+        "output": "curl -X POST -F 'file=@/path/to/file.txt' http://example.com/upload"
+    },
+    {
+        "input": "Make a PUT request with data",
+        "output": "curl -X PUT -d 'data' http://example.com/api/resource"
+    },
+    {
+        "input": "Make a DELETE request",
+        "output": "curl -X DELETE http://example.com/api/resource/123"
+    },
+    {
+        "input": "Make a PATCH request with data",
+        "output": "curl -X PATCH -d 'field=newvalue' http://example.com/api/resource/123"
+    },
+    {
+        "input": "Make a request with custom headers",
+        "output": "curl -H 'Authorization: Bearer token123' http://example.com/api"
+    },
+    {
+        "input": "Make a request with multiple headers",
+        "output": "curl -H 'Accept: application/json' -H 'User-Agent: MyApp/1.0' http://example.com/api"
+    },
+    {
+        "input": "Make a request with basic authentication",
+        "output": "curl -u username:password http://example.com/api"
+    },
+    {
+        "input": "Make a request with bearer token authentication",
+        "output": "curl -H 'Authorization: Bearer your_token_here' http://example.com/api"
+    },
+    {
+        "input": "Make a request with cookies",
+        "output": "curl -b 'session=abc123' http://example.com"
+    },
+    {
+        "input": "Make a request and save cookies to file",
+        "output": "curl -c cookies.txt http://example.com"
+    },
+    {
+        "input": "Make a request and load cookies from file",
+        "output": "curl -b cookies.txt http://example.com"
+    },
+    {
+        "input": "Make a request with custom user agent",
+        "output": "curl -A 'Mozilla/5.0 (Custom Agent)' http://example.com"
+    },
+    {
+        "input": "Make a request with referer header",
+        "output": "curl -e 'http://google.com' http://example.com"
+    },
+    {
+        "input": "Make a request over HTTPS ignoring certificate errors",
+        "output": "curl -k https://example.com"
+    },
+    {
+        "input": "Make a request with client certificate",
+        "output": "curl --cert client.pem --key client-key.pem https://example.com"
+    },
+    {
+        "input": "Make a request with CA certificate",
+        "output": "curl --cacert ca-cert.pem https://example.com"
+    },
+    {
+        "input": "Make a request with timeout",
+        "output": "curl --max-time 30 http://example.com"
+    },
+    {
+        "input": "Make a request with connection timeout",
+        "output": "curl --connect-timeout 10 http://example.com"
+    },
+    {
+        "input": "Make a request with retry attempts",
+        "output": "curl --retry 3 http://example.com"
+    },
+    {
+        "input": "Make a request with retry delay",
+        "output": "curl --retry 3 --retry-delay 5 http://example.com"
+    },
+    {
+        "input": "Make a request using HTTP/2",
+        "output": "curl --http2 https://example.com"
+    },
+    {
+        "input": "Make a request using HTTP/1.1",
+        "output": "curl --http1.1 http://example.com"
+    },
+    {
+        "input": "Make a request using proxy",
+        "output": "curl --proxy http://proxy.example.com:8080 http://example.com"
+    },
+    {
+        "input": "Make a request using SOCKS proxy",
+        "output": "curl --socks5 proxy.example.com:1080 http://example.com"
+    },
+    {
+        "input": "Make a request with proxy authentication",
+        "output": "curl --proxy-user username:password --proxy http://proxy.example.com:8080 http://example.com"
+    },
+    {
+        "input": "Make a request and limit download speed",
+        "output": "curl --limit-rate 100k http://example.com/largefile.zip"
+    },
+    {
+        "input": "Make a request and resume download",
+        "output": "curl -C - -O http://example.com/largefile.zip"
+    },
+    {
+        "input": "Make a request with range (partial content)",
+        "output": "curl -r 0-1023 http://example.com/file.txt"
+    },
+    {
+        "input": "Make multiple requests in parallel",
+        "output": "curl -Z http://example.com/file1 http://example.com/file2"
+    },
+    {
+        "input": "Make a request with compressed response",
+        "output": "curl --compressed http://example.com"
+    },
+    {
+        "input": "Make a request and write output to stdout",
+        "output": "curl http://example.com -o -"
+    },
+    {
+        "input": "Make a request with custom DNS server",
+        "output": "curl --dns-servers 8.8.8.8 http://example.com"
+    },
+    {
+        "input": "Make a request using IPv4 only",
+        "output": "curl -4 http://example.com"
+    },
+    {
+        "input": "Make a request using IPv6 only",
+        "output": "curl -6 http://example.com"
+    },
+    {
+        "input": "Make a request and show timing information",
+        "output": "curl -w '%{time_total}\\n' http://example.com"
+    },
+    {
+        "input": "Make a request and show detailed timing",
+        "output": "curl -w 'Total: %{time_total}s\\nDNS: %{time_namelookup}s\\nConnect: %{time_connect}s\\n' http://example.com"
+    },
+    {
+        "input": "Make a request and show HTTP status code",
+        "output": "curl -w '%{http_code}\\n' -s -o /dev/null http://example.com"
+    },
+    {
+        "input": "Make a request and show response size",
+        "output": "curl -w 'Size: %{size_download} bytes\\n' -s -o /dev/null http://example.com"
+    },
+    {
+        "input": "Make a request with custom method",
+        "output": "curl -X CUSTOM http://example.com"
+    },
+    {
+        "input": "Make a HEAD request",
+        "output": "curl -X HEAD http://example.com"
+    },
+    {
+        "input": "Make an OPTIONS request",
+        "output": "curl -X OPTIONS http://example.com"
+    },
+    {
+        "input": "Upload file via PUT",
+        "output": "curl -X PUT --data-binary @file.txt http://example.com/upload"
+    },
+    {
+        "input": "Upload file via POST multipart",
+        "output": "curl -F 'file=@document.pdf' http://example.com/upload"
+    },
+    {
+        "input": "Upload multiple files",
+        "output": "curl -F 'file1=@file1.txt' -F 'file2=@file2.txt' http://example.com/upload"
+    },
+    {
+        "input": "Send raw binary data",
+        "output": "curl --data-binary @image.jpg http://example.com/api"
+    },
+    {
+        "input": "Send URL-encoded data",
+        "output": "curl --data-urlencode 'param=value with spaces' http://example.com/api"
+    },
+    {
+        "input": "Make request with TRACE method",
+        "output": "curl -X TRACE http://example.com"
+    },
+    {
+        "input": "Test API endpoint availability",
+        "output": "curl -f -s -o /dev/null http://example.com/api/health"
+    },
+    {
+        "input": "Download file with progress meter",
+        "output": "curl --progress-bar -O http://example.com/file.zip"
+    },
+    {
+        "input": "Download file to specific directory",
+        "output": "curl -o /tmp/downloaded_file.zip http://example.com/file.zip"
+    },
+    {
+        "input": "Download with custom filename pattern",
+        "output": "curl -o 'file_#1.txt' http://example.com/files/{1,2,3}.txt"
+    },
+    {
+        "input": "Fetch multiple URLs sequentially",
+        "output": "curl http://example.com/page[1-5].html"
+    },
+    {
+        "input": "Fetch URLs with alphanumeric pattern",
+        "output": "curl http://example.com/file{a,b,c}.txt"
+    },
+    {
+        "input": "Make request with interface binding",
+        "output": "curl --interface eth0 http://example.com"
+    },
+    {
+        "input": "Make request with local port binding",
+        "output": "curl --local-port 12345 http://example.com"
+    },
+    {
+        "input": "Make request and follow redirects with max count",
+        "output": "curl -L --max-redirs 5 http://example.com"
+    },
+    {
+        "input": "Make request and get redirect location only",
+        "output": "curl -I -s http://example.com | grep -i location"
+    },
+    {
+        "input": "Make request with custom SSL version",
+        "output": "curl --tlsv1.2 https://example.com"
+    },
+    {
+        "input": "Make request with SSL cipher selection",
+        "output": "curl --ciphers ECDHE-RSA-AES256-GCM-SHA384 https://example.com"
+    },
+    {
+        "input": "Make request with SNI hostname",
+        "output": "curl --resolve example.com:443:1.2.3.4 https://example.com"
+    },
+    {
+        "input": "Test SSL certificate",
+        "output": "curl -vI https://example.com 2>&1 | grep -E 'certificate|SSL'"
+    },
+    {
+        "input": "Make request with keep-alive",
+        "output": "curl -H 'Connection: keep-alive' http://example.com"
+    },
+    {
+        "input": "Make request without keep-alive",
+        "output": "curl -H 'Connection: close' http://example.com"
+    },
+    {
+        "input": "Make request with TCP keep-alive",
+        "output": "curl --keepalive-time 60 http://example.com"
+    },
+    {
+        "input": "Make request with TCP nodelay",
+        "output": "curl --tcp-nodelay http://example.com"
+    },
+    {
+        "input": "Make FTP request",
+        "output": "curl ftp://ftp.example.com/file.txt"
+    },
+    {
+        "input": "Upload file via FTP",
+        "output": "curl -T localfile.txt ftp://ftp.example.com/"
+    },
+    {
+        "input": "FTP with authentication",
+        "output": "curl -u username:password ftp://ftp.example.com/file.txt"
+    },
+    {
+        "input": "FTP passive mode",
+        "output": "curl --ftp-pasv ftp://ftp.example.com/file.txt"
+    },
+    {
+        "input": "FTP active mode",
+        "output": "curl --ftp-port - ftp://ftp.example.com/file.txt"
+    },
+    {
+        "input": "FTP list directory",
+        "output": "curl ftp://ftp.example.com/directory/"
+    },
+    {
+        "input": "FTP create directory",
+        "output": "curl -X 'MKD newdir' ftp://ftp.example.com/"
+    },
+    {
+        "input": "FTP delete file",
+        "output": "curl -X 'DELE file.txt' ftp://ftp.example.com/"
+    },
+    {
+        "input": "SFTP file transfer",
+        "output": "curl -u username:password sftp://sftp.example.com/file.txt"
+    },
+    {
+        "input": "SCP file transfer",
+        "output": "curl -u username:password scp://scp.example.com/file.txt"
+    },
+    {
+        "input": "Make request using NTLM authentication",
+        "output": "curl --ntlm -u username:password http://example.com"
+    },
+    {
+        "input": "Make request using Digest authentication",
+        "output": "curl --digest -u username:password http://example.com"
+    },
+    {
+        "input": "Make request using Negotiate authentication",
+        "output": "curl --negotiate -u : http://example.com"
+    },
+    {
+        "input": "Make request with form data and filename",
+        "output": "curl -F 'file=@data.txt;filename=newname.txt' http://example.com/upload"
+    },
+    {
+        "input": "Make request with form data and content type",
+        "output": "curl -F 'file=@data.json;type=application/json' http://example.com/upload"
+    },
+    {
+        "input": "Send email via SMTP",
+        "output": "curl --mail-from sender@example.com --mail-rcpt recipient@example.com smtp://mail.example.com"
+    },
+    {
+        "input": "Read email via POP3",
+        "output": "curl -u username:password pop3://mail.example.com/1"
+    },
+    {
+        "input": "Read email via IMAP",
+        "output": "curl -u username:password imap://mail.example.com/INBOX/1"
+    },
+    {
+        "input": "Make request with configuration file",
+        "output": "curl -K config.txt http://example.com"
+    },
+    {
+        "input": "Make request and include protocol in output",
+        "output": "curl --include-protocol http://example.com"
+    },
+    {
+        "input": "Make request with happy eyeballs delay",
+        "output": "curl --happy-eyeballs-timeout-ms 200 http://example.com"
+    },
+    {
+        "input": "Make request with HSTS database",
+        "output": "curl --hsts hsts.txt https://example.com"
+    },
+    {
+        "input": "Make request ignoring HSTS",
+        "output": "curl --ignore-hsts https://example.com"
+    },
+    {
+        "input": "Make request with HTTP/3",
+        "output": "curl --http3 https://example.com"
+    },
+    {
+        "input": "Make request and show version",
+        "output": "curl --version"
+    },
+    {
+        "input": "Make request and show help",
+        "output": "curl --help"
+    },
+    {
+        "input": "Test API with GET and check response time",
+        "output": "curl -w 'Response time: %{time_total}s\\n' -s -o /dev/null http://api.example.com/status"
+    },
+    {
+        "input": "Perform health check on multiple endpoints",
+        "output": "curl -f -s -o /dev/null -w '%{http_code} %{url_effective}\\n' http://api1.example.com/health http://api2.example.com/health"
+    },
+    {
+        "input": "Download and extract response headers only",
+        "output": "curl -D headers.txt -o /dev/null -s http://example.com"
+    },
+    {
+        "input": "Make request with custom socket timeout",
+        "output": "curl --max-time 30 --connect-timeout 10 http://example.com"
+    },
+    {
+        "input": "Test WebSocket connection",
+        "output": "curl --include --no-buffer --header 'Connection: Upgrade' --header 'Upgrade: websocket' --header 'Sec-WebSocket-Key: x3JJHMbDL1EzLkh9GBhXDw==' --header 'Sec-WebSocket-Version: 13' http://example.com/websocket"
+    },
+    {
+        "input": "Make request with rate limiting",
+        "output": "curl --limit-rate 50k --max-time 60 http://example.com/largefile"
+    },
+    {
+        "input": "Test GraphQL API",
+        "output": "curl -X POST -H 'Content-Type: application/json' -d '{\"query\":\"{ users { id name } }\"}' http://example.com/graphql"
+    }
+]

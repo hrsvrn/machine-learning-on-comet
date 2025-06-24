@@ -1,0 +1,42 @@
+[
+    {
+        "input": "Remove nginx",
+        "output": "sudo apt remove nginx"
+    },
+    {
+        "input": "Remove without prompts",
+        "output": "sudo apt remove -y nginx"
+    },
+    {
+        "input": "Remove and purge config",
+        "output": "sudo apt remove --purge nginx"
+    },
+    {
+        "input": "Remove unused dependencies",
+        "output": "sudo apt remove --auto-remove nginx"
+    },
+    {
+        "input": "Simulate removal",
+        "output": "sudo apt remove --simulate nginx"
+    },
+    {
+        "input": "Remove multiple packages",
+        "output": "sudo apt remove git curl vim"
+    },
+    {
+        "input": "Allow removal of essential",
+        "output": "sudo apt remove --allow-remove-essential nginx"
+    },
+    {
+        "input": "Dry run",
+        "output": "sudo apt remove --dry-run nginx"
+    },
+    {
+        "input": "Verbose output",
+        "output": "sudo apt remove --verbose-versions nginx"
+    },
+    {
+        "input": "Prevent auto-remove",
+        "output": "sudo apt remove --no-auto-remove nginx"
+    }
+]

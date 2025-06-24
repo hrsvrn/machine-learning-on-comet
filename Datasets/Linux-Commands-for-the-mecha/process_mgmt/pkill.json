@@ -1,0 +1,178 @@
+[
+    {
+        "input": "Send SIGTERM to all sshd processes",
+        "output": "pkill sshd"
+    },
+    {
+        "input": "Force kill all sshd processes",
+        "output": "pkill -9 sshd"
+    },
+    {
+        "input": "Send SIGHUP to all httpd processes",
+        "output": "pkill -HUP httpd"
+    },
+    {
+        "input": "Send SIGINT to all vim processes",
+        "output": "pkill -INT vim"
+    },
+    {
+        "input": "Send SIGQUIT to all top processes",
+        "output": "pkill -QUIT top"
+    },
+    {
+        "input": "Send SIGUSR1 to all java processes",
+        "output": "pkill -USR1 java"
+    },
+    {
+        "input": "Send SIGUSR2 to all java processes",
+        "output": "pkill -USR2 java"
+    },
+    {
+        "input": "Send SIGSTOP to all sleep processes",
+        "output": "pkill -STOP sleep"
+    },
+    {
+        "input": "Send SIGCONT to all sleep processes",
+        "output": "pkill -CONT sleep"
+    },
+    {
+        "input": "Send SIGALRM to all cron processes",
+        "output": "pkill -ALRM cron"
+    },
+    {
+        "input": "Case-insensitive match of process name 'Python'",
+        "output": "pkill -i python"
+    },
+    {
+        "input": "Use full command match",
+        "output": "pkill -f 'python script.py'"
+    },
+    {
+        "input": "Match processes by user",
+        "output": "pkill -u alice myapp"
+    },
+    {
+        "input": "Exclude processes owned by root",
+        "output": "pkill -U alice myapp"
+    },
+    {
+        "input": "Match processes older than 10 minutes",
+        "output": "pkill -o sleep"
+    },
+    {
+        "input": "Match processes younger than 5 seconds",
+        "output": "pkill -n sleep"
+    },
+    {
+        "input": "Match by group name",
+        "output": "pkill -G admin myapp"
+    },
+    {
+        "input": "Match by parent PID",
+        "output": "pkill -P 1234"
+    },
+    {
+        "input": "Match by terminal",
+        "output": "pkill -t pts/0"
+    },
+    {
+        "input": "Dry run to list targets only",
+        "output": "pkill -l sshd"
+    },
+    {
+        "input": "Verbose output",
+        "output": "pkill -v sshd"
+    },
+    {
+        "input": "Quiet mode",
+        "output": "pkill -q sshd"
+    },
+    {
+        "input": "Timeout before force kill",
+        "output": "pkill -15 -i 5 sshd"
+    },
+    {
+        "input": "Match exact name",
+        "output": "pkill -x bash"
+    },
+    {
+        "input": "Signal by number",
+        "output": "pkill -2 bash"
+    },
+    {
+        "input": "Match by session ID",
+        "output": "pkill -s 1234 myapp"
+    },
+    {
+        "input": "Match by UID range",
+        "output": "pkill -U 1000-1005 myapp"
+    },
+    {
+        "input": "Match by GID range",
+        "output": "pkill -G 100-200 myapp"
+    },
+    {
+        "input": "Match only processes with TTY",
+        "output": "pkill -t pts/1 bash"
+    },
+    {
+        "input": "Send SIGTERM to scripts invoked by cron",
+        "output": "pkill -f cronjob.sh"
+    },
+    {
+        "input": "Kill Java processes started by user",
+        "output": "pkill -u bob java"
+    },
+    {
+        "input": "Kill Python scripts in virtualenv",
+        "output": "pkill -f '/venv/bin/python'"
+    },
+    {
+        "input": "Kill processes matching regex",
+        "output": "pkill -r 'node.*server'"
+    },
+    {
+        "input": "Kill processes by command basename",
+        "output": "pkill -x tmux"
+    },
+    {
+        "input": "Kill processes preserving other instances",
+        "output": "pkill -o nginx"
+    },
+    {
+        "input": "Kill only newest process",
+        "output": "pkill -n sshd"
+    },
+    {
+        "input": "Kill by memory usage (approx via sorting)",
+        "output": "ps aux | sort -rk 4 | head -n 5 | awk '{print $2}'| xargs kill"
+    },
+    {
+        "input": "Kill by CPU usage",
+        "output": "ps aux | sort -rk 3 | head -n 5 | awk '{print $2}'| xargs kill"
+    },
+    {
+        "input": "Kill by elapsed time >1h",
+        "output": "ps -eo pid,etimes,comm | awk '$2>3600{print $1}'| xargs kill"
+    },
+    {
+        "input": "Kill by elapsed time <60s",
+        "output": "ps -eo pid,etimes,comm | awk '$2<60{print $1}'| xargs kill"
+    },
+    {
+        "input": "Kill by process group",
+        "output": "pkill -g 1000"
+    },
+    {
+        "input": "Kill by resource limit",
+        "output": "ps aux --sort=-rss | head -n 3 | awk '{print $2}'| xargs kill"
+    },
+    {
+        "input": "Kill zombie processes",
+        "output": "pkill -HUP -P 1"
+    },
+    {
+        "input": "Kill by session leader",
+        "output": "pkill -s 2000"
+    }
+]

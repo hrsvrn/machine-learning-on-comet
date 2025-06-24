@@ -4711,7 +4711,7 @@
     "input": "Create a file called 'tomorrow.txt' and set its timestamp to tomorrow",
     "output": "touch -d 'tomorrow' tomorrow.txt"
   },
-    {
+  {
     "input": "Find all .txt files in /home",
     "output": "find /home -name \"*.txt\""
   },
@@ -6110,5 +6110,5 @@
   {
     "input": "Show disk usage for all filesystems, display only the filesystem, type, and inode usage",
     "output": "df -h --output=source,fstype,ipcent"
-  },
+  }
 ]

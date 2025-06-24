@@ -1,0 +1,438 @@
+[
+    {
+    "input": "Delete a file called 'oldfile.txt'",
+    "output": "rm oldfile.txt"
+  },
+  {
+    "input": "Remove a file named 'backup.tar.gz' in the current folder",
+    "output": "rm backup.tar.gz"
+  },
+  {
+    "input": "Delete all files ending with .log in the current directory",
+    "output": "rm *.log"
+  },
+  {
+    "input": "Remove a file called 'notes.txt' in your home directory",
+    "output": "rm ~/notes.txt"
+  },
+  {
+    "input": "Delete a file named 'data.csv' in /tmp",
+    "output": "rm /tmp/data.csv"
+  },
+  {
+    "input": "Remove a file called 'error.log' inside /var/log",
+    "output": "rm /var/log/error.log"
+  },
+  {
+    "input": "Delete multiple files 'file1.txt' and 'file2.txt' at the same time",
+    "output": "rm file1.txt file2.txt"
+  },
+  {
+    "input": "Remove all files in the current directory without confirmation",
+    "output": "rm -f *"
+  },
+  {
+    "input": "Delete a directory called 'oldfolder' and all its contents recursively",
+    "output": "rm -r oldfolder"
+  },
+  {
+    "input": "Force delete a directory named 'backup' and everything inside it",
+    "output": "rm -rf backup"
+  },
+  {
+    "input": "Remove a file named 'My File.txt' with spaces in the name",
+    "output": "rm 'My File.txt'"
+  },
+  {
+    "input": "Delete all .tmp files in /var/tmp",
+    "output": "rm /var/tmp/*.tmp"
+  },
+  {
+    "input": "Remove a hidden file called '.env' in your home",
+    "output": "rm ~/.env"
+  },
+  {
+    "input": "Delete a file called 'script.sh' in the current directory",
+    "output": "rm script.sh"
+  },
+  {
+    "input": "Remove all files in the Documents folder",
+    "output": "rm ~/Documents/*"
+  },
+  {
+    "input": "Delete all files and subdirectories in the 'build' directory",
+    "output": "rm -rf build/*"
+  },
+  {
+    "input": "Force delete all files in the Downloads directory",
+    "output": "rm -f ~/Downloads/*"
+  },
+  {
+    "input": "Delete a directory called 'testdir' and its contents without prompts",
+    "output": "rm -rf testdir"
+  },
+  {
+    "input": "Remove all .jpg files in the Pictures folder",
+    "output": "rm ~/Pictures/*.jpg"
+  },
+  {
+    "input": "Delete all files in the current directory that start with 'temp'",
+    "output": "rm temp*"
+  },
+  {
+    "input": "Remove a file called 'config.yaml' in /etc",
+    "output": "rm /etc/config.yaml"
+  },
+  {
+    "input": "Delete all files in /var/log older than 7 days",
+    "output": "find /var/log -type f -mtime +7 -exec rm {} \\;"
+  },
+  {
+    "input": "Force delete a file called 'lockedfile' in /tmp",
+    "output": "rm -f /tmp/lockedfile"
+  },
+  {
+    "input": "Remove all files in the /tmp directory recursively",
+    "output": "rm -rf /tmp/*"
+  },
+  {
+    "input": "Delete a directory called 'archive' in /opt",
+    "output": "rm -r /opt/archive"
+  },
+  {
+    "input": "Remove all files in the Desktop directory",
+    "output": "rm ~/Desktop/*"
+  },
+  {
+    "input": "Delete all files in the current directory and subdirectories",
+    "output": "rm -rf *"
+  },
+  {
+    "input": "Force delete all files and folders in /var/tmp",
+    "output": "rm -rf /var/tmp/*"
+  },
+  {
+    "input": "Remove a file called 'test.log' in the parent directory",
+    "output": "rm ../test.log"
+  },
+  {
+    "input": "Delete all .bak files in the current directory",
+    "output": "rm *.bak"
+  },
+  {
+    "input": "Remove a file called 'draft.docx' in the Documents folder",
+    "output": "rm ~/Documents/draft.docx"
+  },
+  {
+    "input": "Delete all files in /home/user/Downloads",
+    "output": "rm /home/user/Downloads/*"
+  },
+  {
+    "input": "Force delete a directory called 'temp' in /tmp",
+    "output": "rm -rf /tmp/temp"
+  },
+  {
+    "input": "Remove all files in /var/cache",
+    "output": "rm /var/cache/*"
+  },
+  {
+    "input": "Delete a file called 'output.txt' in the current directory",
+    "output": "rm output.txt"
+  },
+  {
+    "input": "Remove all files in /usr/local/bin",
+    "output": "rm /usr/local/bin/*"
+  },
+  {
+    "input": "Delete a file called 'testfile' in /srv/www",
+    "output": "rm /srv/www/testfile"
+  },
+  {
+    "input": "Remove all files in /mnt/usb",
+    "output": "rm /mnt/usb/*"
+  },
+  {
+    "input": "Delete a file called 'logfile' in /var/log",
+    "output": "rm /var/log/logfile"
+  },
+  {
+    "input": "Remove all files in /var/spool/cron",
+    "output": "rm /var/spool/cron/*"
+  },
+  {
+    "input": "Delete a file called 'mail.txt' in /var/mail",
+    "output": "rm /var/mail/mail.txt"
+  },
+  {
+    "input": "Remove all files in /var/log/apache2",
+    "output": "rm /var/log/apache2/*"
+  },
+  {
+    "input": "Delete a file called 'index.html' in /var/www/html",
+    "output": "rm /var/www/html/index.html"
+  },
+  {
+    "input": "Remove all files in /var/log/nginx",
+    "output": "rm /var/log/nginx/*"
+  },
+  {
+    "input": "Delete a file called 'db.sqlite3' in the current directory",
+    "output": "rm db.sqlite3"
+  },
+  {
+    "input": "Remove all files in /var/log/mysql",
+    "output": "rm /var/log/mysql/*"
+  },
+  {
+    "input": "Delete a file called 'access.log' in /var/log",
+    "output": "rm /var/log/access.log"
+  },
+  {
+    "input": "Remove all files in /var/log/postgresql",
+    "output": "rm /var/log/postgresql/*"
+  },
+  {
+    "input": "Delete a file called 'syslog' in /var/log",
+    "output": "rm /var/log/syslog"
+  },
+  {
+    "input": "Remove all files in /var/log/journal",
+    "output": "rm /var/log/journal/*"
+  },
+  {
+    "input": "Delete a file called 'kern.log' in /var/log",
+    "output": "rm /var/log/kern.log"
+  },
+  {
+    "input": "Remove all files in /var/log/auth",
+    "output": "rm /var/log/auth/*"
+  },
+  {
+    "input": "Delete a file called 'apt.log' in /var/log/apt",
+    "output": "rm /var/log/apt/apt.log"
+  },
+  {
+    "input": "Remove all files in /var/log/dpkg",
+    "output": "rm /var/log/dpkg/*"
+  },
+  {
+    "input": "Delete a file called 'user.log' in /var/log",
+    "output": "rm /var/log/user.log"
+  },
+  {
+    "input": "Remove all files in /var/log/installer",
+    "output": "rm /var/log/installer/*"
+  },
+  {
+    "input": "Delete a file called 'boot.log' in /var/log",
+    "output": "rm /var/log/boot.log"
+  },
+  {
+    "input": "Remove all files in /var/log/fsck",
+    "output": "rm /var/log/fsck/*"
+  },
+  {
+    "input": "Delete a file called 'sa.log' in /var/log/sa",
+    "output": "rm /var/log/sa/sa.log"
+  },
+  {
+    "input": "Remove all files in /var/log/pm-powersave",
+    "output": "rm /var/log/pm-powersave/*"
+  },
+  {
+    "input": "Delete a file called 'aptitude.log' in /var/log/aptitude",
+    "output": "rm /var/log/aptitude/aptitude.log"
+  },
+  {
+    "input": "Remove all files in /var/log/unattended-upgrades",
+    "output": "rm /var/log/unattended-upgrades/*"
+  },
+  {
+    "input": "Delete a file called 'clamav.log' in /var/log/clamav",
+    "output": "rm /var/log/clamav/clamav.log"
+  },
+  {
+    "input": "Remove all files in /var/log/exim4",
+    "output": "rm /var/log/exim4/*"
+  },
+  {
+    "input": "Delete a file called 'news.log' in /var/log/news",
+    "output": "rm /var/log/news/news.log"
+  },
+  {
+    "input": "Remove all files in /var/log/ppp",
+    "output": "rm /var/log/ppp/*"
+  },
+  {
+    "input": "Delete a file called 'samba.log' in /var/log/samba",
+    "output": "rm /var/log/samba/samba.log"
+  },
+  {
+    "input": "Remove all files in /var/log/ufw",
+    "output": "rm /var/log/ufw/*"
+  },
+  {
+    "input": "Delete a file called 'wtmp' in /var/log",
+    "output": "rm /var/log/wtmp"
+  },
+  {
+    "input": "Remove all files in /var/log/xrdp",
+    "output": "rm /var/log/xrdp/*"
+  },
+  {
+    "input": "Delete a file called 'yum.log' in /var/log",
+    "output": "rm /var/log/yum.log"
+  },
+  {
+    "input": "Remove all files in /var/log/zypper.log",
+    "output": "rm /var/log/zypper.log/*"
+  },
+  {
+    "input": "Delete a file called 'lastlog' in /var/log",
+    "output": "rm /var/log/lastlog"
+  },
+  {
+    "input": "Remove all files in /var/log/messages",
+    "output": "rm /var/log/messages/*"
+  },
+  {
+    "input": "Delete a file called 'secure' in /var/log",
+    "output": "rm /var/log/secure"
+  },
+  {
+    "input": "Remove all files in /var/log/maillog",
+    "output": "rm /var/log/maillog/*"
+  },
+  {
+    "input": "Delete a file called 'cron' in /var/log",
+    "output": "rm /var/log/cron"
+  },
+  {
+    "input": "Remove all files in /var/log/audit",
+    "output": "rm /var/log/audit/*"
+  },
+  {
+    "input": "Delete a file called 'btmp' in /var/log",
+    "output": "rm /var/log/btmp"
+  },
+  {
+    "input": "Remove all files in /var/log/alternatives.log",
+    "output": "rm /var/log/alternatives.log/*"
+  },
+  {
+    "input": "Delete a file called 'history.log' in /var/log/apt",
+    "output": "rm /var/log/apt/history.log"
+  },
+  {
+    "input": "Remove all files in /var/log/apt/term.log",
+    "output": "rm /var/log/apt/term.log/*"
+  },
+  {
+    "input": "Delete a file called 'boot.log' in /var/log",
+    "output": "rm /var/log/boot.log"
+  },
+  {
+    "input": "Remove all files in /var/log/dmesg",
+    "output": "rm /var/log/dmesg/*"
+  },
+  {
+    "input": "Delete a file called 'fail2ban.log' in /var/log",
+    "output": "rm /var/log/fail2ban.log"
+  },
+  {
+    "input": "Remove all files in /var/log/fontconfig.log",
+    "output": "rm /var/log/fontconfig.log/*"
+  },
+  {
+    "input": "Delete a file called 'gpu-manager.log' in /var/log",
+    "output": "rm /var/log/gpu-manager.log"
+  },
+  {
+    "input": "Remove all files in /var/log/hp",
+    "output": "rm /var/log/hp/*"
+  },
+  {
+    "input": "Delete a file called 'kern.log' in /var/log",
+    "output": "rm /var/log/kern.log"
+  },
+  {
+    "input": "Remove all files in /var/log/lightdm",
+    "output": "rm /var/log/lightdm/*"
+  },
+  {
+    "input": "Delete a file called 'mail.err' in /var/log",
+    "output": "rm /var/log/mail.err"
+  },
+  {
+    "input": "Remove all files in /var/log/mail.info",
+    "output": "rm /var/log/mail.info/*"
+  },
+  {
+    "input": "Delete a file called 'mail.log' in /var/log",
+    "output": "rm /var/log/mail.log"
+  },
+  {
+    "input": "Remove all files in /var/log/mail.warn",
+    "output": "rm /var/log/mail.warn/*"
+  },
+  {
+    "input": "Delete a file called 'messages' in /var/log",
+    "output": "rm /var/log/messages"
+  },
+  {
+    "input": "Remove all files in /var/log/pm-powersave.log",
+    "output": "rm /var/log/pm-powersave.log/*"
+  },
+  {
+    "input": "Delete a file called 'user.log' in /var/log",
+    "output": "rm /var/log/user.log"
+  },
+  {
+    "input": "Remove all files in /var/log/wtmp",
+    "output": "rm /var/log/wtmp/*"
+  },
+  {
+    "input": "Delete a file called 'Xorg.0.log' in /var/log",
+    "output": "rm /var/log/Xorg.0.log"
+  },
+  {
+    "input": "Remove all files in /var/log/Xorg.1.log",
+    "output": "rm /var/log/Xorg.1.log/*"
+  },
+  {
+    "input": "Delete a file called 'Xorg.failsafe.log' in /var/log",
+    "output": "rm /var/log/Xorg.failsafe.log"
+  },
+  {
+    "input": "Remove all files in /var/tmp",
+    "output": "rm /var/tmp/*"
+  },
+  {
+    "input": "Delete a file called 'test' in the current directory",
+    "output": "rm test"
+  },
+  {
+    "input": "Remove all files in the parent directory",
+    "output": "rm ../*"
+  },
+  {
+    "input": "Delete all files in the /etc directory",
+    "output": "rm /etc/*"
+  },
+  {
+    "input": "Force delete all files in the /opt directory",
+    "output": "rm -f /opt/*"
+  },
+  {
+    "input": "Remove all files in the /srv directory",
+    "output": "rm /srv/*"
+  },
+  {
+    "input": "Delete all files in the /mnt directory",
+    "output": "rm /mnt/*"
+  },
+  {
+    "input": "Remove all files in the /media directory",
+    "output": "rm /media/*"
+  }
+]

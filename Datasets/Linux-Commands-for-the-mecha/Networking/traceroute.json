@@ -1,0 +1,662 @@
+[
+  {
+    "input": "Traceroute to google.com",
+    "output": "traceroute google.com"
+  },
+  {
+    "input": "Traceroute to example.com",
+    "output": "traceroute example.com"
+  },
+  {
+    "input": "Traceroute to 8.8.8.8",
+    "output": "traceroute 8.8.8.8"
+  },
+  {
+    "input": "Traceroute to yahoo.com",
+    "output": "traceroute yahoo.com"
+  },
+  {
+    "input": "Traceroute to github.com",
+    "output": "traceroute github.com"
+  },
+  {
+    "input": "Traceroute to google.com with debugging enabled",
+    "output": "traceroute -d google.com"
+  },
+  {
+    "input": "Traceroute to example.com with debugging enabled",
+    "output": "traceroute -d example.com"
+  },
+  {
+    "input": "Traceroute to 8.8.8.8 with debugging enabled",
+    "output": "traceroute -d 8.8.8.8"
+  },
+  {
+    "input": "Traceroute to yahoo.com with debugging enabled",
+    "output": "traceroute -d yahoo.com"
+  },
+  {
+    "input": "Traceroute to github.com with debugging enabled",
+    "output": "traceroute -d github.com"
+  },
+  {
+    "input": "Traceroute to google.com forbidding fragmentation",
+    "output": "traceroute -F google.com"
+  },
+  {
+    "input": "Traceroute to example.com forbidding fragmentation",
+    "output": "traceroute -F example.com"
+  },
+  {
+    "input": "Traceroute to 8.8.8.8 forbidding fragmentation",
+    "output": "traceroute -F 8.8.8.8"
+  },
+  {
+    "input": "Traceroute to yahoo.com forbidding fragmentation",
+    "output": "traceroute -F yahoo.com"
+  },
+  {
+    "input": "Traceroute to github.com forbidding fragmentation",
+    "output": "traceroute -F github.com"
+  },
+  {
+    "input": "Traceroute to google.com starting with TTL 5",
+    "output": "traceroute -f 5 google.com"
+  },
+  {
+    "input": "Traceroute to example.com starting with TTL 5",
+    "output": "traceroute -f 5 example.com"
+  },
+  {
+    "input": "Traceroute to 8.8.8.8 starting with TTL 5",
+    "output": "traceroute -f 5 8.8.8.8"
+  },
+  {
+    "input": "Traceroute to yahoo.com starting with TTL 5",
+    "output": "traceroute -f 5 yahoo.com"
+  },
+  {
+    "input": "Traceroute to github.com starting with TTL 5",
+    "output": "traceroute -f 5 github.com"
+  },
+  {
+    "input": "Traceroute to google.com using a loose source route gateway",
+    "output": "traceroute -g 192.168.1.1 google.com"
+  },
+  {
+    "input": "Traceroute to example.com using a loose source route gateway",
+    "output": "traceroute -g 192.168.1.1 example.com"
+  },
+  {
+    "input": "Traceroute to 8.8.8.8 using a loose source route gateway",
+    "output": "traceroute -g 192.168.1.1 8.8.8.8"
+  },
+  {
+    "input": "Traceroute to yahoo.com using a loose source route gateway",
+    "output": "traceroute -g 192.168.1.1 yahoo.com"
+  },
+  {
+    "input": "Traceroute to github.com using a loose source route gateway",
+    "output": "traceroute -g 192.168.1.1 github.com"
+  },
+  {
+    "input": "Traceroute to google.com using interface eth0",
+    "output": "traceroute -i eth0 google.com"
+  },
+  {
+    "input": "Traceroute to example.com using interface eth0",
+    "output": "traceroute -i eth0 example.com"
+  },
+  {
+    "input": "Traceroute to 8.8.8.8 using interface eth0",
+    "output": "traceroute -i eth0 8.8.8.8"
+  },
+  {
+    "input": "Traceroute to yahoo.com using interface eth0",
+    "output": "traceroute -i eth0 yahoo.com"
+  },
+  {
+    "input": "Traceroute to github.com using interface eth0",
+    "output": "traceroute -i eth0 github.com"
+  },
+  {
+    "input": "Traceroute to google.com with max TTL 10",
+    "output": "traceroute -m 10 google.com"
+  },
+  {
+    "input": "Traceroute to example.com with max TTL 10",
+    "output": "traceroute -m 10 example.com"
+  },
+  {
+    "input": "Traceroute to 8.8.8.8 with max TTL 10",
+    "output": "traceroute -m 10 8.8.8.8"
+  },
+  {
+    "input": "Traceroute to yahoo.com with max TTL 10",
+    "output": "traceroute -m 10 yahoo.com"
+  },
+  {
+    "input": "Traceroute to github.com with max TTL 10",
+    "output": "traceroute -m 10 github.com"
+  },
+  {
+    "input": "Traceroute to google.com sending 5 probes per hop",
+    "output": "traceroute -q 5 google.com"
+  },
+  {
+    "input": "Traceroute to example.com sending 5 probes per hop",
+    "output": "traceroute -q 5 example.com"
+  },
+  {
+    "input": "Traceroute to 8.8.8.8 sending 5 probes per hop",
+    "output": "traceroute -q 5 8.8.8.8"
+  },
+  {
+    "input": "Traceroute to yahoo.com sending 5 probes per hop",
+    "output": "traceroute -q 5 yahoo.com"
+  },
+  {
+    "input": "Traceroute to github.com sending 5 probes per hop",
+    "output": "traceroute -q 5 github.com"
+  },
+  {
+    "input": "Traceroute to google.com without resolving IP addresses to hostnames",
+    "output": "traceroute -n google.com"
+  },
+  {
+    "input": "Traceroute to example.com without resolving IP addresses to hostnames",
+    "output": "traceroute -n example.com"
+  },
+  {
+    "input": "Traceroute to 8.8.8.8 without resolving IP addresses to hostnames",
+    "output": "traceroute -n 8.8.8.8"
+  },
+  {
+    "input": "Traceroute to yahoo.com without resolving IP addresses to hostnames",
+    "output": "traceroute -n yahoo.com"
+  },
+  {
+    "input": "Traceroute to github.com without resolving IP addresses to hostnames",
+    "output": "traceroute -n github.com"
+  },
+  {
+    "input": "Traceroute to google.com specifying destination port 33434",
+    "output": "traceroute -p 33434 google.com"
+  },
+  {
+    "input": "Traceroute to example.com specifying destination port 33434",
+    "output": "traceroute -p 33434 example.com"
+  },
+  {
+    "input": "Traceroute to 8.8.8.8 specifying destination port 33434",
+    "output": "traceroute -p 33434 8.8.8.8"
+  },
+  {
+    "input": "Traceroute to yahoo.com specifying destination port 33434",
+    "output": "traceroute -p 33434 yahoo.com"
+  },
+  {
+    "input": "Traceroute to github.com specifying destination port 33434",
+    "output": "traceroute -p 33434 github.com"
+  },
+  {
+    "input": "Traceroute to google.com setting type of service 16",
+    "output": "traceroute -t 16 google.com"
+  },
+  {
+    "input": "Traceroute to example.com setting type of service 16",
+    "output": "traceroute -t 16 example.com"
+  },
+  {
+    "input": "Traceroute to 8.8.8.8 setting type of service 16",
+    "output": "traceroute -t 16 8.8.8.8"
+  },
+  {
+    "input": "Traceroute to yahoo.com setting type of service 16",
+    "output": "traceroute -t 16 yahoo.com"
+  },
+  {
+    "input": "Traceroute to github.com setting type of service 16",
+    "output": "traceroute -t 16 github.com"
+  },
+  {
+    "input": "Traceroute to google.com with wait time 2 seconds",
+    "output": "traceroute -w 2 google.com"
+  },
+  {
+    "input": "Traceroute to example.com with wait time 2 seconds",
+    "output": "traceroute -w 2 example.com"
+  },
+  {
+    "input": "Traceroute to 8.8.8.8 with wait time 2 seconds",
+    "output": "traceroute -w 2 8.8.8.8"
+  },
+  {
+    "input": "Traceroute to yahoo.com with wait time 2 seconds",
+    "output": "traceroute -w 2 yahoo.com"
+  },
+  {
+    "input": "Traceroute to github.com with wait time 2 seconds",
+    "output": "traceroute -w 2 github.com"
+  },
+  {
+    "input": "Traceroute to google.com bypassing routing tables",
+    "output": "traceroute -r google.com"
+  },
+  {
+    "input": "Traceroute to example.com bypassing routing tables",
+    "output": "traceroute -r example.com"
+  },
+  {
+    "input": "Traceroute to 8.8.8.8 bypassing routing tables",
+    "output": "traceroute -r 8.8.8.8"
+  },
+  {
+    "input": "Traceroute to yahoo.com bypassing routing tables",
+    "output": "traceroute -r yahoo.com"
+  },
+  {
+    "input": "Traceroute to github.com bypassing routing tables",
+    "output": "traceroute -r github.com"
+  },
+  {
+    "input": "Traceroute to google.com with IPv6 source address",
+    "output": "traceroute -S 2001:db8::1 google.com"
+  },
+  {
+    "input": "Traceroute to example.com with IPv6 source address",
+    "output": "traceroute -S 2001:db8::1 example.com"
+  },
+  {
+    "input": "Traceroute to 8.8.8.8 with IPv6 source address",
+    "output": "traceroute -S 2001:db8::1 8.8.8.8"
+  },
+  {
+    "input": "Traceroute to yahoo.com with IPv6 source address",
+    "output": "traceroute -S 2001:db8::1 yahoo.com"
+  },
+  {
+    "input": "Traceroute to github.com with IPv6 source address",
+    "output": "traceroute -S 2001:db8::1 github.com"
+  },
+  {
+    "input": "Traceroute to google.com showing ICMP extensions",
+    "output": "traceroute -e google.com"
+  },
+  {
+    "input": "Traceroute to example.com showing ICMP extensions",
+    "output": "traceroute -e example.com"
+  },
+  {
+    "input": "Traceroute to 8.8.8.8 showing ICMP extensions",
+    "output": "traceroute -e 8.8.8.8"
+  },
+  {
+    "input": "Traceroute to yahoo.com showing ICMP extensions",
+    "output": "traceroute -e yahoo.com"
+  },
+  {
+    "input": "Traceroute to github.com showing ICMP extensions",
+    "output": "traceroute -e github.com"
+  },
+  {
+    "input": "Traceroute to google.com with AS lookups enabled",
+    "output": "traceroute -A google.com"
+  },
+  {
+    "input": "Traceroute to example.com with AS lookups enabled",
+    "output": "traceroute -A example.com"
+  },
+  {
+    "input": "Traceroute to 8.8.8.8 with AS lookups enabled",
+    "output": "traceroute -A 8.8.8.8"
+  },
+  {
+    "input": "Traceroute to yahoo.com with AS lookups enabled",
+    "output": "traceroute -A yahoo.com"
+  },
+  {
+    "input": "Traceroute to github.com with AS lookups enabled",
+    "output": "traceroute -A github.com"
+  },
+  {
+    "input": "Traceroute to google.com showing version info",
+    "output": "traceroute -V google.com"
+  },
+  {
+    "input": "Traceroute to example.com showing version info",
+    "output": "traceroute -V example.com"
+  },
+  {
+    "input": "Traceroute to 8.8.8.8 showing version info",
+    "output": "traceroute -V 8.8.8.8"
+  },
+  {
+    "input": "Traceroute to yahoo.com showing version info",
+    "output": "traceroute -V yahoo.com"
+  },
+  {
+    "input": "Traceroute to github.com showing version info",
+    "output": "traceroute -V github.com"
+  },
+  {
+    "input": "Traceroute to google.com using UDP port 53",
+    "output": "traceroute -U google.com"
+  },
+  {
+    "input": "Traceroute to example.com using UDP port 53",
+    "output": "traceroute -U example.com"
+  },
+  {
+    "input": "Traceroute to 8.8.8.8 using UDP port 53",
+    "output": "traceroute -U 8.8.8.8"
+  },
+  {
+    "input": "Traceroute to yahoo.com using UDP port 53",
+    "output": "traceroute -U yahoo.com"
+  },
+  {
+    "input": "Traceroute to github.com using UDP port 53",
+    "output": "traceroute -U github.com"
+  },
+  {
+    "input": "Traceroute to google.com using UDPLITE protocol",
+    "output": "traceroute -UL google.com"
+  },
+  {
+    "input": "Traceroute to example.com using UDPLITE protocol",
+    "output": "traceroute -UL example.com"
+  },
+  {
+    "input": "Traceroute to 8.8.8.8 using UDPLITE protocol",
+    "output": "traceroute -UL 8.8.8.8"
+  },
+  {
+    "input": "Traceroute to yahoo.com using UDPLITE protocol",
+    "output": "traceroute -UL yahoo.com"
+  },
+  {
+    "input": "Traceroute to github.com using UDPLITE protocol",
+    "output": "traceroute -UL github.com"
+  },
+  {
+    "input": "Traceroute to google.com sending packets with ICMP protocol",
+    "output": "traceroute -P icmp google.com"
+  },
+  {
+    "input": "Traceroute to example.com sending packets with ICMP protocol",
+    "output": "traceroute -P icmp example.com"
+  },
+  {
+    "input": "Traceroute to 8.8.8.8 sending packets with ICMP protocol",
+    "output": "traceroute -P icmp 8.8.8.8"
+  },
+  {
+    "input": "Traceroute to yahoo.com sending packets with ICMP protocol",
+    "output": "traceroute -P icmp yahoo.com"
+  },
+  {
+    "input": "Traceroute to github.com sending packets with ICMP protocol",
+    "output": "traceroute -P icmp github.com"
+  },
+  {
+    "input": "Traceroute to google.com using ICMP echo requests",
+    "output": "traceroute -I google.com"
+  },
+  {
+    "input": "Traceroute to example.com using ICMP echo requests",
+    "output": "traceroute -I example.com"
+  },
+  {
+    "input": "Traceroute to 8.8.8.8 using ICMP echo requests",
+    "output": "traceroute -I 8.8.8.8"
+  },
+  {
+    "input": "Traceroute to yahoo.com using ICMP echo requests",
+    "output": "traceroute -I yahoo.com"
+  },
+  {
+    "input": "Traceroute to github.com using ICMP echo requests",
+    "output": "traceroute -I github.com"
+  },
+  {
+    "input": "Traceroute to google.com using TCP SYN packets",
+    "output": "traceroute -T google.com"
+  },
+  {
+    "input": "Traceroute to example.com using TCP SYN packets",
+    "output": "traceroute -T example.com"
+  },
+  {
+    "input": "Traceroute to 8.8.8.8 using TCP SYN packets",
+    "output": "traceroute -T 8.8.8.8"
+  },
+  {
+    "input": "Traceroute to yahoo.com using TCP SYN packets",
+    "output": "traceroute -T yahoo.com"
+  },
+  {
+    "input": "Traceroute to github.com using TCP SYN packets",
+    "output": "traceroute -T github.com"
+  },
+  {
+    "input": "Traceroute to google.com using only IPv4 addresses",
+    "output": "traceroute -4 google.com"
+  },
+  {
+    "input": "Traceroute to example.com using only IPv4 addresses",
+    "output": "traceroute -4 example.com"
+  },
+  {
+    "input": "Traceroute to 8.8.8.8 using only IPv4 addresses",
+    "output": "traceroute -4 8.8.8.8"
+  },
+  {
+    "input": "Traceroute to yahoo.com using only IPv4 addresses",
+    "output": "traceroute -4 yahoo.com"
+  },
+  {
+    "input": "Traceroute to github.com using only IPv4 addresses",
+    "output": "traceroute -4 github.com"
+  },
+  {
+    "input": "Traceroute to google.com using only IPv6 addresses",
+    "output": "traceroute -6 google.com"
+  },
+  {
+    "input": "Traceroute to example.com using only IPv6 addresses",
+    "output": "traceroute -6 example.com"
+  },
+  {
+    "input": "Traceroute to 8.8.8.8 using only IPv6 addresses",
+    "output": "traceroute -6 8.8.8.8"
+  },
+  {
+    "input": "Traceroute to yahoo.com using only IPv6 addresses",
+    "output": "traceroute -6 yahoo.com"
+  },
+  {
+    "input": "Traceroute to github.com using only IPv6 addresses",
+    "output": "traceroute -6 github.com"
+  },
+  {
+    "input": "Traceroute to google.com with max TTL 30 and 10 probes per hop",
+    "output": "traceroute -m 30 -q 10 google.com"
+  },
+  {
+    "input": "Traceroute to example.com with max TTL 20 and 6 probes per hop",
+    "output": "traceroute -m 20 -q 6 example.com"
+  },
+  {
+    "input": "Traceroute to 8.8.8.8 with max TTL 40 and 2 probes per hop",
+    "output": "traceroute -m 40 -q 2 8.8.8.8"
+  },
+  {
+    "input": "Traceroute to yahoo.com with max TTL 15 and 5 probes per hop",
+    "output": "traceroute -m 15 -q 5 yahoo.com"
+  },
+  {
+    "input": "Traceroute to github.com with max TTL 25 and 7 probes per hop",
+    "output": "traceroute -m 25 -q 7 github.com"
+  },
+  {
+    "input": "Traceroute to google.com with destination port 80 and 3 probes per hop",
+    "output": "traceroute -p 80 -q 3 google.com"
+  },
+  {
+    "input": "Traceroute to example.com with destination port 443 and 4 probes per hop",
+    "output": "traceroute -p 443 -q 4 example.com"
+  },
+  {
+    "input": "Traceroute to 8.8.8.8 with destination port 8080 and 2 probes per hop",
+    "output": "traceroute -p 8080 -q 2 8.8.8.8"
+  },
+  {
+    "input": "Traceroute to yahoo.com with destination port 53 and 5 probes per hop",
+    "output": "traceroute -p 53 -q 5 yahoo.com"
+  },
+  {
+    "input": "Traceroute to github.com with destination port 22 and 6 probes per hop",
+    "output": "traceroute -p 22 -q 6 github.com"
+  },
+  {
+    "input": "Traceroute to google.com using interface wlan0 and max TTL 20",
+    "output": "traceroute -i wlan0 -m 20 google.com"
+  },
+  {
+    "input": "Traceroute to example.com using interface wlan0 and max TTL 15",
+    "output": "traceroute -i wlan0 -m 15 example.com"
+  },
+  {
+    "input": "Traceroute to 8.8.8.8 using interface wlan0 and max TTL 10",
+    "output": "traceroute -i wlan0 -m 10 8.8.8.8"
+  },
+  {
+    "input": "Traceroute to yahoo.com using interface wlan0 and max TTL 25",
+    "output": "traceroute -i wlan0 -m 25 yahoo.com"
+  },
+  {
+    "input": "Traceroute to github.com using interface wlan0 and max TTL 30",
+    "output": "traceroute -i wlan0 -m 30 github.com"
+  },
+  {
+    "input": "Traceroute to google.com with wait time 5 seconds and 4 probes per hop",
+    "output": "traceroute -w 5 -q 4 google.com"
+  },
+  {
+    "input": "Traceroute to example.com with wait time 3 seconds and 2 probes per hop",
+    "output": "traceroute -w 3 -q 2 example.com"
+  },
+  {
+    "input": "Traceroute to 8.8.8.8 with wait time 10 seconds and 5 probes per hop",
+    "output": "traceroute -w 10 -q 5 8.8.8.8"
+  },
+  {
+    "input": "Traceroute to yahoo.com with wait time 7 seconds and 3 probes per hop",
+    "output": "traceroute -w 7 -q 3 yahoo.com"
+  },
+  {
+    "input": "Traceroute to github.com with wait time 2 seconds and 6 probes per hop",
+    "output": "traceroute -w 2 -q 6 github.com"
+  },
+  {
+    "input": "Traceroute to google.com with no hostname resolution and max TTL 15",
+    "output": "traceroute -n -m 15 google.com"
+  },
+  {
+    "input": "Traceroute to example.com with no hostname resolution and max TTL 20",
+    "output": "traceroute -n -m 20 example.com"
+  },
+  {
+    "input": "Traceroute to 8.8.8.8 with no hostname resolution and max TTL 25",
+    "output": "traceroute -n -m 25 8.8.8.8"
+  },
+  {
+    "input": "Traceroute to yahoo.com with no hostname resolution and max TTL 30",
+    "output": "traceroute -n -m 30 yahoo.com"
+  },
+  {
+    "input": "Traceroute to github.com with no hostname resolution and max TTL 35",
+    "output": "traceroute -n -m 35 github.com"
+  },
+  {
+    "input": "Traceroute to google.com using ICMP echo requests and max TTL 20",
+    "output": "traceroute -I -m 20 google.com"
+  },
+  {
+    "input": "Traceroute to example.com using ICMP echo requests and max TTL 25",
+    "output": "traceroute -I -m 25 example.com"
+  },
+  {
+    "input": "Traceroute to 8.8.8.8 using ICMP echo requests and max TTL 30",
+    "output": "traceroute -I -m 30 8.8.8.8"
+  },
+  {
+    "input": "Traceroute to yahoo.com using ICMP echo requests and max TTL 35",
+    "output": "traceroute -I -m 35 yahoo.com"
+  },
+  {
+    "input": "Traceroute to github.com using ICMP echo requests and max TTL 40",
+    "output": "traceroute -I -m 40 github.com"
+  },
+  {
+    "input": "Traceroute to google.com using TCP SYN packets and destination port 80",
+    "output": "traceroute -T -p 80 google.com"
+  },
+  {
+    "input": "Traceroute to example.com using TCP SYN packets and destination port 443",
+    "output": "traceroute -T -p 443 example.com"
+  },
+  {
+    "input": "Traceroute to 8.8.8.8 using TCP SYN packets and destination port 8080",
+    "output": "traceroute -T -p 8080 8.8.8.8"
+  },
+  {
+    "input": "Traceroute to yahoo.com using TCP SYN packets and destination port 53",
+    "output": "traceroute -T -p 53 yahoo.com"
+  },
+  {
+    "input": "Traceroute to github.com using TCP SYN packets and destination port 22",
+    "output": "traceroute -T -p 22 github.com"
+  },
+  {
+    "input": "Traceroute to google.com using only IPv4 and max TTL 20",
+    "output": "traceroute -4 -m 20 google.com"
+  },
+  {
+    "input": "Traceroute to example.com using only IPv4 and max TTL 25",
+    "output": "traceroute -4 -m 25 example.com"
+  },
+  {
+    "input": "Traceroute to 8.8.8.8 using only IPv4 and max TTL 30",
+    "output": "traceroute -4 -m 30 8.8.8.8"
+  },
+  {
+    "input": "Traceroute to yahoo.com using only IPv4 and max TTL 35",
+    "output": "traceroute -4 -m 35 yahoo.com"
+  },
+  {
+    "input": "Traceroute to github.com using only IPv4 and max TTL 40",
+    "output": "traceroute -4 -m 40 github.com"
+  },
+  {
+    "input": "Traceroute to google.com using only IPv6 and max TTL 20",
+    "output": "traceroute -6 -m 20 google.com"
+  },
+  {
+    "input": "Traceroute to example.com using only IPv6 and max TTL 25",
+    "output": "traceroute -6 -m 25 example.com"
+  },
+  {
+    "input": "Traceroute to 8.8.8.8 using only IPv6 and max TTL 30",
+    "output": "traceroute -6 -m 30 8.8.8.8"
+  },
+  {
+    "input": "Traceroute to yahoo.com using only IPv6 and max TTL 35",
+    "output": "traceroute -6 -m 35 yahoo.com"
+  },
+  {
+    "input": "Traceroute to github.com using only IPv6 and max TTL 40",
+    "output": "traceroute -6 -m 40 github.com"
+  }
+]

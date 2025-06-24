@@ -1,0 +1,178 @@
+[
+    {
+        "input": "Open file in less",
+        "output": "less file.txt"
+    },
+    {
+        "input": "Open multiple files",
+        "output": "less file1.txt file2.txt"
+    },
+    {
+        "input": "Ignore case in searches",
+        "output": "less -I file.txt"
+    },
+    {
+        "input": "Show line numbers",
+        "output": "less -N file.txt"
+    },
+    {
+        "input": "Quit less without waiting output",
+        "output": "less -F file.txt"
+    },
+    {
+        "input": "Quit if file fits one screen",
+        "output": "less -X file.txt"
+    },
+    {
+        "input": "Search forward for a pattern",
+        "output": "/pattern"
+    },
+    {
+        "input": "Search backward",
+        "output": "?pattern"
+    },
+    {
+        "input": "Go to line 100",
+        "output": "less +100 file.txt"
+    },
+    {
+        "input": "Start less at EOF",
+        "output": "less +G file.txt"
+    },
+    {
+        "input": "Start less at BOF",
+        "output": "less +g file.txt"
+    },
+    {
+        "input": "Show help screen",
+        "output": "less -h"
+    },
+    {
+        "input": "Open file with raw-control-chars",
+        "output": "less -R file.txt"
+    },
+    {
+        "input": "Suppress raw-control-chars",
+        "output": "less -r file.txt"
+    },
+    {
+        "input": "Follow file like tail -f",
+        "output": "less +F file.txt"
+    },
+    {
+        "input": "Reverse search in follow",
+        "output": "less -R +F file.txt"
+    },
+    {
+        "input": "Open file and allow window resizing",
+        "output": "less -S file.txt"
+    },
+    {
+        "input": "Chop long lines",
+        "output": "less -S file.txt"
+    },
+    {
+        "input": "Wrap long lines",
+        "output": "less -Sx file.txt"
+    },
+    {
+        "input": "Show tags index",
+        "output": "less -t tag file.txt"
+    },
+    {
+        "input": "Use prompt string",
+        "output": "LESS='-Pmyprompt>' less file.txt"
+    },
+    {
+        "input": "Open compressed file",
+        "output": "less file.txt.gz"
+    },
+    {
+        "input": "Pipe output to less",
+        "output": "grep ERROR file.log | less"
+    },
+    {
+        "input": "View man page via less",
+        "output": "man ls"
+    },
+    {
+        "input": "Open file and set scrolling speed",
+        "output": "less -j5 file.txt"
+    },
+    {
+        "input": "Open file with numbers left-justified",
+        "output": "LESS='-N -L' less file.txt"
+    },
+    {
+        "input": "Open file ignoring whitespace change",
+        "output": "less -I file.txt"
+    },
+    {
+        "input": "Open file with percent progress",
+        "output": "less -P%f%t file.txt"
+    },
+    {
+        "input": "Open file with specific environment",
+        "output": "LESSCHARSET=utf-8 less file.txt"
+    },
+    {
+        "input": "Open file with color escapes",
+        "output": "less -R file.txt"
+    },
+    {
+        "input": "Open file disabling termcap init/reset",
+        "output": "less -X file.txt"
+    },
+    {
+        "input": "Open file without init/reset but preserve capabilities",
+        "output": "less -K file.txt"
+    },
+    {
+        "input": "Open file and prompt at line number",
+        "output": "less +100g file.txt"
+    },
+    {
+        "input": "Open file and prompt at pattern",
+        "output": "less +/pattern file.txt"
+    },
+    {
+        "input": "Open file in quiet mode",
+        "output": "less -q file.txt"
+    },
+    {
+        "input": "Open file allowing colors",
+        "output": "LESS='-R' less file.txt"
+    },
+    {
+        "input": "View logs in real time",
+        "output": "tail -f file.log | less +F"
+    },
+    {
+        "input": "Open binary file in hex (via od)",
+        "output": "od -Ax -t x1z file.bin | less"
+    },
+    {
+        "input": "Open one page at a time",
+        "output": "less -#1 file.txt"
+    },
+    {
+        "input": "Open with horizontal scrolling off",
+        "output": "less -S file.txt"
+    },
+    {
+        "input": "Open with custom keybindings",
+        "output": "less -K file.txt"
+    },
+    {
+        "input": "Open with screen compatibility",
+        "output": "less -k file.txt"
+    },
+    {
+        "input": "Open with case-insensitive patterns",
+        "output": "less -I file.txt"
+    },
+    {
+        "input": "Open with XSS safe handling",
+        "output": "less -R file.txt"
+    }
+]

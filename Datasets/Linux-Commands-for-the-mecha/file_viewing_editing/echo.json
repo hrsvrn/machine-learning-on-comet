@@ -1,0 +1,166 @@
+[
+    {
+        "input": "Print Hello",
+        "output": "echo \"Hello\""
+    },
+    {
+        "input": "Print Hello without newline",
+        "output": "echo -n \"Hello\""
+    },
+    {
+        "input": "Print with escape sequences",
+        "output": "echo -e \"Line1\\nLine2\""
+    },
+    {
+        "input": "Print variable value",
+        "output": "echo \"$HOME\""
+    },
+    {
+        "input": "Print multiple variables",
+        "output": "echo \"$USER@$HOSTNAME\""
+    },
+    {
+        "input": "Redirect output to file",
+        "output": "echo \"Hello\" > file.txt"
+    },
+    {
+        "input": "Append output to file",
+        "output": "echo \"World\" >> file.txt"
+    },
+    {
+        "input": "Print tab",
+        "output": "echo -e \"Column1\\tColumn2\""
+    },
+    {
+        "input": "Print backslash",
+        "output": "echo -e \"Path: C:\\\\Windows\""
+    },
+    {
+        "input": "Print single quotes",
+        "output": "echo \"It's working\""
+    },
+    {
+        "input": "Print double quotes",
+        "output": "echo 'He said \"Hello\"'"
+    },
+    {
+        "input": "Print environment variables",
+        "output": "echo \"PATH=$PATH\""
+    },
+    {
+        "input": "Print date in script",
+        "output": "echo \"Today is $(date)\""
+    },
+    {
+        "input": "Print command output",
+        "output": "echo \"Users: $(who)\""
+    },
+    {
+        "input": "Print today’s user count",
+        "output": "echo \"Logged in: $(who | wc -l) users\""
+    },
+    {
+        "input": "Print in background",
+        "output": "echo \"Hello\" &"
+    },
+    {
+        "input": "Print exit status",
+        "output": "echo \"Exit status: $?\""
+    },
+    {
+        "input": "Print with printf formatting",
+        "output": "printf \"%s\\n\" \"Hello\""
+    },
+    {
+        "input": "Print JSON snippet",
+        "output": "echo '{\"key\":\"value\"}'"
+    },
+    {
+        "input": "Print XML snippet",
+        "output": "echo '<tag>value</tag>'"
+    },
+    {
+        "input": "Print YAML snippet",
+        "output": "echo \"key: value\""
+    },
+    {
+        "input": "Print multi-line text",
+        "output": "echo -e \"Line1\\nLine2\\nLine3\""
+    },
+    {
+        "input": "Print file path",
+        "output": "echo \"File is located at $PWD/file.txt\""
+    },
+    {
+        "input": "Print script name",
+        "output": "echo \"Script: $0\""
+    },
+    {
+        "input": "Print random number",
+        "output": "echo $RANDOM"
+    },
+    {
+        "input": "Print current PID",
+        "output": "echo $$"
+    },
+    {
+        "input": "Print parent PID",
+        "output": "echo $PPID"
+    },
+    {
+        "input": "Print process list",
+        "output": "echo \"$(ps)\""
+    },
+    {
+        "input": "Print uptime",
+        "output": "echo \"Uptime: $(uptime -p)\""
+    },
+    {
+        "input": "Print disk usage",
+        "output": "echo \"Disk: $(df -h /)\""
+    },
+    {
+        "input": "Print memory usage",
+        "output": "echo \"Mem: $(free -h)\""
+    },
+    {
+        "input": "Print kernel version",
+        "output": "echo \"Kernel: $(uname -r)\""
+    },
+    {
+        "input": "Print shell path",
+        "output": "echo \"$SHELL\""
+    },
+    {
+        "input": "Print home directory",
+        "output": "echo \"$HOME\""
+    },
+    {
+        "input": "Print IFS variable",
+        "output": "echo \"$IFS\""
+    },
+    {
+        "input": "Print all positional parameters",
+        "output": "echo \"$@\""
+    },
+    {
+        "input": "Print all positional parameters as single string",
+        "output": "echo \"$*\""
+    },
+    {
+        "input": "Print last argument",
+        "output": "echo \"${!#}\""
+    },
+    {
+        "input": "Print host IPs",
+        "output": "echo \"$(hostname -I)\""
+    },
+    {
+        "input": "Print local time only",
+        "output": "echo \"$(date +%T)\""
+    },
+    {
+        "input": "Print custom date format",
+        "output": "echo \"$(date +%Y-%m-%d)\""
+    }
+]

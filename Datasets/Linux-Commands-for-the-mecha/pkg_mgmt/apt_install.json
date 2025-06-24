@@ -1,0 +1,42 @@
+[
+    {
+        "input": "Install nginx",
+        "output": "sudo apt install nginx"
+    },
+    {
+        "input": "Install without prompts",
+        "output": "sudo apt install -y nginx"
+    },
+    {
+        "input": "Reinstall package",
+        "output": "sudo apt install --reinstall nginx"
+    },
+    {
+        "input": "Install build tools",
+        "output": "sudo apt install build-essential"
+    },
+    {
+        "input": "Install multiple packages",
+        "output": "sudo apt install git curl vim"
+    },
+    {
+        "input": "Install specific version",
+        "output": "sudo apt install nginx=1.18.0-0ubuntu1"
+    },
+    {
+        "input": "Install .deb file",
+        "output": "sudo apt install ./package.deb"
+    },
+    {
+        "input": "Allow unauthenticated",
+        "output": "sudo apt install --allow-unauthenticated nginx"
+    },
+    {
+        "input": "Download only",
+        "output": "sudo apt install --download-only nginx"
+    },
+    {
+        "input": "Show install progress",
+        "output": "sudo apt install --show-progress nginx"
+    }
+]

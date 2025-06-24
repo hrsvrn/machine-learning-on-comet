@@ -1,0 +1,42 @@
+[
+    {
+        "input": "Refresh package index",
+        "output": "sudo apt update"
+    },
+    {
+        "input": "Update and show upgradable",
+        "output": "sudo apt update && apt list --upgradable"
+    },
+    {
+        "input": "Update without prompts",
+        "output": "sudo apt update -y"
+    },
+    {
+        "input": "Fix missing packages",
+        "output": "sudo apt update --fix-missing"
+    },
+    {
+        "input": "Allow unauthenticated repos",
+        "output": "sudo apt update --allow-unauthenticated"
+    },
+    {
+        "input": "Only download package lists",
+        "output": "sudo apt update --download-only"
+    },
+    {
+        "input": "Verbose debug output",
+        "output": "sudo apt update -o Debug::pkgProblemResolver=yes"
+    },
+    {
+        "input": "Use noninteractive frontend",
+        "output": "DEBIAN_FRONTEND=noninteractive sudo apt update"
+    },
+    {
+        "input": "Allow downgrades",
+        "output": "sudo apt update --allow-downgrades"
+    },
+    {
+        "input": "Prevent list cleanup",
+        "output": "sudo apt update --no-list-cleanup"
+    }
+]

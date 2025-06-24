@@ -1,0 +1,542 @@
+[
+  {
+    "input": "Run mtr to google.com in interactive mode",
+    "output": "mtr google.com"
+  },
+  {
+    "input": "Run mtr to 8.8.8.8 in interactive mode",
+    "output": "mtr 8.8.8.8"
+  },
+  {
+    "input": "Run mtr to example.com in report mode",
+    "output": "mtr -r example.com"
+  },
+  {
+    "input": "Run mtr to yahoo.com in report mode with 10 cycles",
+    "output": "mtr -r -c 10 yahoo.com"
+  },
+  {
+    "input": "Run mtr to github.com and display numeric IP addresses only",
+    "output": "mtr -n github.com"
+  },
+  {
+    "input": "Run mtr to amazon.com and display both IP and hostnames",
+    "output": "mtr -b amazon.com"
+  },
+  {
+    "input": "Run mtr to facebook.com and use IPv4 only",
+    "output": "mtr -4 facebook.com"
+  },
+  {
+    "input": "Run mtr to google.com and use IPv6 only",
+    "output": "mtr -6 google.com"
+  },
+  {
+    "input": "Run mtr to 1.1.1.1 and show maximum 15 hops",
+    "output": "mtr -m 15 1.1.1.1"
+  },
+  {
+    "input": "Run mtr to example.com and use a packet size of 100 bytes",
+    "output": "mtr -s 100 example.com"
+  },
+  {
+    "input": "Run mtr to yahoo.com and use a packet size of 1400 bytes",
+    "output": "mtr -s 1400 yahoo.com"
+  },
+  {
+    "input": "Run mtr to github.com and set interval to 2 seconds",
+    "output": "mtr -i 2 github.com"
+  },
+  {
+    "input": "Run mtr to amazon.com and set interval to 0.5 seconds",
+    "output": "mtr -i 0.5 amazon.com"
+  },
+  {
+    "input": "Run mtr to facebook.com and set timeout per probe to 1 second",
+    "output": "mtr --timeout 1 facebook.com"
+  },
+  {
+    "input": "Run mtr to google.com and set timeout per probe to 5 seconds",
+    "output": "mtr --timeout 5 google.com"
+  },
+  {
+    "input": "Run mtr to 8.8.8.8 and set the number of pings per hop to 5",
+    "output": "mtr -c 5 8.8.8.8"
+  },
+  {
+    "input": "Run mtr to example.com and set the number of pings per hop to 20",
+    "output": "mtr -c 20 example.com"
+  },
+  {
+    "input": "Run mtr to yahoo.com and use TCP instead of ICMP",
+    "output": "mtr --tcp yahoo.com"
+  },
+  {
+    "input": "Run mtr to github.com and use UDP instead of ICMP",
+    "output": "mtr --udp github.com"
+  },
+  {
+    "input": "Run mtr to amazon.com and show both hostnames and IP addresses",
+    "output": "mtr -b amazon.com"
+  },
+  {
+    "input": "Run mtr to facebook.com and show ASN information",
+    "output": "mtr --aslookup facebook.com"
+  },
+  {
+    "input": "Run mtr to google.com and show output in JSON format",
+    "output": "mtr --json google.com"
+  },
+  {
+    "input": "Run mtr to 8.8.8.8 and show output in CSV format",
+    "output": "mtr --csv 8.8.8.8"
+  },
+  {
+    "input": "Run mtr to example.com and show output in XML format",
+    "output": "mtr --xml example.com"
+  },
+  {
+    "input": "Run mtr to yahoo.com and show output in raw format",
+    "output": "mtr --raw yahoo.com"
+  },
+  {
+    "input": "Run mtr to github.com and show output in report-wide format",
+    "output": "mtr --report-wide github.com"
+  },
+  {
+    "input": "Run mtr to amazon.com and show output in split format",
+    "output": "mtr --split amazon.com"
+  },
+  {
+    "input": "Run mtr to facebook.com and show output in wide format",
+    "output": "mtr --wide facebook.com"
+  },
+  {
+    "input": "Run mtr to google.com and set maximum TTL to 30",
+    "output": "mtr -m 30 google.com"
+  },
+  {
+    "input": "Run mtr to 8.8.8.8 and set maximum TTL to 64",
+    "output": "mtr -m 64 8.8.8.8"
+  },
+  {
+    "input": "Run mtr to example.com and set maximum TTL to 10",
+    "output": "mtr -m 10 example.com"
+  },
+  {
+    "input": "Run mtr to yahoo.com and set maximum TTL to 5",
+    "output": "mtr -m 5 yahoo.com"
+  },
+  {
+    "input": "Run mtr to github.com and set maximum TTL to 50",
+    "output": "mtr -m 50 github.com"
+  },
+  {
+    "input": "Run mtr to amazon.com and set maximum TTL to 100",
+    "output": "mtr -m 100 amazon.com"
+  },
+  {
+    "input": "Run mtr to facebook.com with 100 cycles in report mode",
+    "output": "mtr -r -c 100 facebook.com"
+  },
+  {
+    "input": "Run mtr to google.com with 200 cycles in report mode",
+    "output": "mtr -r -c 200 google.com"
+  },
+  {
+    "input": "Run mtr to 8.8.8.8 with 50 cycles in report mode",
+    "output": "mtr -r -c 50 8.8.8.8"
+  },
+  {
+    "input": "Run mtr to example.com with 25 cycles in report mode",
+    "output": "mtr -r -c 25 example.com"
+  },
+  {
+    "input": "Run mtr to yahoo.com with 75 cycles in report mode",
+    "output": "mtr -r -c 75 yahoo.com"
+  },
+  {
+    "input": "Run mtr to github.com with 150 cycles in report mode",
+    "output": "mtr -r -c 150 github.com"
+  },
+  {
+    "input": "Run mtr to amazon.com with 300 cycles in report mode",
+    "output": "mtr -r -c 300 amazon.com"
+  },
+  {
+    "input": "Run mtr to facebook.com and display only numeric IPs",
+    "output": "mtr -n facebook.com"
+  },
+  {
+    "input": "Run mtr to google.com and display both hostnames and IPs",
+    "output": "mtr -b google.com"
+  },
+  {
+    "input": "Run mtr to 8.8.8.8 and display ASN info",
+    "output": "mtr --aslookup 8.8.8.8"
+  },
+  {
+    "input": "Run mtr to example.com and use TCP protocol",
+    "output": "mtr --tcp example.com"
+  },
+  {
+    "input": "Run mtr to yahoo.com and use UDP protocol",
+    "output": "mtr --udp yahoo.com"
+  },
+  {
+    "input": "Run mtr to github.com and use IPv4 only",
+    "output": "mtr -4 github.com"
+  },
+  {
+    "input": "Run mtr to amazon.com and use IPv6 only",
+    "output": "mtr -6 amazon.com"
+  },
+  {
+    "input": "Run mtr to facebook.com and set interval to 1 second",
+    "output": "mtr -i 1 facebook.com"
+  },
+  {
+    "input": "Run mtr to google.com and set interval to 0.1 second",
+    "output": "mtr -i 0.1 google.com"
+  },
+  {
+    "input": "Run mtr to 8.8.8.8 and set interval to 5 seconds",
+    "output": "mtr -i 5 8.8.8.8"
+  },
+  {
+    "input": "Run mtr to example.com and set interval to 10 seconds",
+    "output": "mtr -i 10 example.com"
+  },
+  {
+    "input": "Run mtr to yahoo.com and set interval to 0.25 seconds",
+    "output": "mtr -i 0.25 yahoo.com"
+  },
+  {
+    "input": "Run mtr to github.com and set interval to 0.75 seconds",
+    "output": "mtr -i 0.75 github.com"
+  },
+  {
+    "input": "Run mtr to amazon.com and use a packet size of 56 bytes",
+    "output": "mtr -s 56 amazon.com"
+  },
+  {
+    "input": "Run mtr to facebook.com and use a packet size of 512 bytes",
+    "output": "mtr -s 512 facebook.com"
+  },
+  {
+    "input": "Run mtr to google.com and use a packet size of 1500 bytes",
+    "output": "mtr -s 1500 google.com"
+  },
+  {
+    "input": "Run mtr to 8.8.8.8 and use a packet size of 2000 bytes",
+    "output": "mtr -s 2000 8.8.8.8"
+  },
+  {
+    "input": "Run mtr to example.com and use a packet size of 4096 bytes",
+    "output": "mtr -s 4096 example.com"
+  },
+  {
+    "input": "Run mtr to yahoo.com and use a packet size of 8192 bytes",
+    "output": "mtr -s 8192 yahoo.com"
+  },
+  {
+    "input": "Run mtr to github.com and use a packet size of 10000 bytes",
+    "output": "mtr -s 10000 github.com"
+  },
+  {
+    "input": "Run mtr to amazon.com and set maximum TTL to 20",
+    "output": "mtr -m 20 amazon.com"
+  },
+  {
+    "input": "Run mtr to facebook.com and set maximum TTL to 40",
+    "output": "mtr -m 40 facebook.com"
+  },
+  {
+    "input": "Run mtr to google.com and set maximum TTL to 60",
+    "output": "mtr -m 60 google.com"
+  },
+  {
+    "input": "Run mtr to 8.8.8.8 and set maximum TTL to 80",
+    "output": "mtr -m 80 8.8.8.8"
+  },
+  {
+    "input": "Run mtr to example.com and set maximum TTL to 100",
+    "output": "mtr -m 100 example.com"
+  },
+  {
+    "input": "Run mtr to yahoo.com and set maximum TTL to 128",
+    "output": "mtr -m 128 yahoo.com"
+  },
+  {
+    "input": "Run mtr to github.com and set maximum TTL to 255",
+    "output": "mtr -m 255 github.com"
+  },
+  {
+    "input": "Run mtr to amazon.com and set the number of pings per hop to 1",
+    "output": "mtr -c 1 amazon.com"
+  },
+  {
+    "input": "Run mtr to facebook.com and set the number of pings per hop to 2",
+    "output": "mtr -c 2 facebook.com"
+  },
+  {
+    "input": "Run mtr to google.com and set the number of pings per hop to 3",
+    "output": "mtr -c 3 google.com"
+  },
+  {
+    "input": "Run mtr to 8.8.8.8 and set the number of pings per hop to 4",
+    "output": "mtr -c 4 8.8.8.8"
+  },
+  {
+    "input": "Run mtr to example.com and set the number of pings per hop to 6",
+    "output": "mtr -c 6 example.com"
+  },
+  {
+    "input": "Run mtr to yahoo.com and set the number of pings per hop to 7",
+    "output": "mtr -c 7 yahoo.com"
+  },
+  {
+    "input": "Run mtr to github.com and set the number of pings per hop to 8",
+    "output": "mtr -c 8 github.com"
+  },
+  {
+    "input": "Run mtr to amazon.com and set the number of pings per hop to 9",
+    "output": "mtr -c 9 amazon.com"
+  },
+  {
+    "input": "Run mtr to facebook.com and set the number of pings per hop to 11",
+    "output": "mtr -c 11 facebook.com"
+  },
+  {
+    "input": "Run mtr to google.com and set the number of pings per hop to 12",
+    "output": "mtr -c 12 google.com"
+  },
+  {
+    "input": "Run mtr to 8.8.8.8 and set the number of pings per hop to 13",
+    "output": "mtr -c 13 8.8.8.8"
+  },
+  {
+    "input": "Run mtr to example.com and set the number of pings per hop to 14",
+    "output": "mtr -c 14 example.com"
+  },
+  {
+    "input": "Run mtr to yahoo.com and set the number of pings per hop to 15",
+    "output": "mtr -c 15 yahoo.com"
+  },
+  {
+    "input": "Run mtr to github.com and set the number of pings per hop to 16",
+    "output": "mtr -c 16 github.com"
+  },
+  {
+    "input": "Run mtr to amazon.com and set the number of pings per hop to 17",
+    "output": "mtr -c 17 amazon.com"
+  },
+  {
+    "input": "Run mtr to facebook.com and set the number of pings per hop to 18",
+    "output": "mtr -c 18 facebook.com"
+  },
+  {
+    "input": "Run mtr to google.com and set the number of pings per hop to 19",
+    "output": "mtr -c 19 google.com"
+  },
+  {
+    "input": "Run mtr to 8.8.8.8 and set the number of pings per hop to 21",
+    "output": "mtr -c 21 8.8.8.8"
+  },
+  {
+    "input": "Run mtr to example.com and set the number of pings per hop to 22",
+    "output": "mtr -c 22 example.com"
+  },
+  {
+    "input": "Run mtr to yahoo.com and set the number of pings per hop to 23",
+    "output": "mtr -c 23 yahoo.com"
+  },
+  {
+    "input": "Run mtr to github.com and set the number of pings per hop to 24",
+    "output": "mtr -c 24 github.com"
+  },
+  {
+    "input": "Run mtr to amazon.com and set the number of pings per hop to 25",
+    "output": "mtr -c 25 amazon.com"
+  },
+  {
+    "input": "Run mtr to facebook.com and set the number of pings per hop to 30",
+    "output": "mtr -c 30 facebook.com"
+  },
+  {
+    "input": "Run mtr to google.com and set the number of pings per hop to 40",
+    "output": "mtr -c 40 google.com"
+  },
+  {
+    "input": "Run mtr to 8.8.8.8 and set the number of pings per hop to 50",
+    "output": "mtr -c 50 8.8.8.8"
+  },
+  {
+    "input": "Run mtr to example.com and set the number of pings per hop to 60",
+    "output": "mtr -c 60 example.com"
+  },
+  {
+    "input": "Run mtr to yahoo.com and set the number of pings per hop to 70",
+    "output": "mtr -c 70 yahoo.com"
+  },
+  {
+    "input": "Run mtr to github.com and set the number of pings per hop to 80",
+    "output": "mtr -c 80 github.com"
+  },
+  {
+    "input": "Run mtr to amazon.com and set the number of pings per hop to 90",
+    "output": "mtr -c 90 amazon.com"
+  },
+  {
+    "input": "Run mtr to facebook.com and set the number of pings per hop to 100",
+    "output": "mtr -c 100 facebook.com"
+  },
+  {
+    "input": "Run mtr to google.com and show output in JSON format with 10 cycles",
+    "output": "mtr --json -c 10 google.com"
+  },
+  {
+    "input": "Run mtr to 8.8.8.8 and show output in CSV format with 20 cycles",
+    "output": "mtr --csv -c 20 8.8.8.8"
+  },
+  {
+    "input": "Run mtr to example.com and show output in XML format with 30 cycles",
+    "output": "mtr --xml -c 30 example.com"
+  },
+  {
+    "input": "Run mtr to yahoo.com and show output in raw format with 40 cycles",
+    "output": "mtr --raw -c 40 yahoo.com"
+  },
+  {
+    "input": "Run mtr to github.com and show output in report-wide format with 50 cycles",
+    "output": "mtr --report-wide -c 50 github.com"
+  },
+  {
+    "input": "Run mtr to amazon.com and show output in split format with 60 cycles",
+    "output": "mtr --split -c 60 amazon.com"
+  },
+  {
+    "input": "Run mtr to facebook.com and show output in wide format with 70 cycles",
+    "output": "mtr --wide -c 70 facebook.com"
+  },
+  {
+    "input": "Run mtr to google.com with TCP, 100 cycles, and output in JSON format",
+    "output": "mtr --tcp --json -c 100 google.com"
+  },
+  {
+    "input": "Run mtr to 8.8.8.8 with UDP, 200 cycles, and output in CSV format",
+    "output": "mtr --udp --csv -c 200 8.8.8.8"
+  },
+  {
+    "input": "Run mtr to example.com with IPv4, 50 cycles, and output in XML format",
+    "output": "mtr -4 --xml -c 50 example.com"
+  },
+  {
+    "input": "Run mtr to yahoo.com with IPv6, 75 cycles, and output in raw format",
+    "output": "mtr -6 --raw -c 75 yahoo.com"
+  },
+  {
+    "input": "Run mtr to github.com with ASN lookup, 150 cycles, and output in report-wide format",
+    "output": "mtr --aslookup --report-wide -c 150 github.com"
+  },
+  {
+    "input": "Run mtr to amazon.com with 300 cycles, interval 2s, and output in split format",
+    "output": "mtr --split -c 300 -i 2 amazon.com"
+  },
+  {
+    "input": "Run mtr to facebook.com with 100 cycles, interval 0.5s, and output in wide format",
+    "output": "mtr --wide -c 100 -i 0.5 facebook.com"
+  },
+  {
+    "input": "Run mtr to google.com with TCP, 200 cycles, interval 1s, and output in JSON format",
+    "output": "mtr --tcp --json -c 200 -i 1 google.com"
+  },
+  {
+    "input": "Run mtr to 8.8.8.8 with UDP, 50 cycles, interval 5s, and output in CSV format",
+    "output": "mtr --udp --csv -c 50 -i 5 8.8.8.8"
+  },
+  {
+    "input": "Run mtr to example.com with IPv4, 25 cycles, interval 10s, and output in XML format",
+    "output": "mtr -4 --xml -c 25 -i 10 example.com"
+  },
+  {
+    "input": "Run mtr to yahoo.com with IPv6, 75 cycles, interval 0.25s, and output in raw format",
+    "output": "mtr -6 --raw -c 75 -i 0.25 yahoo.com"
+  },
+  {
+    "input": "Run mtr to github.com with ASN lookup, 150 cycles, interval 0.75s, and output in report-wide format",
+    "output": "mtr --aslookup --report-wide -c 150 -i 0.75 github.com"
+  },
+  {
+    "input": "Run mtr to amazon.com with 300 cycles, interval 1s, and output in split format",
+    "output": "mtr --split -c 300 -i 1 amazon.com"
+  },
+  {
+    "input": "Run mtr to facebook.com with 100 cycles, interval 2s, and output in wide format",
+    "output": "mtr --wide -c 100 -i 2 facebook.com"
+  },
+  {
+    "input": "Run mtr to google.com with TCP, 200 cycles, interval 0.1s, and output in JSON format",
+    "output": "mtr --tcp --json -c 200 -i 0.1 google.com"
+  },
+  {
+    "input": "Run mtr to 8.8.8.8 with UDP, 50 cycles, interval 0.5s, and output in CSV format",
+    "output": "mtr --udp --csv -c 50 -i 0.5 8.8.8.8"
+  },
+  {
+    "input": "Run mtr to example.com with IPv4, 25 cycles, interval 2s, and output in XML format",
+    "output": "mtr -4 --xml -c 25 -i 2 example.com"
+  },
+  {
+    "input": "Run mtr to yahoo.com with IPv6, 75 cycles, interval 5s, and output in raw format",
+    "output": "mtr -6 --raw -c 75 -i 5 yahoo.com"
+  },
+  {
+    "input": "Run mtr to github.com with ASN lookup, 150 cycles, interval 10s, and output in report-wide format",
+    "output": "mtr --aslookup --report-wide -c 150 -i 10 github.com"
+  },
+  {
+    "input": "Run mtr to amazon.com with 300 cycles, interval 0.25s, and output in split format",
+    "output": "mtr --split -c 300 -i 0.25 amazon.com"
+  },
+  {
+    "input": "Run mtr to facebook.com with 100 cycles, interval 0.75s, and output in wide format",
+    "output": "mtr --wide -c 100 -i 0.75 facebook.com"
+  },
+  {
+    "input": "Run mtr to google.com with TCP, 200 cycles, interval 0.25s, and output in JSON format",
+    "output": "mtr --tcp --json -c 200 -i 0.25 google.com"
+  },
+  {
+    "input": "Run mtr to 8.8.8.8 with UDP, 50 cycles, interval 0.75s, and output in CSV format",
+    "output": "mtr --udp --csv -c 50 -i 0.75 8.8.8.8"
+  },
+  {
+    "input": "Run mtr to example.com with IPv4, 25 cycles, interval 1s, and output in XML format",
+    "output": "mtr -4 --xml -c 25 -i 1 example.com"
+  },
+  {
+    "input": "Run mtr to yahoo.com with IPv6, 75 cycles, interval 2s, and output in raw format",
+    "output": "mtr -6 --raw -c 75 -i 2 yahoo.com"
+  },
+  {
+    "input": "Run mtr to github.com with ASN lookup, 150 cycles, interval 5s, and output in report-wide format",
+    "output": "mtr --aslookup --report-wide -c 150 -i 5 github.com"
+  },
+  {
+    "input": "Run mtr to amazon.com with 300 cycles, interval 10s, and output in split format",
+    "output": "mtr --split -c 300 -i 10 amazon.com"
+  },
+  {
+    "input": "Run mtr to facebook.com with 100 cycles, interval 0.1s, and output in wide format",
+    "output": "mtr --wide -c 100 -i 0.1 facebook.com"
+  },
+  {
+    "input": "Run mtr to google.com with TCP, 200 cycles, interval 0.5s, and output in JSON format",
+    "output": "mtr --tcp --json -c 200 -i 0.5 google.com"
+  },
+  {
+    "input": "Run mtr to 8.8.8.8 with UDP, 50 cycles, interval 1s, and output in CSV format",
+    "output": "mtr --udp --csv -c 50 -i 1 8.8.8.8"
+  }
+]

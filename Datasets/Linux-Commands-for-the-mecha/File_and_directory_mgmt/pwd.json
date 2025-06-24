@@ -1,0 +1,166 @@
+[
+  {
+    "input": "Show the full path to the directory you are currently in.",
+    "output": "pwd"
+  },
+  {
+    "input": "Print the current working directory, resolving any symbolic links.",
+    "output": "pwd -P"
+  },
+  {
+    "input": "Display the logical path of your current directory, including symlinks.",
+    "output": "pwd -L"
+  },
+  {
+    "input": "Store the present working directory in a variable called `dir` and print it.",
+    "output": "dir=$(pwd); echo $dir"
+  },
+  {
+    "input": "Output the current directory path with a custom message.",
+    "output": "echo \"You are in: $(pwd)\""
+  },
+  {
+    "input": "Print the current directory from within a shell script.",
+    "output": "#!/bin/bash\necho \"Current dir: $(pwd)\""
+  },
+  {
+    "input": "After changing to `/var/log`, display your location.",
+    "output": "cd /var/log && pwd"
+  },
+  {
+    "input": "List the contents of your current directory after showing its path.",
+    "output": "pwd && ls"
+  },
+  {
+    "input": "Print the previous working directory.",
+    "output": "echo $OLDPWD"
+  },
+  {
+    "input": "Check the version of the `pwd` binary on your system.",
+    "output": "/bin/pwd --version"
+  },
+  {
+    "input": "Show help information for the `pwd`.",
+    "output": "pwd --help"
+  },
+  {
+    "input": "Use `pwd` in a script to ensure the user is in `/home/user` before proceeding.",
+    "output": "if [ $(pwd) != \"/home/user\" ]; then echo \"Please cd to /home/user\"; exit 1; fi"
+  },
+  {
+    "input": "Use `pwd` as part of a `find` to search for `.log` files in your current directory.",
+    "output": "find $(pwd) -name \"*.log\""
+  },
+  {
+    "input": "Print the value of the `$PWD` environment variable.",
+    "output": "echo $PWD"
+  },
+  {
+    "input": "Use `/bin/pwd` to display your current directory.",
+    "output": "/bin/pwd"
+  },
+  {
+    "input": "Show your current directory path, even if you navigated there using a symlink.",
+    "output": "pwd -L"
+  },
+  {
+    "input": "Print the physical directory path, ignoring symlinks.",
+    "output": "pwd -P"
+  },
+  {
+    "input": "Display your current directory and store it in a variable for later use in a script.",
+    "output": "current_dir=$(pwd)"
+  },
+  {
+    "input": "Combine `pwd` with an error message if a directory does not exist.",
+    "output": "if [ ! -d \"/some/dir\" ]; then echo \"Not found, current: $(pwd)\"; fi"
+  },
+  {
+    "input": "Use `type -a pwd` to find all locations of the `pwd` executable.",
+    "output": "type -a pwd"
+  },
+  {
+    "input": "Show me a detailed, human-readable list of my Pictures folder",
+    "output": "ls -lh ~/Pictures"
+  },
+  {
+    "input": "Show the full path to the directory you are currently in.",
+    "output": "pwd"
+  },
+  {
+    "input": "Print the current working directory, resolving any symbolic links.",
+    "output": "pwd -P"
+  },
+  {
+    "input": "Display the logical path of your current directory, including symlinks.",
+    "output": "pwd -L"
+  },
+  {
+    "input": "Store the present working directory in a variable called dir and print it.",
+    "output": "dir=$(pwd); echo $dir"
+  },
+  {
+    "input": "Output the current directory path with a custom message.",
+    "output": "echo \"You are in: $(pwd)\""
+  },
+  {
+    "input": "Print the current directory from within a shell script.",
+    "output": "#!/bin/bash\necho \"Current dir: $(pwd)\""
+  },
+  {
+    "input": "After changing to /var/log, display your location.",
+    "output": "cd /var/log && pwd"
+  },
+  {
+    "input": "List the contents of your current directory after showing its path.",
+    "output": "pwd && ls"
+  },
+  {
+    "input": "Print the previous working directory.",
+    "output": "echo $OLDPWD"
+  },
+  {
+    "input": "Check the version of the pwd binary on your system.",
+    "output": "/bin/pwd --version"
+  },
+  {
+    "input": "Show help information for the pwd.",
+    "output": "pwd --help"
+  },
+  {
+    "input": "Use pwd in a script to ensure the user is in /home/user before proceeding.",
+    "output": "if [ $(pwd) != \"/home/user\" ]; then echo \"Please cd to /home/user\"; exit 1; fi"
+  },
+  {
+    "input": "Use pwd as part of a find to search for .log files in your current directory.",
+    "output": "find $(pwd) -name \"*.log\""
+  },
+  {
+    "input": "Print the value of the $PWD environment variable.",
+    "output": "echo $PWD"
+  },
+  {
+    "input": "Use /bin/pwd to display your current directory.",
+    "output": "/bin/pwd"
+  },
+  {
+    "input": "Show your current directory path, even if you navigated there using a symlink.",
+    "output": "pwd -L"
+  },
+  {
+    "input": "Print the physical directory path, ignoring symlinks.",
+    "output": "pwd -P"
+  },
+  {
+    "input": "Display your current directory and store it in a variable for later use in a script.",
+    "output": "current_dir=$(pwd)"
+  },
+  {
+    "input": "Combine pwd with an error message if a directory does not exist.",
+    "output": "if [ ! -d \"/some/dir\" ]; then echo \"Not found, current: $(pwd)\"; fi"
+  },
+  {
+    "input": "Use type -a pwd to find all locations of the pwd executable.",
+    "output": "type -a pwd"
+  }
+]

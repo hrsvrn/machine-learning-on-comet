@@ -1,0 +1,42 @@
+[
+    {
+        "input": "Install local .deb",
+        "output": "sudo dpkg -i package.deb"
+    },
+    {
+        "input": "Install multiple .debs",
+        "output": "sudo dpkg -i pkg1.deb pkg2.deb"
+    },
+    {
+        "input": "Force dependencies",
+        "output": "sudo dpkg -i --force-depends package.deb"
+    },
+    {
+        "input": "Force all options",
+        "output": "sudo dpkg -i --force-all package.deb"
+    },
+    {
+        "input": "Force old conffile",
+        "output": "sudo dpkg -i --force-confold package.deb"
+    },
+    {
+        "input": "Force new conffile",
+        "output": "sudo dpkg -i --force-confnew package.deb"
+    },
+    {
+        "input": "Simulate install",
+        "output": "sudo dpkg -i --dry-run package.deb"
+    },
+    {
+        "input": "Install in custom root",
+        "output": "sudo dpkg -i --root=/mnt package.deb"
+    },
+    {
+        "input": "Install skipping triggers",
+        "output": "sudo dpkg -i --skip-same-depends package.deb"
+    },
+    {
+        "input": "Show help",
+        "output": "dpkg -i --help"
+    }
+]

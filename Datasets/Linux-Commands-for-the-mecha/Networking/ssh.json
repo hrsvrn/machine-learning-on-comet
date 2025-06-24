@@ -1,0 +1,458 @@
+[
+    {
+        "input": "Connect to a remote server using SSH",
+        "output": "ssh user@hostname"
+    },
+    {
+        "input": "Connect to SSH using a specific port",
+        "output": "ssh -p 2222 user@hostname"
+    },
+    {
+        "input": "Connect using a specific private key",
+        "output": "ssh -i ~/.ssh/private_key user@hostname"
+    },
+    {
+        "input": "Connect with verbose output for debugging",
+        "output": "ssh -v user@hostname"
+    },
+    {
+        "input": "Connect with extra verbose output",
+        "output": "ssh -vv user@hostname"
+    },
+    {
+        "input": "Connect with maximum verbose output",
+        "output": "ssh -vvv user@hostname"
+    },
+    {
+        "input": "Connect and execute a single command",
+        "output": "ssh user@hostname 'ls -la'"
+    },
+    {
+        "input": "Connect and execute multiple commands",
+        "output": "ssh user@hostname 'cd /tmp && ls && pwd'"
+    },
+    {
+        "input": "Connect without executing a command (force pseudo-terminal)",
+        "output": "ssh -t user@hostname"
+    },
+    {
+        "input": "Connect without pseudo-terminal allocation",
+        "output": "ssh -T user@hostname"
+    },
+    {
+        "input": "Connect with X11 forwarding enabled",
+        "output": "ssh -X user@hostname"
+    },
+    {
+        "input": "Connect with trusted X11 forwarding",
+        "output": "ssh -Y user@hostname"
+    },
+    {
+        "input": "Connect with compression enabled",
+        "output": "ssh -C user@hostname"
+    },
+    {
+        "input": "Connect and disable strict host key checking",
+        "output": "ssh -o StrictHostKeyChecking=no user@hostname"
+    },
+    {
+        "input": "Connect with password authentication disabled",
+        "output": "ssh -o PasswordAuthentication=no user@hostname"
+    },
+    {
+        "input": "Connect with specific SSH protocol version",
+        "output": "ssh -o Protocol=2 user@hostname"
+    },
+    {
+        "input": "Connect using IPv4 only",
+        "output": "ssh -4 user@hostname"
+    },
+    {
+        "input": "Connect using IPv6 only",
+        "output": "ssh -6 user@hostname"
+    },
+    {
+        "input": "Connect with local port forwarding",
+        "output": "ssh -L 8080:localhost:80 user@hostname"
+    },
+    {
+        "input": "Connect with remote port forwarding",
+        "output": "ssh -R 8080:localhost:80 user@hostname"
+    },
+    {
+        "input": "Connect with dynamic SOCKS proxy",
+        "output": "ssh -D 1080 user@hostname"
+    },
+    {
+        "input": "Connect and run in background",
+        "output": "ssh -f user@hostname 'command'"
+    },
+    {
+        "input": "Connect without executing remote command",
+        "output": "ssh -N user@hostname"
+    },
+    {
+        "input": "Connect with connection timeout",
+        "output": "ssh -o ConnectTimeout=10 user@hostname"
+    },
+    {
+        "input": "Connect with specific cipher",
+        "output": "ssh -c aes256-ctr user@hostname"
+    },
+    {
+        "input": "Connect with specific MAC algorithm",
+        "output": "ssh -m hmac-sha2-256 user@hostname"
+    },
+    {
+        "input": "Connect using agent forwarding",
+        "output": "ssh -A user@hostname"
+    },
+    {
+        "input": "Connect without agent forwarding",
+        "output": "ssh -a user@hostname"
+    },
+    {
+        "input": "Connect through a jump host",
+        "output": "ssh -J jumphost user@targethost"
+    },
+    {
+        "input": "Connect through multiple jump hosts",
+        "output": "ssh -J jumphost1,jumphost2 user@targethost"
+    },
+    {
+        "input": "Generate SSH key pair (RSA)",
+        "output": "ssh-keygen -t rsa -b 4096"
+    },
+    {
+        "input": "Generate SSH key pair (ED25519)",
+        "output": "ssh-keygen -t ed25519"
+    },
+    {
+        "input": "Generate SSH key pair with specific filename",
+        "output": "ssh-keygen -t rsa -f ~/.ssh/mykey"
+    },
+    {
+        "input": "Generate SSH key pair with comment",
+        "output": "ssh-keygen -t rsa -C 'user@email.com'"
+    },
+    {
+        "input": "Generate SSH key pair without passphrase",
+        "output": "ssh-keygen -t rsa -N ''"
+    },
+    {
+        "input": "Copy public key to remote server",
+        "output": "ssh-copy-id user@hostname"
+    },
+    {
+        "input": "Copy specific key to remote server",
+        "output": "ssh-copy-id -i ~/.ssh/mykey.pub user@hostname"
+    },
+    {
+        "input": "Copy key using specific port",
+        "output": "ssh-copy-id -p 2222 user@hostname"
+    },
+    {
+        "input": "Start SSH agent",
+        "output": "ssh-agent bash"
+    },
+    {
+        "input": "Add key to SSH agent",
+        "output": "ssh-add ~/.ssh/private_key"
+    },
+    {
+        "input": "List keys in SSH agent",
+        "output": "ssh-add -l"
+    },
+    {
+        "input": "Remove all keys from SSH agent",
+        "output": "ssh-add -D"
+    },
+    {
+        "input": "Remove specific key from SSH agent",
+        "output": "ssh-add -d ~/.ssh/private_key"
+    },
+    {
+        "input": "Connect with quiet mode",
+        "output": "ssh -q user@hostname"
+    },
+    {
+        "input": "Connect with batch mode (no prompts)",
+        "output": "ssh -B user@hostname"
+    },
+    {
+        "input": "Connect with escape character disabled",
+        "output": "ssh -e none user@hostname"
+    },
+    {
+        "input": "Connect with custom escape character",
+        "output": "ssh -e '^B' user@hostname"
+    },
+    {
+        "input": "Connect using configuration file",
+        "output": "ssh -F /path/to/config user@hostname"
+    },
+    {
+        "input": "Connect with login name override",
+        "output": "ssh -l username hostname"
+    },
+    {
+        "input": "Connect with specific bind address",
+        "output": "ssh -b 192.168.1.10 user@hostname"
+    },
+    {
+        "input": "Connect with gateway ports enabled",
+        "output": "ssh -g user@hostname"
+    },
+    {
+        "input": "Connect and allocate tty",
+        "output": "ssh -t user@hostname 'top'"
+    },
+    {
+        "input": "Transfer file using SCP",
+        "output": "scp file.txt user@hostname:/remote/path/"
+    },
+    {
+        "input": "Transfer file using SCP with specific port",
+        "output": "scp -P 2222 file.txt user@hostname:/remote/path/"
+    },
+    {
+        "input": "Transfer file using SCP with compression",
+        "output": "scp -C file.txt user@hostname:/remote/path/"
+    },
+    {
+        "input": "Transfer file using SCP recursively",
+        "output": "scp -r /local/dir user@hostname:/remote/path/"
+    },
+    {
+        "input": "Transfer file using SCP with verbose output",
+        "output": "scp -v file.txt user@hostname:/remote/path/"
+    },
+    {
+        "input": "Transfer file using SCP with progress meter",
+        "output": "scp -p file.txt user@hostname:/remote/path/"
+    },
+    {
+        "input": "Transfer file using SCP preserving attributes",
+        "output": "scp -p file.txt user@hostname:/remote/path/"
+    },
+    {
+        "input": "Transfer from remote to local using SCP",
+        "output": "scp user@hostname:/remote/file.txt /local/path/"
+    },
+    {
+        "input": "Transfer between two remote hosts using SCP",
+        "output": "scp user1@host1:/path/file.txt user2@host2:/path/"
+    },
+    {
+        "input": "Start SFTP session",
+        "output": "sftp user@hostname"
+    },
+    {
+        "input": "Start SFTP with specific port",
+        "output": "sftp -P 2222 user@hostname"
+    },
+    {
+        "input": "Start SFTP with batch file",
+        "output": "sftp -b commands.txt user@hostname"
+    },
+    {
+        "input": "Start SFTP with compression",
+        "output": "sftp -C user@hostname"
+    },
+    {
+        "input": "Connect with keep-alive messages",
+        "output": "ssh -o ServerAliveInterval=60 user@hostname"
+    },
+    {
+        "input": "Connect with maximum keep-alive count",
+        "output": "ssh -o ServerAliveCountMax=3 user@hostname"
+    },
+    {
+        "input": "Connect with connection sharing",
+        "output": "ssh -o ControlMaster=auto -o ControlPath=~/.ssh/master-%r@%h:%p user@hostname"
+    },
+    {
+        "input": "Connect using existing master connection",
+        "output": "ssh -o ControlMaster=no user@hostname"
+    },
+    {
+        "input": "Connect with connection persistence",
+        "output": "ssh -o ControlPersist=600 user@hostname"
+    },
+    {
+        "input": "Check SSH connection to host",
+        "output": "ssh -O check user@hostname"
+    },
+    {
+        "input": "Stop master connection",
+        "output": "ssh -O stop user@hostname"
+    },
+    {
+        "input": "Exit master connection",
+        "output": "ssh -O exit user@hostname"
+    },
+    {
+        "input": "Connect with specific host key algorithms",
+        "output": "ssh -o HostKeyAlgorithms=ssh-rsa user@hostname"
+    },
+    {
+        "input": "Connect with specific key exchange algorithms",
+        "output": "ssh -o KexAlgorithms=diffie-hellman-group14-sha256 user@hostname"
+    },
+    {
+        "input": "Connect with preferred authentications",
+        "output": "ssh -o PreferredAuthentications=publickey user@hostname"
+    },
+    {
+        "input": "Connect with public key authentication only",
+        "output": "ssh -o PubkeyAuthentication=yes -o PasswordAuthentication=no user@hostname"
+    },
+    {
+        "input": "Connect with keyboard-interactive authentication",
+        "output": "ssh -o KbdInteractiveAuthentication=yes user@hostname"
+    },
+    {
+        "input": "Connect with challenge-response authentication",
+        "output": "ssh -o ChallengeResponseAuthentication=yes user@hostname"
+    },
+    {
+        "input": "Connect with GSSAPI authentication",
+        "output": "ssh -o GSSAPIAuthentication=yes user@hostname"
+    },
+    {
+        "input": "Connect with host-based authentication",
+        "output": "ssh -o HostbasedAuthentication=yes user@hostname"
+    },
+    {
+        "input": "Connect and verify host key fingerprint",
+        "output": "ssh -o FingerprintHash=sha256 user@hostname"
+    },
+    {
+        "input": "Connect with specific log level",
+        "output": "ssh -o LogLevel=DEBUG user@hostname"
+    },
+    {
+        "input": "Connect with user known hosts file",
+        "output": "ssh -o UserKnownHostsFile=~/.ssh/known_hosts2 user@hostname"
+    },
+    {
+        "input": "Connect with global known hosts file",
+        "output": "ssh -o GlobalKnownHostsFile=/etc/ssh/ssh_known_hosts user@hostname"
+    },
+    {
+        "input": "Connect and ignore user known hosts",
+        "output": "ssh -o UserKnownHostsFile=/dev/null user@hostname"
+    },
+    {
+        "input": "Connect with identity files only",
+        "output": "ssh -o IdentitiesOnly=yes user@hostname"
+    },
+    {
+        "input": "Connect with multiple identity files",
+        "output": "ssh -i ~/.ssh/key1 -i ~/.ssh/key2 user@hostname"
+    },
+    {
+        "input": "Connect with no host authentication",
+        "output": "ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null user@hostname"
+    },
+    {
+        "input": "Connect through HTTP proxy",
+        "output": "ssh -o ProxyCommand='nc -X connect -x proxy:8080 %h %p' user@hostname"
+    },
+    {
+        "input": "Connect through SOCKS proxy",
+        "output": "ssh -o ProxyCommand='nc -X 5 -x proxy:1080 %h %p' user@hostname"
+    },
+    {
+        "input": "Connect with tunnel device",
+        "output": "ssh -w 0:0 user@hostname"
+    },
+    {
+        "input": "Connect with VPN tunnel",
+        "output": "ssh -o Tunnel=yes user@hostname"
+    },
+    {
+        "input": "Connect with request TTY",
+        "output": "ssh -o RequestTTY=yes user@hostname"
+    },
+    {
+        "input": "Connect without request TTY",
+        "output": "ssh -o RequestTTY=no user@hostname"
+    },
+    {
+        "input": "Connect with exit on forward failure",
+        "output": "ssh -o ExitOnForwardFailure=yes user@hostname"
+    },
+    {
+        "input": "Connect with local forward for multiple ports",
+        "output": "ssh -L 8080:localhost:80 -L 8443:localhost:443 user@hostname"
+    },
+    {
+        "input": "Connect with remote forward for multiple ports",
+        "output": "ssh -R 8080:localhost:80 -R 8443:localhost:443 user@hostname"
+    },
+    {
+        "input": "Connect with dynamic forward on specific interface",
+        "output": "ssh -D 127.0.0.1:1080 user@hostname"
+    },
+    {
+        "input": "Establish reverse SSH tunnel",
+        "output": "ssh -R 2222:localhost:22 user@remotehost"
+    },
+    {
+        "input": "Create persistent reverse tunnel",
+        "output": "ssh -fNR 2222:localhost:22 user@remotehost"
+    },
+    {
+        "input": "Mount remote filesystem using SSHFS",
+        "output": "sshfs user@hostname:/remote/path /local/mountpoint"
+    },
+    {
+        "input": "Mount SSHFS with specific port",
+        "output": "sshfs -p 2222 user@hostname:/remote/path /local/mountpoint"
+    },
+    {
+        "input": "Mount SSHFS with compression",
+        "output": "sshfs -o compression=yes user@hostname:/remote/path /local/mountpoint"
+    },
+    {
+        "input": "Unmount SSHFS",
+        "output": "fusermount -u /local/mountpoint"
+    },
+    {
+        "input": "Connect with custom SSH directory",
+        "output": "ssh -o ControlPath=~/.ssh/custom/master-%r@%h:%p user@hostname"
+    },
+    {
+        "input": "Connect with hash known hosts",
+        "output": "ssh -o HashKnownHosts=yes user@hostname"
+    },
+    {
+        "input": "Connect with visual host key",
+        "output": "ssh -o VisualHostKey=yes user@hostname"
+    },
+    {
+        "input": "Connect with update host keys",
+        "output": "ssh -o UpdateHostKeys=yes user@hostname"
+    },
+    {
+        "input": "Generate host key fingerprint",
+        "output": "ssh-keygen -lf /etc/ssh/ssh_host_rsa_key.pub"
+    },
+    {
+        "input": "Scan host keys",
+        "output": "ssh-keyscan hostname"
+    },
+    {
+        "input": "Scan host keys on specific port",
+        "output": "ssh-keyscan -p 2222 hostname"
+    },
+    {
+        "input": "Remove host key from known_hosts",
+        "output": "ssh-keygen -R hostname"
+    },
+    {
+        "input": "Test SSH configuration",
+        "output": "ssh -T git@github.com"
+    }
+]

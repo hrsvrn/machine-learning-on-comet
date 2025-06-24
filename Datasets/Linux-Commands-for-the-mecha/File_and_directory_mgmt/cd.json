@@ -1,0 +1,822 @@
+[
+    {
+    "input": "Go to the root directory",
+    "output": "cd /"
+  },
+  {
+    "input": "Move to the Documents folder inside the current directory",
+    "output": "cd Documents"
+  },
+  {
+    "input": "Switch to the /usr/local directory",
+    "output": "cd /usr/local"
+  },
+  {
+    "input": "Navigate to the previous directory you were in",
+    "output": "cd -"
+  },
+  {
+    "input": "Go up one directory level",
+    "output": "cd .."
+  },
+  {
+    "input": "Go up two directory levels",
+    "output": "cd ../.."
+  },
+  {
+    "input": "Change to the Downloads directory in your home folder",
+    "output": "cd ~/Downloads"
+  },
+  {
+    "input": "Switch to another user's home directory, for user 'alice'",
+    "output": "cd ~alice"
+  },
+  {
+    "input": "Change to a directory with spaces in its name called 'My Files'",
+    "output": "cd 'My Files'"
+  },
+  {
+    "input": "Change to the directory /var/log using an absolute path",
+    "output": "cd /var/log"
+  },
+  {
+    "input": "Move to a subdirectory called 'projects' inside the current directory",
+    "output": "cd projects"
+  },
+  {
+    "input": "Return to your home directory using the tilde symbol",
+    "output": "cd ~"
+  },
+  {
+    "input": "Change to the parent directory and list its contents",
+    "output": "cd .. && ls"
+  },
+  {
+    "input": "Change to the /tmp directory and print the current directory path",
+    "output": "cd /tmp && pwd"
+  },
+  {
+    "input": "Change to the directory /etc/X11 regardless of your current location",
+    "output": "cd /etc/X11"
+  },
+  {
+    "input": "Change to a directory using a relative path, going up one level and into 'bin'",
+    "output": "cd ../bin"
+  },
+  {
+    "input": "Change to the directory pointed to by the symbolic link 'mylink' without following the link",
+    "output": "cd -P mylink"
+  },
+  {
+    "input": "Change to the directory pointed to by the symbolic link 'mylink' and follow the link",
+    "output": "cd -L mylink"
+  },
+  {
+    "input": "Go to your home directory",
+    "output": "cd"
+  },
+  {
+    "input": "Switch to the root directory",
+    "output": "cd /"
+  },
+  {
+    "input": "Move to the Documents folder",
+    "output": "cd Documents"
+  },
+  {
+    "input": "Change to the Downloads directory in your home folder",
+    "output": "cd ~/Downloads"
+  },
+  {
+    "input": "Go up one directory level",
+    "output": "cd .."
+  },
+  {
+    "input": "Go up two directory levels",
+    "output": "cd ../.."
+  },
+  {
+    "input": "Change to the /etc directory",
+    "output": "cd /etc"
+  },
+  {
+    "input": "Switch to the /usr/local directory",
+    "output": "cd /usr/local"
+  },
+  {
+    "input": "Navigate to the previous directory",
+    "output": "cd -"
+  },
+  {
+    "input": "Change to the Pictures folder inside Documents",
+    "output": "cd Documents/Pictures"
+  },
+  {
+    "input": "Go to the /var/log directory",
+    "output": "cd /var/log"
+  },
+  {
+    "input": "Change to the /tmp directory",
+    "output": "cd /tmp"
+  },
+  {
+    "input": "Go to the Music directory in your home folder",
+    "output": "cd ~/Music"
+  },
+  {
+    "input": "Change to the parent directory and list its contents",
+    "output": "cd .. && ls"
+  },
+  {
+    "input": "Move to the Desktop directory",
+    "output": "cd Desktop"
+  },
+  {
+    "input": "Change to the /opt directory",
+    "output": "cd /opt"
+  },
+  {
+    "input": "Switch to another user's home directory (alice)",
+    "output": "cd ~alice"
+  },
+  {
+    "input": "Change to the /srv/www directory",
+    "output": "cd /srv/www"
+  },
+  {
+    "input": "Change to the /mnt directory",
+    "output": "cd /mnt"
+  },
+  {
+    "input": "Go to the /media directory",
+    "output": "cd /media"
+  },
+  {
+    "input": "Change to the /dev directory",
+    "output": "cd /dev"
+  },
+  {
+    "input": "Change to the /proc directory",
+    "output": "cd /proc"
+  },
+  {
+    "input": "Move to the /sys directory",
+    "output": "cd /sys"
+  },
+  {
+    "input": "Change to the /run directory",
+    "output": "cd /run"
+  },
+  {
+    "input": "Change to the /boot directory",
+    "output": "cd /boot"
+  },
+  {
+    "input": "Switch to the /home directory",
+    "output": "cd /home"
+  },
+  {
+    "input": "Go to the /usr/bin directory",
+    "output": "cd /usr/bin"
+  },
+  {
+    "input": "Change to the /usr/sbin directory",
+    "output": "cd /usr/sbin"
+  },
+  {
+    "input": "Go to the /usr/share directory",
+    "output": "cd /usr/share"
+  },
+  {
+    "input": "Change to the /lib directory",
+    "output": "cd /lib"
+  },
+  {
+    "input": "Change to the /lib64 directory",
+    "output": "cd /lib64"
+  },
+  {
+    "input": "Switch to the /sbin directory",
+    "output": "cd /sbin"
+  },
+  {
+    "input": "Change to the /bin directory",
+    "output": "cd /bin"
+  },
+  {
+    "input": "Change to a directory called 'projects' in your home",
+    "output": "cd ~/projects"
+  },
+  {
+    "input": "Change to a directory called 'work' in your home",
+    "output": "cd ~/work"
+  },
+  {
+    "input": "Go to a directory named 'backup' in /var",
+    "output": "cd /var/backup"
+  },
+  {
+    "input": "Change to the /usr/local/bin directory",
+    "output": "cd /usr/local/bin"
+  },
+  {
+    "input": "Change to the /usr/local/sbin directory",
+    "output": "cd /usr/local/sbin"
+  },
+  {
+    "input": "Change to the /usr/local/share directory",
+    "output": "cd /usr/local/share"
+  },
+  {
+    "input": "Change to the /usr/include directory",
+    "output": "cd /usr/include"
+  },
+  {
+    "input": "Change to the /usr/games directory",
+    "output": "cd /usr/games"
+  },
+  {
+    "input": "Change to the /usr/src directory",
+    "output": "cd /usr/src"
+  },
+  {
+    "input": "Change to the /usr/lib directory",
+    "output": "cd /usr/lib"
+  },
+  {
+    "input": "Change to the /usr/lib64 directory",
+    "output": "cd /usr/lib64"
+  },
+  {
+    "input": "Change to the /lost+found directory",
+    "output": "cd /lost+found"
+  },
+  {
+    "input": "Change to the /snap directory",
+    "output": "cd /snap"
+  },
+  {
+    "input": "Change to a directory with spaces in its name called 'My Files'",
+    "output": "cd 'My Files'"
+  },
+  {
+    "input": "Change to a hidden directory called '.config' in your home",
+    "output": "cd ~/.config"
+  },
+  {
+    "input": "Change to a hidden directory called '.ssh' in your home",
+    "output": "cd ~/.ssh"
+  },
+  {
+    "input": "Change to a directory called 'test' in the current directory",
+    "output": "cd test"
+  },
+  {
+    "input": "Change to a directory called 'scripts' in the current directory",
+    "output": "cd scripts"
+  },
+  {
+    "input": "Change to the directory /etc/X11",
+    "output": "cd /etc/X11"
+  },
+  {
+    "input": "Change to the directory /etc/network",
+    "output": "cd /etc/network"
+  },
+  {
+    "input": "Change to the directory /etc/apt",
+    "output": "cd /etc/apt"
+  },
+  {
+    "input": "Change to the directory /etc/systemd",
+    "output": "cd /etc/systemd"
+  },
+  {
+    "input": "Change to the directory /etc/cron.d",
+    "output": "cd /etc/cron.d"
+  },
+  {
+    "input": "Change to the directory /etc/init.d",
+    "output": "cd /etc/init.d"
+  },
+  {
+    "input": "Change to the directory /etc/skel",
+    "output": "cd /etc/skel"
+  },
+  {
+    "input": "Change to the directory /etc/ssl",
+    "output": "cd /etc/ssl"
+  },
+  {
+    "input": "Change to the directory /etc/security",
+    "output": "cd /etc/security"
+  },
+  {
+    "input": "Change to the directory /etc/pam.d",
+    "output": "cd /etc/pam.d"
+  },
+  {
+    "input": "Change to the directory /etc/profile.d",
+    "output": "cd /etc/profile.d"
+  },
+  {
+    "input": "Change to the /tmp/test directory",
+    "output": "cd /tmp/test"
+  },
+  {
+    "input": "Change to the /tmp/logs directory",
+    "output": "cd /tmp/logs"
+  },
+  {
+    "input": "Change to the /tmp/build directory",
+    "output": "cd /tmp/build"
+  },
+  {
+    "input": "Change to the /var/cache directory",
+    "output": "cd /var/cache"
+  },
+  {
+    "input": "Change to the /var/spool directory",
+    "output": "cd /var/spool"
+  },
+  {
+    "input": "Change to the /var/mail directory",
+    "output": "cd /var/mail"
+  },
+  {
+    "input": "Change to the /var/tmp directory",
+    "output": "cd /var/tmp"
+  },
+  {
+    "input": "Change to the /var/lib directory",
+    "output": "cd /var/lib"
+  },
+  {
+    "input": "Change to the /var/run directory",
+    "output": "cd /var/run"
+  },
+  {
+    "input": "Change to the /var/lock directory",
+    "output": "cd /var/lock"
+  },
+  {
+    "input": "Change to the /var/backups directory",
+    "output": "cd /var/backups"
+  },
+  {
+    "input": "Change to the /var/opt directory",
+    "output": "cd /var/opt"
+  },
+  {
+    "input": "Change to the /var/crash directory",
+    "output": "cd /var/crash"
+  },
+  {
+    "input": "Change to the /var/log/apache2 directory",
+    "output": "cd /var/log/apache2"
+  },
+  {
+    "input": "Change to the /var/log/nginx directory",
+    "output": "cd /var/log/nginx"
+  },
+  {
+    "input": "Change to the /var/log/mysql directory",
+    "output": "cd /var/log/mysql"
+  },
+  {
+    "input": "Change to the /var/log/postgresql directory",
+    "output": "cd /var/log/postgresql"
+  },
+  {
+    "input": "Change to the /var/log/syslog directory",
+    "output": "cd /var/log/syslog"
+  },
+  {
+    "input": "Change to the /var/log/journal directory",
+    "output": "cd /var/log/journal"
+  },
+  {
+    "input": "Change to the /var/log/kern directory",
+    "output": "cd /var/log/kern"
+  },
+  {
+    "input": "Change to the /var/log/auth directory",
+    "output": "cd /var/log/auth"
+  },
+  {
+    "input": "Change to the /var/log/apt directory",
+    "output": "cd /var/log/apt"
+  },
+  {
+    "input": "Change to the /var/log/dpkg directory",
+    "output": "cd /var/log/dpkg"
+  },
+  {
+    "input": "Change to the /var/log/user directory",
+    "output": "cd /var/log/user"
+  },
+  {
+    "input": "Change to the /var/log/installer directory",
+    "output": "cd /var/log/installer"
+  },
+  {
+    "input": "Change to the /var/log/boot directory",
+    "output": "cd /var/log/boot"
+  },
+  {
+    "input": "Change to the /var/log/fsck directory",
+    "output": "cd /var/log/fsck"
+  },
+  {
+    "input": "Change to the /var/log/sa directory",
+    "output": "cd /var/log/sa"
+  },
+  {
+    "input": "Change to the /var/log/pm-powersave directory",
+    "output": "cd /var/log/pm-powersave"
+  },
+  {
+    "input": "Change to the /var/log/aptitude directory",
+    "output": "cd /var/log/aptitude"
+  },
+  {
+    "input": "Change to the /var/log/unattended-upgrades directory",
+    "output": "cd /var/log/unattended-upgrades"
+  },
+  {
+    "input": "Change to the /var/log/clamav directory",
+    "output": "cd /var/log/clamav"
+  },
+  {
+    "input": "Change to the /var/log/exim4 directory",
+    "output": "cd /var/log/exim4"
+  },
+  {
+    "input": "Change to the /var/log/news directory",
+    "output": "cd /var/log/news"
+  },
+  {
+    "input": "Change to the /var/log/ppp directory",
+    "output": "cd /var/log/ppp"
+  },
+  {
+    "input": "Change to the /var/log/samba directory",
+    "output": "cd /var/log/samba"
+  },
+  {
+    "input": "Change to the /var/log/ufw directory",
+    "output": "cd /var/log/ufw"
+  },
+  {
+    "input": "Change to the /var/log/wtmp directory",
+    "output": "cd /var/log/wtmp"
+  },
+  {
+    "input": "Change to the /var/log/xrdp directory",
+    "output": "cd /var/log/xrdp"
+  },
+  {
+    "input": "Change to the /var/log/yum.log directory",
+    "output": "cd /var/log/yum.log"
+  },
+  {
+    "input": "Change to the /var/log/zypper.log directory",
+    "output": "cd /var/log/zypper.log"
+  },
+  {
+    "input": "Change to the /var/log/lastlog directory",
+    "output": "cd /var/log/lastlog"
+  },
+  {
+    "input": "Change to the /var/log/messages directory",
+    "output": "cd /var/log/messages"
+  },
+  {
+    "input": "Change to the /var/log/secure directory",
+    "output": "cd /var/log/secure"
+  },
+  {
+    "input": "Change to the /var/log/maillog directory",
+    "output": "cd /var/log/maillog"
+  },
+  {
+    "input": "Change to the /var/log/cron directory",
+    "output": "cd /var/log/cron"
+  },
+  {
+    "input": "Change to the /var/log/audit directory",
+    "output": "cd /var/log/audit"
+  },
+  {
+    "input": "Change to the /var/log/btmp directory",
+    "output": "cd /var/log/btmp"
+  },
+  {
+    "input": "Change to the /var/log/alternatives.log directory",
+    "output": "cd /var/log/alternatives.log"
+  },
+  {
+    "input": "Change to the /var/log/apt/history.log directory",
+    "output": "cd /var/log/apt/history.log"
+  },
+  {
+    "input": "Change to the /var/log/apt/term.log directory",
+    "output": "cd /var/log/apt/term.log"
+  },
+  {
+    "input": "Change to the /var/log/aptitude directory",
+    "output": "cd /var/log/aptitude"
+  },
+  {
+    "input": "Change to the /var/log/boot.log directory",
+    "output": "cd /var/log/boot.log"
+  },
+  {
+    "input": "Change to the /var/log/dmesg directory",
+    "output": "cd /var/log/dmesg"
+  },
+  {
+    "input": "Change to the /var/log/fail2ban.log directory",
+    "output": "cd /var/log/fail2ban.log"
+  },
+  {
+    "input": "Change to the /var/log/fontconfig.log directory",
+    "output": "cd /var/log/fontconfig.log"
+  },
+  {
+    "input": "Change to the /var/log/gpu-manager.log directory",
+    "output": "cd /var/log/gpu-manager.log"
+  },
+  {
+    "input": "Change to the /var/log/hp directory",
+    "output": "cd /var/log/hp"
+  },
+  {
+    "input": "Change to the /var/log/kern.log directory",
+    "output": "cd /var/log/kern.log"
+  },
+  {
+    "input": "Change to the /var/log/lastlog directory",
+    "output": "cd /var/log/lastlog"
+  },
+  {
+    "input": "Change to the /var/log/lightdm directory",
+    "output": "cd /var/log/lightdm"
+  },
+  {
+    "input": "Change to the /var/log/mail.err directory",
+    "output": "cd /var/log/mail.err"
+  },
+  {
+    "input": "Change to the /var/log/mail.info directory",
+    "output": "cd /var/log/mail.info"
+  },
+  {
+    "input": "Change to the /var/log/mail.log directory",
+    "output": "cd /var/log/mail.log"
+  },
+  {
+    "input": "Change to the /var/log/mail.warn directory",
+    "output": "cd /var/log/mail.warn"
+  },
+  {
+    "input": "Change to the /var/log/messages directory",
+    "output": "cd /var/log/messages"
+  },
+  {
+    "input": "Change to the /var/log/pm-powersave.log directory",
+    "output": "cd /var/log/pm-powersave.log"
+  },
+  {
+    "input": "Change to the /var/log/syslog directory",
+    "output": "cd /var/log/syslog"
+  },
+  {
+    "input": "Change to the /var/log/user.log directory",
+    "output": "cd /var/log/user.log"
+  },
+  {
+    "input": "Change to the /var/log/wtmp directory",
+    "output": "cd /var/log/wtmp"
+  },
+  {
+    "input": "Change to the /var/log/Xorg.0.log directory",
+    "output": "cd /var/log/Xorg.0.log"
+  },
+  {
+    "input": "Change to the /var/log/Xorg.1.log directory",
+    "output": "cd /var/log/Xorg.1.log"
+  },
+  {
+    "input": "Change to the /var/log/Xorg.failsafe.log directory",
+    "output": "cd /var/log/Xorg.failsafe.log"
+  },
+  {
+    "input": "Change to the /var/log/yum.log directory",
+    "output": "cd /var/log/yum.log"
+  },
+  {
+    "input": "Change to the /var/log/zypper.log directory",
+    "output": "cd /var/log/zypper.log"
+  },
+  {
+    "input": "Change to the /var/tmp directory",
+    "output": "cd /var/tmp"
+  },
+  {
+    "input": "Change to the /tmp directory and print the current directory",
+    "output": "cd /tmp && pwd"
+  },
+  {
+    "input": "Change to the directory pointed to by the symbolic link 'mylink' without following the link",
+    "output": "cd -P mylink"
+  },
+  {
+    "input": "Change to the directory pointed to by the symbolic link 'mylink' and follow the link",
+    "output": "cd -L mylink"
+  },
+  {
+    "input": "Change to the parent directory, then to 'bin'",
+    "output": "cd ../bin"
+  },
+  {
+    "input": "Change to the directory /home/user/Documents using an absolute path",
+    "output": "cd /home/user/Documents"
+  },
+  {
+    "input": "Change to the directory /etc/ssl/certs",
+    "output": "cd /etc/ssl/certs"
+  },
+  {
+    "input": "Change to the directory /usr/local/include",
+    "output": "cd /usr/local/include"
+  },
+  {
+    "input": "Change to the directory /usr/local/games",
+    "output": "cd /usr/local/games"
+  },
+  {
+    "input": "Change to the directory /usr/local/src",
+    "output": "cd /usr/local/src"
+  },
+  {
+    "input": "Change to the directory /usr/local/lib",
+    "output": "cd /usr/local/lib"
+  },
+  {
+    "input": "Change to the directory /usr/local/lib64",
+    "output": "cd /usr/local/lib64"
+  },
+  {
+    "input": "Change to the directory /usr/local/etc",
+    "output": "cd /usr/local/etc"
+  },
+  {
+    "input": "Change to the directory /usr/local/var",
+    "output": "cd /usr/local/var"
+  },
+  {
+    "input": "Change to the directory /usr/local/tmp",
+    "output": "cd /usr/local/tmp"
+  },
+  {
+    "input": "Change to the directory /usr/local/opt",
+    "output": "cd /usr/local/opt"
+  },
+  {
+    "input": "Change to the directory /usr/local/share/man",
+    "output": "cd /usr/local/share/man"
+  },
+  {
+    "input": "Change to the directory /usr/local/share/doc",
+    "output": "cd /usr/local/share/doc"
+  },
+  {
+    "input": "Change to the directory /usr/share/doc",
+    "output": "cd /usr/share/doc"
+  },
+  {
+    "input": "Change to the directory /usr/share/man",
+    "output": "cd /usr/share/man"
+  },
+  {
+    "input": "Change to the directory /usr/share/icons",
+    "output": "cd /usr/share/icons"
+  },
+  {
+    "input": "Change to the directory /usr/share/fonts",
+    "output": "cd /usr/share/fonts"
+  },
+  {
+    "input": "Change to the directory /usr/share/themes",
+    "output": "cd /usr/share/themes"
+  },
+  {
+    "input": "Change to the directory /usr/share/backgrounds",
+    "output": "cd /usr/share/backgrounds"
+  },
+  {
+    "input": "Change to the directory /usr/share/applications",
+    "output": "cd /usr/share/applications"
+  },
+  {
+    "input": "Change to the directory /usr/share/locale",
+    "output": "cd /usr/share/locale"
+  },
+  {
+    "input": "Change to the directory /usr/share/mime",
+    "output": "cd /usr/share/mime"
+  },
+  {
+    "input": "Change to the directory /usr/share/pixmaps",
+    "output": "cd /usr/share/pixmaps"
+  },
+  {
+    "input": "Change to the directory /usr/share/sounds",
+    "output": "cd /usr/share/sounds"
+  },
+  {
+    "input": "Change to the directory /usr/share/zoneinfo",
+    "output": "cd /usr/share/zoneinfo"
+  },
+  {
+    "input": "Change to the directory /usr/share/terminfo",
+    "output": "cd /usr/share/terminfo"
+  },
+  {
+    "input": "Change to the directory /usr/share/vim",
+    "output": "cd /usr/share/vim"
+  },
+  {
+    "input": "Change to the directory /usr/share/xfce4",
+    "output": "cd /usr/share/xfce4"
+  },
+  {
+    "input": "Change to the directory /usr/share/gnome",
+    "output": "cd /usr/share/gnome"
+  },
+  {
+    "input": "Change to the directory /usr/share/kde4",
+    "output": "cd /usr/share/kde4"
+  },
+  {
+    "input": "Change to the directory /usr/share/kde5",
+    "output": "cd /usr/share/kde5"
+  },
+  {
+    "input": "Change to the directory /usr/share/games",
+    "output": "cd /usr/share/games"
+  },
+  {
+    "input": "Change to the directory /usr/share/perl5",
+    "output": "cd /usr/share/perl5"
+  },
+  {
+    "input": "Change to the directory /usr/share/python",
+    "output": "cd /usr/share/python"
+  },
+  {
+    "input": "Change to the directory /usr/share/texmf",
+    "output": "cd /usr/share/texmf"
+  },
+  {
+    "input": "Change to the directory /usr/share/emacs",
+    "output": "cd /usr/share/emacs"
+  },
+  {
+    "input": "Change to the directory /usr/share/doc-base",
+    "output": "cd /usr/share/doc-base"
+  },
+  {
+    "input": "Change to the directory /usr/share/info",
+    "output": "cd /usr/share/info"
+  },
+  {
+    "input": "Change to the directory /usr/share/lintian",
+    "output": "cd /usr/share/lintian"
+  },
+  {
+    "input": "Change to the directory /usr/share/linda",
+    "output": "cd /usr/share/linda"
+  },
+  {
+    "input": "Change to the directory /usr/share/locale-langpack",
+    "output": "cd /usr/share/locale-langpack"
+  },
+  {
+    "input": "Change to the directory /usr/share/zoneinfo/Asia",
+    "output": "cd /usr/share/zoneinfo/Asia"
+  },
+  {
+    "input": "Change to the directory /usr/share/zoneinfo/Europe",
+    "output": "cd /usr/share/zoneinfo/Europe"
+  },
+  {
+    "input": "Change to the directory /usr/share/zoneinfo/America",
+    "output": "cd /usr/share/zoneinfo/America"
+  },
+  {
+    "input": "Change to the directory /usr/share/zoneinfo/Africa",
+    "output": "cd /usr/share/zoneinfo/Africa"
+  }
+]

@@ -1,0 +1,558 @@
+[
+  {
+    "input": "Show all running processes in standard format",
+    "output": "ps -e"
+  },
+  {
+    "input": "Show all running processes in full-format listing",
+    "output": "ps -ef"
+  },
+  {
+    "input": "Show all running processes in long format",
+    "output": "ps -el"
+  },
+  {
+    "input": "Show all running processes in jobs format",
+    "output": "ps -ej"
+  },
+  {
+    "input": "Show all running processes with threads",
+    "output": "ps -eLf"
+  },
+  {
+    "input": "Show all processes in BSD format",
+    "output": "ps ax"
+  },
+  {
+    "input": "Show all processes in BSD user format",
+    "output": "ps aux"
+  },
+  {
+    "input": "Show all processes for user 'alice'",
+    "output": "ps -u alice"
+  },
+  {
+    "input": "Show all processes for UID 1000",
+    "output": "ps -U 1000"
+  },
+  {
+    "input": "Show all processes without controlling terminals",
+    "output": "ps -x"
+  },
+  {
+    "input": "Show processes by command name 'bash'",
+    "output": "ps -C bash"
+  },
+  {
+    "input": "Show processes by PID 1234",
+    "output": "ps -p 1234"
+  },
+  {
+    "input": "Show processes by TTY pts/1",
+    "output": "ps -t pts/1"
+  },
+  {
+    "input": "Show all processes with custom columns: PID, USER, %CPU, %MEM, COMMAND",
+    "output": "ps -eo pid,user,%cpu,%mem,command"
+  },
+  {
+    "input": "Show all processes sorted by CPU usage",
+    "output": "ps -eo pid,ppid,cmd,%cpu,%mem --sort=-%cpu"
+  },
+  {
+    "input": "Show all processes sorted by memory usage",
+    "output": "ps -eo pid,ppid,cmd,%cpu,%mem --sort=-%mem"
+  },
+  {
+    "input": "Show all processes as a tree",
+    "output": "ps -ejH"
+  },
+  {
+    "input": "Show all processes as a tree in BSD format",
+    "output": "ps axjf"
+  },
+  {
+    "input": "Show all threads for all processes",
+    "output": "ps -eLf"
+  },
+  {
+    "input": "Show all threads in BSD format",
+    "output": "ps axms"
+  },
+  {
+    "input": "Show security info for all processes",
+    "output": "ps -eo euser,ruser,suser,fuser,f,comm,label"
+  },
+  {
+    "input": "Show SELinux context for all processes",
+    "output": "ps axZ"
+  },
+  {
+    "input": "Show processes running as root (real & effective ID) in user format",
+    "output": "ps -U root -u root u"
+  },
+  {
+    "input": "Show processes with custom format: PID, TID, class, rtprio, ni, pri, psr, pcpu, stat, wchan, comm",
+    "output": "ps -eo pid,tid,class,rtprio,ni,pri,psr,pcpu,stat,wchan:14,comm"
+  },
+  {
+    "input": "Show processes with custom output: PID, PPID, user, cmd",
+    "output": "ps -eo pid,ppid,user,cmd"
+  },
+  {
+    "input": "Show process name for PID 1154",
+    "output": "ps -p 1154 -o comm="
+  },
+  {
+    "input": "Show process details for PID 1154 with group, nice, start, elapsed time",
+    "output": "ps -p 1154 -o pid,ppid,fgroup,ni,lstart,etime"
+  },
+  {
+    "input": "Show all processes with wide output",
+    "output": "ps auxww"
+  },
+  {
+    "input": "Show all processes and pipe to less for scrolling",
+    "output": "ps aux | less"
+  },
+  {
+    "input": "Show all processes and pipe to less with no line wrapping",
+    "output": "ps aux | less -S"
+  },
+  {
+    "input": "Show all processes and pipe to most for scrolling",
+    "output": "ps aux | most"
+  },
+  {
+    "input": "Show all processes and grep for 'sshd'",
+    "output": "ps aux | grep sshd"
+  },
+  {
+    "input": "Show all processes and grep for 'python'",
+    "output": "ps aux | grep python"
+  },
+  {
+    "input": "Show all processes and grep for 'nginx'",
+    "output": "ps aux | grep nginx"
+  },
+  {
+    "input": "Show all processes and grep for 'java'",
+    "output": "ps aux | grep java"
+  },
+  {
+    "input": "Show only processes with TTY",
+    "output": "ps -e -o tty,pid,cmd | grep -v '?'"
+  },
+  {
+    "input": "Show only processes with no TTY",
+    "output": "ps -e -o tty,pid,cmd | grep '?'"
+  },
+  {
+    "input": "Show all processes and sort by start time",
+    "output": "ps -eo pid,cmd,lstart --sort=lstart"
+  },
+  {
+    "input": "Show processes with elapsed time",
+    "output": "ps -eo pid,etime,cmd"
+  },
+  {
+    "input": "Show all zombie processes",
+    "output": "ps aux | awk '$8 ~ /Z/ {print $0}'"
+  },
+  {
+    "input": "Show all processes with more than 10% CPU usage",
+    "output": "ps -eo pid,ppid,cmd,%cpu --sort=-%cpu | awk '$4 > 10'"
+  },
+  {
+    "input": "Show all processes with more than 100MB memory usage",
+    "output": "ps -eo pid,ppid,cmd,%mem --sort=-%mem | awk '$4 > 10'"
+  },
+  {
+    "input": "Show top 10 CPU-consuming processes",
+    "output": "ps -eo pid,ppid,cmd,%cpu --sort=-%cpu | head -n 11"
+  },
+  {
+    "input": "Show top 10 memory-consuming processes",
+    "output": "ps -eo pid,ppid,cmd,%mem --sort=-%mem | head -n 11"
+  },
+  {
+    "input": "Show all processes for a group 'admin'",
+    "output": "ps -G admin"
+  },
+  {
+    "input": "Show all processes for a session leader",
+    "output": "ps -s 1"
+  },
+  {
+    "input": "Show all processes for a specific terminal",
+    "output": "ps -t tty1"
+  },
+  {
+    "input": "Show all processes in tree format with threads",
+    "output": "ps -ejH"
+  },
+  {
+    "input": "Show all processes with user-defined columns",
+    "output": "ps -eo user,pid,pcpu,pmem,comm"
+  },
+  {
+    "input": "Show all kernel ring buffer messages",
+    "output": "dmesg"
+  },
+  {
+    "input": "Show kernel messages with human-readable timestamps",
+    "output": "dmesg -T"
+  },
+  {
+    "input": "Follow kernel messages in real time",
+    "output": "dmesg -w"
+  },
+  {
+    "input": "Show kernel messages with colored output",
+    "output": "dmesg -L"
+  },
+  {
+    "input": "Show kernel messages without timestamps",
+    "output": "dmesg -t"
+  },
+  {
+    "input": "Show kernel messages with decoded facility and level numbers",
+    "output": "dmesg -x"
+  },
+  {
+    "input": "Show kernel messages in human-readable format",
+    "output": "dmesg -H"
+  },
+  {
+    "input": "Show kernel messages with error level only",
+    "output": "dmesg --level=err"
+  },
+  {
+    "input": "Show kernel messages with warning and error levels",
+    "output": "dmesg --level=warn,err"
+  },
+  {
+    "input": "Show kernel messages with emerg, alert, crit, err, warn levels",
+    "output": "dmesg --level=emerg,alert,crit,err,warn"
+  },
+  {
+    "input": "Show kernel messages from a specific facility",
+    "output": "dmesg --facility=daemon"
+  },
+  {
+    "input": "Show kernel messages related to device sda",
+    "output": "dmesg | grep -i sda"
+  },
+  {
+    "input": "Show kernel messages related to network",
+    "output": "dmesg | grep -i net"
+  },
+  {
+    "input": "Show kernel messages related to USB",
+    "output": "dmesg | grep -i usb"
+  },
+  {
+    "input": "Show kernel messages related to errors",
+    "output": "dmesg | grep -i error"
+  },
+  {
+    "input": "Show kernel messages from the last boot",
+    "output": "dmesg -b 1"
+  },
+  {
+    "input": "Clear the kernel ring buffer",
+    "output": "dmesg -C"
+  },
+  {
+    "input": "Print and clear the kernel ring buffer",
+    "output": "dmesg -c"
+  },
+  {
+    "input": "Show kernel messages with buffer size 512",
+    "output": "dmesg -s 512"
+  },
+  {
+    "input": "Show kernel messages with buffer size 1M",
+    "output": "dmesg -s 1048576"
+  },
+  {
+    "input": "Show kernel messages in raw format",
+    "output": "dmesg -r"
+  },
+  {
+    "input": "Show kernel messages with delta time between messages",
+    "output": "dmesg -d"
+  },
+  {
+    "input": "Show kernel messages with local time and delta",
+    "output": "dmesg -e"
+  },
+  {
+    "input": "Show kernel messages in JSON format",
+    "output": "dmesg -J"
+  },
+  {
+    "input": "Show kernel messages from a file",
+    "output": "dmesg -F /path/to/file"
+  },
+  {
+    "input": "Show kernel messages from /dev/kmsg",
+    "output": "dmesg -K /dev/kmsg"
+  },
+  {
+    "input": "Show kernel messages with ISO-8601 timestamps",
+    "output": "dmesg --time-format=iso"
+  },
+  {
+    "input": "Show kernel messages with ctime timestamps",
+    "output": "dmesg --time-format=ctime"
+  },
+  {
+    "input": "Show kernel messages with reltime timestamps",
+    "output": "dmesg --time-format=reltime"
+  },
+  {
+    "input": "Show kernel messages with delta timestamps",
+    "output": "dmesg --time-format=delta"
+  },
+  {
+    "input": "Show kernel messages with color always on",
+    "output": "dmesg --color=always"
+  },
+  {
+    "input": "Show kernel messages with color never",
+    "output": "dmesg --color=never"
+  },
+  {
+    "input": "Show kernel messages with color auto",
+    "output": "dmesg --color=auto"
+  },
+  {
+    "input": "Show kernel messages with unescaped output",
+    "output": "dmesg --noescape"
+  },
+  {
+    "input": "Show kernel messages using syslog interface",
+    "output": "dmesg -S"
+  },
+  {
+    "input": "Show kernel messages for specific level and facility",
+    "output": "dmesg -l err -f kern"
+  },
+  {
+    "input": "Show kernel messages with log level set to 4",
+    "output": "dmesg -n 4"
+  },
+  {
+    "input": "Show kernel messages as they arrive (follow mode)",
+    "output": "dmesg -w"
+  },
+  {
+    "input": "Show kernel messages and pipe to less for paging",
+    "output": "dmesg | less"
+  },
+  {
+    "input": "Show kernel messages and pipe to grep for filtering",
+    "output": "dmesg | grep -i error"
+  },
+  {
+    "input": "Show kernel messages and pipe to tail for last 10 lines",
+    "output": "dmesg | tail -n 10"
+  },
+  {
+    "input": "Show kernel messages and pipe to head for first 10 lines",
+    "output": "dmesg | head -n 10"
+  },
+  {
+    "input": "Show kernel messages and save to a file",
+    "output": "dmesg > dmesg_output.txt"
+  },
+  {
+    "input": "Show kernel messages and filter for CPU",
+    "output": "dmesg | grep -i cpu"
+  },
+  {
+    "input": "Show all systemd journal logs",
+    "output": "journalctl"
+  },
+  {
+    "input": "Show most recent journal entries and follow new ones",
+    "output": "journalctl -f"
+  },
+  {
+    "input": "Show only kernel messages",
+    "output": "journalctl -k"
+  },
+  {
+    "input": "Show logs from the current boot",
+    "output": "journalctl -b"
+  },
+  {
+    "input": "Show logs from the previous boot",
+    "output": "journalctl -b -1"
+  },
+  {
+    "input": "Show logs for a specific systemd unit (e.g., sshd)",
+    "output": "journalctl -u sshd"
+  },
+  {
+    "input": "Show logs for multiple units (e.g., nginx and mysql)",
+    "output": "journalctl -u nginx -u mysql"
+  },
+  {
+    "input": "Show logs with priority error or higher",
+    "output": "journalctl -p err"
+  },
+  {
+    "input": "Show logs with priority warning or higher",
+    "output": "journalctl -p warning"
+  },
+  {
+    "input": "Show logs since yesterday",
+    "output": "journalctl --since yesterday"
+  },
+  {
+    "input": "Show logs since 2025-06-19 12:00",
+    "output": "journalctl --since \"2025-06-19 12:00\""
+  },
+  {
+    "input": "Show logs between two dates",
+    "output": "journalctl --since \"2025-06-18\" --until \"2025-06-19 18:00\""
+  },
+  {
+    "input": "Show logs for a specific user (UID 1000)",
+    "output": "journalctl _UID=1000"
+  },
+  {
+    "input": "Show logs for a specific group (GID 100)",
+    "output": "journalctl _GID=100"
+  },
+  {
+    "input": "Show logs for a specific process (PID 1234)",
+    "output": "journalctl _PID=1234"
+  },
+  {
+    "input": "Show logs for a specific executable",
+    "output": "journalctl _EXE=/usr/bin/bash"
+  },
+  {
+    "input": "Show logs in reverse order (newest first)",
+    "output": "journalctl -r"
+  },
+  {
+    "input": "Show last 20 journal entries",
+    "output": "journalctl -n 20"
+  },
+  {
+    "input": "Show logs without using a pager",
+    "output": "journalctl --no-pager"
+  },
+  {
+    "input": "Show logs in JSON format",
+    "output": "journalctl -o json"
+  },
+  {
+    "input": "Show logs in pretty JSON format",
+    "output": "journalctl -o json-pretty"
+  },
+  {
+    "input": "Show logs in short format",
+    "output": "journalctl -o short"
+  },
+  {
+    "input": "Show logs in verbose format",
+    "output": "journalctl -o verbose"
+  },
+  {
+    "input": "Show logs in cat format (message only)",
+    "output": "journalctl -o cat"
+  },
+  {
+    "input": "Show logs in short-monotonic format",
+    "output": "journalctl -o short-monotonic"
+  },
+  {
+    "input": "Show logs with UTC timestamps",
+    "output": "journalctl --utc"
+  },
+  {
+    "input": "Show logs and jump to the end",
+    "output": "journalctl -e"
+  },
+  {
+    "input": "Show logs with explanations (catalog)",
+    "output": "journalctl -x"
+  },
+  {
+    "input": "Show all fields fully, including unprintable characters",
+    "output": "journalctl -a"
+  },
+  {
+    "input": "Show logs for a specific boot ID",
+    "output": "journalctl --boot=abcd1234"
+  },
+  {
+    "input": "Show logs for a specific systemd slice",
+    "output": "journalctl _SYSTEMD_SLICE=user-1000.slice"
+  },
+  {
+    "input": "Show logs for a specific systemd cgroup",
+    "output": "journalctl _SYSTEMD_CGROUP=/system.slice/sshd.service"
+  },
+  {
+    "input": "Show logs for a specific command name",
+    "output": "journalctl _COMM=sshd"
+  },
+  {
+    "input": "Show logs for a specific message ID",
+    "output": "journalctl MESSAGE_ID=fc2e22bc6ee647b6b90729ab34a250b1"
+  },
+  {
+    "input": "Show logs for a specific syslog identifier",
+    "output": "journalctl SYSLOG_IDENTIFIER=sshd"
+  },
+  {
+    "input": "Show logs with a specific grep pattern",
+    "output": "journalctl -g 'error'"
+  },
+  {
+    "input": "Show logs for the last 10 minutes",
+    "output": "journalctl --since '10 minutes ago'"
+  },
+  {
+    "input": "Show logs for the last hour",
+    "output": "journalctl --since '1 hour ago'"
+  },
+  {
+    "input": "Show logs for the last 24 hours",
+    "output": "journalctl --since '24 hours ago'"
+  },
+  {
+    "input": "Show logs for a specific service and follow in real time",
+    "output": "journalctl -u nginx -f"
+  },
+  {
+    "input": "Show logs for a specific priority and follow in real time",
+    "output": "journalctl -p err -f"
+  },
+  {
+    "input": "Show disk usage of journal logs",
+    "output": "journalctl --disk-usage"
+  },
+  {
+    "input": "Vacuum journal logs to keep only 1G of data",
+    "output": "journalctl --vacuum-size=1G"
+  },
+  {
+    "input": "Vacuum journal logs to keep only 2 weeks of data",
+    "output": "journalctl --vacuum-time=2weeks"
+  },
+  {
+    "input": "List all available boots",
+    "output": "journalctl --list-boots"
+  },
+  {
+    "input": "Show logs for a service with error priority since 15 minutes ago",
+    "output": "journalctl -u critical-service.service --since='15 minutes ago' -p err"
+  }
+]

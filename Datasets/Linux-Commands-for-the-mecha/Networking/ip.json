@@ -1,0 +1,458 @@
+[
+    {
+        "input": "Show configuration for all active network interfaces",
+        "output": "ifconfig"
+    },
+    {
+        "input": "Show configuration for all interfaces, including inactive",
+        "output": "ifconfig -a"
+    },
+    {
+        "input": "Show a concise summary of all interfaces",
+        "output": "ifconfig -s"
+    },
+    {
+        "input": "Show verbose configuration for all interfaces",
+        "output": "ifconfig -v"
+    },
+    {
+        "input": "Show configuration for a specific interface (e.g., eth0)",
+        "output": "ifconfig eth0"
+    },
+    {
+        "input": "Show configuration for the loopback interface",
+        "output": "ifconfig lo"
+    },
+    {
+        "input": "List all available network interfaces",
+        "output": "ifconfig -a"
+    },
+    {
+        "input": "List only interfaces that are up",
+        "output": "ifconfig -u"
+    },
+    {
+        "input": "List only interfaces that are down",
+        "output": "ifconfig -d"
+    },
+    {
+        "input": "Display only the names of all interfaces",
+        "output": "ifconfig -l"
+    },
+    {
+        "input": "Activate a network interface (e.g., eth0)",
+        "output": "sudo ifconfig eth0 up"
+    },
+    {
+        "input": "Deactivate a network interface (e.g., eth0)",
+        "output": "sudo ifconfig eth0 down"
+    },
+    {
+        "input": "Assign an IP address to an interface",
+        "output": "sudo ifconfig eth0 192.168.1.100"
+    },
+    {
+        "input": "Assign an IP address and netmask to an interface",
+        "output": "sudo ifconfig eth0 192.168.1.100 netmask 255.255.255.0"
+    },
+    {
+        "input": "Assign an IP address, netmask, and broadcast to an interface",
+        "output": "sudo ifconfig eth0 192.168.1.100 netmask 255.255.255.0 broadcast 192.168.1.255"
+    },
+    {
+        "input": "Set the netmask for an interface",
+        "output": "sudo ifconfig eth0 netmask 255.255.255.0"
+    },
+    {
+        "input": "Set the broadcast address for an interface",
+        "output": "sudo ifconfig eth0 broadcast 192.168.1.255"
+    },
+    {
+        "input": "Set the MTU for an interface",
+        "output": "sudo ifconfig eth0 mtu 1400"
+    },
+    {
+        "input": "Enable promiscuous mode on an interface",
+        "output": "sudo ifconfig eth0 promisc"
+    },
+    {
+        "input": "Disable promiscuous mode on an interface",
+        "output": "sudo ifconfig eth0 -promisc"
+    },
+    {
+        "input": "Enable ARP on an interface",
+        "output": "sudo ifconfig eth0 arp"
+    },
+    {
+        "input": "Disable ARP on an interface",
+        "output": "sudo ifconfig eth0 -arp"
+    },
+    {
+        "input": "Enable all-multicast mode on an interface",
+        "output": "sudo ifconfig eth0 allmulti"
+    },
+    {
+        "input": "Disable all-multicast mode on an interface",
+        "output": "sudo ifconfig eth0 -allmulti"
+    },
+    {
+        "input": "Show only interfaces with IPv6 addresses",
+        "output": "ifconfig | grep inet6"
+    },
+    {
+        "input": "Show only interfaces with IPv4 addresses",
+        "output": "ifconfig | grep inet"
+    },
+    {
+        "input": "Show only MAC addresses of interfaces",
+        "output": "ifconfig | grep ether"
+    },
+    {
+        "input": "Show broadcast addresses of interfaces",
+        "output": "ifconfig | grep broadcast"
+    },
+    {
+        "input": "Show network interfaces with their RX and TX packet statistics",
+        "output": "ifconfig | grep 'RX packets\\|TX packets'"
+    },
+    {
+        "input": "Show errors on network interfaces",
+        "output": "ifconfig | grep errors"
+    },
+    {
+        "input": "Show dropped packets on network interfaces",
+        "output": "ifconfig | grep dropped"
+    },
+    {
+        "input": "Show collisions on network interfaces",
+        "output": "ifconfig | grep collisions"
+    },
+    {
+        "input": "Show the status of a serial line IP interface (e.g., sl1)",
+        "output": "ifconfig sl1"
+    },
+    {
+        "input": "Show the configuration of a wireless interface (e.g., wlan0)",
+        "output": "ifconfig wlan0"
+    },
+    {
+        "input": "Assign an IPv6 address to an interface",
+        "output": "sudo ifconfig eth0 inet6 add 2001:db8::1/64"
+    },
+    {
+        "input": "Remove an IPv6 address from an interface",
+        "output": "sudo ifconfig eth0 inet6 del 2001:db8::1/64"
+    },
+    {
+        "input": "Configure the local loopback interface",
+        "output": "sudo ifconfig lo 127.0.0.1 up"
+    },
+    {
+        "input": "Configure a point-to-point interface",
+        "output": "sudo ifconfig ppp0 192.168.1.1 pointopoint 192.168.1.2 up"
+    },
+    {
+        "input": "Assign a secondary IP to an interface (alias)",
+        "output": "sudo ifconfig eth0:1 192.168.1.101 up"
+    },
+    {
+        "input": "Remove a secondary IP from an interface (alias)",
+        "output": "sudo ifconfig eth0:1 down"
+    },
+    {
+        "input": "Show multicast group memberships",
+        "output": "ifconfig | grep MULTICAST"
+    },
+    {
+        "input": "Show all network interfaces with their flags",
+        "output": "ifconfig -a"
+    },
+    {
+        "input": "Show interfaces that are up",
+        "output": "ifconfig -u"
+    },
+    {
+        "input": "Show interfaces that are down",
+        "output": "ifconfig -d"
+    },
+    {
+        "input": "Show all interfaces with protocol family inet",
+        "output": "ifconfig -a inet"
+    },
+    {
+        "input": "Show all interfaces with protocol family inet6",
+        "output": "ifconfig -a inet6"
+    },
+    {
+        "input": "Show all interfaces with protocol family ns",
+        "output": "ifconfig -a ns"
+    },
+    {
+        "input": "Show all interfaces with protocol family tcp",
+        "output": "ifconfig -a tcp"
+    },
+    {
+        "input": "Show all interfaces with protocol family udp",
+        "output": "ifconfig -a udp"
+    },
+    {
+        "input": "Show all interfaces with protocol family icmp",
+        "output": "ifconfig -a icmp"
+    },
+    {
+        "input": "Show all interfaces with protocol family icmp6",
+        "output": "ifconfig -a icmp6"
+    },
+    {
+        "input": "Show the configuration for interface enp0s3",
+        "output": "ifconfig enp0s3"
+    },
+    {
+        "input": "Bring up interface enp0s3",
+        "output": "sudo ifconfig enp0s3 up"
+    },
+    {
+        "input": "Bring down interface enp0s3",
+        "output": "sudo ifconfig enp0s3 down"
+    },
+    {
+        "input": "Assign IP 10.0.2.15 to enp0s3",
+        "output": "sudo ifconfig enp0s3 10.0.2.15"
+    },
+    {
+        "input": "Assign netmask 255.255.255.0 to enp0s3",
+        "output": "sudo ifconfig enp0s3 netmask 255.255.255.0"
+    },
+    {
+        "input": "Assign broadcast 10.0.2.255 to enp0s3",
+        "output": "sudo ifconfig enp0s3 broadcast 10.0.2.255"
+    },
+    {
+        "input": "Assign MTU 1500 to enp0s3",
+        "output": "sudo ifconfig enp0s3 mtu 1500"
+    },
+    {
+        "input": "Enable promiscuous mode on enp0s3",
+        "output": "sudo ifconfig enp0s3 promisc"
+    },
+    {
+        "input": "Disable promiscuous mode on enp0s3",
+        "output": "sudo ifconfig enp0s3 -promisc"
+    },
+    {
+        "input": "Enable ARP on enp0s3",
+        "output": "sudo ifconfig enp0s3 arp"
+    },
+    {
+        "input": "Disable ARP on enp0s3",
+        "output": "sudo ifconfig enp0s3 -arp"
+    },
+    {
+        "input": "Enable allmulti on enp0s3",
+        "output": "sudo ifconfig enp0s3 allmulti"
+    },
+    {
+        "input": "Disable allmulti on enp0s3",
+        "output": "sudo ifconfig enp0s3 -allmulti"
+    },
+    {
+        "input": "Assign IP 192.168.0.10 and netmask 255.255.255.128 to eth1",
+        "output": "sudo ifconfig eth1 192.168.0.10 netmask 255.255.255.128"
+    },
+    {
+        "input": "Assign IP 10.10.10.1 and broadcast 10.10.10.255 to eth2",
+        "output": "sudo ifconfig eth2 10.10.10.1 broadcast 10.10.10.255"
+    },
+    {
+        "input": "Assign IP 172.16.0.1 and netmask 255.255.0.0 to eth3",
+        "output": "sudo ifconfig eth3 172.16.0.1 netmask 255.255.0.0"
+    },
+    {
+        "input": "Assign IP 192.168.1.20 and MTU 9000 to eth4",
+        "output": "sudo ifconfig eth4 192.168.1.20 mtu 9000"
+    },
+    {
+        "input": "Assign IP 10.0.0.2 and enable promiscuous mode on eth5",
+        "output": "sudo ifconfig eth5 10.0.0.2 promisc"
+    },
+    {
+        "input": "Assign IP 192.168.1.30 and disable ARP on eth6",
+        "output": "sudo ifconfig eth6 192.168.1.30 -arp"
+    },
+    {
+        "input": "Assign IP 192.168.1.40 and enable allmulti on eth7",
+        "output": "sudo ifconfig eth7 192.168.1.40 allmulti"
+    },
+    {
+        "input": "Assign IP 192.168.1.50 and disable allmulti on eth8",
+        "output": "sudo ifconfig eth8 192.168.1.50 -allmulti"
+    },
+    {
+        "input": "Show the configuration of interface ens33",
+        "output": "ifconfig ens33"
+    },
+    {
+        "input": "Bring up interface ens33",
+        "output": "sudo ifconfig ens33 up"
+    },
+    {
+        "input": "Bring down interface ens33",
+        "output": "sudo ifconfig ens33 down"
+    },
+    {
+        "input": "Assign IP 192.168.56.101 to ens33",
+        "output": "sudo ifconfig ens33 192.168.56.101"
+    },
+    {
+        "input": "Assign netmask 255.255.255.0 to ens33",
+        "output": "sudo ifconfig ens33 netmask 255.255.255.0"
+    },
+    {
+        "input": "Assign broadcast 192.168.56.255 to ens33",
+        "output": "sudo ifconfig ens33 broadcast 192.168.56.255"
+    },
+    {
+        "input": "Assign MTU 1400 to ens33",
+        "output": "sudo ifconfig ens33 mtu 1400"
+    },
+    {
+        "input": "Enable promiscuous mode on ens33",
+        "output": "sudo ifconfig ens33 promisc"
+    },
+    {
+        "input": "Disable promiscuous mode on ens33",
+        "output": "sudo ifconfig ens33 -promisc"
+    },
+    {
+        "input": "Enable ARP on ens33",
+        "output": "sudo ifconfig ens33 arp"
+    },
+    {
+        "input": "Disable ARP on ens33",
+        "output": "sudo ifconfig ens33 -arp"
+    },
+    {
+        "input": "Enable allmulti on ens33",
+        "output": "sudo ifconfig ens33 allmulti"
+    },
+    {
+        "input": "Disable allmulti on ens33",
+        "output": "sudo ifconfig ens33 -allmulti"
+    },
+    {
+        "input": "Show only the interface flags for eth0",
+        "output": "ifconfig eth0 | grep flags"
+    },
+    {
+        "input": "Show only the MAC address for eth0",
+        "output": "ifconfig eth0 | grep ether"
+    },
+    {
+        "input": "Show only the IP address for eth0",
+        "output": "ifconfig eth0 | grep inet"
+    },
+    {
+        "input": "Show only the IPv6 address for eth0",
+        "output": "ifconfig eth0 | grep inet6"
+    },
+    {
+        "input": "Show only the MTU for eth0",
+        "output": "ifconfig eth0 | grep mtu"
+    },
+    {
+        "input": "Show only the RX packets for eth0",
+        "output": "ifconfig eth0 | grep 'RX packets'"
+    },
+    {
+        "input": "Show only the TX packets for eth0",
+        "output": "ifconfig eth0 | grep 'TX packets'"
+    },
+    {
+        "input": "Show only the errors for eth0",
+        "output": "ifconfig eth0 | grep errors"
+    },
+    {
+        "input": "Show only the dropped packets for eth0",
+        "output": "ifconfig eth0 | grep dropped"
+    },
+    {
+        "input": "Show only the collisions for eth0",
+        "output": "ifconfig eth0 | grep collisions"
+    },
+    {
+        "input": "Show all interfaces with their hardware addresses",
+        "output": "ifconfig -a | grep ether"
+    },
+    {
+        "input": "Show all interfaces with their IPv4 addresses",
+        "output": "ifconfig -a | grep inet"
+    },
+    {
+        "input": "Show all interfaces with their IPv6 addresses",
+        "output": "ifconfig -a | grep inet6"
+    },
+    {
+        "input": "Show all interfaces with their MTU values",
+        "output": "ifconfig -a | grep mtu"
+    },
+    {
+        "input": "Show all interfaces with their RX and TX packet statistics",
+        "output": "ifconfig -a | grep 'RX packets\\|TX packets'"
+    },
+    {
+        "input": "Show all interfaces with their error statistics",
+        "output": "ifconfig -a | grep errors"
+    },
+    {
+        "input": "Show all interfaces with their dropped packet statistics",
+        "output": "ifconfig -a | grep dropped"
+    },
+    {
+        "input": "Show all interfaces with their collision statistics",
+        "output": "ifconfig -a | grep collisions"
+    },
+    {
+        "input": "Show all interfaces with their multicast group memberships",
+        "output": "ifconfig -a | grep MULTICAST"
+    },
+    {
+        "input": "Show all interfaces with their flags",
+        "output": "ifconfig -a | grep flags"
+    },
+    {
+        "input": "Show all interfaces with their status (UP/DOWN)",
+        "output": "ifconfig -a | grep -E 'UP|DOWN'"
+    },
+    {
+        "input": "Show all interfaces with their status (RUNNING)",
+        "output": "ifconfig -a | grep RUNNING"
+    },
+    {
+        "input": "Show all interfaces with their status (BROADCAST)",
+        "output": "ifconfig -a | grep BROADCAST"
+    },
+    {
+        "input": "Show all interfaces with their status (MULTICAST)",
+        "output": "ifconfig -a | grep MULTICAST"
+    },
+    {
+        "input": "Show all interfaces with their status (PROMISC)",
+        "output": "ifconfig -a | grep PROMISC"
+    },
+    {
+        "input": "Show all interfaces with their status (LOOPBACK)",
+        "output": "ifconfig -a | grep LOOPBACK"
+    },
+    {
+        "input": "Show all interfaces with their status (POINTTOPOINT)",
+        "output": "ifconfig -a | grep POINTTOPOINT"
+    },
+    {
+        "input": "Show all interfaces with their status (NOARP)",
+        "output": "ifconfig -a | grep NOARP"
+    },
+    {
+        "input": "Show all interfaces with their status (ALLMULTI)",
+        "output": "ifconfig -a | grep ALLMULTI"
+    }
+]

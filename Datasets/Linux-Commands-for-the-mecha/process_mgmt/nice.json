@@ -1,0 +1,246 @@
+[
+    {
+        "input": "Run a command with default niceness (+10)",
+        "output": "nice -n 10 mycommand"
+    },
+    {
+        "input": "Run with lower priority (+19)",
+        "output": "nice -n 19 backup.sh"
+    },
+    {
+        "input": "Run with higher priority (-5)",
+        "output": "sudo nice -n -5 build.sh"
+    },
+    {
+        "input": "Run interactively with niceness +5",
+        "output": "nice -n 5 top"
+    },
+    {
+        "input": "Run CPU-intensive task with niceness +15",
+        "output": "nice -n 15 gzip largefile"
+    },
+    {
+        "input": "Run IO-intensive task with niceness +12",
+        "output": "nice -n 12 dd if=/dev/zero of=/tmp/test.img"
+    },
+    {
+        "input": "Run memory-intensive task with niceness +8",
+        "output": "nice -n 8 tar -cf archive.tar large_dir"
+    },
+    {
+        "input": "Run script with niceness +0 (default)",
+        "output": "nice -n 0 runscript.sh"
+    },
+    {
+        "input": "Run compile job with niceness +1",
+        "output": "nice -n 1 make -j8"
+    },
+    {
+        "input": "Run rsync with niceness +3",
+        "output": "nice -n 3 rsync -av src/ dest/"
+    },
+    {
+        "input": "Run backup job with niceness +16",
+        "output": "nice -n 16 ./backup.sh"
+    },
+    {
+        "input": "Run video encoding with niceness +18",
+        "output": "nice -n 18 ffmpeg -i in.mp4 out.mkv"
+    },
+    {
+        "input": "Run audio conversion with niceness +14",
+        "output": "nice -n 14 lame in.wav out.mp3"
+    },
+    {
+        "input": "Run data analysis with niceness +7",
+        "output": "nice -n 7 python3 analysis.py"
+    },
+    {
+        "input": "Run database dump with niceness +11",
+        "output": "nice -n 11 pg_dump mydb > dump.sql"
+    },
+    {
+        "input": "Run network scan with niceness +13",
+        "output": "nice -n 13 nmap -A target"
+    },
+    {
+        "input": "Run intensive script with niceness -1",
+        "output": "sudo nice -n -1 ./intensive.sh"
+    },
+    {
+        "input": "Run process via sudo and nice",
+        "output": "sudo nice -n 5 apt update"
+    },
+    {
+        "input": "Run find command with niceness +10",
+        "output": "nice -n 10 find / -type f"
+    },
+    {
+        "input": "Run grep recursively with niceness +6",
+        "output": "nice -n 6 grep -R 'TODO' ."
+    },
+    {
+        "input": "Run backup with profiling",
+        "output": "nice -n 8 time rsync -a /source /dest"
+    },
+    {
+        "input": "Run sync in background with niceness +9",
+        "output": "nice -n 9 rsync -a /src /dst &"
+    },
+    {
+        "input": "Run CPU hog with minimal impact",
+        "output": "nice -n 19 sha256sum *"
+    },
+    {
+        "input": "Run job with highest niceness",
+        "output": "nice -n 20 script.sh"
+    },
+    {
+        "input": "Run job with minimal nice (highest priority)",
+        "output": "sudo nice -n -20 critical.sh"
+    },
+    {
+        "input": "Run Python script with niceness +2",
+        "output": "nice -n 2 python3 script.py"
+    },
+    {
+        "input": "Run backup with niceness +17 quietly",
+        "output": "nice -n 17 -q ./backup.sh"
+    },
+    {
+        "input": "Run data sync with niceness +4",
+        "output": "nice -n 4 rsync -az src dest"
+    },
+    {
+        "input": "Run tar with niceness +12",
+        "output": "nice -n 12 tar -xzf archive.tar.gz"
+    },
+    {
+        "input": "Run dd with niceness +13",
+        "output": "nice -n 13 dd if=/dev/sda of=/backup.img"
+    },
+    {
+        "input": "Run make install with niceness +2",
+        "output": "nice -n 2 sudo make install"
+    },
+    {
+        "input": "Run Docker build with niceness +3",
+        "output": "nice -n 3 docker build ."
+    },
+    {
+        "input": "Run Kubernetes apply with niceness +5",
+        "output": "nice -n 5 kubectl apply -f deploy.yml"
+    },
+    {
+        "input": "Run Ansible playbook with niceness +7",
+        "output": "nice -n 7 ansible-playbook site.yml"
+    },
+    {
+        "input": "Run AWS CLI with niceness +4",
+        "output": "nice -n 4 aws s3 sync . s3://bucket"
+    },
+    {
+        "input": "Run Google Cloud CLI with niceness +4",
+        "output": "nice -n 4 gcloud compute instances list"
+    },
+    {
+        "input": "Run Azure CLI with niceness +4",
+        "output": "nice -n 4 az vm list"
+    },
+    {
+        "input": "Run Jenkins CLI with niceness +8",
+        "output": "nice -n 8 java -jar jenkins-cli.jar -s http://localhost:8080 build job"
+    },
+    {
+        "input": "Run Maven build with niceness +6",
+        "output": "nice -n 6 mvn clean install"
+    },
+    {
+        "input": "Run Gradle build with niceness +6",
+        "output": "nice -n 6 gradle build"
+    },
+    {
+        "input": "Run Node.js server with niceness +10",
+        "output": "nice -n 10 node server.js"
+    },
+    {
+        "input": "Run npm install with niceness +8",
+        "output": "nice -n 8 npm install"
+    },
+    {
+        "input": "Run yarn install with niceness +8",
+        "output": "nice -n 8 yarn install"
+    },
+    {
+        "input": "Run pip install with niceness +8",
+        "output": "nice -n 8 pip install -r requirements.txt"
+    },
+    {
+        "input": "Run gem install with niceness +8",
+        "output": "nice -n 8 gem install rails"
+    },
+    {
+        "input": "Run apt upgrade with niceness +5",
+        "output": "sudo nice -n 5 apt upgrade"
+    },
+    {
+        "input": "Run yum update with niceness +5",
+        "output": "sudo nice -n 5 yum update"
+    },
+    {
+        "input": "Run dnf upgrade with niceness +5",
+        "output": "sudo nice -n 5 dnf upgrade"
+    },
+    {
+        "input": "Run pacman update with niceness +5",
+        "output": "sudo nice -n 5 pacman -Syu"
+    },
+    {
+        "input": "Run zypper update with niceness +5",
+        "output": "sudo nice -n 5 zypper update"
+    },
+    {
+        "input": "Run emerge update with niceness +5",
+        "output": "sudo nice -n 5 emerge --update world"
+    },
+    {
+        "input": "Run cargo build with niceness +3",
+        "output": "nice -n 3 cargo build --release"
+    },
+    {
+        "input": "Run go build with niceness +3",
+        "output": "nice -n 3 go build ./..."
+    },
+    {
+        "input": "Run dotnet build with niceness +3",
+        "output": "nice -n 3 dotnet build"
+    },
+    {
+        "input": "Run rustfmt with niceness +3",
+        "output": "nice -n 3 rustfmt src/*.rs"
+    },
+    {
+        "input": "Run clippy with niceness +3",
+        "output": "nice -n 3 cargo clippy"
+    },
+    {
+        "input": "Run eslint with niceness +3",
+        "output": "nice -n 3 eslint . --ext .js,.jsx"
+    },
+    {
+        "input": "Run prettier with niceness +3",
+        "output": "nice -n 3 prettier --write 'src/**/*.{js,jsx,ts,tsx}'"
+    },
+    {
+        "input": "Run flake8 with niceness +3",
+        "output": "nice -n 3 flake8 ."
+    },
+    {
+        "input": "Run black with niceness +3",
+        "output": "nice -n 3 black ."
+    },
+    {
+        "input": "Run eslint --fix with niceness +3",
+        "output": "nice -n 3 eslint --fix . --ext .js,.jsx"
+    }
+]
