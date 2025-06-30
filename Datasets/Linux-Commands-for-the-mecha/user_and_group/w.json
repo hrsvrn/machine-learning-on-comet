@@ -397,7 +397,7 @@
         },
         {
             "input": "List users with zero idle time",
-            "output": "w | awk '$5 == "." {print $1}'"
+            "output": "w | awk '$5 == \".\" {print $1}'"
         },
         {
             "input": "Find who is logged in with the most CPU usage",
